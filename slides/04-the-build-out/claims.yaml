@@ -7,6 +7,7 @@ claims:
   kind: quantitative
   priority: high
   status: contradicted
+  proposed_text: 'On track to be the biggest economic bet in U.S. history'
   validation: |
     Rank the data-center build against every comparator in comparators.yaml under each
     measure in evidence/econ.py, with share of GDP as the deciding measure (decision 2026-10-30).
@@ -32,6 +33,7 @@ claims:
   kind: quantitative
   priority: high
   status: contradicted
+  proposed_text: '$1.5 trillion since 2020 · 2% of U.S. GDP this year: the most since the railroads'
   validation: |
     Reproduce the figure from a named series under a stated scope (decision 2026-10-30: show both
     US-located and global).
@@ -68,6 +70,7 @@ claims:
   kind: attribution
   priority: medium
   status: revise-slide
+  proposed_text: 'Share of GDP · SEC EDGAR, BEA, MeasuringWorth, Van Nieuwerburgh (Brookings, 2026) · After Fin Moorhouse'
   validation: |
     The footer lists the sources the chart on the slide actually uses.
   sources: []
@@ -83,6 +86,7 @@ claims:
   kind: quantitative
   priority: high
   status: partially-supported
+  proposed_text: "In today's dollars, six years of data centers outspent 71 years of railroads. Measured against the economy that paid for them, the railroads were about 37 times bigger. Data centers are the fastest build-out, not yet the biggest."
   validation: |
     Re-test Moorhouse's comparison under share of GDP.
   sources:

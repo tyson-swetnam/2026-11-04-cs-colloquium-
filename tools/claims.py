@@ -70,6 +70,8 @@ def validate(entries: list[tuple[Path, dict]]) -> list[str]:
             seen.add(cid)
             if not claim.get("text"):
                 errors.append(f"{where}: {cid} has no text")
+            if claim.get("status") == "revise-slide" and not claim.get("proposed_text"):
+                errors.append(f"{where}: {cid} is 'revise-slide' but has no proposed_text")
             for key, allowed in (("kind", KINDS), ("status", STATUSES), ("priority", PRIORITIES)):
                 if claim.get(key) not in allowed:
                     errors.append(f"{where}: {cid} {key}={claim.get(key)!r} not in {sorted(allowed)}")
@@ -107,6 +109,22 @@ def render(entries: list[tuple[Path, dict]]) -> str:
             f"| [{doc['slide']:02d} · {doc['title']}]({folder}/) | `{c['id']}` {text} "
             f"| {c['kind']} | {c['priority']} | {STATUS_ICON[c['status']]} {c['status']} |"
         )
+    edits = [(p, d, c) for p, d, c in claims if c.get("proposed_text")]
+    if edits:
+        lines += [
+            "",
+            "## Pending deck edits",
+            "",
+            "**Agreed** = wording chosen, not yet in `talk/deck.html` (status `revise-slide`). **Suggested** = awaiting a decision.",
+            "",
+            "| Slide | Claim | | New wording |",
+            "|---|---|---|---|",
+        ]
+        for path, doc, c in edits:
+            folder = path.parent.relative_to(ROOT).as_posix()
+            state = "Agreed" if c["status"] == "revise-slide" else "Suggested"
+            new = " ".join(str(c["proposed_text"]).split()).replace("|", "\\|")
+            lines.append(f"| [{doc['slide']:02d}]({folder}/) | `{c['id']}` | {state} | {new} |")
     return "\n".join(lines) + "\n"
 
 

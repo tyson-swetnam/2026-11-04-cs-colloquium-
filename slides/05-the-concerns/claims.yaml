@@ -2,43 +2,47 @@ slide: 5
 title: The concerns
 section: 01 · Fear
 claims:
-# --- The four placeholders on the slide; candidate wording in README.md, pending the speaker's pick ---
+# --- The four lines on the slide; wording chosen 2026-10-30 (first candidate each), not yet in the deck ---
 - id: c1
-  text: 'Financial risk: [the bubble question, who carries the debt]'
-  kind: placeholder
+  text: 'Financial risk: The five hyperscalers now spend 95¢ of every operating dollar on capex; their debt has more than doubled since 2024, and more sits off the books.'
+  kind: quantitative
   priority: high
-  status: in-progress
-  validation: Write the line from c5-c7; every number traceable to SEC filings or the cited paper.
+  status: revise-slide
+  proposed_text: 'Financial risk: The five hyperscalers now spend 95¢ of every operating dollar on capex; their debt has more than doubled since 2024, and more sits off the books.'
+  validation: 'Rests on c5 (95%), c6 ($231B to $556B) and c7 (off-balance-sheet).'
   sources: []
   evidence:
   - README.md
   - figures/fig1_capex_vs_cash.png
   - figures/fig2_debt.png
 - id: c2
-  text: 'Environmental cost: [power, water, siting—e.g. New Mexico context]'
-  kind: placeholder
+  text: "Environmental cost: Data centers used 4.7% of U.S. power in 2024; a proposed Doña Ana County campus wants a 2.5-GW gas plant, above PNM's record peak."
+  kind: quantitative
   priority: high
-  status: in-progress
-  validation: Write the line from c8-c10; say "proposed" for Project Jupiter (air-permit hearing Dec. 7, 2026).
+  status: revise-slide
+  proposed_text: "Environmental cost: Data centers used 4.7% of U.S. power in 2024; a proposed Doña Ana County campus wants a 2.5-GW gas plant, above PNM's record peak."
+  validation: "Rests on c8 and c9. Re-check Project Jupiter's status the day before the talk (hearing Dec. 7, 2026)."
   sources: []
   evidence:
   - README.md
   - figures/fig3_new_mexico.png
 - id: c3
-  text: 'Training and misuse: [how models are trained, and how they are misused]'
-  kind: placeholder
+  text: 'Training and misuse: Courts ruled training on books fair use but pirated copies cost $1.5B; developers report AI-run hacking, and ICML caught 795 rule-breaking LLM reviews.'
+  kind: attribution
   priority: medium
-  status: in-progress
-  validation: Write the line from c11-c13; present developer threat reports as their own claims.
+  status: revise-slide
+  proposed_text: 'Training and misuse: Courts ruled training on books fair use but pirated copies cost $1.5B; developers report AI-run hacking, and ICML caught 795 rule-breaking LLM reviews.'
+  validation: 'Rests on c11, c12 and c13.'
   sources: []
   evidence:
   - README.md
 - id: c4
-  text: "Researchers' work in closed systems: [open science feeding proprietary models]"
-  kind: placeholder
+  text: "Researchers' work in closed systems: Nearly a quarter of The Pile is research papers; publishers have booked $185M+ licensing research to AI firms. Only 8% of researchers trust them."
+  kind: quantitative
   priority: medium
-  status: in-progress
-  validation: Write the line from c14-c16.
+  status: revise-slide
+  proposed_text: "Researchers' work in closed systems: Nearly a quarter of The Pile is research papers; publishers have booked $185M+ licensing research to AI firms. Only 8% of researchers trust them."
+  validation: 'Rests on c14, c15 and c16.'
   sources: []
   evidence:
   - README.md

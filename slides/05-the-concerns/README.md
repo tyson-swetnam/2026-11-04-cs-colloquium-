@@ -4,12 +4,12 @@ Section: 01 · Fear · Slide text and notes: [`talk/slides.md`](../../talk/slide
 
 > *Notes:* Take each concern seriously; do not dismiss. Each could be its own talk. The point: these deserve answers, not avoidance.
 
-The slide has four bracketed placeholders. Each section below gives candidate one-liners (25 words or fewer), the facts behind them, and caveats. Each fact is a claim in [`claims.yaml`](claims.yaml), with sources and evidence paths.
+The slide had four bracketed placeholders; the chosen line for each is marked below and listed under *Pending deck edits* in [`CLAIMS.md`](../../CLAIMS.md). Each section gives the candidate one-liners (25 words or fewer), the facts behind them, and caveats. Each fact is a claim in [`claims.yaml`](claims.yaml), with sources and evidence paths.
 
 ## 1 · Financial risk: the bubble question, who carries the debt
 
 **Candidate lines**
-- *"The five hyperscalers now spend 95¢ of every operating dollar on capex; their debt has more than doubled since 2024, and more sits off the books."*
+- **Chosen (2026-10-30):** *"The five hyperscalers now spend 95¢ of every operating dollar on capex; their debt has more than doubled since 2024, and more sits off the books."*
 - *"Capex has caught up with cash: 95% of operating cash flow, up from 50% in 2024. The rest is borrowed, much of it off balance sheet."*
 
 | Fact | Value | Source |
@@ -29,7 +29,7 @@ Our operating cash flow and capex match Van Nieuwerburgh's Figure 1 to within 1%
 ## 2 · Environmental cost: power, water, siting, New Mexico
 
 **Candidate lines**
-- *"Data centers used 4.7% of U.S. power in 2024; a proposed Doña Ana County campus wants a 2.5-GW gas plant, above PNM's record peak."*
+- **Chosen (2026-10-30):** *"Data centers used 4.7% of U.S. power in 2024; a proposed Doña Ana County campus wants a 2.5-GW gas plant, above PNM's record peak."*
 - *"One proposed campus near Santa Teresa could use up to 46% of New Mexico's electricity; its air-permit hearing opens Dec. 7."*
 
 | Fact | Value | Source |
@@ -52,7 +52,7 @@ Our operating cash flow and capex match Van Nieuwerburgh's Figure 1 to within 1%
 ## 3 · Training and misuse
 
 **Candidate lines**
-- *"Courts ruled training on books fair use but pirated copies cost $1.5B; developers report AI-run hacking, and ICML caught 795 rule-breaking LLM reviews."*
+- **Chosen (2026-10-30):** *"Courts ruled training on books fair use but pirated copies cost $1.5B; developers report AI-run hacking, and ICML caught 795 rule-breaking LLM reviews."*
 - *"Training data is still in court, with a $1.5B settlement over pirated books. Misuse is documented, from AI-orchestrated espionage to LLM-written peer reviews."*
 
 | Fact | Value | Source |
@@ -69,7 +69,7 @@ The threat-report numbers are the developers' own claims. The ICML count is a lo
 ## 4 · Researchers' work in closed systems
 
 **Candidate lines**
-- *"Nearly a quarter of The Pile is research papers; publishers have booked $185M+ licensing research to AI firms. Only 8% of researchers trust them."*
+- **Chosen (2026-10-30):** *"Nearly a quarter of The Pile is research papers; publishers have booked $185M+ licensing research to AI firms. Only 8% of researchers trust them."*
 - *"Open science trains closed models: BloombergGPT learned from 42B tokens of open research and never released its weights."*
 
 | Fact | Value | Source |
