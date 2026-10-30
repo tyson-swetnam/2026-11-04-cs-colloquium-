@@ -4,6 +4,7 @@
     fig2_cumulative_gdp.png     the same programs, plus private booms, as cumulative share of GDP
     fig3_annual_gdp.png         annual spend as a share of GDP: how hard each one pushed
     fig4_rank_shift.png         rank under Moorhouse's measure vs. rank under share of GDP
+    fig5_boom_intensity.png     average annual spend as a share of GDP, every boom on one ruler
 
 Color does one job: data centers in UNM cherry, private booms in blue, public programs in
 gray. Every line is labeled directly, so identity never depends on color.
@@ -178,6 +179,46 @@ def main() -> None:
     for s in ("left", "bottom"):
         ax.spines[s].set_visible(False)
     finish(fig, ax, "Same programs, different ruler", "Cumulative cost through the last complete year", src, "fig4_rank_shift")
+
+    boom_intensity(norm, meta, src)
+
+
+def boom_intensity(norm, meta, src):
+    """Average annual % of GDP per boom: ours where we compute it, Van Nieuwerburgh (2026) Table 1 otherwise."""
+    bench = yaml.safe_load((config.SLIDE / "benchmarks.yaml").read_text())
+    vn = {"canals": ("Canals 1836–41", 0.66, PUBLIC), "railroads": ("Railroads 1870–90", 2.24, PRIVATE),
+          "electrification": ("Electrification 1905–25", 0.50, PRIVATE), "highways": ("Highways 1956–73", 1.13, PUBLIC)}
+    assert "railroads 1870-90 2.24" in next(f["text"] for f in bench["figures"] if f["id"] == "vn_table1")
+
+    def avg(pid, y0, y1):
+        g = norm[(norm.program == pid) & norm.year.between(y0, y1)]
+        return 100 * g.share_us_gdp.mean()
+
+    bars = [
+        (*vn["canals"], "VN"),
+        (*vn["railroads"], "VN"),
+        (*vn["electrification"], "VN"),
+        (*vn["highways"], "VN"),
+        ("Oil & gas boom 1973–82", avg("oil_gas_1970s", 1973, 1982), PRIVATE, "ours"),
+        ("Telecom & fiber 1996–2003", avg("telecom_vn", 1996, 2003), PRIVATE, "ours"),  # = VN 1.10, see 05_validate
+        ("Shale boom 2008–15", avg("oil_gas_shale", 2008, 2015), PRIVATE, "ours"),
+        ("Data centers 2020–25", avg("datacenters_global", 2020, 2025), style.CHERRY, "ours"),
+        ("Data centers 2026 (est.)", avg("datacenters_global", 2026, 2026), style.CHERRY, "ours"),
+        ("AI build-out 2025–32 (projected)", 3.63, style.CHERRY, "VN"),
+    ]
+    fig, ax = plt.subplots(figsize=(14, 9))
+    for i, (label, val, c, who) in enumerate(bars):
+        projected = "projected" in label or "est." in label
+        ax.barh(i, val, height=0.62, color="white" if projected else c, edgecolor=c, linewidth=2, hatch="//" if projected else None)
+        tag = "" if who == "ours" else "  (Van Nieuwerburgh)"
+        ax.text(val + 0.05, i, f"{val:.2f}%{tag}", va="center", fontsize=14, color=style.INK)
+    ax.set_yticks(range(len(bars)), [b[0] for b in bars], fontsize=15)
+    ax.invert_yaxis()
+    ax.set_xlim(0, 4.6)
+    ax.grid(axis="y", visible=False)
+    ax.set_xlabel("Average annual spend, % of that year's US GDP")
+    src2 = src + " Canals, railroads, electrification, highways, AI 2025–32: Van Nieuwerburgh (2026), BPEA, Table 1."
+    finish(fig, ax, "Every boom on one ruler", "Cherry: data centers (global capex of 5 US hyperscalers ÷ US GDP) · Blue: private · Gray: public · Hatched: estimate", src2, "fig5_boom_intensity")
 
 
 if __name__ == "__main__":

@@ -22,6 +22,8 @@ BEA_PROGRAMS = {
     "oil_gas_1970s": (["C319RC"], 1973, 1982),
     "oil_gas_shale": (["C319RC"], 2008, 2015),
     "telecom": (["C275RC", "C314RC"], 1995, 2002),
+    # Van Nieuwerburgh's window for the same series, used only to validate against his Table 1.
+    "telecom_vn": (["C275RC", "C314RC"], 1996, 2003),
     "postwar": (["A007RC"], 1946, 1960),
     "datacenters_us_structures": (["LA001282"], 2020, P),
 }
@@ -85,6 +87,8 @@ def normalize(spend: pd.DataFrame, macro: pd.DataFrame) -> pd.DataFrame:
 def ranking(norm: pd.DataFrame, meta: dict) -> pd.DataFrame:
     out = []
     for pid, g in norm.groupby("program", sort=False):
+        if pid.endswith("_vn"):  # validation-only windows
+            continue
         variants = [(pid, g)]
         if g.partial.any():  # report the complete-years total as its own row
             variants = [(pid, g[~g.partial]), (f"{pid} (incl. {P} est.)", g)]

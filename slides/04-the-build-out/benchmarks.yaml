@@ -1,0 +1,85 @@
+# Published figures this pipeline should reproduce, or that the slide can cite.
+# src/05_validate.py checks every entry that has `check:` against data/processed/
+# and writes the result to data/processed/validation.csv.
+#
+#   tol   allowed relative difference (0.05 = 5%)
+
+sources:
+  vn2026:
+    cite: "Van Nieuwerburgh, S. (2026). Financing the AI Buildout. Brookings Papers on Economic Activity, Fall 2026 conference draft (Sept. 4, 2026)."
+    url: https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf
+    landing: https://www.brookings.edu/articles/financing-the-ai-buildout/
+  vn2026_podcast:
+    cite: "Brookings Podcast on Economic Activity, 'The $10 trillion question: Financing the AI buildout', Oct. 8, 2026 (transcript)."
+    url: https://www.brookings.edu/wp-content/uploads/2026/10/BPEA-S9E1-financing-the-ai-buildout.pdf
+  wsj2026:
+    cite: "Putzier, K. and J. Lahart (2026). The AI Build-Out Is Becoming the Biggest Economic Bet in U.S. History. Wall Street Journal, Sept. 23, 2026."
+    url: https://www.wsj.com/economy/the-ai-build-out-is-becoming-the-biggest-economic-bet-in-u-s-history
+  moorhouse2026:
+    cite: "Moorhouse, F. (2026). 'The hyperscalers have already outspent the most famous US megaprojects.' X, Apr. 17, 2026."
+    url: https://x.com/finmoorhouse/status/2044933442236776794
+
+figures:
+  # --- Reproduced by this pipeline ---
+  - id: telecom_avg
+    source: vn2026
+    where: "Table 1 and Appendix C"
+    text: "Telecom and fiber, 1996-2003: 1.10% of GDP per year on average"
+    value: 1.10
+    unit: pct_gdp
+    check: {kind: avg_share, program: telecom_vn, years: [1996, 2003], tol: 0.02}
+  - id: telecom_peak
+    source: vn2026
+    where: "Appendix C"
+    text: "Telecom investment peaked at 1.39% of GDP in 2000"
+    value: 1.39
+    unit: pct_gdp
+    check: {kind: share_in_year, program: telecom_vn, year: 2000, tol: 0.02}
+  - id: hyperscaler_capex
+    source: vn2026
+    where: "Figure 1 (cash capex, Oracle, Microsoft, Amazon, Meta, Alphabet; calendarized; 2026 uses guidance)"
+    text: "Hyperscaler capex 2020-2026 ($B): 96.8, 130.9, 158.3, 153.8, 240.4, 415.8, 800.5"
+    value: {2020: 96.8, 2021: 130.9, 2022: 158.3, 2023: 153.8, 2024: 240.4, 2025: 415.8, 2026: 800.5}
+    unit: busd
+    check: {kind: hyperscaler_capex, tol: 0.03}
+  - id: moorhouse_total
+    source: moorhouse2026
+    where: "chart label"
+    text: "Data center capex ≈$930B in 6 years (2020-2025, 2024 dollars)"
+    value: 930
+    unit: busd_2024
+    check: {kind: moorhouse_with_leases, tol: 0.05}
+
+  # --- Cited, not reproduced (different scope or a projection) ---
+  - id: vn_table1
+    source: vn2026
+    where: "Table 1"
+    text: "Average annual capex, % of GDP: canals 1836-41 0.66; railroads 1870-90 2.24; electrification 1905-25 0.50; highways 1956-73 1.13; telecom and fiber 1996-2003 1.10; AI buildout 2025-32 3.63 (projected)"
+  - id: vn_railroad_peak
+    source: vn2026
+    where: "Appendix C"
+    text: "Railroad construction exceeded 4% of GDP in 1870 and 1881; the series excludes locomotives and rolling stock"
+  - id: vn_projection
+    source: vn2026
+    where: "Section 2"
+    text: "$10.3 trillion of AI infrastructure investment 2025-32 (data centers, power, chips) in a 183 GW central scenario; a scenario, not a forecast"
+  - id: vn_depreciation
+    source: vn2026
+    where: "Appendix C"
+    text: "GPUs may become economically obsolete within three to six years, so the AI buildout generates less net capital formation per gross dollar than canals, railroads or fiber"
+  - id: vn_debt
+    source: vn2026_podcast
+    where: "transcript p. 8"
+    text: "About $1.4 trillion of debt issued to date on AI financing structures, roughly half with banks"
+  - id: goldman_2026
+    source: wsj2026
+    where: "paragraph 5 (attributed to Goldman Sachs)"
+    text: "US AI investment projected at 1.9% of GDP in 2026; the late-19th-century railroad boom was the last time one new industry's build-out was a larger share of the economy"
+  - id: factset_2029
+    source: wsj2026
+    where: "Financing and risk (attributed to FactSet)"
+    text: "Analysts estimate the five hyperscalers' capex at $4.2 trillion in the four years ending 2029"
+  - id: census_dc_2026
+    source: wsj2026
+    where: "Construction (attributed to the Commerce Department)"
+    text: "$37 billion of private data-center construction through July 2026, seasonally adjusted, about $9 billion more than the first seven months of 2025"
