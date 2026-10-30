@@ -1,0 +1,4 @@
+step,tool,logged_sha,replayed_sha,reproduced
+1,resolve_term,504a5e9151c71b13,504a5e9151c71b13,True
+2,resolve_term,ea034f0e75e51437,ea034f0e75e51437,True
+3,check_citation,d6414442d3521466,d6414442d3521466,True

@@ -242,3 +242,9 @@ slides/04-the-build-out/data/raw/programs/sources/*
 !slides/04-the-build-out/data/raw/programs/sources/MANIFEST.yaml
 slides/04-the-build-out/data/raw/programs/work/
 .DS_Store
+
+# Slide 06: API response caches and third-party documents
+slides/06-hallucination-is-engineering/data/cache/
+slides/06-hallucination-is-engineering/data/raw/*/sources/*
+!slides/06-hallucination-is-engineering/data/raw/*/sources/MANIFEST.yaml
+slides/06-hallucination-is-engineering/data/processed/provenance/

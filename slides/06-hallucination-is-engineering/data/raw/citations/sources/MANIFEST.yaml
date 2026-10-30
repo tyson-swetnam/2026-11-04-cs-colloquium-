@@ -1,0 +1,13 @@
+arxiv_2303.17564_src.tar.gz:
+  license: arXiv distribution licence; bibliography used as test data
+  retrieved: '2026-10-30'
+  sha256: 6383a05d9359d1065b0447ddc7daeff3278e8adb5317382e6ae631545e6d1c52
+  source: arXiv e-print source, BloombergGPT (Wu et al. 2023)
+  url: https://arxiv.org/e-print/2303.17564
+gptzero_neurips.html:
+  license: quoted for research; citations themselves are from published NeurIPS papers
+  retrieved: '2026-10-30'
+  sha256: 076415696573015e684bf0f0c62c87958cffe40414b09ce373df4bf4fac6a309
+  source: GPTZero, 'GPTZero finds 100 new hallucinations in NeurIPS 2025 accepted
+    papers' (Jan. 21, 2026)
+  url: https://gptzero.me/news/neurips/

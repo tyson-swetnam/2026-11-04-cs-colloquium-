@@ -6,46 +6,87 @@ claims:
   text: “It invents citations” → the agent must call a real index
   kind: technical
   priority: medium
-  status: unverified
-  validation: 'Small demo: resolve every DOI an agent emits against the Crossref REST API and reject the ones that do not resolve. Show a run with and without the retrieval step.'
-  sources: []
-  evidence: []
+  status: in-progress
+  validation: |
+    One checker (evidence/citations.py: DOI registry + arXiv, by identifier or title, with an
+    author check) run over 100 hallucinated citations GPTZero verified in accepted NeurIPS 2025
+    papers and over the 141 real references of a published paper (src/01_citations.py).
+  sources:
+  - https://gptzero.me/news/neurips/
+  - https://arxiv.org/abs/2303.17564
+  evidence:
+  - src/01_citations.py
 - id: c2
   text: “It makes up metadata” → terms must resolve in an ontology
   kind: technical
   priority: medium
-  status: unverified
-  validation: Covered by slide 19's OLS resolver; link that evidence here.
-  sources: []
-  evidence: []
+  status: supported
+  validation: |
+    The write path (evidence/ontology.py, src/02_ontology.py) accepted 6 of 7 slide-19 mappings
+    and refused all four model-style errors: a real CURIE for the wrong concept (rat for mouse),
+    an invented CURIE, a term from the wrong ontology for the field, and an obsolete term.
+  sources:
+  - https://www.ebi.ac.uk/ols4/
+  evidence:
+  - data/processed/ontology_writes.csv
+  notes: |
+    "transcriptome" -> OBI:0001271 was refused: it is a curator's mapping, not a name of the term,
+    so the control sends it to review. Slide 19 should present it that way.
 - id: c3
   text: “It varies run to run” → a JSON schema, validated in the agent
   kind: technical
   priority: medium
-  status: unverified
-  validation: 'Demo: the same prompt run N times with and without schema-constrained output; report the fraction of runs that pass validation.'
-  sources: []
-  evidence: []
+  status: partially-supported
+  validation: |
+    JSON Schema (draft 2020-12) for a dataset record, run against eight outputs
+    (src/03_schema.py): six malformed outputs refused, the conforming one accepted.
+  sources:
+  - https://json-schema.org/draft/2020-12
+  evidence:
+  - data/processed/schema_checks.csv
+  - data/processed/dataset_record.schema.json
+  notes: |
+    A schema fixes the shape of the output, not its content: a well-formed record with a fake DOI
+    (taken from GPTZero's NeurIPS list) passed the schema and is caught only by control 1. Run-to-run
+    variation in content was not measured (no model API in this environment).
+  proposed_text: “It varies run to run” → a JSON schema fixes the shape; controls 1-2 check the content
 - id: c4
   text: “I cannot audit it” → provenance in DuckLake; replay any run
   kind: technical
   priority: medium
-  status: unverified
-  validation: 'Demo: record an agent session to a DuckLake catalog, then replay it from a snapshot (shared with slide 14).'
-  sources: []
-  evidence: []
+  status: supported
+  validation: |
+    An agent session logged to a DuckLake catalog (src/04_provenance.py): after the written record
+    is overwritten, time travel to the write snapshot recovers the original, and every logged tool
+    call re-executed from its logged inputs reproduces its output hash.
+  sources:
+  - https://ducklake.select/
+  evidence:
+  - data/processed/provenance_snapshots.csv
+  - data/processed/provenance_replay.csv
+  notes: |
+    "Replay" re-executes the tool calls and re-reads the data as of a snapshot; it cannot re-draw the
+    model's samples, which are logged instead. That is enough for an audit.
 - id: c5
   text: Google DeepMind's GNoME proposed 380,000 crystals; independent labs confirmed under 5%
   kind: attribution
   priority: high
-  status: unverified
+  status: contradicted
   validation: |
-    Check against the primary paper (Merchant et al., Nature 2023: 2.2M structures, ~381k
-    predicted stable) and the published critiques (e.g. Cheetham & Seshadri, Chem. Mater. 2024).
-    The "under 5%" figure needs a citable source with a stated denominator; if none exists, reword.
+    The paper's own numbers from its open-access full text, and the published critique's metadata
+    from the DOI registry (src/05_gnome.py).
   sources:
   - https://doi.org/10.1038/s41586-023-06735-9
-  evidence: []
+  - https://doi.org/10.1021/acs.chemmater.4c00643
+  evidence:
+  - data/processed/gnome_check.csv
+  notes: |
+    The paper: 381,000 new stable crystals (verified by DFT), of which 736 (0.19%) "have already been
+    independently experimentally realized". That is not a confirmation rate: labs did not test the
+    other 99.8% and fail; they have not been tried. The published critique (Cheetham & Seshadri,
+    Chem. Mater. 36, 3490, 2024) is about novelty and usefulness, finding "scant evidence for compounds
+    that fulfill the trifecta of novelty, credibility, and utility" (as quoted by The Register).
+  proposed_text: Google DeepMind's GNoME predicted 381,000 new stable crystals; 736 (0.2%) had been made in a lab, and critics found few that were both new and useful.
 - id: c6
   text: Every output is a hypothesis until it is checked
   kind: qualitative

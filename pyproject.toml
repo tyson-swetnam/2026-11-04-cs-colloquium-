@@ -5,6 +5,9 @@ description = "Code and data that back every claim in 'How I Learned to Stop Wor
 requires-python = ">=3.11"
 dependencies = [
     "beautifulsoup4>=4.12",
+    "duckdb>=1.3",
+    "pytz>=2024.1",
+    "jsonschema>=4.22",
     "matplotlib>=3.8",
     "numpy>=1.26",
     "pandas>=2.2",

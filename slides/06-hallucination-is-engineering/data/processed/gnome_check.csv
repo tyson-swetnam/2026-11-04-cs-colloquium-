@@ -1,0 +1,5 @@
+quantity,value,source,quote
+new stable crystals (DFT-verified),381000,"Merchant et al. 2023, Nature (PMC10700131)","oughput discovery of novel stable structures and led to the identification of 2.2 million crystal structures, of which 381,000 are newly discovered stable materials."
+already independently realized in a lab,736,"Merchant et al. 2023, Nature (PMC10700131)","Of the stable structures, 736 have already been independently experimentally realized."
+"realized / stable, %",0.19,computed,
+published critique,,"Cheetham, Seshadri, Chemistry of Materials 36, 3490-3495 (2024)",Artificial Intelligence Driving Materials Discovery? Perspective on the Article: Scaling Deep Learning for Materials Discovery
