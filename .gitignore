@@ -225,4 +225,6 @@ __marimo__/
 slides/*/data/raw/**/*.zip
 slides/*/data/raw/**/*.parquet
 slides/*/data/cache/
+slides/04-the-build-out/data/raw/bea/*.txt
+slides/04-the-build-out/data/raw/sec/*.json
 .DS_Store

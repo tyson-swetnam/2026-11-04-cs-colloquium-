@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import logging
+
 import matplotlib as mpl
 
 CHERRY = "#ba0c2f"
@@ -10,6 +12,8 @@ MUTED = "#6b6b6b"
 
 
 def use() -> None:
+    # Montserrat is the deck font; fall back quietly where it is not installed.
+    logging.getLogger("matplotlib.font_manager").setLevel(logging.ERROR)
     mpl.rcParams.update(
         {
             "figure.figsize": (16, 9),

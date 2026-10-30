@@ -23,12 +23,20 @@ def sha256(path: Path) -> str:
     return h.hexdigest()
 
 
-def fetch(url: str, dest: Path, *, source: str = "", license: str = "", refresh: bool = False) -> Path:
+def fetch(
+    url: str,
+    dest: Path,
+    *,
+    source: str = "",
+    license: str = "",
+    refresh: bool = False,
+    user_agent: str = "colloquium-evidence/0.1",
+) -> Path:
     """Download `url` to `dest` unless it is already there, and log it in dest's MANIFEST.yaml."""
     dest = Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
     if refresh or not dest.exists():
-        resp = requests.get(url, timeout=120, headers={"User-Agent": "colloquium-evidence/0.1"})
+        resp = requests.get(url, timeout=300, headers={"User-Agent": user_agent})
         resp.raise_for_status()
         dest.write_bytes(resp.content)
         record(dest, url=url, source=source, license=license)

@@ -1,0 +1,56 @@
+program,year,nominal_musd,source,partial
+oil_gas_1970s,1973,3023.000,BEA NIPA C319RC,False
+oil_gas_1970s,1974,4484.000,BEA NIPA C319RC,False
+oil_gas_1970s,1975,6505.000,BEA NIPA C319RC,False
+oil_gas_1970s,1976,7498.000,BEA NIPA C319RC,False
+oil_gas_1970s,1977,10079.000,BEA NIPA C319RC,False
+oil_gas_1970s,1978,14094.000,BEA NIPA C319RC,False
+oil_gas_1970s,1979,17677.000,BEA NIPA C319RC,False
+oil_gas_1970s,1980,25591.000,BEA NIPA C319RC,False
+oil_gas_1970s,1981,39959.000,BEA NIPA C319RC,False
+oil_gas_1970s,1982,42687.000,BEA NIPA C319RC,False
+oil_gas_shale,2008,113337.000,BEA NIPA C319RC,False
+oil_gas_shale,2009,73475.000,BEA NIPA C319RC,False
+oil_gas_shale,2010,86634.000,BEA NIPA C319RC,False
+oil_gas_shale,2011,113462.000,BEA NIPA C319RC,False
+oil_gas_shale,2012,141900.000,BEA NIPA C319RC,False
+oil_gas_shale,2013,140789.000,BEA NIPA C319RC,False
+oil_gas_shale,2014,169781.000,BEA NIPA C319RC,False
+oil_gas_shale,2015,118677.000,BEA NIPA C319RC,False
+telecom,1995,74548.000,BEA NIPA C275RC+C314RC,False
+telecom,1996,82563.000,BEA NIPA C275RC+C314RC,False
+telecom,1997,92417.000,BEA NIPA C275RC+C314RC,False
+telecom,1998,99529.000,BEA NIPA C275RC+C314RC,False
+telecom,1999,117144.000,BEA NIPA C275RC+C314RC,False
+telecom,2000,142122.000,BEA NIPA C275RC+C314RC,False
+telecom,2001,128698.000,BEA NIPA C275RC+C314RC,False
+telecom,2002,102119.000,BEA NIPA C275RC+C314RC,False
+postwar,1946,27118.000,BEA NIPA A007RC,False
+postwar,1947,37681.000,BEA NIPA A007RC,False
+postwar,1948,44689.000,BEA NIPA A007RC,False
+postwar,1949,41791.000,BEA NIPA A007RC,False
+postwar,1950,50761.000,BEA NIPA A007RC,False
+postwar,1951,52848.000,BEA NIPA A007RC,False
+postwar,1952,53759.000,BEA NIPA A007RC,False
+postwar,1953,58466.000,BEA NIPA A007RC,False
+postwar,1954,60007.000,BEA NIPA A007RC,False
+postwar,1955,68767.000,BEA NIPA A007RC,False
+postwar,1956,73735.000,BEA NIPA A007RC,False
+postwar,1957,75728.000,BEA NIPA A007RC,False
+postwar,1958,71313.000,BEA NIPA A007RC,False
+postwar,1959,81752.000,BEA NIPA A007RC,False
+postwar,1960,83245.000,BEA NIPA A007RC,False
+datacenters_us_structures,2020,9231.000,BEA NIPA LA001282,False
+datacenters_us_structures,2021,9947.000,BEA NIPA LA001282,False
+datacenters_us_structures,2022,12583.000,BEA NIPA LA001282,False
+datacenters_us_structures,2023,19995.000,BEA NIPA LA001282,False
+datacenters_us_structures,2024,34797.000,BEA NIPA LA001282,False
+datacenters_us_structures,2025,49737.000,BEA NIPA LA001282,False
+datacenters_us_structures,2026,68765.667,BEA NIPA LA001282,True
+datacenters_global,2020,53354.950,SEC EDGAR capex x DC share (Moorhouse assumption),False
+datacenters_global,2021,77340.892,SEC EDGAR capex x DC share (Moorhouse assumption),False
+datacenters_global,2022,99915.933,SEC EDGAR capex x DC share (Moorhouse assumption),False
+datacenters_global,2023,104059.350,SEC EDGAR capex x DC share (Moorhouse assumption),False
+datacenters_global,2024,171345.683,SEC EDGAR capex x DC share (Moorhouse assumption),False
+datacenters_global,2025,312075.400,SEC EDGAR capex x DC share (Moorhouse assumption),False
+datacenters_global,2026,657850.513,SEC EDGAR capex x DC share (Moorhouse assumption),True
