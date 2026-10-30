@@ -1,0 +1,8 @@
+afdb_download_page.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: e2e251266cdc70d4dc92df2687592875acbdf25df78c27a84c0ba95c12e024be
+alphafold_github_README.md:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 39a82c6f8ecfaf16872275167e98ff00109321f8de150edf5212dc9ed36f3763

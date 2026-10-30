@@ -1,0 +1,9 @@
+corpus,measure,value,unit
+The Pile (open),"full-text papers (PMC, arXiv, PhilPapers)",23.74,% of effective size
+The Pile (open),"all scholarly (+ PubMed abstracts, NIH grants)",27.11,% of effective size
+BloombergGPT (closed weights),"all scholarly (+ PubMed abstracts, NIH grants)",5.926,% of training tokens
+BloombergGPT (closed weights),scholarly tokens,42,billion tokens
+PubMed Central,articles,1.276e+07,count (2026-10-30)
+PubMed Central,CC licence allowing commercial reuse,43.34,% of articles
+PubMed Central,non-commercial CC licence only,19,% of articles
+PubMed Central,in neither bulk-reuse subset,26.45,% of articles

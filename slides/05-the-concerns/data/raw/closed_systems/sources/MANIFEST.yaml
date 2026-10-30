@@ -1,0 +1,12 @@
+arxiv_2101.00027_src.tar.gz:
+  license: arXiv distribution licence; used for table extraction only
+  retrieved: '2026-10-30'
+  sha256: dfaa6761becd1d515c7f0b8e559323d370e0913d2c92b474aaa24c57408c2064
+  source: arXiv e-print source, 2101.00027
+  url: https://arxiv.org/e-print/2101.00027
+arxiv_2303.17564_src.tar.gz:
+  license: arXiv distribution licence; used for table extraction only
+  retrieved: '2026-10-30'
+  sha256: 6383a05d9359d1065b0447ddc7daeff3278e8adb5317382e6ae631545e6d1c52
+  source: arXiv e-print source, 2303.17564
+  url: https://arxiv.org/e-print/2303.17564
