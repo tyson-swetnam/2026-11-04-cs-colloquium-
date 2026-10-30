@@ -27,6 +27,7 @@ from evidence.http import CachedGet
 ATOM = "{http://www.w3.org/2005/Atom}"
 ARXIV_ID = re.compile(r"arXiv[:\s]*((?:\d{4}\.[\dX]{4,5})|(?:[a-z\-]+/\d{7}))(v\d+)?", re.I)
 DOI = re.compile(r"\b(10\.\d{4,9}/[^\s,;}]+[^\s,;.}])", re.I)
+STOPWORDS = {"with", "from", "that", "this", "into", "over", "your", "their", "what", "when", "which", "towards", "toward", "using", "via", "than"}
 SKIP_SURNAME = {"al", "et", "others", "jr", "sr", "ii", "iii", "lastname", "and"}
 
 
@@ -59,7 +60,9 @@ def _split_authors(block: str) -> list[str]:
 
 
 def _identifiers(text: str) -> tuple[str | None, str | None]:
-    doi = DOI.search(text.replace(" ", "")) if "doi" in text.lower() or "10." in text else None
+    # Re-join a DOI split after its slash ("10.1109/ TNNLS.2021..."), but keep other spaces as delimiters.
+    joined = re.sub(r"(\b10\.\d{4,9}/)\s+", r"\1", text)
+    doi = DOI.search(joined)
     ax = ARXIV_ID.search(text)
     # "arXiv preprint arXiv" with no number is not an identifier
     return (doi.group(1).rstrip(".") if doi else None), (ax.group(1) if ax else None)
@@ -162,11 +165,17 @@ class Checker:
         return hits[0] if hits else None
 
     def arxiv_search(self, title: str) -> list[dict]:
-        words = [w for w in normalize(title).split() if len(w) > 2][:8]
-        if len(words) < 2:
-            return []
-        q = "+AND+".join(f"ti:{quote(w)}" for w in words)
-        return self._arxiv_entries(f"search_query={q}&max_results=5")
+        """Title search on distinctive whole words; arXiv's index drops stop words and splits hyphens."""
+        words = [normalize(w) for w in title.split() if "-" not in w and "/" not in w]
+        words = [w for w in words if len(w) >= 4 and w not in STOPWORDS and " " not in w]
+        for n in (6, 4):
+            if len(words) < 2:
+                return []
+            q = "+AND+".join(f"ti:{quote(w)}" for w in words[:n])
+            hits = self._arxiv_entries(f"search_query={q}&max_results=5")
+            if hits:
+                return hits
+        return []
 
     # --- verdict ----------------------------------------------------------------------
     def _authors_ok(self, cited: list[str], found: list[str]) -> bool:

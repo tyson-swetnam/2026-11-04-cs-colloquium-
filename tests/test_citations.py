@@ -37,3 +37,13 @@ Emily~M Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret
 
 def test_similarity_ignores_case_and_punctuation():
     assert cit.similar("WebVoyager: Building an End-to-End Web Agent", "Webvoyager building an end to end web agent") > 0.95
+
+
+def test_doi_does_not_swallow_following_text():
+    c = cit.parse_bibitem(r"""\bibitem[Beltagy et~al.(2019)]{scibert}
+Iz Beltagy, Kyle Lo, and Arman Cohan.
+\newblock {S}ci{BERT}: A pretrained language model for scientific text.
+\newblock In \emph{Proceedings of EMNLP-IJCNLP}, 2019.
+\newblock \doi{10.18653/v1/D19-1371}.
+\newblock URL \url{https://aclanthology.org/D19-1371}.""")
+    assert c.doi == "10.18653/v1/D19-1371"
