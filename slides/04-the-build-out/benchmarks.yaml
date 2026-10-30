@@ -50,6 +50,45 @@ figures:
     unit: busd_2024
     check: {kind: moorhouse_with_leases, tol: 0.05}
 
+  - id: canals_avg
+    source: vn2026
+    where: "Table 1 and Appendix C (Cranmer 1960 / Johnston & Williamson GDP)"
+    text: "Canals, 1836-41: 0.66% of GDP per year; peak 0.90% in 1840"
+    value: 0.66
+    unit: pct_gdp
+    check: {kind: avg_share, program: canals, years: [1836, 1841], tol: 0.02}
+  - id: highways_avg
+    source: vn2026
+    where: "Table 1 and Appendix C (FHWA DISB-C capital outlay)"
+    text: "Highways, 1956-73: 1.13% of GDP per year; peak 1.32% in 1958"
+    value: 1.13
+    unit: pct_gdp
+    check: {kind: avg_share, program: highways, years: [1956, 1973], tol: 0.02}
+  - id: electrification_avg
+    source: vn2026
+    where: "Table 1 and Appendix C (Ulmer 1960)"
+    text: "Electrification, 1905-25: 0.50% of GDP per year"
+    value: 0.50
+    unit: pct_gdp
+    check: {kind: avg_share, program: electrification, years: [1905, 1925], tol: 0.05}
+    notes: "Ours uses private utilities only (Ulmer D-1); he also allocates municipal plant, so ours should be slightly lower."
+  - id: railroads_avg_nominal
+    source: vn2026
+    where: "Table 1 and Appendix C"
+    text: "Railroads, 1870-90: 2.24% of GDP per year"
+    value: 2.24
+    unit: pct_gdp
+    check: {kind: avg_share, program: railroads_vn, years: [1870, 1890], tol: 0.06}
+    notes: "Ours: Ulmer current-dollar gross capital expenditures (incl. equipment) / MeasuringWorth GDP. He uses Gallman's constant-1860-dollar construction series, which excludes rolling stock."
+  - id: railroads_avg_gallman
+    source: vn2026
+    where: "Appendix C (Gallman revised series via Rhode 2002)"
+    text: "Railroads, 1870-90: 2.24% of GDP per year, from Gallman's series"
+    value: 2.24
+    unit: pct_gdp
+    check: {kind: gallman_avg, years: [1870, 1890], tol: 0.06}
+    notes: "Same source as his; ours is 5% higher, likely a different GNP denominator (Rhode notes GNP recomputed with the revised railroad series was never published)."
+
   # --- Cited, not reproduced (different scope or a projection) ---
   - id: vn_table1
     source: vn2026

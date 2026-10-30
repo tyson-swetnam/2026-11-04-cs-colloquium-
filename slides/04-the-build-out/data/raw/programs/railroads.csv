@@ -1,0 +1,81 @@
+year,nominal_usd_millions,note,miles_built,gallman_rr_construction_1860usd_millions,gallman_gnp_1860usd_millions,gallman_rr_share_of_gnp_pct_1860prices,gallman_rr_construction_original_1860usd_millions,gallman_year_basis
+1830,1.37,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (40 mi)",40,,,,,
+1831,3.39,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (99 mi)",99,,,,,
+1832,6.54,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (191 mi)",191,,,,,
+1833,3.97,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (116 mi)",116,,,,,
+1834,7.33,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (214 mi)",214,9.3,1402.9,0.663,9.3,census year ending 31 May of following year
+1835,4.73,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (138 mi)",138,11.2,1377.7,0.813,11.2,census year ending 31 May of following year
+1836,9.59,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (280 mi)",280,13.9,1370.7,1.014,13.9,census year ending 31 May of following year
+1837,11.92,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (348 mi)",348,16.1,1487.0,1.083,16.1,census year ending 31 May of following year
+1838,15.52,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (453 mi)",453,16.9,1492.8,1.132,16.9,census year ending 31 May of following year
+1839,13.22,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (386 mi)",386,15.1,1622.6,0.931,15.1,census year ending 31 May of following year
+1840,16.82,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (491 mi)",491,12.6,1609.1,0.783,12.6,census year ending 31 May of following year
+1841,20.76,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (606 mi)",606,10.0,1679.0,0.596,10.0,census year ending 31 May of following year
+1842,17.30,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (505 mi)",505,6.5,1679.8,0.387,6.5,census year ending 31 May of following year
+1843,9.87,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (288 mi)",288,5.8,1880.2,0.308,5.8,census year ending 31 May of following year
+1844,6.17,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (180 mi)",180,7.2,1974.1,0.365,7.2,census year ending 31 May of following year
+1845,9.49,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (277 mi)",277,10.1,2069.7,0.488,10.1,census year ending 31 May of following year
+1846,11.41,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (333 mi)",333,16.9,2135.7,0.791,16.9,census year ending 31 May of following year
+1847,9.01,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (263 mi)",263,27.2,2367.5,1.149,27.2,census year ending 31 May of following year
+1848,36.17,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (1056 mi)",1056,33.4,2395.9,1.394,33.4,census year ending 31 May of following year
+1849,35.90,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (1048 mi)",1048,35.1,2429.1,1.445,35.1,census year ending 31 May of following year
+1850,43.20,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (1261 mi)",1261,41.9,2635.2,1.590,41.9,census year ending 31 May of following year
+1851,43.64,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (1274 mi)",1274,55.3,2831.5,1.953,55.3,census year ending 31 May of following year
+1852,78.38,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (2288 mi)",2288,72.3,3159.2,2.289,72.3,census year ending 31 May of following year
+1853,74.33,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (2170 mi)",2170,86.8,3490.7,2.487,86.8,census year ending 31 May of following year
+1854,117.91,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (3442 mi)",3442,78.1,3365.6,2.321,78.1,census year ending 31 May of following year
+1855,84.03,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (2453 mi)",2453,61.4,3648.9,1.683,61.4,census year ending 31 May of following year
+1856,50.39,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (1471 mi)",1471,62.3,3696.9,1.685,62.3,census year ending 31 May of following year
+1857,71.15,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (2077 mi)",2077,62.7,3718.0,1.686,62.7,census year ending 31 May of following year
+1858,67.35,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (1966 mi)",1966,54.4,3982.8,1.366,54.4,census year ending 31 May of following year
+1859,58.47,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (1707 mi)",1707,44.3,4099.9,1.081,44.3,census year ending 31 May of following year
+1860,51.38,"DERIVED: Fishlow-adjusted cumulative construction cost through 1860 ($990.7M, cost basis, excl. land) distributed by miles built (1500 mi)",1500,,,,,
+1861,73.00,"DERIVED: change in book cost of road & equipment 1860->1 Jan 1870 ($2,200M - $1,151.6M = $1,048.4M, unadjusted book basis) distributed by miles built (1016 mi)",1016,,,,,
+1862,51.73,"DERIVED: change in book cost of road & equipment 1860->1 Jan 1870 ($2,200M - $1,151.6M = $1,048.4M, unadjusted book basis) distributed by miles built (720 mi)",720,,,,,
+1863,41.24,"DERIVED: change in book cost of road & equipment 1860->1 Jan 1870 ($2,200M - $1,151.6M = $1,048.4M, unadjusted book basis) distributed by miles built (574 mi)",574,,,,,
+1864,68.04,"DERIVED: change in book cost of road & equipment 1860->1 Jan 1870 ($2,200M - $1,151.6M = $1,048.4M, unadjusted book basis) distributed by miles built (947 mi)",947,,,,,
+1865,58.84,"DERIVED: change in book cost of road & equipment 1860->1 Jan 1870 ($2,200M - $1,151.6M = $1,048.4M, unadjusted book basis) distributed by miles built (819 mi)",819,,,,,
+1866,100.87,"DERIVED: change in book cost of road & equipment 1860->1 Jan 1870 ($2,200M - $1,151.6M = $1,048.4M, unadjusted book basis) distributed by miles built (1404 mi)",1404,,,,,
+1867,182.56,"DERIVED: change in book cost of road & equipment 1860->1 Jan 1870 ($2,200M - $1,151.6M = $1,048.4M, unadjusted book basis) distributed by miles built (2541 mi)",2541,,,,,
+1868,177.32,"DERIVED: change in book cost of road & equipment 1860->1 Jan 1870 ($2,200M - $1,151.6M = $1,048.4M, unadjusted book basis) distributed by miles built (2468 mi)",2468,,,,,
+1869,294.79,"DERIVED: change in book cost of road & equipment 1860->1 Jan 1870 ($2,200M - $1,151.6M = $1,048.4M, unadjusted book basis) distributed by miles built (4103 mi)",4103,,5347.0,,158.0,calendar year
+1870,380,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 388)",5658,202.0,5355.0,3.772,233.0,calendar year
+1871,420,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 429)",6660,232.0,5317.3,4.363,196.0,calendar year
+1872,379,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 387)",7439,208.0,6298.1,3.303,189.0,calendar year
+1873,262,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 268)",5217,128.0,6461.1,1.981,125.0,calendar year
+1874,148,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 151)",2584,69.0,6319.3,1.092,47.0,calendar year
+1875,105,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 107)",1606,69.0,6372.2,1.083,28.0,calendar year; orig RR & GNP use Rhode decimal-error corrections
+1876,104,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 106)",2575,80.0,6795.0,1.177,29.0,calendar year; orig RR & GNP use Rhode decimal-error corrections
+1877,117,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 119)",2280,77.0,7207.1,1.068,34.0,calendar year; orig RR & GNP use Rhode decimal-error corrections
+1878,114,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 116)",2428,122.0,7645.0,1.596,75.0,calendar year
+1879,125,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 128)",5006,197.0,8336.1,2.363,69.0,calendar year
+1880,282,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 288)",6876,315.0,9593.9,3.283,149.0,calendar year
+1881,440,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 450)",9789,407.0,9966.6,4.084,230.0,calendar year
+1882,398,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 407)",11599,384.0,10534.8,3.645,184.0,calendar year
+1883,283,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 290)",6819,203.0,10574.1,1.920,117.0,calendar year
+1884,199,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 204)",3974,131.0,10730.0,1.221,97.0,calendar year
+1885,150,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 154)",3131,209.0,10854.5,1.925,75.0,calendar year
+1886,206,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 211)",8400,397.0,11601.7,3.422,92.0,calendar year
+1887,275,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 282)",13081,376.0,12152.8,3.094,119.0,calendar year
+1888,251,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 257)",7066,229.0,11974.5,1.912,103.0,calendar year
+1889,227,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 233)",5707,201.0,12426.1,1.618,96.0,calendar year
+1890,231,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 237)",5739,197.0,13144.5,1.499,102.0,calendar year
+1891,237,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 243)",4620,168.0,13812.2,1.216,118.0,calendar year
+1892,407,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 418)",4648,159.0,14849.3,1.071,255.0,calendar year
+1893,433,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 445)",3024,119.0,14491.2,0.821,267.0,calendar year
+1894,190,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 195)",1760,79.0,13555.2,0.583,106.0,calendar year
+1895,69,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 71)",1420,77.0,14905.0,0.517,11.0,calendar year
+1896,48,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 49)",1692,94.0,15007.4,0.626,0.0,calendar year
+1897,48,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 49)",2109,133.0,15708.0,0.847,0.0,calendar year
+1898,82,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 85)",3265,194.0,16031.0,1.210,0.0,calendar year
+1899,175,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 180)",4569,235.0,17527.2,1.341,41.0,calendar year
+1900,205,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 212)",4894,268.0,18371.8,1.459,48.0,calendar year
+1901,186,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 192)",5368,298.0,20112.8,1.482,38.0,calendar year
+1902,200,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 207)",6026,305.0,20577.2,1.482,26.0,calendar year
+1903,217,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 224)",5652,248.0,21730.1,1.141,13.0,calendar year
+1904,250,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 258)",3832,215.0,21235.3,1.012,54.0,calendar year
+1905,329,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 340)",4388,262.0,22712.3,1.154,66.0,calendar year
+1906,474,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 490)",5623,283.0,25605.5,1.105,93.0,calendar year
+1907,570,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 590)",5212,220.0,26236.7,0.839,112.0,calendar year
+1908,575,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 596)",3214,182.0,23496.6,0.775,225.0,calendar year
+1909,626,"Ulmer (1960) Table C-10 col.3 gross capital expenditures excl. land, calendar year (incl. land: 649)",3748,206.0,25800.4,0.798,248.0,calendar year

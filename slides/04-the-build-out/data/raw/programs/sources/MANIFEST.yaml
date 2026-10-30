@@ -1,0 +1,154 @@
+cranmer1960_c2489.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 1dcfe206d8c1d78a457befa19ce6810573950c8bcd5e951ee5a20dc193fe1dd9
+  source: Cranmer (1960), Canal investment, 1815-1860, NBER Studies in Income and
+    Wealth 24
+  url: https://www.nber.org/system/files/chapters/c2489/c2489.pdf
+crs_IB93017_space_stations_20060104.html:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 4d71145b868ff58f81799c2efc98e369d9b88f9e759d0cc5949107a7de25bfbb
+  source: CRS IB93017, Space Stations (Smith, 2006)
+  url: https://www.everycrsreport.com/reports/IB93017.html
+crs_R45079_marshall_plan_everycrsreport.html:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 8fee7340f6ddf8a8475c4b50fccd3dd1e9f8ecd11b1f4551b7303f14da7c8b37
+  source: CRS R45079, The Marshall Plan (Tarnoff, 2018)
+  url: https://www.everycrsreport.com/reports/R45079.html
+crs_R48304_f35_everycrsreport.html:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: a3c6b9b92ec590a2fb461b83abd20f374ef5ba34fbde155ae7ac0764a0a4cba5
+  source: CRS R48304, F-35 Lightning II (Dec 2024)
+  url: https://www.everycrsreport.com/files/2024-12-11_R48304_5d0e2c43978709be4643b35ee89b6c290820e92d.html
+fhwa_hs2014_disbc.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 1ce81921005b854b6090eb02f018f61e747b9b85bbd3e77abaf670726c6ec5bf
+  source: FHWA Highway Statistics 2014, Table DISB-C (PDF rendering, cross-check only)
+fhwa_hs2014_disbc.xls:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 5e0870d94ff606fdf84bd9ec66facb691bc385469d6c1ad81362e1e38856b7de
+  source: FHWA Highway Statistics 2014, Table DISB-C
+  url: https://www.fhwa.dot.gov/policyinformation/statistics/2014/xls/disbc.xls
+fhwa_infrastructure_50estimate.html:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 15e5b94b33b29f3915687013e1bb5fd697110d823ddbccbc1c4de90af9c7f26b
+  source: FHWA, "The Golden Fleece" (Interstate cost estimates)
+  url: https://www.fhwa.dot.gov/infrastructure/50estimate.cfm
+fhwa_summary95_fa203.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 5201db939fb42e82d0bc6d8e543f4fa64092605c294391702dd9d264e71c2f4a
+  source: FHWA Highway Statistics Summary to 1995, Table FA-203
+  url: https://www.fhwa.dot.gov/ohim/Summary95/fa203.pdf
+fhwa_summary95_fa204.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: e6a3c554026a3117c48bf67ae4baeef79a8b8f637e26966120fb0408e4e11219
+  source: FHWA Highway Statistics Summary to 1995, Table FA-204 (not used in the build)
+  url: https://www.fhwa.dot.gov/ohim/Summary95/fa204.pdf
+fishlow1966_c1578.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: d42ef420bcf91b406f3acab9f14a548c1f4d4a21b81b9fecf87ed622ef4bc045
+  source: Fishlow (1966), Productivity and Technological Change in the Railroad Sector,
+    NBER SIW 30
+  url: https://www.nber.org/system/files/chapters/c1578/c1578.pdf
+gallman_rhode2020_capital19c_ch10_transportation_c14398.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: ec498eb12016325c30527fd4a8ffe7007ce5e15abbdf7ffecba4df654040f55c
+  source: Gallman & Rhode (2020), Capital in the Nineteenth Century, ch. 10
+  url: https://www.nber.org/system/files/chapters/c14398/c14398.pdf
+hewlett_anderson_1962_new_world.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: a6cb41d4d53a05d6429f04d46d3f09ce5f5f153657ab3a217ab3b13079d9d437
+  source: Hewlett & Anderson (1962), The New World, 1939-1946, Appendix 2
+  url: https://www.energy.gov/sites/prod/files/2013/08/f2/HewlettandAndersonNewWorldNoBookmarks.pdf
+hsus1949_chK.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 015c1005dbdd17bb78282afd88bd3ba635d6f8918b5f2fc43c0ba59b3c4bbdc6
+  source: Historical Statistics of the US 1789-1945, ch. K (consulted, not used)
+hsus1960_chQ.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 23262e0b0af90696aa0e251f3e394438b705d276879ef1f8c6a150c7e4c6e168
+  source: Historical Statistics of the US, Colonial Times to 1957, ch. Q (consulted,
+    not used)
+nber_macrohistory_a02082.dat:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 020cba85c531c98de9f25be79fd1a6bab714e958f8e9be1821b40b53e85eb13f
+  source: NBER Macrohistory Database, series a02082 (miles of railroad built)
+  url: https://data.nber.org/databases/macrohistory/contents/chapter02.html
+nber_macrohistory_a02082.db:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: e6efc8e7a1f6f368092ced37421e214da4c9f046918f94e38107dc5226eaefdb
+  source: NBER Macrohistory Database, series a02082 (miles of railroad built)
+  url: https://data.nber.org/databases/macrohistory/contents/chapter02.html
+nber_macrohistory_a02082_doc.txt:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 017947afee9c61c1cd9da84ae302e79edfa92839a2a3e75b8fda7637697de8bb
+  source: NBER Macrohistory Database, series doc (miles of railroad built)
+  url: https://data.nber.org/databases/macrohistory/contents/chapter02.html
+nber_macrohistory_a02082a.dat:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 07b2b625ff608a98015a952c8799f27452aa588314a93c0cca9394ac33b248b5
+  source: NBER Macrohistory Database, series a02082a (miles of railroad built)
+  url: https://data.nber.org/databases/macrohistory/contents/chapter02.html
+nber_macrohistory_a02082a.db:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 219299cf6a40396a3c428908409640572913ecf2b7afadb561e2f10cbe588b29
+  source: NBER Macrohistory Database, series a02082a (miles of railroad built)
+  url: https://data.nber.org/databases/macrohistory/contents/chapter02.html
+nber_macrohistory_a02082a_doc.txt:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: b3d2740b874f8d25583a77adba889b9447fbfd78a30b124dbb57d3205eec6a28
+  source: NBER Macrohistory Database, series doc (miles of railroad built)
+  url: https://data.nber.org/databases/macrohistory/contents/chapter02.html
+rhode2002_nber_w8860.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 60fefed83155f54f42f10c7e4d1ca8ab6f8815acba49b5433fdd4b3c0baf82ed
+  source: Rhode (2002), Gallman's Annual Output Series for the United States, 1834-1909,
+    NBER WP 8860
+  url: https://www.nber.org/system/files/working_papers/w8860/w8860.pdf
+tps_cost_of_apollo.xlsx:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: a2bcf0e28f86c2e512602f0cf2b015d5c750624cc41c8c0c23d05662166eb8d8
+  source: The Planetary Society, Cost of Apollo (Google Sheet 1QW8MaPWa2YXDik52h4M0LN4SVc_tINoFEwashbaOjgE,
+    exported as xlsx)
+  url: https://www.planetary.org/space-policy/cost-of-apollo
+tps_historical_nasa_budget.xlsx:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 98bd9c30b013f19dd73461745c18eb689c1778b2f1939f46b64efcf484a310ff
+  source: The Planetary Society, Historical NASA Budget (Google Sheet 1NMRYCCRWXwpn3pZU57-Bb0P1Zp3yg2lTTVUzvc5GkIs,
+    exported as xlsx)
+  url: https://planetary.org/space-policy/nasa-budget/historical
+ulmer1960_appendices_c1498.pdf:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 542b4d915dad37a097fc40671dee1da185a7099268c5170b8439fba3494dad8c
+  source: Ulmer (1960), Capital in Transportation, Communications, and Public Utilities,
+    appendices
+  url: https://www.nber.org/system/files/chapters/c1498/c1498.pdf
+usaid_greenbook_us_foreignaid_greenbook_heiss_mirror.xlsx:
+  note: downloaded 2026-10-30 by the research subagent; see ../SOURCES.md
+  retrieved: '2026-10-30'
+  sha256: 3dba11a5eda8210b8ea3ac587f2c4175eb1b25cb5d22516c1da319d3b72976fd
+  source: USAID Greenbook (mirror by Andrew Heiss; official copy removed Jan 2025)
+  url: https://foreignassistance.andrewheiss.com/data/us_foreignaid_greenbook.xlsx

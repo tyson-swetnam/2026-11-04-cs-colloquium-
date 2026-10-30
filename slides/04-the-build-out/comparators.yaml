@@ -2,9 +2,13 @@
 #
 #   id            matches the program name in data/processed/*.csv
 #   financing     public | private | mixed
-#   years         first and last calendar year of spend used here
+#   years         first and last year of spend used here. Moorhouse's programs use his spans;
+#                 canals, electrification and highways use Van Nieuwerburgh's boom windows
 #   in_moorhouse  value and span printed on Moorhouse's chart (2024 dollars); null if new here
 #   series        where the annual nominal spend comes from
+#   csv           for hand-assembled series: file in data/raw/programs/ and the column to use
+#                 (default nominal_usd_millions); null when no annual series could be built.
+#                 BEA and SEC series are wired in src/03_normalize.py instead
 #
 # Decisions (2026-10-30): normalize by share of GDP; show the data-center build both as
 # global spend by US hyperscalers and as US-located; post-war = US private fixed investment;
@@ -34,50 +38,93 @@ programs:
     financing: public
     years: [1942, 1946]
     in_moorhouse: {value_busd: 36, span_years: 5}
-    series: ["See data/raw/programs/SOURCES.md"]
+    series: ["Hewlett & Anderson (1962), The New World, Appendix 2 (monthly expenditures)"]
+    csv: {file: manhattan.csv}
+    notes: "Calendar years; 1942 is Aug-Dec only."
 
   - id: apollo
     name: Apollo Program
     financing: public
     years: [1960, 1973]
     in_moorhouse: {value_busd: 257, span_years: 14}
-    series: ["See data/raw/programs/SOURCES.md"]
+    series: ["The Planetary Society, Cost of Apollo (Dreier), sheet 'Apollo Program (original $)'"]
+    csv: {file: apollo.csv}
+    notes: "NASA fiscal-year obligations, direct plus indirect; excludes Gemini and robotic lunar programs."
 
   - id: interstate
     name: Interstate Highway System
     financing: public
     years: [1956, 1992]
     in_moorhouse: {value_busd: 620, span_years: 37}
-    series: ["See data/raw/programs/SOURCES.md"]
+    series: ["FHWA Highway Statistics Summary to 1995, Table FA-203; FHWA final cost estimate (1991)"]
+    csv: {file: interstate.csv, column: total_incl_state_match_est_usd_millions}
+    notes: "Federal Interstate expenditures scaled by 128.9/114.3 for the state match, per FHWA's 1991 final cost estimate. Fiscal years."
 
   - id: marshall
     name: Marshall Plan
     financing: public
-    years: [1948, 1951]
+    years: [1949, 1952]
     in_moorhouse: {value_busd: 170, span_years: 4}
-    series: ["See data/raw/programs/SOURCES.md"]
+    series: ["USAID Greenbook obligations (Heiss mirror), cross-checked to CRS R45079 Table 2"]
+    csv: {file: marshall.csv}
+    notes: "Obligations by fiscal year; FY1949 covers 15 months from Apr. 3, 1948."
 
   - id: f35
     name: F-35 Program
     financing: public
     years: [2001, 2025]
     in_moorhouse: {value_busd: 400, span_years: 25}
-    series: ["See data/raw/programs/SOURCES.md"]
+    series: ["CRS R48304 (program total only)"]
+    csv: null
+    notes: "Not reproduced: no annual series could be retrieved (DoD Selected Acquisition Reports blocked). CRS gives $401.1B then-year for the full airframe program, not spend to date."
 
   - id: iss
     name: International Space Station
     financing: public
     years: [1985, 2011]
     in_moorhouse: {value_busd: 150, span_years: 27}
-    series: ["See data/raw/programs/SOURCES.md"]
+    series: ["The Planetary Society historical NASA budget (FY2008+); CRS IB93017 (period totals)"]
+    csv: null
+    notes: "Not reproduced: annual NASA actuals exist only from FY2008; FY1985-2007 only as CRS period totals. data/raw/programs/iss.csv keeps what there is."
 
   - id: railroads
     name: US railroads
     financing: mixed
     years: [1830, 1900]
     in_moorhouse: {value_busd: 550, span_years: 71}
-    series: ["See data/raw/programs/SOURCES.md"]
-    notes: "Private capital with large public land grants and bond guarantees."
+    series:
+      - "Ulmer (1960) Tables C-1/C-10, gross capital expenditures of steam railroads incl. equipment, 1870-1900 (current $)"
+      - "1830-1869 derived: Fishlow construction-cost totals (via Gallman & Rhode 2020, Table 10.6) spread by miles built (NBER Macrohistory a02082a)"
+      - "Cross-check: Gallman revised railroad construction and GNP, constant 1860 $ (Rhode 2002, NBER WP 8860)"
+    csv: {file: railroads.csv}
+    notes: "Private capital with large public land grants and bond guarantees. Rhode asks users to note that Gallman's data 'were not constructed for analysis as annual series.'"
+
+  - id: canals
+    name: Canals
+    financing: public
+    years: [1836, 1841]
+    in_moorhouse: null
+    series: ["Cranmer (1960), Table 3, annual canal investment 1815-1860"]
+    csv: {file: canals.csv}
+    notes: "Van Nieuwerburgh's boom window. Mostly state-financed."
+
+  - id: electrification
+    name: Electrification
+    financing: private
+    years: [1905, 1925]
+    in_moorhouse: null
+    series: ["Ulmer (1960) Table D-1, gross capital expenditures of private electric light and power utilities"]
+    csv: {file: electrification.csv}
+    notes: "Van Nieuwerburgh's boom window. Private utilities only; he also allocates municipal plant, so this runs lower."
+
+  - id: highways
+    name: Highways (all governments)
+    financing: public
+    years: [1956, 1973]
+    in_moorhouse: null
+    series: ["FHWA Highway Statistics 2014, Table DISB-C, capital outlay by all levels of government"]
+    csv: {file: highways_all.csv}
+    notes: "Van Nieuwerburgh's boom window; all highways, not only the Interstate."
 
   - id: oil_gas_1970s
     name: 1970s oil and gas boom
@@ -115,7 +162,7 @@ programs:
 
 # Denominators and price indexes (data/processed/macro.csv)
 macro:
-  - {id: us_gdp_nominal, series: "MeasuringWorth US nominal GDP 1790-2025; 2026 extended with BEA Q1-Q3 growth"}
+  - {id: us_gdp_nominal, series: "MeasuringWorth US nominal GDP 1790-2025 (Johnston & Williamson); 2026 extended with BEA Q1-Q3 growth"}
   - {id: us_gdp_deflator, series: "MeasuringWorth GDP deflator (2017=100); 2026 extended with BEA"}
   - {id: us_population, series: "MeasuringWorth population; 2026 extended at the 2025 growth rate"}
   - {id: us_cpi, series: "MeasuringWorth CPI 1774-2025; 2026 extended with the GDP deflator"}

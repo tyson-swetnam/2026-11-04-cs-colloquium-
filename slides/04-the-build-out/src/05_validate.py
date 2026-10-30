@@ -30,6 +30,10 @@ def ours(check: dict, norm: pd.DataFrame) -> float | dict:
     if kind == "moorhouse_with_leases":
         rec = pd.read_csv(OUT / "moorhouse_reconciliation.csv", index_col=0).busd_2024
         return rec["with_finance_leases"]
+    if kind == "gallman_avg":
+        rr = pd.read_csv(config.RAW / "programs" / "railroads.csv", index_col="year")
+        y0, y1 = check["years"]
+        return rr.loc[y0:y1, "gallman_rr_share_of_gnp_pct_1860prices"].mean()
     raise ValueError(kind)
 
 

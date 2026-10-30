@@ -2,7 +2,8 @@
 
     fig1_baseline_cpi.png       Moorhouse's chart rebuilt from primary sources (2024 dollars)
     fig2_cumulative_gdp.png     the same programs, plus private booms, as cumulative share of GDP
-    fig3_annual_gdp.png         annual spend as a share of GDP: how hard each one pushed
+    fig3_peak_year.png          each build-out's biggest single year as a share of GDP
+    fig2b_first_decade_gdp.png  the first ten years of every program, where data centers actually are
     fig4_rank_shift.png         rank under Moorhouse's measure vs. rank under share of GDP
     fig5_boom_intensity.png     average annual spend as a share of GDP, every boom on one ruler
 
@@ -33,8 +34,12 @@ SHORT = {
     "oil_gas_shale": "Shale boom 2008–15",
     "telecom": "Telecom & fiber 1995–2002",
     "postwar": "Post-war private investment 1946–60",
-    "railroads": "US railroads",
-    "interstate": "Interstate Highways",
+    "railroads": "US railroads 1830–1900",
+    "railroads_vn": "Railroads 1870–90",
+    "canals": "Canals 1836–41",
+    "electrification": "Electrification 1905–25",
+    "highways": "All highways 1956–73",
+    "interstate": "Interstate Highways 1956–92",
     "apollo": "Apollo",
     "manhattan": "Manhattan Project",
     "marshall": "Marshall Plan",
@@ -49,17 +54,18 @@ def color(pid: str, meta: dict) -> str:
     return PRIVATE if meta.get(pid, {}).get("financing") in ("private", "mixed") else PUBLIC
 
 
-def spread(ys: list[float], gap: float) -> list[float]:
-    """Nudge label positions apart vertically so none sit closer than `gap`."""
-    order = sorted(range(len(ys)), key=lambda i: ys[i])
-    out = list(ys)
-    for a, b in zip(order, order[1:]):
-        if out[b] - out[a] < gap:
-            out[b] = out[a] + gap
+def spread(points: list[tuple[float, float]], gap: float, xwin: float) -> list[float]:
+    """Nudge label y-positions apart so labels within `xwin` of each other sit at least `gap` apart."""
+    order = sorted(range(len(points)), key=lambda i: points[i][1])
+    out = [y for _, y in points]
+    for k, i in enumerate(order):
+        for j in order[:k]:
+            if abs(points[i][0] - points[j][0]) < xwin and out[i] - out[j] < gap:
+                out[i] = out[j] + gap
     return out
 
 
-def lines(ax, norm, col, meta, programs, scale=1.0, label_gap=None):
+def lines(ax, norm, col, meta, programs, scale=1.0, label_gap=None, xwin=6):
     """Plot cumulative or annual series per program, starting from (0, 0); dashed into the partial year."""
     ends = []
     for pid in programs:
@@ -78,14 +84,18 @@ def lines(ax, norm, col, meta, programs, scale=1.0, label_gap=None):
         ax.plot(x[n], y[n], "o", ms=8, color=c)
         ends.append((pid, x[n], y[n], c, g.iloc[n - 1]))
     if label_gap is not None:
-        placed = spread([e[2] for e in ends], label_gap)
-        for (pid, x, _, c, last), ly in zip(ends, placed):
+        placed = spread([(e[1], e[2]) for e in ends], label_gap, xwin)
+        for (pid, x, y, c, last), ly in zip(ends, placed):
+            moved = abs(ly - y) > label_gap / 4
+            if moved:
+                ax.plot([x, x], [y, ly], color=c, lw=0.8, alpha=0.6)
             ax.annotate(
                 SHORT.get(pid, pid),
                 (x, ly),
                 xytext=(8, 0),
                 textcoords="offset points",
                 va="center",
+                xycoords="data",
                 fontsize=13,
                 color=style.INK,
                 fontweight="bold" if pid.startswith("datacenters") else "normal",
@@ -120,7 +130,7 @@ def main() -> None:
 
     # 1. Baseline: Moorhouse's measure, our data
     fig, ax = plt.subplots()
-    lines(ax, norm, "cum_cpi_real_2024", meta, moorhouse_set, scale=1e-3, label_gap=28)
+    lines(ax, norm, "cum_cpi_real_2024", meta, moorhouse_set, scale=1e-3, label_gap=30, xwin=12)
     for pid in moorhouse_set:
         mh = meta[pid].get("in_moorhouse")
         if mh:
@@ -133,10 +143,10 @@ def main() -> None:
     ax.set_ylabel("Cumulative cost, billions of 2024 dollars (CPI)")
     finish(fig, ax, "Data centers vs. megaprojects, rebuilt", "Moorhouse's measure: inflation-adjusted dollars", src, "fig1_baseline_cpi")
 
-    # 2. Cumulative share of GDP
+    # 2. Cumulative share of GDP: Moorhouse's programs, re-measured
     fig, ax = plt.subplots()
-    progs = [*moorhouse_set, *private_set, *(["datacenters_us_structures"] if "datacenters_us_structures" in have else [])]
-    lines(ax, norm, "cum_share_us_gdp", meta, progs, scale=100, label_gap=0.32)
+    dc_both = [p for p in ("datacenters_global", "datacenters_us_structures") if p in have]
+    lines(ax, norm, "cum_share_us_gdp", meta, [p for p in ("railroads", "interstate") if p in have] + dc_both, scale=100, label_gap=3.2, xwin=12)
     ax.set_xlim(0, 80)
     ax.set_ylim(0, None)
     ax.set_xlabel("Years from start of program")
@@ -144,20 +154,26 @@ def main() -> None:
     finish(
         fig,
         ax,
-        "Measured against the economy that paid for it",
+        "Six years vs. 71 years of railroads and 37 of Interstates",
         "Each year's spend as a share of that year's GDP, summed. Cherry: data centers · Blue: private · Gray: public",
         src,
         "fig2_cumulative_gdp",
     )
 
-    # 3. Annual intensity, first 15 years
+    # 2b. The first decade, where the data-center build actually is
     fig, ax = plt.subplots()
-    lines(ax, norm, "share_us_gdp", meta, [p for p in progs if p not in ("railroads", "f35", "iss")] + (["railroads"] if "railroads" in have else []), scale=100, label_gap=0.07)
-    ax.set_xlim(0, 20)
+    first = [*dc_both, "railroads", "interstate", "highways", "apollo", "marshall", "manhattan", *private_set]
+    first = [p for p in first if p in have]
+    clipped = norm[norm.years_since_start <= 10]
+    lines(ax, clipped, "cum_share_us_gdp", meta, first, scale=100, label_gap=0.5, xwin=2.5)
+    ax.set_xlim(0, 13.5)
     ax.set_ylim(0, None)
     ax.set_xlabel("Years from start of program")
-    ax.set_ylabel("Spend that year, % of US GDP")
-    finish(fig, ax, "How hard each build-out pushed", "Annual spend as a share of that year's GDP (first 20 years)", src, "fig3_annual_gdp")
+    ax.set_ylabel("Cumulative spend, % of one year's US GDP")
+    finish(fig, ax, "The first ten years", "Cumulative spend as a share of GDP; longer programs cut off at year 10. Cherry: data centers · Blue: private · Gray: public", src, "fig2b_first_decade_gdp")
+
+    # 3. Peak year: the most each build-out took from the economy in a single year
+    peak_year(norm, meta, [p for p in [*dc_both, "railroads", "canals", "electrification", "highways", "interstate", "apollo", "marshall", "manhattan", *private_set] if p in have], src)
 
     # 4. Rank shift: CPI dollars vs share of GDP (complete years only)
     r = rank[~rank.program.str.contains(r"\(incl\.") & (rank.program != "postwar")].copy()
@@ -183,22 +199,51 @@ def main() -> None:
     boom_intensity(norm, meta, src)
 
 
+def peak_year(norm, meta, programs, src):
+    rows = []
+    for pid in programs:
+        g = norm[norm.program == pid]
+        for label, h in (("", g[~g.partial]), (" (2026 est.)", g[g.partial])):
+            if h.empty:
+                continue
+            top = h.loc[h.share_us_gdp.idxmax()]
+            rows.append((SHORT.get(pid, pid) + label, 100 * top.share_us_gdp, int(top.year), color(pid, meta), bool(label)))
+    rows.sort(key=lambda r: r[1], reverse=True)
+    fig, ax = plt.subplots(figsize=(14, 10))
+    for i, (label, val, year, c, est) in enumerate(rows):
+        ax.barh(i, val, height=0.62, color="white" if est else c, edgecolor=c, linewidth=2, hatch="//" if est else None)
+        ax.text(val + 0.06, i, f"{val:.1f}% in {year}", va="center", fontsize=14, color=style.INK)
+    ax.set_yticks(range(len(rows)), [r[0] for r in rows], fontsize=14)
+    ax.invert_yaxis()
+    ax.set_xlim(0, max(r[1] for r in rows) * 1.25)
+    ax.grid(axis="y", visible=False)
+    ax.set_xlabel("Spend in the peak year, % of that year's US GDP")
+    finish(
+        fig,
+        ax,
+        "How hard each build-out pushed",
+        "The single biggest year. Cherry: data centers · Blue: private · Gray: public · Hatched: estimate",
+        src + " Marshall Plan FY1949 covers 15 months.",
+        "fig3_peak_year",
+    )
+
+
 def boom_intensity(norm, meta, src):
-    """Average annual % of GDP per boom: ours where we compute it, Van Nieuwerburgh (2026) Table 1 otherwise."""
-    bench = yaml.safe_load((config.SLIDE / "benchmarks.yaml").read_text())
-    vn = {"canals": ("Canals 1836–41", 0.66, PUBLIC), "railroads": ("Railroads 1870–90", 2.24, PRIVATE),
-          "electrification": ("Electrification 1905–25", 0.50, PRIVATE), "highways": ("Highways 1956–73", 1.13, PUBLIC)}
-    assert "railroads 1870-90 2.24" in next(f["text"] for f in bench["figures"] if f["id"] == "vn_table1")
+    """Average annual % of GDP per boom, in Van Nieuwerburgh's (2026) Table 1 windows.
+
+    Every bar is computed here except the 2025-32 projection, which is his; 05_validate.py
+    checks the historical bars against his table.
+    """
 
     def avg(pid, y0, y1):
         g = norm[(norm.program == pid) & norm.year.between(y0, y1)]
         return 100 * g.share_us_gdp.mean()
 
     bars = [
-        (*vn["canals"], "VN"),
-        (*vn["railroads"], "VN"),
-        (*vn["electrification"], "VN"),
-        (*vn["highways"], "VN"),
+        ("Canals 1836–41", avg("canals", 1836, 1841), PUBLIC, "ours"),
+        ("Railroads 1870–90", avg("railroads_vn", 1870, 1890), PRIVATE, "ours"),
+        ("Electrification 1905–25", avg("electrification", 1905, 1925), PRIVATE, "ours"),
+        ("Highways 1956–73", avg("highways", 1956, 1973), PUBLIC, "ours"),
         ("Oil & gas boom 1973–82", avg("oil_gas_1970s", 1973, 1982), PRIVATE, "ours"),
         ("Telecom & fiber 1996–2003", avg("telecom_vn", 1996, 2003), PRIVATE, "ours"),  # = VN 1.10, see 05_validate
         ("Shale boom 2008–15", avg("oil_gas_shale", 2008, 2015), PRIVATE, "ours"),
@@ -217,7 +262,7 @@ def boom_intensity(norm, meta, src):
     ax.set_xlim(0, 4.6)
     ax.grid(axis="y", visible=False)
     ax.set_xlabel("Average annual spend, % of that year's US GDP")
-    src2 = src + " Canals, railroads, electrification, highways, AI 2025–32: Van Nieuwerburgh (2026), BPEA, Table 1."
+    src2 = src + " Windows and the AI 2025–32 projection: Van Nieuwerburgh (2026), BPEA, Table 1."
     finish(fig, ax, "Every boom on one ruler", "Cherry: data centers (global capex of 5 US hyperscalers ÷ US GDP) · Blue: private · Gray: public · Hatched: estimate", src2, "fig5_boom_intensity")
 
 

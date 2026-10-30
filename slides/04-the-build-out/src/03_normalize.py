@@ -29,7 +29,15 @@ BEA_PROGRAMS = {
 }
 
 
-def spend_long() -> pd.DataFrame:
+def program_csv(pid: str, spec: dict, years: list[int]) -> pd.DataFrame:
+    """A hand-assembled series from data/raw/programs/, cut to the comparator's years."""
+    p = pd.read_csv(config.RAW / "programs" / spec["file"])
+    col = spec.get("column", "nominal_usd_millions")
+    p = p[p.year.between(*years)].dropna(subset=[col])
+    return pd.DataFrame({"program": pid, "year": p.year, "nominal_musd": p[col], "source": f"programs/{spec['file']}:{col}"})
+
+
+def spend_long(meta: dict) -> pd.DataFrame:
     bea = pd.read_csv(OUT / "bea_series.csv", index_col="year")
     frames = []
     for pid, (codes, y0, y1) in BEA_PROGRAMS.items():
@@ -49,9 +57,11 @@ def spend_long() -> pd.DataFrame:
     )
     # Railroads and the public megaprojects: annual series assembled by hand from the
     # sources documented in data/raw/programs/SOURCES.md.
-    for path in sorted((config.RAW / "programs").glob("*.csv")):
-        p = pd.read_csv(path).dropna(subset=["nominal_usd_millions"])
-        frames.append(pd.DataFrame({"program": path.stem, "year": p.year, "nominal_musd": p.nominal_usd_millions, "source": f"programs/{path.name}"}))
+    for pid, m in meta.items():
+        if m.get("csv"):
+            frames.append(program_csv(pid, m["csv"], m["years"]))
+    # Van Nieuwerburgh's railroad window, used only to validate against his Table 1.
+    frames.append(program_csv("railroads_vn", meta["railroads"]["csv"], [1870, 1890]))
     out = pd.concat(frames, ignore_index=True)
     out["partial"] = out.year == P
     return out
@@ -143,7 +153,7 @@ def main() -> None:
     comparators = yaml.safe_load((config.SLIDE / "comparators.yaml").read_text())
     meta = {c["id"]: c for c in comparators["programs"]}
 
-    spend = spend_long()
+    spend = spend_long(meta)
     spend.to_csv(OUT / "spend_long.csv", index=False, float_format="%.3f")
     norm = normalize(spend, macro)
     norm.to_csv(OUT / "normalized.csv", index=False, float_format="%.6g")
