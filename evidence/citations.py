@@ -1,7 +1,7 @@
 """Check a citation against real indexes: the DOI registry (doi.org) and arXiv.
 
 A citation passes only if an index returns a record whose title matches the cited title
-and whose authors share at least one surname with the cited authors. Everything else is
+and that lists at least half of the cited authors. Everything else is
 flagged, with the reason:
 
     bad_identifier       the DOI is not registered, or the arXiv ID is malformed or unused
@@ -179,7 +179,9 @@ class Checker:
 
     # --- verdict ----------------------------------------------------------------------
     def _authors_ok(self, cited: list[str], found: list[str]) -> bool:
-        return not cited or bool(set(cited) & set(found))
+        """At least half of the cited surnames appear on the record (cited lists may be truncated)."""
+        cited = list(dict.fromkeys(cited))
+        return not cited or sum(s in set(found) for s in cited) >= len(cited) / 2
 
     def check(self, c: Citation) -> Result:
         if c.arxiv_id:

@@ -53,7 +53,7 @@ def main() -> None:
     ax.set_title("A real index catches invented citations", loc="left", pad=36)
     ax.text(0, 1.02, "Same checker for both sets: DOI registry + arXiv, by identifier or title, with an author check", transform=ax.transAxes, fontsize=15, color=style.MUTED)
     fig.text(
-        0.01, -0.12,
+        0.01, -0.2,
         "Sources: GPTZero (Jan. 2026), 100 human-verified hallucinated citations in accepted NeurIPS 2025 papers; Wu et al. (2023) BloombergGPT "
         "bibliography, arXiv:2303.17564. Indexes: doi.org, arXiv API. github.com/tyson-swetnam/2026-11-04-cs-colloquium-",
         fontsize=11, color=style.MUTED, wrap=True,

@@ -6,16 +6,27 @@ claims:
   text: “It invents citations” → the agent must call a real index
   kind: technical
   priority: medium
-  status: in-progress
+  status: supported
   validation: |
-    One checker (evidence/citations.py: DOI registry + arXiv, by identifier or title, with an
-    author check) run over 100 hallucinated citations GPTZero verified in accepted NeurIPS 2025
-    papers and over the 141 real references of a published paper (src/01_citations.py).
+    One checker (evidence/citations.py: DOI registry + arXiv, by identifier or title, requiring at
+    least half the cited authors on the record) run over 100 hallucinated citations GPTZero verified
+    in accepted NeurIPS 2025 papers and over the 141 real references of BloombergGPT (src/01_citations.py).
   sources:
   - https://gptzero.me/news/neurips/
   - https://arxiv.org/abs/2303.17564
   evidence:
-  - src/01_citations.py
+  - data/processed/citations_summary.csv
+  - data/processed/citations_hallucinated.csv
+  - data/processed/citations_real.csv
+  - figures/fig1_citation_check.png
+  notes: |
+    Hallucinated: 99 of 100 flagged (29 with a definite reason: identifier points elsewhere,
+    identifier unregistered, or wrong authors; 70 not found). Real: 108 of 141 (77%) verified
+    automatically, 2 false mismatches from metadata changes (a retitled bioRxiv preprint, a truncated
+    registry title), 31 (22%) not found, mostly pre-arXiv work, reports and workshop papers without DOIs.
+    The control does not need a perfect index: it confirms most real references, never confirmed a
+    fabricated identifier, and sends the rest to a person. Crossref, OpenAlex, Semantic Scholar and DBLP
+    would shrink the review queue but were rate-limited or bot-gated from this environment.
 - id: c2
   text: “It makes up metadata” → terms must resolve in an ontology
   kind: technical
