@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 
 import matplotlib as mpl
 
@@ -14,6 +15,8 @@ MUTED = "#6b6b6b"
 def use() -> None:
     # Montserrat is the deck font; fall back quietly where it is not installed.
     logging.getLogger("matplotlib.font_manager").setLevel(logging.ERROR)
+    # Reproducible SVGs: fixed timestamp and element ids, so diffs show only real changes.
+    os.environ.setdefault("SOURCE_DATE_EPOCH", "0")
     mpl.rcParams.update(
         {
             "figure.figsize": (16, 9),
@@ -33,5 +36,8 @@ def use() -> None:
             "axes.grid": True,
             "grid.color": "#e6e6e6",
             "legend.frameon": False,
+            # Labels are full of dollar amounts; never treat "$...$" as math.
+            "text.parse_math": False,
+            "svg.hashsalt": "colloquium-evidence",
         }
     )

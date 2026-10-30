@@ -14,6 +14,7 @@ import json
 import pandas as pd
 
 import config
+from evidence import sec
 
 RAW, OUT = config.RAW, config.PROCESSED
 P = config.PARTIAL_YEAR
@@ -68,44 +69,18 @@ def macro(bea: pd.DataFrame) -> pd.DataFrame:
 
 
 def quarterly_capex(name: str, firm: dict) -> pd.DataFrame:
-    """Discrete fiscal-quarter values from a cash-flow tag that is mostly reported year-to-date."""
-    facts = json.loads((RAW / "sec" / f"companyfacts_{name.lower()}.json").read_text())
-    rows = pd.DataFrame(facts["facts"]["us-gaap"][firm["concept"]]["units"]["USD"])
-    rows = rows[rows.form.str.match(r"10-[KQ]")].copy()
-    rows["start"], rows["end"] = pd.to_datetime(rows.start), pd.to_datetime(rows.end)
-    rows = rows.sort_values("filed").drop_duplicates(["start", "end"], keep="last")
-    rows["months"] = ((rows.end - rows.start).dt.days / 30.44).round().astype(int)
-
-    quarters: dict[pd.Timestamp, tuple[float, bool]] = {}
-    for _, r in rows[rows.months == 3].iterrows():
-        quarters[r.end] = (r.val, False)
-    # Within one fiscal year every YTD fact shares a start date; consecutive differences are quarters.
-    for _, grp in rows[rows.months.isin([3, 6, 9, 12])].groupby("start"):
-        grp = grp.sort_values("end")
-        prev_val, prev_m = 0.0, 0
-        for _, r in grp.iterrows():
-            if r.months - prev_m == 3 and r.end not in quarters:
-                quarters[r.end] = (r.val - prev_val, True)
-            prev_val, prev_m = r.val, r.months
-    q = pd.DataFrame([(name, end, v, d) for end, (v, d) in quarters.items()], columns=["company", "quarter_end", "capex_usd", "derived"])
-    return q.sort_values("quarter_end")
+    """Discrete fiscal-quarter capex for one firm (see evidence.sec.flow_quarters)."""
+    q = sec.flow_quarters(sec.load(RAW / "sec" / f"companyfacts_{name.lower()}.json"), firm["concept"])
+    return q.rename(columns={"value": "capex_usd"}).assign(company=name)[["company", "quarter_end", "capex_usd", "derived"]]
 
 
 def annual_capex(q: pd.DataFrame) -> pd.DataFrame:
-    """Calendar-year totals, assigning each fiscal quarter to the year its last day falls in."""
-    q = q.assign(year=q.quarter_end.dt.year)
-    a = q.groupby(["company", "year"]).agg(capex_usd=("capex_usd", "sum"), quarters=("capex_usd", "size")).reset_index()
-    a["capex_usd"] = a.capex_usd.astype(float)
-    # Partial year: scale year-to-date by how much of last year's capex the same quarters held.
+    """Calendar-year totals per firm, with the partial year scaled by each firm's seasonality."""
+    out = []
     for company, grp in q.groupby("company"):
-        ytd = grp[grp.year == P]
-        n = len(ytd)
-        if 0 < n < 4:
-            last = grp[grp.year == P - 1].sort_values("quarter_end")
-            ratio = last.capex_usd.sum() / last.capex_usd.iloc[:n].sum()
-            a.loc[(a.company == company) & (a.year == P), "capex_usd"] = ytd.capex_usd.sum() * ratio
-    a["partial"] = a.year == P
-    return a
+        a = sec.calendar_years(grp.rename(columns={"capex_usd": "value"}), partial_year=P)
+        out.append(a.rename(columns={"value": "capex_usd"}).assign(company=company))
+    return pd.concat(out, ignore_index=True)[["company", "year", "capex_usd", "quarters", "partial"]]
 
 
 def finance_lease_additions() -> pd.DataFrame:

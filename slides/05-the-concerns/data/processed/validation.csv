@@ -1,0 +1,13 @@
+check,published,ours,rel_diff,tol,pass
+hyperscaler_ocf[2020],252.2000,251.9310,-0.0011,0.0100,True
+hyperscaler_ocf[2021],289.9000,289.8260,-0.0003,0.0100,True
+hyperscaler_ocf[2022],288.3000,288.1810,-0.0004,0.0100,True
+hyperscaler_ocf[2023],377.9000,377.4910,-0.0011,0.0100,True
+hyperscaler_ocf[2024],478.5000,478.3740,-0.0003,0.0100,True
+hyperscaler_ocf[2025],603.2000,602.8290,-0.0006,0.0100,True
+hyperscaler_capex[2020],96.8000,97.0090,0.0022,0.0200,True
+hyperscaler_capex[2021],130.9000,130.7170,-0.0014,0.0200,True
+hyperscaler_capex[2022],158.3000,157.7620,-0.0034,0.0200,True
+hyperscaler_capex[2023],153.8000,154.1620,0.0024,0.0200,True
+hyperscaler_capex[2024],240.4000,239.0870,-0.0055,0.0200,True
+hyperscaler_capex[2025],415.8000,411.5280,-0.0103,0.0200,True

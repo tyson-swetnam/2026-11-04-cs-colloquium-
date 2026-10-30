@@ -227,6 +227,7 @@ slides/*/data/raw/**/*.parquet
 slides/*/data/cache/
 slides/04-the-build-out/data/raw/bea/*.txt
 slides/04-the-build-out/data/raw/sec/*.json
+slides/05-the-concerns/data/raw/sec/*.json
 # Program source documents (PDFs, spreadsheets): logged in MANIFEST.yaml, re-download from the URL
 slides/04-the-build-out/data/raw/programs/sources/*
 !slides/04-the-build-out/data/raw/programs/sources/MANIFEST.yaml
