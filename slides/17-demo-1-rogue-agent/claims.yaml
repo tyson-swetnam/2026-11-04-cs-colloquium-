@@ -1,0 +1,12 @@
+slide: 17
+title: 'Demo 1: a rogue agent meets the policy engine'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: An agent requests data outside its permissions; the mesh refuses and logs it
+  kind: technical
+  priority: high
+  status: unverified
+  validation: Keep the script that drives the recording, plus the iRODS and proxy logs, in this folder so the clip can be reproduced.
+  sources: []
+  evidence: []

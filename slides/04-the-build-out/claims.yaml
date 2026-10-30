@@ -1,0 +1,71 @@
+slide: 4
+title: The build-out
+section: 01 · Fear
+claims:
+- id: c1
+  text: The largest single investment in human history
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: |
+    Rank the data-center build against every comparator in comparators.yaml under each
+    measure in evidence/econ.py (CPI-real, GDP-deflator-real, share of GDP, economic share,
+    per-capita-income). The claim holds only if data centers lead under the measures a
+    skeptical economist would pick, which are the GDP-share ones.
+  sources:
+  - https://x.com/finmoorhouse/status/2044933442236776794
+  - https://www.measuringworth.com/
+  evidence: []
+  notes: |
+    At risk on two counts. "Single": the spend is five-plus firms making separate decisions,
+    not one program. "Largest": in share-of-GDP terms, 19th-century railroads and WWII
+    mobilization are the obvious challengers. Expect to soften to something like
+    "the fastest capital build-out in US history" unless the numbers say otherwise.
+- id: c2
+  text: 'US data-center build: $560B through 2026'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: |
+    State the scope (US-located vs. US-company global; buildings only vs. buildings plus IT
+    equipment; which years) and reproduce the total from a named series. Reconcile with
+    Moorhouse's ≈$930B in six years through 2025, which is global data-center capex of the five
+    big US hyperscalers in 2024 dollars. Candidates for a US-only figure: Census Value of
+    Construction Put in Place (data-center category) for structures, plus an equipment estimate.
+  sources:
+  - https://x.com/finmoorhouse/status/2044933442236776794
+  - https://epoch.ai/
+  evidence: []
+  notes: |
+    The slide's $560B through 2026 and Moorhouse's $930B through 2025 cannot both describe
+    the same thing. Pick one definition and use it on the slide, the footer and in the notes.
+- id: c3
+  text: $800B on the 2027 run rate
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: Find the forecast this comes from (Gartner per the footer?) and cite it with date and scope; compare with company capex guidance for 2026–2027.
+  sources: []
+  evidence: []
+- id: c4
+  text: Cumulative cost in 2025 dollars · FHWA, Epoch AI, NASA, Gartner · After Fin Moorhouse
+  kind: attribution
+  priority: medium
+  status: unverified
+  validation: |
+    The footer describes a chart that is not on the slide yet. When the chart from this folder
+    goes in, the footer lists the sources it actually uses. Moorhouse's chart is in 2024 dollars
+    and cites company reports, Epoch AI, FHWA, NASA, CRS, GAO and Brookings.
+  sources: []
+  evidence: []
+- id: c5
+  text: 'Notes: six years of data-center capex has already outrun 71 years of railroads and 37 years of the Interstates'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: |
+    True in Moorhouse's CPI-real dollars by construction. Re-test under share of GDP and
+    per-capita-income measures; railroads are the comparator most likely to flip, because
+    they were built when the economy was a small fraction of today's size.
+  sources: []
+  evidence: []

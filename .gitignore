@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- colloquium-evidence ---
+# Large downloads are re-fetched from the URL in MANIFEST.yaml; keep anything
+# small (<5 MB) committed so a figure can be rebuilt after the source moves.
+slides/*/data/raw/**/*.zip
+slides/*/data/raw/**/*.parquet
+slides/*/data/cache/
+.DS_Store

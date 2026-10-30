@@ -1,0 +1,20 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  claims:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --extra dev
+      - name: Claims files are valid and CLAIMS.md is current
+        run: uv run python tools/claims.py check
+      - name: talk/slides.md matches talk/deck.html
+        run: |
+          uv run python tools/deck.py extract
+          git diff --exit-code talk/slides.md
+      - run: uv run pytest -q

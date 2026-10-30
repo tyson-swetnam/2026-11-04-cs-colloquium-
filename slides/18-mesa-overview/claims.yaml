@@ -1,0 +1,20 @@
+slide: 18
+title: Thawing the frozen data lake of public research
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: 'Notes: MESA connects scientific data through curated, indexed metadata, runs on national research infrastructure today, open source'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: Link the repositories and their licenses; name the deployment sites.
+  sources: []
+  evidence: []
+- id: c2
+  text: 'Figure: MESA proposal · NSF Award #2632685'
+  kind: factual
+  priority: low
+  status: unverified
+  validation: Same award check as slide 14.
+  sources: []
+  evidence: []

@@ -1,0 +1,20 @@
+slide: 27
+title: AI is not going away
+section: 04 · Stop worrying
+claims:
+- id: c1
+  text: Sitting on the sidelines is the most dangerous choice a researcher can make
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: Thesis; argued, not measured.
+  sources: []
+  evidence: []
+- id: c2
+  text: Without effective government oversight, AI could cause serious harm. Waiting for that oversight is not a plan.
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: Opinion.
+  sources: []
+  evidence: []

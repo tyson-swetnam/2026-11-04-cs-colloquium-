@@ -1,0 +1,20 @@
+slide: 1
+title: How I Learned to Stop Worrying and Love the AI
+section: Opening
+claims:
+- id: c1
+  text: Wednesday, Nov. 4, 2026 · 2 p.m. · Larrañaga Engineering Auditorium (Centennial 1041)
+  kind: factual
+  priority: low
+  status: unverified
+  validation: Confirm against the CS department colloquium listing. Nov. 4, 2026 is a Wednesday (checked with Python's datetime).
+  sources: []
+  evidence: []
+- id: c2
+  text: 'Speaker notes: host bio (Associate Professor of CS; Director of CARC; 12 years building national cyberinfrastructure; PI/Co-PI on NSF OAC and DBI projects)'
+  kind: factual
+  priority: low
+  status: unverified
+  validation: Match the bio to the department's faculty page and to NSF award records (Award Search API, by PI name).
+  sources: []
+  evidence: []

@@ -1,0 +1,37 @@
+slide: 9
+title: Years of work, compressed into days
+section: 02 · Science
+claims:
+- id: c1
+  text: 'AlphaFold: 2024 Nobel; 200M structures published open'
+  kind: quantitative
+  priority: medium
+  status: unverified
+  validation: Get the current entry count from the AlphaFold Protein Structure Database (EMBL-EBI) and its license.
+  sources:
+  - https://alphafold.ebi.ac.uk/
+  evidence: []
+- id: c2
+  text: 'ESM: binders designed, then bench-tested; three or four years down to days (notes: five cancer and immunology targets)'
+  kind: attribution
+  priority: high
+  status: unverified
+  validation: Identify the primary publication or release (which organization, which model version), the five targets, and where 'three to four years' comes from.
+  sources: []
+  evidence: []
+- id: c3
+  text: 'Evo 2: generative genome model, open source; more than 90% accuracy on BRCA1 variants'
+  kind: attribution
+  priority: high
+  status: unverified
+  validation: 'Check the Evo 2 paper (Arc Institute, 2025) for the exact metric (accuracy vs. AUROC) and dataset. Optional real-code check: rerun the BRCA1 variant-effect notebook from the Evo 2 repository on a Jetstream2 GPU.'
+  sources: []
+  evidence: []
+- id: c4
+  text: 'AlphaGenome: a megabase of context, single-base resolution; a variant scored in about a second'
+  kind: attribution
+  priority: medium
+  status: unverified
+  validation: Context length and resolution from the AlphaGenome paper. Time a variant-scoring call against the AlphaGenome API ourselves for the 'about a second' claim.
+  sources: []
+  evidence: []

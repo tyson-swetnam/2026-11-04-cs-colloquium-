@@ -1,0 +1,56 @@
+slide: 6
+title: Hallucination is an engineering problem
+section: 01 · Fear
+claims:
+- id: c1
+  text: “It invents citations” → the agent must call a real index
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'Small demo: resolve every DOI an agent emits against the Crossref REST API and reject the ones that do not resolve. Show a run with and without the retrieval step.'
+  sources: []
+  evidence: []
+- id: c2
+  text: “It makes up metadata” → terms must resolve in an ontology
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: Covered by slide 19's OLS resolver; link that evidence here.
+  sources: []
+  evidence: []
+- id: c3
+  text: “It varies run to run” → a JSON schema, validated in the agent
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'Demo: the same prompt run N times with and without schema-constrained output; report the fraction of runs that pass validation.'
+  sources: []
+  evidence: []
+- id: c4
+  text: “I cannot audit it” → provenance in DuckLake; replay any run
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'Demo: record an agent session to a DuckLake catalog, then replay it from a snapshot (shared with slide 14).'
+  sources: []
+  evidence: []
+- id: c5
+  text: Google DeepMind's GNoME proposed 380,000 crystals; independent labs confirmed under 5%
+  kind: attribution
+  priority: high
+  status: unverified
+  validation: |
+    Check against the primary paper (Merchant et al., Nature 2023: 2.2M structures, ~381k
+    predicted stable) and the published critiques (e.g. Cheetham & Seshadri, Chem. Mater. 2024).
+    The "under 5%" figure needs a citable source with a stated denominator; if none exists, reword.
+  sources:
+  - https://doi.org/10.1038/s41586-023-06735-9
+  evidence: []
+- id: c6
+  text: Every output is a hypothesis until it is checked
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: Framing; nothing to check.
+  sources: []
+  evidence: []

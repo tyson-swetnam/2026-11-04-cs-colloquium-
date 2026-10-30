@@ -1,0 +1,22 @@
+slide: 8
+title: Two Nobel Prizes for AI-related work
+section: 02 · Science
+claims:
+- id: c1
+  text: 'Physics 2024: John Hopfield & Geoffrey Hinton, foundational discoveries enabling machine learning with artificial neural networks'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: Pull laureates and the prize motivation from the Nobel Prize API (api.nobelprize.org, v2.1) and diff the slide wording against the official motivation.
+  sources:
+  - https://www.nobelprize.org/prizes/physics/2024/summary/
+  evidence: []
+- id: c2
+  text: 'Chemistry 2024: David Baker, Demis Hassabis & John Jumper, computational protein design and protein structure prediction'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: Same API check; the official prize is split, half to Baker and half jointly to Hassabis and Jumper.
+  sources:
+  - https://www.nobelprize.org/prizes/chemistry/2024/summary/
+  evidence: []

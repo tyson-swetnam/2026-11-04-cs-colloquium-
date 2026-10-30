@@ -1,0 +1,12 @@
+slide: 23
+title: 'Demo 3: from question to result'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: A researcher asks a question; the agent queries the lakehouse on NAIRR compute and returns a figure
+  kind: technical
+  priority: high
+  status: unverified
+  validation: Keep the prompt, the agent transcript, the DuckLake snapshot ID and the output figure in this folder.
+  sources: []
+  evidence: []

@@ -1,0 +1,36 @@
+slide: 5
+title: The concerns
+section: 01 · Fear
+claims:
+- id: c1
+  text: 'Financial risk: [the bubble question, who carries the debt]'
+  kind: placeholder
+  priority: high
+  status: unverified
+  validation: 'Write the line, then source it: hyperscaler capex vs. operating cash flow from 10-Ks, and debt or off-balance-sheet financing of data-center builds.'
+  sources: []
+  evidence: []
+- id: c2
+  text: 'Environmental cost: [power, water, siting; New Mexico context]'
+  kind: placeholder
+  priority: high
+  status: unverified
+  validation: 'Write the line, then source it: national data-center electricity use (LBNL US Data Center Energy Usage Report), water use, and New Mexico proposals (e.g. Project Jupiter, Doña Ana County; verify current status).'
+  sources: []
+  evidence: []
+- id: c3
+  text: 'Training and misuse: [how models are trained, and how they are misused]'
+  kind: placeholder
+  priority: medium
+  status: unverified
+  validation: Write the line; cite a primary source for any example of misuse.
+  sources: []
+  evidence: []
+- id: c4
+  text: 'Researchers'' work in closed systems: [open science feeding proprietary models]'
+  kind: placeholder
+  priority: medium
+  status: unverified
+  validation: Write the line; if it names a dataset or license, check the license terms directly.
+  sources: []
+  evidence: []

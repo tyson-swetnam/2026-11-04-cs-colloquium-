@@ -1,0 +1,109 @@
+# Programs and capital booms to put on the same axes as the data-center build.
+#
+#   financing   public | private | mixed
+#   in_moorhouse  value and span as printed on Moorhouse's chart (2024 dollars), for the
+#                 baseline reproduction; null if the comparator is new here
+#   years       first and last year of spend; for Moorhouse programs these are inferred
+#               from the spans on his chart and still need checking against the sources
+#   series      where the annual nominal spend will come from; "verify" means the
+#               table or series ID still has to be confirmed before fetching
+#
+# Order: the build-out itself, then Moorhouse's public megaprojects, then the private
+# capex booms added for this talk.
+
+- id: datacenters
+  name: Hyperscaler data-center capex
+  financing: private
+  years: [2020, 2026]
+  in_moorhouse: {value_busd: 930, span_years: 6, through: 2025}
+  series:
+    - SEC EDGAR XBRL company facts, purchases of property and equipment, for Amazon, Microsoft, Alphabet, Meta, Oracle (verify the concept tag per filer)
+    - Data-center share of capex, ~55% (2020) rising to ~80% (2026), per Epoch AI and Platformonomics as cited by Moorhouse (verify)
+    - Census Value of Construction Put in Place, data-center category, for a US-located structures-only figure (verify)
+  notes: Global spend by US firms. The slide currently says "US data-center build", so scope has to be settled (claims c2).
+
+- id: manhattan
+  name: Manhattan Project
+  financing: public
+  years: [1942, 1946]
+  in_moorhouse: {value_busd: 36, span_years: 5}
+  series: [Brookings, Atomic Audit (Schwartz, ed., 1998) (verify table)]
+
+- id: apollo
+  name: Apollo Program
+  financing: public
+  years: [1960, 1973]
+  in_moorhouse: {value_busd: 257, span_years: 14}
+  series: [NASA budget history; Planetary Society Apollo cost reconstruction (verify)]
+
+- id: interstate
+  name: Interstate Highway System
+  financing: public
+  years: [1956, 1992]
+  in_moorhouse: {value_busd: 620, span_years: 37}
+  series: [FHWA Highway Statistics, Interstate cost estimates and federal-aid apportionments (verify)]
+
+- id: marshall
+  name: Marshall Plan
+  financing: public
+  years: [1948, 1951]
+  in_moorhouse: {value_busd: 170, span_years: 4}
+  series: [Congressional Research Service (verify report number)]
+
+- id: f35
+  name: F-35 Program
+  financing: public
+  years: [2001, 2025]
+  in_moorhouse: {value_busd: 400, span_years: 25}
+  series: [GAO F-35 acquisition reports (verify)]
+
+- id: iss
+  name: International Space Station
+  financing: public
+  years: [1985, 2011]
+  in_moorhouse: {value_busd: 150, span_years: 27}
+  series: [NASA budget documents; NASA OIG cost reports (verify)]
+
+- id: railroads
+  name: US railroads
+  financing: mixed  # private capital, large public land grants and bond guarantees
+  years: [1830, 1900]
+  in_moorhouse: {value_busd: 550, span_years: 71}
+  series:
+    - Fishlow (1966), Productivity and Technological Change in the Railroad Sector, NBER Studies in Income and Wealth 30 (gross investment, 1830s-1900s)
+    - Ulmer (1960), Capital in Transportation, Communications, and Public Utilities, NBER (annual, 1870-1950)
+    - Historical Statistics of the United States, Millennial Edition, railroad series (verify)
+  notes: The comparator most likely to change rank once spend is measured as a share of a much smaller 19th-century economy.
+
+- id: oil_gas
+  name: US shale oil and gas boom
+  financing: private
+  years: [2008, 2015]
+  in_moorhouse: null
+  series: [BEA NIPA private fixed investment in structures, "mining exploration, shafts, and wells" (verify table and line)]
+  notes: A recent private capex boom that ended in a price collapse and defaults; a direct comparison for the financial-risk concern on slide 05. Alternative episode is the 1973-1982 oil boom.
+
+- id: telecom
+  name: Telecom and fiber build-out
+  financing: private
+  years: [1995, 2002]
+  in_moorhouse: null
+  series: [BEA NIPA private fixed investment, communication equipment plus communication structures (verify tables and lines)]
+  notes: The canonical over-build; much of the fiber laid sat dark for years and later carried the internet.
+
+- id: postwar
+  name: Post-war reconstruction
+  financing: private  # pending the scope decision in the README
+  years: [1946, 1960]
+  in_moorhouse: null
+  series: [BEA NIPA private nonresidential and residential fixed investment, 1946-1960 (verify)]
+  notes: Scope to confirm. As written this is the US private investment boom; the alternative is European and Japanese reconstruction investment, which needs non-US GDP denominators.
+
+# Denominators and price indexes used by every comparator
+macro:
+  - {id: us_gdp_nominal, series: "MeasuringWorth, US nominal GDP 1790-present (Johnston & Williamson)", license: "free for research, attribution required"}
+  - {id: us_gdp_deflator, series: "MeasuringWorth, US GDP deflator 1790-present"}
+  - {id: us_population, series: "MeasuringWorth, US population 1790-present"}
+  - {id: us_cpi, series: "MeasuringWorth, US CPI 1774-present; BLS CPI-U (FRED CPIAUCSL) from 1913 as a cross-check"}
+  - {id: us_gdp_bea, series: "BEA NIPA Table 1.1.5 via FRED (GDPA), 1929-present, to cross-check MeasuringWorth"}
+  - {id: world_gdp, series: "World Bank WDI NY.GDP.MKTP.CD, 1960-present; Maddison Project for earlier years", notes: "only if the data-center numerator stays global"}

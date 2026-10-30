@@ -1,0 +1,22 @@
+slide: 14
+title: Data lakehouse
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: Low-cost storage, with governance and ACID transactions
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'Runnable DuckLake demo: Parquet on object storage, a concurrent-write test showing transactional behaviour, and time travel to a named snapshot (the ''day the paper was submitted'' in the notes).'
+  sources:
+  - https://ducklake.select/
+  evidence: []
+- id: c2
+  text: 'Figure: MESA proposal · NSF Award #2632685'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: Look up award 2632685 in the NSF Award Search API; record title, PI, program and start date.
+  sources:
+  - https://www.nsf.gov/awardsearch/showAward?AWD_ID=2632685
+  evidence: []
