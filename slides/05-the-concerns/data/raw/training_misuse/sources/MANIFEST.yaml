@@ -1,0 +1,144 @@
+anthropic_aug2025_threat.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 475df974f7182d2d710f4287357dc52c1cc4675a05b9159fcd87ab7873c8fa73
+anthropic_aug2025_threat.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 8251e7bd2b2733d1c72045d03884e8075df952c72e84020913d0643cb5618400
+anthropic_gtg1002.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: f35a7b90d06e60c6fc14c99c12945f3d13026861dee97ebb2ed5ac5e1d8bebf5
+anthropic_gtg1002.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: df29355e230759efb785bbd12531e57ff209f7de374a1772549620146f4c2ef3
+b.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 0c2611366c7802914735887d70550099157e6d4846f14bb0ab76ed1de09e39d5
+bartz_fairuse_order.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 6d37e99e468b5d1076fedf44c32bfaf11d9a71eb70cc678691549946a5800c52
+bartz_fairuse_order.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 0671876980c04c3a1035aa222908c356d6b8dec3c5437870532244a450ca2730
+blog_iclr_cc_2025_11_19_iclr-2026-response-to-llm-generated-papers-and-reviews_.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: e699c18ca1efee7028ac9212f11af26e5954219325cee132246c9fe7fcf99f37
+blog_iclr_cc_2025_11_19_iclr-2026-response-to-llm-generated-papers-and-reviews_.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 26b4db525a70b856001fb509742dfa38b66b3ed33bc0a5ad0cbeffe94bf0e017
+blog_iclr_cc_2026_03_31_a-retrospective-on-the-iclr-2026-review-process_.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 337b70619e48022f8c99ca9e2071cb0753c313a40eb86776aab28ed9fb354267
+blog_iclr_cc_2026_03_31_a-retrospective-on-the-iclr-2026-review-process_.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 7a34cbc4711d551b74c7f75aca62b9d37c71f4dd6831e40733de7c53bbe6a4c5
+blog_icml_cc_2026_03_18_on-violations-of-llm-review-policies_.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 87c9f45db7c44c95c16e9f4f49b2793c059be175185fa9d592657c8cfd598422
+blog_icml_cc_2026_03_18_on-violations-of-llm-review-policies_.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: bbd0b4ec389589955a17be5816a4acf8f2770400269f84fcf3fb824de325a6ef
+charlotin_db.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: fe49ae8fdd3725c1102a1f4ca6db2f1948d1002058f4269816b78cac9d155796
+charlotin_db.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: f870ac008316372f301fe021aa23ab80a222de3fb58926ab09cc1f2f7b95bd9d
+epoch_trends.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 060ae0e6dd0972df8dddd7c87622bf90ffd7ba5716153525479b00b814886e35
+epoch_trends.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 1aeca9003a5d933da77f4642d2bb5b29fee88fee3720313ed6a9aca34d461ce6
+getty.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 2988a85efdbeda9531ef3b3b2ba820c35f488c0402793196ca30f7942219e738
+getty_ewhc_2025_2863.xml:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: b97f8f86be0aba3da7ba16cf0528555c1bbaca34449f4f079f5d85acbe22c6c6
+gptzero_neurips.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 801553bfb70f6c65ca453cd886117e65be53dc792f36a7cf5709001da8bd06dd
+gptzero_neurips.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: d3e9693f2092e55c438d7c5332253ea02a39bdcb42ebd1c6752033e86459cd7c
+gtig_may2026.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: b634935fa3b0b70100dd5371312f1af78e3cf08c6afc3082a52c0fa52e8293af
+gtig_may2026.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: ae76493a12f72b3f66858e35c3d43f03b9b357ee8444cfb119869fb151074bca
+k.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: a86062f7177b6fde88cc9f0178d7b36e6505ef6aac999d7e0cc681188a56a370
+kadrey_sj_order.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 583d2cd060d573ad24437852d36e2629bc5dc666b9e3f98859385ecfc58f161f
+llama31_model_card.md:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: a37da4be5eb00d97ee0017cadf54c55e8aca84c715fa7d0981d3f2bc13b763ef
+notice.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 62d76900bed9315ea3619473ca8bc22d0a284048ae4f05b4d4653dd0706ed8be
+openai_oct2025.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: e119c3e9ebbbc321838a1fc5720305ed40853dccbfef5b8b26cf7f31777dc535
+openai_oct2025.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 59cb929995d423ae2302dace6c1fd1dc5afb967a1ad07213a1058f4515ca9e74
+pangram_iclr.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: d6e36a28d438aab1eed17fdf68ff4c992054050fc47f1d8ed67b680829c62908
+pangram_iclr.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 62d64093060ea8bbe03f953561d1bcae351ce69cd3adccd29527f430cc65844e
+ross.txt:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 210a3538859bfe2e55ea82de511425c5117e3818594ad1df538b724b5d44e53a
+ross_3dcir_252153p.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 36384e066f20ad6504095dcafff953467d1a59b8d39a3a5146eed9fa9b5b0b1d
+settlement_home.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: fd86527929465b2389738ef1559080244839616706cfc3a24c7b223059bb2962
+settlement_longform_notice.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: 6f67f1034093d544a962e1f2bf37465d1248942a2bab0f9ea7040a75b2c1ef52
+suchak_plosbio.xml:
+  note: saved 2026-10-30 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-30'
+  sha256: bde260c60f8d06963e5876e13fd44bbc1cc4164d1c06d657748624dbfc6d9b31
