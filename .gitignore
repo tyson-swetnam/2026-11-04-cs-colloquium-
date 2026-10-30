@@ -231,6 +231,9 @@ slides/05-the-concerns/data/raw/sec/*.json
 # Slide 05 research documents: logged in each sources/MANIFEST.yaml, not committed
 slides/05-the-concerns/data/raw/*/sources/*
 !slides/05-the-concerns/data/raw/*/sources/MANIFEST.yaml
+!slides/05-the-concerns/data/raw/*/sources/html/
+slides/05-the-concerns/data/raw/*/sources/html/*
+!slides/05-the-concerns/data/raw/*/sources/html/MANIFEST.yaml
 # Program source documents (PDFs, spreadsheets): logged in MANIFEST.yaml, re-download from the URL
 slides/04-the-build-out/data/raw/programs/sources/*
 !slides/04-the-build-out/data/raw/programs/sources/MANIFEST.yaml

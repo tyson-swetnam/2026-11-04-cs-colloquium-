@@ -2,6 +2,7 @@
 
     fig1_capex_vs_cash.png   hyperscaler capex vs. operating cash flow, 2019 to the last 12 months
     fig2_debt.png            total debt per firm, end of FY2024 vs. latest filing
+    fig3_new_mexico.png      one proposed campus (Project Jupiter) against New Mexico's electricity use
 """
 
 from __future__ import annotations
@@ -72,11 +73,42 @@ def debt():
     save(fig, "fig2_debt")
 
 
+def new_mexico():
+    env = pd.read_csv(OUT / "environment_nm.csv").set_index("quantity").value
+    facts = pd.read_csv(config.RAW / "environment" / "facts.csv", index_col="id")
+    pnm_sales = float(str(facts.loc["D5", "value"]).replace(",", "")) / 1e6  # MWh -> TWh
+    bars = [
+        ("New Mexico, all retail sales (2024)", env["nm_retail_sales_twh"], style.MUTED, False),
+        ("PNM, all retail sales (2024)", pnm_sales, style.MUTED, False),
+        ("Project Jupiter at full nameplate (2,462 MW)", env["Project Jupiter at nameplate, TWh/yr (upper bound)"], CAPEX, True),
+        ("Project Jupiter at its proposed 1,600 MW cap", env["Project Jupiter at 1,600 MW cap, TWh/yr (upper bound)"], CAPEX, True),
+    ]
+    fig, ax = plt.subplots(figsize=(14, 6.5))
+    for i, (label, v, c, upper) in enumerate(bars):
+        ax.barh(i, v, height=0.6, color="white" if upper else c, edgecolor=c, linewidth=2, hatch="//" if upper else None)
+        ax.text(v + 0.4, i, f"{v:.1f} TWh", va="center", fontsize=15, color=style.INK)
+    ax.set_yticks(range(len(bars)), [b[0] for b in bars], fontsize=15)
+    ax.invert_yaxis()
+    ax.set_xlim(0, max(b[1] for b in bars) * 1.2)
+    ax.grid(axis="y", visible=False)
+    ax.set_xlabel("Electricity per year, terawatt-hours")
+    ax.set_title("One proposed campus vs. New Mexico", loc="left", pad=36)
+    ax.text(0, 1.02, "Project Jupiter, Santa Teresa (Doña Ana County) · hatched = if run all year; air permit hearing Dec. 7, 2026", transform=ax.transAxes, fontsize=15, color=style.MUTED)
+    fig.text(
+        0.01, -0.04,
+        "Sources: EIA New Mexico Electricity Profile 2024; NMED notice AQB 26-57 (NSR 10883, 2,462 MW fuel cells); "
+        "1,600 MW cap per revised application (Albuquerque Journal, Oct. 27, 2026). github.com/tyson-swetnam/2026-11-04-cs-colloquium-",
+        fontsize=11, color=style.MUTED, wrap=True,
+    )
+    save(fig, "fig3_new_mexico")
+
+
 def main():
     style.use()
     FIG.mkdir(exist_ok=True)
     capex_vs_cash()
     debt()
+    new_mexico()
 
 
 if __name__ == "__main__":

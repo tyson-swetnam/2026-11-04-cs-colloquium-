@@ -1,0 +1,76 @@
+drbc_thompson.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 601cb4339317de357ee919f0d298c6e935f821d91d1df67653e07bccfb36d549
+eia_SEP_Tables_for_NM_2024.xlsx:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 1ef63fe644c53bd9fffb2de533fce1725dc1d4f7e602dc8fa8bf3dba65addd27
+lbnl_2025_update.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 1108b5a0f829a4e398a3f364ab064de0fdd70743123de08ca979c88dee5be012
+newera_7GW_LeaCounty_pr_2025-11-06.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: dbc08265dfa1c4b1803e42b7c280312752d592049633996d193506461217f8d9
+nmed_10883_draft_statement_of_basis_2026-07-29.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 715f148d3d3afe798011cefdeab89bfe6d7877e01b081100fb741a650de02eee
+nmed_AQB26-57_2nd_amended_sched_order_2026-10-16.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 7e7b6e52ed0cbad5c23ed8edb15f31e75a07394301a3946742b7b1a0a627d011
+nmed_AQB26-57_amended_notice_2026-08-12.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: a8b6665b4f82b04e1ba9dc1bed9b46889d249759c592e07a950a000a979cb8cc
+nmlegis_CCJ_100526_dc_water.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: f892335643d13ca01ab4df3c08665927b298c7158f64123897a3014c507fe4a5
+nmlegis_ERDPC_063026_LosLunas.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 69898a2b69b98e804ab5dcd57962d9054f3e6bec66e0e5317a87fb6a20140d16
+nmlegis_WNR_071326_PRC_data_centers.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 7df144ad4fc4567695695679937e5670af932aa97a9e217ec00eaf0afebc9c16
+nmlegis_WNR_083126_HARC_dc_water.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 0d6250aac5ee90cb97e91fa046710c41016c958234869e4f290ae6e7684cf136
+nmlegis_WNR_083126_Meta_LosLunas_water.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 5624e3b7809b458848f3b72e0d11cf77e3c8ef51090b13f3624dd8db23911207
+nmlegis_WNR_083126_OSE_dc_water.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 55651eb59957bbd2b1d0206efe37037ff5ee9922833af10063f07c8411f6db65
+nmlegis_WNR_102925_WRA_dc_water_energy.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: a5c6bf8828760957ddc6239b479fe63b68a747874f52acd5745d91609979b7d5
+osti_17273330.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: fa60de36a3c1ab401ce216bba610f23f67396f7b9780a2055779f6d97dd25889
+osti_3020313.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 24a7c145f94bda3d4f940872777130a20e54eac7a470117c12d50eceae17ff90
+pnm_irp2026_forecasts_demand_markets.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: fc0d79cfd3bb677b706e564252de740a2eab3e5081e5b38d6e25251570b2125c
+shehabi_eli_slides.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: b1479f4ea0bb4b262c294003f8790c5501803b4e33fe06eaa29731a48475803d
+wra_2025_DataCenter_FactSheet_NM.pdf:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 3bc4f5fc31cf7300d515f31486827b962f8fc3280aaf79214a3bff5e6ecab798
