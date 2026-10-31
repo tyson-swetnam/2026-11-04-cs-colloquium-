@@ -1,0 +1,15 @@
+{
+  "enwiki": {
+    "size": 47827,
+    "width": 250,
+    "height": 388,
+    "sha1": "b5154e381281f868d21820eeeacb69d33398bd8d",
+    "mime": "image/jpeg",
+    "timestamp": "2024-07-10T11:14:30Z"
+  },
+  "deck": {
+    "bytes": 47827,
+    "sha1": "b5154e381281f868d21820eeeacb69d33398bd8d"
+  },
+  "identical": true
+}

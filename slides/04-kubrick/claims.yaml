@@ -29,8 +29,8 @@ claims:
   - data/raw/research/facts.csv
   - data/processed/commons_licences.json
   - data/processed/deck_images.json
-  notes: 'War Room still and trailer: Commons tags both {{PD-US-no notice}} (US publication 1931-1977 without a copyright notice); the still is a frame from the trailer. That is public domain in the US only, and Commons warns it may still be copyrighted elsewhere. The deck War Room image is a 1280x768 downscale of the Commons 1800x1080 original. The poster does not hold: the Commons file named "Dr._Strangelove_poster.png" is a 1196x720 frame from the trailer, while the deck shows a 250x388 JPEG (47,827 bytes) that matches the non-free English Wikipedia file "Dr._Strangelove_poster.jpg" (see c4). The trailer is linked in the notes but not embedded in the deck.'
-  proposed_text: 'Poster: Tomi Ungerer, © 1964 Columbia Pictures (fair use) · War Room still and trailer: Columbia Pictures, 1964, via Wikimedia Commons · Public domain in the US'
+  notes: 'War Room still and trailer: Commons tags both {{PD-US-no notice}} (US publication 1931-1977 without a copyright notice); the still is a frame from the trailer. That is public domain in the US only, and Commons warns it may still be copyrighted elsewhere. The deck War Room image is a 1280x768 downscale of the Commons 1800x1080 original. The poster does not hold: the Commons file named "Dr._Strangelove_poster.png" is a 1196x720 frame from the trailer, while the deck shows a 250x388 JPEG (47,827 bytes) that matches the non-free English Wikipedia file "Dr._Strangelove_poster.jpg" (see c4). The trailer is linked in the notes but not embedded in the deck, so the slide credit should name only the War Room still. The PD status rests only on the {{PD-US-no notice}} tag added by Commons uploaders; it was not independently checked (e.g. against US Copyright Office records), and the War Room still was captured from a 2004 DVD (Commons source line), so attribute the PD status to Commons rather than state it as plain fact.'
+  proposed_text: 'Poster: Tomi Ungerer, 1964 (copyrighted; used for commentary) · War Room still: Columbia Pictures, 1964, via Wikimedia Commons · Public domain in the US (per Commons: published without a copyright notice) · Trailer linked in notes'
 - id: c3
   text: 'Plot: a (paranoid) general orders a nuclear first strike, and the President’s War Room scrambles to stop it and recall the bombers'
   kind: factual
@@ -54,9 +54,10 @@ claims:
   - https://commons.wikimedia.org/wiki/File:Dr._Strangelove_poster.png
   evidence:
   - data/processed/deck_images.json
+  - data/processed/enwiki_poster_match.json
   - data/raw/research/facts.csv
-  notes: 'Added in review. The embedded poster is 250x388 px, 47,827 bytes, which matches the English Wikipedia file "Original file (250 × 388 pixels, file size: 47 KB)". That file is tagged non-free ("No free or public domain images have been located for this item"). The Commons PNG that the notes cite is a landscape trailer frame, not this poster. Either credit the poster as fair use (copyright Columbia Pictures), or swap in the Commons trailer frame, which is public domain in the US.'
-  proposed_text: 'Poster: Tomi Ungerer, © 1964 Columbia Pictures (fair use)'
+  notes: 'Added in review. The embedded poster is a 250x388 JPEG of 47,827 bytes. It is byte-identical to the English Wikipedia file "Dr._Strangelove_poster.jpg": the MediaWiki imageinfo API gives size 47827 and SHA-1 b5154e381281f868d21820eeeacb69d33398bd8d, the same as the decoded deck image (data/processed/enwiki_poster_match.json; the file page itself only rounds to "47 KB"). That file is tagged non-free ("No free or public domain images have been located for this item"). The Commons PNG that the notes cite is a landscape trailer frame, not this poster. No fetched source names the copyright holder (the page says only that the copyright "is most likely owned by either the publisher or the creator of the work depicted") or shows a 1964 notice, so the earlier suggestion "© 1964 Columbia Pictures" was dropped. The fair-use rationale on that page covers only use on English Wikipedia; whether the talk''s use is fair use is a legal judgement this evidence cannot make. Options: credit it as a copyrighted image used for commentary, or swap in the Commons trailer frame, which Commons tags public domain in the US.'
+  proposed_text: 'Poster: Tomi Ungerer, 1964 (copyrighted; used for commentary)'
 - id: c5
   text: 'The poster artwork is by Tomi Ungerer'
   kind: attribution
@@ -69,3 +70,15 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   notes: 'Added in review. No primary source (e.g. the Musée Tomi Ungerer catalogue) was fetched; two independent secondary sources agree. Note that the author field on the Commons "poster" PNG says Ungerer, but that file is a trailer frame (the trailer is credited to Pablo Ferro).'
+- id: c6
+  text: 'In 1964 the worry was a nuclear war'
+  kind: qualitative
+  priority: low
+  status: supported
+  validation: 'Wikipedia article (secondary) describes the film as a parody of Cold War fears of nuclear war between the US and the Soviet Union; the BBFC synopsis (official) describes a general ordering a nuclear attack on the Soviet Union.'
+  sources:
+  - https://en.wikipedia.org/wiki/Dr._Strangelove
+  - https://www.bbfc.co.uk/release/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-q29sbgvjdglvbjpwwc0yodmyotc
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Added after review. A broad framing statement about the era, read through the film; supported by a secondary source only. Fine as speaker framing.'

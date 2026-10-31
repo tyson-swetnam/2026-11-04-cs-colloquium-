@@ -4,9 +4,21 @@ nsf_award_1743442.json:
   sha256: 2a01fe703937721b5fbc1285430dc3769fefd15dc22b68508391e61adb1ed638
   source: NSF Award API
   url: https://api.nsf.gov/services/v1/awards/1743442.json?printFields=id,title,awardeeName,startDate,expDate,orgLongName2,fundProgramName,estimatedTotalAmt
+nsf_award_2608717.json:
+  note: award 2608717 (MESA, University of Arizona)
+  retrieved: '2026-10-31'
+  sha256: 0b99850e28f40b9673552239265058f67dc659151f025ca76ff298055d771a5b
+  source: NSF Award API
+  url: https://api.nsf.gov/services/v1/awards/2608717.json?printFields=id,title,awardeeName,pdPIName,coPDPI,startDate,expDate,fundProgramName,orgLongName2,estimatedTotalAmt,fundsObligatedAmt,fundsObligated,progEleCode,progRefCode,program,transType,date
 nsf_award_2632685.json:
   note: award 2632685 (MESA)
   retrieved: '2026-10-31'
   sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
   source: NSF Award API
   url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,awardeeName,pdPIName,coPDPI,startDate,expDate,fundProgramName,orgLongName,orgLongName2,estimatedTotalAmt,fundsObligatedAmt,abstractText,progEleCode,progRefCode
+nsf_search_mesa.json:
+  note: keyword search for MESA awards
+  retrieved: '2026-10-31'
+  sha256: 7f553da82dbf7e526912513c5f57dc68f8222915ddad187abffee1820bc5522a
+  source: NSF Award API
+  url: https://api.nsf.gov/services/v1/awards.json?keyword=MESA%20Multidisciplinary%20Environment%20Scientific%20Advancement&printFields=id,title,awardeeName,startDate,expDate

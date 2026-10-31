@@ -15,6 +15,7 @@ import pandas as pd
 
 SLIDE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SLIDE.parents[1]))
+from evidence.fetch import record  # noqa: E402
 from evidence.http import CachedGet  # noqa: E402
 
 UA = "colloquium-evidence/0.1 (UNM CARC research)"
@@ -34,6 +35,14 @@ def main() -> None:
     rows = []
     for what, publisher, url, pattern in PAGES:
         status, body = get(url)
+        # requests falls back to ISO-8859-1 when a page sends no charset; undo that so quotes are exact.
+        try:
+            body = body.encode("latin-1").decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            pass
+        raw = SLIDE / "data" / "raw" / "sources" / f"client_{re.sub(r'[^a-z0-9]+', '_', what.lower()).strip('_')}.html"
+        raw.write_text(body, encoding="utf-8")
+        record(raw, url=url, source=publisher, note=f"MCP support page for {what}; body as served (cached GET)")
         text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", body)))
         m = re.search(pattern, text)
         rows.append({"claim": what, "publisher": publisher, "url": url, "http_status": status, "supported": bool(m), "quote": m.group(0).strip() if m else ""})

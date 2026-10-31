@@ -1,4 +1,4 @@
 measure,value,basis
-off_balance_sheet_vs_subprime_2007_real,1.35,"OMI report: $3.1T off-balance-sheet (WSJ, 9 firms) / $2.3T subprime peak in 2026 dollars"
-total_debt_vs_subprime_2007_real,1.61,OMI report: $3.7T on- and off-balance-sheet / $2.3T
-genai_revenue_share_of_spend_upper,0.2,OMI report: at most 20% (possibly <10%) of >$1T 2026 spend
+off_balance_sheet_vs_subprime_2007_real,1.35,"OMI report: $3.1T off-balance-sheet (WSJ, 9 firms) / $2.3T subprime peak in 2026 dollars. Caveat: unlike kinds - the $3.1T is purchase commitments and signed leases (F28), the $2.3T is outstanding mortgage debt"
+total_debt_vs_subprime_2007_real,1.61,OMI report: $3.7T on- and off-balance-sheet / $2.3T (same caveat: mixes debt with commitments and leases)
+genai_revenue_share_of_spend_upper,0.2,OMI report: genAI revenue from outside the genAI ecosystem is at most 20% (possibly <10%) of >$1T spent in 2026

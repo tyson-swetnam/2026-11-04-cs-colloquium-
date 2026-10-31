@@ -20,12 +20,17 @@ claims:
   notes: |
     The report does draw the subprime comparison ("eerily reminiscent of the subprime bubble", F04) and sets $3.1T of
     off-balance-sheet commitments against the $2.3T (2026 dollars) 2007 subprime peak (F05; 1.35x in ratios.csv).
+    Caveat if the ratio is used: the two figures are different kinds of thing. The $3.1T is the WSJ's total of
+    purchase commitments and signed leases for nine firms (report note 50, F28), not loans; the $2.3T is outstanding
+    subprime mortgage debt.
     Wording problems: (1) it is one report, by the Open Markets Institute with the Americans for Financial Reform
     Education Fund (Scherer and Jenkins, published Oct. 16, 2026), not "think-tanks" or "OpenMarkets";
     (2) the slide kicker "a 2008 repeat" is stronger than the report, which calls the bubble "unique in recent history".
-    Independent economists are more cautious: Van Nieuwerburgh (Brookings, 2026) says it is "premature" to call it
-    systemic risk comparable to earlier credit booms; Hepp (Chicago Booth Review, 2026) says the outcome "would be
-    different from 2008" (F15, F16). OMI and AFR are advocacy groups; present this as their warning.
+    Independent economists are more cautious. Hepp (Chicago Booth Review, 2026) says today's situation "is not a rerun
+    of the 2008-09 financial crisis" and that losses "would be different from 2008" (F31, F16). Van Nieuwerburgh
+    (Brookings BPEA conference draft, not yet peer reviewed) does not discuss the report or 2008; he says only that
+    it is "premature" to conclude AI infrastructure already poses systemic risk comparable to earlier credit booms,
+    and lists exposure questions needing study (F15). OMI and AFR are advocacy groups; present this as their warning.
   proposed_text: 'An advocacy think tank sees echoes of the 2008 subprime crisis in how the AI build-out is financed.'
 - id: c2
   text: 'Speculative data-center debt is being repackaged and resold to pension funds, retirement funds and university endowments'
@@ -44,11 +49,12 @@ claims:
     The slide wording matches the report's executive summary verbatim (F04), so as an attribution it is accurate.
     As a fact it is the report's characterisation: its body says data-center loans are "often securitized" and sold
     to "insurers and pension funds" (F06). Endowments' exposure, per the independent source the report cites (Hepp),
-    is as limited partners in private-credit funds, not as buyers of repackaged bonds (F07); Hepp puts
+    is as limited partners in private-credit funds, not as buyers of repackaged bonds (F07). That is a modelled loss
+    scenario "under the assumptions used in the analysis" (F30), not an observed exposure figure. Hepp puts
     infrastructure and asset-backed securities at only about $60B of AI financing (F08). The SEC no-action letter on
     data-center securitizations (July 29, 2026, cited by the report) could not be read: sec.gov returned 403 to our
     User-Agent. The slide also repeats itself ("repackaged and resold" then "bundled and sold to"); keep one.
-  proposed_text: 'Some data-center loans are bundled into bonds sold to insurers and pension funds; endowments are exposed through private-credit funds.'
+  proposed_text: 'Some data-center loans are bundled into bonds sold to insurers and pension funds; in one analysis (Hepp), endowments would bear losses through private-credit funds.'
 - id: c3
   text: 'Trillions on a revenue gap: leading labs do not yet earn enough to cover their rising costs'
   kind: quantitative
@@ -62,17 +68,28 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   - data/processed/capex_vs_ocf.csv
+  - data/processed/capex_vs_ocf_quarterly.csv
   - data/processed/ratios.csv
   notes: |
-    Report: over $1T of AI infrastructure spending in 2026, with outside generative-AI revenue at most 20% (maybe
-    under 10%) of it (F09). Van Nieuwerburgh: the 2025-2032 build-out needs about $3.7T a year of revenue by 2032
-    (F12). Lab losses are press-reported, not audited: OpenAI reportedly lost $38B+ on $13B revenue and Anthropic
+    Report: over $1T of AI infrastructure spending in 2026 ("this year", not an annual rate), with generative-AI
+    revenue from customers outside the generative-AI ecosystem at most 20%, "quite possibly less than 10%", of it
+    (F09). The ceiling excludes sales between AI and tech firms; broader counts such as The Economist's $150-200B
+    are higher (F27). Van Nieuwerburgh (BPEA conference draft, not yet peer reviewed): a modelled 183 GW U.S.
+    build-out needs about $3.7T a year of revenue by 2032 to earn a 10% unlevered return at a 50% operating
+    cash-flow margin (F12, F32). Lab losses are press-reported, not audited: OpenAI reportedly lost $38B+ on $13B revenue and Anthropic
     reportedly $42B in 2025 (F10); the report notes Anthropic's 2026 revenue improved (F11). Labs are private, so
     "do not yet earn enough" cannot be checked against filings. The report's line that hyperscaler cash flows turned
-    negative in summer 2026 (F23, Bloomberg estimates for four firms) is not borne out by SEC actuals for five firms:
-    capex was 95.5% of operating cash flow in the 12 months to 2026Q3, still $33B short of it (capex_vs_ocf.csv).
-    "Trillions" is fair for the cumulative build-out, not the annual gap.
-  proposed_text: 'Over $1 trillion a year on AI infrastructure; sales cover a fifth at most (report estimate). The leading labs reportedly lost billions in 2025.'
+    negative as of summer 2026 (F23) is broadly consistent with SEC actuals for the July-September 2026 quarter:
+    four-firm capex (Alphabet, Amazon, Meta, Microsoft) was $201.9B against $175.5B operating cash flow (-$26.4B);
+    adding Oracle (fiscal quarter Jun-Aug) gives $230.4B against $198.6B (-$31.8B). Amazon, Alphabet, Meta and
+    Oracle were each negative that quarter; Amazon, Alphabet and Oracle already in 2026Q2
+    (capex_vs_ocf_quarterly.csv). Van Nieuwerburgh independently expects capex to pass the five firms' combined
+    operating cash flow "for the first time in 2026" (F24, F25). Caveats: the report's own figure is four firms,
+    Bloomberg free cash flow on a trailing-12-month basis, with Q3 2026 onward marked as estimates (F26); on a
+    trailing-12-month basis SEC operating cash flow still exceeded capex to 2026Q3 (95.5%, capex_vs_ocf.csv).
+    An earlier version of these notes called the report's line "not borne out"; that relied on the TTM view only
+    and was wrong. "Trillions" is fair for the cumulative build-out, not the annual gap.
+  proposed_text: 'Over $1 trillion spent on AI infrastructure in 2026; end-user AI sales cover a fifth at most (report estimate). The leading labs reportedly lost billions in 2025.'
 - id: c4
   text: 'Contagion risk: the spending is concentrated and interconnected'
   kind: attribution
@@ -89,8 +106,12 @@ claims:
   notes: |
     Supported as the report's view: players are "deeply interconnected" so "a crash affecting any one part of the
     industry would likely spread" (F13), and "it could spread well beyond the tech sector" (F14). Slide wording is a
-    fair paraphrase. Balance: Van Nieuwerburgh calls it premature to equate this with systemic risk of earlier credit
-    booms (F15), and Hepp expects losses far less concentrated in banks than in 2008 (F16).
+    fair paraphrase of the report. The verdict holds as an attribution only: the slide line "If the debts go bad, the
+    damage could spread well beyond tech" is unattributed, while Hepp says the financing structure "may reduce the
+    likelihood of contagion" (F29). Attribute it, as for c6. Balance: Van Nieuwerburgh calls it premature to equate
+    this with systemic risk of earlier credit booms (F15), and Hepp expects losses far less concentrated in banks
+    than in 2008 (F16).
+  proposed_text: 'The report warns that if the debts go bad, the damage could spread well beyond tech.'
 - id: c5
   text: "Notes: the report warns the odds of a deep AI crash are rising, and calls today's situation unique in size and scope"
   kind: attribution

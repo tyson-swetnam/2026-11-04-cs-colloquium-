@@ -25,6 +25,7 @@ SOURCES = {
     "typesafe_launch": ("https://typesafe.ai/blog/introducing-system-one-models-and-jev", "TypeSafe AI"),
     "typesafe_concept": ("https://docs.typesafe.ai/concepts/system-one", "TypeSafe AI"),
     "typesafe_confidence": ("https://docs.typesafe.ai/confidence", "TypeSafe AI"),
+    "typesafe_box": ("https://docs.typesafe.ai/primitives/box", "TypeSafe AI"),
     "typesafe_models": ("https://docs.typesafe.ai/models", "TypeSafe AI"),
     "typesafe_jagged": ("https://docs.typesafe.ai/model-jaggedness/jev-1.13", "TypeSafe AI"),
     "cloudflare_blog": ("https://blog.cloudflare.com/clef-decision-models", "Cloudflare"),

@@ -1,3 +1,39 @@
+client_antigravity.html:
+  note: MCP support page for Antigravity; body as served (cached GET)
+  retrieved: '2026-10-31'
+  sha256: 973375d1e396785f7b36afb2c7ee3a55fbd09f7c518bec0094e790e3d10b4e30
+  source: Google
+  url: https://antigravity.google/docs/mcp
+client_claude_code.html:
+  note: MCP support page for Claude Code; body as served (cached GET)
+  retrieved: '2026-10-31'
+  sha256: 540b36e89829a40301bb47a55c18f9d7b1abb24388a99ad9caf2d6159be0b3a6
+  source: Anthropic
+  url: https://code.claude.com/docs/en/mcp
+client_codex.html:
+  note: MCP support page for Codex; body as served (cached GET)
+  retrieved: '2026-10-31'
+  sha256: 47e657aed46470880a63328192990082abb081f72c7ab10822949b923ac85059
+  source: OpenAI
+  url: https://developers.openai.com/codex/mcp
+client_goose.html:
+  note: MCP support page for Goose; body as served (cached GET)
+  retrieved: '2026-10-31'
+  sha256: 09ae0c69a7f4b43576f07f7daa88bfe0185bd711a40c806720746d3af6dcc198
+  source: Block / Agentic AI Foundation
+  url: https://goose-docs.ai/
+client_opencode.html:
+  note: MCP support page for OpenCode; body as served (cached GET)
+  retrieved: '2026-10-31'
+  sha256: 825dfa2840f3d826fa4ee4936e9863db1a6c55d1b2458c3594f67c72a97e29b9
+  source: SST / OpenCode
+  url: https://opencode.ai/docs/mcp-servers/
+client_usb_c_analogy.html:
+  note: MCP support page for USB-C analogy; body as served (cached GET)
+  retrieved: '2026-10-31'
+  sha256: 2245ebbf4a4a2c74732cf887c0067b796c48a6859edd081f88aa13ce03320e1c
+  source: Model Context Protocol
+  url: https://modelcontextprotocol.io/docs/getting-started/intro
 docs_index.md:
   note: Markdown twin; public docs only
   retrieved: '2026-10-31'

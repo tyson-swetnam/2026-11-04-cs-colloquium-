@@ -4,6 +4,8 @@ Outputs:
   data/processed/quote_check.csv   one row per fact: was the quote found verbatim (whitespace-normalised)?
   data/processed/capex_vs_ocf.csv  five-hyperscaler capex vs operating cash flow, trailing 12 months
                                    (re-read from slide 06's SEC XBRL series)
+  data/processed/capex_vs_ocf_quarterly.csv  same, single calendar quarters, four firms (report's set) and five
+                                   (adds Oracle, whose fiscal quarters end Feb/May/Aug/Nov)
   data/processed/ratios.csv        report's off-balance-sheet debt vs 2007 subprime peak
 """
 import csv
@@ -88,12 +90,28 @@ def main() -> None:
     last = ttm[-1]
     print(f"{last['calendar_quarter']} TTM capex/OCF = {float(last['capex']) / float(last['ocf']):.3f}")
 
+    # Single quarters: the TTM view smooths away the 2026 turn.
+    q = list(csv.DictReader((ROOT / "slides/06-the-concerns/data/processed/hyperscaler_quarterly.csv").open()))
+    four = {"Alphabet", "Amazon", "Meta", "Microsoft"}
+    with (OUT / "capex_vs_ocf_quarterly.csv").open("w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["calendar_quarter", "firms", "capex_bn", "ocf_bn", "ocf_minus_capex_bn", "firms_with_capex_above_ocf"])
+        for cq in ("2025Q4", "2026Q1", "2026Q2", "2026Q3"):
+            rows = [r for r in q if r["calendar_quarter"] == cq]
+            for label, sel in (("4 (GOOGL, AMZN, META, MSFT)", [r for r in rows if r["company"] in four]), ("5 (+ORCL)", rows)):
+                c = sum(float(r["capex"]) for r in sel) / 1e9
+                o = sum(float(r["ocf"]) for r in sel) / 1e9
+                neg = ";".join(f"{r['company']} {(float(r['ocf']) - float(r['capex'])) / 1e9:+.1f}" for r in sel if float(r["capex"]) > float(r["ocf"]))
+                w.writerow([cq, label, round(c, 1), round(o, 1), round(o - c, 1), neg])
+                if cq == "2026Q3":
+                    print(f"2026Q3 {label}: capex {c:.1f}B vs OCF {o:.1f}B -> {o - c:+.1f}B")
+
     with (OUT / "ratios.csv").open("w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["measure", "value", "basis"])
-        w.writerow(["off_balance_sheet_vs_subprime_2007_real", round(3.1 / 2.3, 2), "OMI report: $3.1T off-balance-sheet (WSJ, 9 firms) / $2.3T subprime peak in 2026 dollars"])
-        w.writerow(["total_debt_vs_subprime_2007_real", round(3.7 / 2.3, 2), "OMI report: $3.7T on- and off-balance-sheet / $2.3T"])
-        w.writerow(["genai_revenue_share_of_spend_upper", 0.20, "OMI report: at most 20% (possibly <10%) of >$1T 2026 spend"])
+        w.writerow(["off_balance_sheet_vs_subprime_2007_real", round(3.1 / 2.3, 2), "OMI report: $3.1T off-balance-sheet (WSJ, 9 firms) / $2.3T subprime peak in 2026 dollars. Caveat: unlike kinds - the $3.1T is purchase commitments and signed leases (F28), the $2.3T is outstanding mortgage debt"])
+        w.writerow(["total_debt_vs_subprime_2007_real", round(3.7 / 2.3, 2), "OMI report: $3.7T on- and off-balance-sheet / $2.3T (same caveat: mixes debt with commitments and leases)"])
+        w.writerow(["genai_revenue_share_of_spend_upper", 0.20, "OMI report: genAI revenue from outside the genAI ecosystem is at most 20% (possibly <10%) of >$1T spent in 2026"])
 
 
 if __name__ == "__main__":

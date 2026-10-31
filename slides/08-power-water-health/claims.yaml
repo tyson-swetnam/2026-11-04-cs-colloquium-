@@ -45,15 +45,20 @@ claims:
   - data/processed/computed.csv
   notes: |
     "As many as 35" at Colossus 1 is SELC's account (F06). The complaint says there were "at least twenty-seven"
-    turbines at Southaven as of April 7, 2026, with a potential to emit about 1,700 tons of NOx a year. The court's
-    Oct. 30, 2026 order recites this (F08, F09). The unit mix in footnote 4 sums to 27 units and 495 MW
-    (computed.csv). These are the plaintiffs' allegations, accepted as true only for the motion to dismiss; they
-    are not findings. The numbers are also out of date. SELC's Oct. 30, 2026 release speaks of "dozens of
-    unpermitted gas turbines" with a potential of "more than 5,000 tons" of NOx a year (F11), so the fleet has grown
-    beyond 27. SELC gives no new count. Press reports of 46 to 59 turbines were not checked against a primary source.
-    "Still unpermitted" holds: the March 2026 MDEQ permit covers a different 41-turbine plant, and the complaint
-    says none of the running turbines fall under it (F10, F32). "1,700+ tons" should be credited to the complaint.
-  proposed_text: 'xAI ran up to 35 unpermitted gas turbines at Colossus 1 in Memphis. Dozens more, still unpermitted, power Colossus 2 (27 when the NAACP sued in April 2026): more than 1,700 tons of smog-forming NOx a year, the suit alleges.'
+    turbines at Southaven as of April 7, 2026, which "have the potential to emit per year approximately 1,700 tons"
+    of NOx. The court's Oct. 30, 2026 order recites this (F08, F33, F09). The unit mix in footnote 4 sums to 27
+    units and 495 MW (computed.csv). These are the plaintiffs' allegations, accepted as true only for the motion to
+    dismiss; they are not findings. The figure is a potential to emit, not measured emissions, and the complaint
+    says "approximately", not "more than". "More than 1,700 tons" is the wording of SELC's and Earthjustice's own
+    pages (F35), so the slide's "1,700+" follows counsel's advocacy, not the complaint.
+    Current fleet size: SELC's Oct. 30, 2026 release speaks of "dozens of unpermitted gas turbines" and a potential
+    of "more than 5,000 tons" of NOx a year (F11), but gives no count. SELC already called the 27-turbine fleet
+    "dozens" in April 2026 (F34), so "dozens" is not evidence of growth. The higher emission figures may reflect
+    more turbines or a different basis; we cannot tell. Press reports of 46 to 59 turbines were not checked against
+    a primary source. (Correction 2026-10-31: an earlier note said the fleet "has grown beyond 27"; that was not
+    supported.) "Still unpermitted" holds: the March 2026 MDEQ permit covers a different 41-turbine plant, and the
+    complaint says none of the running turbines fall under it (F10, F32).
+  proposed_text: 'xAI ran up to 35 unpermitted gas turbines at Colossus 1 in Memphis. Colossus 2 is powered by unpermitted turbines in Mississippi: the April 2026 suit names 27 and alleges they could emit about 1,700 tons of smog-forming NOx a year.'
 - id: c3
   text: 'Colossus cooling draws on the Memphis Sand Aquifer; up to 3.7 million gallons a day requested; recycling plant stalled April 2026'
   kind: quantitative
@@ -91,13 +96,18 @@ claims:
   - data/processed/quote_check.csv
   notes: |
     The figures match preprint v1 (Dec. 9, 2024, "The Unpaid Toll: Quantifying the Public Health Impact of AI"):
-    about 600,000 asthma symptom cases and 1,300 premature deaths in 2030, with costs of "more than $20 billion"
-    (F24). The latest version is v4 (June 8, 2026). It is retitled "Health-Informed Computing: Estimating and
-    Addressing the Public Health Impact of Data Centers", moves the same numbers to 2028, and presents them as a
-    high-growth scenario (F25, F26). It is still a preprint, not peer-reviewed. Three wording fixes: the cost is
-    "more than $20B", not "close to $20B"; the "asthma cases" are asthma symptom cases; and the year depends on the
-    version cited. v4 also lists an RIT author alongside UC Riverside and Caltech.
-  proposed_text: 'Under a high-growth scenario, air pollution from US data centers could cause about 1,300 premature deaths and 600,000 asthma symptom cases in 2028, with health costs over $20B (Han et al., UC Riverside & Caltech, arXiv preprint, rev. 2026).'
+    about 600,000 asthma symptom cases and 1,300 premature deaths in 2030 (F24). In v1 these are already scenario
+    projections: McKinsey's medium-growth projection of data-center demand (F38), with the cost "valued at up to
+    more than $20 billion per year" (F37). The latest version is v4 (June 8, 2026). It is retitled
+    "Health-Informed Computing: Estimating and Addressing the Public Health Impact of Data Centers" and gives the
+    same numbers for 2028 under its high-growth scenario, with costs "up to more than $20 billion" (F25, F26, F39,
+    F40). So the change between versions is the target year and the named scenario; both versions are
+    scenario-conditional, and "projected to cause" needs a scenario caveat whichever version is cited. v4's body
+    says "1,300 premature deaths" (F39); its abstract says "1,300 deaths" (F25). It is still a preprint, not
+    peer-reviewed. Wording fixes: the cost is "up to more than $20B", not "close to $20B"; the "asthma cases" are
+    asthma symptom cases; the year depends on the version cited. v4 also lists an RIT author alongside UC
+    Riverside and Caltech.
+  proposed_text: 'In a high-growth scenario, air pollution from the power behind US data centers could cause about 1,300 premature deaths and 600,000 asthma symptom cases in 2028, with health costs of up to more than $20B (Han et al., UC Riverside & Caltech, arXiv preprint, rev. 2026).'
 - id: c5
   text: 'Jevons (The Coal Question, 1865): more efficient steam engines made Britain burn more coal'
   kind: factual
@@ -117,6 +127,11 @@ claims:
     industry (F29). This is Jevons's argument, not a measured result. The text read is the 1866 2nd edition; the book
     was first published in 1865 (F30). On the slide, the link to "945 TWh by 2030" is the speaker's analogy: the
     IEA does not describe its projection as a Jevons effect.
+    The slide line "Cheaper AI does the same: data centers reach 945 TWh by 2030" states the IEA Base Case
+    projection as a fact ("is set to more than double by 2030 to around 945 TWh", F01; see c1). The Jevons part of
+    the claim is supported; the 945 TWh half should be worded as a projection and the Jevons link as the speaker's
+    reading.
+  proposed_text: 'In 1865, Jevons saw that Watt’s more efficient steam engines made Britain burn more coal, not less. AI may be doing the same: the IEA projects data centers will use about 945 TWh by 2030.'
 - id: c6
   text: 'Notes: Colossus 2 is powered by 27 unpermitted turbines (up to 495 MW) in Southaven, Mississippi, half a mile from homes and a mile from an elementary school; potential emissions >1,700 t NOx, up to 180 t fine particulates and 19 t formaldehyde a year'
   kind: quantitative
@@ -133,12 +148,14 @@ claims:
   - data/processed/computed.csv
   notes: |
     Each figure matches the complaint as the court recites it: at least 27 turbines and at least 495 MW (F08;
-    the unit mix sums to 495 MW in computed.csv), and about 1,700 t NOx, 180 t PM2.5 and 19 t formaldehyde (F09).
-    The distances come from Earthjustice (F12). All of these are allegations by the plaintiffs and their counsel.
-    They describe the plant as of April 2026; SELC now cites "dozens" of turbines and more than 5,000 t NOx,
-    400 t PM and 47 t formaldehyde a year (F11). The notes should say "at least 27 when the suit was filed" and
-    "the complaint alleges".
-  proposed_text: 'Colossus 2 is powered by unpermitted turbines just over the state line in Southaven, Mississippi: at least 27 (495 MW) when the NAACP sued in April 2026, and dozens now. The complaint alleges over 1,700 t NOx, 180 t fine particulates and 19 t formaldehyde a year. SELC’s October figures are higher.'
+    the unit mix sums to 495 MW in computed.csv), and a potential to emit "approximately" 1,700 t NOx, 180 t PM2.5
+    and 19 t formaldehyde a year (F33, F09). The notes' "more than 1,700 tons" and "up to 180 tons" are the
+    wording of Earthjustice and SELC (F35), not of the complaint, and all of these are potentials to emit, not
+    measured emissions. The distances come from Earthjustice (F12). All of these are allegations by the
+    plaintiffs and their counsel, describing the plant as of April 2026. SELC's Oct. 30 release cites more than
+    5,000 t NOx, 400 t PM and 47 t formaldehyde a year (F11) and "dozens" of turbines, but no count; SELC used
+    "dozens" for the 27-turbine fleet in April too (F34), so a change in turbine numbers is not shown.
+  proposed_text: 'Colossus 2 is powered by unpermitted turbines just over the state line in Southaven, Mississippi: at least 27 (495 MW) when the NAACP sued in April 2026. The complaint alleges they could emit about 1,700 t NOx, 180 t fine particulates and 19 t formaldehyde a year. SELC’s October 2026 estimates are higher.'
 - id: c7
   text: 'Notes: The NAACP, represented by SELC and Earthjustice, sued under the Clean Air Act; on Oct. 30, 2026 the court denied xAI’s motion to dismiss'
   kind: factual
@@ -156,8 +173,9 @@ claims:
     signed by Judge Debra M. Brown on Oct. 30, 2026: "the defendants' motion to dismiss [54] is DENIED" (F13).
     The court held that the turbines are not "mobile sources" under Mississippi's SIP (F14). The complaint was filed
     on April 14, 2026, and the NAACP is represented by SELC and Earthjustice (F15). This is a ruling on a motion to
-    dismiss, not on liability. A DOJ motion to dismiss was denied separately in October, and the preliminary
-    injunction is still pending, according to SELC.
+    dismiss, not on liability. SELC says the ruling "comes shortly after the Court denied a similar motion from the
+    U.S. Department of Justice" (F36); SELC gives no date and the DOJ ruling was not fetched. SELC also says the
+    preliminary injunction is still pending.
 - id: c8
   text: 'Notes: Memphis-area counties get an F for ozone from the American Lung Association'
   kind: factual
@@ -190,19 +208,21 @@ claims:
     Supported as SELC's account (F06, F07). SELC is the NAACP's counsel. The Shelby County Health Department permit
     for the 15 turbines was not fetched, so this has not been confirmed independently.
 - id: c10
-  text: 'Notes: a wastewater recycling plant at the T.E. Maxson treatment plant was permitted in January 2026 to save up to 13 million gallons a day of aquifer water'
+  text: 'Notes: a wastewater recycling plant at the T.E. Maxson treatment plant was permitted in January 2026 to save up to 13 million gallons a day of aquifer water, and paused construction in April 2026'
   kind: quantitative
   priority: low
-  status: supported
+  status: partially-supported
   validation: 'TDEC permit as reported by the Memphis Flyer.'
   sources:
   - https://www.memphisflyer.com/state-issues-operating-permit-for-colossus-water-plant/
+  - https://www.eenews.net/articles/xai-sidelines-major-water-reuse-project-as-ipo-looms/
   evidence:
   - data/raw/research/facts.csv
   - data/processed/quote_check.csv
   notes: |
     Memphis Flyer, Jan. 28, 2026: TDEC issued an operating permit to CTC Property LLC that "will preserve use of up
     to 13 million gallons of aquifer water per day" (F22). The plant treats wastewater from the T.E. Maxson sewage
-    treatment plant (F23); it is not described as sited at Maxson. The TDEC permit document itself was not
-    fetched. As of June 2026, restart is promised by Q1 2027 (F21).
+    treatment plant (F23); it is not described as sited at Maxson, so "at the T.E. Maxson treatment plant" is
+    wrong and the claim is partially supported. The April 2026 pause is supported by E&E News (F18, see c3). The
+    TDEC permit document itself was not fetched. As of June 2026, restart is promised by Q1 2027 (F21).
   proposed_text: 'A recycling plant to treat T.E. Maxson wastewater, permitted by the state in January 2026 to spare up to 13 million gallons a day of aquifer water, paused construction in April 2026; xAI now promises a restart by early 2027.'

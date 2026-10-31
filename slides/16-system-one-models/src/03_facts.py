@@ -12,6 +12,7 @@ OUT = SLIDE / "data" / "raw" / "research" / "facts.csv"
 
 TS = ("Introducing System One Models & Jev", "TypeSafe AI", "2026-09-15", "https://typesafe.ai/blog/introducing-system-one-models-and-jev", "primary", "typesafe_launch")
 TSC = ("System One models (docs: concepts)", "TypeSafe AI", "2026-10-31", "https://docs.typesafe.ai/concepts/system-one", "primary", "typesafe_concept")
+TSB = ("Box (docs: primitives)", "TypeSafe AI", "2026-10-31", "https://docs.typesafe.ai/primitives/box", "primary", "typesafe_box")
 TSM = ("Models (docs)", "TypeSafe AI", "2026-10-31", "https://docs.typesafe.ai/models", "primary", "typesafe_models")
 TSJ = ("Jev 1.13 jaggedness (docs)", "TypeSafe AI", "2026-10-02", "https://docs.typesafe.ai/model-jaggedness/jev-1.13", "primary", "typesafe_jagged")
 CF = ("Introducing Clef: our open-source decision models, and new RL fine-tuning platform", "Cloudflare", "2026-10-01", "https://blog.cloudflare.com/clef-decision-models", "primary", "cloudflare_blog")
@@ -47,7 +48,7 @@ FACTS = [
     ("c2", "Clef: a probability for every option of every question in one forward pass", "probability for every allowed option of every question in a single forward pass", HF, "Verified in code: data/processed/clef_code_checks.csv"),
     ("c2", "Clef decision step is non-autoregressive after one prefill pass", "During inference, Clef uses Qwen for a prefill-only pass, then scores the valid schema choices in parallel.", CF, ""),
     ("c2", "Jev: all outputs in a single query (architecture unpublished)", "Parallel. Generates all outputs in a single query.", TS, "Jev architecture is not public, so 'forward pass' cannot be checked for Jev"),
-    ("c2", "Three primitives: choice, score, noul", "Choice Which team should handle this ticket? billing , technical , or account choice: \"billing\" Score How frustrated is this customer?", TSC, ""),
+    ("c2", "Docs table shows choice, score and noul; the docs also list a fourth primitive, Box (see f44)", "Choice Which team should handle this ticket? billing , technical , or account choice: \"billing\" Score How frustrated is this customer?", TSC, ""),
     ("c2", "Calibration is a vendor training goal, measured over groups not single answers", "Calibration is measured across groups of predictions; it does not guarantee that an individual answer is correct.", TSC, ""),
     ("c2", "Vendor calls probabilities calibrated", "All answers are accompanied with calibrated probabilities and confidence scores.", TS, "Developer-reported; no independent calibration test found"),
     ("c2", "Clef trained with a Brier loss for calibration", "paired with a Brier loss to refine probability calibration", CF, "Developer-reported"),
@@ -72,6 +73,13 @@ FACTS = [
     ("c9", "Pairing: escalate to a person or reasoning model on low confidence", "so you can decide when to act and when to escalate to a person or a reasoning model", TSC, ""),
     ("c9", "Pairing: decision model in the hot path, LLM to take action", "combine that with one of our LLMs on Workers AI to take action", CF, ""),
     ("c9", "Jev fits high-volume classification", "Use Jev for: high-volume text classification where you need the lowest per-call cost and fastest latency.", BS, ""),
+    ("c2", "Fourth primitive Box: a bounding box in an image, not a choice/score/yes probability", "A Box is a System One question type for finding where something is in an image. The answer is the four edges of a box around it, as fractions of the image’s width and height.", TSB, "Docs sidebar lists Primitives: Choice, Score, Noul, Box (Dreamer-ready)"),
+    ("c2", "Box is experimental (Dreamer-ready), not production", "Images and Box questions aren’t yet up to our standards to call ready for production", TSB, ""),
+    ("c2", "Jev uses a parallel sampler; TypeSafe does not say 'single forward pass'", "with a new model architecture, parallel sampler for maximum efficiency", TS, "Only a secondary source (Better Stack, f47) says 'single forward pass' for both models"),
+    ("c2", "Secondary claim of one forward pass for both models", "They return typed, probabilistic answers in a single forward pass with no text generation involved.", BS, "Secondary; not confirmed by TypeSafe for Jev"),
+    ("c3", "Score answers can fall between the caller's levels", "0 = calm, 1 = frustrated, 2 = very frustrated score: 1.4", TSC, "TypeSafe's own example; Clef code also returns a probability-weighted mean (data/processed/clef_code_checks.csv)"),
+    ("c3", "Box questions take no list of options", "Box takes no criteria", TSB, "Answer is free coordinates, not an item from a list"),
+    ("c3", "Extraction models return values from the input, not from a list", "also pulls typed values like names, dates and lists out of the input", CFX, "Clairic preview, 2026-10-19"),
 ]
 
 

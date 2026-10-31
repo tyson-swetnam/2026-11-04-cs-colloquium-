@@ -1,0 +1,9 @@
+calendar_quarter,firms,capex_bn,ocf_bn,ocf_minus_capex_bn,firms_with_capex_above_ocf
+2025Q4,"4 (GOOGL, AMZN, META, MSFT)",118.6,178.8,60.2,
+2025Q4,5 (+ORCL),130.7,180.9,50.2,Oracle -10.0
+2026Q1,"4 (GOOGL, AMZN, META, MSFT)",129.8,150.7,21.0,Amazon -18.2
+2026Q1,5 (+ORCL),148.4,157.9,9.5,Amazon -18.2;Oracle -11.5
+2026Q2,"4 (GOOGL, AMZN, META, MSFT)",165.1,171.8,6.7,Amazon -8.8;Alphabet -5.9
+2026Q2,5 (+ORCL),181.5,186.4,4.8,Amazon -8.8;Alphabet -5.9;Oracle -1.9
+2026Q3,"4 (GOOGL, AMZN, META, MSFT)",201.9,175.5,-26.4,Amazon -34.8;Alphabet -9.1;Meta -1.2
+2026Q3,5 (+ORCL),230.4,198.6,-31.8,Amazon -34.8;Alphabet -9.1;Meta -1.2;Oracle -5.4

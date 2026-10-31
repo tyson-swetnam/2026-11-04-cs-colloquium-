@@ -35,6 +35,12 @@ enwiki_File_Dr_Strangelove_poster_jpg.html:
   sha256: 83cc67056977da990099b6d8e694e294c0ac76221196547bc4b7d779b5dfa117
   source: English Wikipedia
   url: https://en.wikipedia.org/wiki/File:Dr._Strangelove_poster.jpg
+enwiki_api_imageinfo_Dr_Strangelove_poster_jpg.json:
+  note: imageinfo size/sha1 for the non-free poster file
+  retrieved: '2026-10-31'
+  sha256: 38a26e2cad6870d2cf9502979f5e7a156ecc075b3cfa2e0487ec32701718c895
+  source: English Wikipedia (MediaWiki API)
+  url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=size%7Csha1%7Cmime%7Ctimestamp%7Curl&titles=File:Dr._Strangelove_poster.jpg
 eriac_ungerer.html:
   note: article on Tomi Ungerer; credits him with the 1964 Dr. Strangelove poster
   retrieved: '2026-10-31'
