@@ -1,11 +1,11 @@
 """Slide 4: play the Dr. Strangelove trailer (public domain in the US, via Wikimedia Commons), muted and looping.
 
-The exported deck shows only a still of the War Room where the trailer belongs. This script replaces that
-still with a <video autoplay muted loop playsinline>, keeping its filter and crop and using the still as the
-poster frame. The trailer is embedded as a data: URL, so the deck plays offline and within its
-Content-Security-Policy (media-src data: blob:). A small inline script restarts the trailer from the beginning
-whenever slide 4 comes into view and pauses it when the slide is left. It also removes the empty black
-placeholder box the export put beside the poster, which covered the video. Idempotent: re-run after a re-export.
+The exported deck keeps the War Room still as the tinted background and leaves an empty black box beside
+the poster where the trailer belongs. This script puts a <video autoplay muted loop playsinline> in that box,
+keeping its size, border and shadow, with the War Room still (a frame of the trailer) as the poster image.
+The trailer is embedded as a data: URL, so the deck plays offline and within its Content-Security-Policy
+(media-src data: blob:). A small inline script restarts the trailer from the beginning whenever slide 4 comes
+into view and pauses it when the slide is left. Idempotent: re-run after a re-export.
 
     uv run python slides/04-kubrick/src/04_place_trailer.py [path/to/trailer.webm]
 """
@@ -59,21 +59,18 @@ def main() -> int:
     if existing:  # already placed: refresh the video data only
         slide = slide.replace(existing.group(0), re.sub(r'src="data:video[^"]*"', f'src="{src}"', existing.group(0)))
     else:
-        still = re.search(r'<img [^>]*alt="' + re.escape(STILL_ALT) + r'[^"]*"[^>]*>', slide)
-        if not still:
-            print("War Room still not found on slide 4; deck layout changed", file=sys.stderr)
+        box = re.search(PLACEHOLDER, slide)
+        still = re.search(r'<img [^>]*alt="(' + re.escape(STILL_ALT) + r'[^"]*)"[^>]*src="(data:image[^"]*)"', slide)
+        if not box or not still:
+            print("placeholder box or War Room still not found on slide 4; deck layout changed", file=sys.stderr)
             return 1
-        tag = still.group(0)
-        poster = re.search(r'src="(data:image[^"]*)"', tag).group(1)
-        style = re.search(r'style="([^"]*)"', tag).group(1)
-        alt = re.search(r'alt="([^"]*)"', tag).group(1)
+        style = re.search(r'style="([^"]*)"', box.group(0)).group(1) + " object-fit: cover;"
         video = (
-            f'<video {MARK} autoplay muted loop playsinline preload="auto" aria-label="Dr. Strangelove trailer (1964), muted: {alt}" '
-            f'poster="{poster}" src="{src}" style="{style}"></video>'
+            f'<video {MARK} autoplay muted loop playsinline preload="auto" '
+            f'aria-label="Dr. Strangelove trailer (1964), muted, opening on {still.group(1)}" '
+            f'poster="{still.group(2)}" src="{src}" style="{style}"></video>'
         )
-        slide = slide.replace(tag, video)
-    # The export left an empty black box beside the poster where the trailer was meant to go; it hides the video.
-    slide = re.sub(PLACEHOLDER, "", slide)
+        slide = slide.replace(box.group(0), video)
     html = html[:start] + slide + html[end:]
     html = re.sub(r'<script data-evidence="video-restart">.*?</script>\n?', "", html, flags=re.S)
     html = html.replace("</body>", RESTART + "\n</body>", 1)
