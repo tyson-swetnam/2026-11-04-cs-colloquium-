@@ -71,18 +71,21 @@ claims:
   text: Cumulative cost in 2025 dollars · FHWA, Epoch AI, NASA, Gartner · After Fin Moorhouse
   kind: attribution
   priority: medium
-  status: revise-slide
+  status: supported
   proposed_text: 'Share of GDP · SEC EDGAR, BEA, MeasuringWorth, Van Nieuwerburgh (Brookings, 2026) · After Fin Moorhouse'
   validation: |
     The footer lists the sources the chart on the slide actually uses.
   sources: []
   evidence:
-  - figures/fig1_baseline_cpi.png
+  - figures/deck_dollars.png
+  - figures/deck_gdp.png
+  - src/06_place_in_deck.py
   notes: |
     Moorhouse's chart is in 2024 dollars and cites company reports, Epoch AI, FHWA, NASA, CRS,
     GAO and Brookings; Gartner is not among them. If a chart from this folder goes on the slide,
     use: "SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA/Planetary Society, Ulmer (1960);
     Van Nieuwerburgh (2026). After Fin Moorhouse."
+  applied_note: '2026-10-31: charts placed on the slide (src/06_place_in_deck.py); footer now names the measures and the sources actually used (SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA, Ulmer), replacing FHWA, Epoch AI, NASA, Gartner.'
 - id: c5
   text: 'Notes: six years of data-center capex has already outrun 71 years of railroads and 37 years of the Interstates'
   kind: quantitative
