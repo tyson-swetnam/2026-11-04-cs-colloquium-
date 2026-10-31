@@ -85,7 +85,7 @@ Sources (Wikimedia Commons, public domain; confirm the reason on each page): Pos
 ```text
 The build-out
 The largest single investment in human history
-Cumulative cost in 2025 dollars · FHWA, Epoch AI, NASA, Gartner · After Fin Moorhouse
+SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA, Van Nieuwerburgh · After Fin Moorhouse
 ```
 
 > **Notes:** [~2 min · by 4:30] Cumulative cost in today’s dollars against years from the start of each program. Six years of data-center capex has already outrun 71 years of railroads and 37 years of the Interstates.

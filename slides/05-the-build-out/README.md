@@ -10,6 +10,16 @@ Section: 01 · Fear · Slide text and notes: [`talk/slides.md`](../../talk/slide
 
 The slide follows Fin Moorhouse's chart ["The hyperscalers have already outspent the most famous US megaprojects"](https://x.com/finmoorhouse/status/2044933442236776794) (17 April 2026). It plots cumulative cost in 2024 dollars against years since each program started.
 
+## On the slide
+
+Slide 5 now carries two charts, placed by `src/06_place_in_deck.py` (idempotent; re-run after re-exporting the deck):
+
+| | |
+|---|---|
+| ![](figures/fig1_baseline_cpi.png) **Data centers vs. megaprojects, rebuilt:** Moorhouse's measure (cumulative cost, 2024 dollars) from primary sources | ![](figures/fig5_boom_intensity.png) **Every boom on one ruler:** average annual spend as a share of US GDP |
+
+The footer now reads "SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA, Van Nieuwerburgh · After Fin Moorhouse". Each chart carries its own full source line and marks its estimates (dashed line, hatched bars). `figures/deck_dollars.png` and `figures/deck_gdp.png` are an earlier two-panel version, kept for reference.
+
 ## Findings
 
 **Moorhouse's chart reproduces in his own units.** Data-center capex for 2020–25 comes to $844B in 2024 dollars from cash capex, or $899B with finance leases, against his ≈$930B. That beats the Interstates ($700B) and the railroads ($291B).

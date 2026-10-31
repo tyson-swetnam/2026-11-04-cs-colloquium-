@@ -65,7 +65,7 @@ def spread(points: list[tuple[float, float]], gap: float, xwin: float) -> list[f
     return out
 
 
-def lines(ax, norm, col, meta, programs, scale=1.0, label_gap=None, xwin=6):
+def lines(ax, norm, col, meta, programs, scale=1.0, label_gap=None, xwin=6, fontsize=13, names=None):
     """Plot cumulative or annual series per program, starting from (0, 0); dashed into the partial year."""
     ends = []
     for pid in programs:
@@ -90,13 +90,13 @@ def lines(ax, norm, col, meta, programs, scale=1.0, label_gap=None, xwin=6):
             if moved:
                 ax.plot([x, x], [y, ly], color=c, lw=0.8, alpha=0.6)
             ax.annotate(
-                SHORT.get(pid, pid),
+                (names or SHORT).get(pid, SHORT.get(pid, pid)),
                 (x, ly),
                 xytext=(8, 0),
                 textcoords="offset points",
                 va="center",
                 xycoords="data",
-                fontsize=13,
+                fontsize=fontsize,
                 color=style.INK,
                 fontweight="bold" if pid.startswith("datacenters") else "normal",
             )
@@ -197,6 +197,7 @@ def main() -> None:
     finish(fig, ax, "Same programs, different ruler", "Cumulative cost through the last complete year", src, "fig4_rank_shift")
 
     boom_intensity(norm, meta, src)
+    deck_panels(norm, meta, moorhouse_set)
 
 
 def peak_year(norm, meta, programs, src):
@@ -226,6 +227,32 @@ def peak_year(norm, meta, programs, src):
         src + " Marshall Plan FY1949 covers 15 months.",
         "fig3_peak_year",
     )
+
+
+def deck_panels(norm, meta, moorhouse_set):
+    """The two charts placed on the slide itself: no title block (the slide has one), larger type.
+
+    deck_dollars.png  Moorhouse's view: cumulative cost in 2025 dollars
+    deck_gdp.png      the correction: cumulative share of GDP (railroads, Interstates, data centers)
+    Each is sized for half the slide's content area (808 x 600 px at 2x).
+    """
+    panels = [
+        ("deck_dollars", "cum_cpi_real", moorhouse_set, 1e-3, 70, "Billions of 2025 dollars (CPI)", "In today's dollars"),
+        ("deck_gdp", "cum_share_us_gdp", [p for p in ("railroads", "interstate", "datacenters_global") if p in set(norm.program)], 100, 7, "% of one year's US GDP", "As a share of GDP"),
+    ]
+    for name, col, progs, scale, gap, ylabel, heading in panels:
+        fig, ax = plt.subplots(figsize=(8.08, 6.0), dpi=200)
+        deck_names = {"datacenters_global": "Data centers", "railroads": "Railroads", "interstate": "Interstates", "manhattan": "Manhattan", "marshall": "Marshall Plan"}
+        lines(ax, norm, col, meta, progs, scale=scale, label_gap=gap, xwin=14, fontsize=16, names=deck_names)
+        ax.set_xlim(0, 82)
+        ax.set_ylim(0, None)
+        ax.set_xlabel("Years from start of program", fontsize=17)
+        ax.set_ylabel(ylabel, fontsize=17)
+        ax.tick_params(labelsize=15)
+        # the heading is set as slide text in the deck's font (06_place_in_deck.py), not in the image
+        fig.savefig(FIG / f"{name}.png", dpi=200, bbox_inches="tight", facecolor="white")
+        plt.close(fig)
+        print(f"wrote figures/{name}.png")
 
 
 def boom_intensity(norm, meta, src):
