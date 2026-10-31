@@ -1,0 +1,67 @@
+carc_cse_electives.html:
+  note: CSE certificate electives, Fall 2026 offering status
+  retrieved: '2026-10-31'
+  sha256: eecdaa1d3c9b79502d582d11970fd5ef3de44a2c66463c4bf7a314d69aa00088
+  source: UNM CARC
+  url: https://carc.unm.edu/education/cse/electives/
+carc_getting_started.html:
+  note: Getting started index (slide link target)
+  retrieved: '2026-10-31'
+  sha256: 090b16a3d7a1693d2944e6dbc5f994e285b0d60249f1c515a3446f3f2a2c2275
+  source: UNM CARC documentation
+  url: https://carc.unm.edu/docs/getting-started/
+carc_llms_full.txt:
+  note: Full docs corpus; mentions DUST 2026
+  retrieved: '2026-10-31'
+  sha256: e1ab01c08919378d87afd11b5374d648b134dda54f90ae9bf3f3db043269a16d
+  source: UNM CARC documentation
+  url: https://carc.unm.edu/docs/llms-full.txt
+carc_office_hours.html:
+  note: Office and consultation hours (redirect from user-support-2/office-and-consultation-hours.html)
+  retrieved: '2026-10-31'
+  sha256: 69e463bbe1bb57f0b451fefbe127d3c9a785377d9a10a9f5c5c8d724436ef81d
+  source: UNM CARC
+  url: https://carc.unm.edu/contact/office-hours/
+dust2026_llms.txt:
+  note: DUST 2026 Open Science Training
+  retrieved: '2026-10-31'
+  sha256: 058e0c7608bc2d4804fbf3fd076c7e5052af2f25d32da50068a4eca55dc5a9ac
+  source: UNM CARC (DUST 2026 site)
+  url: https://unm-carc.github.io/dust-2026/llms.txt
+getting-started_index.md:
+  note: Markdown twin of getting-started index
+  retrieved: '2026-10-31'
+  sha256: 61cadef848c03fd195391fe2ecee1a4e6c1c887bdd1fb8c898a14df51b040dd5
+  source: UNM CARC documentation
+  url: https://carc.unm.edu/docs/getting-started/index.md
+getting-started_overview.md:
+  note: 'Getting started at CARC: accounts, ColdFront projects and allocations'
+  retrieved: '2026-10-31'
+  sha256: 70d04c2a9f0218060b50d42fcbb26831a9c76ea66e6db8f92fa8195cb3b610ae
+  source: UNM CARC documentation
+  url: https://carc.unm.edu/docs/getting-started/overview/index.md
+support_help.md:
+  note: Getting help
+  retrieved: '2026-10-31'
+  sha256: 0b6f6a07ed2f6b05ca754b155154d4e8d88189e57285aeed50713fe590ca9b9e
+  source: UNM CARC documentation
+  url: https://carc.unm.edu/docs/support/help/index.md
+unm_cs_courses.html:
+  note: Course list incl. CS 491/591 special topics
+  retrieved: '2026-10-31'
+  sha256: 31d366d95ca1aa6a841e584237c49e98ba80ca4e4d77e9a4e3edcdb47ac40524
+  source: UNM Department of Computer Science
+  url: https://www.cs.unm.edu/programs-and-degrees/courses.html
+unm_finals_spring-2026.pdf:
+  note: Spring 2026 finals May 11-16
+  retrieved: '2026-10-31'
+  sha256: 45660828e2eb4c570855ac37a679ddcc75194a0c5bf04e636871d6c83298c887
+  source: UNM Scheduling Office
+  url: https://schedule.unm.edu/assets/finals/spring-2026.pdf
+unm_schedule_home.html:
+  note: Landing page; the class search (lobowebapp.unm.edu) failed TLS / returned
+    503
+  retrieved: '2026-10-31'
+  sha256: 0cf964b8d801ce05e5d190c6ae1e4febcb85f420565e7f690da91a0780051e96
+  source: UNM Schedule of Classes
+  url: https://schedule.unm.edu/

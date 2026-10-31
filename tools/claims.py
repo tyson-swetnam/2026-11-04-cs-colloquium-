@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 import argparse
+import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
@@ -55,8 +56,26 @@ def load_all() -> list[tuple[Path, dict]]:
     return [(p, yaml.safe_load(p.read_text(encoding="utf-8")) or {}) for p in sorted(SLIDES_DIR.glob("*/claims.yaml"))]
 
 
+def ignored_by_git(paths: list[Path]) -> set[Path]:
+    """Paths git would not commit: evidence there exists locally but not in a fresh checkout."""
+    if not paths:
+        return set()
+    out = subprocess.run(
+        ["git", "check-ignore", "--no-index", "--stdin"],
+        cwd=ROOT, input="\n".join(str(p.relative_to(ROOT)) for p in paths), capture_output=True, text=True,
+    ).stdout
+    return {ROOT / line for line in out.splitlines() if line}
+
+
 def validate(entries: list[tuple[Path, dict]]) -> list[str]:
     errors = []
+    evidence_paths = [
+        (path.parent / ev).resolve()
+        for path, doc in entries
+        for claim in doc.get("claims") or []
+        for ev in claim.get("evidence") or []
+    ]
+    ignored = ignored_by_git([p for p in evidence_paths if p.is_relative_to(ROOT)])
     for path, doc in entries:
         where = path.relative_to(ROOT)
         for key, typ in (("slide", int), ("title", str), ("section", str), ("claims", list)):
@@ -81,8 +100,11 @@ def validate(entries: list[tuple[Path, dict]]) -> list[str]:
             if claim.get("status") in NEEDS_EVIDENCE and not evidence:
                 errors.append(f"{where}: {cid} is '{claim['status']}' but lists no evidence")
             for ev in evidence:
-                if not (path.parent / ev).exists():
+                target = (path.parent / ev).resolve()
+                if not target.exists():
                     errors.append(f"{where}: {cid} evidence path does not exist: {ev}")
+                elif target in ignored:
+                    errors.append(f"{where}: {cid} evidence is gitignored, so it will not be in the repository: {ev} (cite facts.csv or MANIFEST.yaml instead)")
     return errors
 
 

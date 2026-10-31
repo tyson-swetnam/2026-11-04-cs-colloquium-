@@ -6,23 +6,120 @@ claims:
   text: 'MESA is supported by NSF Award #2632685 · [NAIRR] · [other OAC / DBI awards]'
   kind: factual
   priority: high
-  status: unverified
+  status: partially-supported
   validation: Fill in the remaining awards; check every number with the NSF Award Search API.
-  sources: []
-  evidence: []
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  - https://api.nsf.gov/services/v1/awards.json?keyword=AIIRA
+  - https://idss-mesa.github.io/llms-full.txt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/awards.json
+  - data/processed/quote_checks.json
+  notes: >-
+    Deck now reads "under Award OAC-2632685 · [NAIRR]". NSF Award API: 2632685 is a $4,617,408
+    cooperative agreement to the University of New Mexico (PI Tyson L Swetnam), 07/15/2026-05/31/2029,
+    managed by CISE / Office of Advanced Cyberinfrastructure, so "OAC-2632685" is consistent. Its
+    funding program is "NAIRR-Nat AI Research Resource", which resolves the [NAIRR] placeholder: the
+    NAIRR money is this same award, not a separate award. No other OAC or DBI award for MESA was found.
+    An earlier award with the same title, 2608717 to the University of Arizona (06/01/2026-08/31/2026,
+    inactive), appears to be the pre-transfer version; no need to list it. The MESA site calls the
+    program "Integrated Data Systems & Services"; the NSF record title says "Research Infrastructure:
+    Category II". Partially supported only because the placeholders are still on the slide.
+  proposed_text: 'MESA is supported by the U.S. National Science Foundation under Award OAC-2632685 (NAIRR program).'
 - id: c2
   text: idss-mesa.github.io · github.com/idss-mesa
   kind: factual
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: Link check (both must resolve on the day).
-  sources: []
-  evidence: []
+  sources:
+  - https://idss-mesa.github.io/
+  - https://github.com/idss-mesa
+  evidence:
+  - data/processed/awards.json
+  - data/raw/research/facts.csv
+  notes: >-
+    idss-mesa.github.io returned HTTP 200 on 2026-10-31 and its hero links to
+    https://github.com/idss-mesa. This session could not fetch github.com/idss-mesa (the session's
+    GitHub proxy refuses non-configured accounts with 403), so the org page was not checked directly;
+    the existence of the idss-mesa.github.io Pages site implies the idss-mesa account exists. Speaker
+    should click both links on 2026-11-04.
 - id: c3
   text: 'Early-adopter awards: NEON NSF 2217817; ESIIL NSF 2153040; NCEMS NSF 2335029; NSCORE NSF 2438843; AIIRA USDA-NIFA 2021-67021-35329; EHT NSF 2535855'
   kind: factual
   priority: high
-  status: unverified
+  status: supported
   validation: 'NSF Award API for the NSF numbers; USDA CRIS/REEIS for the NIFA award.'
-  sources: []
-  evidence: []
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2217817.json
+  - https://api.nsf.gov/services/v1/awards/2153040.json
+  - https://api.nsf.gov/services/v1/awards/2335029.json
+  - https://api.nsf.gov/services/v1/awards/2438843.json
+  - https://api.nsf.gov/services/v1/awards/2535855.json
+  - https://aiira.iastate.edu/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/awards.json
+  - data/processed/quote_checks.json
+  notes: >-
+    All five NSF numbers resolve to the right projects: 2217817 NEON O&M (Battelle Memorial
+    Institute); 2153040 ESIIL (CU Boulder); 2335029 NCEMS (Penn State); 2438843 NSCORE (Columbia,
+    cooperative agreement starting 09/15/2026); 2535855 "Frontier Science with the Event Horizon
+    Telescope" (MIT, mid-scale instrumentation, 10/2025-09/2027; one of several NSF awards to EHT work).
+    AIIRA 2021-67021-35329 is confirmed by the awardee's own page (Iowa State), which credits NSF and
+    USDA-NIFA. The NIFA CRIS record (accession 1027030) could not be read as text (404 / JavaScript-only
+    page), so the NIFA number rests on the awardee page.
+- id: c4
+  text: 'Notes: ESIIL (Environmental Data Science Innovation & Inclusion Lab, CU Boulder); NCEMS (Penn State); NSCORE (National Synthesis Center for Organismal Resilience, Columbia), NSF Cooperative Agreement 2438843; AIIRA (Iowa State), USDA-NIFA with NSF; NEON operated by Battelle'
+  kind: factual
+  priority: medium
+  status: partially-supported
+  validation: Compare names and hosts with NSF award records and the centres' own pages.
+  sources:
+  - https://esiil.org/
+  - https://api.nsf.gov/services/v1/awards/2153040.json
+  - https://api.nsf.gov/services/v1/awards/2438843.json
+  - https://research.iastate.edu/?p=8706
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_checks.json
+  notes: >-
+    Hosts are all right (CU Boulder, Penn State, Columbia, Iowa State, Battelle) and NSCORE is a
+    cooperative agreement. Wrong: ESIIL is the "Environmental Data Science Innovation & Impact Lab"
+    (ESIIL home page and NSF award title), not "Innovation & Inclusion Lab". NSCORE's full name is
+    "National Synthesis Center for Organismal Resilience to Environmental Change".
+  proposed_text: 'ESIIL (Environmental Data Science Innovation & Impact Lab, CU Boulder), NSF 2153040; NSCORE (National Synthesis Center for Organismal Resilience to Environmental Change, Columbia), NSF Cooperative Agreement 2438843'
+- id: c5
+  text: 'Early adopters (implied: these six programmes are MESA partners/early adopters): NEON, ESIIL, NCEMS, NSCORE, AIIRA, EHT'
+  kind: factual
+  priority: medium
+  status: partially-supported
+  validation: Check the MESA award abstract and public MESA docs for each named partner.
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  - https://idss-mesa.github.io/llms-full.txt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_checks.json
+  notes: >-
+    The NSF award abstract names ESIIL, NCEMS, AIIRA and the Event Horizon Telescope Collaboration as
+    the communities MESA "will be developed and tested with" (future tense), and the MESA site calls
+    the same four "anchor science communities". NEON appears in public MESA docs only as a data source
+    (a neon-mcp server for the NEON Data API), and NSCORE is not mentioned in any public MESA source
+    found. Whether NEON and NSCORE have agreed to be early adopters can only be confirmed by the speaker.
+  proposed_text: 'Partners: ESIIL · NCEMS · AIIRA · EHT (named in the award); NEON · NSCORE (confirm before listing)'
+- id: c6
+  text: 'Tyson L. Swetnam, PhD · tswetnam@unm.edu'
+  kind: factual
+  priority: low
+  status: supported
+  validation: NSF award record PI fields.
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/awards.json
+  notes: >-
+    NSF lists PI "Tyson L Swetnam" at the University of New Mexico with piEmail tswetnam@unm.edu. The
+    PhD was not checked (no source fetched).

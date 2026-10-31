@@ -44,24 +44,42 @@ claims:
   priority: high
   status: unverified
   validation: 'UNM course schedule. Note: the talk is Nov. 2026, so a Spring 2026 offering is past; Spring 2027?'
-  sources: []
-  evidence: []
+  sources:
+  - https://www.cs.unm.edu/programs-and-degrees/courses.html
+  - https://carc.unm.edu/education/cse/electives/
+  - https://schedule.unm.edu/assets/finals/spring-2026.pdf
+  - https://schedule.unm.edu/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/timing.csv
+  notes: 'Not confirmed. I found no public page naming a UNM CS 491/591 section "AI Automation and Agents" in any term. CS 491/591 are special-topics numbers (F7). The CARC electives page lists Fall 2026 CS 491/591 topics and agents is not among them (F8). The UNM Schedule of Classes search (lobowebapp.unm.edu) failed TLS verification through the proxy and WebFetch got HTTP 503, and Coursicle returned 429, so I could not search the Spring 2026 or Spring 2027 schedules; I did not work around this. Timing is certain: Spring 2026 finals ended May 16, 2026, 172 days before the talk (F9, timing.csv), so "Spring 2026" points students at a course that is over. The name "AI Automation and Agents" also resembles a UNM Continuing Education non-credit certificate ("AI Automation and Agentic AI Basics", advance.ce.unm.edu, seen only in search results, not fetched) - do not confuse the two. The speaker should confirm the term and title in LoboWeb.'
+  proposed_text: 'Spring 2027: CS 491/591, AI Automation and Agents (if scheduled); otherwise "CARC workshops and DUST 2026 training"'
 - id: c6
   text: 'Faculty: carc.unm.edu/docs/getting-started'
   kind: factual
   priority: medium
-  status: unverified
+  status: supported
   validation: 'Link check.'
-  sources: []
-  evidence: []
+  sources:
+  - https://carc.unm.edu/docs/getting-started/
+  - https://carc.unm.edu/docs/getting-started/overview/
+  evidence:
+  - data/processed/link_check.csv
+  - data/raw/research/facts.csv
+  notes: 'Link returns 200 (redirects to the trailing-slash URL) and is the CARC docs "Getting started" index (F1). The allocation how-to (create a project and request compute/storage allocations in ColdFront) is on the linked "Getting started at CARC" page (F2); resources are free of charge to UNM faculty, staff and student researchers (F3). Fine as is; carc.unm.edu/docs/getting-started/overview goes straight to the allocation steps if preferred.'
 - id: c7
   text: 'Researchers: consulting and support at CARC'
   kind: factual
   priority: low
-  status: unverified
+  status: supported
   validation: 'CARC service page.'
-  sources: []
-  evidence: []
+  sources:
+  - https://carc.unm.edu/docs/support/help/
+  - https://carc.unm.edu/contact/office-hours/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/link_check.csv
+  notes: 'CARC docs offer "general consulting" and say support is free for UNM faculty, staff and student researchers (F4, F5). Office hours Tue/Thu 11:00-12:00 MT on Zoom; consultations Thursdays 2 p.m. by appointment, including scoping the computing section of a proposal (F6). Optional: add help@carc.unm.edu on the slide.'
 - id: c8
   text: 'Set clear goals and realistic timelines, ask the important science questions that matter right now.'
   kind: qualitative
@@ -70,3 +88,16 @@ claims:
   validation: 'Framing.'
   sources: []
   evidence: []
+- id: c9
+  text: 'Notes: Point to ... DUST training'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'Confirm DUST training exists and what it covers.'
+  sources:
+  - https://unm-carc.github.io/dust-2026/llms.txt
+  - https://carc.unm.edu/docs/llms-full.txt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/link_check.csv
+  notes: 'DUST 2026 is a CARC-maintained set of three 50-minute lessons (open science, research data management, AI ethics) for NIEHS Superfund Research Program trainees at the Arizona DUST Center, UNM METALS Center and Texas A&M SRC (F10). It is aimed at those trainees, not all UNM students, though the lessons are public. If mentioned aloud, name it as "DUST 2026 open-science and AI-ethics lessons (unm-carc.github.io/dust-2026)".'

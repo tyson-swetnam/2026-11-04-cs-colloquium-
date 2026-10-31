@@ -1,0 +1,6 @@
+key,url,final_url,status,title
+c6,https://carc.unm.edu/docs/getting-started,https://carc.unm.edu/docs/getting-started/,200,Contents - CARC Documentation
+c6_overview,https://carc.unm.edu/docs/getting-started/overview/,https://carc.unm.edu/docs/getting-started/overview/,200,Getting started at CARC - CARC Documentation
+c7_help,https://carc.unm.edu/docs/support/help/,https://carc.unm.edu/docs/support/help/,200,Getting help - CARC Documentation
+c7_office_hours,https://carc.unm.edu/user-support-2/office-and-consultation-hours.html,https://carc.unm.edu/contact/office-hours/,200,Office and consultation hours :: Center for Advanced Research Computing | The University of New Mexico
+c9_dust,https://unm-carc.github.io/dust-2026/llms.txt,https://unm-carc.github.io/dust-2026/llms.txt,200,# DUST 2026: Open Science Training

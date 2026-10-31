@@ -1,5 +1,7 @@
 # How I Learned to Stop Worrying and Love the AI
 
+**Slides:** https://tyson-swetnam.github.io/2026-11-04-cs-colloquium-/ (published from `talk/deck.html` by `.github/workflows/pages.yml`)
+
 UNM Computer Science Colloquium · Tyson L. Swetnam · Wednesday, Nov. 4, 2026, 2 p.m. · Larrañaga Engineering Auditorium (Centennial 1041)
 
 This repository holds the talk and the evidence for it. Every number, attribution and technical statement on a slide has an entry in that slide's folder. Each entry is backed by code you can rerun and data you can trace to its source, or it is marked as not yet checked. The [claims register](CLAIMS.md) shows where each one stands.

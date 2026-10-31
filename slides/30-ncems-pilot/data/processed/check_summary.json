@@ -1,0 +1,101 @@
+{
+  "http_status": {
+    "mesa_docs_llms_full.txt": 200,
+    "mesa_site_llms_full.txt": 200,
+    "mesa_okf_index.md": 200,
+    "mesa_okf_news.md": 200,
+    "nsf_award_2632685.json": 200,
+    "nsf_award_2335029.json": 200,
+    "cyverse_ncems_news.html": 200,
+    "ncems_portal": "error: ConnectionError",
+    "datastore_dav_anon": "200 (redirected to CyVerse 'Unblock Me' page; not pursued)"
+  },
+  "mesa_public_term_counts": {
+    "NCEMS": 1,
+    "pilot": 1,
+    "DuckLake": 93,
+    "OKF": 119,
+    "AVU": 53,
+    "OLS": 92
+  },
+  "mesa_ncems_mentions": [
+    "2 GPU cloud, TACC mirrors, Open Storage Network, and NAIRR Pilot allocations. - **Anchor science communities** \u2014 ESIIL, NCEMS, AIIRA, and the Event Horizon Telescope drive the use cases. ## Apply Come redu"
+  ],
+  "quote_checks": [
+    {
+      "id": "f1",
+      "file": "nsf_award_2632685.json",
+      "found": true
+    },
+    {
+      "id": "f2",
+      "file": "nsf_award_2335029.json",
+      "found": true
+    },
+    {
+      "id": "f3",
+      "file": "cyverse_ncems_news.html",
+      "found": true
+    },
+    {
+      "id": "f4",
+      "file": "mesa_site_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f5",
+      "file": "mesa_docs_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f6",
+      "file": "mesa_docs_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f7",
+      "file": "mesa_docs_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f8",
+      "file": "mesa_docs_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f9",
+      "file": "mesa_docs_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f10",
+      "file": "mesa_okf_index.md",
+      "found": true
+    },
+    {
+      "id": "f11",
+      "file": "mesa_docs_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f12",
+      "file": "mesa_site_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f13",
+      "file": "mesa_site_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f14",
+      "file": "mesa_docs_llms_full.txt",
+      "found": true
+    },
+    {
+      "id": "f15",
+      "file": "nsf_award_2632685.json",
+      "found": true
+    }
+  ]
+}

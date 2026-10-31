@@ -1,0 +1,12 @@
+mesa_llms_full.txt:
+  note: Developer-written docs; checked for NAIRR, Jetstream, DuckLake
+  retrieved: '2026-10-31'
+  sha256: 9b8a11e9389293af1c9d175a25926566be13b8dff03ebd66a6c5ba89ab3f19d7
+  source: IDSS-MESA public docs (full text)
+  url: https://idss-mesa.github.io/docs/llms-full.txt
+nsf_award_2632685.json:
+  note: Award 2632685 with abstract
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: NSF Award API
+  url: https://api.nsf.gov/services/v1/awards/2632685.json
