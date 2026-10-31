@@ -1,0 +1,31 @@
+{
+  "poster": {
+    "alt": "Theatrical release poster for Dr. Strangelove",
+    "mime": "image/jpeg",
+    "pixels": [
+      250,
+      388
+    ],
+    "bytes": 47827,
+    "sha256": "8e1f38eaf40eeaa0006ac254b0f14cd20756ae67afa67cc8c7adbebc700f1686",
+    "img_tags_found": 1
+  },
+  "war_room": {
+    "alt": "The War Room in Dr. Strangelove",
+    "mime": "image/png",
+    "pixels": [
+      1280,
+      768
+    ],
+    "bytes": 369896,
+    "sha256": "5e554ee5f08e3c368eecd24685c04e82c9f836f482fa11c2250e394093600b2e",
+    "img_tags_found": 1,
+    "commons_pixels": [
+      1800,
+      1080
+    ],
+    "same_aspect_as_commons": true
+  },
+  "video_tags_in_deck": 0,
+  "strangelove_trailer_webm_mentioned": true
+}

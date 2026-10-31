@@ -1,0 +1,7 @@
+box,needle,needle_found,in_installed_server_table,documented_component,status_per_docs,source
+User request,Claude Code,True,False,"Agent clients (Claude Code, Codex CLI, Antigravity, OpenCode) and MESA Portal apps",third-party clients + MESA Portal; installable today,https://idss-mesa.github.io/docs/index.md
+MCP context,Reference iRODS Data Store MCP server,True,True,"mesa-mcp, irods-mcp-server, Formation (hosted by CyVerse)",installable today,https://idss-mesa.github.io/docs/index.md
+RAG retrieval,RAG,True,False,Layer 02 lists RAG; goal 03 'RAG pipelines over curated metadata',stated goal; no RAG component in the installed-server table,https://idss-mesa.github.io/okf/concepts/home.md
+AI agent orchestrator,multi-agent orchestration,True,False,"Goal 03 'sandboxed, multi-agent orchestration'; today the orchestrator is the user's own agent client",stated goal; no MESA orchestrator component in the installed-server table,https://idss-mesa.github.io/okf/concepts/home.md
+iRODS data mesh,iRODS Data Store,True,True,mesa-mcp (ds_* tools) and irods-mcp-server over the CyVerse Data Store (iRODS),installable today (access to the Data Store); federation is goal 02,https://idss-mesa.github.io/docs/index.md
+DuckLake data lake,DuckLake metadata history,True,True,mesa-ducklake: AVU metadata-history library backing mesa-mcp,"installable today, but scoped to metadata history; the general lakehouse is goal 01",https://idss-mesa.github.io/docs/index.md

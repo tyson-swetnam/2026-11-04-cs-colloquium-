@@ -15,15 +15,105 @@ claims:
   text: 'Claude, Codex, Antigravity and OpenCode all speak MCP, so each connects to the same MESA servers without custom integration'
   kind: factual
   priority: medium
-  status: unverified
-  validation: 'Client MCP support is evidenced on slide 15; MESA servers need their repositories.'
-  sources: []
-  evidence: []
+  status: partially-supported
+  validation: |
+    MCP support in all four clients is confirmed from each vendor's docs on slide 15 (c5). For the servers on this
+    slide, MESA's public docs (src/01_check.py -> data/processed/checks.csv) say the installer registers mesa-mcp,
+    irods and formation with every client it detects. But the Formation page says sign-in to Formation is confirmed
+    only for claude.ai and Claude Code: whether Codex, OpenCode and Antigravity can complete the CyVerse sign-in is
+    "not yet confirmed", CyVerse rejects Codex's and OpenCode's sign-in callback (redirect_uri), and OpenCode cannot
+    finish sign-in inside the MESA apps.
+  sources:
+  - https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  - https://code.claude.com/docs/en/mcp
+  - https://developers.openai.com/codex/mcp
+  - https://antigravity.google/docs/mcp
+  - https://opencode.ai/docs/mcp-servers/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.csv
+  - ../15-plain-language-definitions/data/processed/mcp_support.csv
+  notes: |
+    No custom code per agent is true (registration is config only, done by the installer), so the Data Store side
+    holds for all four. The Formation side is the risk: as documented on 2026-10-31, only Claude (claude.ai/Desktop
+    and Claude Code) is known to complete Formation's OAuth sign-in. For the live demo of "the same request from two
+    agents", use two Claude surfaces for Formation, or use Data Store requests if a second vendor's agent is wanted.
+    Rehearse any Codex or Antigravity Formation call before the talk. Checked from public docs only, not code.
+  proposed_text: 'All four agents speak MCP and register the same servers; Formation sign-in is confirmed today for Claude, with Codex, Antigravity and OpenCode in progress.'
 - id: c3
   text: 'Formation MCP launches apps and jobs on CyVerse Kubernetes; Data Store MCP finds, reads and writes data in iRODS'
   kind: technical
   priority: high
-  status: unverified
-  validation: 'MESA server code and a recorded run.'
-  sources: []
-  evidence: []
+  status: partially-supported
+  validation: |
+    Public docs only (no code; no recorded run in this folder). Formation's tools launch Discovery Environment apps,
+    follow and stop analyses, and submit batch jobs (MESA docs). CyVerse's docs say CyVerse runs mainly on a local
+    Kubernetes cluster and interactive (VICE) analyses run on Kubernetes workers; batch analyses run on Kubernetes via
+    Argo Workflows in current deployments, but the CyVerse system overview still says the DE uses HTCondor for
+    executable jobs, and older deployments send batch jobs to HTCondor. The Data Store servers (mesa-mcp ds_* tools,
+    irods-mcp-server) list, read and write iRODS files and metadata; without signing in they are read-only on public data.
+  sources:
+  - https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
+  - https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  - https://docs.cyverse.org/architecture/system-overview/index.md
+  - https://docs.cyverse.org/deployment/04-kubernetes/argo/index.md
+  - https://docs.cyverse.org/deployment/06-applications/vice/index.md
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.csv
+  notes: |
+    "Apps on CyVerse Kubernetes" is supported for interactive apps. For batch "jobs" CyVerse's own pages disagree
+    (Argo on Kubernetes vs HTCondor), and which one production de.cyverse.org uses was not confirmed. "Writes" needs a
+    CyVerse sign-in (cyverse-login or the authenticated endpoint); anonymous access is read-only. Formation itself also
+    reads and writes Data Store files. "Data Store MCP" is the slide's name for mesa-mcp plus irods-mcp-server (MESA
+    docs call irods-mcp-server the "Reference iRODS Data Store MCP server"). The validation's "recorded run" is not
+    in this folder.
+  proposed_text: 'Formation launches CyVerse apps and analyses (interactive apps run on Kubernetes); the Data Store servers find and read data in iRODS, and write it once you sign in.'
+- id: c4
+  text: 'Slide label: Formation and Data Store are "MESA MCP servers"'
+  kind: factual
+  priority: medium
+  status: partially-supported
+  validation: Checked against MESA's own docs (src/01_check.py).
+  sources:
+  - https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
+  - https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.csv
+  notes: |
+    MESA's docs say Formation is "the CyVerse Discovery Environment's own MCP server", run by CyVerse; MESA registers it
+    by URL. MESA's earlier local formation-mcp no longer works. The Data Store servers are MESA-distributed (repos in
+    idss-mesa) and mesa-mcp is MESA's own. Saying "MESA's MCP stack" or "the MCP servers MESA installs" is accurate;
+    calling Formation a MESA server is not.
+  proposed_text: 'MCP servers MESA installs: CyVerse Formation + MESA Data Store'
+- id: c5
+  text: 'Notes: in the demo both agents reach the same servers and the same data'
+  kind: technical
+  priority: low
+  status: partially-supported
+  validation: MESA docs on how each agent is wired in the MESA apps (src/01_check.py).
+  sources:
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.csv
+  notes: |
+    Same data, yes (one CyVerse Data Store). Same servers only by name: in the MESA apps Claude Code uses CyVerse's
+    hosted irods endpoints, Codex and Antigravity run a local irods server, and OpenCode's irods is the hosted public
+    read-only endpoint. Formation is one hosted endpoint for every client. Say "the same tools and the same data".
+  proposed_text: 'Notes: show both agents call the same tools and get the same Data Store data.'
+- id: c6
+  text: 'Footer: MESA · NSF Award #2632685'
+  kind: factual
+  priority: low
+  status: supported
+  validation: NSF Award API record for 2632685 (src/01_check.py -> data/processed/nsf_award.csv).
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/nsf_award.csv
+  notes: Award 2632685 is "MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico, NAIRR program, Office of Advanced Cyberinfrastructure, started 07/15/2026.

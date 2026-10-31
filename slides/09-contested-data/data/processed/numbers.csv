@@ -1,0 +1,6 @@
+metric,value,how
+bartz_gross_per_work_usd,3109,"1.5e9 / 482,460 works on the Works List"
+bartz_net_per_work_usd_upper_bound,2855,"after fee award, expenses and cost reserve, before administration and service awards"
+bartz_claimed_share,0.913,works claimed by 2026-04-16
+music_works_total,21231,Exhibit A (torrenting) + Exhibit B (training/output)
+music_statutory_max_usd,3184650000,"x $150,000 willful maximum (17 U.S.C. 504(c))"

@@ -1,0 +1,13 @@
+field,text,curie,is_a_name_of_term,reason
+Taxon,ground beetle,NCBITaxon:41073,True,resolves
+Taxon,carabid,NCBITaxon:41073,False,'carabid' does not match NCBITaxon:41073 (Carabidae)
+Taxon,Carabidae,NCBITaxon:41073,True,resolves
+Specimen,pinned beetle,OBI:0100051,False,'pinned beetle' does not match OBI:0100051 (specimen)
+Specimen,voucher,OBI:0100051,False,'voucher' does not match OBI:0100051 (specimen)
+Specimen,sample,OBI:0100051,False,'sample' does not match OBI:0100051 (specimen)
+Length,mm,UO:0000016,True,resolves
+Length,millimeters,UO:0000016,True,resolves
+Length,millim.,UO:0000016,False,'millim.' does not match UO:0000016 (millimeter)
+Area,mm²,UO:0000082,True,resolves
+Area,sq mm,UO:0000082,False,'sq mm' does not match UO:0000082 (square millimeter)
+Area,mm2,UO:0000082,True,resolves

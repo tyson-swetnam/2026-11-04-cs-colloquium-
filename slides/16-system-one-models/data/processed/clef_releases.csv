@@ -1,0 +1,4 @@
+model,created_utc,license_tag,license_file_is_apache2,base_model,params_total,params_billion,gated,private
+Cloudflare/clef,2026-09-30T21:15:35.000Z,apache-2.0,True,Qwen/Qwen3.8-27B,27356728560,27.36,False,False
+Cloudflare/clef-flash,2026-09-30T21:15:36.000Z,apache-2.0,True,Qwen/Qwen3.5-9B,9409813744,9.41,False,False
+Cloudflare/clef-omni,2026-10-09T04:10:22.000Z,apache-2.0,,Qwen/Qwen3-Omni-30B-A3B-Instruct,35259818545,35.26,False,False

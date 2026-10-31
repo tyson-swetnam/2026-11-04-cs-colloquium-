@@ -1,0 +1,66 @@
+aws_s3_api_welcome.html:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: 8f4462ffcaf5cf1be8b3cd4ed30b59c6ad65a94c197ca5d6b9dcb15896065c6e
+  source: Amazon Web Services
+  url: https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html
+claude_code_legal.html:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: 69646820d3fb20515632296b50aa00b991a2c363a62e410cba55bd3418251b17
+  source: Anthropic
+  url: https://code.claude.com/docs/en/legal-and-compliance
+ducklake_select.html:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: 5eb648e6e89662b08d39182fd4943e74dbf2cbde7b7097e79433c4d301eb5842
+  source: DuckDB Foundation / DuckLake
+  url: https://ducklake.select/
+irods_license.html:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: fbe12b9331ed502e0fda3cb33b8dc68c248c2d6e4b47f03c7f83f916a392ce7b
+  source: iRODS Consortium
+  url: https://irods.org/license/
+lustre_org.html:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: d29c28d0239f422b764b1d52b8f627bd6e5938a99c5a6b9f81e9a0e25889a1a6
+  source: OpenSFS / lustre.org
+  url: https://www.lustre.org/
+mesa_docs_llms-full.txt:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: 9b8a11e9389293af1c9d175a25926566be13b8dff03ebd66a6c5ba89ab3f19d7
+  source: MESA public docs (developer-published)
+  url: https://idss-mesa.github.io/docs/llms-full.txt
+mesa_stack.html:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: e6fc4cef7a6705a08d0df22528ec025ac5fdde3bf75492eb94f94ad23b81d825
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/stack.html
+nsf_award_2632685.json:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: NSF Award API
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,abstractText,fundProgramName,startDate,expDate,awardeeName,piFirstName,piLastName
+osn_home.html:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: 3b1a27b42927026cf4150dd3a23c0c20dd17d3ec6dff92cba629bd5bf5b7140b
+  source: Open Storage Network
+  url: https://www.openstoragenetwork.org/
+slide28_figure.png:
+  note: extracted from the embedded data URI
+  retrieved: '2026-10-31'
+  sha256: d0a89481cbb8f5dcab2fca858f95b8ec4a27b258fd47bdbdf5d651a9c5de67a2
+  source: Speaker's deck (MESA proposal figure)
+  url: talk/deck.html#28
+vast_eula.html:
+  note: fetched by src/01_fetch_sources.py
+  retrieved: '2026-10-31'
+  sha256: 904599bdb17d8568a835da1f6bf5ef31ab771da75cef8803e51e2fd90fd3c6d3
+  source: VAST Data
+  url: https://www.vastdata.com/legal/end-user-services-and-license-agreement

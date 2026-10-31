@@ -1,0 +1,39 @@
+{
+  "zenodo_record": {
+    "id": 22737751,
+    "title": "A Severe Misalignment of AI in Mathematics",
+    "publication_date": "2026-09-11",
+    "created": "2026-09-14T06:22:28.597689+00:00",
+    "n_creators": 25
+  },
+  "mathandai_signatories": 28,
+  "added_after_zenodo": [
+    "David Mumford",
+    "Grigory Margulis",
+    "Vladimir Drinfeld"
+  ],
+  "readme_now": {
+    "manuscripts": 721,
+    "families": 373
+  },
+  "lean_top_line_oct7": {
+    "formalized": 300,
+    "total": 719,
+    "pct": 41.7
+  },
+  "manuscript_arithmetic": {
+    "released": 722,
+    "withdrawn_oct7": 3,
+    "added_oct26": 2,
+    "expected_now": 721,
+    "readme_now": 721
+  },
+  "revised_oct7": 14,
+  "tao_mastodon": {
+    "statuses_checked": 40,
+    "oldest": "2026-09-03T15:39:22.382Z",
+    "newest": "2026-10-08T15:45:35.676Z",
+    "reblogs": 0,
+    "ahm_mentions": []
+  }
+}

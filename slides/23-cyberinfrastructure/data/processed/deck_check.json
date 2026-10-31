@@ -1,0 +1,8 @@
+{
+  "caisp_in_slide_text": false,
+  "caisp_in_notes": true,
+  "notes_caisp_sentence": "CAISP is proof the pattern works at competition scale.",
+  "notes_says_all_four_bookable": true,
+  "slide_text": "## 23 · AI sandboxes and secure enclaves · [evidence](../slides/23-cyberinfrastructure/)\n\n```text\nCyberinfrastructure\nAI sandboxes and secure enclaves\nThe Data Store\nPetabytes of iRODS collections on CyVerse. Public collections read anonymously, with no credentials at all.\nKubernetes AI sandboxes\nAgents get the tools they are allowed and nothing else. Egress through a proxy, every call recorded.\nPrivate inference\nACCESS-CI JS2, NRP, NIS: Self-hosted inference, model training, science gateways.\nCARC: Locally hosted, private, open weight models\nCo-scientists\nAgents which write hypotheses, hypothesis tests (code), download and analyze data, report results, continuously.\nMESA · NSF Award #2632685\n```",
+  "notes": "[~1.5 min · by 25:00] The practical slide: all four are bookable now. CyVerse allocations, Jetstream2 through ACCESS-CI. The sandbox is the other half of defense in depth: an agent only gets the tools it is allowed. CAISP is proof the pattern works at competition scale."
+}

@@ -1,0 +1,9 @@
+check,passes
+no call to .generate() anywhere in the file,True
+ClefModel.forward calls the backbone text_model exactly once,True
+backbone called with use_cache=False (no incremental decoding),True
+systemone() runs the model once per request,True
+choice answer = argmax over the caller's listed options,True
+noul answer = probability of 'true' (yes/no only),True
+score answer = probability-weighted mean of caller's levels,True
+response reports output_tokens = 0,True

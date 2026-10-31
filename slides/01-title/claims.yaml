@@ -6,15 +6,68 @@ claims:
   text: Wednesday, Nov. 4, 2026 · 2 p.m. · Larrañaga Engineering Auditorium (Centennial 1041)
   kind: factual
   priority: low
-  status: unverified
+  status: supported
   validation: Confirm against the CS department colloquium listing. Nov. 4, 2026 is a Wednesday (checked with Python's datetime).
-  sources: []
-  evidence: []
+  sources:
+  - https://cs.unm.edu/about/colloquium.html
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/summary.txt
+  notes: 'The UNM CS colloquium page lists the talk as "Wednesday, November 4, 2026, 2:00 PM Location: Larrañaga Engineering Auditorium (Centennial 1041)". Python datetime confirms Nov. 4, 2026 is a Wednesday (src/01_nsf_awards.py). Facts f01-f03.'
 - id: c2
   text: 'Speaker notes: host bio (Associate Professor of CS; Director of CARC; 12 years building national cyberinfrastructure; PI/Co-PI on NSF OAC and DBI projects)'
   kind: factual
   priority: low
-  status: unverified
+  status: partially-supported
   validation: Match the bio to the department's faculty page and to NSF award records (Award Search API, by PI name).
-  sources: []
-  evidence: []
+  sources:
+  - https://cs.unm.edu/about/colloquium.html
+  - https://cs.unm.edu/directory/faculty-profiles/tyson-swetnam.html
+  - https://carc-temp.unm.edu/news/welcome-director-swetnam/
+  - https://carc-temp.unm.edu/contact/personnel/
+  - https://api.nsf.gov/services/v1/awards.json?pdPIName=Tyson%20Swetnam
+  - https://api.nsf.gov/services/v1/awards.json?coPDPI=Tyson%20Swetnam
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/nsf_awards.csv
+  - data/processed/summary.txt
+  notes: >-
+    Associate Professor of CS and CARC Director are confirmed by the CS faculty profile and CARC pages
+    (CARC pages sit on carc-temp.unm.edu). The notes match the bio on the official colloquium listing word for word,
+    but that bio is self-supplied. "12 years": the faculty profile says he began CyVerse work in 2013, which is 13 years
+    by 2026 (the same profile also says "over the last 10 years"), so 12 is a slight undercount. NSF Award Search API
+    (src/01_nsf_awards.py) lists 8 awards with Tyson L Swetnam as PI (4) or co-PI (4). Still active on 2026-10-31
+    by end date: 2632685 MESA (PI, UNM, Office of Advanced Cyberinfrastructure, NAIRR program, $4.62M, to 05/31/2029);
+    2152673 (PI, Univ. of Arizona, Directorate for Biological Sciences, listed under "Infrastructure, Institutes, & Centers",
+    to 08/31/2027); 1954556 COALESCE (co-PI, Iowa State, CISE Cyber, Physical & Intelligent Systems, to 09/30/2027).
+    The only award the API labels Division of Biological Infrastructure (1743442 CyVerse, co-PI) ended 07/31/2025,
+    and only one active award is from OAC. So "currently PI and Co-PI of multiple projects from OAC and DBI" overstates
+    the present; it is accurate as a career summary (OAC: 1829701, 1940062, 2608717, 2632685; DBI: 1743442).
+    The API does not show subawards or senior-personnel roles, and 2152673 still lists the University of Arizona.
+  proposed_text: >-
+    He has spent more than a decade building cyberinfrastructure for the US national science community,
+    and has been PI or co-PI on NSF awards from the Office of Advanced Cyberinfrastructure and the Directorate
+    for Biological Sciences; he now leads MESA, an NSF NAIRR award at UNM.
+- id: c3
+  text: 'Tyson L. Swetnam, PhD · Center for Advanced Research Computing · The University of New Mexico'
+  kind: factual
+  priority: low
+  status: supported
+  validation: Check the PhD and UNM CARC affiliation against UNM pages.
+  sources:
+  - https://cs.unm.edu/directory/faculty-profiles/tyson-swetnam.html
+  - https://carc-temp.unm.edu/news/welcome-director-swetnam/
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Faculty profile lists "Ph.D., School of Natural Resources & Environment, University of Arizona, 2013"; CARC welcomes "Tyson L. Swetnam as its new Director". Facts f07-f10, f19.'
+- id: c4
+  text: 'Computer Science Colloquium · How I Learned to Stop Worrying and Love the AI'
+  kind: factual
+  priority: low
+  status: supported
+  validation: Check that the slide title and series match the department's colloquium listing.
+  sources:
+  - https://cs.unm.edu/about/colloquium.html
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Listed under "2026 Computer Science Colloquium Series" as "How I Learned to Stop Worrying and Love the AI". The on-click "Super Intelligence" is a slide gag, not part of the listed title. Facts f02, f04.'

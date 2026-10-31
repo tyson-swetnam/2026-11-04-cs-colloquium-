@@ -1,0 +1,132 @@
+ala_sota_desoto_ms.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: be28b72b0a7ec63edc0d6ee0b62d17fabdee7ae371af322b73c2e717c54f040c
+  source: American Lung Association, State of the Air
+  url: https://www.lung.org/research/sota/city-rankings/states/mississippi/desoto
+ala_sota_shelby_tn.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 1d9e71d28b3f8d7181a61c699bb204943371727a2a3018bad71adfeb58e3efc3
+  source: American Lung Association, State of the Air
+  url: https://www.lung.org/research/sota/city-rankings/states/tennessee/shelby
+arxiv_2412.06288.pdf:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 99aea4aad88a172f9ac791b439b897063b88c53838653c881093b1c290f46017
+  source: arXiv
+  url: https://arxiv.org/pdf/2412.06288
+arxiv_2412.06288_abs.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 7d25d01f641e7ef0853e6833390c9a8f897260cad2dbb4024fe0543e0488b8a2
+  source: arXiv
+  url: https://arxiv.org/abs/2412.06288
+arxiv_2412.06288v1.pdf:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 2e29f983c5b24bb98cb09aea5582b22e8b0e615efe4be001e5419f1bc615a750
+  source: arXiv (v1, Dec 2024)
+  url: https://arxiv.org/pdf/2412.06288v1
+brusselstimes_iea.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: a0d0f65932adaed8a45f5ef5f5843d48788d58b91afe659c9e176ddc788fea0c
+  source: Brussels Times (Belga)
+  url: https://brusselstimes.com/1528980/data-centres-will-double-global-electricity-demand-by-2030-iea
+cooldown_water_recycling.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 073bea9fc1cc35cee0ca36146a192fde5b0852d870719e30f3bf25b58c2acc0b
+  source: The Cool Down
+  url: https://www.thecooldown.com/green-tech/musk-ai-water-recycling-project-memphis/
+court_order_mtd_denied_2026-10-30.pdf:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: fb630e7c9ad8bcfeb76faf67afe077d4acd5af0b3c2a2009998ea4e82430a425
+  source: U.S. District Court, N.D. Miss. (order, via Earthjustice)
+  url: https://earthjustice.org/wp-content/uploads/2026/10/10313375508_6407.pdf
+earthjustice_case.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: cc32f1eba5343b01e75af56d8546ea050f862a7b956fc354ef69058d667e3f68
+  source: Earthjustice
+  url: https://earthjustice.org/case/xai-illegal-gas-power-plant-data-center-colossus
+econlib_jevons_coal_question_ch7.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: aa7c658271a0a18758ca5e1474053adfe24058f858b201ad518019b9f1dc9bb0
+  source: Econlib (Liberty Fund)
+  url: https://www.econlib.org/library/YPDBooks/Jevons/jvnCQ.html?chapter_num=9
+econlib_jevons_coal_question_front.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 03aa77f676fdb152340b21114c7723bd9e573491e87f571af27885393e32a198
+  source: Econlib (Liberty Fund)
+  url: https://www.econlib.org/library/YPDBooks/Jevons/jvnCQ.html
+eenews_water_reuse_stalled.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 3d8532e7429da1076c808a42fffdf5915dccc67d867161e07b5f10118f09be4b
+  source: E&E News by Politico
+  url: https://www.eenews.net/articles/xai-sidelines-major-water-reuse-project-as-ipo-looms/
+hydrocarbonengineering_iea_press_release.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 083f59930ae37e1ddb94142fe5b5ff36db2a504e889874eb3a30242cee65e221
+  source: Hydrocarbon Engineering (reprint of IEA press release)
+  url: https://www.hydrocarbonengineering.com/the-environment/10042025/iea-ai-set-to-drive-surging-electricity-demand/
+iifiir_iea_summary.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 6e146f073d01dc44cd31ac888804bf0fd738f3318013130f8f4417d085b6032a
+  source: International Institute of Refrigeration
+  url: https://iifiir.org/en/news/ai-set-to-drive-doubling-of-electricity-demand-from-data-centres
+memphisflyer_water_permit.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 423fa00bce1774c897ecc5bed964bae9048d70516ca9faf2ec485d44856daf92
+  source: Memphis Flyer
+  url: https://www.memphisflyer.com/state-issues-operating-permit-for-colossus-water-plant/
+selc_2026-02-13_threaten_suit.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: e77269253ea67ba6faf23e97b0dd39ffef076d6029676bff3b3ed2e130fdea7e
+  source: SELC
+  url: https://www.selc.org/press-release/groups-threaten-lawsuit-over-xais-unpermitted-gas-turbines-in-mississippi/
+selc_2026-03-10_permit.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: c3b61db8ffb08f54eabe8b426d0c7e688baca44d0e667d877f931f15be34aa5a
+  source: SELC
+  url: https://www.selc.org/press-releases/mississippi-regulators-rubber-stamp-air-permit-for-xai-power-plant-ignoring-overwhelming-public-pushback/
+selc_2026-04-09_appeal.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 9e4461d5d0a121c007d74efbe79e75faa2c80f79165cffde091e3b9da8aa8521
+  source: SELC
+  url: https://www.selc.org/press-release/groups-appeal-air-permit-for-xais-personal-power-plant/
+selc_colossus1.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: 56288ae5552ecd372806277966dce39f0bdf692e1490d310077884d78686b49d
+  source: SELC
+  url: https://www.selc.org/news/xai-built-an-illegal-power-plant-to-power-its-data-center/
+selc_mtd_denied.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: e086f4978a53efd507814f68b57ad995f4d3ba53cb8fee697528f0b96667c687
+  source: SELC
+  url: https://www.selc.org/press-release/court-tosses-request-to-block-clean-air-act-lawsuit-against-musks-xai/
+sustainabilityonline_iea_3pct.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: d63fa30d2c490af83469b1a9b51b7abb8835a0466cadc54e0f112ace03425f74
+  source: Sustainability Online
+  url: https://sustainabilityonline.net/news/data-centres-to-account-for-3-of-global-electricity-consumption-by-2030/
+wwdmag_restart_2027.html:
+  note: fetched by src/01_fetch.py
+  retrieved: '2026-10-31'
+  sha256: a610d776890fa882ac55f3615164213ed76b9518bd4498b79d91e8aec78bfd74
+  source: Water & Wastes Digest
+  url: https://www.wwdmag.com/wastewater-treatment/news/55386236/xai-commits-to-restarting-memphis-wastewater-recycling-project-in-2027

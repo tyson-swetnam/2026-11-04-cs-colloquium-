@@ -1,0 +1,81 @@
+cidr2021_paper17_lakehouse.pdf:
+  note: 'Armbrust, Ghodsi, Xin, Zaharia: Lakehouse'
+  retrieved: '2026-10-31'
+  sha256: a62426431b889c70ca1bcea4d0e46b41c33bc4d2009e14dd6e96333147bcc0f9
+  source: CIDR 2021
+  url: https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf
+delta_home.html:
+  retrieved: '2026-10-31'
+  sha256: 8ae0753373c4427237092a09fc7ab8aa89a78fcb7c119aa26b9fdbd14694ef2a
+  source: Delta Lake site
+  url: https://delta.io/
+ducklake_access_control.html:
+  retrieved: '2026-10-31'
+  sha256: 96472011bff535c982dc83b0a05ebd680b4c1d7a0dc26ae1e58ce5ce57c3d7d8
+  source: DuckLake docs
+  url: https://ducklake.select/docs/stable/duckdb/guides/access_control
+ducklake_conflicts.html:
+  retrieved: '2026-10-31'
+  sha256: 5a24c7db52ebc4acd1e09c7fcce96556851f8cc16cdbb9f82f69c27812334314
+  source: DuckLake docs
+  url: https://ducklake.select/docs/stable/duckdb/advanced_features/conflict_resolution
+ducklake_docs_index.html:
+  retrieved: '2026-10-31'
+  sha256: 60b73b4b3f5f1ceb5b5aa8665691315b28a10a833ac4ce9bd2f442572e55fa3b
+  source: DuckLake docs
+  url: https://ducklake.select/docs/stable/
+ducklake_duckdb_intro.html:
+  retrieved: '2026-10-31'
+  sha256: 9321f186ae97bfdb5ca30031ab7e58a7dab282fc3d46cfbedeb071bee75e5efc
+  source: DuckLake docs
+  url: https://ducklake.select/docs/stable/duckdb/introduction
+ducklake_home.html:
+  retrieved: '2026-10-31'
+  sha256: 5eb648e6e89662b08d39182fd4943e74dbf2cbde7b7097e79433c4d301eb5842
+  source: DuckLake project site
+  url: https://ducklake.select/
+ducklake_manifesto.html:
+  retrieved: '2026-10-31'
+  sha256: 217e8a22cc3bf267afdfbc6f1bf57d4a813253cb19c03ec514560c8063116cae
+  source: DuckLake manifesto
+  url: https://ducklake.select/manifesto/
+ducklake_snapshots.html:
+  retrieved: '2026-10-31'
+  sha256: dde90618618e53bbcc1a9e3f4d8b46271106603753e457634a33d695505e9786
+  source: DuckLake docs
+  url: https://ducklake.select/docs/stable/duckdb/usage/snapshots
+ducklake_spec_intro.html:
+  retrieved: '2026-10-31'
+  sha256: 6a3d6f344cd6cf18887fd1b4e06b6be4a8c7fb6077e0b1e6fd8c1fc6f6b35e5d
+  source: DuckLake specification
+  url: https://ducklake.select/docs/stable/specification/introduction
+ducklake_storage.html:
+  retrieved: '2026-10-31'
+  sha256: c96d2331d34f04b50db5b9b6ca6907786ce1a6c4186804919d7974f5cc2586e9
+  source: DuckLake docs
+  url: https://ducklake.select/docs/stable/duckdb/usage/choosing_storage
+ducklake_time_travel.html:
+  retrieved: '2026-10-31'
+  sha256: 33076105c1daa29480e6a913606a9ea94a7ea1cfc57e1d80e89136bf47ced4ac
+  source: DuckLake docs
+  url: https://ducklake.select/docs/stable/duckdb/usage/time_travel
+ducklake_transactions.html:
+  retrieved: '2026-10-31'
+  sha256: a54e570d9ec06e06fb3a5127c6d2feb33632bc2b42f02e518eaa8dd0894aa7e0
+  source: DuckLake docs
+  url: https://ducklake.select/docs/stable/duckdb/advanced_features/transactions
+iceberg_home.html:
+  retrieved: '2026-10-31'
+  sha256: 3bf99c0a75fe35d9fb4e1c22929c25b95f00f7c14a998dfb15264c685f75a6c2
+  source: Apache Iceberg site
+  url: https://iceberg.apache.org/
+mesa_home.md:
+  retrieved: '2026-10-31'
+  sha256: 4a2394ae047a7d405653b626f3549594712a9016888c1406cd31f2017e07fb66
+  source: MESA public site
+  url: https://idss-mesa.github.io/okf/concepts/home.md
+nsf_award_2632685.json:
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: NSF Award API
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,awardeeName,pdPIName,startDate,expDate,fundProgramName,orgLongName2,estimatedTotalAmt,abstractText,transType

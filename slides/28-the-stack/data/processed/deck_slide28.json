@@ -1,0 +1,16 @@
+{
+  "alt": "MESA layers: user interface (laptop, desktop, Kubernetes container), agentic AI, data management (DuckLake, S3 API, iRODS, Kubernetes CSI), compute (CyVerse, TACC, ACCESS-CI, NAIRR) and object storage (OSN, AWS S3, VAST, Lustre)",
+  "speaker_notes": "[~1 min \u00b7 by 36:00] Walk top to bottom: user, agentic AI, data management, compute, storage. Emphasize that every layer is swappable and open.",
+  "fetch_status": {
+    "https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,abstractText,fundProgramName,startDate,expDate,awardeeName,piFirstName,piLastName": 200,
+    "https://idss-mesa.github.io/docs/llms-full.txt": 200,
+    "https://idss-mesa.github.io/stack.html": 200,
+    "https://ducklake.select/": 200,
+    "https://irods.org/license/": 200,
+    "https://www.lustre.org/": 200,
+    "https://www.vastdata.com/legal/end-user-services-and-license-agreement": 200,
+    "https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html": 200,
+    "https://www.openstoragenetwork.org/": 200,
+    "https://code.claude.com/docs/en/legal-and-compliance": 200
+  }
+}

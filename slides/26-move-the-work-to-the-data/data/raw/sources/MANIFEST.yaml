@@ -1,0 +1,135 @@
+biorepo_collid11.json:
+  retrieved: '2026-10-31'
+  sha256: e4e4bf34e41fd41c5f52a6d439fa12b87a98044881de45e012404872e6cf8e4b
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=11&limit=1
+biorepo_collid12.json:
+  retrieved: '2026-10-31'
+  sha256: a39395e89ad7f3ea1a0ec91153cf00f8c7b9d8e8c110e64c3958695989b12779
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=12&limit=1
+biorepo_collid13.json:
+  retrieved: '2026-10-31'
+  sha256: 9c3c703cb3727784fa9e8094834d8d6554fd28b8dda659177a4f715d71651fd8
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=13&limit=1
+biorepo_collid14.json:
+  retrieved: '2026-10-31'
+  sha256: cbeb3760c890596fd7aa0c5eff11882f0dad2afb8edf12dd9143e5f4627657eb
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=14&limit=1
+biorepo_collid15.json:
+  retrieved: '2026-10-31'
+  sha256: 8421f6be6beb039fc48ae544dac100158b74dd8160a7a96d7300287d8934e182
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=15&limit=1
+biorepo_collid16.json:
+  retrieved: '2026-10-31'
+  sha256: 780c450dc3e075b0ed743c0b7e1323deeff2d16803a78a1f87183723e3fb31de
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=16&limit=1
+biorepo_collid17.json:
+  retrieved: '2026-10-31'
+  sha256: 36b698ef8d205de8749638beec6f97192704a33153e4acd19fd22d0dfb8afcda
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=17&limit=1
+biorepo_collid39.json:
+  retrieved: '2026-10-31'
+  sha256: cb9492282314ef7d92cf8a8d56d65bd4e90b0251d420c4e59c095d22ea105370
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=39&limit=1
+biorepo_collid4.json:
+  retrieved: '2026-10-31'
+  sha256: 978bbfe7b64665685e4f3ed5019ea3949d0bb7e782e89f3536ef91165ab517b4
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=4&limit=1
+biorepo_collid63.json:
+  retrieved: '2026-10-31'
+  sha256: 533f6f0a763ae20c6f22696e9e238db2ab256615d47f689351f50c4e6830842a
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=63&limit=1
+biorepo_collid95.json:
+  retrieved: '2026-10-31'
+  sha256: ed02a134f8f037e56a51b6ed7da172d3af472fefcc86f1df6611204ec5686336
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=95&limit=1
+gbif_044d870e-5718-410a-9450-9c2ceac8e1d9.json:
+  retrieved: '2026-10-31'
+  sha256: e93a4662c8724aa01d2f83871359ca7a181ff87997c585c221b54e3e784fef34
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=044d870e-5718-410a-9450-9c2ceac8e1d9&limit=0
+gbif_187a7e8e-bee1-4933-9783-454103386c26.json:
+  retrieved: '2026-10-31'
+  sha256: 842e210a1dc11a43b863a7438d0b8ae273f0182c290a7c64e760c176778cc9fa
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=187a7e8e-bee1-4933-9783-454103386c26&limit=0
+gbif_2564e9e2-0248-4a3b-8344-24fc0956ed73.json:
+  retrieved: '2026-10-31'
+  sha256: 88ba947c45c4ce86e0a37a4e88d0ac5253e5166f402892dd0666de27f3e40883
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=2564e9e2-0248-4a3b-8344-24fc0956ed73&limit=0
+gbif_44262c91-b3fd-48e4-8e47-1ee03ac2d496.json:
+  retrieved: '2026-10-31'
+  sha256: b332120ac1ce5c731001206aa0b5d6eca8b1bf54973d9861237a64427685e35a
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=44262c91-b3fd-48e4-8e47-1ee03ac2d496&limit=0
+gbif_596bde6d-0df5-46cb-8eef-92dc3f169ceb.json:
+  retrieved: '2026-10-31'
+  sha256: 842e210a1dc11a43b863a7438d0b8ae273f0182c290a7c64e760c176778cc9fa
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=596bde6d-0df5-46cb-8eef-92dc3f169ceb&limit=0
+gbif_69e5ceb4-30a6-4074-8f9d-d6a0457cb789.json:
+  retrieved: '2026-10-31'
+  sha256: 32c745de86b3fd37ad5573846c8efa04f2148a6912633950d7891be9c278ac37
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=69e5ceb4-30a6-4074-8f9d-d6a0457cb789&limit=0
+gbif_69f3ca43-ed03-4ed1-92c4-58f9bd0eafc1.json:
+  retrieved: '2026-10-31'
+  sha256: c92949215b6d79ef61b520391a3148b39f04cb8c64dc393c5e5ce785b87e946f
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=69f3ca43-ed03-4ed1-92c4-58f9bd0eafc1&limit=0
+gbif_8cb7c449-ba11-4464-865e-8029b8d772e8.json:
+  retrieved: '2026-10-31'
+  sha256: 76212f1d70d910ec0f17215ef25c7813284dfe86e44fd23013619c06ef692e48
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=8cb7c449-ba11-4464-865e-8029b8d772e8&limit=0
+gbif_c113d947-5dcf-4a52-aaa2-735dba1089b7.json:
+  retrieved: '2026-10-31'
+  sha256: d9405fd756ff4618a83b407e169c6d84254f067015df39d493698b7b0ba5cd62
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=c113d947-5dcf-4a52-aaa2-735dba1089b7&limit=0
+gbif_c8e9fe8e-391b-44b9-ad94-a5d15f4b5788.json:
+  retrieved: '2026-10-31'
+  sha256: 7be880fee514db5bd28f026e8e073aa9af0a0dc14289f2deefa3f319746acf5a
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=c8e9fe8e-391b-44b9-ad94-a5d15f4b5788&limit=0
+gbif_d7b80380-1156-4d50-a261-c5b1ac1ea59a.json:
+  retrieved: '2026-10-31'
+  sha256: ae8d34f903004583059b1008bcbdf9f5d8c44eb14ec8e8f944140a6392a84ca6
+  source: GBIF occurrence API
+  url: https://api.gbif.org/v1/occurrence/search?datasetKey=d7b80380-1156-4d50-a261-c5b1ac1ea59a&limit=0
+neon_DP1.10022.001.json:
+  retrieved: '2026-10-31'
+  sha256: 3608e11c2f6ef4a16b5d660dfae168e6ad4967fe6b8752cefdafc5461167dce9
+  source: NEON Data API
+  url: https://data.neonscience.org/api/v0/products/DP1.10022.001
+neon_sites.json:
+  retrieved: '2026-10-31'
+  sha256: ee34132a691e016742ea3cfcd396c4c9b208a9834134d887f0dcf0a6f5735c6a
+  source: NEON Data API
+  url: https://data.neonscience.org/api/v0/sites
+nsf_2632685.json:
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: NSF Award API
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,agency,startDate,expDate,awardeeName,piFirstName,piLastName,estimatedTotalAmt
+ols_NCBITaxon_41073.json:
+  retrieved: '2026-10-31'
+  sha256: e8e5e747fb1e6bc2ba36b3be6cc4ab14200db1fc8ca9c10abfe563f407e477d9
+  source: EBI OLS4
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/ncbitaxon/terms?obo_id=NCBITaxon:41073
+ols_UO_0000016.json:
+  retrieved: '2026-10-31'
+  sha256: 49c66176807acf9555d39ffd34be29cfad91333eaab85e154c3da9017d71cb8e
+  source: EBI OLS4
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/uo/terms?obo_id=UO:0000016

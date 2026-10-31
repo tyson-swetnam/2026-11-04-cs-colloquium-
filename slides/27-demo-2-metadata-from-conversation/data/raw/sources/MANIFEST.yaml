@@ -1,0 +1,85 @@
+datastore_allowed_dirs.json:
+  note: tools/call datastore__list_allowed_directories {}
+  retrieved: '2026-10-31'
+  sha256: 54ff62382806869e61f9d3a2a75ffc9123d11ef9f958b387938dc4c1d642af93
+  source: CyVerse public Data Store MCP server (anonymous, read-only)
+  url: https://mcp-public.cyverse.ai/mcp
+datastore_konz_dp1_10022_metadata.json:
+  note: tools/call datastore__get_metadata {"path":"/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001"}
+  retrieved: '2026-10-31'
+  sha256: 58f37b17757f22a1da8429c6b94959abc4688ebea0d67cf67096ea758acf5706
+  source: CyVerse public Data Store MCP server (anonymous, read-only)
+  url: https://mcp-public.cyverse.ai/mcp
+datastore_mcp_tools.json:
+  note: tools/list
+  retrieved: '2026-10-31'
+  sha256: 054feb4cf97af8907698b6c37350152cb685522616a08cfbdafba3a7e4ed893f
+  source: CyVerse public Data Store MCP server (anonymous, read-only)
+  url: https://mcp-public.cyverse.ai/mcp
+datastore_neon_beetle_seg_ls.json:
+  note: tools/call datastore__list_directory_details {"path":"/iplant/home/tswetnam/neon-beetle-seg"}
+  retrieved: '2026-10-31'
+  sha256: fd614c9a4bf42093655a4b8cb63028779f69c344b4b8b47996d9428f9e4f0f8f
+  source: CyVerse public Data Store MCP server (anonymous, read-only)
+  url: https://mcp-public.cyverse.ai/mcp
+datastore_neon_beetle_seg_metadata.json:
+  note: tools/call datastore__get_metadata {"path":"/iplant/home/tswetnam/neon-beetle-seg"}
+  retrieved: '2026-10-31'
+  sha256: f20882ca9eedcfbd057e94ec6b4390c7ae3557fa03b553cca424476f9cbb1e24
+  source: CyVerse public Data Store MCP server (anonymous, read-only)
+  url: https://mcp-public.cyverse.ai/mcp
+datastore_search_41073.json:
+  note: tools/call datastore__search_metadata {"search_string":"41073"}
+  retrieved: '2026-10-31'
+  sha256: 8d6cee0ba407fadd73424844e6a5a524349286bc9a4d9d1f10cc3745359dd256
+  source: CyVerse public Data Store MCP server (anonymous, read-only)
+  url: https://mcp-public.cyverse.ai/mcp
+datastore_search_neonbeetle.json:
+  note: tools/call datastore__search_metadata {"search_string":"neon-beetle"}
+  retrieved: '2026-10-31'
+  sha256: 132556a3fab9cf1c51387c1a37c962c1e26544f65ebfe86e04e4818c594a0cec
+  source: CyVerse public Data Store MCP server (anonymous, read-only)
+  url: https://mcp-public.cyverse.ai/mcp
+irods_5.0.2_icommands_metadata.html:
+  note: 'imeta help: AVU definition'
+  retrieved: '2026-10-31'
+  sha256: f6ff11a0db09aa2f5de63cc5e5fb0d6fa24a564025b622bbff44a8d4c5c308bb
+  source: iRODS documentation
+  url: https://docs.irods.org/5.0.2/icommands/metadata/
+mcp_connect_local_servers.html:
+  note: Claude Desktop local MCP servers via claude_desktop_config.json
+  retrieved: '2026-10-31'
+  sha256: f4a8e3c30de33649253955412641ef49048090742de59670665d23ea286bdaf9
+  source: Model Context Protocol docs
+  url: https://modelcontextprotocol.io/docs/develop/connect-local-servers
+mesa_llms_full.txt:
+  note: Full text of idss-mesa.github.io/docs, incl. mesa-mcp, claude.ai and Claude
+    Desktop, portal/data pages
+  retrieved: '2026-10-31'
+  sha256: 9b8a11e9389293af1c9d175a25926566be13b8dff03ebd66a6c5ba89ab3f19d7
+  source: MESA public docs (developer-written)
+  url: https://idss-mesa.github.io/docs/llms-full.txt
+neon_DP1.10022.001.json:
+  note: NEON Data API product record
+  retrieved: '2026-10-31'
+  sha256: 3608e11c2f6ef4a16b5d660dfae168e6ad4967fe6b8752cefdafc5461167dce9
+  source: API
+  url: https://data.neonscience.org/api/v0/products/DP1.10022.001
+nsf_award_2632685.json:
+  note: NSF Award API record
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: API
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,awardeeName,piFirstName,piLastName,startDate,expDate
+ols_NCBITaxon_41073.json:
+  note: OLS4 term record for NCBITaxon:41073
+  retrieved: '2026-10-31'
+  sha256: e8e5e747fb1e6bc2ba36b3be6cc4ab14200db1fc8ca9c10abfe563f407e477d9
+  source: API
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/ncbitaxon/terms?obo_id=NCBITaxon:41073
+ols_UO_0000016.json:
+  note: OLS4 term record for UO:0000016
+  retrieved: '2026-10-31'
+  sha256: 49c66176807acf9555d39ffd34be29cfad91333eaab85e154c3da9017d71cb8e
+  source: API
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/uo/terms?obo_id=UO:0000016

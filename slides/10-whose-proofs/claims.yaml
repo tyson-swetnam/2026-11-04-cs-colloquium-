@@ -6,31 +6,153 @@ claims:
   text: '722 AI-written math manuscripts on 372 problems, posted by OpenAI to GitHub (openai/math) in October 2026; three retracted within a day'
   kind: quantitative
   priority: high
-  status: unverified
+  status: supported
   validation: "OpenAI's own announcement and repository listing; Wikipedia article as secondary."
-  sources: []
-  evidence: []
+  sources:
+  - https://github.com/openai/math/blob/main/history.md
+  - https://github.com/openai/math/blob/main/README.md
+  - https://retractionwatch.com/2026/10/08/openai-withdraws-preprints-722-manuscripts-unsolved-math-problems/
+  - https://en.wikipedia.org/wiki/OpenAI_bulk_release_of_mathematical_papers
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.json
+  - src/01_check.py
+  notes: |
+    Released 6 Oct 2026 (OpenAI's history.md: "our October 6 release"). Retraction Watch: 722 preprints on 372
+    problems; three withdrawn on 7 Oct for a sign error, "less than 24 hours" later; OpenAI's own log confirms the
+    three withdrawals (F01-F05). The repository now lists 721 manuscripts in 373 families (722 - 3 + 2 added on
+    26 Oct; checks.json), so 722/372 is right as the count at release. Quanta's release-day item said 377 problems;
+    we keep Retraction Watch's 372, which matches Wikipedia. OpenAI calls them "withdrawn"; "retracted" is fine
+    in plain speech. The repo files were read as public raw files (raw.githubusercontent.com), not via GitHub tools.
 - id: c2
   text: 'About half were checked in Lean; OpenAI had not read every paper; 28 Fields Medalists had warned against treating open problems as benchmarks'
   kind: quantitative
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: 'The declaration and OpenAI statements.'
-  sources: []
-  evidence: []
+  sources:
+  - https://github.com/openai/math/blob/main/history.md
+  - https://www.quantamagazine.org/updates/transformation/
+  - https://www.scientificamerican.com/article/the-most-exciting-claims-from-openais-heap-of-new-proofs/
+  - https://doi.org/10.5281/zenodo.22737750
+  - https://mathandai.org/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.json
+  notes: |
+    (1) Lean: OpenAI said "about half" on release day (Quanta, F09), but its own log gives 300/719 = 41.7% of
+    top-line results formalized after the 7 Oct additions, and the README says ~42% (F07, F08). "About half" is
+    generous; "about 42%" is OpenAI's own figure. Quanta also reports some formalizations may prove weaker
+    statements than the papers claim. (2) "Had not read every paper" is Scientific American's statement
+    (F10), not a first-hand OpenAI quote. (3) The declaration "A Severe Misalignment of AI in Mathematics"
+    (11 Sep 2026, before the release) warns that "the push by AI companies to solve mathematical problems as a
+    benchmark is detrimental" (F11). The Zenodo version lists 25 Fields Medalists; mathandai.org now lists 28
+    (Drinfeld, Margulis, Mumford added later; checks.json). "28" is right today, but 25 signed at launch.
+  proposed_text: 'About 42% had Lean proofs, and OpenAI researchers had not read them all. 28 Fields Medalists had warned against treating open problems as benchmarks.'
 - id: c3
   text: "Allegation: Buckmaster and Alpöge's unpublished Euler results reached OpenAI days before its Navier-Stokes claim"
   kind: attribution
   priority: high
-  status: unverified
+  status: partially-supported
   validation: 'Present as an allegation; primary statements by Buckmaster and OpenAI.'
-  sources: []
-  evidence: []
+  sources:
+  - https://cims.nyu.edu/~tristanb/statement.pdf
+  - https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy
+  evidence:
+  - data/raw/research/facts.csv
+  notes: |
+    Buckmaster's own statement (posted 7-8 Sep 2026, before OpenAI's 8 Sep announcement) says Alpöge had
+    "received tips that information about our progress had been passed to OpenAI", that OpenAI's first prompt was
+    sent "after information about our work had reached OpenAI", and that he asked whether the model "had been
+    trained on, or had access to, our sessions in Codex" (F14-F16). He also writes "I do not know whether our data
+    was used. I am not accusing anyone of anything" (F17). So it is information about their progress that reached
+    OpenAI, by his account; he does not claim the results themselves did. Slide wording "results reached OpenAI"
+    is a little stronger than his statement, and the speaker notes' "leaked" should be softened. Keep it framed
+    as his account.
+  proposed_text: "Tristan Buckmaster says word of his and Levent Alpöge's unpublished Euler work reached OpenAI days before its Navier–Stokes claim, and asked whether their Codex sessions trained the model."
 - id: c4
   text: 'OpenAI first could not rule out de-identified usage data, then called influence from those prompts impossible; dispute unresolved'
   kind: attribution
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: 'OpenAI statements, dated.'
-  sources: []
-  evidence: []
+  sources:
+  - https://openai.com/index/navier-stokes-solution/
+  - https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician
+  - https://www.abc.net.au/news/2026-09-11/racing-to-solve-maths-problems-pointless-tristan-buckmaster-says/107141628
+  - https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition
+  - https://www.scientificamerican.com/article/openais-blockbuster-navier-stokes-proof-isnt-what-we-thought-it-was/
+  evidence:
+  - data/raw/research/facts.csv
+  notes: |
+    Both OpenAI statements are confirmed, but only through press quotes: openai.com returned HTTP 403 to our
+    client and no archived copy was available. 8 Sep post (quoted by TechCrunch): "While unlikely, we cannot rule
+    out that de-identified data derived from their usage of our products helped improve our models" (F19).
+    Spokesperson, 9-12 Sep (ABC, The Verge): "categorically ... impossible for Dr Buckmaster's Codex prompts over
+    the last two months to have influenced the system in any way, including training" (F21). That denial covers
+    only his last two months of prompts, not all his usage data. Buckmaster stayed sceptical (F22). "Dispute is
+    unresolved" needs care: by 13 Oct, experts quoted by Scientific American said the methods' resemblance
+    "now seems merely skin-deep" (F23), which weakens the idea that the proof copied theirs. Whether usage data
+    influenced the model has not been independently checked.
+  proposed_text: "OpenAI first could not rule out de-identified usage data, then called influence from his last two months of Codex prompts “impossible.” Experts now say the proofs differ; the data question was never independently checked."
+- id: c5
+  text: 'Speaker notes: the manuscripts came from an unreleased internal model, and 14 more were revised within a day'
+  kind: quantitative
+  priority: low
+  status: supported
+  validation: "OpenAI's repository README and history log."
+  sources:
+  - https://github.com/openai/math/blob/main/README.md
+  - https://github.com/openai/math/blob/main/history.md
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.json
+  notes: 'README says "an unnamed internal OpenAI model" (F25); the 7 Oct log entry says "We have revised 14 other manuscripts" (F24).'
+- id: c6
+  text: "Speaker notes: the Association for Human Mathematics said mathematicians did not ask for this work, and Terence Tao reshared their statement"
+  kind: attribution
+  priority: low
+  status: partially-supported
+  validation: 'AHM statement page; Tao public posts.'
+  sources:
+  - https://www.ahmath.org/statements
+  - https://futurism.com/artificial-intelligence/mathematicians-openai-furious
+  - https://mathstodon.xyz/@tao
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.json
+  notes: |
+    The AHM statement of 7 Oct does say "Mathematicians did not ask for this work to be done" (F26). The Tao reshare
+    rests only on Futurism, which misspells him "Terence Tau" and names no platform (F27). His public Mastodon
+    timeline from 3 Sep to 8 Oct has no reblog or mention of the AHM statement (checks.json); it may have been on
+    another platform. Either cite it as "reported by Futurism" or drop it.
+  proposed_text: 'The Association for Human Mathematics said mathematicians "did not ask for this work to be done."'
+- id: c7
+  text: 'Speaker notes: OpenAI says its proofs differ; Alpöge disputes that'
+  kind: attribution
+  priority: low
+  status: partially-supported
+  validation: 'OpenAI post; Alpöge statement; later expert assessment.'
+  sources:
+  - https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician
+  - https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy
+  - https://www.scientificamerican.com/article/openais-blockbuster-navier-stokes-proof-isnt-what-we-thought-it-was/
+  evidence:
+  - data/raw/research/facts.csv
+  notes: |
+    OpenAI: "our proofs differ significantly" (F20, via TechCrunch). Alpöge's rebuttal ("looks more along the lines
+    of another Euler blowup proof we had") is sourced here only via Wikipedia (F28); his X post was not fetched.
+    Add for balance: on 13 Oct, experts quoted by Scientific American said the resemblance "now seems merely
+    skin-deep" (F23).
+  proposed_text: "OpenAI says its proofs differ; Alpöge disputed that, though experts quoted in October say the methods do differ."
+- id: c8
+  text: 'Slide source line: F. Landymore, Futurism, Oct. 9, 2026'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'Futurism article page metadata.'
+  sources:
+  - https://futurism.com/artificial-intelligence/mathematicians-openai-furious
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Byline Frank Landymore; datePublished 2026-10-09T10:14:55-04:00 (F29).'

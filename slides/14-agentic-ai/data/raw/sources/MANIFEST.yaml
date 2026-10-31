@@ -1,0 +1,42 @@
+docs_index.md:
+  note: Markdown twin of MESA docs home
+  retrieved: '2026-10-31'
+  sha256: 3f790087135b571143c16099702154e0bac07e756cf6f167610ff19a3e438e26
+  source: MESA public site (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/index.md
+docs_llms.txt:
+  note: MESA docs outline
+  retrieved: '2026-10-31'
+  sha256: a882532e30dc04d351a9d0813fe2876f2795c59c3c35f943a91b154dd551850e
+  source: MESA public site (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/llms.txt
+mesa_about_ai-agents_.html:
+  note: MESA for AI agents page
+  retrieved: '2026-10-31'
+  sha256: fede5852dd235d0864165bbe0c3cda88ff8d9fe2a1fdd2f3ee04d26a67c36278
+  source: MESA public site (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/about/ai-agents/
+mesa_docs_.html:
+  note: MESA docs home (rendered)
+  retrieved: '2026-10-31'
+  sha256: e13f07e858106dda1ecfd3ba8109200bc8c68c090169baeb2a176e20365b7466
+  source: MESA public site (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/
+mesa_home.html:
+  note: MESA home page (rendered)
+  retrieved: '2026-10-31'
+  sha256: 4bd7735291ffd336e424d84b7077903801f52555ca1ca5dcf687d4a9e7f6d54b
+  source: MESA public site (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/
+mesa_stack_html.html:
+  note: MESA stack page
+  retrieved: '2026-10-31'
+  sha256: e6fc4cef7a6705a08d0df22528ec025ac5fdde3bf75492eb94f94ad23b81d825
+  source: MESA public site (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/stack.html
+okf_concepts_home.md:
+  note: Markdown twin of MESA home page
+  retrieved: '2026-10-31'
+  sha256: 4a2394ae047a7d405653b626f3549594712a9016888c1406cd31f2017e07fb66
+  source: MESA public site (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/okf/concepts/home.md

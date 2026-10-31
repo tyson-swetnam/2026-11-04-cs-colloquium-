@@ -1,0 +1,7 @@
+claim_id,quantity,value,unit,note
+c1,IEA 2030 / 2024 data-centre electricity (945/415),2.277,x,more than double: True
+c1,Implied global electricity 2024 (415 TWh / 1.5%),27667,TWh,sanity check only
+c1,Global electricity implied if 945 TWh were exactly 3%,31500,TWh,"IEA says 'just under 3%', so 2030 total > this"
+c2;c6,Southaven turbines in complaint (sum of unit mix),27,units,matches 'twenty-seven'
+c2;c6,Southaven capacity from unit mix,495,MW,matches 'at least 495 MW'
+c3,Requested water vs recycling plant capacity (3.7 / 13 MGD),0.285,ratio,recycling plant would offset more than the requested draw

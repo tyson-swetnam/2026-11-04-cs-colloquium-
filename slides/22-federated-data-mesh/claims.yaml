@@ -30,34 +30,100 @@ claims:
   sources: []
   evidence: []
 - id: c4
-  text: 'Notes: iRODS rules fire on ingest, no deleted datasets, permission-based access; data stays where it lives'
+  text: 'Notes: iRODS gives one namespace and one policy engine across storage at different institutions; rules fire on ingest, no deleted datasets, permission-based access; data stays where it lives'
   kind: technical
   priority: medium
-  status: unverified
-  validation: Show the rule-engine configuration (policy enforcement points) that implements each property.
-  sources: []
-  evidence: []
+  status: partially-supported
+  validation: 'iRODS 4.3.4 docs (home, pluggable rule engine, dynamic PEPs, irm) and the MESA home page; quotes checked by src/02_facts.py.'
+  sources:
+  - https://docs.irods.org/4.3.4/
+  - https://docs.irods.org/4.3.4/plugins/pluggable_rule_engine/
+  - https://docs.irods.org/4.3.4/plugins/dynamic_policy_enforcement_points/
+  - https://docs.irods.org/4.3.4/icommands/user/
+  - https://idss-mesa.github.io/okf/concepts/home.md
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'Unified namespace, data virtualization (data stays put), permission-based access and PEPs that fire on every operation (so on ingest) are documented iRODS features (f1, f2, f4). "No deleted datasets" is not default iRODS behaviour: irm moves objects to trash and -f bypasses it (f9). It holds only if the zone admin writes a pre-PEP that refuses deletes (f5). "One policy engine across institutions" is true within one zone; across federated zones each zone runs its own rules (see c7), so the notes slightly contradict themselves. MESA''s "one policy engine" wording is the project''s own description (f3).'
+  proposed_text: 'iRODS gives one namespace over storage at different institutions, and a policy engine whose rules can fire on ingest and refuse deletes. Your data stays where it lives.'
 - id: c5
   text: 'The AI agent has its own account, read-only, whatever its intent; agent writes (delete, overwrite, change permissions) are denied and logged'
   kind: technical
   priority: high
-  status: unverified
-  validation: 'iRODS ACLs and policy enforcement points in a test zone.'
-  sources: []
-  evidence: []
+  status: partially-supported
+  validation: 'iRODS ACL docs (ichmod), dynamic PEP docs, MESA public pages for Formation, the public Data Store connector and mesa-sandbox.'
+  sources:
+  - https://docs.irods.org/4.3.4/icommands/user/
+  - https://docs.irods.org/4.3.4/plugins/dynamic_policy_enforcement_points/
+  - https://idss-mesa.github.io/okf/concepts/formation-mcp.md
+  - https://idss-mesa.github.io/okf/concepts/stack.md
+  - https://idss-mesa.github.io/okf/concepts/mesa-sandbox.md
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'iRODS can do this: an account holding only read_object cannot delete, move or overwrite (irm/imv need delete_object, iput needs modify_object; f12), and changing permissions needs own; a pre-PEP can also refuse the call (f5). Logging the refusal needs the audit plugin or a rule that logs (see c7). But MESA''s public docs do not describe this as deployed: the hosted Formation connector "acts as that user" and includes delete_data (f19, f20); mesa-sandbox runs agents "with the user''s permissions" and its Kubernetes profiles are untested on a cluster (f22, f23, developer-reported). Only the anonymous public Data Store connector is documented as read-only (f21). Present the slide as the design pattern, not as what every MESA agent does today. Whether MESA''s own code configures agent accounts this way can only be checked in its code; left unchecked.'
+  proposed_text: 'Give the AI agent its own iRODS account with read rights only. Deletes, overwrites and permission changes are refused, whatever its intent; turn on auditing to log them.'
 - id: c6
   text: 'MESA gate: an iRODS policy pre-check on every request (who is asking; own/modify/read rights; which zone and path)'
   kind: technical
   priority: high
-  status: unverified
-  validation: 'iRODS rule-engine configuration (pep_api_*_pre).'
-  sources: []
-  evidence: []
+  status: partially-supported
+  validation: 'iRODS pluggable rule engine and dynamic PEP docs (pep_api_*_pre); MESA public pages.'
+  sources:
+  - https://docs.irods.org/4.3.4/plugins/pluggable_rule_engine/
+  - https://docs.irods.org/4.3.4/plugins/dynamic_policy_enforcement_points/
+  - https://idss-mesa.github.io/okf/concepts/home.md
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'The mechanism is real: PEPs are checked before and after every operation (f4); a failing _pre PEP stops the operation (f5, f6); API PEPs exist for delete (pep_api_data_obj_unlink_pre, f7), rename, put, open and permission change (pep_api_mod_access_control_pre); the rule receives the requesting user and zone (f8) and the object path. Permission checks themselves are done by the iRODS ACLs on every access, separate from the PEP. "MESA gate" is not a named component on MESA''s public site; whether MESA deploys such pre-PEPs is only checkable in its code, so that part is unverified. Rights: iRODS 4.3 has ten levels, of which own/modify/read are the common three (c8).'
+  proposed_text: 'Policy gate: iRODS checks each request before it runs: who is asking, what rights they hold (own, modify, read), which zone and path.'
 - id: c7
   text: "Every call goes to the zone's audit log; federated zones share data but keep their own catalogs and rules"
   kind: technical
   priority: medium
-  status: unverified
-  validation: 'iRODS audit plugin and federation docs; a log excerpt.'
-  sources: []
-  evidence: []
+  status: partially-supported
+  validation: 'iRODS Auditing capability page, Federation page and Glossary.'
+  sources:
+  - https://docs.irods.org/4.3.4/capabilities/auditing/
+  - https://docs.irods.org/4.3.4/system_overview/federation/
+  - https://docs.irods.org/4.3.4/system_overview/glossary/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'Federation half supported: zones are independent administrative units (f16), there is one iCAT per zone (f17), and federation exists to keep local control (f18). Audit half needs a qualifier: the Audit Rule Engine Plugin emits a message for every PEP (f15), but it is an optional plugin sending AMQP messages to a configured topic (e.g. into Elasticsearch/OpenSearch); it is not a default "audit log". No public MESA page says it is enabled on CyVerse/MESA zones.'
+  proposed_text: 'With iRODS auditing on, every call is recorded. Federated zones share data but keep their own catalogs and rules.'
+- id: c8
+  text: 'iRODS rights are own, modify or read'
+  kind: technical
+  priority: low
+  status: supported
+  validation: 'ichmod help in the iRODS 4.3.4 docs.'
+  sources:
+  - https://docs.irods.org/4.3.4/icommands/user/
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Simplified but fair: iRODS 4.3 has ten linear levels (f10); own, modify_object (alias write) and read_object (alias read) are the familiar three (f11), and the only ones besides null before 4.3.0. Speaker can mention "ten levels in 4.3" if asked.'
+- id: c9
+  text: 'The researcher owns the collection (iRODS "own" permission), so can edit, move, delete and share'
+  kind: technical
+  priority: low
+  status: supported
+  validation: 'iRODS Users and Permissions page and ichmod help.'
+  sources:
+  - https://docs.irods.org/4.3.4/system_overview/users_and_permissions/
+  - https://docs.irods.org/4.3.4/icommands/user/
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'The owner has full control and can grant and remove access (f13); creators get own by default (f14); own is the top level so it includes delete_object and modify_object (f10, f12).'
+- id: c10
+  text: 'Footer: MESA · NSF Award #2632685'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'NSF Award API record.'
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'NSF award 2632685, "Research Infrastructure: Category II: MESA", University of New Mexico, PI Tyson L Swetnam, 2026-07-15 to 2029-05-31, $4,617,408 obligated (f24). The abstract describes the federated data mesh as planned work (f25).'

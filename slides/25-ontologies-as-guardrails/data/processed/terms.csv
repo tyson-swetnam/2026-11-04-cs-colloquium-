@@ -1,0 +1,6 @@
+field,curie,slide_label,ols_label,slide_label_is_a_name,synonyms,rank,is_obsolete,defining_ontology,is_defining
+Taxon,NCBITaxon:41073,Carabidae,Carabidae,True,ground beetles,http://purl.obolibrary.org/obo/TAXRANK_0000004,False,ncbitaxon,True
+Specimen,OBI:0100051,specimen,specimen,True,,,False,obi,True
+Length,UO:0000016,millimetre,millimeter,True,millimetre; mm,,False,uo,True
+Area,UO:0000082,square millimetre,square millimeter,True,mm^[2]; square millimetre,,False,uo,True
+-,NCBITaxon:7041,,Coleoptera,,beetles; beetles,http://purl.obolibrary.org/obo/TAXRANK_0000003,False,ncbitaxon,True

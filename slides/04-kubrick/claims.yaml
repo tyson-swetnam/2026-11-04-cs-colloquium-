@@ -6,15 +6,66 @@ claims:
   text: 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb: Kubrick, Columbia Pictures, 1964'
   kind: factual
   priority: low
-  status: unverified
-  validation: 'Film record (e.g. Library of Congress / AFI catalog).'
-  sources: []
-  evidence: []
+  status: supported
+  validation: 'BBFC classification record (official): full title, director Stanley Kubrick, 1964 cinema certificate dated 9 Jan 1964 with distributor Columbia Picture Corp. Ltd. Wikipedia infobox (secondary) gives release 29 Jan 1964 and distributor Columbia Pictures Corporation, and calls it a political satire.'
+  sources:
+  - https://www.bbfc.co.uk/release/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-q29sbgvjdglvbjpwwc0yodmyotc
+  - https://en.wikipedia.org/wiki/Dr._Strangelove
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Columbia financed and distributed it; it was made in England (Shepperton) with Hawk Films as a production company, so "Columbia Pictures" is right as the studio/distributor credit. The AFI Catalog timed out from this network and the Library of Congress record page needs JavaScript, so neither was used.'
 - id: c2
   text: 'Poster (Tomi Ungerer), War Room still and trailer are public domain via Wikimedia Commons'
   kind: factual
   priority: medium
-  status: unverified
-  validation: "Read each file's licence and reason on Wikimedia Commons (the notes ask to confirm the reason on each page)."
-  sources: []
-  evidence: []
+  status: partially-supported
+  validation: 'Read each Commons file page wikitext (src/01_commons_licences.py) and measured the images embedded in talk/deck.html (src/02_deck_images.py).'
+  sources:
+  - https://commons.wikimedia.org/wiki/File:Dr._Strangelove_poster.png
+  - https://commons.wikimedia.org/wiki/File:Dr._Strangelove_-_The_War_Room.png
+  - https://commons.wikimedia.org/wiki/File:Dr._Strangelove_(1964)_-_Trailer.webm
+  - https://en.wikipedia.org/wiki/File:Dr._Strangelove_poster.jpg
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/commons_licences.json
+  - data/processed/deck_images.json
+  notes: 'War Room still and trailer: Commons tags both {{PD-US-no notice}} (US publication 1931-1977 without a copyright notice); the still is a frame from the trailer. That is public domain in the US only, and Commons warns it may still be copyrighted elsewhere. The deck War Room image is a 1280x768 downscale of the Commons 1800x1080 original. The poster does not hold: the Commons file named "Dr._Strangelove_poster.png" is a 1196x720 frame from the trailer, while the deck shows a 250x388 JPEG (47,827 bytes) that matches the non-free English Wikipedia file "Dr._Strangelove_poster.jpg" (see c4). The trailer is linked in the notes but not embedded in the deck.'
+  proposed_text: 'Poster: Tomi Ungerer, © 1964 Columbia Pictures (fair use) · War Room still and trailer: Columbia Pictures, 1964, via Wikimedia Commons · Public domain in the US'
+- id: c3
+  text: 'Plot: a (paranoid) general orders a nuclear first strike, and the President’s War Room scrambles to stop it and recall the bombers'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'BBFC synopsis (official) for the general ordering a nuclear attack on the Soviet Union; Wikipedia plot summary (secondary) for the War Room recall effort.'
+  sources:
+  - https://www.bbfc.co.uk/release/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-q29sbgvjdglvbjpwwc0yodmyotc
+  - https://en.wikipedia.org/wiki/Dr._Strangelove
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Added in review (slide body and speaker notes). Precise detail if asked: Brig. Gen. Jack D. Ripper issues "Wing Attack Plan R"; all bombers but one are recalled.'
+- id: c4
+  text: 'The poster image shown on the slide is public domain via Wikimedia Commons'
+  kind: factual
+  priority: high
+  status: contradicted
+  validation: 'Decoded the poster image embedded in talk/deck.html (src/02_deck_images.py) and compared it with the Commons and English Wikipedia file pages.'
+  sources:
+  - https://en.wikipedia.org/wiki/File:Dr._Strangelove_poster.jpg
+  - https://commons.wikimedia.org/wiki/File:Dr._Strangelove_poster.png
+  evidence:
+  - data/processed/deck_images.json
+  - data/raw/research/facts.csv
+  notes: 'Added in review. The embedded poster is 250x388 px, 47,827 bytes, which matches the English Wikipedia file "Original file (250 × 388 pixels, file size: 47 KB)". That file is tagged non-free ("No free or public domain images have been located for this item"). The Commons PNG that the notes cite is a landscape trailer frame, not this poster. Either credit the poster as fair use (copyright Columbia Pictures), or swap in the Commons trailer frame, which is public domain in the US.'
+  proposed_text: 'Poster: Tomi Ungerer, © 1964 Columbia Pictures (fair use)'
+- id: c5
+  text: 'The poster artwork is by Tomi Ungerer'
+  kind: attribution
+  priority: low
+  status: supported
+  validation: 'ERIAC article on Ungerer and the Wikipedia infobox caption both credit Ungerer with the 1964 theatrical poster (secondary sources).'
+  sources:
+  - https://eriac.org/?p=1321
+  - https://en.wikipedia.org/wiki/Dr._Strangelove
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Added in review. No primary source (e.g. the Musée Tomi Ungerer catalogue) was fetched; two independent secondary sources agree. Note that the author field on the Commons "poster" PNG says Ungerer, but that file is a trailer frame (the trailer is credited to Pablo Ferro).'

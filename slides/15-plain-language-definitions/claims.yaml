@@ -56,12 +56,54 @@ claims:
   evidence:
   - data/processed/mcp_support.csv
   - ../14-agentic-ai/mcp.json
-  notes: Goose's docs moved from block.github.io/goose to goose-docs.ai (redirect confirmed 2026-10-31).
+  notes: |
+    Goose's docs moved from block.github.io/goose to goose-docs.ai (redirect confirmed 2026-10-31).
+    MESA's own installer registers its servers with four of the five (Claude Code, Codex CLI, Antigravity, OpenCode);
+    Goose ships in the MESA CLI app but is not a documented installer target (facts.csv f9-f10). The note's claim is
+    about MCP in general, so it stands; just don't say MESA's installer covers Goose.
 - id: c6
   text: "Notes: MESA's MCP servers are public today"
   kind: factual
   priority: medium
-  status: unverified
-  validation: Check the github.com/idss-mesa repositories (public, licence, an MCP server entry point) once they are attached to this session.
-  sources: []
-  evidence: []
+  status: partially-supported
+  validation: |
+    Checked from MESA's public docs only (src/02_mesa_public.py -> data/processed/mesa_public.csv), not its code
+    or the GitHub repositories. The docs give a public one-line installer pulled from raw.githubusercontent.com/idss-mesa,
+    say the installer clones the server repos from the idss-mesa GitHub org, link a repo for each server, and note a
+    published Docker image (cyverse/irods-mcp-server). Default data access is anonymous with no credentials.
+  sources:
+  - https://idss-mesa.github.io/docs/index.md
+  - https://idss-mesa.github.io/docs/install/index.md
+  - https://idss-mesa.github.io/docs/servers/mesa-mcp/index.md
+  - https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md
+  - https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/mesa_public.csv
+  notes: |
+    "Public" here means anyone can install and run them; the docs strongly imply the repos are public (an anonymous
+    installer clones them) but repository visibility and licence were not checked directly, and no licence is named
+    on the server or install pages. Two of the three registered servers are not MESA's own: Formation is CyVerse's
+    hosted Discovery Environment server, and irods-mcp-server is the reference iRODS server (Docker image under cyverse/).
+    MESA's own server is mesa-mcp (with mesa-ducklake and mesa-anyjev as add-ons). If saying "open source", confirm
+    the licence in the repos first.
+  proposed_text: "MESA's MCP stack is public today: one install command, and its servers' source is on GitHub (idss-mesa)."
+- id: c7
+  text: 'Card 4: describe a server once, and any agent that speaks MCP can use it'
+  kind: technical
+  priority: low
+  status: supported
+  validation: |
+    The MCP docs say MCP is supported across many clients, "making it easy to build once and integrate everywhere"
+    (re-fetched 2026-10-31); slide 14's server is described once in mcp.json and c5 confirms MCP support in the five
+    named clients.
+  sources:
+  - https://modelcontextprotocol.io/docs/getting-started/intro
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/mcp_support.csv
+  - ../14-agentic-ai/mcp.json
+  notes: |
+    Build once is accurate; each client still needs its own registration entry (config formats differ), which is
+    what MESA's installer automates. "Any agent" holds for the server; transport support (stdio vs HTTP) and
+    sign-in can differ by client.

@@ -1,0 +1,20 @@
+layer,component,kind,deps_dev_project,deps_dev_licence,verdict,note
+User interface,Laptop / Desktop,hardware,,,not applicable,Hardware; licence not applicable
+User interface,K8s Container,software,github.com/kubernetes/kubernetes,Apache-2.0,open source,
+Agentic AI,Agentic AI (unnamed in figure),software,,,not checked,"Figure names no product; MESA supports Claude Code, Codex CLI, Antigravity, OpenCode (rows below)"
+Agentic AI,Claude Code (MESA client),software,github.com/anthropics/claude-code,(none reported),proprietary,"Anthropic terms of service, not an OSI licence (facts f08)"
+Agentic AI,Codex CLI (MESA client),software,github.com/openai/codex,Apache-2.0,open source,
+Agentic AI,Antigravity (MESA client),software,,,not checked,Google product; licence not checked
+Agentic AI,OpenCode (MESA client),software,github.com/sst/opencode,MIT,open source,
+Data management,DuckLake,software,github.com/duckdb/ducklake,MIT,open source,
+Data management,S3 API,interface,,,proprietary interface (open implementations exist),"Amazon's API; no open-source licence, but implemented by open-source servers"
+Data management,iRODS,software,github.com/irods/irods,BSD-3-Clause,open source,
+Data management,K8s CSI,specification,github.com/container-storage-interface/spec,Apache-2.0,open source,
+Compute,CyVerse,facility,,,not applicable,Facility/service; licence not applicable
+Compute,TACC,facility,,,not applicable,Facility; licence not applicable
+Compute,ACCESS-CI,program,,,not applicable,Allocation program; licence not applicable
+Compute,NAIRR,program,,,not applicable,Program; licence not applicable
+Object storage,OSN,service,,,not applicable,Storage service (Ceph-based pods); licence not applicable
+Object storage,AWS S3,commercial service,,,proprietary,Proprietary cloud service (facts f06)
+Object storage,VAST,commercial software,,,proprietary,"Proprietary EULA (facts f04, f05)"
+Object storage,Lustre,software,github.com/lustre/lustre-release,non-standard,open source,lustre.org: open-source (facts f03); deps.dev reports 'non-standard' (GPL-2.0 with exceptions)

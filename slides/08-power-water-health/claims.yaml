@@ -6,39 +6,203 @@ claims:
   text: 'Global data-center power use projected to more than double by 2030, roughly 3% of total electricity, equal to Japan; 945 TWh by 2030'
   kind: quantitative
   priority: high
-  status: unverified
+  status: supported
   validation: 'IEA, Energy and AI (2025) primary figures.'
-  sources: []
-  evidence: []
+  sources:
+  - https://www.hydrocarbonengineering.com/the-environment/10042025/iea-ai-set-to-drive-surging-electricity-demand/
+  - https://brusselstimes.com/1528980/data-centres-will-double-global-electricity-demand-by-2030-iea
+  - https://sustainabilityonline.net/news/data-centres-to-account-for-3-of-global-electricity-consumption-by-2030/
+  - https://iifiir.org/en/news/ai-set-to-drive-doubling-of-electricity-demand-from-data-centres
+  - https://www.iea.org/reports/energy-and-ai/executive-summary
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  - data/processed/computed.csv
+  notes: |
+    All parts check out against the IEA press release of 10 April 2025, read as a verbatim reprint (F01, F02):
+    "more than double by 2030 to around 945 TWh, slightly more than the entire electricity consumption of Japan
+    today". The 2024 base is 415 TWh (1.5%), so 945/415 = 2.28x (computed.csv). Two news reports of the
+    report give "just under 3%" / "nearly 3%" for 2030 (F03, F04). iea.org itself returned a 403 Cloudflare
+    challenge to our User-Agent, so the IEA page was not read directly; the figures are consistent across all
+    copies. 945 TWh is the IEA Base Case, one of several scenarios. "Equal to Japan" should be "about as much
+    as Japan uses today": the comparison is with Japan's current use, not Japan in 2030.
+  proposed_text: 'Global data-center electricity use is projected to more than double by 2030, to just under 3% of the world total, about what Japan uses today (IEA, 2025).'
 - id: c2
   text: 'xAI ran up to 35 unpermitted gas turbines at Colossus 1; 27 unpermitted power Colossus 2; up to 1,700+ tons of NOx a year'
   kind: quantitative
   priority: high
-  status: unverified
+  status: partially-supported
   validation: 'SELC and Earthjustice filings; permit records; NAACP v. xAI docket.'
-  sources: []
-  evidence: []
+  sources:
+  - https://www.selc.org/news/xai-built-an-illegal-power-plant-to-power-its-data-center/
+  - https://earthjustice.org/wp-content/uploads/2026/10/10313375508_6407.pdf
+  - https://www.selc.org/press-release/court-tosses-request-to-block-clean-air-act-lawsuit-against-musks-xai/
+  - https://www.selc.org/press-release/groups-threaten-lawsuit-over-xais-unpermitted-gas-turbines-in-mississippi/
+  - https://www.selc.org/press-releases/mississippi-regulators-rubber-stamp-air-permit-for-xai-power-plant-ignoring-overwhelming-public-pushback/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  - data/processed/computed.csv
+  notes: |
+    "As many as 35" at Colossus 1 is SELC's account (F06). The complaint says there were "at least twenty-seven"
+    turbines at Southaven as of April 7, 2026, with a potential to emit about 1,700 tons of NOx a year. The court's
+    Oct. 30, 2026 order recites this (F08, F09). The unit mix in footnote 4 sums to 27 units and 495 MW
+    (computed.csv). These are the plaintiffs' allegations, accepted as true only for the motion to dismiss; they
+    are not findings. The numbers are also out of date. SELC's Oct. 30, 2026 release speaks of "dozens of
+    unpermitted gas turbines" with a potential of "more than 5,000 tons" of NOx a year (F11), so the fleet has grown
+    beyond 27. SELC gives no new count. Press reports of 46 to 59 turbines were not checked against a primary source.
+    "Still unpermitted" holds: the March 2026 MDEQ permit covers a different 41-turbine plant, and the complaint
+    says none of the running turbines fall under it (F10, F32). "1,700+ tons" should be credited to the complaint.
+  proposed_text: 'xAI ran up to 35 unpermitted gas turbines at Colossus 1 in Memphis. Dozens more, still unpermitted, power Colossus 2 (27 when the NAACP sued in April 2026): more than 1,700 tons of smog-forming NOx a year, the suit alleges.'
 - id: c3
   text: 'Colossus cooling draws on the Memphis Sand Aquifer; up to 3.7 million gallons a day requested; recycling plant stalled April 2026'
   kind: quantitative
   priority: medium
-  status: unverified
+  status: supported
   validation: 'MLGW statements; Memphis Flyer; Politico.'
-  sources: []
-  evidence: []
+  sources:
+  - https://www.eenews.net/articles/xai-sidelines-major-water-reuse-project-as-ipo-looms/
+  - https://www.thecooldown.com/green-tech/musk-ai-water-recycling-project-memphis/
+  - https://www.wwdmag.com/wastewater-treatment/news/55386236/xai-commits-to-restarting-memphis-wastewater-recycling-project-in-2027
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: |
+    E&E News (Politico), May 4, 2026: "requested to use up to 3.7 million gallons of water a day, both at its
+    original data center and second site ... MLGW said" (F17). It also says "Work abruptly stopped at the facility in
+    April" and calls the aquifer "the sole source of Memphis drinking water" (F18, F19). The Cool Down repeats this
+    (F20). The 3.7 MGD figure is a request reported by MLGW, not measured use, and no MLGW document was found.
+    Since the slide was written: on June 24, 2026 Wastewater Digest reported that xAI had committed to restart
+    construction by Q1 2027, according to Mayor Paul Young (F21). "Stalled" is accurate, but the slide should
+    mention the restart promise.
+  proposed_text: 'Cooling draws on the Memphis Sand Aquifer, the city’s drinking water; xAI has asked for up to 3.7 million gallons a day. Its promised recycling plant stalled in April 2026; xAI now says it will restart in early 2027.'
 - id: c4
   text: 'Notes: ~1,300 premature deaths a year by 2030, ~600,000 asthma cases, ~$20B a year in health costs (UC Riverside & Caltech, The Unpaid Toll, 2024)'
   kind: attribution
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: 'Read the paper (arXiv preprint) for the exact figures and scenario.'
-  sources: []
-  evidence: []
+  sources:
+  - https://arxiv.org/abs/2412.06288
+  - https://arxiv.org/pdf/2412.06288v1
+  - https://arxiv.org/pdf/2412.06288
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: |
+    The figures match preprint v1 (Dec. 9, 2024, "The Unpaid Toll: Quantifying the Public Health Impact of AI"):
+    about 600,000 asthma symptom cases and 1,300 premature deaths in 2030, with costs of "more than $20 billion"
+    (F24). The latest version is v4 (June 8, 2026). It is retitled "Health-Informed Computing: Estimating and
+    Addressing the Public Health Impact of Data Centers", moves the same numbers to 2028, and presents them as a
+    high-growth scenario (F25, F26). It is still a preprint, not peer-reviewed. Three wording fixes: the cost is
+    "more than $20B", not "close to $20B"; the "asthma cases" are asthma symptom cases; and the year depends on the
+    version cited. v4 also lists an RIT author alongside UC Riverside and Caltech.
+  proposed_text: 'Under a high-growth scenario, air pollution from US data centers could cause about 1,300 premature deaths and 600,000 asthma symptom cases in 2028, with health costs over $20B (Han et al., UC Riverside & Caltech, arXiv preprint, rev. 2026).'
 - id: c5
   text: 'Jevons (The Coal Question, 1865): more efficient steam engines made Britain burn more coal'
   kind: factual
   priority: low
-  status: unverified
+  status: supported
   validation: 'Primary text.'
-  sources: []
-  evidence: []
+  sources:
+  - https://www.econlib.org/library/YPDBooks/Jevons/jvnCQ.html?chapter_num=9
+  - https://www.econlib.org/library/YPDBooks/Jevons/jvnCQ.html
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: |
+    Chapter VII, "Of the Economy of Fuel": "It is wholly a confusion of ideas to suppose that the economical use
+    of fuel is equivalent to a diminished consumption. The very contrary is the truth." (F27). Jevons calls Watt's
+    condenser and expansive working "two modes of economising heat" (F28) and ties coal economy to growth in
+    industry (F29). This is Jevons's argument, not a measured result. The text read is the 1866 2nd edition; the book
+    was first published in 1865 (F30). On the slide, the link to "945 TWh by 2030" is the speaker's analogy: the
+    IEA does not describe its projection as a Jevons effect.
+- id: c6
+  text: 'Notes: Colossus 2 is powered by 27 unpermitted turbines (up to 495 MW) in Southaven, Mississippi, half a mile from homes and a mile from an elementary school; potential emissions >1,700 t NOx, up to 180 t fine particulates and 19 t formaldehyde a year'
+  kind: quantitative
+  priority: medium
+  status: partially-supported
+  validation: 'Court order reciting the complaint; Earthjustice case page; SELC releases.'
+  sources:
+  - https://earthjustice.org/wp-content/uploads/2026/10/10313375508_6407.pdf
+  - https://earthjustice.org/case/xai-illegal-gas-power-plant-data-center-colossus
+  - https://www.selc.org/press-release/court-tosses-request-to-block-clean-air-act-lawsuit-against-musks-xai/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  - data/processed/computed.csv
+  notes: |
+    Each figure matches the complaint as the court recites it: at least 27 turbines and at least 495 MW (F08;
+    the unit mix sums to 495 MW in computed.csv), and about 1,700 t NOx, 180 t PM2.5 and 19 t formaldehyde (F09).
+    The distances come from Earthjustice (F12). All of these are allegations by the plaintiffs and their counsel.
+    They describe the plant as of April 2026; SELC now cites "dozens" of turbines and more than 5,000 t NOx,
+    400 t PM and 47 t formaldehyde a year (F11). The notes should say "at least 27 when the suit was filed" and
+    "the complaint alleges".
+  proposed_text: 'Colossus 2 is powered by unpermitted turbines just over the state line in Southaven, Mississippi: at least 27 (495 MW) when the NAACP sued in April 2026, and dozens now. The complaint alleges over 1,700 t NOx, 180 t fine particulates and 19 t formaldehyde a year. SELC’s October figures are higher.'
+- id: c7
+  text: 'Notes: The NAACP, represented by SELC and Earthjustice, sued under the Clean Air Act; on Oct. 30, 2026 the court denied xAI’s motion to dismiss'
+  kind: factual
+  priority: medium
+  status: supported
+  validation: 'Court order (N.D. Miss., No. 3:26-cv-74, Doc. 139).'
+  sources:
+  - https://earthjustice.org/wp-content/uploads/2026/10/10313375508_6407.pdf
+  - https://www.selc.org/press-release/court-tosses-request-to-block-clean-air-act-lawsuit-against-musks-xai/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: |
+    Opinion and Order, NAACP v. X.AI Corp. and MZX Tech LLC, No. 3:26-cv-74-DMB-JMV (N.D. Miss.), Doc. 139,
+    signed by Judge Debra M. Brown on Oct. 30, 2026: "the defendants' motion to dismiss [54] is DENIED" (F13).
+    The court held that the turbines are not "mobile sources" under Mississippi's SIP (F14). The complaint was filed
+    on April 14, 2026, and the NAACP is represented by SELC and Earthjustice (F15). This is a ruling on a motion to
+    dismiss, not on liability. A DOJ motion to dismiss was denied separately in October, and the preliminary
+    injunction is still pending, according to SELC.
+- id: c8
+  text: 'Notes: Memphis-area counties get an F for ozone from the American Lung Association'
+  kind: factual
+  priority: low
+  status: partially-supported
+  validation: 'ALA State of the Air county pages.'
+  sources:
+  - https://www.selc.org/news/xai-built-an-illegal-power-plant-to-power-its-data-center/
+  - https://www.lung.org/research/sota/city-rankings/states/tennessee/shelby
+  - https://www.lung.org/research/sota/city-rankings/states/mississippi/desoto
+  evidence:
+  - data/raw/research/facts.csv
+  notes: |
+    SELC (April 2026) says Shelby County, TN and DeSoto County, MS "received an 'F' for ozone pollution from the
+    American Lung Association" (F16). The ALA county pages were fetched, but their grades load by script, so the
+    grade and report year could not be confirmed from ALA itself. Attribute the grade to the ALA via SELC, or check
+    it in a browser before the talk.
+- id: c9
+  text: 'Notes: Colossus 1 has run since June 2024; after SELC threatened suit, xAI removed its unpermitted turbines and permitted 15'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'SELC account; Shelby County Health Department permit.'
+  sources:
+  - https://www.selc.org/news/xai-built-an-illegal-power-plant-to-power-its-data-center/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: |
+    Supported as SELC's account (F06, F07). SELC is the NAACP's counsel. The Shelby County Health Department permit
+    for the 15 turbines was not fetched, so this has not been confirmed independently.
+- id: c10
+  text: 'Notes: a wastewater recycling plant at the T.E. Maxson treatment plant was permitted in January 2026 to save up to 13 million gallons a day of aquifer water'
+  kind: quantitative
+  priority: low
+  status: supported
+  validation: 'TDEC permit as reported by the Memphis Flyer.'
+  sources:
+  - https://www.memphisflyer.com/state-issues-operating-permit-for-colossus-water-plant/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: |
+    Memphis Flyer, Jan. 28, 2026: TDEC issued an operating permit to CTC Property LLC that "will preserve use of up
+    to 13 million gallons of aquifer water per day" (F22). The plant treats wastewater from the T.E. Maxson sewage
+    treatment plant (F23); it is not described as sited at Maxson. The TDEC permit document itself was not
+    fetched. As of June 2026, restart is promised by Q1 2027 (F21).
+  proposed_text: 'A recycling plant to treat T.E. Maxson wastewater, permitted by the state in January 2026 to spare up to 13 million gallons a day of aquifer water, paused construction in April 2026; xAI now promises a restart by early 2027.'

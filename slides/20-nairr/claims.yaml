@@ -33,55 +33,157 @@ claims:
   text: 'NAIRR: NSF-led public-private partnership; piloted since 2024, with 940+ projects in all 50 states'
   kind: quantitative
   priority: high
-  status: unverified
+  status: supported
   validation: 'nsf.gov NAIRR page and nairrpilot.org.'
-  sources: []
-  evidence: []
+  sources:
+  - 'https://nairrpilot.org/'
+  - 'https://www.nsf.gov/cise/updates/nsf-establishes-operations-center-national-artificial'
+  - 'https://www.nsf.gov/focus-areas/ai/nairr'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/project_counts.csv
+  - data/processed/quote_check.csv
+  notes: 'The nairrpilot.org counter read "950 Research projects supported" and "50 States + DC & Puerto Rico" on 2026-10-31, so 940+ holds. NSF''s own pages give lower, older figures: "over 800" (NAIRR-OC announcement, 2026-09-01) and "more than 600" (NAIRR focus page). NSF calls it "a national public-private effort" (f4-f6). If asked, cite the portal counter.'
+  proposed_text: 'An NSF-led public-private partnership. Piloted since January 2024: 950 projects in all 50 states, DC and Puerto Rico.'
 - id: c5
   text: 'An operations center at SDSC and TACC now runs it'
   kind: factual
   priority: high
-  status: unverified
+  status: partially-supported
   validation: 'NSF award record for the NAIRR Operations Center (Sept. 2026).'
-  sources: []
-  evidence: []
+  sources:
+  - 'https://www.nsf.gov/cise/updates/nsf-establishes-operations-center-national-artificial'
+  - 'https://api.nsf.gov/services/v1/awards/2616251.json'
+  - 'https://nairrpilot.org/'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/nairr_awards.csv
+  - data/raw/nsf_award_2616251.json
+  notes: 'NSF announced the NAIRR-OC on 2026-09-01, "Led by the San Diego Supercomputer Center at UC San Diego, in collaboration with the Texas Advanced Computing Center". Award 2616251 (UC San Diego, $35,000,000 estimated, Cooperative Agreement) starts 2026-10-01 and runs to 2031-09-30. NSF says the center "will" operate the portal and lead the transition. On 2026-10-31 nairrpilot.org still says "all existing opportunities remain available on nairrpilot.org" and the pilot portal is still credited to SGX3. "Now runs it" overstates where the handover stands, one month in. Speaker notes say "stood up"; "established" or "announced" is safer.'
+  proposed_text: 'A new NSF operations center, led by SDSC with TACC, is taking over from the pilot.'
 - id: c6
   text: 'AI cyberinfrastructure, free: GPU and HPC time from federal and industry partners, through one national portal'
   kind: factual
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: 'NAIRR Pilot portal terms.'
-  sources: []
-  evidence: []
+  sources:
+  - 'https://nairrpilot.org/opportunities/startup-project'
+  - 'https://nairrpilot.org/opportunities/allocations'
+  - 'https://nairrpilot.org/help/faq'
+  - 'https://www.nsf.gov/focus-areas/ai/nairr'
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Supported: GPU and HPC allocations (e.g. up to 2,000 GPU-hours on Bridges-2, Anvil AI, Expanse AI, Vista) and industry contributions (Azure, NVIDIA DGX Cloud, AWS credits) are requested through the nairrpilot.org portal. The FAQ says overhead rates do not apply and vendor credits are made available. No NSF or NAIRR page I fetched uses the word "free"; access is peer-reviewed, matched to providers and awarded for 12 months, so "FREE" can read as open-on-demand. "No cost to awardees" is accurate; "free" alone is loose.'
+  proposed_text: 'No-cost, peer-reviewed allocations: GPU and HPC time from federal and industry partners, through one national portal.'
 - id: c7
   text: 'Research cloud: agentic AI on Jetstream2, the National Research Platform and FabAID'
   kind: factual
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: 'Resource pages for each.'
-  sources: []
-  evidence: []
+  sources:
+  - 'https://docs.jetstream-cloud.org/alloc/overview/'
+  - 'https://nrp.ai/'
+  - 'https://api.nsf.gov/services/v1/awards/2609485.json'
+  - 'https://www.nsf.gov/news/nsf-announces-83m-investment-integrated-data-systems'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/nairr_awards.csv
+  - data/raw/nsf_award_2609485.json
+  notes: 'Jetstream2: supported; its docs say it is a NAIRR Pilot resource provider. NRP: a free NSF-funded GPU and hosted-LLM platform led by UC San Diego (which also leads the NAIRR-OC), but I found no primary source listing NRP as a NAIRR Pilot resource; the resource catalog (submit-nairr.xras.org) failed TLS verification through the proxy and the nairrpilot.org resource list loads by JavaScript. FabAID (award 2609485, Morgridge, funded from Data Cyberinfrastructure, not the NAIRR fund) is a national data fabric (Open Science Data Fabric, Pelican, HTCondor) that "connects ... cyberinfrastructure, including NAIRR"; it is not a research cloud for running agents.'
+  proposed_text: 'Research cloud: run agents on Jetstream2 and the National Research Platform; move data with FabAID.'
 - id: c8
   text: 'AI inference: hosted open and commercial models, including the National Inference Service'
   kind: factual
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: 'NAIRR resource listing.'
-  sources: []
-  evidence: []
+  sources:
+  - 'https://docs.jetstream-cloud.org/inference-service/overview/'
+  - 'https://api.nsf.gov/services/v1/awards/2537075.json'
+  - 'https://www.nsf.gov/focus-areas/ai/nairr'
+  - 'https://www.nsf.gov/cise/updates/nairr-2-years-advancing-american-artificial-intelligence'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/keyword_search.csv
+  - data/processed/nairr_awards.csv
+  notes: 'Hosted open models: Jetstream2 runs an LLM inference service (four open-weight models as of 2026-10-06); NRP hosts open-weight models; TACC Sagebrush (award 2537075, start 2026-09-15) is "An AI Inference Resource for ACCESS, NAIRR, and the Nation". Commercial models: partners give API access (Anthropic, OpenAI credits, Azure OpenAI). "National Inference Service" was not found: 0 hits in the NSF Award API, not on NSF or NAIRR pages, not in web search. The nearest NSF name is the National Deep Inference Fabric (NDIF, Northeastern), which is for studying model internals, not a hosted inference service. Drop the name unless the speaker has a source.'
+  proposed_text: 'AI inference: hosted open models (Jetstream2, NRP, TACC Sagebrush) and commercial model APIs from industry partners.'
 - id: c9
   text: 'MESA early-adopter communities: NEON (Battelle), ESIIL, NCEMS, NSCORE, AIIRA, EHT'
   kind: factual
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: 'Award abstract names ESIIL, NCEMS, AIIRA and EHT; NEON and NSCORE need a source (letters, slide 34 awards).'
-  sources: []
-  evidence: []
+  sources:
+  - 'https://api.nsf.gov/services/v1/awards/2632685.json'
+  - 'https://idss-mesa.github.io/'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/raw/nsf_award_2632685.json
+  notes: 'The award abstract names ESIIL, NCEMS, AIIRA and the EHT Collaboration. NEON (Battelle) and NSCORE are not in the abstract and not on the public MESA site (home, news, team, portal, stack pages checked). They may be in letters of collaboration or later agreements I cannot see; left as the speaker''s statement. Slide 34 c3 holds their award numbers.'
+  proposed_text: 'MESA partner communities: ESIIL, NCEMS, AIIRA, EHT (in the award); NEON (Battelle) and NSCORE (joining)'
 - id: c10
   text: 'MESA · NSF Award #2632685, funded under NAIRR'
   kind: factual
   priority: high
-  status: unverified
+  status: supported
   validation: 'NSF Award API record (src/01_nsf_award.py).'
-  sources: []
-  evidence: []
+  sources:
+  - 'https://api.nsf.gov/services/v1/awards/2632685.json'
+  - 'https://idss-mesa.github.io/'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/award_facts.csv
+  - data/raw/nsf_award_2632685.json
+  notes: 'NSF records award 2632685 (University of New Mexico, PI Tyson L Swetnam, 2026-07-15 to 2029-05-31, $4,617,408) with fundProgramName "NAIRR-Nat AI Research Resource". The MESA site credits the IDSS program; both are true (IDSS solicitation, NAIRR fund line). NSF''s July 2026 IDSS announcement lists MESA under the University of Arizona (earlier award 2608717, ended 2026-08-31).'
+- id: c11
+  text: 'The NAIRR pilot launched in January 2024 (notes)'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'NSF launch news release.'
+  sources:
+  - 'https://www.nsf.gov/news/democratizing-future-ai-rd-nsf-launch-national-ai'
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'NSF news release dated 2024-01-24: "Today, the U.S. National Science Foundation and collaborating agencies launched the ... (NAIRR) pilot".'
+- id: c12
+  text: 'More than 25 private-sector partners contribute compute, models and tools; DOE and NIH lead the NAIRR Secure element (notes)'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'NSF NAIRR-OC announcement and nairrpilot.org.'
+  sources:
+  - 'https://www.nsf.gov/cise/updates/nsf-establishes-operations-center-national-artificial'
+  - 'https://nairrpilot.org/'
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'NSF: "over 25 private-sector partners" (NSF focus page says 28 nongovernmental partners). nairrpilot.org: DOE and NIH "are leading development of a NAIRR Secure element of the pilot".'
+- id: c13
+  text: 'MESA is funded through NSF IDSS, one of three NSF programs that feed NAIRR (notes)'
+  kind: factual
+  priority: medium
+  status: partially-supported
+  validation: 'NSF NAIRR-OC announcement; IDSS award announcement.'
+  sources:
+  - 'https://www.nsf.gov/cise/updates/nsf-establishes-operations-center-national-artificial'
+  - 'https://www.nsf.gov/news/nsf-announces-83m-investment-integrated-data-systems'
+  - 'https://idss-mesa.github.io/'
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'NSF says the NAIRR-OC "will coordinate with projects supported through three NSF programs": State and Regional AI Infrastructure Hubs, IDSS, and Unlocking Dataset Value. MESA is an IDSS award. NSF says "coordinate with", not "feed"; and the award itself is charged to the NAIRR fund line (c10).'
+  proposed_text: 'MESA is funded through NSF IDSS, one of three NSF programs the NAIRR Operations Center coordinates with.'
+- id: c14
+  text: '940+ projects across all 50 states, DC and Puerto Rico, with 105 NAIRR Classroom awards (notes)'
+  kind: quantitative
+  priority: low
+  status: supported
+  validation: 'nairrpilot.org home page counters.'
+  sources:
+  - 'https://nairrpilot.org/'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/project_counts.csv
+  notes: 'Counters on 2026-10-31: 950 research projects; 50 States + DC & Puerto Rico; 105 NAIRR Classroom awards.'

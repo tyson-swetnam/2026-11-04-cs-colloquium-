@@ -6,15 +6,78 @@ claims:
   text: 'Notes: MESA connects scientific data through curated, indexed metadata, runs on national research infrastructure today, open source'
   kind: factual
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: Link the repositories and their licenses; name the deployment sites.
-  sources: []
-  evidence: []
+  sources:
+  - https://idss-mesa.github.io/
+  - https://idss-mesa.github.io/stack.html
+  - https://idss-mesa.github.io/portal.html
+  - https://mesa.cyverse.org/
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  - https://api.nsf.gov/services/v1/awards/1743442.json
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/award_2632685.json
+  - data/processed/award_1743442.json
+  - src/01_nsf_award.py
+  notes: >-
+    The notes sentence is the project's own (developer-reported) description on idss-mesa.github.io, nearly
+    verbatim. Running today: publicly evidenced only on CyVerse (the MESA Portal at mesa.cyverse.org answered
+    on 2026-10-31; CyVerse hosts the Formation MCP server and the public Data Store connector). The NSF award
+    abstract lists TACC, Open Storage Network, Jetstream-2 and RENCI iRODS as where MESA "will operate", and
+    the award only started 2026-07-15; no public page shows a MESA service running at TACC or on Jetstream2.
+    Open source: the site and award call it open source, and code is published at github.com/idss-mesa
+    (mesa-mcp, mesa-ducklake, irods-mcp-server; one-line public installer). Licence types are not named in
+    the public docs (the changelog only mentions a LICENSE file with copyright held by the UNM Regents), and
+    repository licence files were out of scope here, so the licences remain unverified. The "metadata"
+    claim is a design description, supported as a stated goal by the award abstract.
+  proposed_text: 'MESA connects scientific data through curated, indexed metadata. Its portal and agent tools run on CyVerse today, with TACC, Jetstream2 and OSN to follow. Code is open at github.com/idss-mesa.'
 - id: c2
   text: 'Figure: MESA proposal · NSF Award #2632685'
   kind: factual
   priority: low
-  status: unverified
+  status: supported
   validation: Same award check as slide 21.
-  sources: []
-  evidence: []
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  - https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2632685
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/award_2632685.json
+  - src/01_nsf_award.py
+  notes: >-
+    NSF award 2632685 is "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for
+    Scientific Advancement)", University of New Mexico, PI Tyson L Swetnam, OAC/CISE, cooperative agreement,
+    2026-07-15 to 2029-05-31, $4,617,408, fund program NAIRR. That the figure itself comes from the proposal
+    cannot be checked from public sources (proposals are not public); it is the speaker's own material.
+- id: c3
+  text: 'Slide: MESA · Multidisciplinary Environment for Scientific Advancement'
+  kind: factual
+  priority: low
+  status: supported
+  validation: Confirm the expansion against the NSF award record.
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  - https://idss-mesa.github.io/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/award_2632685.json
+  notes: Award title and abstract both expand MESA as Multidisciplinary Environment for Scientific Advancement.
+- id: c4
+  text: 'Notes placeholder: the disciplines MESA serves (right-hand column of the figure)'
+  kind: factual
+  priority: low
+  status: supported
+  validation: Take the disciplines and partner communities from the NSF award abstract.
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/award_2632685.json
+  notes: >-
+    The figure was not available to check. The award abstract names astronomy, biology, environment, public
+    health and computer science, with partners ESIIL (environmental data science), NCEMS (molecular and
+    cellular science), AIIRA (AI in agriculture) and the Event Horizon Telescope. Slide 20 also lists NEON
+    (Battelle) and NSCORE as early adopters; those two are not in the award abstract.
+  proposed_text: 'Disciplines: astronomy (EHT), biology and multi-omics (NCEMS), environment (ESIIL), agriculture (AIIRA), public health and computer science.'

@@ -6,17 +6,104 @@ claims:
   text: Low-cost storage, with governance and ACID transactions
   kind: technical
   priority: medium
-  status: unverified
+  status: partially-supported
   validation: 'Runnable DuckLake demo: Parquet on object storage, a concurrent-write test showing transactional behaviour, and time travel to a named snapshot (the ''day the paper was submitted'' in the notes).'
   sources:
   - https://ducklake.select/
-  evidence: []
+  - https://ducklake.select/docs/stable/duckdb/advanced_features/transactions
+  - https://ducklake.select/docs/stable/duckdb/guides/access_control
+  - https://ducklake.select/docs/stable/duckdb/usage/choosing_storage
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/ducklake_demo.json
+  - src/02_ducklake_demo.py
+  notes: 'ACID and cheap storage hold: DuckLake docs claim full ACID with snapshot isolation, and the local demo (DuckDB 2.0.0) showed a rolled-back transaction leaving no rows and no snapshot, and a conflicting concurrent update rejected at commit while concurrent inserts both committed. Storage was a local folder standing in for object storage; S3 was not tested. "Governance" is the weak word: DuckLake docs say access control "is not per se a feature of DuckLake" and is built from the catalog database and storage permissions, with trusted writers. In MESA, governance is planned at the platform level (award abstract: "policy-driven governance"; iRODS on slide 22). Object storage is cheap to hold but can charge for transfer (DuckLake docs). A SQLite catalog returned "database is locked" for overlapping writers in the demo; a DuckDB-file catalog was used instead.'
+  proposed_text: Low-cost object storage with ACID transactions and time travel; governance from the catalog and iRODS policy
 - id: c2
   text: 'Figure: MESA proposal · NSF Award #2632685'
   kind: factual
   priority: medium
-  status: unverified
+  status: supported
   validation: Look up award 2632685 in the NSF Award Search API; record title, PI, program and start date.
   sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
   - https://www.nsf.gov/awardsearch/showAward?AWD_ID=2632685
-  evidence: []
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/nsf_award_2632685.json
+  notes: 'NSF Award API: 2632685 is "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico, PI Tyson L Swetnam, NAIRR-Nat AI Research Resource program, OAC, cooperative agreement, 07/15/2026 to 05/31/2029, $4,617,408. The abstract says MESA "will be implemented as a federated, cloud-native data-mesh and data lakehouse". The figure itself comes from the (non-public) proposal and was not checked.'
+- id: c3
+  text: DuckLake (DuckDB) and Parquet give database behaviour over plain files
+  kind: technical
+  priority: medium
+  status: supported
+  validation: Read DuckLake home page and specification; run the demo and read a written Parquet file with no DuckLake involved.
+  sources:
+  - https://ducklake.select/
+  - https://ducklake.select/docs/stable/specification/introduction
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/ducklake_demo.json
+  notes: 'DuckLake = SQL catalog database (DuckDB, SQLite, PostgreSQL, MySQL) plus Parquet data files; spec v1.1, DuckLake 1.0 released April 2026. The "database behaviour" lives in the catalog database, not in the files. Caveat found in the demo: by default small inserts are inlined into the catalog rather than written as Parquet; inlining was switched off (DATA_INLINING_ROW_LIMIT 0) to get Parquet for every write.'
+- id: c4
+  text: 'Time travel: rewind the catalog to the day the paper was submitted'
+  kind: technical
+  priority: medium
+  status: supported
+  validation: DuckLake time travel docs; demo querying AT (VERSION => n) and AT (TIMESTAMP => t).
+  sources:
+  - https://ducklake.select/docs/stable/duckdb/usage/time_travel
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/ducklake_demo.json
+  notes: 'Docs: query or ATTACH the lake as of any recorded snapshot by id or timestamp (ATTACH ... (SNAPSHOT_TIME ''...'')). Demo returned the earlier two-row state by both version and timestamp. Works only if that snapshot has not been expired by maintenance, and only for data that was in the lake on that day.'
+- id: c5
+  text: Lakehouse = object-store economics plus database guarantees
+  kind: technical
+  priority: low
+  status: supported
+  validation: Armbrust et al., CIDR 2021 definition of a Lakehouse.
+  sources:
+  - https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'CIDR 2021 defines a Lakehouse as low-cost, directly accessible storage plus DBMS features such as ACID transactions, versioning, auditing and indexing.'
+- id: c6
+  text: DuckLake, Iceberg and Delta Lake are table formats
+  kind: technical
+  priority: low
+  status: supported
+  validation: Self-descriptions on the three projects' home pages.
+  sources:
+  - https://iceberg.apache.org/
+  - https://delta.io/
+  - https://ducklake.select/
+  - https://ducklake.select/manifesto/
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Iceberg: "The open table format for analytic datasets." Delta Lake calls itself an open-source storage framework for a lakehouse; DuckLake calls itself "a lakehouse format built on SQL" and bundles the catalog. Calling all three table (or lakehouse) formats is fair.'
+- id: c7
+  text: Structured, semi-structured and unstructured data underneath
+  kind: technical
+  priority: low
+  status: partially-supported
+  validation: Lakehouse paper figure; DuckLake specification on storage format.
+  sources:
+  - https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf
+  - https://ducklake.select/docs/stable/specification/introduction
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'The lakehouse concept covers all three (CIDR 2021 Figure 1). But the table formats manage tables stored as Parquet; images, documents and other unstructured files sit alongside in object storage or iRODS and are referenced, not stored as DuckLake tables.'
+  proposed_text: 'Notes: tables in Parquet; unstructured files (images, documents) sit alongside in the same object store and iRODS, referenced from the tables.'
+- id: c8
+  text: MESA's data lakehouse is built on DuckLake
+  kind: factual
+  priority: low
+  status: supported
+  validation: MESA public site (idss-mesa.github.io).
+  sources:
+  - https://idss-mesa.github.io/okf/concepts/home.md
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Project-reported: the MESA site lists "Data Lakehouse (DuckLake)" in its data-management layer and "DuckLake, Apache Iceberg, Parquet" with time travel. MESA code was not checked.'

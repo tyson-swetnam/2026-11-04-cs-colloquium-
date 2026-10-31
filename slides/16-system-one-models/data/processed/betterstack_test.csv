@@ -1,0 +1,8 @@
+question,jev_pct,clef_pct,winner,referee
+Spam / bot,98.0,96.0,Jev,Claude Opus 5.5
+Worth replying to,81.0,86.0,Clef,Claude Opus 5.5
+Says the video is wrong,96.0,97.0,Clef,Claude Opus 5.5
+Tone,75.0,49.0,Jev,Claude Opus 5.5
+Toxicity,81.0,88.0,Clef,Claude Opus 5.5
+MEAN of 5 questions (computed),86.2,83.2,,Claude Opus 5.5
+OVERALL as reported,86.0,83.0,,Claude Opus 5.5

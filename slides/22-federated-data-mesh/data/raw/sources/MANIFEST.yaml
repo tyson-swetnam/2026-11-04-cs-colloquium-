@@ -1,0 +1,126 @@
+irods_auditing.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 0bc2cd724fbc183ee5efa5d9348aabb16c671fe5474587e24302335bcce0997b
+  source: irods
+  url: https://docs.irods.org/4.3.4/capabilities/auditing/
+irods_dynamic_peps.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 8710e530712080dff036fa0edbc2de4abc8e97c1eb9bda5acc4969956814b933
+  source: irods
+  url: https://docs.irods.org/4.3.4/plugins/dynamic_policy_enforcement_points/
+irods_federation.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: f6391d236df72ad0825ae3272e857708cc8a6e35bf35230645d3a1a3096e8abc
+  source: irods
+  url: https://docs.irods.org/4.3.4/system_overview/federation/
+irods_glossary.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: cb3d0cf66b14e6b2f823d234a5588ef4877eddbe875f884d02b02ccbe6f13329
+  source: irods
+  url: https://docs.irods.org/4.3.4/system_overview/glossary/
+irods_home.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: d4f040601852e64cd20758da76370c6e5282155d75c0809f5ac55a38f7406450
+  source: irods
+  url: https://docs.irods.org/4.3.4/
+irods_icommands_user.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 134ffc8d99c72b154f64de2a3d6e5817e62515eaab1f60d8bfd698730be739b1
+  source: irods
+  url: https://docs.irods.org/4.3.4/icommands/user/
+irods_policy_cookbook.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 0b91443fb3eb50747c1d82da86cc9de26f18d7556e19027d6570c4ecd3a294b9
+  source: irods
+  url: https://docs.irods.org/4.3.4/administrators/policy_cookbook/
+irods_release_notes.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: c96fe7809b252c70df17793c2eb909b15127d379cff5401e2ac361d600ebbf3f
+  source: irods
+  url: https://docs.irods.org/4.3.4/release_notes/
+irods_rule_engine.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: d685109c6c44433f3b2dc50881a21b3f3e59158a823535d85cbb503dc2a6fa0a
+  source: irods
+  url: https://docs.irods.org/4.3.4/plugins/pluggable_rule_engine/
+irods_trash.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 73106f3676eca85e67971c7d381b57c44f6f31b457029da49397b21b30d8ad66
+  source: irods
+  url: https://docs.irods.org/4.3.4/system_overview/configuration/
+irods_users_permissions.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 7cf0928aafb03a5240c12a0ed096594cd39b921b5804487b8d1b785dd0044d2e
+  source: irods
+  url: https://docs.irods.org/4.3.4/system_overview/users_and_permissions/
+irods_why.html:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 74542322e570572d0fc69b1e033feaa1a68a5457a8e2f7f680afc2422af8c56a
+  source: irods
+  url: https://docs.irods.org/4.3.4/why_irods/
+mesa_docs.md:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 74cec4e861ac0306d3d221d1c8e427d8a37e7d0a75fe620eae50195e67b9ed07
+  source: mesa
+  url: https://idss-mesa.github.io/okf/concepts/docs.md
+mesa_formation_mcp.md:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 981de8ee9f8a579efd22e1e4e564956b35e62d1f2ea521feae0028a320410ba5
+  source: mesa
+  url: https://idss-mesa.github.io/okf/concepts/formation-mcp.md
+mesa_irods_mcp_server.md:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 45b82a7481a469db75430e69b274ecd5a329d7325de425f1cd97151e68bada74
+  source: mesa
+  url: https://idss-mesa.github.io/okf/concepts/irods-mcp-server.md
+mesa_llms.txt:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 15e7ccfa85c496c14c9c62a07a0eadac8524cf75442558073a765dd4727a6fc0
+  source: mesa
+  url: https://idss-mesa.github.io/llms.txt
+mesa_mesa_mcp.md:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 1d74713f2d028c0b125c8f32b9981668dc2ccd31ae244e12f70f5c664592ca07
+  source: mesa
+  url: https://idss-mesa.github.io/okf/concepts/mesa-mcp.md
+mesa_mesa_sandbox.md:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: d2d4d67e053ccbb969a0d2de38c008b9d14c4dd29af7e85da40a0063d386f3e5
+  source: mesa
+  url: https://idss-mesa.github.io/okf/concepts/mesa-sandbox.md
+mesa_okf_home.md:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 4a2394ae047a7d405653b626f3549594712a9016888c1406cd31f2017e07fb66
+  source: mesa
+  url: https://idss-mesa.github.io/okf/concepts/home.md
+mesa_stack.md:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: dbb361bbf319f4350d0ce051a3b2071560fa5d79dae2df90ebc07021657566d7
+  source: mesa
+  url: https://idss-mesa.github.io/okf/concepts/stack.md
+nsf_award_2632685.json:
+  note: slide 22 evidence
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: nsf
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,agency,awardeeName,piFirstName,piLastName,startDate,expDate,fundsObligatedAmt,abstractText

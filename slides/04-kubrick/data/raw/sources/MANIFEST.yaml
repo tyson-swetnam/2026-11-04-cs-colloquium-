@@ -1,0 +1,50 @@
+bbfc.html:
+  note: 'Classification record: 1964 cinema certificate, distributor Columbia Picture
+    Corp. Ltd'
+  retrieved: '2026-10-31'
+  sha256: 4592b156cc4734594ce184d90e1cc30cf5198575889b2460dbf9235b676e3f07
+  source: British Board of Film Classification
+  url: https://www.bbfc.co.uk/release/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-q29sbgvjdglvbjpwwc0yodmyotc
+commons_Dr__Strangelove__1964____Trailer.wikitext:
+  note: file description page wikitext (action=raw)
+  retrieved: '2026-10-31'
+  sha256: 7e80e8373aa0e5166faf3f1dc1495bd2963c6306fe4ccd233fca89a5c6a48a60
+  source: Wikimedia Commons
+  url: https://commons.wikimedia.org/w/index.php?title=File%3ADr._Strangelove_%281964%29_-_Trailer.webm&action=raw
+commons_Dr__Strangelove___The_War_Room.wikitext:
+  note: file description page wikitext (action=raw)
+  retrieved: '2026-10-31'
+  sha256: 4bf10631307a3be52626492dd6b451986a14be13074932c59e6c6adcabb6ce04
+  source: Wikimedia Commons
+  url: https://commons.wikimedia.org/w/index.php?title=File%3ADr._Strangelove_-_The_War_Room.png&action=raw
+commons_Dr__Strangelove_poster.wikitext:
+  note: file description page wikitext (action=raw)
+  retrieved: '2026-10-31'
+  sha256: 4c44b3bbb85fe97299b88d30a607bbaa24be36a63ed778bb76362a55335f5dac
+  source: Wikimedia Commons
+  url: https://commons.wikimedia.org/w/index.php?title=File%3ADr._Strangelove_poster.png&action=raw
+enwiki_Dr_Strangelove.wikitext:
+  note: article wikitext; secondary, used for plot summary and poster caption
+  retrieved: '2026-10-31'
+  sha256: 003d731653a20d1a8485466c8d0a8c7ab9e75f63035240e240f03d10ac144335
+  source: English Wikipedia
+  url: https://en.wikipedia.org/w/index.php?title=Dr._Strangelove&action=raw
+enwiki_File_Dr_Strangelove_poster_jpg.html:
+  note: non-free poster file page; matches deck embed 250x388
+  retrieved: '2026-10-31'
+  sha256: 83cc67056977da990099b6d8e694e294c0ac76221196547bc4b7d779b5dfa117
+  source: English Wikipedia
+  url: https://en.wikipedia.org/wiki/File:Dr._Strangelove_poster.jpg
+eriac_ungerer.html:
+  note: article on Tomi Ungerer; credits him with the 1964 Dr. Strangelove poster
+  retrieved: '2026-10-31'
+  sha256: 6b3c9f87dd6319039464a11b4bb5ec6abf2a76a6afd3d0fdf5251d58c42b8d64
+  source: European Roma Institute for Arts and Culture (ERIAC)
+  url: https://eriac.org/?p=1321
+img_Dr._Strangelove_-_The_War_Room.png:
+  license: PD-US-no notice (per Commons file page)
+  note: original 1800x1080; compared with deck embed by src/02_deck_images.py
+  retrieved: '2026-10-31'
+  sha256: 28c872ef06854f6657a8da694379e74e0035eecf8d67b2092f5b1590eb6f9124
+  source: Wikimedia Commons
+  url: https://upload.wikimedia.org/wikipedia/commons/8/85/Dr._Strangelove_-_The_War_Room.png

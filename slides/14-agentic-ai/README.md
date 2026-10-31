@@ -49,9 +49,26 @@ The full transcript is in [`mcp_transcript.json`](data/processed/mcp_transcript.
 
 **For a CS audience:** the figure draws MCP as "context." It is mainly the channel the orchestrator uses to *call tools*, which here means the lake and the guardrails.
 
-## Pending
+## Findings (2026-10-31)
 
-Mapping each box to MESA's own code (`c3`) needs the github.com/idss-mesa repositories attached to this session. The repository listing was unavailable on 2026-10-31.
+| Claim | Verdict | Key evidence | Suggested wording |
+|---|---|---|---|
+| c1 One-line message | revise-slide (agreed, not yet in deck) | Demo 3 (slide 29) | "Ask in plain language; the agent finds the data, runs the analysis, and returns a result you can audit." |
+| c2 Figure flow works | partially supported | `mcp_transcript.json`, `mcp_calls.csv` | Unchanged; no model orchestrator or iRODS in this demo |
+| c3 Boxes map to MESA components | partially supported | `data/raw/research/facts.csv`, `data/processed/mesa_box_map.csv` | If said aloud: "The MCP, data-mesh and DuckLake boxes ship in MESA today; RAG and multi-agent orchestration are on its roadmap." |
+
+**c3 in detail** (from MESA's public docs, not its code):
+
+| Box | MESA component per docs | Status per docs |
+|---|---|---|
+| User request | User's own agent client (Claude Code, Codex CLI, Antigravity, OpenCode) or MESA Portal apps | Available |
+| MCP | mesa-mcp, irods-mcp-server, Formation (hosted by CyVerse) | Installable today |
+| RAG retrieval | Listed in architecture layer 02 and goal 3 | Goal; no component in the install table |
+| Orchestrator | Goal 3 "sandboxed, multi-agent orchestration" | Goal; today the client is the orchestrator |
+| iRODS data mesh | mesa-mcp `ds_*` tools, irods-mcp-server (CyVerse Data Store) | Installable; federation is goal 2 |
+| DuckLake data lake | mesa-ducklake, a metadata-history library behind mesa-mcp | Installable, but scoped to metadata history |
+
+The slide itself doesn't claim the mapping, so this only matters if the speaker presents the figure as MESA's shipped architecture. The idss-mesa repositories were not read in this session.
 
 ## Reproduce
 
@@ -61,4 +78,8 @@ uv run python slides/14-agentic-ai/src/01_build_lake.py
 
 ```bash
 uv run python slides/14-agentic-ai/src/02_mcp_roundtrip.py
+```
+
+```bash
+uv run python slides/14-agentic-ai/src/03_mesa_box_map.py
 ```

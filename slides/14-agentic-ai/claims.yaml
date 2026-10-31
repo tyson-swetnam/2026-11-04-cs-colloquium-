@@ -37,8 +37,24 @@ claims:
   text: Each box in the figure maps to a component in the MESA repositories
   kind: factual
   priority: low
-  status: unverified
-  validation: Map boxes to github.com/idss-mesa repositories once they are attached to this session.
-  sources: []
-  evidence: []
-  notes: The repository listing was unavailable on 2026-10-31.
+  status: partially-supported
+  validation: |
+    Checked against MESA's public site and docs (idss-mesa.github.io, Markdown twins), not its code
+    (src/03_mesa_box_map.py -> data/processed/mesa_box_map.csv). Three boxes map to documented,
+    installable components: MCP (mesa-mcp, irods-mcp-server, CyVerse-hosted Formation), the iRODS mesh
+    (CyVerse Data Store via mesa-mcp ds_* tools and irods-mcp-server) and DuckLake (mesa-ducklake, an
+    AVU metadata-history library behind mesa-mcp, not a general data lake). The user-request box is the
+    user's own agent client (Claude Code, Codex CLI, Antigravity, OpenCode) or the MESA Portal apps.
+    RAG retrieval and multi-agent orchestration appear only as architecture layers and innovation goals
+    (NSF award 2026-2029); no component for either is in the installed-server table.
+  sources:
+  - https://idss-mesa.github.io/okf/concepts/home.md
+  - https://idss-mesa.github.io/docs/index.md
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/mesa_box_map.csv
+  notes: |
+    The current deck does not state this claim on slide 14 or in its notes; it matters only if the
+    speaker says the figure is MESA's shipped architecture. The repositories themselves were not read
+    (out of scope for this session); whether code for RAG or an orchestrator exists in them is unverified.
+  proposed_text: 'If said aloud: "The MCP, data-mesh and DuckLake boxes ship in MESA today; RAG and multi-agent orchestration are on its roadmap."'

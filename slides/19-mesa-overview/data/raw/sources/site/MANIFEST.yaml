@@ -1,0 +1,84 @@
+docs_about.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: a516d87060b50e137306f4e541decb6f57cc52c216adfb39ffd82e374c60a5c0
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/docs/about/
+docs_servers.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: bf4fac56f13047d03d697966c347474ad183088891fa9e6ea4e6b65bfa8bf354
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/docs/servers/
+docs_servers_irods-mcp-server.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: 13c34922d2bb665be9ab837ba2cab447f596f01d24158b03c7c0a75b606339a6
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/docs/servers/irods-mcp-server/
+docs_servers_mesa-ducklake.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: d974e8fb5411627a2884eea062362c19c41f3a28e1e7a4f2c9c1d90d9d6076ad
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/docs/servers/mesa-ducklake/
+docs_servers_mesa-mcp.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: c61a425257702cae241fa32ba14ccf98261e6a46a46bf544957a40edacb71cb0
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/docs/servers/mesa-mcp/
+idx_.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: 4bd7735291ffd336e424d84b7077903801f52555ca1ca5dcf687d4a9e7f6d54b
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/
+idx_docs_.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: e13f07e858106dda1ecfd3ba8109200bc8c68c090169baeb2a176e20365b7466
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/docs/
+llms-full.txt:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: 9b8a11e9389293af1c9d175a25926566be13b8dff03ebd66a6c5ba89ab3f19d7
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/docs/llms-full.txt
+mesa_cyverse.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: 627efe6828261fe998a5a444cc65a80e1d68984f1001f40692375b8d6f558ada
+  source: MESA public site (developer-published)
+  url: https://mesa.cyverse.org/
+news.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: 628991496fd896fc6d383e624a76aa566c09eb5790130ed3b6b6b5508628f415
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/news.html
+portal.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: 266711bdabe413c00b89798a5980e441de478c3f8ff134b947ded96df0aca280
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/portal.html
+sitemap.xml:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: 44d64d548c0cfd3a7df6d414f28616b194652c4640e6d70ff7bd35684d0bb970
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/docs/sitemap.xml
+stack.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: e6fc4cef7a6705a08d0df22528ec025ac5fdde3bf75492eb94f94ad23b81d825
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/stack.html
+team.html:
+  note: fetched 2026-10-31 with curl
+  retrieved: '2026-10-31'
+  sha256: 4149b05c673aa46a2769334309699f82b73b3a25f44abec67f4bdfdb69fc022e
+  source: MESA public site (developer-published)
+  url: https://idss-mesa.github.io/team.html

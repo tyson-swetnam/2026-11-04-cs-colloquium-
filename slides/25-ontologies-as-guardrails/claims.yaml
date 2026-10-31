@@ -35,9 +35,21 @@ claims:
   kind: technical
   priority: medium
   status: unverified
-  validation: Unit test of the MESA write path with a fake CURIE.
-  sources: []
-  evidence: []
+  validation: 'Public MESA docs (idss-mesa.github.io, mesa-anyjev docs); the write path itself is only in code.'
+  sources:
+  - https://idss-mesa.github.io/docs/servers/mesa-mcp/
+  - https://idss-mesa.github.io/mesa-anyjev/
+  - https://idss-mesa.github.io/mesa-anyjev/concepts/mcp-tools/
+  evidence:
+  - data/raw/research/facts.csv
+  notes: >-
+    Left unverified: the behaviour lives in MESA code, which was out of scope. The public, developer-written docs
+    say mesa-mcp stores the ontology CURIE in the AVU unit slot, that mesa-anyjev draws candidate terms from an
+    OLS search with a prefix filter, that a curator's pick is authoritative and that a decline leaves the group
+    unwritten (facts f15-f18). None of them says that a term failing to resolve is refused at write time. The
+    repo's own re-implementation of the check (evidence/ontology.py, slide 17) does refuse invented, obsolete
+    and wrong-ontology CURIEs, but that is this talk's validator, not MESA's write path.
+  proposed_text: 'Candidate terms come only from an OLS search, and a curator approves the pick.'
 - id: c5
   text: OWL carries the class hierarchy, so a question about mammalian transcriptomes finds the mouse
   kind: technical
@@ -52,38 +64,135 @@ claims:
   kind: factual
   priority: high
   status: partially-supported
-  validation: 'Resolve through OLS4 (evidence/ontology.py).'
-  sources: []
+  validation: 'Resolve through OLS4 (src/01_ols_terms.py, evidence/ontology.py).'
+  sources:
+  - https://www.ebi.ac.uk/ols4/api/ontologies/ncbitaxon/terms?obo_id=NCBITaxon:41073
   evidence:
+  - data/processed/terms.csv
+  - data/processed/variants.csv
+  - data/raw/research/facts.csv
   - ../17-hallucination-is-engineering/data/processed/ontology_writes.csv
-  notes: "NCBITaxon:41073 is Carabidae. 'ground beetle' and 'Carabidae' are names of the term; 'carabid' is not, so a strict write needs a proposed mapping and review."
+  notes: >-
+    Rechecked 2026-10-31. NCBITaxon:41073 is current, labelled Carabidae, rank family, with one synonym,
+    "ground beetles". 'ground beetle' and 'Carabidae' are names of the term; 'carabid' is not, so a strict
+    write needs a proposed mapping and a curator's approval.
 - id: c7
   text: 'pinned beetle / voucher / sample -> OBI:0100051 (specimen)'
   kind: factual
   priority: high
   status: partially-supported
   validation: 'Resolve through OLS4.'
-  sources: []
+  sources:
+  - https://www.ebi.ac.uk/ols4/api/ontologies/obi/terms?obo_id=OBI:0100051
   evidence:
+  - data/processed/terms.csv
+  - data/processed/variants.csv
+  - data/raw/research/facts.csv
   - ../17-hallucination-is-engineering/data/processed/ontology_writes.csv
-  notes: "OBI:0100051 is 'specimen'. None of 'pinned beetle', 'voucher', 'sample' is a name of the term: these are mappings an agent proposes and a curator approves, not resolutions."
+  notes: >-
+    Rechecked 2026-10-31. OBI:0100051 is current and labelled 'specimen', with no synonyms in OLS. None of
+    'pinned beetle', 'voucher', 'sample' is a name of the term: these are mappings an agent proposes and a
+    curator approves, not resolutions.
 - id: c8
   text: 'mm / millimeters / millim. -> UO:0000016 (millimetre); mm² / sq mm / mm2 -> UO:0000082 (square millimetre)'
   kind: factual
   priority: high
   status: partially-supported
   validation: 'Resolve through OLS4.'
-  sources: []
+  sources:
+  - https://www.ebi.ac.uk/ols4/api/ontologies/uo/terms?obo_id=UO:0000016
+  - https://www.ebi.ac.uk/ols4/api/ontologies/uo/terms?obo_id=UO:0000082
   evidence:
+  - data/processed/terms.csv
+  - data/processed/variants.csv
+  - data/raw/research/facts.csv
   - ../17-hallucination-is-engineering/data/processed/ontology_writes.csv
-  notes: "UO:0000016 is labelled 'millimeter' (US spelling; the slide shows 'millimetre'); 'mm' and 'millimeters' resolve, 'millim.' does not. UO:0000082 'square millimeter': 'mm2' and 'mm²' resolve, 'sq mm' does not."
+  notes: >-
+    Rechecked 2026-10-31; corrects the earlier note. Both CURIEs are current. UO's labels are 'millimeter' and
+    'square millimeter', but 'millimetre' and 'square millimetre' are listed synonyms, so the slide's spelling is
+    fine. 'mm' and 'millimeters' resolve, 'millim.' does not. 'mm2' and 'mm²' match the synonym 'mm^[2]' only
+    after normalisation (Unicode NFKD, punctuation stripped); 'sq mm' does not resolve.
 - id: c9
   text: 'OWL carries the class hierarchy, so a question about beetles (Coleoptera) finds every carabid'
   kind: technical
   priority: medium
   status: supported
   validation: 'Coleoptera (NCBITaxon:7041) among the ancestors of NCBITaxon:41073.'
-  sources: []
+  sources:
+  - https://www.ebi.ac.uk/ols4/
   evidence:
+  - data/processed/hierarchy.csv
+  - data/raw/research/facts.csv
   - ../17-hallucination-is-engineering/data/processed/ontology_hierarchy.csv
-  notes: 'Coleoptera (NCBITaxon:7041) is among the OLS ancestors of Carabidae (NCBITaxon:41073).'
+  notes: >-
+    Rechecked 2026-10-31: Coleoptera (NCBITaxon:7041, rank order, synonym "beetles") is among the OLS
+    hierarchical ancestors of Carabidae (NCBITaxon:41073, rank family). The hierarchy makes the query possible;
+    whether MESA's query layer expands subclasses is c13.
+- id: c10
+  text: 'Terms resolve through the Ontology Lookup Service (OLS) and the OBO Foundry'
+  kind: factual
+  priority: medium
+  status: supported
+  validation: 'OLS4 returns all four CURIEs; the three ontologies are in the OBO Foundry registry; MESA docs name OBO/OLS.'
+  sources:
+  - https://www.ebi.ac.uk/ols4/
+  - https://obofoundry.org/registry/ontologies.jsonld
+  - https://idss-mesa.github.io/docs/servers/mesa-mcp/
+  evidence:
+  - data/processed/terms.csv
+  - data/processed/obo_foundry.csv
+  - data/raw/research/facts.csv
+  notes: >-
+    All four CURIEs resolve in OLS4. NCBITaxon, OBI and UO are all active OBO Foundry ontologies, and the term
+    IRIs are purl.obolibrary.org PURLs. mesa-mcp's (developer-written) docs say its mesa_ols_* tools browse
+    OBO/OLS ontologies. Strictly, OLS does the lookup; the OBO Foundry is the registry and PURL resolver.
+- id: c11
+  text: 'Notes: these are the terms the neon-beetle-seg project actually uses (NCBITaxon:41073, OBI:0100051, UO:0000016, UO:0000082), per its docs/schema.md'
+  kind: attribution
+  priority: low
+  status: unverified
+  validation: 'Read neon-beetle-seg docs/schema.md.'
+  sources:
+  - https://github.com/tyson-swetnam/neon-beetle-seg/blob/main/docs/schema.md
+  evidence: []
+  notes: >-
+    Not checked: the source is a GitHub repository other than this talk's, which was out of scope for this
+    review. The speaker can confirm it directly; the four CURIEs themselves are checked in c6-c8.
+- id: c12
+  text: 'MESA · NSF Award #2632685'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'NSF Award API.'
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/processed/nsf_award.csv
+  - data/raw/research/facts.csv
+  notes: >-
+    Award 2632685 is "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific
+    Advancement)", University of New Mexico, PI Tyson L Swetnam, 2026-07-15 to 2029-05-31.
+- id: c13
+  text: 'Notes: a query for beetle data returns the NEON ground-beetle measurements even though nobody tagged them Coleoptera'
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'Run a MESA query for Coleoptera against the beetle data, or find it in public docs.'
+  sources:
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  evidence: []
+  notes: >-
+    The ontology side holds (c9: Carabidae sits under Coleoptera in NCBITaxon). Whether MESA's query layer
+    actually expands a Coleoptera query to subclasses is not described in the public docs (mesa_ols_* "fetch
+    hierarchies" is the closest), and checking it needs the code or a live run. Say "can return" unless the demo
+    shows it.
+  proposed_text: 'Because the taxonomy knows Carabidae are beetles, a query for beetle data can find the NEON ground-beetle measurements without anyone tagging them Coleoptera.'
+- id: c14
+  text: 'Notes: the left column is what a language model writes if you let it'
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: 'Framing.'
+  sources: []
+  evidence: []
+  notes: 'Illustrative examples chosen by the speaker, not measured model output.'

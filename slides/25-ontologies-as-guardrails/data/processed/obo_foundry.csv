@@ -1,0 +1,4 @@
+id,title,activity_status,in_registry
+ncbitaxon,NCBI organismal classification,active,True
+obi,Ontology for Biomedical Investigations,active,True
+uo,Units of measurement ontology,active,True

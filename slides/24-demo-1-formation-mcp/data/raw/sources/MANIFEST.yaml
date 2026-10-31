@@ -1,0 +1,42 @@
+cy_argo.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: 563f4766ea9dedb72ec6c9ae59ab511947a487cfb5c11632a08db519b969d7ec
+  source: CyVerse Core Software Documentation (docs.cyverse.org)
+  url: https://docs.cyverse.org/deployment/04-kubernetes/argo/index.md
+cy_overview.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: a24ea389b2fd70fac5fb3d9dda4f2b93c6c2c2311d6c326973f74ad25c49f7e3
+  source: CyVerse Core Software Documentation (docs.cyverse.org)
+  url: https://docs.cyverse.org/architecture/system-overview/index.md
+cy_vice.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: 348f658102989f8222169314c7252d8d009a8fca31c3a1215952088b968b3f23
+  source: CyVerse Core Software Documentation (docs.cyverse.org)
+  url: https://docs.cyverse.org/deployment/06-applications/vice/index.md
+formation.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: ed02baa9034f0292c902a852b7f0729d5a1eefd35b1595f92e10d4e873617195
+  source: MESA documentation (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
+irods.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: fda9a28e8d676e7111bcc582bf67a36c72639f68313d6d449e46fe3cead3aece
+  source: MESA documentation (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md
+mesa_full.txt:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: 9b8a11e9389293af1c9d175a25926566be13b8dff03ebd66a6c5ba89ab3f19d7
+  source: MESA documentation (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/llms-full.txt
+nsf_award_2632685.json:
+  note: Award shown in slide footer
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: NSF Award API
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,awardeeName,piFirstName,piLastName,startDate,expDate,fundProgramName,estimatedTotalAmt

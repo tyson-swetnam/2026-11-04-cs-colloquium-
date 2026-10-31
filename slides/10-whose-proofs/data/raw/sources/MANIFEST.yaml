@@ -1,0 +1,190 @@
+abc_sep11.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: ca0343907bdfe53d414f21b9db7cbe2e8cc0ae0d7522b73b694c3d298ad9954c
+  source: ABC News Australia 2026-09-11
+  url: https://www.abc.net.au/news/2026-09-11/racing-to-solve-maths-problems-pointless-tristan-buckmaster-says/107141628
+abc_sep11.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: d60cd882311051c99dd267866477946db616abe9157a62a3e9e856bf99c8a06e
+  source: text extracted locally from the matching download
+ahm_statements.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 6393fe9d92269eda5f04b8fbfe340f493909da81d960027127da725f58336096
+  source: Association for Human Mathematics
+  url: https://www.ahmath.org/statements
+ahm_statements.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: d0a84e60f51f98438e6bdc5095fbc833f82c3797dcc55bba310c12c3ffac5966
+  source: text extracted locally from the matching download
+bs.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: 4c666734bb16e7c0ee3a91a77c6c8d5a05a199d7bf87dcdaa5a4b494efaf8cf0
+  source: text extracted locally from the matching download
+buckmaster_statement.pdf:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 8d7723941bcda2fa55c1e74faa6298e04c706d17ff8abd2ad01878039c621f9d
+  source: T. Buckmaster statement, NYU Courant
+  url: https://cims.nyu.edu/~tristanb/statement.pdf
+conversation_ns.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 6e80a025be531effb3113b7f311d1bdcd26271e9b5c657c92011362de3d7cec8
+  source: The Conversation
+  url: https://theconversation.com/openai-claims-another-huge-mathematical-result-amid-fights-over-credit-ethics-and-privacy-291575
+conversation_ns.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: 28c57ddd933065b027f1498601d749f987ad51cdd915ad8eb6d96801675714e7
+  source: text extracted locally from the matching download
+fields_letter.pdf:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 32e3afcefd9ac5947b965ec7811ac5df05d95513b77877cb2f023f1c31ac2fa5
+  source: Zenodo PDF of the declaration
+  url: https://zenodo.org/api/records/22737751/files/mathandai.pdf/content
+fl.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: 80e3de76334514a3ea3de6e9076ae02ef2390da895890a6d78fd84b66d13b27e
+  source: text extracted locally from the matching download
+futurism.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 6ac166228148aca5e372fff734d08e46b0d82424a3b23c0984d5031b7a49c6c2
+  source: Futurism (F. Landymore, 2026-10-09)
+  url: https://futurism.com/artificial-intelligence/mathematicians-openai-furious
+futurism.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: 4a5ee89a6ef9d8eeb9752667a6661a6cf5cae937c6bb4a6d8640dc2a3a8e1011
+  source: text extracted locally from the matching download
+gh_history.md:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: f065ee13679f380356359eb09242b93187efe1a864e92780ed5a8b5b23ed4484
+  source: OpenAI, openai/math history.md (public raw file)
+  url: https://raw.githubusercontent.com/openai/math/main/history.md
+gh_readme.md:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 6cb7f0e387b67c051227c6ba27aca87ee82d9dd2530b6452b86b8681a2e2743a
+  source: OpenAI, openai/math README (public raw file)
+  url: https://raw.githubusercontent.com/openai/math/main/README.md
+mathandai.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: e7c85a285b6b5dddb0ac71d35ec8397948d0299044b1db06c9e0d12d3ac2e86c
+  source: mathandai.org declaration page (live)
+  url: https://mathandai.org/
+mathandai.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: b0c0795af63595c8ea364b911793c59606e8e43fa0237505180883dae8bb377c
+  source: text extracted locally from the matching download
+newscientist.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 1c85e293a9e2124ce2b349fd9a53073a8570690ea1d905051a4a9746480be997
+  source: New Scientist 2026-10-08
+  url: https://www.newscientist.com/article/2592703-the-most-interesting-mathematical-discoveries-in-openais-722-new-papers/
+newscientist.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: f5d40ab5f518c206141edfc162b235ede9585d583ffc26390ad328b1d52a4bc0
+  source: text extracted locally from the matching download
+quanta_updates.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: ab65535a6fb849d4b613afaff96e8e821968498ce839a6eeaf9d2cd5c428e217
+  source: Quanta Magazine live updates
+  url: https://www.quantamagazine.org/updates/transformation/
+quanta_updates.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: 65514a20dd3716eb4915806051117c9a75f25814a04eae9ba7010e67ac749671
+  source: text extracted locally from the matching download
+retractionwatch.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: ac2983889172ea225543afb686732e3124816e0b2400728ed5ca50e371c08bc5
+  source: Retraction Watch 2026-10-08
+  url: https://retractionwatch.com/2026/10/08/openai-withdraws-preprints-722-manuscripts-unsolved-math-problems/
+retractionwatch.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: 4ea8aa0ed9876908a9a6a73ced0fe6fd6d96ee5077b9263511efd7d914975116
+  source: text extracted locally from the matching download
+sciam.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 726bcf8e8690fca108148a512efc54dc016b2f144f5f2f0d27af3b642bf8460c
+  source: Scientific American 2026-10-13
+  url: https://www.scientificamerican.com/article/openais-blockbuster-navier-stokes-proof-isnt-what-we-thought-it-was/
+sciam.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: 5317fcd0f59069705e43fcab3154ab5f4534090ae1a717bf8ffb8ca3906aa8c4
+  source: text extracted locally from the matching download
+sciam_oct8.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 235e97f93baa1ea49debc08499db355d188176ffc64d481526378f9c9c2cb3e3
+  source: Scientific American 2026-10-08
+  url: https://www.scientificamerican.com/article/the-most-exciting-claims-from-openais-heap-of-new-proofs/
+sciam_oct8.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: 70d722860cda1c49430d4d842986648ec7f293e4f86e45647350ba0b44e1d7d5
+  source: text extracted locally from the matching download
+tao_statuses_p1.json:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 725a39489849bf11da48ea99e9d16326934757c5b9c015cc3b1fb28beb2da2bd
+  source: Terence Tao public Mastodon timeline
+  url: https://mathstodon.xyz/api/v1/accounts/109378244433513115/statuses?limit=40
+techcrunch.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 1511463a6e3a32dfed3ab0756e484ac01597d96bc089f5f16cda36d1a65821ce
+  source: TechCrunch 2026-09-08
+  url: https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician
+techcrunch.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: b985104520584f2edf9bafce1729ef988ce22ed26b00bd5111f521762d3f6355
+  source: text extracted locally from the matching download
+verge_buckmaster.html:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 1b7c2d018658bfc8808b187d485f67f21ba7d2376cc20bbf242b17238b35dbce
+  source: The Verge 2026-09-12
+  url: https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition
+verge_buckmaster.txt:
+  note: derived
+  retrieved: '2026-10-31'
+  sha256: 5db218d44e3fb8ffb64b113fbb088206de364556e8bb8dc60269027458581f00
+  source: text extracted locally from the matching download
+wiki_bulk_release.wikitext:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: fea0d2ee6714c68907d4591379c0b518f97808b9c2413dcb309ed7568d6db300
+  source: Wikipedia
+  url: https://en.wikipedia.org/w/index.php?title=OpenAI_bulk_release_of_mathematical_papers&action=raw
+wiki_ns_controversy.wikitext:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 9a910698c9a8b6a1c3fc403e3939996f9449e1a9d76473d37baec893ad170962
+  source: Wikipedia
+  url: https://en.wikipedia.org/w/index.php?title=Navier%E2%80%93Stokes_priority_controversy&action=raw
+zenodo_record.json:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 2ae56864971f7df7a22d2cc976c0d5520f04cdfc03960f62742bc0bc9a5030dd
+  source: Zenodo record of the Fields Medalists declaration
+  url: https://zenodo.org/api/records/22737751

@@ -1,0 +1,5 @@
+attribute,value,unit,curie_in_value,curie_in_unit,matches_documented_contract
+taxon,NCBITaxon:41073 (Carabidae),none,True,False,False
+neon_product,DP1.10022.001 (pitfall-trap beetles),none,False,False,True
+specimens,"65,830 segmented, 47 sites",count,False,False,True
+elytra_length,UO:0000016 (millimetre),mm,True,False,False
