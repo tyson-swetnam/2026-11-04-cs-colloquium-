@@ -6,7 +6,7 @@ claims:
   text: "MESA's MCP servers pointed at data collections (notes: the NCEMS data on CyVerse, this summer)"
   kind: factual
   priority: medium
-  status: partially-supported
+  status: unverified
   validation: Link the collection paths and the server configuration.
   sources:
   - https://api.nsf.gov/services/v1/awards/2632685.json
@@ -27,7 +27,10 @@ claims:
     redirected to a CyVerse "Unblock Me" page, which was not pursued. MESA's award started 2026-07-15, so
     "this summer" is plausible but rests on the speaker's account. The speaker should link the collection
     path(s) and the server config, or say "pilot run by the MESA team" in the notes.
-  proposed_text: "MESA's MCP servers pointed at NCEMS collections on the CyVerse Data Store (summer 2026 pilot)"
+    Status set to unverified after review (2026-10-31): every source covers only the setting (a planned
+    partnership in future tense, CyVerse as NCEMS's cyberinfrastructure, a generic "in use" statement that
+    names no NCEMS collection). No source records the event itself, so the pilot is speaker-reported.
+  proposed_text: "MESA's MCP servers pointed at NCEMS collections on the CyVerse Data Store (summer 2026 pilot; collection link to be added)"
 - id: c2
   text: Existing metadata read, terms resolved through OLS and OBO, written back as iRODS attributes
   kind: technical
@@ -46,8 +49,10 @@ claims:
     AVUs (with the CURIE in the `unit` slot)". Writing AVUs needs a signed-in CyVerse user (anonymous access is
     read-only). No public before/after AVU counts or sample of resolved terms for the NCEMS collections exists,
     so the pilot outcome is speaker-reported. Wording: OLS is EBI's lookup service and OBO the ontologies, so
-    "through OLS and OBO" reads as two services; the proposed text is more exact. Code not checked.
-  proposed_text: 'Existing metadata read, terms matched to OBO ontologies via EBI OLS, written back as iRODS AVUs'
+    "through OLS and OBO" reads as two services. MESA's docs say only "OBO/OLS ontologies" and never name
+    the EBI OLS endpoint, so the proposed text does not name EBI. Verdict rests on documented capability
+    only; the pilot result (terms resolved and written back for NCEMS) is speaker-reported. Code not checked.
+  proposed_text: 'Existing metadata read, terms matched to OBO ontologies via the Ontology Lookup Service (OLS), written back as iRODS AVUs'
 - id: c3
   text: Every write recorded in DuckLake; the session left behind as an OKF bundle
   kind: technical
@@ -67,9 +72,10 @@ claims:
     history", so "every write" holds only if the pilot set a catalog (developer docs; not checked in code).
     OKF part: OKF is the Open Knowledge Format (v0.2, Google Cloud knowledge-catalog spec). MESA's public docs
     use it for the documentation site itself; they do not describe exporting an agent session as an OKF
-    bundle, and no NCEMS session bundle or DuckLake snapshot is public. Spell out OKF on the slide or in the
-    notes, and link the bundle if possible.
-  proposed_text: 'Every metadata write logged in DuckLake; the session saved as an Open Knowledge Format (OKF) bundle'
+    bundle, and no NCEMS session bundle or DuckLake snapshot is public. The partially-supported verdict
+    covers the DuckLake capability only (when a catalog DSN is set); the OKF session-bundle half is
+    speaker-reported and unverified. Spell out OKF and link the bundle, or drop the OKF half.
+  proposed_text: 'Every metadata write logged in DuckLake (history catalog enabled); session record exported as an Open Knowledge Format (OKF) bundle, link to be added'
 - id: c4
   text: 'Notes: nothing copied and nothing new to operate'
   kind: technical
@@ -131,3 +137,20 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   notes: Award 2632685 is "Research Infrastructure, Category II, MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico.
+- id: c8
+  text: "Slide: First pilot · NCEMS / Already running on real collections / Done"
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: A public record (page, collection path, run log) of the NCEMS pilot and of any ongoing runs.
+  sources:
+  - https://idss-mesa.github.io/llms-full.txt
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  evidence:
+  - data/raw/research/facts.csv
+  notes: >-
+    Added after review. The title says the work is ongoing and on several collections ("Already running on
+    real collections"), but the notes say it "already happened this summer" against one dataset (NCEMS).
+    No public source shows anything currently running on NCEMS collections, or that NCEMS was MESA's first
+    pilot: the MESA site names NCEMS only as an "anchor science community" (f16). Speaker-reported.
+  proposed_text: 'First pilot · NCEMS / Tried on a real collection / Done (summer 2026)'

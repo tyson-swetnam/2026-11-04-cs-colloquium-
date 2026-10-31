@@ -1,3 +1,27 @@
+biorepo_collection11.json:
+  note: collection metadata
+  retrieved: '2026-10-31'
+  sha256: 885072271df1bc9e6b6a9f505be925bbe9586a11323c3fdd30f1afc95ec77329
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/collection/11
+biorepo_collection13.json:
+  note: collection metadata
+  retrieved: '2026-10-31'
+  sha256: f55d56526b3f24a7a5633cf95f0021489b4b5a8a3c52b747abd9614fa10cebf6
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/collection/13
+biorepo_collection4.json:
+  note: collection metadata
+  retrieved: '2026-10-31'
+  sha256: 6d0a6f73313a0bf5a2ef87fe647726546751c020fa48dbde6eaf8d33461d010e
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/collection/4
+biorepo_collection63.json:
+  note: collection metadata
+  retrieved: '2026-10-31'
+  sha256: 56836c9ed6b54da65365e8531e98b1e1c30440917444b3b9242f296783abee74
+  source: NEON Biorepository portal API
+  url: https://biorepo.neonscience.org/portal/api/v2/collection/63
 biorepo_collid11.json:
   retrieved: '2026-10-31'
   sha256: e4e4bf34e41fd41c5f52a6d439fa12b87a98044881de45e012404872e6cf8e4b

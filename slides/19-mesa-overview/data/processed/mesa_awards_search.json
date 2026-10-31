@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "2632685",
+    "title": "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)",
+    "awardeeName": "University of New Mexico",
+    "startDate": "07/15/2026",
+    "expDate": "05/31/2029",
+    "estimatedTotalAmt": "4617408",
+    "pdPIName": "Tyson L Swetnam"
+  },
+  {
+    "id": "2608717",
+    "title": "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)",
+    "awardeeName": "University of Arizona",
+    "startDate": "06/01/2026",
+    "expDate": "08/31/2026",
+    "estimatedTotalAmt": "4617408",
+    "pdPIName": "Tyson L Swetnam"
+  }
+]

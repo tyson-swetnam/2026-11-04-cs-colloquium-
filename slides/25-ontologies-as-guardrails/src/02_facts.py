@@ -13,12 +13,12 @@ MESA = "MESA (idss-mesa.github.io)"
 
 ROWS = [
     ("f1", "c6", "Carabidae", '"label" : "Carabidae"', "OLS4 term NCBITaxon:41073", *EBI, OLS + "ncbitaxon/terms?obo_id=NCBITaxon:41073", "primary", "", "ols_NCBITaxon_41073.json"),
-    ("f2", "c6", "synonym ground beetles", '"synonyms" : [ "ground beetles" ]', "OLS4 term NCBITaxon:41073", *EBI, OLS + "ncbitaxon/terms?obo_id=NCBITaxon:41073", "primary", "only synonym; carabid is not a name of the term", "ols_NCBITaxon_41073.json"),
+    ("f2", "c6", "synonym ground beetles", '"synonyms" : [ "ground beetles" ]', "OLS4 term NCBITaxon:41073", *EBI, OLS + "ncbitaxon/terms?obo_id=NCBITaxon:41073", "primary", "only synonym (plural); ground beetle matches it only up to plural; carabid is not a name of the term", "ols_NCBITaxon_41073.json"),
     ("f3", "c6", "rank family", '"has_rank" : [ "http://purl.obolibrary.org/obo/TAXRANK_0000004" ]', "OLS4 term NCBITaxon:41073", *EBI, OLS + "ncbitaxon/terms?obo_id=NCBITaxon:41073", "primary", "TAXRANK_0000004 = family", "ols_NCBITaxon_41073.json"),
     ("f4", "c7", "specimen", '"label" : "specimen"', "OLS4 term OBI:0100051", *EBI, OLS + "obi/terms?obo_id=OBI:0100051", "primary", "", "ols_OBI_0100051.json"),
     ("f5", "c7", "no synonyms", '"synonyms" : [ ]', "OLS4 term OBI:0100051", *EBI, OLS + "obi/terms?obo_id=OBI:0100051", "primary", "pinned beetle / voucher / sample are mappings, not names", "ols_OBI_0100051.json"),
     ("f6", "c8", "millimeter", '"label" : "millimeter"', "OLS4 term UO:0000016", *EBI, OLS + "uo/terms?obo_id=UO:0000016", "primary", "", "ols_UO_0000016.json"),
-    ("f7", "c8", "synonyms millimetre, mm", '"synonyms" : [ "millimetre", "mm" ]', "OLS4 term UO:0000016", *EBI, OLS + "uo/terms?obo_id=UO:0000016", "primary", "slide spelling millimetre is a synonym", "ols_UO_0000016.json"),
+    ("f7", "c8", "synonyms millimetre, mm", '"synonyms" : [ "millimetre", "mm" ]', "OLS4 term UO:0000016", *EBI, OLS + "uo/terms?obo_id=UO:0000016", "primary", "slide spelling millimetre is a synonym; millimeters matches label millimeter only up to plural", "ols_UO_0000016.json"),
     ("f8", "c8", "square millimeter", '"label" : "square millimeter"', "OLS4 term UO:0000082", *EBI, OLS + "uo/terms?obo_id=UO:0000082", "primary", "", "ols_UO_0000082.json"),
     ("f9", "c8", "synonyms mm^[2], square millimetre", '"synonyms" : [ "mm^[2]", "square millimetre" ]', "OLS4 term UO:0000082", *EBI, OLS + "uo/terms?obo_id=UO:0000082", "primary", "mm2 and mm² match mm^[2] only after normalisation", "ols_UO_0000082.json"),
     ("f10", "c9", "Coleoptera is an ancestor of Carabidae", '"obo_id" : "NCBITaxon:7041"', "OLS4 hierarchical ancestors of NCBITaxon:41073", *EBI, OLS + "ncbitaxon/terms/{Carabidae IRI}/hierarchicalAncestors?size=500", "primary", "", "ols_NCBITaxon_41073_ancestors.json"),
@@ -31,6 +31,9 @@ ROWS = [
     ("f17", "c4", "curator pick is authoritative", "| H | human pick | MRTR | the curator's choice is authoritative and becomes a label |", "mesa-anyjev docs: Decision graph", MESA, "2026-09-25", "https://idss-mesa.github.io/mesa-anyjev/", "primary", "developer-written, status draft", "anyjev_llms_full.txt"),
     ("f18", "c4", "a decline leaves the group unwritten", "decline leaves the group unwritten.", "mesa-anyjev docs: MCP tools", MESA, "2026-09-25", "https://idss-mesa.github.io/mesa-anyjev/concepts/mcp-tools/", "primary", "developer-written, status draft", "anyjev_llms_full.txt"),
     ("f19", "c12", "award 2632685 title", "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)", "NSF Award API 2632685", "U.S. National Science Foundation", "2026-07-26", "https://api.nsf.gov/services/v1/awards/2632685.json", "primary", "UNM; PI Tyson L Swetnam; 2026-07-15 to 2029-05-31", "nsf_award_2632685.json"),
+    ("f20", "c4", "mesa_avu_* applies terms directly", "| `mesa_avu_*` | Apply ontology terms and DataCite fields as AVUs (with the CURIE in the `unit` slot) |", "mesa-mcp docs", MESA, "2026-07-18", "https://idss-mesa.github.io/docs/servers/mesa-mcp/", "primary", "developer-written; a write path besides the anyjev decision graph", "mesa_llms_full.txt"),
+    ("f21", "c4", "auto policy exists", "* `auto` only with an AnyJev level at or above both the question's and the profile's floor", "mesa-anyjev docs: decision policy", MESA, "2026-09-25", "https://idss-mesa.github.io/mesa-anyjev/", "primary", "developer-written, status draft; curator approval is the default, not the only path", "anyjev_llms_full.txt"),
+    ("f22", "c4", "shipped default is proposed-only", "The shipped defaults are proposed-only (`auto: null` everywhere) until a bench run exists.", "mesa-anyjev docs: decision policy", MESA, "2026-09-25", "https://idss-mesa.github.io/mesa-anyjev/", "primary", "developer-written, status draft", "anyjev_llms_full.txt"),
 ]
 
 

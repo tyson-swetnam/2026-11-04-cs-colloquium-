@@ -19,6 +19,6 @@ nsf_award_2632685.json:
 nsf_search_mesa.json:
   note: keyword search for MESA awards
   retrieved: '2026-10-31'
-  sha256: 7f553da82dbf7e526912513c5f57dc68f8222915ddad187abffee1820bc5522a
+  sha256: 1a58e23a212ed49f43ba0d45796bd0c9cb65ffc251c2ad464de5ad29ef9643ae
   source: NSF Award API
-  url: https://api.nsf.gov/services/v1/awards.json?keyword=MESA%20Multidisciplinary%20Environment%20Scientific%20Advancement&printFields=id,title,awardeeName,startDate,expDate
+  url: https://api.nsf.gov/services/v1/awards.json?keyword=CyVerse&printFields=id,title,awardeeName,startDate,expDate

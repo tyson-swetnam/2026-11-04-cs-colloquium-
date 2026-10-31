@@ -12,6 +12,8 @@ BY_URL = {
     "https://ducklake.select/docs/stable/duckdb/guides/access_control": "ducklake_access_control.html",
     "https://ducklake.select/docs/stable/specification/introduction": "ducklake_spec_intro.html",
     "https://ducklake.select/docs/stable/duckdb/usage/time_travel": "ducklake_time_travel.html",
+    "https://ducklake.select/docs/stable/duckdb/usage/choosing_a_catalog_database": "ducklake_choosing_catalog.html",
+    "https://ducklake.select/docs/stable/duckdb/advanced_features/conflict_resolution": "ducklake_conflicts.html",
     "https://iceberg.apache.org/": "iceberg_home.html",
     "https://delta.io/": "delta_home.html",
     "https://idss-mesa.github.io/okf/concepts/home.md": "mesa_home.md",

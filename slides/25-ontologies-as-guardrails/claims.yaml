@@ -46,10 +46,13 @@ claims:
     Left unverified: the behaviour lives in MESA code, which was out of scope. The public, developer-written docs
     say mesa-mcp stores the ontology CURIE in the AVU unit slot, that mesa-anyjev draws candidate terms from an
     OLS search with a prefix filter, that a curator's pick is authoritative and that a decline leaves the group
-    unwritten (facts f15-f18). None of them says that a term failing to resolve is refused at write time. The
+    unwritten (facts f15-f18). Those steps come from the mesa-anyjev decision graph, a draft for one component.
+    mesa-mcp also has mesa_avu_* tools that apply terms as AVUs directly (f20), and its AVU contract puts a CURIE
+    in the unit slot only "when the AVU came from OBO/OLS", so not every AVU goes through OLS. Curator approval
+    is the shipped default ("proposed-only"), but the docs also describe an "auto" policy (f21, f22). None of them says that a term failing to resolve is refused at write time. The
     repo's own re-implementation of the check (evidence/ontology.py, slide 17) does refuse invented, obsolete
     and wrong-ontology CURIEs, but that is this talk's validator, not MESA's write path.
-  proposed_text: 'Candidate terms come only from an OLS search, and a curator approves the pick.'
+  proposed_text: "In MESA's annotation tool (draft), candidate terms come from an OLS search and, by default, a curator approves the pick."
 - id: c5
   text: OWL carries the class hierarchy, so a question about mammalian transcriptomes finds the mouse
   kind: technical
@@ -74,8 +77,9 @@ claims:
   - ../17-hallucination-is-engineering/data/processed/ontology_writes.csv
   notes: >-
     Rechecked 2026-10-31. NCBITaxon:41073 is current, labelled Carabidae, rank family, with one synonym,
-    "ground beetles". 'ground beetle' and 'Carabidae' are names of the term; 'carabid' is not, so a strict
-    write needs a proposed mapping and a curator's approval.
+    "ground beetles". 'Carabidae' is the exact label. 'ground beetle' matches the synonym "ground beetles" only
+    up to plural (this talk's validator is plural-insensitive; see variants.csv exact_label_or_synonym). 'carabid'
+    is not a name, so a strict write needs a proposed mapping and a curator's approval.
 - id: c7
   text: 'pinned beetle / voucher / sample -> OBI:0100051 (specimen)'
   kind: factual
@@ -110,13 +114,14 @@ claims:
   notes: >-
     Rechecked 2026-10-31; corrects the earlier note. Both CURIEs are current. UO's labels are 'millimeter' and
     'square millimeter', but 'millimetre' and 'square millimetre' are listed synonyms, so the slide's spelling is
-    fine. 'mm' and 'millimeters' resolve, 'millim.' does not. 'mm2' and 'mm²' match the synonym 'mm^[2]' only
+    fine. 'mm' is an exact synonym; 'millimeters' matches the label 'millimeter' only up to plural (lenient
+    validator), 'millim.' does not resolve. 'mm2' and 'mm²' match the synonym 'mm^[2]' only
     after normalisation (Unicode NFKD, punctuation stripped); 'sq mm' does not resolve.
 - id: c9
   text: 'OWL carries the class hierarchy, so a question about beetles (Coleoptera) finds every carabid'
   kind: technical
   priority: medium
-  status: supported
+  status: partially-supported
   validation: 'Coleoptera (NCBITaxon:7041) among the ancestors of NCBITaxon:41073.'
   sources:
   - https://www.ebi.ac.uk/ols4/
@@ -126,8 +131,11 @@ claims:
   - ../17-hallucination-is-engineering/data/processed/ontology_hierarchy.csv
   notes: >-
     Rechecked 2026-10-31: Coleoptera (NCBITaxon:7041, rank order, synonym "beetles") is among the OLS
-    hierarchical ancestors of Carabidae (NCBITaxon:41073, rank family). The hierarchy makes the query possible;
-    whether MESA's query layer expands subclasses is c13.
+    hierarchical ancestors of Carabidae (NCBITaxon:41073, rank family). Downgraded from supported after review:
+    the ontology half holds, but "finds every carabid" is a claim about MESA's query layer. MESA's public docs
+    only say mesa_ols_* can "fetch hierarchies" (f14); nothing says queries expand to subclasses, and that is
+    unverified (c13).
+  proposed_text: 'OWL carries the class hierarchy, so a question about beetles (Coleoptera) can find every carabid.'
 - id: c10
   text: 'Terms resolve through the Ontology Lookup Service (OLS) and the OBO Foundry'
   kind: factual

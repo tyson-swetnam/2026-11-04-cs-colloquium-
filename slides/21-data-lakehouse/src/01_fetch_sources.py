@@ -63,3 +63,14 @@ keep = {k: aw[k] for k in ("id", "title", "awardeeName", "pdPIName", "startDate"
 (HERE / "data/processed").mkdir(parents=True, exist_ok=True)
 (HERE / "data/processed/nsf_award_2632685.json").write_text(json.dumps(keep, indent=2))
 print({k: v for k, v in keep.items() if k != "abstractText"})
+
+# Added after review: catalog choice (single vs multi-client) page.
+EXTRA = {
+    "ducklake_choosing_catalog.html": "https://ducklake.select/docs/stable/duckdb/usage/choosing_a_catalog_database",
+}
+for name, url in EXTRA.items():
+    status, body = get(url)
+    print(status, name, len(body))
+    if status == 200:
+        (SRC / name).write_text(body, encoding="utf-8")
+        record(SRC / name, url=url, source="DuckLake docs", note="catalog choice for single/multi-client use")

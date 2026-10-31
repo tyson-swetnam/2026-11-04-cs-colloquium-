@@ -14,6 +14,12 @@ ducklake_access_control.html:
   sha256: 96472011bff535c982dc83b0a05ebd680b4c1d7a0dc26ae1e58ce5ce57c3d7d8
   source: DuckLake docs
   url: https://ducklake.select/docs/stable/duckdb/guides/access_control
+ducklake_choosing_catalog.html:
+  note: catalog choice for single/multi-client use
+  retrieved: '2026-10-31'
+  sha256: 741d4ea482258c56c1cc9241fda6333a8a20260dd1c9b14786a411576e8b9786
+  source: DuckLake docs
+  url: https://ducklake.select/docs/stable/duckdb/usage/choosing_a_catalog_database
 ducklake_conflicts.html:
   retrieved: '2026-10-31'
   sha256: 5a24c7db52ebc4acd1e09c7fcce96556851f8cc16cdbb9f82f69c27812334314

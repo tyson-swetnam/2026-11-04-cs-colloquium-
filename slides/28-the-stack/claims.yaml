@@ -39,8 +39,11 @@ claims:
     CLI (Apache-2.0) and OpenCode (MIT, f09) are open source, Claude Code is under Anthropic's terms (f08),
     and Antigravity was not checked. MESA's own servers have a LICENSE file (f11) but the public docs do not
     name the licence; the code was out of scope, so that part stays unverified. Licences for software come
-    from the deps.dev project API (data/processed/licences.csv).
-  proposed_text: 'Five layers, open standards: each layer has an open-source option'
+    from the deps.dev project API (data/processed/licences.csv). Reviewer follow-up (2026-10-31): an
+    earlier suggestion ("open standards: each layer has an open-source option") was withdrawn. The only S3
+    entry is Amazon's API, not an open standard (f06), compute is facilities and programs with no
+    open-source option, and the agentic AI layer names no product.
+  proposed_text: 'Five layers, built on open-source software where it exists'
 - id: c2
   text: Running today on CyVerse, TACC, ACCESS-CI and NAIRR resources
   kind: factual
@@ -67,8 +70,15 @@ claims:
     and Jetstream-2 through ACCESS-CI (f12), and the award (funded under the NAIRR program, started
     2026-07-15) is funding, not a NAIRR compute allocation. Web search found no NAIRR Pilot project for MESA.
     If deployments at TACC or on ACCESS/NAIRR allocations exist, they are not public; the speaker should
-    confirm or reword.
-  proposed_text: 'Running today on CyVerse; TACC, ACCESS-CI and NAIRR resources next.'
+    confirm or reword. Scope caveat: per MESA's own page (f10, developer-reported), the installer clones,
+    builds and registers the MESA servers on the user's machine and connects them to CyVerse's hosted
+    Formation server; so the evidence shows MESA using CyVerse-hosted services (Formation, public Data
+    Store), not the whole MESA stack deployed on CyVerse. HTTP 200 from mesa.cyverse.org only shows the site
+    is up. NAIRR appears only as the award's fund program (fundProgramName "NAIRR-Nat AI Research
+    Resource", f16), not as a site, and ACCESS-CI is the route to TACC, OSN, CyVerse and Jetstream-2, not
+    a peer site. The abstract gives no dates, so "next" is avoided. An earlier suggestion listing NAIRR as
+    a planned resource was withdrawn after review.
+  proposed_text: 'Running today on CyVerse services; planned on TACC, Jetstream2 and OSN through ACCESS-CI (NSF award 2632685).'
 - id: c3
   text: '[Status: what is live now vs. next 12 months]'
   kind: placeholder
@@ -115,8 +125,12 @@ claims:
     New claim from the speaker note. Swappable is fair as a design statement: every layer in the figure
     except agentic AI lists two or more alternatives, and MESA's installer supports four agent clients
     (f10, developer-reported). "Open" fails for the same reason as c1: AWS S3 and VAST are proprietary
-    (f04-f06), Claude Code is not open source (f08), and compute is facilities rather than software.
-  proposed_text: 'Note: every layer is swappable, and each has an open-source choice.'
+    (f04-f06), Claude Code is not open source (f08), and compute is facilities rather than software, so
+    "each layer has an open-source choice" would also be wrong. "Swappable" is design intent: it rests on
+    the figure listing alternatives plus MESA's developer-reported installer for four agent clients (f10),
+    which is about agent clients only; no source shows swapping compute or storage backends. The figure
+    lists no alternatives in the agentic AI layer.
+  proposed_text: 'Note: each layer is designed to be swappable, with open-source software at the core where it exists.'
 - id: c6
   text: 'Figure: MESA proposal · NSF Award #2632685'
   kind: factual

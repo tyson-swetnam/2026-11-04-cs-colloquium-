@@ -56,7 +56,8 @@ claims:
   text: The five hyperscalers spent 95% of operating cash flow on capex in the 12 months to 2026Q3 (36-55% in 2019-2024)
   kind: quantitative
   priority: high
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Trailing four fiscal quarters of actuals from SEC XBRL, summed across firms (src/01_financial.py); OCF and capex match Van Nieuwerburgh (2026) Figure 1 within 1% for 2020-2025 (src/04_validate.py).
   sources:
   - https://data.sec.gov/api/xbrl/companyfacts/
@@ -70,7 +71,8 @@ claims:
   text: Their on-balance-sheet debt rose from $231B (FY2024 year ends) to $556B (latest filings)
   kind: quantitative
   priority: high
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Total long-term debt (incl. current portion) from SEC XBRL per firm (src/01_financial.py).
   sources:
   - https://data.sec.gov/api/xbrl/companyfacts/
@@ -82,7 +84,8 @@ claims:
   text: More sits off the balance sheet (Meta's Hyperion ~90% debt-financed in a JV; ~$660B of future leases not yet recognized)
   kind: attribution
   priority: medium
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Quoted from Van Nieuwerburgh (2026), Section IV, citing Moody's Ratings (2026a).
   sources:
   - https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf
@@ -92,7 +95,8 @@ claims:
   text: US data centers used 192 TWh in 2024, 4.7% of US electricity; 9.5-15.3% projected for 2030
   kind: attribution
   priority: high
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Quote checked in the downloaded LBNL report.
   sources:
   - https://www.osti.gov/servlets/purl/3374245
@@ -103,7 +107,8 @@ claims:
   text: Project Jupiter (Doña Ana County) seeks an air permit for 2,462 MW of gas fuel cells, more than PNM's all-time peak of 2,264 MW
   kind: quantitative
   priority: high
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Nameplate from NMED's hearing notice; PNM peak from the Albuquerque Journal quoting PNM; ratio computed in src/02_environment.py.
   sources:
   - https://www.env.nm.gov/opf/wp-content/uploads/sites/13/2026/07/2026-08-12-AQB-26-57-Amended-Notice-of-Hearing-English-filed.pdf
@@ -119,7 +124,8 @@ claims:
   text: US data centers consumed ~66 billion liters of water on site in 2023, and ~800 billion liters more through electricity generation
   kind: attribution
   priority: low
-  status: partially-supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: From a DOE national-lab slide citing the LBNL 2024 report; the LBNL PDF itself was blocked.
   sources:
   - https://www.osti.gov/servlets/purl/17273330
@@ -130,7 +136,8 @@ claims:
   text: Training on books was ruled fair use, but pirated copies were not; Bartz v. Anthropic settled for $1.5B (~$3,000 per work), final approval July 20, 2026
   kind: factual
   priority: medium
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Court order (Dkt. 231), court-authorized notice, and the settlement website, quotes checked.
   sources:
   - https://storage.courtlistener.com/recap/gov.uscourts.cand.434709/gov.uscourts.cand.434709.231.0.pdf
@@ -142,7 +149,8 @@ claims:
   text: Developers report real misuse, e.g. a state-sponsored group ran 80-90% of an espionage campaign's tactical work with an AI agent (~30 targets)
   kind: attribution
   priority: medium
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Developer's own report (Anthropic, Nov. 2025); not independently verified. OpenAI (Oct. 2025) and Google GTIG (May 2026) report comparable activity.
   sources:
   - https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf
@@ -152,7 +160,8 @@ claims:
   text: ICML 2026 caught 795 reviews (~1%) by reviewers who had pledged not to use LLMs; 497 papers were desk-rejected
   kind: factual
   priority: medium
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: ICML program chairs' blog; detection by hidden prompts in PDFs with human review, so a lower bound.
   sources:
   - https://blog.icml.cc/2026/03/18/on-violations-of-llm-review-policies/
@@ -162,7 +171,8 @@ claims:
   text: 23.7% of The Pile is full-text research papers (PubMed Central, arXiv, PhilPapers); 27.1% with abstracts and grant text
   kind: quantitative
   priority: medium
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Parsed from the paper's own LaTeX Table 1 (src/05_corpus_shares.py); totals reproduce the published 1,254.20 GiB.
   sources:
   - https://arxiv.org/abs/2101.00027
@@ -173,7 +183,8 @@ claims:
   text: Taylor & Francis ($75M+ in 2024) and Wiley (>$110M lifetime) have booked at least $185M from licensing content to AI firms
   kind: attribution
   priority: medium
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Informa results filings (UK FCA NSM) and Wiley press releases, quotes checked at source.
   sources:
   - https://data.fca.org.uk/artefacts/NSM/RNS/5562936.html
@@ -185,7 +196,8 @@ claims:
   text: Only 8% of researchers trust AI companies not to use their research data without permission
   kind: attribution
   priority: low
-  status: supported
+  status: superseded
+  superseded_note: 'Text no longer on slide 06 (revised deck); the evidence is reused by slides 07-10.'
   validation: Oxford University Press survey (May 2024, 2,000+ researchers), quote checked in saved page.
   sources:
   - https://corp.oup.com/news/how-are-researchers-responding-to-ai/

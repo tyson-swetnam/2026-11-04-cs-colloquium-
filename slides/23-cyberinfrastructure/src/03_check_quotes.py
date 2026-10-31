@@ -26,6 +26,9 @@ URL_TO_FILE = {
     "https://cider.access-ci.org/public/resources/RDR_003540": "cider.access-ci.org_public_resources_RDR_003540.html",
     "https://idss-mesa.github.io/mesa-anyjev/getting-started/gateway/": "mesa_anyjev_llms-full.txt",
     "https://idss-mesa.github.io/llms-full.txt": "mesa_site_llms-full.txt",
+    "https://idss-mesa.github.io/okf/concepts/hiring.md": "mesa_site_llms-full.txt",
+    "https://docs.jetstream-cloud.org/general/running-llm/": "docs.jetstream-cloud.org_general_running-llm_.html",
+    "https://nrp.ai/about/": "nrp.ai_about_.html",
 }
 
 

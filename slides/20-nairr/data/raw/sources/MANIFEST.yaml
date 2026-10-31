@@ -245,3 +245,16 @@ nsf_pilot_launch_2024.html.txt:
   sha256: f2113f5e19dc92701fb9552a9caebc7d3636646159709728f2bf9acde0a74a3d
   source: slide 20 NAIRR check
   url: https://www.nsf.gov/news/democratizing-future-ai-rd-nsf-launch-national-ai
+nsf_science_matters_nairr_2024.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 685944fba267465ab13d442c3227d5b9e3370d98600c00cddd8b21cb391a1f81
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/science-matters/us-nairr-pilot-brings-cutting-edge-ai-resources-researchers
+nsf_science_matters_nairr_2024.html.txt:
+  note: tag-stripped text of nsf_science_matters_nairr_2024.html
+  retrieved: '2026-10-31'
+  sha256: 2bc341a9810518209b4d5a0a7fdf6c650eb9a3c1173c8cff269a761ed1886922
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/science-matters/us-nairr-pilot-brings-cutting-edge-ai-resources-researchers

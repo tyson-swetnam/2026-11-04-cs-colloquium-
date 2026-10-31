@@ -30,6 +30,7 @@ assert status == 200, status
 out2 = HERE / "data/raw/sources/nsf_search_mesa.json"
 out2.write_text(body)
 record(out2, url=url2, source="NSF Award API", note="keyword search for MESA awards")
-hits = [a for a in json.loads(body)["response"].get("award", []) if "MESA" in a["title"]]
+KEEP = ("id", "title", "awardeeName", "startDate", "expDate", "estimatedTotalAmt", "pdPIName")
+hits = [{k: a.get(k) for k in KEEP} for a in json.loads(body)["response"].get("award", []) if "MESA" in a["title"]]
 (HERE / "data/processed/mesa_awards_search.json").write_text(json.dumps(hits, indent=2))
 print(json.dumps(hits, indent=2))
