@@ -1,0 +1,151 @@
+abajournal_20m_logs.html:
+  retrieved: '2026-10-31'
+  sha256: 6d93cdc80a1e4c55caac38e6a31cbdf3610ff5cd2b086171529d5e660bbd5398
+  source: ABA Journal
+  url: https://www.abajournal.com/news/article/chatgpt-creator-must-turn-over-20m-chat-logs-in-copyright-litigation-federal-judge-says
+authorsalliance_fairness_hearing.html:
+  retrieved: '2026-10-31'
+  sha256: 6fa953dfd4f180bad8ce82aa2b3a671ff863fa2120030b42779cd8e17df6b269
+  source: Authors Alliance, 2026-05-14
+  url: https://www.authorsalliance.org/2026/05/14/bartz-v-anthropic-fairness-hearing-final-reminder-91-3-claims-rate-and-updates-from-the-docket/
+authorsguild_final_approval.html:
+  retrieved: '2026-10-31'
+  sha256: c117f3ba2af96e9834e32943dcc6e2e1fc429610c69babebe6cc51c1ebf9958d
+  source: Authors Guild news, final approval (2026-07-21)
+  url: https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/
+bartz_dkt231_fair_use_order.pdf:
+  retrieved: '2026-10-31'
+  sha256: 6d37e99e468b5d1076fedf44c32bfaf11d9a71eb70cc678691549946a5800c52
+  source: Bartz v. Anthropic, N.D. Cal. 3:24-cv-05417, Order on Fair Use (Dkt. 231),
+    2025-06-23
+  url: https://storage.courtlistener.com/recap/gov.uscourts.cand.434709/gov.uscourts.cand.434709.231.0.pdf
+bartz_final_approval_order.pdf:
+  retrieved: '2026-10-31'
+  sha256: 1f38604a6231bd5acab0731e53c61c8d878d0132f209dc8d073d1eef2c82f4a0
+  source: Bartz v. Anthropic, Order Granting Final Approval of Settlement (copy hosted
+    by AAP)
+  url: https://publishers.org/wp-content/uploads/2026/07/Order-Granting-Final-Approval-of-Settlement171.pdf
+bartz_long_form_notice.pdf:
+  retrieved: '2026-10-31'
+  sha256: 6f67f1034093d544a962e1f2bf37465d1248942a2bab0f9ea7040a75b2c1ef52
+  source: Court-authorized long-form notice (updated deadline 2026-01-08)
+  url: https://assets-us-01.kc-usercontent.com:443/1eeb16db-4934-006e-40a6-38fa91285ebb/ce109a57-390c-4d76-ad65-5807d4830fe5/ANT%20-%20Long-Form%20Notice_Updated%20Deadline%201.8.2026.pdf
+bartz_settlement_site.html:
+  retrieved: '2026-10-31'
+  sha256: 259b489aa9569bca7d8fa84432f6aaa20e77c936515a96ac26829056f1c30279
+  source: Official court-authorized settlement website (JND)
+  url: https://www.anthropiccopyrightsettlement.com/
+cc_languages.csv:
+  retrieved: '2026-10-31'
+  sha256: 261dfd2da5e9bfa8975f57711e23ab639b2f1b6c174273e9182a55e05ed46bf1
+  source: 'Common Crawl crawl statistics: primary-language distribution per crawl'
+  url: https://commoncrawl.github.io/cc-crawl-statistics/plots/languages.csv
+cietw_sj_briefing_2026-09-04.html:
+  retrieved: '2026-10-31'
+  sha256: ee918cfd750f55e27688410fc2fe28ed6ecb620a02e118f68558b7421be13d9b
+  source: ChatGPT Is Eating the World (Edward Lee), 2026-09-04
+  url: https://chatgptiseatingtheworld.com/2026/09/04/summary-judgment-briefing-starts-in-openai-mdl-litigation-before-judge-stein/
+dodge2021_c4.pdf:
+  retrieved: '2026-10-31'
+  sha256: 721d817b6e6743ae7829bc4b77ea518cd585b18520ee716d3a11781d750d920c
+  source: Dodge et al. 2021, Documenting Large Webtext Corpora (EMNLP 2021)
+  url: https://arxiv.org/pdf/2104.08758
+dodge2021_c4_abs.html:
+  retrieved: '2026-10-31'
+  sha256: 0ddaa07b6a26e8cbbda5adb72c572c9f54513307ee8b2ebe1688e9867b34087c
+  source: Dodge et al. 2021, Documenting Large Webtext Corpora (C4), arXiv abstract
+  url: https://arxiv.org/abs/2104.08758
+getty_v_stability_ewhc_2025_2863.xml:
+  retrieved: '2026-10-31'
+  sha256: b97f8f86be0aba3da7ba16cf0528555c1bbaca34449f4f079f5d85acbe22c6c6
+  source: Getty Images v Stability AI [2025] EWHC 2863 (Ch), The National Archives
+    Find Case Law
+  url: https://caselaw.nationalarchives.gov.uk/ewhc/ch/2025/2863/data.xml
+graphicpolicy_midjourney_2026-05.html:
+  retrieved: '2026-10-31'
+  sha256: ee48ed749ed35be0c69e3543a58e085c8070ee32bd24fab1bb8878f4dd98d606
+  source: Graphic Policy, 2026-05-11
+  url: https://graphicpolicy.com/2026/05/11/disney-warner-bros-universal-and-midjourney-discovery-dispute/
+graphicpolicy_midjourney_tag.html:
+  retrieved: '2026-10-31'
+  sha256: df44975fcf7026434acfa2a46173cf3285871e48a60fb0629c20401c5940d056
+  source: Graphic Policy, Midjourney tag page (latest case posts)
+  url: https://graphicpolicy.com/tag/midjourney/
+intro_gpt_legal.html:
+  retrieved: '2026-10-31'
+  sha256: 626b4a1392a09e7a8edb209911a654fbaaa2fde6ed8d5798f66d4e50f545ecb1
+  source: Speaker's own compiled legal page cited on slide
+  url: https://tyson-swetnam.github.io/intro-gpt/legal/
+ipwatchdog_publishers_v_anthropic.html:
+  retrieved: '2026-10-31'
+  sha256: e5f69217a665b447cb728147ea6f4e70ce0490b51630de7abc789d59e09a632d
+  source: IPWatchdog, 2026-01-29
+  url: https://ipwatchdog.com/2026/01/29/music-publishers-file-new-piracy-suit-against-anthropic-alleging-mass-torrenting-copyrighted-works/
+joneswalker_20m_logs.html:
+  retrieved: '2026-10-31'
+  sha256: 63aa3ed1424521820d140ae233e24b56f986395cd061a24fad45525c829b3a9a
+  source: Jones Walker AI Law Blog on Stein order affirming 20M-log production
+  url: https://www.joneswalker.com/en/insights/blogs/ai-law-blog/openai-loses-privacy-gambit-20-million-chatgpt-logs-likely-headed-to-copyright-p.html
+kadrey_dkt598_sj_order.pdf:
+  retrieved: '2026-10-31'
+  sha256: 583d2cd060d573ad24437852d36e2629bc5dc666b9e3f98859385ecfc58f161f
+  source: Kadrey v. Meta, N.D. Cal. 3:23-cv-03417, SJ order (Dkt. 598), 2025-06-25
+  url: https://storage.courtlistener.com/recap/gov.uscourts.cand.415175/gov.uscourts.cand.415175.598.0.pdf
+lto_gema_openai.html:
+  retrieved: '2026-10-31'
+  sha256: f18eeb3d6f5122b7b0ae65a6f230efae8071ec2df2a229671c5d7935bad0c3b4
+  source: Legal Tribune Online, LG München I GEMA v OpenAI (2025-11-11)
+  url: https://www.lto.de/recht/nachrichten/n/42o1413924-lg-muenchen-i-gema-openai-chatgpt-songtexte-ki
+mbw_anthropic_partial_dismissal.html:
+  retrieved: '2026-10-31'
+  sha256: 7c0791e86df78bfe827318421b748cd275095cc2d17258f8b78682631ad4ef07
+  source: Music Business Worldwide, Aug. 2026
+  url: https://www.musicbusinessworldwide.com/anthropic-seeks-partial-dismissal-in-music-publishers-3b-lyrics-suit-as-CEO-moves-to-drop-the-direct-infringement-claim-against-him/
+mbw_publishers_v_anthropic.html:
+  retrieved: '2026-10-31'
+  sha256: e986fe8b1c97af19609f64c7e0008d77d9791b3c8d70d81d4ab917fdf6d8023c
+  source: Music Business Worldwide, 2026-01-28
+  url: https://www.musicbusinessworldwide.com/umg-concord-and-abkco-sue-anthropic-for-3bn-in-what-could-be-single-largest-non-class-action-copyright-case-in-us-history/
+nysd_20m_logs_order.pdf:
+  retrieved: '2026-10-31'
+  sha256: ca81cc0cbb19e46ff2a5daae710344165be9da9382660625f9036b58fbd295af
+  source: In re OpenAI Copyright Infringement Litig., S.D.N.Y. 25-md-3143, order on
+    20M logs (copy hosted by Law360)
+  url: https://assets.law360news.com/2426000/2426657/https-ecf-nysd-uscourts-gov-doc1-127138822336.pdf
+nysd_640396_dkt1586.pdf:
+  retrieved: '2026-10-31'
+  sha256: 885a4daabd16dff5ebea54d9e757cc2e6f89e6440adef6330b345fa0ad852a4c
+  source: In re OpenAI Copyright Infringement Litig., S.D.N.Y. 25-md-3143, Dkt. 1586
+    (RECAP)
+  url: https://storage.courtlistener.com/recap/gov.uscourts.nysd.640396/gov.uscourts.nysd.640396.1586.0.pdf
+pearlcohen_final_approval.html:
+  retrieved: '2026-10-31'
+  sha256: 355120f57dbc2658935b1293f2c0717c0c27d9bd97b3309edf27d93389079bda
+  source: Pearl Cohen client update on final approval (2026-07-30)
+  url: https://pearlcohen.com/federal-court-approves-1-5-billion-anthropic-copyright-settlement-largest-in-history
+publishers_v_anthropic_complaint_2026-01-28.pdf:
+  retrieved: '2026-10-31'
+  sha256: ec32f9e26d316dea4cfb7093cc23ae43c59bf295b2c33af9c14551533aa18080
+  source: Concord Music Group et al. v. Anthropic (N.D. Cal., filed 2026-01-28), complaint
+    (copy hosted by MBW)
+  url: https://www.musicbusinessworldwide.com/files/2026/01/Anthropic-complaint-01.28.26-1.pdf
+techcrunch_publishers_v_anthropic.html:
+  retrieved: '2026-10-31'
+  sha256: 74634abef30139d094e57e359549a94d0a52c1ea8f7e42bee007e555e2d46245
+  source: TechCrunch, 2026-01-29
+  url: https://techcrunch.com/2026/01/29/music-publishers-sue-anthropic-for-3b-over-flagrant-piracy-of-20000-works/
+touvron2023_llama2.pdf:
+  retrieved: '2026-10-31'
+  sha256: 1df284ce95f783002074bfe8f21d47c646b396ceb1736ea3ec0ea212fc070d91
+  source: Touvron et al. 2023, Llama 2 (Meta), Table 10 language distribution
+  url: https://arxiv.org/pdf/2307.09288
+w3techs_content_language.html:
+  retrieved: '2026-10-31'
+  sha256: ae635e0842df16e07b847283ae9d3f609f1da394d95ad5fcafe313ac9d3b7f14
+  source: W3Techs, Usage statistics of content languages for websites
+  url: https://w3techs.com/technologies/overview/content_language
+w3techs_content_language_history_y.html:
+  retrieved: '2026-10-31'
+  sha256: 659b58b83b8d85ae6834381be102758e2ffaf783186e474ecb847e5532adc125
+  source: W3Techs, historical yearly trends in content languages
+  url: https://w3techs.com/technologies/history_overview/content_language/ms/y

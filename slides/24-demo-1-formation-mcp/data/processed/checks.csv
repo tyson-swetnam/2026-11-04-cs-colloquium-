@@ -1,0 +1,21 @@
+fact,claim,url,found,quote
+f1,c4,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,Formation is the CyVerse Discovery Environment's own MCP server
+f2,c4,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,**Run by:** CyVerse
+f3,c2,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,registers Formation by URL with every client it detects
+f4,c2,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,"whether Codex, OpenCode, and Antigravity can complete the CyVerse sign-in is not yet confirmed"
+f5,c2,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,CyVerse does not yet accept that client's sign-in callback.
+f6,c2,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,OpenCode and Goose cannot complete the sign-in in the apps.
+f7,c3,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,"launch apps, manage analyses, and work with the Data Store"
+f8,c3,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,Batch (non-interactive) jobs return as soon as they are submitted
+f9,c3,https://docs.cyverse.org/deployment/06-applications/vice/index.md,True,Interactive analyses run on the workers in the `k8s_vice_workers` inventory group
+f10,c3,https://docs.cyverse.org/deployment/04-kubernetes/argo/index.md,True,"Argo Workflows runs the containerized, non-interactive side of DE analyses inside Kubernetes — the batch counterpart to VICE."
+f11,c3,https://docs.cyverse.org/deployment/04-kubernetes/argo/index.md,True,Deployments that predate it dispatch those jobs to HTCondor instead
+f12,c3,https://docs.cyverse.org/architecture/system-overview/index.md,True,"CyVerse runs mainly on a locally managed K8s cluster, but it can be federated to other K8s clusters."
+f13,c3,https://docs.cyverse.org/architecture/system-overview/index.md,True,DE uses [HTCondor](https://htcondor.org/){target=_blank} for `executable` jobs on CyVerse resources
+f14,c3,https://idss-mesa.github.io/docs/llms-full.txt,True,"| `ds_*` | iRODS Data Store: list/read/write/move files, directories, AVUs, ACLs, tickets, rules, policies"
+f15,c3,https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md,True,"Anonymous access to public data under `/iplant/home/shared`, or authenticated access with iRODS credentials."
+f16,c3,https://idss-mesa.github.io/docs/llms-full.txt,True,"Without it they have anonymous, read-only access to public data."
+f17,c2,https://idss-mesa.github.io/docs/llms-full.txt,True,"After install, the three servers (`mesa-mcp`, `irods`, `formation`) are registered with every client the installer detected"
+f18,c5,https://idss-mesa.github.io/docs/llms-full.txt,True,"Codex and Antigravity run a local `irods` server, and every agent runs a local `mesa` server"
+f19,c5,https://idss-mesa.github.io/docs/llms-full.txt,True,"OpenCode's `irods` is the hosted public endpoint, which reads public data only."
+f20,c4,https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md,True,It is registered under the name `irods` with every detected client

@@ -1,0 +1,92 @@
+slide: 13
+title: 'Years of work, compressed into days'
+section: 02 · Science
+claims:
+- id: c1
+  text: 'AlphaFold: 2024 Nobel; 200M structures published open'
+  kind: quantitative
+  priority: medium
+  status: supported
+  validation: AlphaFold DB API fetched anonymously for four proteins in three kingdoms; each mmCIF file states CC-BY 4.0 (src/01_alphafold.py). Count from the Nobel press release and the AFDB site.
+  sources:
+  - https://alphafold.ebi.ac.uk/
+  - https://www.nobelprize.org/prizes/chemistry/2024/press-release/
+  evidence:
+  - data/processed/alphafold_open.csv
+  - data/raw/research/facts.csv
+  notes: AFDB's home page now says "over 260 million protein structure predictions" (its Background section still says over 200 million). Files state "AVAILABLE FOR ACADEMIC AND COMMERCIAL PURPOSES, UNDER CC-BY 4.0 LICENCE".
+- id: c2
+  text: 'ESM: binders designed, then bench-tested; three or four years down to days (notes: Biohub; five cancer and immunology targets; tested at the bench in days)'
+  kind: attribution
+  priority: high
+  status: revise-slide
+  proposed_text: 'ESMFold2: binders for five cancer and immune targets, confirmed in the lab · Design search in days, vs. 3-4 years per candidate (Biohub)'
+  validation: Biohub release (May 2026) and the ESMFold2 preprint abstract; the full preprint was blocked (bioRxiv 429).
+  sources:
+  - https://biohub.org/news/world-model-of-protein-biology/
+  - https://biohub.org/news/ai-biology-cure-disease/
+  evidence:
+  - data/raw/research/facts.csv
+  notes: |
+    Supported: EvolutionaryScale's team joined Biohub (Nov. 2025); ESMFold2 designed binders against EGFR,
+    PDGFRβ, PD-L1, CTLA-4 and CD45, with lab-confirmed hit rates of 36-88% (minibinders) and 15-29%
+    (antibody-derived formats); "three to four years" is Biohub's baseline per preclinical candidate.
+    Not supported: "tested at the bench in days". Every "days" in the release is the computational search
+    ("a computational search completed in days, rather than several months or years"). Developer-reported,
+    preprint, no independent replication. ESM stands for Evolutionary Scale Modeling; the revised deck's
+    "EvolutionaryScaleModel (ESM)" should read "Evolutionary Scale Modeling (ESM)".
+    Suggested speaker note: "...designed binders computationally in days and confirmed them in the lab,
+    with hit rates of 36-88% for minibinders."
+- id: c3
+  text: 'Evo 2: generative genome model, open source; more than 90% accuracy on BRCA1 variants'
+  kind: attribution
+  priority: high
+  status: revise-slide
+  proposed_text: 'Evo 2 · BRCA1 variants: AUROC 0.95 (classifier on Evo 2 embeddings)'
+  validation: Peer-reviewed paper (Nature, March 2026) read from Europe PMC (src/02_papers.py); Arc Institute release for the accuracy wording.
+  sources:
+  - https://doi.org/10.1038/s41586-026-10176-5
+  - https://arcinstitute.org/news/evo2
+  evidence:
+  - data/processed/paper_checks.csv
+  - data/raw/research/facts.csv
+  notes: |
+    "Over 90% accuracy" is the Arc Institute press release's wording; the paper reports AUROC 0.95 / AUPRC 0.88
+    for a supervised classifier on Evo 2 embeddings (Findlay et al. 2018 BRCA1 SNVs), not accuracy and not
+    zero-shot. A CS audience will notice the metric. "Open source" is supported: weights, training and inference
+    code, and the OpenGenome2 dataset are released (Apache-2.0).
+- id: c4
+  text: 'AlphaGenome: a megabase of context, single-base resolution; a variant scored in about a second'
+  kind: attribution
+  priority: medium
+  status: revise-slide
+  proposed_text: 'AlphaGenome · Up to 1 Mb of context, base-pair output · Variant scored in under 1 s (one H100)'
+  validation: Peer-reviewed paper (Nature, Jan. 2026) read from Europe PMC (src/02_papers.py).
+  sources:
+  - https://doi.org/10.1038/s41586-025-10014-0
+  evidence:
+  - data/processed/paper_checks.csv
+  notes: |
+    "takes as input 1 Mb of DNA sequence and predicts ... up to single-base-pair resolution" (some tracks are
+    coarser, e.g. contact maps at 2,048 bp); "Taking less than 1 s on an NVIDIA H100 GPU" per variant (distilled
+    model, local). Weights released under non-commercial terms; the API is non-commercial. Developer-reported.
+    The suggested wording is an optional tightening.
+- id: c5
+  text: 'Notes: each row compresses a technique that takes a decade to learn'
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: Speaker's framing; no source states it.
+  sources: []
+  evidence: []
+- id: c6
+  text: 'Notes: ESM designed binders against five cancer and immunology targets and tested them at the bench in days'
+  kind: attribution
+  priority: medium
+  status: revise-slide
+  proposed_text: "Biohub's ESMFold2 designed binders against five cancer and immunology targets computationally in days and confirmed them in the lab, with hit rates of 36-88% for minibinders, where the field budgets three to four years per candidate."
+  validation: See c2; every "days" in the Biohub release refers to the computational search.
+  sources:
+  - https://biohub.org/news/world-model-of-protein-biology/
+  evidence:
+  - data/raw/research/facts.csv

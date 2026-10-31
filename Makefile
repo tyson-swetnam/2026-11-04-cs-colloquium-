@@ -1,7 +1,7 @@
 # Each slide with an analysis gets a target named slide-NN that runs its src/ scripts in order.
 PY ?= uv run python
 
-.PHONY: setup slides claims check test slide-04 slide-05 slide-06
+.PHONY: setup slides claims check test slide-05 slide-06 slide-17 slide-13 slide-14
 
 setup:
 	uv sync --extra dev
@@ -18,11 +18,17 @@ check: test        ## what CI runs
 test:
 	uv run pytest -q
 
-slide-04:
-	@for s in slides/04-the-build-out/src/[0-9]*.py; do [ -e "$$s" ] || continue; echo "== $$s"; $(PY) $$s || exit 1; done
-
 slide-05:
-	@for s in slides/05-the-concerns/src/[0-9]*.py; do [ -e "$$s" ] || continue; echo "== $$s"; $(PY) $$s || exit 1; done
+	@for s in slides/05-the-build-out/src/[0-9]*.py; do [ -e "$$s" ] || continue; echo "== $$s"; $(PY) $$s || exit 1; done
 
 slide-06:
-	@for s in slides/06-hallucination-is-engineering/src/[0-9]*.py; do [ -e "$$s" ] || continue; echo "== $$s"; $(PY) $$s || exit 1; done
+	@for s in slides/06-the-concerns/src/[0-9]*.py; do [ -e "$$s" ] || continue; echo "== $$s"; $(PY) $$s || exit 1; done
+
+slide-17:
+	@for s in slides/17-hallucination-is-engineering/src/[0-9]*.py; do [ -e "$$s" ] || continue; echo "== $$s"; $(PY) $$s || exit 1; done
+
+slide-13:
+	@for s in slides/13-ai-molecular-science/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done
+
+slide-14:
+	@for s in slides/14-agentic-ai/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done

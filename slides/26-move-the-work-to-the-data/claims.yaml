@@ -1,0 +1,163 @@
+slide: 26
+title: 'Move the work to the data'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: 'NCBI SRA: raw reads, petabytes, on S3'
+  kind: factual
+  priority: medium
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Cite the AWS Open Data Registry entry for SRA and a current size figure; list a public object anonymously.
+  sources: []
+  evidence: []
+- id: c2
+  text: MDRepo (MD trajectories), PRIDE (proteomics; FTP and REST), PDB, EMDB, Zenodo
+  kind: factual
+  priority: low
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: One scripted anonymous metadata request per repository.
+  sources: []
+  evidence: []
+- id: c3
+  text: Resolve → Stage → Validate → Record
+  kind: technical
+  priority: medium
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Map each verb to the MESA MCP tool that performs it.
+  sources: []
+  evidence: []
+- id: c4
+  text: 'UNM CARC: campus HPC, free for UNM researchers'
+  kind: factual
+  priority: medium
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Cite the CARC allocation policy page.
+  sources: []
+  evidence: []
+- id: c5
+  text: 'ACCESS-CI and TACC: national allocations; Frontera'
+  kind: factual
+  priority: medium
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Check whether Frontera is still allocatable in November 2026 or whether its successor (Horizon) should be named instead.
+  sources: []
+  evidence: []
+- id: c6
+  text: 'Jetstream2: on-demand GPU VMs'
+  kind: factual
+  priority: low
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Cite the Jetstream2 documentation.
+  sources: []
+  evidence: []
+- id: c7
+  text: 'NEON pitfall traps, DP1.10022.001: 47 sites, 2013-2026'
+  kind: quantitative
+  priority: high
+  status: supported
+  validation: 'NEON Data API product record.'
+  sources:
+  - https://data.neonscience.org/api/v0/products/DP1.10022.001
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.json
+  - src/01_check.py
+  notes: 'NEON Data API (2026-10-31): DP1.10022.001 "Ground beetles sampled from pitfall traps", ACTIVE, 47 sites, months 2013-07 to 2026-10 (2026-10 is partial, 5 sites; latest release RELEASE-2026, newer months provisional).'
+- id: c8
+  text: 'NEON Biorepository: 188,522 specimen records, most also on GBIF; 53,257 beetle images from four sources'
+  kind: quantitative
+  priority: medium
+  status: partially-supported
+  validation: 'Biorepository portal and GBIF dataset counts.'
+  sources:
+  - https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=39&limit=1
+  - https://api.gbif.org/v1/dataset/search?q=NEON%20Biorepository%20carabid
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.json
+  - src/01_check.py
+  notes: 'Biorepository portal API: the 11 collections fed by ground-beetle pitfall sampling sum to exactly 188,522 records, and the 11 matching GBIF datasets sum to exactly 145,263 (77%), as in the notes. But 47,832 of the 188,522 are invertebrate, herptile and mammal bycatch, so "specimen records" here means pitfall-trap records, not beetle specimens. The 53,257 images from four sources is a project figure; the public report was not reachable (see c11) and the project repository was not read, so that part is unverified. Only 5,961 of the GBIF records carry an image.'
+  proposed_text: 'NEON Biorepository: 188,522 pitfall-trap specimen records in 11 collections, 77% also on GBIF'
+- id: c9
+  text: 'Resolve -> stage (one 16 GB GPU) -> validate (Carabidae NCBITaxon:41073; mm UO:0000016) -> record in DuckLake'
+  kind: technical
+  priority: medium
+  status: partially-supported
+  validation: 'neon-beetle-seg repository and run logs.'
+  sources:
+  - https://www.ebi.ac.uk/ols4/api/ontologies/ncbitaxon/terms?obo_id=NCBITaxon:41073
+  - https://www.ebi.ac.uk/ols4/api/ontologies/uo/terms?obo_id=UO:0000016
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.json
+  notes: 'Both CURIEs resolve in OLS4 and are not obsolete: NCBITaxon:41073 = Carabidae, UO:0000016 = millimeter. The single 16 GB GPU and the DuckLake recording are project details that could only be checked in the neon-beetle-seg repository or run logs, which were not read (tool rules); left unchecked.'
+- id: c10
+  text: '65,830 beetles segmented into head, pronotum and elytra, measured in mm; elytra length tracks human measurements, r = 0.98'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: 'Project outputs (DuckLake tables, report).'
+  sources:
+  - https://data.cyverse.org/dav-anon/iplant/home/tswetnam/neon-beetle-seg/report/report.html
+  evidence: []
+  notes: 'Developer-reported project result. The public report URL returned HTTP 307 to unblockme.cyverse.org (a CyVerse block page) for an anonymous request on 2026-10-31; not bypassed. Check from the report or DuckLake tables before the talk, and say it as the project''s own result.'
+- id: c11
+  text: 'Outputs on the CyVerse Data Store: DuckLake lakehouse, Parquet and a public report'
+  kind: factual
+  priority: low
+  status: unverified
+  validation: 'Public paths/URLs.'
+  sources:
+  - https://data.cyverse.org/dav-anon/iplant/home/tswetnam/neon-beetle-seg/
+  evidence: []
+  notes: 'Both the report URL and the folder URL redirected (HTTP 307) to https://unblockme.cyverse.org/ from this environment, so public access could not be confirmed here. Open the report link from an ordinary network before the talk.'
+- id: c12
+  text: 'MESA · NSF Award #2632685'
+  kind: factual
+  priority: medium
+  status: supported
+  validation: 'NSF Award API record.'
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/raw/research/facts.csv
+  - data/raw/sources/nsf_2632685.json
+  notes: 'Award 2632685: "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico, PI Tyson L Swetnam, start 07/15/2026, cooperative agreement, $4,617,408.'
+- id: c13
+  text: 'Notes: DP1.10022.001 covers 47 sites in 20 domains, July 2013 to September 2026'
+  kind: quantitative
+  priority: low
+  status: partially-supported
+  validation: 'NEON Data API product record joined to /sites.'
+  sources:
+  - https://data.neonscience.org/api/v0/products/DP1.10022.001
+  - https://data.neonscience.org/api/v0/sites
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.json
+  notes: '47 sites in 20 domains and a July 2013 start are confirmed. The API now lists October 2026 for 5 sites, so "to September 2026" is a little out of date (likely the date the project pulled the data).'
+  proposed_text: '47 sites, 20 domains, July 2013 to October 2026 (latest months provisional)'
+- id: c14
+  text: 'Notes: 145,906 pinned individuals of 826 taxa'
+  kind: quantitative
+  priority: low
+  status: unverified
+  validation: 'Download DP1.10022.001 tables (neonUtilities / data API) and count pinned individuals and distinct taxa.'
+  sources: []
+  evidence: []
+  notes: 'Not computed: needs the full per-site, per-month data download. The portal''s pinned-voucher collection holds 98,168 records (c8), so 145,906 presumably comes from NEON''s own pinning tables; say where the number comes from.'
+- id: c15
+  text: 'Notes: most NEON pitfall specimens never photographed; only 20,698 segmented beetles link to a NEON site; elytra length reads about 8% long'
+  kind: quantitative
+  priority: medium
+  status: unverified
+  validation: 'Project outputs (report, DuckLake tables).'
+  sources: []
+  evidence: []
+  notes: 'Project figures; report unreachable (c11) and repository not read. Indirect support for "never photographed": only 5,961 of 145,263 GBIF records from these collections carry an image (data/processed/checks.json).'

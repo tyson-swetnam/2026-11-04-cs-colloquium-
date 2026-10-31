@@ -1,0 +1,11 @@
+Nov 4 2026 weekday: Wednesday
+Years 2013 -> 2026: 13
+Tyson Swetnam awards (PI or co-PI): 8
+  1743442 co-PI BIO/DBI Division of Biological Infrastructure | 08/01/2018-07/31/2025 expired | University of Arizona | CyVerse:   Cyberinfrastructure for the Life Sciences
+  1829701 PI    CSE/OAC Office of Advanced Cyberinfrastructure (OAC) | 09/01/2018-08/31/2023 expired | University of Arizona | Collaborative Research: CyberTraining: CIU: Towards Distributed and Scalable Personalized Cyber-Training
+  1940062 co-PI CSE/OAC Office of Advanced Cyberinfrastructure (OAC) | 10/01/2019-06/30/2023 expired | University of Arizona | Collaborative Research: Converging Genomics, Phenomics, and Environments Using Interpretable Machine Learning Models
+  1954556 co-PI CSE/CPIS Cyber, Physical, & Intelligent Systems | 04/15/2021-09/30/2027 ACTIVE | Iowa State University | CPS: Frontier: Collaborative Research: COALESCE: COntext Aware LEarning for Sustainable CybEr-Agricultural Systems
+  2054516 co-PI GEO/AGS Division of Atmospheric and Geospace Sciences | 06/01/2021-09/30/2024 expired | University of Arizona | Collaborative Research: OpenDendro - Advanced Open-source Tools for Paleoenvironmental Reconstruction
+  2152673 PI    BIO/IIC Infrastructure, Institutes, & Centers | 09/01/2022-08/31/2027 ACTIVE | University of Arizona | Collaborative Research: High-Resolution Aerial Forest Mapping Infrastructure and Database to Support Forest and Disturbance Ecology Research
+  2608717 PI    CSE/OAC Office of Advanced Cyberinfrastructure (OAC) | 06/01/2026-08/31/2026 expired | University of Arizona | Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)
+  2632685 PI    CSE/OAC Office of Advanced Cyberinfrastructure | 07/15/2026-05/31/2029 ACTIVE | University of New Mexico | Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)

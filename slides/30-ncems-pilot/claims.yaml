@@ -1,0 +1,28 @@
+slide: 30
+title: 'Already running on real collections'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: "MESA's MCP servers pointed at data collections (notes: the NCEMS data on CyVerse, this summer)"
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: Link the collection paths and the server configuration.
+  sources: []
+  evidence: []
+- id: c2
+  text: Existing metadata read, terms resolved through OLS and OBO, written back as iRODS attributes
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: Before/after AVU counts for the collection; sample of resolved terms.
+  sources: []
+  evidence: []
+- id: c3
+  text: Every write recorded in DuckLake; the session left behind as an OKF bundle
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: Commit (or link) the DuckLake catalog snapshot and the bundle; define OKF on the slide or in the notes.
+  sources: []
+  evidence: []

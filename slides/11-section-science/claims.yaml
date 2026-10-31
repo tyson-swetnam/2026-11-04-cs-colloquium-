@@ -1,0 +1,12 @@
+slide: 11
+title: 'Science'
+section: 02 · Science
+claims:
+- id: c1
+  text: Researchers who embraced AI are seeing remarkable results
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: Framing; slides 12–13 carry the evidence.
+  sources: []
+  evidence: []

@@ -1,0 +1,28 @@
+slide: 34
+title: 'Questions?'
+section: 04 · Stop worrying
+claims:
+- id: c1
+  text: 'MESA is supported by NSF Award #2632685 · [NAIRR] · [other OAC / DBI awards]'
+  kind: factual
+  priority: high
+  status: unverified
+  validation: Fill in the remaining awards; check every number with the NSF Award Search API.
+  sources: []
+  evidence: []
+- id: c2
+  text: idss-mesa.github.io · github.com/idss-mesa
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: Link check (both must resolve on the day).
+  sources: []
+  evidence: []
+- id: c3
+  text: 'Early-adopter awards: NEON NSF 2217817; ESIIL NSF 2153040; NCEMS NSF 2335029; NSCORE NSF 2438843; AIIRA USDA-NIFA 2021-67021-35329; EHT NSF 2535855'
+  kind: factual
+  priority: high
+  status: unverified
+  validation: 'NSF Award API for the NSF numbers; USDA CRIS/REEIS for the NIFA award.'
+  sources: []
+  evidence: []

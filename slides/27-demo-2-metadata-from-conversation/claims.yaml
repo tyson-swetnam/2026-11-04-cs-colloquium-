@@ -1,0 +1,148 @@
+slide: 27
+title: 'Metadata from a conversation'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: A plain-language search over curated, indexed metadata returns datasets from several repositories
+  kind: technical
+  priority: high
+  status: superseded
+  superseded_note: "Demo 2 is now 'Metadata from a conversation' (was: finding data across silos)."
+  validation: Keep the query, the returned dataset identifiers and the metadata fields used to match them in this folder.
+  sources: []
+  evidence: []
+- id: c2
+  text: "In Claude Desktop the researcher describes the collection; MESA's MCP server resolves each term and writes ontology-checked iRODS AVUs, shown in the MESA Portal"
+  kind: technical
+  priority: high
+  status: partially-supported
+  validation: 'Recorded run; AVUs on the collection. Checked here against MESA public docs and AVUs MESA has written on a public collection.'
+  sources:
+  - https://idss-mesa.github.io/docs/servers/mesa-mcp/
+  - https://idss-mesa.github.io/docs/claude-ai/
+  - https://idss-mesa.github.io/docs/portal/data/
+  - https://modelcontextprotocol.io/docs/develop/connect-local-servers
+  evidence:
+  - data/raw/research/facts.csv
+  - data/raw/sources/mesa_llms_full.txt
+  - data/processed/mesa_avus_observed.csv
+  notes: >-
+    Supported (developer-written docs): mesa-mcp writes ontology terms to the iRODS Data Store as AVUs with the
+    CURIE in the unit slot (f1, f2), and the MESA Portal Data Browser shows and edits the same AVUs (f6). MESA
+    has written such AVUs on a public NEON beetle folder (f15, f16). Not as documented: MESA's docs do not put
+    mesa-mcp in Claude Desktop. The installer registers it with Claude Code, Codex CLI, Antigravity and OpenCode
+    (f4), and the claude.ai/Claude Desktop page says mesa-mcp runs locally and is for Claude Code and the other
+    agent clients, while Claude Desktop gets Formation as a connector (f3, f5). Claude Desktop can run a local
+    stdio server if it is added by hand to claude_desktop_config.json (f10), so the demo is possible, but say
+    how it was set up. "Ontology-checked" (refusing a term that will not resolve) is not in the public docs; see c4.
+    The recorded run itself was not available to check.
+  proposed_text: "In Claude (Code or Desktop) the researcher describes the collection; MESA's mesa-mcp server looks each term up in OLS and writes iRODS AVUs, which the MESA Portal shows."
+- id: c3
+  text: 'AVUs: taxon NCBITaxon:41073 (Carabidae); neon_product DP1.10022.001; specimens 65,830 segmented, 47 sites; elytra_length UO:0000016 (mm)'
+  kind: factual
+  priority: medium
+  status: partially-supported
+  validation: 'OLS4 for the CURIEs, NEON Data API for the product, MESA AVU contract and real MESA AVUs for the layout.'
+  sources:
+  - https://www.ebi.ac.uk/ols4/api/ontologies/ncbitaxon/terms?obo_id=NCBITaxon:41073
+  - https://www.ebi.ac.uk/ols4/api/ontologies/uo/terms?obo_id=UO:0000016
+  - https://data.neonscience.org/api/v0/products/DP1.10022.001
+  - https://idss-mesa.github.io/docs/servers/mesa-mcp/
+  - https://mcp-public.cyverse.ai/mcp
+  evidence:
+  - data/processed/terms.csv
+  - data/processed/neon_product.csv
+  - data/processed/avu_layout.csv
+  - data/processed/mesa_avus_observed.csv
+  - data/raw/research/facts.csv
+  notes: >-
+    The identifiers are right: NCBITaxon:41073 is Carabidae (current); UO:0000016 is 'millimeter' with
+    'millimetre' and 'mm' as synonyms; DP1.10022.001 is NEON's "Ground beetles sampled from pitfall traps", with
+    data at 47 sites from 2013-07 to 2026-10 (NEON API, computed in src/01_check.py). 65,830 segmented could not
+    be checked (c6). The table layout does not match how MESA writes AVUs: the slide puts the CURIE in the value
+    column and "none" or "mm" in the unit column, but MESA's documented contract puts the CURIE in the unit slot
+    (f1, f2), and the AVUs MESA actually wrote on its public NEON KONZ beetle folder do the same, e.g.
+    ncbitaxon.carabidae | Carabidae | NCBITaxon:41073 and uo.millimeter | bet_parataxonomistID.totalLength |
+    UO:0000016 (f15, f16). The notes already say the attribute names are illustrative; the speaker should swap
+    in the AVUs from the recorded run, or at least move the CURIEs to the unit column. Also "47 sites" is the
+    whole NEON product; whether the segmented beetles cover all 47 is a project figure (c6).
+  proposed_text: 'ncbitaxon.carabidae | Carabidae | NCBITaxon:41073 · neon.productCode | DP1.10022.001 | – · specimens_segmented | 65830 | count · uo.millimeter | elytra_length | UO:0000016'
+- id: c4
+  text: 'Notes: the MCP server resolves each term against ontologies (OLS, OBO Foundry) and refuses any term that will not resolve'
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'Public MESA docs; the refusal itself would need the code or a recorded failed write.'
+  sources:
+  - https://idss-mesa.github.io/docs/servers/mesa-mcp/
+  - https://idss-mesa.github.io/docs/servers/mesa-anyjev/
+  evidence:
+  - data/raw/research/facts.csv
+  notes: >-
+    The docs say mesa_ols_* tools search OBO/OLS ontologies and generate AVU templates (f7), and that in
+    mesa-anyjev (status draft) a curator's pick, reject or decline is authoritative (f8). No public page says a
+    term that fails to resolve is refused at write time; that lives in MESA code, which was out of scope (same
+    finding as slide 25 c4). Say "looks up" rather than "refuses" unless the demo shows a refusal.
+  proposed_text: 'The MCP server looks each term up in OLS and writes the CURIE with it.'
+- id: c5
+  text: "Notes: AVUs are iRODS's native metadata triples (attribute, value, unit), so anything else that reads iRODS sees them too"
+  kind: technical
+  priority: low
+  status: supported
+  validation: 'iRODS imeta documentation.'
+  sources:
+  - https://docs.irods.org/5.0.2/icommands/metadata/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/raw/sources/irods_5.0.2_icommands_metadata.html
+  notes: >-
+    iRODS docs: AVUs consist of an attribute name, a value and an optional unit, attached to data objects,
+    collections, resources or users (f9). The MESA AVUs on the KONZ folder were read here with CyVerse's own,
+    non-MESA Data Store MCP server (f15), which shows another iRODS reader seeing them. Visibility still
+    depends on iRODS permissions.
+- id: c6
+  text: 'Notes: neon-beetle-seg segmented 65,830 beetles from about 53,000 images, linked to trap records at 47 sites, with head, pronotum and elytra masks in mm; elytra length agrees with human measurements at r = 0.98'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: 'Project report or DuckLake tables.'
+  sources:
+  - https://data.cyverse.org/dav-anon/iplant/home/tswetnam/neon-beetle-seg/report/report.html
+  - https://github.com/tyson-swetnam/neon-beetle-seg
+  evidence: []
+  notes: >-
+    Not checked. The public report URL redirected this session to CyVerse's "Unblock Me" bot check, which was
+    not bypassed; CyVerse's public Data Store server refused the path (c7); the GitHub repository is not this
+    talk's and was out of scope. Only "47 sites" can be set against an outside source: NEON's DP1.10022.001 has
+    data at 47 sites in total (c3), so 47 means every site, which the speaker should confirm. These are
+    developer-reported results; present them as the project's own numbers.
+- id: c7
+  text: 'Notes: the collection lives on the CyVerse Data Store at /iplant/home/tswetnam/neon-beetle-seg/, with a DuckLake lakehouse and a public report'
+  kind: factual
+  priority: low
+  status: unverified
+  validation: 'Anonymous read of the path and the report URL.'
+  sources:
+  - https://data.cyverse.org/dav-anon/iplant/home/tswetnam/neon-beetle-seg/report/report.html
+  - https://mcp-public.cyverse.ai/mcp
+  evidence:
+  - data/raw/research/facts.csv
+  - data/raw/sources/datastore_neon_beetle_seg_metadata.json
+  notes: >-
+    Could not confirm. data.cyverse.org/dav-anon (anonymous WebDAV) redirected to unblockme.cyverse.org, a bot
+    check that was not bypassed. CyVerse's public, read-only Data Store MCP server answered "Path is not publicly
+    accessible" for /iplant/home/tswetnam/neon-beetle-seg (f17); that server only covers /iplant/home/shared, so
+    this is not proof the report is private, but the speaker should open the report link in a private browser
+    window before the talk. MESA's own NEON lakehouse is public at /iplant/home/shared/mesa/lakehouse/neon/.
+- id: c8
+  text: 'MESA · NSF Award #2632685'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'NSF Award API.'
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/processed/nsf_award.csv
+  - data/raw/research/facts.csv
+  notes: 'Award 2632685: "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico, PI Tyson L Swetnam, 2026-07-15 to 2029-05-31.'

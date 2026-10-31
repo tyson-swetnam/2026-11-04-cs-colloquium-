@@ -1,0 +1,138 @@
+carc_docs_llms-full.txt:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: e1ab01c08919378d87afd11b5374d648b134dda54f90ae9bf3f3db043269a16d
+  source: UNM CARC docs full corpus
+  url: https://carc.unm.edu/docs/llms-full.txt
+carc_docs_llms.txt:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 40eae65c05945b6cf8e9e6c2101c9dcc517465c1759a64e915868a514e7f2c13
+  source: UNM CARC docs llms.txt
+  url: https://carc.unm.edu/docs/llms.txt
+carc_site_llms-full.txt:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 7040ea686acbe7b496af3603ef5668e24d3d99b1632514676bac9e31aab35f94
+  source: UNM CARC website full corpus (incl. AI research resources, jobs)
+  url: https://carc.unm.edu/llms-full.txt
+carc_site_llms.txt:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 0de30b1b77769ed99b4e61d5074bb8b2c36f0002287994c801de0c169404d48b
+  source: UNM CARC website llms.txt
+  url: https://carc.unm.edu/llms.txt
+cider.access-ci.org_public_resources_RDR_003540.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: ba1ff647caef06c36a5c4661ee0b714fbb96a313d1d49b9efd0f1ada803e547a
+  source: 'ACCESS CiDeR: Prototype National Research Platform'
+  url: https://cider.access-ci.org/public/resources/RDR_003540
+cyverse.org_data-store.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 8f32bb96598c9c03216af7d295e1c11c335076f64c35da8390c13f2bee004a70
+  source: 'CyVerse: Data Store product page'
+  url: https://cyverse.org/data-store
+cyverse_unblockme.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 0a3ec71dc9341aa5697d380a991df29bf77e014dc8a8529328a61d9f18555fd2
+  source: CyVerse IP unblock page (target of the dav-anon 307 redirect)
+  url: https://unblockme.cyverse.org/
+docs.cyverse.org_architecture_system-overview_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 0df53b599de567b39f77d726db8fc93f419ccca305a8a59e22820516780863d3
+  source: 'CyVerse docs: System overview'
+  url: https://docs.cyverse.org/architecture/system-overview/
+docs.cyverse.org_platform_data-store_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: d061480cdeb9b0c8e90df9d547f7a29f547ec4fa78eb9ce74869c07db735dfca
+  source: 'CyVerse docs: Data Store (not quoted)'
+  url: https://docs.cyverse.org/platform/data-store/
+docs.cyverse.org_services_ds_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 336d7a7359b7bcd749c9730e640be5d54a7c4de0c1c79400754ab1d823e35aaf
+  source: 'CyVerse docs: 404 page (not used)'
+  url: https://docs.cyverse.org/services/ds/
+docs.jetstream-cloud.org_alloc_overview_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: ed8edf7c3006e8af7b9c6f7eebda934cdd2f230360c2d74a2895e06596153d37
+  source: 'Jetstream2 docs: Allocations overview'
+  url: https://docs.jetstream-cloud.org/alloc/overview/
+docs.jetstream-cloud.org_general_gpu_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 3faf7f12df5c6cbffc77fcce2b8b387cdba4395609dfef4d9b95f117372f07d8
+  source: 'Jetstream2 docs: 404 page (not used)'
+  url: https://docs.jetstream-cloud.org/general/gpu/
+docs.jetstream-cloud.org_general_vmsizes_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: a922fb9344fe33af13e1317aa6e885fd5c9481796cf0e7a38714a3f2b3228942
+  source: 'Jetstream2 docs: Instance flavors'
+  url: https://docs.jetstream-cloud.org/general/vmsizes/
+docs.jetstream-cloud.org_inference-service_overview_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 9384ebd9beac7d0215301414bd1fd18869331b405b3926524204d12c9691ac9b
+  source: 'Jetstream2 docs: Inference Service Overview'
+  url: https://docs.jetstream-cloud.org/inference-service/overview/
+docs.jetstream-cloud.org_overview_overview-doc_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 498d1fca89fda731ff3e29df9f6643535cc0e3299c5831795d768c8e433ad3e0
+  source: 'Jetstream2 docs: System overview'
+  url: https://docs.jetstream-cloud.org/overview/overview-doc/
+docs.jetstream-cloud.org_ui_cacao_overview_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: a3e49d4d11013eab37e1874279a8101d28c09c84f9a1587a56d71be14a3a200b
+  source: 'Jetstream2 docs: CACAO overview'
+  url: https://docs.jetstream-cloud.org/ui/cacao/overview/
+learning.cyverse.org_ds_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 85c26c9dcb6adf34307d8d55341e5f899693936688fb59d6bfa4c48d9073e417
+  source: 'CyVerse Learning Center: Data Store methods table'
+  url: https://learning.cyverse.org/ds/
+mesa_anyjev_llms-full.txt:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 5ed2ef0ae5d49146eff7f84b90ab38056d4ac4d9563bffa95128ba6bd339d3c2
+  source: mesa-anyjev docs full corpus
+  url: https://idss-mesa.github.io/mesa-anyjev/llms-full.txt
+mesa_docs_llms-full.txt:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 9b8a11e9389293af1c9d175a25926566be13b8dff03ebd66a6c5ba89ab3f19d7
+  source: MESA docs full corpus
+  url: https://idss-mesa.github.io/docs/llms-full.txt
+mesa_sandbox_concept.md:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: d2d4d67e053ccbb969a0d2de38c008b9d14c4dd29af7e85da40a0063d386f3e5
+  source: 'MESA OKF concept: mesa-sandbox'
+  url: https://idss-mesa.github.io/okf/concepts/mesa-sandbox.md
+mesa_site_llms-full.txt:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 760deb188977aa12ffea36e041f403b36b1be89aa044ee3073c9031e0dcc5fd8
+  source: MESA site full corpus
+  url: https://idss-mesa.github.io/llms-full.txt
+mesa_site_llms.txt:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 15e7ccfa85c496c14c9c62a07a0eadac8524cf75442558073a765dd4727a6fc0
+  source: MESA site llms.txt
+  url: https://idss-mesa.github.io/llms.txt
+nrp.ai_documentation_userdocs_ai_llm-managed_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 820860ff439965bc213dd2ff6bacd25014e2d8c3b415ab04cd20c8c43da7e85d
+  source: 'NRP docs: NRP-Managed LLMs'
+  url: https://nrp.ai/documentation/userdocs/ai/llm-managed/

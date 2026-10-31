@@ -1,0 +1,72 @@
+anyjev_llms_full.txt:
+  note: full docs corpus
+  retrieved: '2026-10-31'
+  sha256: 5ed2ef0ae5d49146eff7f84b90ab38056d4ac4d9563bffa95128ba6bd339d3c2
+  source: mesa-anyjev public docs (developer-written)
+  url: https://idss-mesa.github.io/mesa-anyjev/llms-full.txt
+mesa_index.html:
+  note: home page
+  retrieved: '2026-10-31'
+  sha256: 4bd7735291ffd336e424d84b7077903801f52555ca1ca5dcf687d4a9e7f6d54b
+  source: MESA public site
+  url: https://idss-mesa.github.io/
+mesa_llms_full.txt:
+  note: full docs corpus
+  retrieved: '2026-10-31'
+  sha256: 9b8a11e9389293af1c9d175a25926566be13b8dff03ebd66a6c5ba89ab3f19d7
+  source: MESA public docs (developer-written)
+  url: https://idss-mesa.github.io/docs/llms-full.txt
+nsf_award_2632685.json:
+  note: NSF Award API record
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: API
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,awardeeName,piFirstName,piLastName,startDate,expDate,fundProgramName
+obofoundry_ontologies.jsonld:
+  note: OBO Foundry registry
+  retrieved: '2026-10-31'
+  sha256: 82d8ae284371fd60fb7b015f85f26742e6e7404fbb83cb2c9d21297fb418fa28
+  source: API
+  url: https://obofoundry.org/registry/ontologies.jsonld
+obofoundry_ontologies.yml:
+  note: OBO Foundry registry
+  retrieved: '2026-10-31'
+  sha256: 99608352065e8bf4865630b6f7767a8a10aa688fb537075c58476217a80907ff
+  source: API
+  url: https://obofoundry.org/registry/ontologies.yml
+ols_NCBITaxon_41073.json:
+  note: OLS4 term record for NCBITaxon:41073
+  retrieved: '2026-10-31'
+  sha256: e8e5e747fb1e6bc2ba36b3be6cc4ab14200db1fc8ca9c10abfe563f407e477d9
+  source: API
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/ncbitaxon/terms?obo_id=NCBITaxon:41073
+ols_NCBITaxon_41073_ancestors.json:
+  note: OLS4 hierarchical ancestors of Carabidae
+  retrieved: '2026-10-31'
+  sha256: 50a3c55836f49fd0655a8262f97fc64634b17a9ed33b9e004dfbd8e0aeda96b0
+  source: API
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/ncbitaxon/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FNCBITaxon_41073/hierarchicalAncestors?size=500
+ols_NCBITaxon_7041.json:
+  note: OLS4 term record for NCBITaxon:7041
+  retrieved: '2026-10-31'
+  sha256: 7b5872c7f0ca727b83afad682d88bb6bcdf7202344a351e44a073b97efa015f8
+  source: API
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/ncbitaxon/terms?obo_id=NCBITaxon:7041
+ols_OBI_0100051.json:
+  note: OLS4 term record for OBI:0100051
+  retrieved: '2026-10-31'
+  sha256: 7b0c8a83691fd2bb0214e8ae3f88394c81eca8a17800b0c5b16cd5add92005f3
+  source: API
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/obi/terms?obo_id=OBI:0100051
+ols_UO_0000016.json:
+  note: OLS4 term record for UO:0000016
+  retrieved: '2026-10-31'
+  sha256: 49c66176807acf9555d39ffd34be29cfad91333eaab85e154c3da9017d71cb8e
+  source: API
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/uo/terms?obo_id=UO:0000016
+ols_UO_0000082.json:
+  note: OLS4 term record for UO:0000082
+  retrieved: '2026-10-31'
+  sha256: 93cddcedae091565ed39955887b1b9d6e45785bfe1ee65d6fcf5640538d7084a
+  source: API
+  url: https://www.ebi.ac.uk/ols4/api/ontologies/uo/terms?obo_id=UO:0000082

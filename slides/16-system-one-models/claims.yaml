@@ -1,0 +1,163 @@
+slide: 16
+title: 'System One models decide; they don’t write'
+section: '02 · Science'
+claims:
+- id: c1
+  text: 'Jev: TypeSafe AI, Sept. 15, 2026, closed API; Clef: Cloudflare, Oct. 1, 2026, 27B and 9B, Apache 2.0 weights'
+  kind: factual
+  priority: high
+  status: supported
+  validation: 'Vendor announcements, model cards and licence files.'
+  sources:
+  - 'TypeSafe AI, Introducing System One Models & Jev (2026-09-15): https://typesafe.ai/blog/introducing-system-one-models-and-jev'
+  - 'TypeSafe AI docs, Models: https://docs.typesafe.ai/models'
+  - 'Cloudflare blog, Introducing Clef (2026-10-01): https://blog.cloudflare.com/clef-decision-models'
+  - 'Hugging Face model API and cards: https://huggingface.co/Cloudflare/clef , https://huggingface.co/Cloudflare/clef-flash'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/clef_releases.csv
+  notes: >-
+    All parts check out. Jev launched 2026-09-15 in early access, served only through TypeSafe's
+    hosted POST /v1/systemone endpoint; no weights are published. Cloudflare's post is dated
+    2026-10-01 (Hub repos created 2026-09-30 21:15 UTC). Hub totals: Clef 27.36B parameters
+    (post-trained from Qwen3.8-27B), Clef-flash 9.41B (from Qwen3.5-9B); both tagged apache-2.0
+    with an Apache 2.0 LICENSE file. Precision points: the 9B model is called Clef-flash, not Clef;
+    Cloudflare says "open-source" but training data and pipeline are unpublished, so "open weights"
+    (the slide's wording) is right. Since the slide was written Cloudflare also added Clef-omni
+    (35B, from Qwen3-Omni-30B-A3B, Hub 2026-10-09) and TypeSafe released Jev 1.14 (2026-10-14).
+  proposed_text: 'Jev: TypeSafe AI, Sept. 15, 2026, hosted API only · Clef (27B) and Clef-flash (9B): Cloudflare, Oct. 1, 2026, Apache 2.0 weights'
+- id: c2
+  text: 'System One models return all answers in one forward pass, as a choice, a score or a yes probability, with calibrated probabilities'
+  kind: technical
+  priority: medium
+  status: partially-supported
+  validation: "Model documentation; ideally a run of Clef's open weights on a small schema."
+  sources:
+  - 'Hugging Face Cloudflare/clef README and joint_schema_model.py'
+  - 'Cloudflare blog, Introducing Clef (2026-10-01)'
+  - 'TypeSafe AI launch post and docs (concepts/system-one, model-jaggedness/jev-1.13)'
+  - 'Cloudflare blog, Introducing Clairic (2026-10-19): https://blog.cloudflare.com/clairic-extraction-model/'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/clef_code_checks.csv
+  notes: >-
+    One pass: supported for Clef by its published code (read statically, not run; a 27B model
+    needs an H200-class GPU): one backbone call with use_cache=False, no generate(), then a head that
+    scores every option; output_tokens is 0. For Jev the architecture is unpublished; TypeSafe says
+    it "generates all outputs in a single query". Choice/score/yes-probability: supported (the
+    three primitives choice, score, noul). "Calibrated" is developer-reported: TypeSafe trains for
+    it (RLCD) and Cloudflare adds a Brier loss, but I found no independent calibration test;
+    TypeSafe itself says calibration holds over groups, not single answers, and that Jev 1.13's
+    score levels are weak in numerical calibration. Out of date in one respect: on 2026-10-19
+    Cloudflare previewed Clairic, a System One extraction model that returns typed values (amounts,
+    dates, names), so the slide's rows describe decision models, not all System One models.
+  proposed_text: 'Confidence row: "A probability you can threshold (vendors say calibrated)". Optional header: "System One decision models decide; they don’t write".'
+- id: c3
+  text: 'They fail by picking a wrong option from your list rather than inventing text'
+  kind: technical
+  priority: medium
+  status: supported
+  validation: 'Follows from constrained output; demonstrate with Clef if weights can be run.'
+  sources:
+  - 'TypeSafe AI launch post: possible outputs defined in advance; no type errors'
+  - 'TypeSafe docs concepts/system-one: do not write replies, produce code or explanations'
+  - 'Hugging Face Cloudflare/clef joint_schema_model.py (systemone_answer)'
+  - 'Better Stack 200-comment test (example of a confident wrong pick)'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/clef_code_checks.csv
+  notes: >-
+    True by construction for decision models. In Clef's code a choice answer is the argmax over
+    the options the caller listed, a noul is P(true), and a score is the probability-weighted mean
+    of the caller's levels (so it can land between levels, but never outside the scale). Wrong
+    answers still happen and can be confident: Better Stack shows Clef labelling a clear critique
+    "neutral" at 93% confidence. Not run on real weights here (no GPU). Also note TypeSafe's
+    jaggedness page: Jev treats everything in the input as data by default, so prompt injection
+    can still steer which listed option is picked.
+- id: c4
+  text: "Kahneman's System 1 / System 2 framing"
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: 'Framing.'
+  sources:
+  - 'TypeSafe docs concepts/system-one credits Kahneman, Thinking, Fast and Slow'
+  evidence: []
+  notes: >-
+    Framing only. TypeSafe and Cloudflare both cite Kahneman for the name. Kahneman described
+    people; nobody has shown these models work like human intuition (systemonemodels.org guide).
+- id: c5
+  text: 'Slide table: LLM confidence "Sounds sure either way"'
+  kind: attribution
+  priority: low
+  status: partially-supported
+  validation: 'Peer-reviewed study of LLM confidence elicitation.'
+  sources:
+  - 'Xiong et al., Can LLMs Express Their Uncertainty? arXiv:2306.13063 (ICLR 2024)'
+  - 'TypeSafe AI launch post (vendor framing)'
+  evidence:
+  - data/raw/research/facts.csv
+  notes: >-
+    Xiong et al. find LLMs are overconfident when they verbalise confidence, but also that
+    calibration improves with scale and with sampling-consistency methods, and white-box token
+    probabilities do somewhat better. "Either way" overstates it slightly.
+  proposed_text: 'Often overconfident when it states its confidence'
+- id: c6
+  text: 'Notes: vendor speed and cost claims (up to 100x faster and cheaper) are the companies’ own'
+  kind: attribution
+  priority: medium
+  status: partially-supported
+  validation: 'TypeSafe launch post.'
+  sources:
+  - 'TypeSafe AI launch post (2026-09-15)'
+  - 'MindStudio, Jev Explained (2026-09-18)'
+  evidence:
+  - data/raw/research/facts.csv
+  notes: >-
+    Correctly framed as developer-reported. The figure is loose: TypeSafe says "two orders of
+    magnitude", 40x-200x faster per call, and a headline 193.6x faster / 444.6x cheaper from its own
+    workflow evals (which it says are the high end). "Up to 100x" comes from MindStudio's summary,
+    not TypeSafe. Cloudflare's own speed claims are separate (e.g. Clef median 209 ms, Clef-flash
+    39 ms vs Jev 524 ms in Cloudflare's runs).
+  proposed_text: 'Vendor claims (TypeSafe: ~100x, up to 194x faster and 445x cheaper in its own evals) are the companies’ own'
+- id: c7
+  text: 'Notes: one independent test of 200 comments had Jev at 86% and Clef at 83% accuracy'
+  kind: attribution
+  priority: medium
+  status: partially-supported
+  validation: 'Better Stack comparison article.'
+  sources:
+  - 'Better Stack, Jev vs. Clef (2026-10-12): https://betterstack.com/community/guides/ai/jev-vs-clef-decision-model/'
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/betterstack_test.csv
+  notes: >-
+    Numbers match (per-question means 86.2% and 83.2%). But there was no human ground truth:
+    Claude Opus 5.5 answered the same questions and "accuracy" is agreement with that LLM referee
+    at >=50% confidence. Clef won 3 of 5 questions; Jev's lead came from Tone (75% vs 49%).
+  proposed_text: 'one independent test (Better Stack, 200 YouTube comments) found Jev agreed with an LLM referee 86% of the time and Clef 83%'
+- id: c8
+  text: 'Notes: Clef uses Jev’s request format'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'Clef model card and Cloudflare blog.'
+  sources:
+  - 'Hugging Face Cloudflare/clef README'
+  - 'Cloudflare blog, Introducing Clef'
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Model card: "The Clef API is fully compatible with Jev and SystemOne"; the SGLang server answers at /v1/systemone.'
+- id: c9
+  text: 'Notes and table: the common pattern pairs them; System One models do high-volume routing and gating, an LLM handles reasoning or written answers'
+  kind: qualitative
+  priority: low
+  status: supported
+  validation: 'Vendor guidance and independent comparison.'
+  sources:
+  - 'TypeSafe docs concepts/system-one'
+  - 'Cloudflare blog, Introducing Clef'
+  - 'Better Stack, Jev vs. Clef'
+  evidence:
+  - data/raw/research/facts.csv
+  notes: 'Both vendors recommend this split (escalate to a person or reasoning model on low confidence; decision model in the hot path, LLM to act). It is vendor guidance, not a measured industry norm.'

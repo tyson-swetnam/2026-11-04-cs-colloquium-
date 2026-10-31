@@ -1,0 +1,12 @@
+nsf_award_1743442.json:
+  note: award 1743442 (CyVerse)
+  retrieved: '2026-10-31'
+  sha256: 2a01fe703937721b5fbc1285430dc3769fefd15dc22b68508391e61adb1ed638
+  source: NSF Award API
+  url: https://api.nsf.gov/services/v1/awards/1743442.json?printFields=id,title,awardeeName,startDate,expDate,orgLongName2,fundProgramName,estimatedTotalAmt
+nsf_award_2632685.json:
+  note: award 2632685 (MESA)
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: NSF Award API
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,awardeeName,pdPIName,coPDPI,startDate,expDate,fundProgramName,orgLongName,orgLongName2,estimatedTotalAmt,fundsObligatedAmt,abstractText,progEleCode,progRefCode

@@ -1,0 +1,48 @@
+carc-temp.unm.edu_contact_personnel_.html:
+  note: personnel list
+  retrieved: '2026-10-31'
+  sha256: 54a77d4e40a362e813845f7b240683eab7c571de7c1758f5dd8e4a8934d7b724
+  source: UNM CARC personnel page (carc-temp site)
+  url: https://carc-temp.unm.edu/contact/personnel/
+carc-temp.unm.edu_news_welcome-director-swetnam_.html:
+  note: Director welcome post
+  retrieved: '2026-10-31'
+  sha256: b390511a95910995816bbcaee52ab6f94a1095d0826c83d02771f7dac3c56769
+  source: UNM CARC news (carc-temp site)
+  url: https://carc-temp.unm.edu/news/welcome-director-swetnam/
+carc.unm.edu_.html:
+  note: home page, not used as evidence
+  retrieved: '2026-10-31'
+  sha256: 7aa6e0963266652594fd1787754aaa85f8b763aaeb98dc412fe4bb6e1ad5aa1f
+  source: UNM CARC home page
+  url: https://carc.unm.edu/
+cs.unm.edu_about_colloquium.html:
+  note: 2026 CS colloquium listing incl. Nov 4 talk
+  retrieved: '2026-10-31'
+  sha256: e376dcb6df4c0f2bfa45b3aabd33ae8babde5889374edf9dd9745e7d27be8316
+  source: UNM Computer Science, Colloquium page
+  url: https://cs.unm.edu/about/colloquium.html
+cs.unm.edu_directory_faculty-profiles_tyson-swetnam.html.html:
+  note: Swetnam faculty profile
+  retrieved: '2026-10-31'
+  sha256: e296be6e55106a599df6616407c229a08915809b87ea89d0b4258e4ae4a6dfca
+  source: UNM Computer Science faculty profile
+  url: https://cs.unm.edu/directory/faculty-profiles/tyson-swetnam.html
+nsf_copi_tyson_swetnam.json:
+  note: awards with Tyson Swetnam as co-PI
+  retrieved: '2026-10-31'
+  sha256: 2fb90c2ff706b14feebab7929b1fd0273e10cd4928b07fe98aef7f8dcc62390b
+  source: NSF Award Search API
+  url: https://api.nsf.gov/services/v1/awards.json?coPDPI=Tyson%20Swetnam
+nsf_pi_tyson_swetnam.json:
+  note: awards with Tyson Swetnam as PI
+  retrieved: '2026-10-31'
+  sha256: 0185bb956701ed19f46a021c9ae57dd99f8396b7103f2a8096a1f85f23972987
+  source: NSF Award Search API
+  url: https://api.nsf.gov/services/v1/awards.json?pdPIName=Tyson%20Swetnam
+www.cs.unm.edu__tswetnam_.html:
+  note: redirect card to tysonswetnam.com
+  retrieved: '2026-10-31'
+  sha256: e36e908a4c3d2a7994a15a2364e92639a92373d8129f3211d4be4f57a3dacc82
+  source: UNM CS personal page
+  url: https://www.cs.unm.edu/~tswetnam/

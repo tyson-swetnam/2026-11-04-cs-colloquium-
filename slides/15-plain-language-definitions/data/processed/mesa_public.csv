@@ -1,0 +1,14 @@
+finding,url,found,quote
+Public one-line installer fetched from GitHub,https://idss-mesa.github.io/docs/index.md,True,curl -fsSL https://raw.githubusercontent.com/idss-mesa/docs/main/install.sh | bash
+"Anonymous public data access, no credentials",https://idss-mesa.github.io/docs/index.md,True,anonymous public CyVerse access by default — no credentials required to get started
+Source repos in the idss-mesa GitHub org,https://idss-mesa.github.io/docs/index.md,True,Source repositories live in the [**idss-mesa**](https://github.com/idss-mesa) GitHub
+Installer clones repos from the idss-mesa org,https://idss-mesa.github.io/docs/install/index.md,True,| `MESA_GIT_ORG` | `idss-mesa` | GitHub org to clone from |
+Installer clones repos it lacks,https://idss-mesa.github.io/docs/install/index.md,True,"- Repos are `git pull --ff-only`'d if already present, cloned otherwise."
+mesa-mcp repo link,https://idss-mesa.github.io/docs/servers/mesa-mcp/index.md,True,**Repo:** [idss-mesa/mesa-mcp](https://github.com/idss-mesa/mesa-mcp)
+irods-mcp-server built from source,https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md,True,The installer builds it from source and registers the stdio binary against the repo's
+irods-mcp-server Docker image published,https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md,True,"A published Docker image, `cyverse/irods-mcp-server`, is also available"
+Formation is CyVerse's own hosted server,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,Formation is the CyVerse Discovery Environment's own MCP server
+CyVerse public read-only hosted endpoint,https://idss-mesa.github.io/docs/llms-full.txt,True,"hosts a public, read-only Data Store server at <https://mcp-public.cyverse.ai/mcp>, which"
+Installer's documented clients (four),https://idss-mesa.github.io/docs/index.md,True,"[Antigravity](https://idss-mesa.github.io/docs/antigravity/), or [OpenCode](https://idss-mesa.github.io/docs/opencode/) — with a single command, so"
+MESA CLI app ships five agent CLIs incl. Goose,https://idss-mesa.github.io/docs/index.md,True,"A terminal in the browser, with Claude Code, Codex, OpenCode, Goose, and Antigravity"
+Licence named on server/install pages,https://idss-mesa.github.io/docs/servers/,False,

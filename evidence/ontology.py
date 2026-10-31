@@ -1,6 +1,6 @@
 """Validate ontology terms through EBI's Ontology Lookup Service (OLS4).
 
-The control on slide 06 ("terms must resolve in an ontology") and the examples on slide 19
+The control on slide 17 ("terms must resolve in an ontology") and the examples on slide 25
 use this: an agent proposes a CURIE for a free-text value, and the write is refused unless
 the term exists, is not obsolete, comes from the ontology the field allows, and its label,
 synonyms or alternative labels match the text that was written.
@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import quote
@@ -22,7 +23,8 @@ NAME_ANNOTATIONS = ("alternative label", "alternative term", "editor preferred t
 
 
 def norm(text: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+    """Lower-case alphanumerics; NFKD first so that "mm²" reads as "mm2"."""
+    return re.sub(r"[^a-z0-9]+", " ", unicodedata.normalize("NFKD", text).lower()).strip()
 
 
 @dataclass

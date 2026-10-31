@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-10-31",
+  "user_agent": "colloquium-evidence/0.1 (UNM CARC research)",
+  "results": [
+    {
+      "url": "https://data.cyverse.org/dav-anon/iplant/home/shared/",
+      "status": 307,
+      "location": "https://unblockme.cyverse.org/",
+      "blocked_by_ip_challenge": true,
+      "bytes": 0,
+      "body_start": ""
+    },
+    {
+      "url": "https://data.cyverse.org/dav-anon/iplant/commons/community_released/",
+      "status": 307,
+      "location": "https://unblockme.cyverse.org/",
+      "blocked_by_ip_challenge": true,
+      "bytes": 0,
+      "body_start": ""
+    }
+  ]
+}

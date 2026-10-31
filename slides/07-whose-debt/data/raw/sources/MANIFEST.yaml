@@ -1,0 +1,36 @@
+Brace-for-Impact-Scherer-Jenkins-OMI-October2026-WEB-1.pdf:
+  note: fetched 2026-10-31 with the colloquium User-Agent
+  retrieved: '2026-10-31'
+  sha256: 466b8a875752c85e23a41d5e33ad985c44f437ddc5cf801e132310c4e28bff60
+  source: Open Markets Institute / AFR Education Fund, Brace for Impact (Oct. 2026)
+  url: https://www.openmarketsinstitute.org/s/Brace-for-Impact-Scherer-Jenkins-OMI-October2026-WEB-1.pdf
+Executive-Summary-Brace-for-Impact-Scherer-Jenkins-WEB.pdf:
+  note: fetched 2026-10-31 with the colloquium User-Agent
+  retrieved: '2026-10-31'
+  sha256: 3dd42e3ba703122785818acffbd4c84006c70e0537cda0bee396a66966773b33
+  source: Open Markets Institute / AFR Education Fund, Brace for Impact (Oct. 2026)
+  url: https://www.openmarketsinstitute.org/s/Executive-Summary-Brace-for-Impact-Scherer-Jenkins-WEB.pdf
+booth_hepp_ai_debt.html:
+  note: fetched 2026-10-31 with the colloquium User-Agent
+  retrieved: '2026-10-31'
+  sha256: df7ed91f31c7a5395fb73535a0ca43eaaa0daad65523b830fe8abb1b8a55f4de
+  source: Stefan Hepp, Chicago Booth Review, 2026-08-07 (cited by OMI note 264)
+  url: https://www.chicagobooth.edu/review/how-worried-should-we-be-about-ai-debt
+omi_report.html:
+  note: fetched 2026-10-31 with the colloquium User-Agent
+  retrieved: '2026-10-31'
+  sha256: fe1dc0e93d8b68ecd660acaa7eb42cbdaef6ad40661890209baab286b6f8b894
+  source: OMI publication page (datePublished 2026-10-16)
+  url: https://www.openmarketsinstitute.org/publications/report-brace-for-impact-protecting-people-and-the-economy-when-the-ai-bubble-burst
+vn2026.pdf:
+  note: fetched 2026-10-31 with the colloquium User-Agent
+  retrieved: '2026-10-31'
+  sha256: bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4
+  source: Van Nieuwerburgh, Financing the AI Buildout, BPEA draft 2026-09-04
+  url: https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf
+yahoo_futurism.html:
+  note: fetched 2026-10-31 with the colloquium User-Agent
+  retrieved: '2026-10-31'
+  sha256: 8e57e66271dfb3fe7982e157385bf7ab98053c44954d45c3e64bc57f8fda8550
+  source: Futurism article by Joe Wilkins, syndicated on Yahoo Finance, 2026-10-26
+  url: https://finance.yahoo.com/technology/ai/articles/analysis-finds-signs-ai-bubble-195103377.html

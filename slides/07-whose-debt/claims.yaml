@@ -1,0 +1,135 @@
+slide: 7
+title: 'Whose debt is it?'
+section: '01 · Fear'
+claims:
+- id: c1
+  text: "Think-tanks see echoes of the subprime mortgage crisis in how the AI build-out is financed (OpenMarkets, 'Brace for Impact', 2026)"
+  kind: attribution
+  priority: high
+  status: partially-supported
+  validation: 'Read the OpenMarkets report itself, not only the Futurism/Yahoo coverage.'
+  sources:
+  - https://www.openmarketsinstitute.org/publications/report-brace-for-impact-protecting-people-and-the-economy-when-the-ai-bubble-burst
+  - https://www.openmarketsinstitute.org/s/Executive-Summary-Brace-for-Impact-Scherer-Jenkins-WEB.pdf
+  - https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf
+  - https://www.chicagobooth.edu/review/how-worried-should-we-be-about-ai-debt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  - data/processed/ratios.csv
+  notes: |
+    The report does draw the subprime comparison ("eerily reminiscent of the subprime bubble", F04) and sets $3.1T of
+    off-balance-sheet commitments against the $2.3T (2026 dollars) 2007 subprime peak (F05; 1.35x in ratios.csv).
+    Wording problems: (1) it is one report, by the Open Markets Institute with the Americans for Financial Reform
+    Education Fund (Scherer and Jenkins, published Oct. 16, 2026), not "think-tanks" or "OpenMarkets";
+    (2) the slide kicker "a 2008 repeat" is stronger than the report, which calls the bubble "unique in recent history".
+    Independent economists are more cautious: Van Nieuwerburgh (Brookings, 2026) says it is "premature" to call it
+    systemic risk comparable to earlier credit booms; Hepp (Chicago Booth Review, 2026) says the outcome "would be
+    different from 2008" (F15, F16). OMI and AFR are advocacy groups; present this as their warning.
+  proposed_text: 'An advocacy think tank sees echoes of the 2008 subprime crisis in how the AI build-out is financed.'
+- id: c2
+  text: 'Speculative data-center debt is being repackaged and resold to pension funds, retirement funds and university endowments'
+  kind: attribution
+  priority: high
+  status: partially-supported
+  validation: 'Primary source for securitization and buyers (report; ratings agencies; slide 06 evidence on Hyperion/Beignet bonds).'
+  sources:
+  - https://www.openmarketsinstitute.org/s/Executive-Summary-Brace-for-Impact-Scherer-Jenkins-WEB.pdf
+  - https://www.openmarketsinstitute.org/s/Brace-for-Impact-Scherer-Jenkins-OMI-October2026-WEB-1.pdf
+  - https://www.chicagobooth.edu/review/how-worried-should-we-be-about-ai-debt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: |
+    The slide wording matches the report's executive summary verbatim (F04), so as an attribution it is accurate.
+    As a fact it is the report's characterisation: its body says data-center loans are "often securitized" and sold
+    to "insurers and pension funds" (F06). Endowments' exposure, per the independent source the report cites (Hepp),
+    is as limited partners in private-credit funds, not as buyers of repackaged bonds (F07); Hepp puts
+    infrastructure and asset-backed securities at only about $60B of AI financing (F08). The SEC no-action letter on
+    data-center securitizations (July 29, 2026, cited by the report) could not be read: sec.gov returned 403 to our
+    User-Agent. The slide also repeats itself ("repackaged and resold" then "bundled and sold to"); keep one.
+  proposed_text: 'Some data-center loans are bundled into bonds sold to insurers and pension funds; endowments are exposed through private-credit funds.'
+- id: c3
+  text: 'Trillions on a revenue gap: leading labs do not yet earn enough to cover their rising costs'
+  kind: quantitative
+  priority: high
+  status: partially-supported
+  validation: "Company disclosures; slide 06 evidence (capex vs operating cash flow; Van Nieuwerburgh's revenue requirement)."
+  sources:
+  - https://www.openmarketsinstitute.org/s/Brace-for-Impact-Scherer-Jenkins-OMI-October2026-WEB-1.pdf
+  - https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf
+  - https://data.sec.gov/api/xbrl/companyfacts/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/capex_vs_ocf.csv
+  - data/processed/ratios.csv
+  notes: |
+    Report: over $1T of AI infrastructure spending in 2026, with outside generative-AI revenue at most 20% (maybe
+    under 10%) of it (F09). Van Nieuwerburgh: the 2025-2032 build-out needs about $3.7T a year of revenue by 2032
+    (F12). Lab losses are press-reported, not audited: OpenAI reportedly lost $38B+ on $13B revenue and Anthropic
+    reportedly $42B in 2025 (F10); the report notes Anthropic's 2026 revenue improved (F11). Labs are private, so
+    "do not yet earn enough" cannot be checked against filings. The report's line that hyperscaler cash flows turned
+    negative in summer 2026 (F23, Bloomberg estimates for four firms) is not borne out by SEC actuals for five firms:
+    capex was 95.5% of operating cash flow in the 12 months to 2026Q3, still $33B short of it (capex_vs_ocf.csv).
+    "Trillions" is fair for the cumulative build-out, not the annual gap.
+  proposed_text: 'Over $1 trillion a year on AI infrastructure; sales cover a fifth at most (report estimate). The leading labs reportedly lost billions in 2025.'
+- id: c4
+  text: 'Contagion risk: the spending is concentrated and interconnected'
+  kind: attribution
+  priority: medium
+  status: supported
+  validation: 'Report and Van Nieuwerburgh (2026) on bank and private-credit exposure.'
+  sources:
+  - https://www.openmarketsinstitute.org/s/Executive-Summary-Brace-for-Impact-Scherer-Jenkins-WEB.pdf
+  - https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf
+  - https://www.chicagobooth.edu/review/how-worried-should-we-be-about-ai-debt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: |
+    Supported as the report's view: players are "deeply interconnected" so "a crash affecting any one part of the
+    industry would likely spread" (F13), and "it could spread well beyond the tech sector" (F14). Slide wording is a
+    fair paraphrase. Balance: Van Nieuwerburgh calls it premature to equate this with systemic risk of earlier credit
+    booms (F15), and Hepp expects losses far less concentrated in banks than in 2008 (F16).
+- id: c5
+  text: "Notes: the report warns the odds of a deep AI crash are rising, and calls today's situation unique in size and scope"
+  kind: attribution
+  priority: medium
+  status: supported
+  validation: 'Quotes checked in the report executive summary.'
+  sources:
+  - https://www.openmarketsinstitute.org/s/Executive-Summary-Brace-for-Impact-Scherer-Jenkins-WEB.pdf
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: '"the odds of a deep and severe AI crash are rapidly increasing" (F17); "unique in recent history in its size, scope, and risk" (F18).'
+- id: c6
+  text: 'Notes: the report says regulators are rolling back safeguards, and recommends scrutiny of AI finances, an end to subsidies that inflate the bubble, and protection for retirement savings'
+  kind: attribution
+  priority: low
+  status: supported
+  validation: 'Quotes checked in the report executive summary.'
+  sources:
+  - https://www.openmarketsinstitute.org/s/Executive-Summary-Brace-for-Impact-Scherer-Jenkins-WEB.pdf
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'F19 and F20. "Ripping up regulatory guardrails" is the report''s advocacy language; say "the report says".'
+- id: c7
+  text: 'Source line and notes: a Washington, D.C., think tank, OpenMarkets, published "Brace for Impact" (2026), reported by J. Wilkins, Futurism, via Yahoo Finance, Oct. 26, 2026'
+  kind: factual
+  priority: medium
+  status: partially-supported
+  validation: 'Report title page and publication page; Yahoo/Futurism byline.'
+  sources:
+  - https://www.openmarketsinstitute.org/publications/report-brace-for-impact-protecting-people-and-the-economy-when-the-ai-bubble-burst
+  - https://finance.yahoo.com/technology/ai/articles/analysis-finds-signs-ai-bubble-195103377.html
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: |
+    Futurism byline (Joe Wilkins, Oct. 26, 2026) is correct (F21). The publisher is the Open Markets Institute,
+    jointly with the Americans for Financial Reform Education Fund (authors Matthew U. Scherer and Maya Jenkins),
+    published Oct. 16, 2026 (F01-F03); "OpenMarkets" is Futurism's shortening (F22). The D.C. location comes only
+    from Futurism; not confirmed on the OMI pages fetched. Cite the report directly.
+  proposed_text: 'Source: Open Markets Institute & Americans for Financial Reform, “Brace for Impact” (Oct. 2026); via J. Wilkins, Futurism, Oct. 26, 2026'

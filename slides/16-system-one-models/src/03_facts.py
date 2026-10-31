@@ -1,0 +1,96 @@
+"""Slide 16: write data/raw/research/facts.csv, checking every quote is verbatim in a fetched source."""
+
+from __future__ import annotations
+
+import csv
+import sys
+from pathlib import Path
+
+SLIDE = Path(__file__).resolve().parents[1]
+RAW = SLIDE / "data" / "raw" / "sources"
+OUT = SLIDE / "data" / "raw" / "research" / "facts.csv"
+
+TS = ("Introducing System One Models & Jev", "TypeSafe AI", "2026-09-15", "https://typesafe.ai/blog/introducing-system-one-models-and-jev", "primary", "typesafe_launch")
+TSC = ("System One models (docs: concepts)", "TypeSafe AI", "2026-10-31", "https://docs.typesafe.ai/concepts/system-one", "primary", "typesafe_concept")
+TSM = ("Models (docs)", "TypeSafe AI", "2026-10-31", "https://docs.typesafe.ai/models", "primary", "typesafe_models")
+TSJ = ("Jev 1.13 jaggedness (docs)", "TypeSafe AI", "2026-10-02", "https://docs.typesafe.ai/model-jaggedness/jev-1.13", "primary", "typesafe_jagged")
+CF = ("Introducing Clef: our open-source decision models, and new RL fine-tuning platform", "Cloudflare", "2026-10-01", "https://blog.cloudflare.com/clef-decision-models", "primary", "cloudflare_blog")
+CFX = ("Introducing Clairic, a new System One class of extraction models", "Cloudflare", "2026-10-19", "https://blog.cloudflare.com/clairic-extraction-model/", "primary", "cloudflare_clairic")
+HF = ("Cloudflare/clef model card (README.md)", "Cloudflare (Hugging Face)", "2026-10-30", "https://huggingface.co/Cloudflare/clef/raw/main/README.md", "primary", "hf_clef_readme")
+HFF = ("Cloudflare/clef-flash model card (README.md)", "Cloudflare (Hugging Face)", "2026-10-30", "https://huggingface.co/Cloudflare/clef-flash/raw/main/README.md", "primary", "hf_clef_flash_readme")
+HFL = ("Cloudflare/clef LICENSE", "Cloudflare (Hugging Face)", "2026-10-30", "https://huggingface.co/Cloudflare/clef/raw/main/LICENSE", "primary", "hf_clef_license")
+HFA = ("Hugging Face model API: Cloudflare/clef", "Hugging Face", "2026-10-30", "https://huggingface.co/api/models/Cloudflare/clef", "primary", "hf_api_clef")
+HFAF = ("Hugging Face model API: Cloudflare/clef-flash", "Hugging Face", "2026-10-30", "https://huggingface.co/api/models/Cloudflare/clef-flash", "primary", "hf_api_clef_flash")
+HFC = ("Cloudflare/clef joint_schema_model.py", "Cloudflare (Hugging Face)", "2026-10-30", "https://huggingface.co/Cloudflare/clef/raw/main/joint_schema_model.py", "primary", "hf_clef_code")
+BS = ("Jev vs. Clef: A Practical Comparison of System One Decision Models", "Better Stack", "2026-10-12", "https://betterstack.com/community/guides/ai/jev-vs-clef-decision-model/", "secondary", "betterstack")
+MS = ("Jev Explained: Typesafe AI's Non-Autoregressive System-1 Model", "MindStudio", "2026-09-18", "https://www.mindstudio.ai/blog/jev-system-one-model-launch", "secondary", "mindstudio")
+SOM = ("What is a System One (System 1) model?", "systemonemodels.org", "2026-10-23", "https://systemonemodels.org/guides/what-is-a-system-one-model/", "secondary", "som_guide")
+AX = ("Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs (Xiong et al., arXiv:2306.13063)", "arXiv", "2023-06-22", "https://arxiv.org/abs/2306.13063", "primary", "arxiv_xiong_2306_13063")
+
+FACTS = [
+    # claim, value, quote, source, notes
+    ("c1", "Jev launched Sep 15, 2026", "Sep 15, 2026 Sep 15, 2026 Sep 15, 2026 Diogo Almeida, founder, TypeSafe", TS, "Post date on the TypeSafe launch post"),
+    ("c1", "Jev is the first System One model, in early access", "Our first public model is Jev , available today in early access.", TS, ""),
+    ("c1", "Jev is served only through TypeSafe's hosted endpoint", "Every model on this page is served by the same endpoint, POST /v1/systemone .", TSM, "No weights download is offered in the docs; Hugging Face search finds no TypeSafe-published Jev weights"),
+    ("c1", "Same weights serve every account; no per-customer fine-tuning", "the same weights serve every account", TSM, ""),
+    ("c1", "Independent summary: Jev has no open weights and cannot be self-hosted", "Open weights No Yes, Apache 2.0 Yes, Apache 2.0", BS, "Table row; columns are Jev, Clef, Clef-Flash"),
+    ("c1", "Clef announced Oct 1, 2026", '"datePublished":"2026-10-01T15:34:02.111Z"', CF, "From the page's JSON-LD (raw HTML)"),
+    ("c1", "Two Cloudflare decision models: Clef and Clef-flash", "two Cloudflare-trained decision models, Clef and Clef-flash, hosted on Workers AI", CF, "The 9B model is named Clef-flash, not Clef"),
+    ("c1", "Weights released on Hugging Face under Apache 2.0", "fully open-sourcing these models on Hugging Face under an Apache 2.0 license", CF, "Training data and pipeline not published, so open weights rather than open source"),
+    ("c1", "Clef is 27B, post-trained from Qwen3.8-27B", "Clef is a 27B multimodal model", HF, ""),
+    ("c1", "Clef 27.36B parameters on the Hub", '"total":27356728560', HFA, "Computed in data/processed/clef_releases.csv"),
+    ("c1", "Clef-flash 9.41B parameters on the Hub", '"total":9409813744', HFAF, "Computed in data/processed/clef_releases.csv"),
+    ("c1", "Clef licence tag apache-2.0", "license: apache-2.0", HF, "Model card front matter; same for clef-flash"),
+    ("c1", "Clef-flash licence tag apache-2.0", "license: apache-2.0", HFF, ""),
+    ("c1", "LICENSE file is Apache 2.0", "Apache License", HFL, "Followed by 'Version 2.0, January 2004'"),
+    ("c1", "Weights are open in practice but training is not reproducible", "Cloudflare described them as \"open-source,\" but training data and pipeline are not published, so \"open weights\" is more accurate.", BS, ""),
+    ("c2", "Clef: a probability for every option of every question in one forward pass", "probability for every allowed option of every question in a single forward pass", HF, "Verified in code: data/processed/clef_code_checks.csv"),
+    ("c2", "Clef decision step is non-autoregressive after one prefill pass", "During inference, Clef uses Qwen for a prefill-only pass, then scores the valid schema choices in parallel.", CF, ""),
+    ("c2", "Jev: all outputs in a single query (architecture unpublished)", "Parallel. Generates all outputs in a single query.", TS, "Jev architecture is not public, so 'forward pass' cannot be checked for Jev"),
+    ("c2", "Three primitives: choice, score, noul", "Choice Which team should handle this ticket? billing , technical , or account choice: \"billing\" Score How frustrated is this customer?", TSC, ""),
+    ("c2", "Calibration is a vendor training goal, measured over groups not single answers", "Calibration is measured across groups of predictions; it does not guarantee that an individual answer is correct.", TSC, ""),
+    ("c2", "Vendor calls probabilities calibrated", "All answers are accompanied with calibrated probabilities and confidence scores.", TS, "Developer-reported; no independent calibration test found"),
+    ("c2", "Clef trained with a Brier loss for calibration", "paired with a Brier loss to refine probability calibration", CF, "Developer-reported"),
+    ("c2", "Jev 1.13 score levels weakly calibrated numerically", "score levels are weak in numerical calibration", TSJ, "Vendor's own known-weakness page"),
+    ("c2", "Since Oct 19 a second class exists: extraction models returning typed values", "Until now, every System One model has been a decision model", CFX, "Clairic preview announced 2026-10-19; open weights promised, not yet released"),
+    ("c2", "Extraction models return values, not only decisions", "Clairic handles the first, returning numbers with an 80% range, and also pulls typed values like names, dates and lists out of the input.", CFX, ""),
+    ("c3", "Possible outputs are defined in advance; no type errors", "Possible outputs and structure are defined in advance . The model never makes type errors.", TS, ""),
+    ("c3", "System One models do not write text", "System One models do not write replies, produce code, or generate explanations of their reasoning.", TSC, ""),
+    ("c3", "Code: choice is the argmax over the caller's listed options", 'options = [str(option) for option in question["criteria"]]', HFC, "systemone_answer(); see data/processed/clef_code_checks.csv"),
+    ("c3", "They can still be wrong with high confidence", "It can pick the wrong option with high confidence, or return a probability that does not match how often it is actually right.", SOM, ""),
+    ("c3", "Example of a confident wrong pick", "Clef classified it as \"neutral\" with 93% confidence.", BS, "A clear critique labelled neutral"),
+    ("c5", "LLMs verbalising confidence tend to be overconfident", "LLMs, when verbalizing their confidence, tend to be overconfident, potentially imitating human patterns of expressing confidence.", AX, "Peer-reviewed version at ICLR 2024"),
+    ("c5", "Vendor framing of LLM overconfidence", "Even if prompted for a confidence estimate, models tend to be overconfident and inconsistent.", TS, "Developer-reported"),
+    ("c6", "Vendor: two orders of magnitude faster and more efficient", "while being two orders of magnitude faster and more efficient", TS, "Developer-reported"),
+    ("c6", "Vendor: headline 193.6x faster, 444.6x cheaper from its own workflow evals", "This is where the claims of 193.6x faster, 444.6x cheaper on our home page come from, and we expect that these are on the higher end of real world gains.", TS, "Developer-reported; reference answers from GPT-6 Astra and Fable 5.1"),
+    ("c6", "Vendor: 40x-200x faster", "This can range from 40x-200x faster for the same levels of frontier intelligence for System One shaped queries.", TS, ""),
+    ("c6", "Secondary summary: up to 100x faster and cheaper", "Typesafe claims this makes Jev up to 100 times faster and 100 times cheaper than conventional LLMs for certain tasks", MS, "The deck's '100x' matches this secondary summary, not TypeSafe's headline numbers"),
+    ("c7", "200 comments, five questions", "200 random comments from the Better Stack YouTube channel were put through both models with identical prompts and five questions", BS, ""),
+    ("c7", "No ground truth: an LLM was the referee", "Since there's no ground-truth label set for these comments, Claude Opus 5.5 served as the referee, answering the same five questions for each comment.", BS, "So '86%' is agreement with an LLM, not accuracy against human labels"),
+    ("c7", "Jev 86%, Clef 83% agreement", "Overall, Jev matched the referee 86% of the time and Clef matched it 83% of the time.", BS, "Mean of per-question figures 86.2% and 83.2% (data/processed/betterstack_test.csv)"),
+    ("c8", "Clef API compatible with Jev", "The Clef API is fully compatible with Jev and SystemOne.", HF, ""),
+    ("c9", "Pairing: escalate to a person or reasoning model on low confidence", "so you can decide when to act and when to escalate to a person or a reasoning model", TSC, ""),
+    ("c9", "Pairing: decision model in the hot path, LLM to take action", "combine that with one of our LLMs on Workers AI to take action", CF, ""),
+    ("c9", "Jev fits high-volume classification", "Use Jev for: high-volume text classification where you need the lowest per-call cost and fastest latency.", BS, ""),
+]
+
+
+def main() -> None:
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    bad = 0
+    with OUT.open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["id", "claim_id", "value", "quote", "source_title", "publisher", "date", "url", "source_type", "notes"])
+        for i, (cid, value, quote, src, notes) in enumerate(FACTS, 1):
+            title, pub, date, url, stype, stem = src
+            texts = [p.read_text(encoding="utf-8", errors="replace") for p in RAW.glob(f"{stem}.*") if p.suffix != ".yaml"]
+            if not any(quote in t for t in texts):
+                print(f"NOT VERBATIM f{i} ({cid}): {quote[:70]}")
+                bad += 1
+            w.writerow([f"f{i}", cid, value, quote, title, pub, date, url, stype, notes])
+    print(f"{len(FACTS)} facts, {bad} not verbatim")
+    sys.exit(1 if bad else 0)
+
+
+if __name__ == "__main__":
+    main()

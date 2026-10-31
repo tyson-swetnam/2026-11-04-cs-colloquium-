@@ -1,0 +1,72 @@
+slide: 32
+title: 'Access for everyone, and training to use it responsibly'
+section: 04 · Stop worrying
+claims:
+- id: c1
+  text: 'Students: [course, workshop or program]'
+  kind: placeholder
+  priority: high
+  status: superseded
+  superseded_note: 'Placeholders filled in the revised deck.'
+  validation: Fill in (notes mention the AI Automation and Agents course and DUST training).
+  sources: []
+  evidence: []
+- id: c2
+  text: 'Faculty: [how to get an allocation]'
+  kind: placeholder
+  priority: high
+  status: superseded
+  superseded_note: 'Placeholders filled in the revised deck.'
+  validation: Fill in with the CARC / ACCESS / NAIRR request links.
+  sources: []
+  evidence: []
+- id: c3
+  text: 'Researchers: [consulting and support at CARC]'
+  kind: placeholder
+  priority: high
+  status: superseded
+  superseded_note: 'Placeholders filled in the revised deck.'
+  validation: Fill in.
+  sources: []
+  evidence: []
+- id: c4
+  text: '[milestone · date] · [milestone · date]'
+  kind: placeholder
+  priority: medium
+  status: superseded
+  superseded_note: 'Placeholders filled in the revised deck.'
+  validation: Fill in.
+  sources: []
+  evidence: []
+- id: c5
+  text: 'Students: Spring 2026: CS 491/591: AI Automation and Agents'
+  kind: factual
+  priority: high
+  status: unverified
+  validation: 'UNM course schedule. Note: the talk is Nov. 2026, so a Spring 2026 offering is past; Spring 2027?'
+  sources: []
+  evidence: []
+- id: c6
+  text: 'Faculty: carc.unm.edu/docs/getting-started'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'Link check.'
+  sources: []
+  evidence: []
+- id: c7
+  text: 'Researchers: consulting and support at CARC'
+  kind: factual
+  priority: low
+  status: unverified
+  validation: 'CARC service page.'
+  sources: []
+  evidence: []
+- id: c8
+  text: 'Set clear goals and realistic timelines, ask the important science questions that matter right now.'
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: 'Framing.'
+  sources: []
+  evidence: []

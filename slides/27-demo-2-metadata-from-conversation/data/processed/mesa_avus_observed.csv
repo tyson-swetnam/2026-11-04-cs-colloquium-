@@ -1,0 +1,195 @@
+path,attribute,value,unit,curie_in_unit,curie_in_value
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.fileCount,16,count,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.table,bet_archivepooling,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,ncbitaxon.carabidae,Carabidae,NCBITaxon:41073,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.rights.1.value,Creative Commons Attribution 4.0 International (CC-BY-4.0),,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.19.value,introduced species,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.7.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,bet,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.5.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.resourceTypeGeneral,Dataset,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,ground beetles,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,population,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.identifier,https://de.cyverse.org/data/ds/iplant/home/tswetnam/neon-ducklake/sites/KONZ/raw/DP1.10022.001,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.table,bet_sorting,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.creator.1.nameIdentifier,https://ror.org/04j43p132,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.18.value,bet,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.temporalCoverage,2023-09-11T00:00:00Z/2026-08-24T00:00:00Z,ISO8601 interval,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.20.value,invasive species,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.totalBytes,646265,byte,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.10.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.productCode,DP1.10022.001,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,categorical_codes,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.5.value,"NEON (National Ecological Observatory Network). Ground beetles sampled from pitfall traps (DP1.10022.001), provisional data. Dataset accessed from https://data.neonscience.org on 2026-09-28. Data archived at [your DOI].",,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.9.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.27.subjectScheme,NCBITAXON,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,archived samples,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.8.value,beetles,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.3.descriptionType,TechnicalInfo,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,COI,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.provisionalMonths,2026-08/2026-08,ISO8601 interval,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,uo.meter,bet_fielddata.elevation,UO:0000008,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,pitfall traps,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.4.relationType,IsDocumentedBy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.22.value,biodiversity,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.5.value,https://data.neonscience.org/api/v0/documents/ESSIG_carabidTaxonID_SOP_2025_Rev6,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,biodiversity,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.creator.1.nameType,Organizational,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.taxaCount,5,count,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.11.value,https://www.neonscience.org/field-sites/konz,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,ncbitaxon.cyclotrachelus_substriatus,Cyclotrachelus substriatus,NCBITaxon:2578513,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.theme,"Organisms, Populations, and Communities",,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.table,bet_expertTaxonomistIDProcessed,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,community composition,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,variables_history,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,readme_index,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.contributor.1.affiliation,University of New Mexico,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,dp1_10022_001__bet_experttaxonomistidprocessed,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.3.value,community composition,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,dp1_10022_001__bet_sorting,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.17.value,archived samples,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.7.value,https://data.neonscience.org/api/v0/documents/NEON.DOC.005424vA,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.9.value,https://data.neonscience.org/api/v0/documents/quick-start-guides/NEON.QSG.DP1.10022.001v2,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,insects,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,ncbitaxon.pasimachus_californicus,Pasimachus californicus,NCBITaxon:48647,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.format.3,text/plain,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.creator.1.name,National Ecological Observatory Network (NEON),,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.format.1,application/xml,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.release,RELEASE-2026,doi:10.48443/q9ne-6b77,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.publicationYear,2026,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,native species,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.size.1,16 files,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.26.subjectScheme,ENVO,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.4.value,"NEON (National Ecological Observatory Network). Ground beetles sampled from pitfall traps (DP1.10022.001), RELEASE-2026. https://doi.org/10.48443/q9ne-6b77. Dataset accessed from https://data.neonscience.org on 2026-09-28.",,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.10.value,https://data.neonscience.org/api/v0/documents/NEON_beetle_userGuide_vG,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.28.subjectScheme,PATO,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.geoLocation.1.place,Konza Prairie Biological Station NEON (KONZ),,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.1.value,"This data product contains the quality-controlled, native sampling resolution data from NEON's ground beetle sampling and specimen processing protocols. Ground beetle abundance and diversity are sampled via pitfall trapping at regular intervals by NEON field technicians at core and relocatable sites. Following trap collection, all beetles from the family Carabidae are sorted by NEON technicians and identified to species or morphospecies. A subset of collected Carabidae are pointed or pinned, while other specimens (non-pinned/non-pointed carabids, invertebrate bycatch, and vertebrate bycatch) are stored in 95% ethanol for archiving, and may be pooled into a single archive vial per plot. Regardless of storage method, all collections data are reported at a per trap resolution. A subset of pinned ground beetles (up to 467 per site per year) are sent to an expert taxonomist for secondary identification. Identifications performed on these individuals may be used to estimate uncertainty in parataxonomist identification by NEON technicians.
+
+Latency:
+The expected time from data and/or sample collection in the field to data publication is as follows, for each of the data tables (in days) in the downloaded data package. See the Data Product User Guide for more information.
+
+bet_archivepooling:  330
+
+bet_expertTaxonomistIDProcessed:  600
+
+bet_expertTaxonomistIDRaw:  600
+
+bet_fielddata:  75
+
+bet_parataxonomistID:  330
+
+bet_sorting:  330
+
+bet_identificationHistory: 7",,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.1.descriptionType,Abstract,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.11.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.1.relatedIdentifierType,DOI,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.14.value,ground beetles,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,pato.length,length,PATO:0000122,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.26.value,wet pitfall trap (ENVO:01000978),,False,True
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.16.value,material samples,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.1.value,diversity,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,uo.degree,bet_fielddata.decimalLatitude,UO:0000185,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,invertebrates,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.productStatus,ACTIVE,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.siteMonths,2,count,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.11.relationType,References,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,species composition,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.publisher,National Ecological Observatory Network (NEON),,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.1.value,10.48443/q9ne-6b77,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.title.1.value,"NEON Ground beetles sampled from pitfall traps (DP1.10022.001) at Konza Prairie Biological Station NEON (KONZ), 2023-2026",,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.27.value,Carabidae (NCBITaxon:41073),,False,True
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.4.value,species composition,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.date.1.date,2023-09-11/2026-08-24,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,dp1_10022_001__bet_parataxonomistid,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.resourceType,Level 1 Data Product (basic package),,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.9.relationType,IsDocumentedBy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.15.value,pitfall traps,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.25.value,soil surface layer (ENVO:04000010),,False,True
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.5.relationType,IsDocumentedBy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.10.relationType,IsDocumentedBy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.contributor.1.contributorType,DataCurator,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,material samples,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,ncbitaxon.chlaenius_tomentosus,Chlaenius tomentosus,NCBITaxon:1205973,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.2.value,"Ground beetles are sampled using pitfall traps (16 oz deli containers filled with 150 or 250 mL of propylene glycol). Multiple traps are deployed in each of 10 plots at each terrestrial NEON site (from 2013-2017, 40 traps per site; 2018-present, 30 traps per site), with traps arrayed approximately 20 meters from the center of the plot in one of the four cardinal directions. Sampling occurs biweekly throughout the growing season (when temperatures are above 4 degrees C).",,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.9.value,Carabidae,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.6.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.months,"2023-09/2023-09,2026-08/2026-08",ISO8601 interval,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.24.value,taxonomic identification process (BCO:0000042),,False,True
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.6.value,invertebrates,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.size.2,646265 bytes,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.8.relationType,IsDocumentedBy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.version,RELEASE-2026 + PROVISIONAL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.21.value,native species,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.3.value,https://data.neonscience.org/api/v0/documents/CMNH-20-002_DataVerifSOP_20201113,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,diversity,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.29.value,community species diversity (PCO:0000019),,False,True
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.1.relationType,IsDerivedFrom,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,abundance,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.23.subjectScheme,NEON theme,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.6.relationType,IsDocumentedBy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,dp1_10022_001__bet_archivepooling,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.10.value,insects,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.5.descriptionType,Other,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.identifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.23.value,"Organisms, Populations, and Communities",,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,envo.wet_pitfall_trap,wet pitfall trap,ENVO:01000978,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.28.value,length (PATO:0000122),,False,True
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.11.value,DNA sequences,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.2.value,https://data.neonscience.org/data-products/DP1.10022.001,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,introduced species,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.4.descriptionType,Other,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,variables,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.rights.1.rightsURI,https://creativecommons.org/licenses/by/4.0/,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.7.value,abundance,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.creator.1.nameIdentifierScheme,ROR,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,ncbitaxon.pasimachus_elongatus,Pasimachus elongatus,NCBITaxon:676030,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.7.relationType,IsDocumentedBy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.2.relationType,IsDescribedBy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,DNA barcoding,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,dp1_10022_001__bet_fielddata,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.2.value,taxonomy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.contributor.1.name,tswetnam,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,uo.degree,bet_fielddata.decimalLongitude,UO:0000185,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.29.subjectScheme,PCO,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.productScienceTeam,Terrestrial Observation System (TOS),,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.6.value,https://data.neonscience.org/api/v0/documents/NEON.DOC.000909vC,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.5.value,population,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,bco.taxonomic_identification_process,taxonomic identification process,BCO:0000042,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.2.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,Carabidae,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,uo.meter,bet_fielddata.coordinateUncertainty,UO:0000008,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.25.subjectScheme,ENVO,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.table,bet_parataxonomistID,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,uo.meter,bet_fielddata.elevationUncertainty,UO:0000008,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.geoLocation.1.point,39.100774 -96.563075,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.format.2,text/csv,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.date.1.dateType,Collected,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.4.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,validation,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.8.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,DNA sequences,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.3.relatedIdentifierType,URL,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.8.value,https://data.neonscience.org/api/v0/documents/NEON.DOC.014050vN,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,taxonomy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,envo.soil_surface_layer,soil surface layer,ENVO:04000010,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.table,bet_fielddata,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.13.value,DNA barcoding,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.24.subjectScheme,BCO,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.4.value,https://data.neonscience.org/api/v0/documents/CMNH_Receiving_SOP,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,uo.count_unit,bet_sorting.individualCount,UO:0000189,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,pco.community_species_diversity,community species diversity,PCO:0000019,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.productName,Ground beetles sampled from pitfall traps,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.3.value,"NEON DP1.10022.001 basic package at KONZ: 16 files (646265 bytes) over 2 site-months (2023-09/2023-09,2026-08/2026-08), stored as raw/DP1.10022.001/<YYYY-MM>/<NEON file name>. NEON tables: bet_archivepooling, bet_expertTaxonomistIDProcessed, bet_fielddata, bet_parataxonomistID, bet_sorting. Stacked site-lake tables in sites/KONZ/ducklake/neon_konz.ducklake: categorical_codes, dp1_10022_001__bet_archivepooling, dp1_10022_001__bet_experttaxonomistidprocessed, dp1_10022_001__bet_fielddata, dp1_10022_001__bet_parataxonomistid, dp1_10022_001__bet_sorting, eml_index, readme_index, validation, variables, variables_history.",,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,mesa.ducklake.table,eml_index,ducklake:sites/KONZ/ducklake/neon_konz.ducklake,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,ncbitaxon.pasimachus_depressus,Pasimachus depressus,NCBITaxon:2610100,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,beetles,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,uo.millimeter,bet_parataxonomistID.totalLength,UO:0000016,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.relatedIdentifier.3.relationType,IsDocumentedBy,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.keyword,invasive species,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,neon.rowCount,135,count,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.subject.12.value,COI,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,uo.day,bet_fielddata.trappingDays,UO:0000033,True,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.language,en,,False,False
+/iplant/home/shared/mesa/lakehouse/neon/neon-ducklake/sites/KONZ/raw/DP1.10022.001,datacite.description.2.descriptionType,Methods,,False,False

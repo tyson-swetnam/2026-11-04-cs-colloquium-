@@ -1,0 +1,247 @@
+js2_alloc_overview.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: ed8edf7c3006e8af7b9c6f7eebda934cdd2f230360c2d74a2895e06596153d37
+  source: slide 20 NAIRR check
+  url: https://docs.jetstream-cloud.org/alloc/overview/
+js2_alloc_overview.html.txt:
+  note: tag-stripped text of js2_alloc_overview.html
+  retrieved: '2026-10-31'
+  sha256: ad6c71e65d04bb6114a9941eda26003cc6b98e1cf4ba5abf79bff92c8079ae1c
+  source: slide 20 NAIRR check
+  url: https://docs.jetstream-cloud.org/alloc/overview/
+js2_inference.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 9384ebd9beac7d0215301414bd1fd18869331b405b3926524204d12c9691ac9b
+  source: slide 20 NAIRR check
+  url: https://docs.jetstream-cloud.org/inference-service/overview/
+js2_inference.html.txt:
+  note: tag-stripped text of js2_inference.html
+  retrieved: '2026-10-31'
+  sha256: fab5b61c7111c3f8959c93a6a28534ae1cf90704358e593319be8fefc7e0ec46
+  source: slide 20 NAIRR check
+  url: https://docs.jetstream-cloud.org/inference-service/overview/
+js2_overview.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 498d1fca89fda731ff3e29df9f6643535cc0e3299c5831795d768c8e433ad3e0
+  source: slide 20 NAIRR check
+  url: https://docs.jetstream-cloud.org/overview/overview-doc/
+js2_overview.html.txt:
+  note: tag-stripped text of js2_overview.html
+  retrieved: '2026-10-31'
+  sha256: 7e0ef223f73da44972956dfd91d5652a977d431df0e0de59ef3b07f4cc896727
+  source: slide 20 NAIRR check
+  url: https://docs.jetstream-cloud.org/overview/overview-doc/
+mesa_news.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 628991496fd896fc6d383e624a76aa566c09eb5790130ed3b6b6b5508628f415
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/news.html
+mesa_news.html.txt:
+  note: tag-stripped text of mesa_news.html
+  retrieved: '2026-10-31'
+  sha256: 808042b291a2fce2165c0b84086e6c448d067c0ffc153d37b3783e42283784d8
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/news.html
+mesa_portal.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 266711bdabe413c00b89798a5980e441de478c3f8ff134b947ded96df0aca280
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/portal.html
+mesa_portal.html.txt:
+  note: tag-stripped text of mesa_portal.html
+  retrieved: '2026-10-31'
+  sha256: 642470077d68bad73cd8bbd82ae50ed006612507cb9cd03172dba84b89116410
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/portal.html
+mesa_site.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 4bd7735291ffd336e424d84b7077903801f52555ca1ca5dcf687d4a9e7f6d54b
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/
+mesa_site.html.txt:
+  note: tag-stripped text of mesa_site.html
+  retrieved: '2026-10-31'
+  sha256: 015011f91e5aba25ccc3928e05a1a1cc9891181e0d57ac573c54f264ffc33192
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/
+mesa_stack.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: e6fc4cef7a6705a08d0df22528ec025ac5fdde3bf75492eb94f94ad23b81d825
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/stack.html
+mesa_stack.html.txt:
+  note: tag-stripped text of mesa_stack.html
+  retrieved: '2026-10-31'
+  sha256: ea6fd72f47e224d5ee1213b5c61e581efa70328e9387e6710f6c1d89129141ab
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/stack.html
+mesa_team.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 4149b05c673aa46a2769334309699f82b73b3a25f44abec67f4bdfdb69fc022e
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/team.html
+mesa_team.html.txt:
+  note: tag-stripped text of mesa_team.html
+  retrieved: '2026-10-31'
+  sha256: 91bedbcc40c6958fa2daf285f4d52d0487b8388ea3a6003dd0890bcf93869ee1
+  source: slide 20 NAIRR check
+  url: https://idss-mesa.github.io/team.html
+nairr_allocations.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 96faa785e7cfa5daceb83634e789c5f38da280faf966092becf365daa9eac7e4
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/opportunities/allocations
+nairr_allocations.html.txt:
+  note: tag-stripped text of nairr_allocations.html
+  retrieved: '2026-10-31'
+  sha256: bc52beb80aeb299070d0092f34330368c964478ba0653a310bdb46221b7c2d3f
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/opportunities/allocations
+nairr_faq.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: dad1335a33967c70ae79e3475f2ada0626ad5a4580794dd37ad566bd6a2fa7e9
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/help/faq
+nairr_faq.html.txt:
+  note: tag-stripped text of nairr_faq.html
+  retrieved: '2026-10-31'
+  sha256: 224eac48f93f5f95758e1a1cbdf25ecad32cb8301a8290de9d4ea72604cfd37b
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/help/faq
+nairr_pilotresources.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 7697fc7c37b00feeca73f74b2ec8d4aafc8fba7a6adc2963bbf17c7a0d64f0e9
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/pilotresources
+nairr_pilotresources.html.txt:
+  note: tag-stripped text of nairr_pilotresources.html
+  retrieved: '2026-10-31'
+  sha256: 9525e8b8a4098c456e32e7f797defb7b0015d12307798c6372b5da9549e12b55
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/pilotresources
+nairr_startup.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 87ff92db6d494d72499887c856d5f4dabd20fc54ea53d7e7276eb69b7fd488f4
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/opportunities/startup-project
+nairr_startup.html.txt:
+  note: tag-stripped text of nairr_startup.html
+  retrieved: '2026-10-31'
+  sha256: 04095be8893990cb6625e674d6b89ce07851b600c72049cd3787f818d8533327
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/opportunities/startup-project
+nairrpilot.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: b3d0a8073c689c1579e1dd6e74bc2505bbb96b2d27a3f7f190408c5dd2a1ac0e
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/
+nairrpilot.html.txt:
+  note: tag-stripped text of nairrpilot.html
+  retrieved: '2026-10-31'
+  sha256: 260fd59ffeb74fc922818160799aa291508dd420b13e3337072444b47d538e6f
+  source: slide 20 NAIRR check
+  url: https://nairrpilot.org/
+nrp_home.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: d3b7a5b6cdcb52aafaf9bb4f653308d2de918d352972d8846dad35e6953a9edf
+  source: slide 20 NAIRR check
+  url: https://nrp.ai/
+nrp_home.html.txt:
+  note: tag-stripped text of nrp_home.html
+  retrieved: '2026-10-31'
+  sha256: 010ab85416a41bc2591d0ecd2369efa1d48519ed4c2735fe7b75a2f251429ace
+  source: slide 20 NAIRR check
+  url: https://nrp.ai/
+nsf_idss_83m.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: a86f29efed4738528b078e24908a113103f1c80755890211587c1b1cfd3e9879
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/news/nsf-announces-83m-investment-integrated-data-systems
+nsf_idss_83m.html.txt:
+  note: tag-stripped text of nsf_idss_83m.html
+  retrieved: '2026-10-31'
+  sha256: 2ac4889e9fb4d5452f5d9999461343a6cf1523ebb5d10a2abbdd944bc7e6e709
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/news/nsf-announces-83m-investment-integrated-data-systems
+nsf_nairr.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 4af2d68fdbdcf81f0528376f0cb1984145ade7da1e033210b7cf44a34ed6b1dd
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/focus-areas/ai/nairr
+nsf_nairr.html.txt:
+  note: tag-stripped text of nsf_nairr.html
+  retrieved: '2026-10-31'
+  sha256: f1e2d0f8f23b4071ed3282c64c538ef283417a4bfe44bb075f7d32c27256e475
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/focus-areas/ai/nairr
+nsf_nairr_2yrs.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: da2dabd652fa17d53884fe6f7d4e5835156925a44f19c89796a6f2eb510f3e23
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/cise/updates/nairr-2-years-advancing-american-artificial-intelligence
+nsf_nairr_2yrs.html.txt:
+  note: tag-stripped text of nsf_nairr_2yrs.html
+  retrieved: '2026-10-31'
+  sha256: 09cec6e8ad8ce7e9c902f700cb5a030f575780ff7143c190fd1e43fb2e28157a
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/cise/updates/nairr-2-years-advancing-american-artificial-intelligence
+nsf_ops_center.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: 52c270e2134149cc318aaca8c5307dec14de6da06f0ce21d8bddd6fe3979fa5f
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/cise/updates/nsf-establishes-operations-center-national-artificial
+nsf_ops_center.html.txt:
+  note: tag-stripped text of nsf_ops_center.html
+  retrieved: '2026-10-31'
+  sha256: cb452ef40780c9c0c9fb36e4d87e236c753075185cc15438bcf82b9fcd4830bf
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/cise/updates/nsf-establishes-operations-center-national-artificial
+nsf_pilot_launch_2024.html:
+  note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
+    is tag-stripped text
+  retrieved: '2026-10-31'
+  sha256: e800e9ee3be76a227fbf8a52d52ec64e5d4e2fe7df223c289f8c09a2e0d6d9f0
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/news/democratizing-future-ai-rd-nsf-launch-national-ai
+nsf_pilot_launch_2024.html.txt:
+  note: tag-stripped text of nsf_pilot_launch_2024.html
+  retrieved: '2026-10-31'
+  sha256: f2113f5e19dc92701fb9552a9caebc7d3636646159709728f2bf9acde0a74a3d
+  source: slide 20 NAIRR check
+  url: https://www.nsf.gov/news/democratizing-future-ai-rd-nsf-launch-national-ai

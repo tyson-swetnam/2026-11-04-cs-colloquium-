@@ -1,0 +1,228 @@
+arxiv_xiong_2306_13063.txt:
+  note: text extracted from arxiv_xiong_2306_13063.xml
+  retrieved: '2026-10-31'
+  sha256: 3bbaa0d56b083b6883f45fdf5ce7e169ff1db01d2894119d5f79c4d3bf5a59c7
+  source: arXiv
+  url: https://export.arxiv.org/api/query?id_list=2306.13063
+arxiv_xiong_2306_13063.xml:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 3bbaa0d56b083b6883f45fdf5ce7e169ff1db01d2894119d5f79c4d3bf5a59c7
+  source: arXiv
+  url: https://export.arxiv.org/api/query?id_list=2306.13063
+betterstack.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 01c31fb7bb6daa6e3654d29651fa8cd35b2e175a1796b49a658dc47b4fece616
+  source: Better Stack
+  url: https://betterstack.com/community/guides/ai/jev-vs-clef-decision-model/
+betterstack.txt:
+  note: text extracted from betterstack.html
+  retrieved: '2026-10-31'
+  sha256: c895ce1353f55640d1198d3813a1689cb811681dd19df0d76f2e01c71a3cdabd
+  source: Better Stack
+  url: https://betterstack.com/community/guides/ai/jev-vs-clef-decision-model/
+cloudflare_blog.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: b656c23585a5698b2401d826d8b7b6793ed1bbbb7a9742bf2a60f5f5e8035403
+  source: Cloudflare
+  url: https://blog.cloudflare.com/clef-decision-models
+cloudflare_blog.txt:
+  note: text extracted from cloudflare_blog.html
+  retrieved: '2026-10-31'
+  sha256: c7c4e2eb1c9537801bac34b8a918472831439dfbf93e258d1af12dea0e89fc0a
+  source: Cloudflare
+  url: https://blog.cloudflare.com/clef-decision-models
+cloudflare_clairic.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 3ff71521e5366a3c850073ca31ac323458f4522260a51bc4133f134acaff6ee9
+  source: Cloudflare
+  url: https://blog.cloudflare.com/clairic-extraction-model/
+cloudflare_clairic.txt:
+  note: text extracted from cloudflare_clairic.html
+  retrieved: '2026-10-31'
+  sha256: 10cf57b78b76f5e3e2f0e412c2e9c96b35d3262c9d3fe1637e15d936fac359a6
+  source: Cloudflare
+  url: https://blog.cloudflare.com/clairic-extraction-model/
+hf_api_clef.json:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: bd8fad281828dfd279919b033ee4fbeebe3cb9f46b3abc9ead9532310949fc42
+  source: Hugging Face API
+  url: https://huggingface.co/api/models/Cloudflare/clef
+hf_api_clef.txt:
+  note: text extracted from hf_api_clef.json
+  retrieved: '2026-10-31'
+  sha256: bd8fad281828dfd279919b033ee4fbeebe3cb9f46b3abc9ead9532310949fc42
+  source: Hugging Face API
+  url: https://huggingface.co/api/models/Cloudflare/clef
+hf_api_clef_flash.json:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 202e02042706d023d9e6e6438f94b8fdc5122a31eef81ab6ca49a37e9e9cca1b
+  source: Hugging Face API
+  url: https://huggingface.co/api/models/Cloudflare/clef-flash
+hf_api_clef_flash.txt:
+  note: text extracted from hf_api_clef_flash.json
+  retrieved: '2026-10-31'
+  sha256: 202e02042706d023d9e6e6438f94b8fdc5122a31eef81ab6ca49a37e9e9cca1b
+  source: Hugging Face API
+  url: https://huggingface.co/api/models/Cloudflare/clef-flash
+hf_api_clef_omni.json:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 2adf536dbd3c6454ad5933f58cd03d77f35367b085a4e58bf3b72705cb523d5f
+  source: Hugging Face API
+  url: https://huggingface.co/api/models/Cloudflare/clef-omni
+hf_api_clef_omni.txt:
+  note: text extracted from hf_api_clef_omni.json
+  retrieved: '2026-10-31'
+  sha256: 2adf536dbd3c6454ad5933f58cd03d77f35367b085a4e58bf3b72705cb523d5f
+  source: Hugging Face API
+  url: https://huggingface.co/api/models/Cloudflare/clef-omni
+hf_clef_code.py:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 0e304cf7c6500e8bb59bef7e2afd2c6373f82596dfb3b57d1aa93c175e2dc3a3
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef/raw/main/joint_schema_model.py
+hf_clef_code.txt:
+  note: text extracted from hf_clef_code.py
+  retrieved: '2026-10-31'
+  sha256: 0e304cf7c6500e8bb59bef7e2afd2c6373f82596dfb3b57d1aa93c175e2dc3a3
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef/raw/main/joint_schema_model.py
+hf_clef_flash_license.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef-flash/raw/main/LICENSE
+hf_clef_flash_license.txt:
+  note: text extracted from hf_clef_flash_license.html
+  retrieved: '2026-10-31'
+  sha256: 314d678017b8ed8d2ff2ae9d9c3ad6c25a147cf404ed4d79dca5f0311e71814d
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef-flash/raw/main/LICENSE
+hf_clef_flash_readme.md:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 53a3dc4ac96a1b2f17e6c03d9cf19a50b25ddad8d270fbe655902f6ce68bb4b5
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef-flash/raw/main/README.md
+hf_clef_flash_readme.txt:
+  note: text extracted from hf_clef_flash_readme.md
+  retrieved: '2026-10-31'
+  sha256: 53a3dc4ac96a1b2f17e6c03d9cf19a50b25ddad8d270fbe655902f6ce68bb4b5
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef-flash/raw/main/README.md
+hf_clef_license.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef/raw/main/LICENSE
+hf_clef_license.txt:
+  note: text extracted from hf_clef_license.html
+  retrieved: '2026-10-31'
+  sha256: 314d678017b8ed8d2ff2ae9d9c3ad6c25a147cf404ed4d79dca5f0311e71814d
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef/raw/main/LICENSE
+hf_clef_readme.md:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 16ee04d296b1ef5edcdb3c4d3d3cd369acdc627fb5d255b34264a73e224d821a
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef/raw/main/README.md
+hf_clef_readme.txt:
+  note: text extracted from hf_clef_readme.md
+  retrieved: '2026-10-31'
+  sha256: 16ee04d296b1ef5edcdb3c4d3d3cd369acdc627fb5d255b34264a73e224d821a
+  source: Cloudflare (Hugging Face)
+  url: https://huggingface.co/Cloudflare/clef/raw/main/README.md
+mindstudio.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 327c71161278680deefd68454eebbec420c3e0af0b17473032e7958477a4bf59
+  source: MindStudio
+  url: https://www.mindstudio.ai/blog/jev-system-one-model-launch
+mindstudio.txt:
+  note: text extracted from mindstudio.html
+  retrieved: '2026-10-31'
+  sha256: d25ab6d862b46a396e24b2cfbb42d7d5f8f072f2268d0013791797daea995113
+  source: MindStudio
+  url: https://www.mindstudio.ai/blog/jev-system-one-model-launch
+som_guide.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: fb9bb56b20dc62296d58537622cf1db8efe0cdabd5474642bb2aa4cdb70e17cd
+  source: systemonemodels.org
+  url: https://systemonemodels.org/guides/what-is-a-system-one-model/
+som_guide.txt:
+  note: text extracted from som_guide.html
+  retrieved: '2026-10-31'
+  sha256: f295740455e608da5bb82ca81ef80236ac699ce5e032b7b4ec5d96e6dfb72a83
+  source: systemonemodels.org
+  url: https://systemonemodels.org/guides/what-is-a-system-one-model/
+typesafe_concept.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 020d88e5cde9de3ce5a024cca13591977b5dfc3af0747372f4c2c55a0d02157d
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/concepts/system-one
+typesafe_concept.txt:
+  note: text extracted from typesafe_concept.html
+  retrieved: '2026-10-31'
+  sha256: bb29e6e5ebd63a036442a0e6f4a63427eea76deee1aa0701ed00306b27f2b3d4
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/concepts/system-one
+typesafe_confidence.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 1d94ac7b46d05684601a7f700d642b3713856ee969028986eb9fd66345610f3a
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/confidence
+typesafe_confidence.txt:
+  note: text extracted from typesafe_confidence.html
+  retrieved: '2026-10-31'
+  sha256: 54257ff72099d4e452f9e95359908b4df0a8ee3446ee15d3cde6d588b2ea03dc
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/confidence
+typesafe_jagged.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 7c69087a841aad03a9269e6502932decbae8091d31a6076e2e82aaf6b08dbd7a
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/model-jaggedness/jev-1.13
+typesafe_jagged.txt:
+  note: text extracted from typesafe_jagged.html
+  retrieved: '2026-10-31'
+  sha256: b30b72e0ee911c8a905662c7d192c9d42f3cf93c63bd6ff49bff1b4c210a08eb
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/model-jaggedness/jev-1.13
+typesafe_launch.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 4910ca0376243294bb6c7c868ce1a3b6ca5fce2c6c52681d80e351d7c87437f9
+  source: TypeSafe AI
+  url: https://typesafe.ai/blog/introducing-system-one-models-and-jev
+typesafe_launch.txt:
+  note: text extracted from typesafe_launch.html
+  retrieved: '2026-10-31'
+  sha256: 47449b11ec62c0e87aeb09f3a8748e9cda1eef5c4893f3cbbb0b029601fc7c91
+  source: TypeSafe AI
+  url: https://typesafe.ai/blog/introducing-system-one-models-and-jev
+typesafe_models.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 791b43bbbe55e5bae1156c7c96cef4988512a542f26ad44bb40fb8c10ac61ba0
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/models
+typesafe_models.txt:
+  note: text extracted from typesafe_models.html
+  retrieved: '2026-10-31'
+  sha256: f834a2b34090022c4ffe34d1a0ad83c7bb09681dfc4e03c389fe4d39553d9b60
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/models

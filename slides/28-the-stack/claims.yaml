@@ -1,0 +1,135 @@
+slide: 28
+title: 'Five layers, all open source'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: Five layers, all open source
+  kind: factual
+  priority: medium
+  status: contradicted
+  validation: List each component per layer with its license (pulled from the GitHub API or SPDX headers).
+  sources:
+  - talk/deck.html#28
+  - https://api.deps.dev/v3/projects/
+  - https://ducklake.select/
+  - https://irods.org/license/
+  - https://www.lustre.org/
+  - https://www.vastdata.com/legal/end-user-services-and-license-agreement
+  - https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html
+  - https://www.openstoragenetwork.org/
+  - https://code.claude.com/docs/en/legal-and-compliance
+  - https://idss-mesa.github.io/stack.html
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/licences.csv
+  - data/processed/deck_slide28.json
+  - data/processed/quote_check.csv
+  - src/01_fetch_sources.py
+  - src/02_licences_and_checks.py
+  notes: >-
+    The figure (extracted from the deck) has five layers: user interface (laptop/desktop, K8s container),
+    agentic AI (no product named), data management (DuckLake, S3 API, iRODS, K8s CSI), compute (CyVerse,
+    TACC, ACCESS-CI, NAIRR) and object storage (OSN, AWS S3, VAST, Lustre). Five layers is right. "All open
+    source" is not: VAST is commercial software under an EULA that forbids deriving its source code (f04,
+    f05), and AWS S3 is a commercial cloud service whose API is Amazon's (f06). The software pieces MESA
+    builds on are open source: Kubernetes and CSI (Apache-2.0), DuckLake (MIT, f01), iRODS (BSD-3, f02),
+    Lustre (open source, f03). The compute layer and OSN are facilities and programs, so "open source" does
+    not apply to them. The agentic AI layer names no product; of MESA's four supported clients (f10), Codex
+    CLI (Apache-2.0) and OpenCode (MIT, f09) are open source, Claude Code is under Anthropic's terms (f08),
+    and Antigravity was not checked. MESA's own servers have a LICENSE file (f11) but the public docs do not
+    name the licence; the code was out of scope, so that part stays unverified. Licences for software come
+    from the deps.dev project API (data/processed/licences.csv).
+  proposed_text: 'Five layers, open standards: each layer has an open-source option'
+- id: c2
+  text: Running today on CyVerse, TACC, ACCESS-CI and NAIRR resources
+  kind: factual
+  priority: medium
+  status: partially-supported
+  validation: One deployment link per site.
+  sources:
+  - https://idss-mesa.github.io/stack.html
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  - https://mesa.cyverse.org/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/site_mentions.csv
+  - data/processed/endpoints.csv
+  - data/processed/nsf_award_2632685.json
+  - src/02_licences_and_checks.py
+  notes: >-
+    CyVerse is supported: MESA's public pages say Formation and the public Data Store connector are hosted
+    by CyVerse (f13, f14; developer-reported), and on 2026-10-31 mesa.cyverse.org returned HTTP 200 while the
+    two MCP endpoints answered 400/401 (up, but need an MCP client or sign-in). No public deployment link was
+    found for TACC, ACCESS-CI (e.g. Jetstream2) or NAIRR: MESA's stack page and full docs mention none of
+    them (0 mentions each, site_mentions.csv). The NSF abstract says MESA "will operate" on TACC, OSN, CyVerse
+    and Jetstream-2 through ACCESS-CI (f12), and the award (funded under the NAIRR program, started
+    2026-07-15) is funding, not a NAIRR compute allocation. Web search found no NAIRR Pilot project for MESA.
+    If deployments at TACC or on ACCESS/NAIRR allocations exist, they are not public; the speaker should
+    confirm or reword.
+  proposed_text: 'Running today on CyVerse; TACC, ACCESS-CI and NAIRR resources next.'
+- id: c3
+  text: '[Status: what is live now vs. next 12 months]'
+  kind: placeholder
+  priority: medium
+  status: superseded
+  superseded_note: 'Status placeholder removed from the slide.'
+  validation: Write the status line.
+  sources: []
+  evidence: []
+- id: c4
+  text: 'Notes: Walk top to bottom: user, agentic AI, data management, compute, storage'
+  kind: factual
+  priority: low
+  status: supported
+  validation: Compare the note's layer list with the figure.
+  sources:
+  - talk/deck.html#28
+  - talk/slides.md#slide-28
+  evidence:
+  - data/processed/deck_slide28.json
+  - data/raw/research/facts.csv
+  - src/01_fetch_sources.py
+  notes: >-
+    New claim from the speaker note. The figure's layers, top to bottom, are User Interface, Agentic AI,
+    Data Management, Compute and Object Storage (deck alt text and image), so the order matches. "User" is
+    the figure's icon above the stack; the first layer is the user interface.
+  proposed_text: 'Note: Walk top to bottom: user interface, agentic AI, data management, compute, object storage.'
+- id: c5
+  text: 'Notes: every layer is swappable and open'
+  kind: factual
+  priority: medium
+  status: partially-supported
+  validation: Each layer shows more than one option, and each option is open.
+  sources:
+  - talk/deck.html#28
+  - https://idss-mesa.github.io/stack.html
+  - https://www.vastdata.com/legal/end-user-services-and-license-agreement
+  - https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html
+  evidence:
+  - data/processed/licences.csv
+  - data/processed/deck_slide28.json
+  - data/raw/research/facts.csv
+  notes: >-
+    New claim from the speaker note. Swappable is fair as a design statement: every layer in the figure
+    except agentic AI lists two or more alternatives, and MESA's installer supports four agent clients
+    (f10, developer-reported). "Open" fails for the same reason as c1: AWS S3 and VAST are proprietary
+    (f04-f06), Claude Code is not open source (f08), and compute is facilities rather than software.
+  proposed_text: 'Note: every layer is swappable, and each has an open-source choice.'
+- id: c6
+  text: 'Figure: MESA proposal · NSF Award #2632685'
+  kind: factual
+  priority: low
+  status: supported
+  validation: NSF Award API.
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/processed/nsf_award_2632685.json
+  - src/01_fetch_sources.py
+  notes: >-
+    New claim (figure credit). Award 2632685 is "Research Infrastructure: Category II: MESA
+    (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico, PI Tyson Swetnam,
+    2026-07-15 to 2029-05-31. Proposals are not public, so that the figure comes from the proposal is the
+    speaker's own statement.

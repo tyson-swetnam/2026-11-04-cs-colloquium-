@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mesa-evidence": {
+      "command": "uv",
+      "args": ["run", "python", "slides/10-agentic-ai/src/mesa_tools_server.py"]
+    }
+  }
+}

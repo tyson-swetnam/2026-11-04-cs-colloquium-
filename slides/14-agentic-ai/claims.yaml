@@ -1,0 +1,60 @@
+slide: 14
+title: 'That power, for researchers outside computer science'
+section: 02 · Science
+claims:
+- id: c1
+  text: '[A researcher asks in plain language; the agent finds the data, runs the analysis, and returns a result.]'
+  kind: technical
+  priority: medium
+  status: revise-slide
+  proposed_text: 'Ask in plain language; the agent finds the data, runs the analysis, and returns a result you can audit.'
+  validation: Option 1 chosen 2026-10-31. The revised deck (2026-10-31) shows the placeholder text unbracketed, without 'you can audit'; the agreed edit is still pending. Demo 3 (slide 29) is the end-to-end evidence with a model in the loop.
+  sources: []
+  evidence:
+  - README.md
+- id: c2
+  text: 'Figure: user request -> MCP context and RAG retrieval -> AI agent orchestrator -> iRODS data mesh and DuckLake data lake -> result'
+  kind: technical
+  priority: medium
+  status: partially-supported
+  validation: |
+    The flow run over the real protocol (src/02_mcp_roundtrip.py): an MCP server (src/mesa_tools_server.py) exposes
+    retrieval, a read-only DuckLake query, ontology and citation tools; the official MCP client discovers them and
+    answers a plain-language question from the lake, and the server refuses a write, a wrong-concept term and a
+    fabricated citation.
+  sources:
+  - https://modelcontextprotocol.io/
+  - https://ducklake.select/
+  evidence:
+  - data/processed/mcp_transcript.json
+  - data/processed/mcp_calls.csv
+  notes: |
+    Demonstrated: MCP tools, retrieval (keyword, not vector RAG), the DuckLake lake, the result path, and policy
+    refusals. Not demonstrated here: a model as orchestrator (a scripted plan stands in; no model API in this
+    environment) and the iRODS mesh (slides 22-23). Nuance for a CS audience: in the figure MCP is drawn as
+    "context"; it is mainly the channel through which the orchestrator calls tools (the mesh and the lake).
+- id: c3
+  text: Each box in the figure maps to a component in the MESA repositories
+  kind: factual
+  priority: low
+  status: partially-supported
+  validation: |
+    Checked against MESA's public site and docs (idss-mesa.github.io, Markdown twins), not its code
+    (src/03_mesa_box_map.py -> data/processed/mesa_box_map.csv). Three boxes map to documented,
+    installable components: MCP (mesa-mcp, irods-mcp-server, CyVerse-hosted Formation), the iRODS mesh
+    (CyVerse Data Store via mesa-mcp ds_* tools and irods-mcp-server) and DuckLake (mesa-ducklake, an
+    AVU metadata-history library behind mesa-mcp, not a general data lake). The user-request box is the
+    user's own agent client (Claude Code, Codex CLI, Antigravity, OpenCode) or the MESA Portal apps.
+    RAG retrieval and multi-agent orchestration appear only as architecture layers and innovation goals
+    (NSF award 2026-2029); no component for either is in the installed-server table.
+  sources:
+  - https://idss-mesa.github.io/okf/concepts/home.md
+  - https://idss-mesa.github.io/docs/index.md
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/mesa_box_map.csv
+  notes: |
+    The current deck does not state this claim on slide 14 or in its notes; it matters only if the
+    speaker says the figure is MESA's shipped architecture. The repositories themselves were not read
+    (out of scope for this session); whether code for RAG or an orchestrator exists in them is unverified.
+  proposed_text: 'If said aloud: "The MCP, data-mesh and DuckLake boxes ship in MESA today; RAG and multi-agent orchestration are on its roadmap."'

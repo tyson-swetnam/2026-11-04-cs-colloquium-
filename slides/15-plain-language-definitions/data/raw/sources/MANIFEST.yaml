@@ -1,0 +1,48 @@
+docs_index.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: 3f790087135b571143c16099702154e0bac07e756cf6f167610ff19a3e438e26
+  source: MESA documentation (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/index.md
+docs_install_index.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: 00122a8460a1efbef357428ae0fd7de4c1db84009ff0205cb92181fe68041e94
+  source: MESA documentation (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/install/index.md
+docs_llms-full.txt:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: 9b8a11e9389293af1c9d175a25926566be13b8dff03ebd66a6c5ba89ab3f19d7
+  source: MESA documentation (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/llms-full.txt
+docs_servers_formation-mcp_index.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: ed02baa9034f0292c902a852b7f0729d5a1eefd35b1595f92e10d4e873617195
+  source: MESA documentation (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
+docs_servers_irods-mcp-server_index.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: fda9a28e8d676e7111bcc582bf67a36c72639f68313d6d449e46fe3cead3aece
+  source: MESA documentation (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md
+docs_servers_mesa-mcp_index.md:
+  note: Markdown twin; public docs only
+  retrieved: '2026-10-31'
+  sha256: 081b9db894aaf919edb56a1ff876b11a4c0b0abbfde6ba8fd21c64c16ec50298
+  source: MESA documentation (idss-mesa.github.io)
+  url: https://idss-mesa.github.io/docs/servers/mesa-mcp/index.md
+mcp_intro.html:
+  note: USB-C analogy and build-once sentence
+  retrieved: '2026-10-31'
+  sha256: 3eafbbff095a1e4d357ba09ead142eb5e1fd014e6cbe66294ce666cd157f305b
+  source: Model Context Protocol documentation
+  url: https://modelcontextprotocol.io/docs/getting-started/intro
+okf_concepts_home.md:
+  note: context only
+  retrieved: '2026-10-31'
+  sha256: 4a2394ae047a7d405653b626f3549594712a9016888c1406cd31f2017e07fb66
+  source: MESA home page Markdown twin
+  url: https://idss-mesa.github.io/okf/concepts/home.md
