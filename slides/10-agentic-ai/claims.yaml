@@ -4,10 +4,11 @@ section: 02 · Science
 claims:
 - id: c1
   text: '[A researcher asks in plain language; the agent finds the data, runs the analysis, and returns a result.]'
-  kind: placeholder
+  kind: technical
   priority: medium
-  status: in-progress
-  validation: Write the line; candidates in README.md. Demo 3 (slide 23) is the end-to-end evidence with a model in the loop.
+  status: revise-slide
+  proposed_text: 'Ask in plain language; the agent finds the data, runs the analysis, and returns a result you can audit.'
+  validation: Option 1 chosen 2026-10-31. Demo 3 (slide 23) is the end-to-end evidence with a model in the loop.
   sources: []
   evidence:
   - README.md

@@ -8,7 +8,7 @@ Section: 02 · Science · Slide text and notes: [`talk/slides.md`](../../talk/sl
 
 ## Candidate lines
 
-1. *"Ask in plain language; the agent finds the data, runs the analysis, and returns a result you can audit."*
+1. **Chosen (2026-10-31):** *"Ask in plain language; the agent finds the data, runs the analysis, and returns a result you can audit."*
 2. *"A researcher asks a question in plain language; the agent finds the data, runs the analysis, and shows its work."*
 3. *"You ask the question. The agent finds the data, runs the analysis, and returns the result with every step recorded."*
 
