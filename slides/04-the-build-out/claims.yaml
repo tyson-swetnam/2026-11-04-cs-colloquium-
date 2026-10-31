@@ -1,0 +1,104 @@
+slide: 4
+title: The build-out
+section: 01 · Fear
+claims:
+- id: c1
+  text: The largest single investment in human history
+  kind: quantitative
+  priority: high
+  status: contradicted
+  proposed_text: 'On track to be the biggest economic bet in U.S. history'
+  validation: |
+    Rank the data-center build against every comparator in comparators.yaml under each
+    measure in evidence/econ.py, with share of GDP as the deciding measure (decision 2026-10-30).
+  sources:
+  - https://x.com/finmoorhouse/status/2044933442236776794
+  - https://www.brookings.edu/articles/financing-the-ai-buildout/
+  evidence:
+  - data/processed/ranking.csv
+  - figures/fig2_cumulative_gdp.png
+  - figures/fig3_peak_year.png
+  - figures/fig5_boom_intensity.png
+  notes: |
+    Not true of what has been spent. Through 2025 the global data-center build is 2.9% of one
+    year's US GDP (5.0% with the 2026 estimate); US railroads 1830-1900 were 108%, the Interstates
+    8.2%, telecom 1995-2002 8.9%. Its biggest year (2.0% of GDP in 2026, estimated) is below the
+    railroads' 5.4% in 1871 and level with the Marshall Plan's 2.2%. "Human history" also outruns
+    the evidence, which is US-only.
+    What the evidence does support, as a projection: Van Nieuwerburgh (BPEA 2026) projects
+    3.63% of GDP a year over 2025-32, above the railroads' 2.24% average for 1870-90.
+    Suggested wording: "On track to be the biggest economic bet in U.S. history" with that citation.
+- id: c2
+  text: 'US data-center build: $560B through 2026'
+  kind: quantitative
+  priority: high
+  status: contradicted
+  proposed_text: '$1.5 trillion since 2020 · 2% of U.S. GDP this year: the most since the railroads'
+  validation: |
+    Reproduce the figure from a named series under a stated scope (decision 2026-10-30: show both
+    US-located and global).
+  sources:
+  - https://apps.bea.gov/national/Release/TXT/NipaDataA.txt
+  - https://data.sec.gov/api/xbrl/companyfacts/
+  evidence:
+  - data/processed/spend_long.csv
+  - data/processed/hyperscaler_capex_annual.csv
+  notes: |
+    No definition reproduces $560B. Through 2026 (2026 estimated): global data-center capex of the
+    five hyperscalers is $1.48T nominal ($818B through 2025); US data-center buildings (BEA NIPA
+    Table 5.4.5) are $205B ($136B through 2025). Suggested wording: "$1.5 trillion since 2020;
+    2% of US GDP this year" with SEC EDGAR / BEA as the source.
+- id: c3
+  text: $800B on the 2027 run rate
+  kind: quantitative
+  priority: high
+  status: partially-supported
+  validation: |
+    Find the forecast this comes from and compare with company capex.
+  sources:
+  - https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf
+  evidence:
+  - data/processed/hyperscaler_capex_annual.csv
+  - data/processed/validation.csv
+  notes: |
+    About $800B is the five hyperscalers' total capex for 2026, not a 2027 run rate:
+    $822B here (Q1-Q3 actuals scaled), $800.5B in Van Nieuwerburgh's Figure 1 (actuals plus
+    guidance). The data-center share of that is about $660B. No 2027 forecast was checked;
+    the WSJ cites FactSet analysts at $4.2T over the four years ending 2029.
+- id: c4
+  text: Cumulative cost in 2025 dollars · FHWA, Epoch AI, NASA, Gartner · After Fin Moorhouse
+  kind: attribution
+  priority: medium
+  status: revise-slide
+  proposed_text: 'Share of GDP · SEC EDGAR, BEA, MeasuringWorth, Van Nieuwerburgh (Brookings, 2026) · After Fin Moorhouse'
+  validation: |
+    The footer lists the sources the chart on the slide actually uses.
+  sources: []
+  evidence:
+  - figures/fig1_baseline_cpi.png
+  notes: |
+    Moorhouse's chart is in 2024 dollars and cites company reports, Epoch AI, FHWA, NASA, CRS,
+    GAO and Brookings; Gartner is not among them. If a chart from this folder goes on the slide,
+    use: "SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA/Planetary Society, Ulmer (1960);
+    Van Nieuwerburgh (2026). After Fin Moorhouse."
+- id: c5
+  text: 'Notes: six years of data-center capex has already outrun 71 years of railroads and 37 years of the Interstates'
+  kind: quantitative
+  priority: high
+  status: partially-supported
+  proposed_text: "In today's dollars, six years of data centers outspent 71 years of railroads. Measured against the economy that paid for them, the railroads were about 37 times bigger. Data centers are the fastest build-out, not yet the biggest."
+  validation: |
+    Re-test Moorhouse's comparison under share of GDP.
+  sources:
+  - https://x.com/finmoorhouse/status/2044933442236776794
+  evidence:
+  - figures/fig1_baseline_cpi.png
+  - figures/fig2_cumulative_gdp.png
+  - data/processed/ranking.csv
+  - data/processed/moorhouse_reconciliation.csv
+  notes: |
+    True in inflation-adjusted dollars: $844B (2024 $) for data centers 2020-25 vs. $700B for the
+    Interstates and $291B for the railroads (our railroad series is about half Moorhouse's $550B).
+    Reversed in share of GDP: 2.9% vs. 8.2% (Interstates) and 108% (railroads), so the railroads
+    were about 37 times larger relative to the economy that built them. Say both, or say
+    "in today's dollars".

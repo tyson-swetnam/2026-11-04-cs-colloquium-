@@ -1,0 +1,12 @@
+field,text,curie,case,written,reason,ols_label
+organism,mouse,NCBITaxon:10090,slide 19,True,resolves,Mus musculus
+organism,Mouse,NCBITaxon:10090,slide 19,True,resolves,Mus musculus
+organism,M. musculus,NCBITaxon:10090,slide 19,True,resolves,Mus musculus
+assay,RNAseq,OBI:0001271,slide 19,True,resolves,transcription profiling by RNA sequencing assay
+assay,rna-seq,OBI:0001271,slide 19,True,resolves,transcription profiling by RNA sequencing assay
+assay,transcriptome,OBI:0001271,"slide 19: a curator's mapping, not a name",False,'transcriptome' does not match OBI:0001271 (transcription profiling by RNA sequencing assay),transcription profiling by RNA sequencing assay
+cell_line,HeLa cells,CLO:0003684,slide 19,True,resolves,HeLa cell
+organism,mouse,NCBITaxon:10116,"real CURIE, wrong concept (rat)",False,'mouse' does not match NCBITaxon:10116 (Rattus norvegicus),Rattus norvegicus
+assay,RNA-seq,OBI:0009999,invented CURIE,False,OBI:0009999 does not exist in OLS,
+organism,HeLa,CLO:0003684,"right term, wrong field",False,CLO is not allowed for this field (expects NCBITaxon),
+assay,sequencing platform,OBI:0000050,retired (obsolete) term,False,OBI:0000050 is obsolete,obsolete_platform

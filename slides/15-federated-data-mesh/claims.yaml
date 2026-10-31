@@ -1,0 +1,36 @@
+slide: 15
+title: Federated data mesh
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: External agent → [policy that stops it]
+  kind: placeholder
+  priority: high
+  status: unverified
+  validation: Write the policy; demonstrate it with an iRODS rule in a test zone.
+  sources: []
+  evidence: []
+- id: c2
+  text: Rogue agent → [policy that stops it]
+  kind: placeholder
+  priority: high
+  status: unverified
+  validation: Write the policy; demo 1 (slide 17) is the evidence.
+  sources: []
+  evidence: []
+- id: c3
+  text: Poorly operated agent → [policy that stops it]
+  kind: placeholder
+  priority: high
+  status: unverified
+  validation: Write the policy; demonstrate it.
+  sources: []
+  evidence: []
+- id: c4
+  text: 'Notes: iRODS rules fire on ingest, no deleted datasets, permission-based access; data stays where it lives'
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: Show the rule-engine configuration (policy enforcement points) that implements each property.
+  sources: []
+  evidence: []

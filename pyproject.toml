@@ -1,0 +1,30 @@
+[project]
+name = "colloquium-evidence"
+version = "0.1.0"
+description = "Code and data that back every claim in 'How I Learned to Stop Worrying and Love the AI' (UNM CS Colloquium, 2026-11-04)"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "duckdb>=1.3",
+    "pytz>=2024.1",
+    "jsonschema>=4.22",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+    "pyyaml>=6.0",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["evidence"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

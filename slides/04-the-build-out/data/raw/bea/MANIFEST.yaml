@@ -1,0 +1,18 @@
+NipaDataA.txt:
+  license: U.S. Bureau of Economic Analysis, NIPA flat files (public domain)
+  retrieved: '2026-10-30'
+  sha256: 9f8e96bb72181d14d7b555f3e1b09c71e900fb8de4c305dc9217424de4757f27
+  source: BEA NIPA
+  url: https://apps.bea.gov/national/Release/TXT/NipaDataA.txt
+NipaDataQ.txt:
+  license: U.S. Bureau of Economic Analysis, NIPA flat files (public domain)
+  retrieved: '2026-10-30'
+  sha256: b473d0288f845e3636bc9851e0758aaa84e884623c7008fbfcf6f8b4ddaed092
+  source: BEA NIPA
+  url: https://apps.bea.gov/national/Release/TXT/NipaDataQ.txt
+SeriesRegister.txt:
+  license: U.S. Bureau of Economic Analysis, NIPA flat files (public domain)
+  retrieved: '2026-10-30'
+  sha256: 159175ff182598eaa0b99ac09724b8c0c7844276c52dab0cd946f21c5dc50f6d
+  source: BEA NIPA
+  url: https://apps.bea.gov/national/Release/TXT/SeriesRegister.txt

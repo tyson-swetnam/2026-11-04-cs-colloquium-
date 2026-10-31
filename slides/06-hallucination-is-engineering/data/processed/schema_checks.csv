@@ -1,0 +1,9 @@
+case,accepted,errors
+conforming record,True,
+prose around the JSON,False,not JSON: Expecting value
+missing required field,False,'doi' is a required property
+number as a string,False,'24' is not of type 'integer'
+free text instead of a CURIE,False,'mouse' does not match '^NCBITaxon:\\d+$'
+invented extra field,False,Additional properties are not allowed ('confidence' was unexpected)
+trailing comma,False,not JSON: Illegal trailing comma before end of object
+well-formed but false (fake DOI),True,

@@ -1,0 +1,169 @@
+# Programs and capital booms put on the same axes as the data-center build.
+#
+#   id            matches the program name in data/processed/*.csv
+#   financing     public | private | mixed
+#   years         first and last year of spend used here. Moorhouse's programs use his spans;
+#                 canals, electrification and highways use Van Nieuwerburgh's boom windows
+#   in_moorhouse  value and span printed on Moorhouse's chart (2024 dollars); null if new here
+#   series        where the annual nominal spend comes from
+#   csv           for hand-assembled series: file in data/raw/programs/ and the column to use
+#                 (default nominal_usd_millions); null when no annual series could be built.
+#                 BEA and SEC series are wired in src/03_normalize.py instead
+#
+# Decisions (2026-10-30): normalize by share of GDP; show the data-center build both as
+# global spend by US hyperscalers and as US-located; post-war = US private fixed investment;
+# oil and gas = both the 1970s boom and the shale boom.
+
+programs:
+  - id: datacenters_global
+    name: Hyperscaler data-center capex (global)
+    financing: private
+    years: [2020, 2026]
+    in_moorhouse: {value_busd: 930, span_years: 6, through: 2025}
+    series:
+      - "SEC EDGAR XBRL company facts: cash purchases of property and equipment, Amazon, Microsoft, Alphabet, Meta, Oracle; calendarized from fiscal quarters"
+      - "Data-center share 55% (2020) rising linearly to 80% (2026), Moorhouse's assumption from Epoch AI and Platformonomics"
+    notes: "2026 is year-to-date through Q3 scaled by each firm's 2025 seasonality. Finance leases are excluded."
+
+  - id: datacenters_us_structures
+    name: US data-center construction (BEA)
+    financing: private
+    years: [2020, 2026]
+    in_moorhouse: null
+    series: ["BEA NIPA Table 5.4.5 line 5, private fixed investment in structures: data centers (LA001282)"]
+    notes: "US-located buildings only; servers and chips are excluded, so this is a floor. 2026 = mean of Q1-Q3 SAAR."
+
+  - id: manhattan
+    name: Manhattan Project
+    financing: public
+    years: [1942, 1946]
+    in_moorhouse: {value_busd: 36, span_years: 5}
+    series: ["Hewlett & Anderson (1962), The New World, Appendix 2 (monthly expenditures)"]
+    csv: {file: manhattan.csv}
+    notes: "Calendar years; 1942 is Aug-Dec only."
+
+  - id: apollo
+    name: Apollo Program
+    financing: public
+    years: [1960, 1973]
+    in_moorhouse: {value_busd: 257, span_years: 14}
+    series: ["The Planetary Society, Cost of Apollo (Dreier), sheet 'Apollo Program (original $)'"]
+    csv: {file: apollo.csv}
+    notes: "NASA fiscal-year obligations, direct plus indirect; excludes Gemini and robotic lunar programs."
+
+  - id: interstate
+    name: Interstate Highway System
+    financing: public
+    years: [1956, 1992]
+    in_moorhouse: {value_busd: 620, span_years: 37}
+    series: ["FHWA Highway Statistics Summary to 1995, Table FA-203; FHWA final cost estimate (1991)"]
+    csv: {file: interstate.csv, column: total_incl_state_match_est_usd_millions}
+    notes: "Federal Interstate expenditures scaled by 128.9/114.3 for the state match, per FHWA's 1991 final cost estimate. Fiscal years."
+
+  - id: marshall
+    name: Marshall Plan
+    financing: public
+    years: [1949, 1952]
+    in_moorhouse: {value_busd: 170, span_years: 4}
+    series: ["USAID Greenbook obligations (Heiss mirror), cross-checked to CRS R45079 Table 2"]
+    csv: {file: marshall.csv}
+    notes: "Obligations by fiscal year; FY1949 covers 15 months from Apr. 3, 1948."
+
+  - id: f35
+    name: F-35 Program
+    financing: public
+    years: [2001, 2025]
+    in_moorhouse: {value_busd: 400, span_years: 25}
+    series: ["CRS R48304 (program total only)"]
+    csv: null
+    notes: "Not reproduced: no annual series could be retrieved (DoD Selected Acquisition Reports blocked). CRS gives $401.1B then-year for the full airframe program, not spend to date."
+
+  - id: iss
+    name: International Space Station
+    financing: public
+    years: [1985, 2011]
+    in_moorhouse: {value_busd: 150, span_years: 27}
+    series: ["The Planetary Society historical NASA budget (FY2008+); CRS IB93017 (period totals)"]
+    csv: null
+    notes: "Not reproduced: annual NASA actuals exist only from FY2008; FY1985-2007 only as CRS period totals. data/raw/programs/iss.csv keeps what there is."
+
+  - id: railroads
+    name: US railroads
+    financing: mixed
+    years: [1830, 1900]
+    in_moorhouse: {value_busd: 550, span_years: 71}
+    series:
+      - "Ulmer (1960) Tables C-1/C-10, gross capital expenditures of steam railroads incl. equipment, 1870-1900 (current $)"
+      - "1830-1869 derived: Fishlow construction-cost totals (via Gallman & Rhode 2020, Table 10.6) spread by miles built (NBER Macrohistory a02082a)"
+      - "Cross-check: Gallman revised railroad construction and GNP, constant 1860 $ (Rhode 2002, NBER WP 8860)"
+    csv: {file: railroads.csv}
+    notes: "Private capital with large public land grants and bond guarantees. Rhode asks users to note that Gallman's data 'were not constructed for analysis as annual series.'"
+
+  - id: canals
+    name: Canals
+    financing: public
+    years: [1836, 1841]
+    in_moorhouse: null
+    series: ["Cranmer (1960), Table 3, annual canal investment 1815-1860"]
+    csv: {file: canals.csv}
+    notes: "Van Nieuwerburgh's boom window. Mostly state-financed."
+
+  - id: electrification
+    name: Electrification
+    financing: private
+    years: [1905, 1925]
+    in_moorhouse: null
+    series: ["Ulmer (1960) Table D-1, gross capital expenditures of private electric light and power utilities"]
+    csv: {file: electrification.csv}
+    notes: "Van Nieuwerburgh's boom window. Private utilities only; he also allocates municipal plant, so this runs lower."
+
+  - id: highways
+    name: Highways (all governments)
+    financing: public
+    years: [1956, 1973]
+    in_moorhouse: null
+    series: ["FHWA Highway Statistics 2014, Table DISB-C, capital outlay by all levels of government"]
+    csv: {file: highways_all.csv}
+    notes: "Van Nieuwerburgh's boom window; all highways, not only the Interstate."
+
+  - id: oil_gas_1970s
+    name: 1970s oil and gas boom
+    financing: private
+    years: [1973, 1982]
+    in_moorhouse: null
+    series: ["BEA NIPA Table 5.4.5 line 25, private structures: petroleum and natural gas (C319RC)"]
+    notes: "Drilling and well structures; excludes oilfield machinery."
+
+  - id: oil_gas_shale
+    name: Shale oil and gas boom
+    financing: private
+    years: [2008, 2015]
+    in_moorhouse: null
+    series: ["BEA NIPA Table 5.4.5 line 25 (C319RC)"]
+    notes: "Ended in the 2015-16 price collapse and a wave of defaults."
+
+  - id: telecom
+    name: Telecom and fiber build-out
+    financing: private
+    years: [1995, 2002]
+    in_moorhouse: null
+    series:
+      - "BEA NIPA Table 5.5.5 line 5, communication equipment (C275RC)"
+      - "BEA NIPA Table 5.4.5 line 23, communication structures (C314RC)"
+    notes: "All buyers of communication equipment, not only carriers."
+
+  - id: postwar
+    name: Post-war US private investment
+    financing: private
+    years: [1946, 1960]
+    in_moorhouse: null
+    series: ["BEA NIPA Table 1.1.5 line 8, private fixed investment (A007RC)"]
+    notes: "Economy-wide, residential and nonresidential: a ceiling for what a whole economy's private build-out looks like, not a single project."
+
+# Denominators and price indexes (data/processed/macro.csv)
+macro:
+  - {id: us_gdp_nominal, series: "MeasuringWorth US nominal GDP 1790-2025 (Johnston & Williamson); 2026 extended with BEA Q1-Q3 growth"}
+  - {id: us_gdp_deflator, series: "MeasuringWorth GDP deflator (2017=100); 2026 extended with BEA"}
+  - {id: us_population, series: "MeasuringWorth population; 2026 extended at the 2025 growth rate"}
+  - {id: us_cpi, series: "MeasuringWorth CPI 1774-2025; 2026 extended with the GDP deflator"}
+  - {id: world_gdp_nominal, series: "World Bank WDI NY.GDP.MKTP.CD; 2026 extended with US nominal growth"}

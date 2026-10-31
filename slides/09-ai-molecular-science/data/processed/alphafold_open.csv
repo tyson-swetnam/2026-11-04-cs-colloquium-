@@ -1,0 +1,5 @@
+accession,protein,organism,served,model_version,mean_plddt,licence_in_file,commercial_use_stated
+P69905,Hemoglobin subunit alpha,Homo sapiens,True,6,98.06,CC-BY-4.0 license,True
+P01942,Hemoglobin subunit alpha,Mus musculus,True,6,97.62,CC-BY-4.0 license,True
+P0A7V8,Small ribosomal subunit protein uS4,Escherichia coli (strain K12),True,6,93.56,CC-BY-4.0 license,True
+Q9FY48,E3 ubiquitin-protein ligase KEG,Arabidopsis thaliana,True,6,76.5,CC-BY-4.0 license,True

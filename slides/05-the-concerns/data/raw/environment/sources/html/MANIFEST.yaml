@@ -1,0 +1,72 @@
+abqj_pnm_alltime_high.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 605138f193947e6ccf4b5775aec5251b17d4589faca48daacadd265bb22b129c
+abqj_supreme_court_lifts_stays.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 6a9dc21ddfc18107ca0a6c1d8742c99da653afe5afeb95e782672a9f4d9e9a2f
+doe_lbnl_report_release_2024-12-20.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: daf0057c9b2bab22fa3277eb65a226fdf46425d4643f5d900ffb549dfa2c4ef2
+eia_nm_profile.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 113b14030c4e11d0b8820de91092928adcca37c79075151d81e15cf26c2fad49
+eia_nm_state_tables.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 4e4e6017266d4e084f972aa40351a0e70bf39524bece07cd07ebb436480e6fb2
+nmed_10803_posts.json:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: b233a78fac8288caf8c6f8435db4859663eaf8b1ee3a6c7b297b6f886b76f231
+nmed_docketed.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 6c6e39787dbd04efa13fd4f76c3b506f5ab46538feeb6421279f85151b5bc72e
+nmed_public_notices.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 450a1881795a6fcc915d60992059e42f48844f8a02a314c07f1a0da7fa787d08
+softbank_stargate_20250924.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 7221ded84fb37b25bf3459e3e360c0ae22f703a72139cd0b38bcc45b4106bb82
+www.abqjournal.com_business_doa-ana-county-approves-historic-165b-bond-for-data-center_680373.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 5a3641484cefd0db76d656c54cf76d4993428d492531e27d1d84ab3a588f8fc4
+www.abqjournal.com_business_hearing-officer-rejects-bid-to-toss-revised-project-jupiter-air-permit_3150570.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 8e41983555f20a8356eae63d3b71951c76ff8162f54a4489bd2a22d2ca5ceef2
+www.abqjournal.com_news_doa-ana-county-seeks-answers-on-project-jupiter-water-use_3022316.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: e31b5a9d8e693dc4d8761ec7f12c83776869138c3985bd119f1b47fe2a5cdc4a
+www.abqjournal.com_news_project-jupiter-in-potential-breach-of-county-agreement_3150559.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 38fd44834a5aaa820e8fa2d1810a357ba7ed0f67935d4a870d03d4d4c787a920
+www.kob.com_new-mexico_nm-supreme-court-delivers-two-blows-to-oracle-data-center-in-southern-new-mexico_.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 12ab1de4b35c9a41d959516657ace8605300c4cdb782a4fc28eb1dd46592d139
+www.krwg.org_krwg-news_2025-09-19_dona-ana-county-commissioners-vote-to-move-forward-on-irb-for-project-jupiter.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 0d59d136163bee243c5a1f97c152faf8280e2f01991834abd47c86e2eefbd36a
+www.oracle.com_news_announcement_oracle-proposes-plan-to-offset-customers-utility-costs-2026-10-13_.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 6dd4c3fc02a01875e8a09755ade6931bc6def7c453957b12a2d850f39293449c
+www.oracle.com_news_announcement_project-jupiter-2026-07-28_.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 83b98ebaace784d03262806d421816d3fdc66ae9cfdcc72c34934c1f35e48ad0
+www.oracle.com_news_announcement_project-jupiter-statement-on-construction-permitting-2026-09-14_.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: e4a1c8e54505272b6636e5304d9f43e66fb803f9642086511a9aecbf09bdb942

@@ -1,0 +1,10 @@
+quantity,value,ratio,compared_to
+"US data centers 2024 (LBNL), TWh",192,6.337,x NM retail sales
+"Project Jupiter nameplate, MW",2462,1.087,"x PNM all-time peak (2,264 MW)"
+"Project Jupiter nameplate, MW",2462,0.2071,x NM summer generating capacity
+"Project Jupiter at 1,600 MW cap, TWh/yr (upper bound)",14.02,0.4626,x NM retail sales
+"Project Jupiter at nameplate, TWh/yr (upper bound)",21.57,0.7119,x NM retail sales
+nm_retail_sales_twh,30.3,1,EIA 2024
+nm_generation_twh,39.7,1,EIA 2024
+nm_summer_capacity_mw,1.189e+04,1,EIA 2024
+nm_power_co2_mt,13.4,1,EIA 2024

@@ -1,0 +1,19 @@
+measuringworth_us_cpi.csv:
+  license: MeasuringWorth (free for research use with citation)
+  retrieved: '2026-10-30'
+  sha256: 0cc9fd8b1abb550716bea2acdfe36654c7b0703393a484dfd8182cf94050e7c4
+  source: Officer and Williamson, 'The Annual Consumer Price Index for the United
+    States, 1774-Present,' MeasuringWorth, 2026
+  url: https://www.measuringworth.com/datasets/uscpi/export.php?year_source=1774&year_result=2025
+measuringworth_us_gdp.csv:
+  license: MeasuringWorth (free for research use with citation)
+  retrieved: '2026-10-30'
+  sha256: f5a7a349a0334fe82ba671de3d34cf8169784dcd310b2bab1d3d84f79a32e069
+  source: Williamson, 'What Was the U.S. GDP Then?' MeasuringWorth, 2026
+  url: https://www.measuringworth.com/datasets/usgdp/export.php?year_source=1790&year_result=2025&use[]=NOMINALGDP&use[]=REALGDP&use[]=GDPDEFLATION&use[]=POPULATION&use[]=NOMGDPCP
+worldbank_gdp_current_usd.json:
+  license: World Bank World Development Indicators (CC BY 4.0)
+  retrieved: '2026-10-30'
+  sha256: 0a61a076d22c72cdd80e94040c38cb4c5017bb86da7dfae4f42ad06ce830cafe
+  source: World Bank WDI NY.GDP.MKTP.CD
+  url: https://api.worldbank.org/v2/country/WLD;USA/indicator/NY.GDP.MKTP.CD?format=json&date=1960:2026&per_page=500

@@ -218,3 +218,38 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- colloquium-evidence ---
+# Large downloads are re-fetched from the URL in MANIFEST.yaml; keep anything
+# small (<5 MB) committed so a figure can be rebuilt after the source moves.
+slides/*/data/raw/**/*.zip
+slides/*/data/raw/**/*.parquet
+slides/*/data/cache/
+slides/04-the-build-out/data/raw/bea/*.txt
+slides/04-the-build-out/data/raw/sec/*.json
+slides/05-the-concerns/data/raw/sec/*.json
+# Slide 05 research documents: logged in each sources/MANIFEST.yaml, not committed
+slides/05-the-concerns/data/raw/*/sources/*
+!slides/05-the-concerns/data/raw/*/sources/MANIFEST.yaml
+!slides/05-the-concerns/data/raw/*/sources/html/
+slides/05-the-concerns/data/raw/*/sources/html/*
+!slides/05-the-concerns/data/raw/*/sources/html/MANIFEST.yaml
+!slides/05-the-concerns/data/raw/*/sources/*/
+slides/05-the-concerns/data/raw/*/sources/*/*
+!slides/05-the-concerns/data/raw/*/sources/*/MANIFEST.yaml
+# Program source documents (PDFs, spreadsheets): logged in MANIFEST.yaml, re-download from the URL
+slides/04-the-build-out/data/raw/programs/sources/*
+!slides/04-the-build-out/data/raw/programs/sources/MANIFEST.yaml
+slides/04-the-build-out/data/raw/programs/work/
+.DS_Store
+
+# Slide 06: API response caches and third-party documents
+slides/06-hallucination-is-engineering/data/cache/
+slides/06-hallucination-is-engineering/data/raw/*/sources/*
+!slides/06-hallucination-is-engineering/data/raw/*/sources/MANIFEST.yaml
+slides/06-hallucination-is-engineering/data/processed/provenance/
+slides/08-nobel-prizes-2024/data/raw/sources/*
+!slides/08-nobel-prizes-2024/data/raw/sources/MANIFEST.yaml
+slides/09-ai-molecular-science/data/cache/
+slides/09-ai-molecular-science/data/raw/*/sources/*
+!slides/09-ai-molecular-science/data/raw/*/sources/MANIFEST.yaml

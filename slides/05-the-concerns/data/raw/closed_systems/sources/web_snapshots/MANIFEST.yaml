@@ -1,0 +1,36 @@
+arc_evo2_news.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 2a43d7ecd7cc947d7b47e7f3ddcd363a6eb428ad4ea2927581b5f44f6bd954f8
+cc_using_cc_works_for_ai_training.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: cc969815b9debe496e0cee696d3cf65b4abc5487d8095812eaf77fcfb1d7224f
+cup_annual_report_2025_genai.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: a9df6de6ba10341733731074e509b43300df635b31e2f1a41143211324bc906d
+nsf_pappg24-1_supplement2.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 8e9a109b3f0170a67d0052b2ef66017fc2c71c1a2a89955f14ae85ca5cc865e6
+oup_how_are_researchers_responding_to_ai.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 09a528c735f223e661010d277a9381c1b439a44a52c8ee9471b2efe3924f44fb
+the_oup_survey.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 2ab63f23472241e532606995a7533eec828cd553093dadba186672faa64e42ea
+thebookseller_sage_ai.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 66406908a4c0bb3a07b9ac7c921629c385439f8694c8bd9e60f0d7bf47f58b75
+thebookseller_tf_authors_shocked.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 1fd74af5b02616bf739a64e429b76958761c42791c6bfd4e3547ab901126ce2d
+thebookseller_wiley_cup_oup_ai.html:
+  note: saved 2026-10-30 by the research subagent; source URLs are in facts.csv
+  retrieved: '2026-10-30'
+  sha256: 2584de29f9ecbc69c9280133aa58e0245fe4028f8516055f723003a7e0a78806

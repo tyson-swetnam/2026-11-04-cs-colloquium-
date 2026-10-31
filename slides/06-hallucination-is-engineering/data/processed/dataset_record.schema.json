@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dataset record written by an agent",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "organism",
+    "assay",
+    "n_samples",
+    "doi"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 10
+    },
+    "organism": {
+      "type": "string",
+      "pattern": "^NCBITaxon:\\d+$"
+    },
+    "assay": {
+      "type": "string",
+      "pattern": "^OBI:\\d{7}$"
+    },
+    "cell_line": {
+      "type": "string",
+      "pattern": "^CLO:\\d{7}$"
+    },
+    "n_samples": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "doi": {
+      "type": "string",
+      "pattern": "^10\\.\\d{4,9}/\\S+$"
+    }
+  }
+}

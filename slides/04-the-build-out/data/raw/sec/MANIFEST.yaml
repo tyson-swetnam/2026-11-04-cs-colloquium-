@@ -1,0 +1,30 @@
+companyfacts_alphabet.json:
+  license: SEC EDGAR XBRL company facts (public domain)
+  retrieved: '2026-10-30'
+  sha256: ec4a3095d634583925b5ea450db8a5ed974dc48f6f1b4f594022310bc78d4032
+  source: SEC EDGAR company facts, Alphabet
+  url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json
+companyfacts_amazon.json:
+  license: SEC EDGAR XBRL company facts (public domain)
+  retrieved: '2026-10-30'
+  sha256: acddb7c0a6973a1fd08372de3b292298a34eae7f42a7eedc4bdebd3ac659c8fd
+  source: SEC EDGAR company facts, Amazon
+  url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json
+companyfacts_meta.json:
+  license: SEC EDGAR XBRL company facts (public domain)
+  retrieved: '2026-10-30'
+  sha256: b0d0d92870b68488cec086cffd83514f2cc6c80d3e8c4f91e192b17ce3e7c946
+  source: SEC EDGAR company facts, Meta
+  url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json
+companyfacts_microsoft.json:
+  license: SEC EDGAR XBRL company facts (public domain)
+  retrieved: '2026-10-30'
+  sha256: 464cc12cc4796c90a6a0c709eb4920788aa7d4d5eee8b44f2d11d7d44804ae37
+  source: SEC EDGAR company facts, Microsoft
+  url: https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json
+companyfacts_oracle.json:
+  license: SEC EDGAR XBRL company facts (public domain)
+  retrieved: '2026-10-30'
+  sha256: 65523545f040abaea1dfcf321da2a5aec85e7f34387244b0ffcb26e4c8707f7d
+  source: SEC EDGAR company facts, Oracle
+  url: https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json

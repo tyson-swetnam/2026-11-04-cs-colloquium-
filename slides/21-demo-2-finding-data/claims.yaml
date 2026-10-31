@@ -1,0 +1,12 @@
+slide: 21
+title: 'Demo 2: finding data across the silos'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: A plain-language search over curated, indexed metadata returns datasets from several repositories
+  kind: technical
+  priority: high
+  status: unverified
+  validation: Keep the query, the returned dataset identifiers and the metadata fields used to match them in this folder.
+  sources: []
+  evidence: []

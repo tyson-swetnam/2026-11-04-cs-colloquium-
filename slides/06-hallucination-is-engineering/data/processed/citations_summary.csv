@@ -1,0 +1,7 @@
+verdict,hallucinated,real
+not_found,70,31
+identifier_mismatch,14,2
+bad_identifier,8,0
+author_mismatch,7,0
+verified,1,108
+total,100,141

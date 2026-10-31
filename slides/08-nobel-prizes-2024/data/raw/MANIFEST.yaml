@@ -1,0 +1,12 @@
+nobel_2024_che.json:
+  license: CC0 (nobelprize.org data)
+  retrieved: '2026-10-31'
+  sha256: f9e4788b7c5bc3d52c0c652a10f516db36c453d86ab58f1c2a1d12f2fdf24f91
+  source: Nobel Prize API v2.1 (Nobel Prize Outreach)
+  url: https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeYear=2024&nobelPrizeCategory=che
+nobel_2024_phy.json:
+  license: CC0 (nobelprize.org data)
+  retrieved: '2026-10-31'
+  sha256: 5d22d8d7c40fb73440e9250654b1755eb7b1503340e7b7e583df501f34a31998
+  source: Nobel Prize API v2.1 (Nobel Prize Outreach)
+  url: https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeYear=2024&nobelPrizeCategory=phy

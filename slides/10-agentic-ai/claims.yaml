@@ -1,0 +1,20 @@
+slide: 10
+title: Agentic AI
+section: 02 · Science
+claims:
+- id: c1
+  text: '[A researcher asks in plain language; the agent finds the data, runs the analysis, and returns a result.]'
+  kind: placeholder
+  priority: medium
+  status: unverified
+  validation: Write the line. Demo 3 (slide 23) is the evidence that the flow in the figure works end to end.
+  sources: []
+  evidence: []
+- id: c2
+  text: 'Figure: user request → MCP context and RAG retrieval → orchestrator → data mesh and data lake → result'
+  kind: technical
+  priority: low
+  status: unverified
+  validation: Make sure each box in the figure maps to a component that exists in the MESA repositories; link them here.
+  sources: []
+  evidence: []

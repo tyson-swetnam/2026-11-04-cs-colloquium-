@@ -1,0 +1,17 @@
+program,name,financing,first_year,last_year,years,nominal_busd,cpi_real_2024_busd,cpi_real_2025_busd,deflator_real_2025_busd,gdp_years_pct,economic_share_2025_busd,per_capita_income_2025_busd,peak_annual_pct_gdp,first6_gdp_years_pct,world_gdp_years_pct
+postwar,Post-war US private investment,private,1946,1960,15,881.660,10451.651,10726.528,8375.312,230.203,70815.329,33234.048,16.930,90.797,
+railroads,US railroads,mixed,1830,1900,71,9.029,290.876,298.526,254.545,107.708,33133.279,3962.600,5.419,2.305,
+highways,Highways (all governments),public,1956,1973,18,156.610,1452.001,1490.188,1139.188,20.395,6273.854,3499.402,1.319,7.273,
+electrification,Electrification,private,1905,1925,21,5.654,134.348,137.881,101.856,9.987,3072.103,907.510,0.902,2.704,
+telecom,Telecom and fiber build-out,private,1995,2002,8,839.140,1576.168,1617.621,1517.201,8.927,2746.266,2231.563,1.386,6.777,
+interstate,Interstate Highway System,public,1956,1992,37,121.592,699.847,718.253,565.531,8.207,2524.561,1501.944,0.478,1.511,
+oil_gas_1970s,1970s oil and gas boom,private,1973,1982,10,171.597,699.477,717.873,585.760,6.463,1988.179,1310.044,1.277,2.372,
+oil_gas_shale,Shale oil and gas boom,private,2008,2015,8,958.055,1320.908,1355.647,1330.213,5.898,1814.288,1665.620,0.964,4.285,
+datacenters_global (incl. 2026 est.),Hyperscaler data-center capex (global),private,2020,2026,7,1475.943,1465.085,1503.617,1500.462,4.964,1526.928,1520.055,2.031,2.933,1.279
+marshall,Marshall Plan,public,1949,1952,4,13.327,170.368,174.849,139.028,4.448,1368.395,605.570,2.170,4.448,
+canals,Canals,public,1836,1841,6,0.065,2.300,2.361,1.947,3.979,1223.974,59.718,0.899,3.979,
+apollo,Apollo Program,public,1960,1973,14,25.774,240.500,246.825,188.608,3.129,962.580,552.983,0.464,1.417,
+datacenters_global,Hyperscaler data-center capex (global),private,2020,2025,6,818.092,843.852,866.045,862.891,2.933,902.115,891.875,1.014,2.933,0.751
+manhattan,Manhattan Project,public,1942,1946,5,2.191,38.449,39.461,31.174,0.989,304.273,123.567,0.419,0.989,
+datacenters_us_structures (incl. 2026 est.),US data-center construction (BEA),private,2020,2026,7,205.056,204.973,210.364,209.915,0.698,214.740,213.506,0.212,0.486,
+datacenters_us_structures,US data-center construction (BEA),private,2020,2025,6,136.290,140.035,143.718,143.269,0.486,149.427,147.842,0.162,0.486,
