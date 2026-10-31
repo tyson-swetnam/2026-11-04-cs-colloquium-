@@ -27,27 +27,39 @@ claims:
   - https://carc-temp.unm.edu/contact/personnel/
   - https://api.nsf.gov/services/v1/awards.json?pdPIName=Tyson%20Swetnam
   - https://api.nsf.gov/services/v1/awards.json?coPDPI=Tyson%20Swetnam
+  - https://www.nsf.gov/funding/opportunities/capacity-infrastructure-capacity-biological-research/nsf21-501/solicitation
+  - https://www.nsf.gov/funding/opportunities/capacity-infrastructure-capacity-biological-research
+  - https://www.nsf.gov/bio/updates/bio-newsletter-august-2026
   evidence:
   - data/raw/research/facts.csv
   - data/processed/nsf_awards.csv
   - data/processed/summary.txt
+  - data/processed/capacity_summary.txt
+  - data/processed/capacity_divisions.csv
   notes: >-
     Associate Professor of CS and CARC Director are confirmed by the CS faculty profile and CARC pages
     (CARC pages sit on carc-temp.unm.edu). The notes match the bio on the official colloquium listing word for word,
     but that bio is self-supplied. "12 years": the faculty profile says he began CyVerse work in 2013, which is 13 years
-    by 2026 (the same profile also says "over the last 10 years"), so 12 is a slight undercount. NSF Award Search API
-    (src/01_nsf_awards.py) lists 8 awards with Tyson L Swetnam as PI (4) or co-PI (4). Still active on 2026-10-31
-    by end date: 2632685 MESA (PI, UNM, Office of Advanced Cyberinfrastructure, NAIRR program, $4.62M, to 05/31/2029);
-    2152673 (PI, Univ. of Arizona, Directorate for Biological Sciences, listed under "Infrastructure, Institutes, & Centers",
-    to 08/31/2027); 1954556 COALESCE (co-PI, Iowa State, CISE Cyber, Physical & Intelligent Systems, to 09/30/2027).
-    The only award the API labels Division of Biological Infrastructure (1743442 CyVerse, co-PI) ended 07/31/2025,
-    and only one active award is from OAC. So "currently PI and Co-PI of multiple projects from OAC and DBI" overstates
-    the present; it is accurate as a career summary (OAC: 1829701, 1940062, 2608717, 2632685; DBI: 1743442).
-    The API does not show subawards or senior-personnel roles, and 2152673 still lists the University of Arizona.
+    by 2026 (the same profile also says "over the last 10 years"), so 12 is a slight undercount.
+    NSF Award Search API (src/01_nsf_awards.py) returns 8 award records with Tyson L Swetnam as PI (4) or co-PI (4).
+    These are 7 distinct projects, because 2608717 (Univ. of Arizona, 06/01/2026-08/31/2026) and 2632685 (UNM, from
+    07/15/2026) are the same MESA project with the same title and $4,617,408 total, most likely moved from Arizona to UNM (f27).
+    Active on 2026-10-31: he is PI on 2632685 MESA (UNM, Office of Advanced Cyberinfrastructure, NAIRR program, to 05/31/2029)
+    and PI on 2152673 (Univ. of Arizona, BIO, program "Capacity: Cyberinfrastructure", $45,844 collaborative piece, to 08/31/2027).
+    The Capacity program is DBI's Infrastructure Capacity for Biological Research program (NSF 21-501 is issued by the
+    Division of Biological Infrastructure; program contacts are still DBI addresses). The API now files 2152673 under
+    "Infrastructure, Institutes, & Centers" (IIC). Every expired Capacity award still shows DBI and every active BIO-managed one
+    shows IIC or another new BIO unit (src/02_capacity_programs.py), and NSF says BIO reorganized in the past year. So IIC is
+    most likely a relabel after the reorganization, not a sign that the award is outside DBI. NSF pages fetched here do not
+    name IIC, so that link is inferred. "Currently PI ... from OAC and DBI" therefore largely holds (one active award each).
+    What is not supported: "Co-PI" (the only active award listing him as co-PI, 1954556 COALESCE at Iowa State, is CISE/CNS
+    Cyber-Physical Systems, not OAC or DBI, and the API now marks him "(Former)" there) and "multiple" from each unit.
+    Career list: OAC 1829701, 1940062, 2608717/2632685 (one project); DBI/BIO Capacity 1743442 (CyVerse, co-PI, ended
+    07/31/2025) and 2152673. The API does not show subawards or senior-personnel roles.
   proposed_text: >-
-    He has spent more than a decade building cyberinfrastructure for the US national science community,
-    and has been PI or co-PI on NSF awards from the Office of Advanced Cyberinfrastructure and the Directorate
-    for Biological Sciences; he now leads MESA, an NSF NAIRR award at UNM.
+    He has spent more than a decade building cyberinfrastructure for the US national science community.
+    He has been PI or co-PI on NSF awards from the Office of Advanced Cyberinfrastructure and the Division of
+    Biological Infrastructure, and he now leads MESA, an NSF NAIRR award at UNM.
 - id: c3
   text: 'Tyson L. Swetnam, PhD · Center for Advanced Research Computing · The University of New Mexico'
   kind: factual

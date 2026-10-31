@@ -28,6 +28,21 @@ cs.unm.edu_directory_faculty-profiles_tyson-swetnam.html.html:
   sha256: e296be6e55106a599df6616407c229a08915809b87ea89d0b4258e4ae4a6dfca
   source: UNM Computer Science faculty profile
   url: https://cs.unm.edu/directory/faculty-profiles/tyson-swetnam.html
+nsf21-501_solicitation.html:
+  retrieved: '2026-10-31'
+  sha256: 89621501948ca140001bd12dc1249dc1ddfea37fc5058a986527b43363df04f2
+  source: NSF 21-501 Capacity solicitation
+  url: https://www.nsf.gov/funding/opportunities/capacity-infrastructure-capacity-biological-research/nsf21-501/solicitation
+nsf_bio_newsletter_aug2026.html:
+  retrieved: '2026-10-31'
+  sha256: dc2f0af5f7e6d3155d3d18a16454812f9b0ca310d878dacf91915c165a71c0ca
+  source: NSF BIO Newsletter August 2026
+  url: https://www.nsf.gov/bio/updates/bio-newsletter-august-2026
+nsf_capacity_program.html:
+  retrieved: '2026-10-31'
+  sha256: 3e79cd98d779e65414d743ffc1c0d0cd8da40fcc5babb6beb7b39c721534e5dd
+  source: NSF Capacity program page
+  url: https://www.nsf.gov/funding/opportunities/capacity-infrastructure-capacity-biological-research
 nsf_copi_tyson_swetnam.json:
   note: awards with Tyson Swetnam as co-PI
   retrieved: '2026-10-31'

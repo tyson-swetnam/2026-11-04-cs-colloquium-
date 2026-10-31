@@ -1,0 +1,21 @@
+Capacity-program awards (started 2021+) by program / directorate / division / activeAwd:
+  Capacity: Bio Collections | BIO/DBI | active=false: 1
+  Capacity: Bio Collections | BIO/IIC | active=false: 2
+  Capacity: Bio Collections | BIO/IIC | active=true: 30
+  Capacity: Cyberinfrastructure | BIO/DBI | active=false: 14
+  Capacity: Cyberinfrastructure | BIO/EPP | active=true: 1
+  Capacity: Cyberinfrastructure | BIO/IFG | active=true: 1
+  Capacity: Cyberinfrastructure | BIO/IIC | active=false: 6
+  Capacity: Cyberinfrastructure | BIO/IIC | active=true: 43
+  Capacity: Cyberinfrastructure | CSE/CCP | active=true: 1
+  Capacity: Cyberinfrastructure | CSE/OAC | active=false: 4
+  Capacity: Cyberinfrastructure | CSE/OAC | active=true: 13
+  Capacity: Cyberinfrastructure | GEO/GCP | active=true: 8
+  Capacity: Field Stations | BIO/DBI | active=false: 15
+  Capacity: Field Stations | BIO/IIC | active=false: 3
+  Capacity: Field Stations | BIO/IIC | active=true: 19
+  Capacity: Field Stations | BIO/IOS | active=false: 1
+  Capacity: Field Stations | BIO/OIE | active=true: 1
+Swetnam API records: 8; distinct (title, est. total) projects: 7
+  same project, multiple awards: ['2608717', '2632685'] Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement) $4617408
+  1954556: listed as 'Tyson L Swetnam (Former)' co-PI; expDate 09/30/2027
