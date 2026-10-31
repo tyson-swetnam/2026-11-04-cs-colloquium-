@@ -1,0 +1,13 @@
+# Media embedded in talk/deck.html by src/04_place_trailer.py
+- file: dr_strangelove_trailer.webm
+  title: Dr. Strangelove (1964) theatrical trailer
+  source_page: https://commons.wikimedia.org/wiki/File:Dr._Strangelove_(1964)_-_Trailer.webm
+  fetched_url: https://upload.wikimedia.org/wikipedia/commons/transcoded/3/3a/Dr._Strangelove_%281964%29_-_Trailer.webm/Dr._Strangelove_%281964%29_-_Trailer.webm.720p.vp9.webm
+  fetched: 2026-10-31
+  licence: 'Public domain in the US: Commons tag {{PD-US-no notice}} (published 1928-1977 without a copyright notice). May still be under copyright elsewhere.'
+  author: Pablo Ferro (trailer); Columbia Pictures, 1964
+  commons_original: {bytes: 89067188, sha1: 921c860e30b71677474bf032d2873293cec11ed4}
+  processing: 'Commons 720p VP9 transcode (1194x720, 203.5 s) re-encoded with ffmpeg to 796x480 VP9, CRF 40, audio removed (the deck plays it muted): ffmpeg -i t720.webm -an -vf scale=-2:480 -c:v libvpx-vp9 -crf 40 -b:v 0 -deadline good -cpu-used 4 -row-mt 1 out.webm'
+  bytes: 5155152
+  sha256: fd2b20ec025e50f37232924650c6481cd8c9282f7c34c8a4b5c0ed2043f73e04
+  duration_s: 203.45

@@ -16,9 +16,9 @@ Slide 5 now carries two charts, placed by `src/06_place_in_deck.py` (idempotent;
 
 | | |
 |---|---|
-| ![](figures/deck_dollars.png) **In today's dollars (2025, CPI):** Moorhouse's view, rebuilt from primary sources | ![](figures/deck_gdp.png) **As a share of the US economy:** the correction |
+| ![](figures/fig1_baseline_cpi.png) **Data centers vs. megaprojects, rebuilt:** Moorhouse's measure (cumulative cost, 2024 dollars) from primary sources | ![](figures/fig5_boom_intensity.png) **Every boom on one ruler:** average annual spend as a share of US GDP |
 
-The footer now reads "Dashed: 2026 estimate · SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA, Ulmer · After Fin Moorhouse".
+The footer now reads "SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA, Van Nieuwerburgh · After Fin Moorhouse". Each chart carries its own full source line and marks its estimates (dashed line, hatched bars). `figures/deck_dollars.png` and `figures/deck_gdp.png` are an earlier two-panel version, kept for reference.
 
 ## Findings
 
