@@ -1,0 +1,3 @@
+prize,official_laureates,slide_laureates,laureates_match,official_motivation,slide_wording,wording_similarity
+The Nobel Prize in Physics,John J. Hopfield (1/2); Geoffrey Hinton (1/2),John Hopfield; Geoffrey Hinton,True,for foundational discoveries and inventions that enable machine learning with artificial neural networks,Foundational discoveries enabling machine learning with artificial neural networks,0.85
+The Nobel Prize in Chemistry,David Baker (1/2); Demis Hassabis (1/4); John Jumper (1/4),David Baker; Demis Hassabis; John Jumper,True,for computational protein design; for protein structure prediction,"Computational protein design, and protein structure prediction",0.91

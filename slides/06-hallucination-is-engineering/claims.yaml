@@ -47,7 +47,7 @@ claims:
   text: “It varies run to run” → a JSON schema, validated in the agent
   kind: technical
   priority: medium
-  status: partially-supported
+  status: revise-slide
   validation: |
     JSON Schema (draft 2020-12) for a dataset record, run against eight outputs
     (src/03_schema.py): six malformed outputs refused, the conforming one accepted.
@@ -82,7 +82,7 @@ claims:
   text: Google DeepMind's GNoME proposed 380,000 crystals; independent labs confirmed under 5%
   kind: attribution
   priority: high
-  status: contradicted
+  status: revise-slide
   validation: |
     The paper's own numbers from its open-access full text, and the published critique's metadata
     from the DOI registry (src/05_gnome.py).

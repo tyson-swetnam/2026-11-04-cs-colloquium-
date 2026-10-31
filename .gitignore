@@ -248,3 +248,5 @@ slides/06-hallucination-is-engineering/data/cache/
 slides/06-hallucination-is-engineering/data/raw/*/sources/*
 !slides/06-hallucination-is-engineering/data/raw/*/sources/MANIFEST.yaml
 slides/06-hallucination-is-engineering/data/processed/provenance/
+slides/08-nobel-prizes-2024/data/raw/sources/*
+!slides/08-nobel-prizes-2024/data/raw/sources/MANIFEST.yaml
