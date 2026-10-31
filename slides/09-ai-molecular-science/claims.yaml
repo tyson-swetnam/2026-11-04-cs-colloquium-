@@ -19,7 +19,7 @@ claims:
   text: 'ESM: binders designed, then bench-tested; three or four years down to days (notes: Biohub; five cancer and immunology targets; tested at the bench in days)'
   kind: attribution
   priority: high
-  status: partially-supported
+  status: revise-slide
   proposed_text: 'ESMFold2: binders for five cancer and immune targets, confirmed in the lab · Design search in days, vs. 3-4 years per candidate (Biohub)'
   validation: Biohub release (May 2026) and the ESMFold2 preprint abstract; the full preprint was blocked (bioRxiv 429).
   sources:
@@ -40,7 +40,7 @@ claims:
   text: 'Evo 2: generative genome model, open source; more than 90% accuracy on BRCA1 variants'
   kind: attribution
   priority: high
-  status: partially-supported
+  status: revise-slide
   proposed_text: 'Evo 2 · BRCA1 variants: AUROC 0.95 (classifier on Evo 2 embeddings)'
   validation: Peer-reviewed paper (Nature, March 2026) read from Europe PMC (src/02_papers.py); Arc Institute release for the accuracy wording.
   sources:
@@ -58,7 +58,7 @@ claims:
   text: 'AlphaGenome: a megabase of context, single-base resolution; a variant scored in about a second'
   kind: attribution
   priority: medium
-  status: supported
+  status: revise-slide
   proposed_text: 'AlphaGenome · Up to 1 Mb of context, base-pair output · Variant scored in under 1 s (one H100)'
   validation: Peer-reviewed paper (Nature, Jan. 2026) read from Europe PMC (src/02_papers.py).
   sources:
@@ -78,3 +78,14 @@ claims:
   validation: Speaker's framing; no source states it.
   sources: []
   evidence: []
+- id: c6
+  text: 'Notes: ESM designed binders against five cancer and immunology targets and tested them at the bench in days'
+  kind: attribution
+  priority: medium
+  status: revise-slide
+  proposed_text: "Biohub's ESMFold2 designed binders against five cancer and immunology targets computationally in days and confirmed them in the lab, with hit rates of 36-88% for minibinders, where the field budgets three to four years per candidate."
+  validation: See c2; every "days" in the Biohub release refers to the computational search.
+  sources:
+  - https://biohub.org/news/world-model-of-protein-biology/
+  evidence:
+  - data/raw/research/facts.csv
