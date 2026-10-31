@@ -6,7 +6,7 @@ claims:
   text: 'Physics 2024: John Hopfield & Geoffrey Hinton, foundational discoveries enabling machine learning with artificial neural networks'
   kind: factual
   priority: medium
-  status: supported
+  status: revise-slide
   proposed_text: 'Physics: John Hopfield & Geoffrey Hinton. "For foundational discoveries and inventions that enable machine learning with artificial neural networks"'
   validation: Laureates, shares and motivation from the Nobel Prize API v2.1 (src/01_nobel.py).
   sources:
