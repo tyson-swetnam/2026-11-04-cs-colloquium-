@@ -21,8 +21,9 @@ claims:
     slide, MESA's public docs (src/01_check.py -> data/processed/checks.csv) say the installer registers mesa-mcp,
     irods and formation with every client it detects. But the Formation page says sign-in to Formation is confirmed
     only for claude.ai and Claude Code: whether Codex, OpenCode and Antigravity can complete the CyVerse sign-in is
-    "not yet confirmed", CyVerse rejects Codex's and OpenCode's sign-in callback (redirect_uri), and OpenCode cannot
-    finish sign-in inside the MESA apps.
+    "not yet confirmed"; CyVerse does not yet accept Codex's and OpenCode's http://127.0.0.1 sign-in callback
+    (redirect_uri); the MESA team "has not tested" Antigravity's sign-in; and in the MESA apps OpenCode cannot finish
+    sign-in from your own browser, except on the KASM desktop, where the browser runs inside the app (f22-f24).
   sources:
   - https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
   - https://idss-mesa.github.io/docs/llms-full.txt
@@ -39,8 +40,10 @@ claims:
     holds for all four. The Formation side is the risk: as documented on 2026-10-31, only Claude (claude.ai/Desktop
     and Claude Code) is known to complete Formation's OAuth sign-in. For the live demo of "the same request from two
     agents", use two Claude surfaces for Formation, or use Data Store requests if a second vendor's agent is wanted.
-    Rehearse any Codex or Antigravity Formation call before the talk. Checked from public docs only, not code.
-  proposed_text: 'All four agents speak MCP and register the same servers; Formation sign-in is confirmed today for Claude, with Codex, Antigravity and OpenCode in progress.'
+    Rehearse any Codex or Antigravity Formation call before the talk. If OpenCode is shown, do it on the MESA KASM
+    desktop, where the in-app browser can complete the sign-in. No source says work on the other clients' sign-in is
+    under way, so do not say "in progress" (corrected after review, 2026-10-31). Checked from public docs only, not code.
+  proposed_text: 'All four agents speak MCP and register the same servers; Formation sign-in is confirmed for Claude, not yet for Codex, Antigravity or OpenCode.'
 - id: c3
   text: 'Formation MCP launches apps and jobs on CyVerse Kubernetes; Data Store MCP finds, reads and writes data in iRODS'
   kind: technical
@@ -65,7 +68,10 @@ claims:
   - data/processed/checks.csv
   notes: |
     "Apps on CyVerse Kubernetes" is supported for interactive apps. For batch "jobs" CyVerse's own pages disagree
-    (Argo on Kubernetes vs HTCondor), and which one production de.cyverse.org uses was not confirmed. "Writes" needs a
+    (Argo on Kubernetes vs HTCondor), and which one production de.cyverse.org uses was not confirmed: the Argo page's
+    Argo-only statement is about "the pilot" and is sourced from a "Pilot CyVerse deployment record" (f26, f27). The
+    system overview also sends `osg` jobs to the Open Science Grid (f25), so some DE jobs may not run on CyVerse
+    Kubernetes at all. "Writes" needs a
     CyVerse sign-in (cyverse-login or the authenticated endpoint); anonymous access is read-only. Formation itself also
     reads and writes Data Store files. "Data Store MCP" is the slide's name for mesa-mcp plus irods-mcp-server (MESA
     docs call irods-mcp-server the "Reference iRODS Data Store MCP server"). The validation's "recorded run" is not
@@ -116,4 +122,58 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   - data/processed/nsf_award.csv
-  notes: Award 2632685 is "MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico, NAIRR program, Office of Advanced Cyberinfrastructure, started 07/15/2026.
+  notes: 'Award 2632685 is "MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico, Office of Advanced Cyberinfrastructure (OAC), started 07/15/2026. In the API record the program field is "Artificial Intelligence (AI)" and the funding program (fundProgramName) is "NAIRR-Nat AI Research Resource" (f21, f32; label corrected after review).'
+- id: c7
+  text: 'Notes: the Data Store MCP server works "under the policies from the defense-in-depth slide"'
+  kind: technical
+  priority: medium
+  status: partially-supported
+  validation: |
+    Compared slide 22's notes (talk/slides.md#slide-22) with MESA's public docs on how the Demo 1 servers act
+    (src/01_check.py). Public docs only; no MESA or CyVerse code or iRODS rule base was read.
+  sources:
+  - https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.csv
+  - ../../talk/slides.md
+  notes: |
+    Added after review (2026-10-31). Partly true: every Data Store request is checked against iRODS permissions. But
+    slide 22 says the agent "works under its own account with read-only rights" and that "deletes, overwrites and
+    permission changes from an agent account are refused". MESA's docs describe the Demo 1 servers differently:
+    Formation works "always as **you** and with your own permissions" and has write and delete tools (upload_file,
+    set_metadata, delete_data, which moves items to trash) (f28, f29); after cyverse-login the local mesa and irods
+    servers "act as **you**" (f30). So in Demo 1 the agent has the user's rights, not a read-only agent account. MESA's
+    ds_* tools list "rules, policies" (f14), but no public doc says the agent-account policies from slide 22 are
+    deployed on the CyVerse Data Store these servers use.
+  proposed_text: 'Notes: the Data Store servers act as the signed-in researcher, with that person''s iRODS permissions. (Drop "under the policies from the defense-in-depth slide", or demo with a separate read-only agent account.)'
+- id: c8
+  text: 'Slide "Target length ~1:30" vs notes "[~2 min]"'
+  kind: factual
+  priority: low
+  status: contradicted
+  validation: Read both strings in talk/slides.md#slide-24.
+  sources: []
+  evidence:
+  - ../../talk/slides.md
+  notes: Added after review (2026-10-31). Internal mismatch only; no outside source. The speaker should pick one length.
+  proposed_text: 'Use one length in both places, e.g. "Target length ~2:00" on the slide to match the notes.'
+- id: c9
+  text: 'Subtitle, body and notes: agents connect to "the same MESA servers" / "MESA’s Formation and Data Store servers" / "the same two MESA MCP servers"'
+  kind: factual
+  priority: medium
+  status: partially-supported
+  validation: Checked against MESA's own docs (src/01_check.py).
+  sources:
+  - https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/checks.csv
+  notes: |
+    Added after review (2026-10-31); c4 covers only the slide label. Formation is CyVerse's own server, run by CyVerse
+    (f1, f2). MESA registers three servers, not two: mesa-mcp, irods and formation (f17). In the MESA apps Claude Code
+    also registers CyVerse-hosted irods and irods-auth endpoints (f31). "Data Store MCP" is therefore a group of
+    servers, some MESA's and some CyVerse-hosted. "The MCP servers MESA installs" is accurate.
+  proposed_text: 'Subtitle: "Any agent, the same MCP servers". Body: "Four agents connect through MCP to CyVerse''s Formation server and the Data Store servers MESA installs..." Notes: "each connects to the same MCP servers MESA installs".'

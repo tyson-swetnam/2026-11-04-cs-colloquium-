@@ -82,6 +82,21 @@ EXTRA = {
                                              "Getty Images v Stability AI [2025] EWHC 2863 (Ch), The National Archives Find Case Law"),
     "mbw_anthropic_partial_dismissal.html": ("https://www.musicbusinessworldwide.com/anthropic-seeks-partial-dismissal-in-music-publishers-3b-lyrics-suit-as-CEO-moves-to-drop-the-direct-infringement-claim-against-him/",
                                              "Music Business Worldwide, Aug. 2026"),
+    # Added after review (2026-10-31)
+    "graphicpolicy_midjourney_2025-11-14.html": ("https://graphicpolicy.com/2025/11/14/court-suggests-disney-v-midjourney-go-to-mediation/",
+                                                 "Graphic Policy, 2025-11-14 (mediation schedule)"),
+    "mbw_sony_warner_v_anthropic.html": ("https://www.musicbusinessworldwide.com/now-sony-music-publishing-and-warner-chappell-sue-anthropic-in-multi-billion-dollar-lawsuit-one-of",
+                                         "Music Business Worldwide, Sony Music Publishing and Warner Chappell v. Anthropic (Aug. 2026)"),
+    "sony_warner_v_anthropic_complaint_2026-08-28.pdf": ("https://www.musicbusinessworldwide.com/files/2026/08/COMPLAINT-in-Sony_Music_Publishing_US_LLC_e.pdf",
+                                                         "Sony Music Publishing et al. v. Anthropic et al. (N.D. Cal., filed 2026-08-28), complaint (copy hosted by MBW)"),
+    "fortune_sony_warner_v_anthropic.html": ("https://fortune.com/2026/09/01/anthropic-warner-sony-music-songs-lawsuit/",
+                                             "Fortune, 2026-09-01"),
+    "aljazeera_sony_warner_v_anthropic.html": ("https://www.aljazeera.com/economy/2026/8/31/sony-warner-music-sue-anthropic-saying-it-pirated-songs-to-train-its-ai",
+                                               "Al Jazeera (Reuters), 2026-08-31"),
+    "burgessalmon_getty_appeal.html": ("https://www.burges-salmon.com/articles/102lydc/getty-images-v-stability-ai-getty-granted-permission-to-appeal",
+                                       "Burges Salmon, Getty granted permission to appeal (Jan. 2026)"),
+    "ipkat_getty_appeal.html": ("https://ipkitten.blogspot.com/2026/01/permission-to-appeal-granted-in-getty.html",
+                                "IPKat, Permission to appeal granted in Getty (Jan. 2026)"),
 }
 
 

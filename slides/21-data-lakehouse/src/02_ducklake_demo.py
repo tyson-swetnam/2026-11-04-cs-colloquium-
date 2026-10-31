@@ -57,9 +57,8 @@ out["rollback"] = {
 }
 
 # 3. Concurrency: a second connection (same DuckDB process, own transaction), both update the same row.
-# (A SQLite catalog returned "database is locked" for overlapping write transactions in a first run, so the
-# catalog here is a DuckDB file shared by two connections of one instance; for many independent writer
-# processes the docs point to PostgreSQL as the catalog.)
+# The catalog here is a DuckDB file shared by two connections of one instance: the single-client setup in the
+# DuckLake docs. SQLite (multiple local clients) and PostgreSQL (multi-user, remote clients) were not tested.
 b = a.cursor()
 b.execute("USE lake")
 a.execute("BEGIN TRANSACTION"); b.execute("BEGIN TRANSACTION")

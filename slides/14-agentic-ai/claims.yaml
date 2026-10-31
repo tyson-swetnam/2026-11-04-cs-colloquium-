@@ -33,6 +33,10 @@ claims:
     refusals. Not demonstrated here: a model as orchestrator (a scripted plan stands in; no model API in this
     environment) and the iRODS mesh (slides 22-23). Nuance for a CS audience: in the figure MCP is drawn as
     "context"; it is mainly the channel through which the orchestrator calls tools (the mesh and the lake).
+    Caveat on the demo answer: the scripted query filters out the 'postwar' row (WHERE program <> 'postwar').
+    That row, "Post-war US private investment" at 16.93% of GDP, is all private investment, not one build-out,
+    so US railroads (5.42%) come out on top. Without the filter the postwar row would rank first. The filter is
+    a choice written into the plan, not something the pipeline worked out (re-checked against the lake 2026-10-31).
 - id: c3
   text: Each box in the figure maps to a component in the MESA repositories
   kind: factual
@@ -57,4 +61,7 @@ claims:
     The current deck does not state this claim on slide 14 or in its notes; it matters only if the
     speaker says the figure is MESA's shipped architecture. The repositories themselves were not read
     (out of scope for this session); whether code for RAG or an orchestrator exists in them is unverified.
-  proposed_text: 'If said aloud: "The MCP, data-mesh and DuckLake boxes ship in MESA today; RAG and multi-agent orchestration are on its roadmap."'
+    Earlier proposed wording said the "data-mesh and DuckLake boxes ship today"; that overstated it. The home
+    page lists the open-source lakehouse (goal 1) and the federated iRODS mesh (goal 2) as 2026-2029 goals
+    (facts f9, f10); what ships today is single Data Store access and mesa-ducklake's metadata history (f5, f6).
+  proposed_text: 'If said aloud: "MESA''s MCP servers ship today and reach the CyVerse Data Store and a DuckLake metadata history; the federated mesh, full lakehouse, RAG and multi-agent orchestration are its 2026-2029 goals."'

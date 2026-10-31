@@ -78,12 +78,16 @@ claims:
   sources:
   - https://biorepo.neonscience.org/portal/api/v2/occurrence/search?collid=39&limit=1
   - https://api.gbif.org/v1/dataset/search?q=NEON%20Biorepository%20carabid
+  - https://biorepo.neonscience.org/portal/api/v2/collection/63
+  - https://biorepo.neonscience.org/portal/api/v2/collection/4
   evidence:
   - data/raw/research/facts.csv
   - data/processed/checks.json
+  - data/processed/bycatch.json
   - src/01_check.py
-  notes: 'Biorepository portal API: the 11 collections fed by ground-beetle pitfall sampling sum to exactly 188,522 records, and the 11 matching GBIF datasets sum to exactly 145,263 (77%), as in the notes. But 47,832 of the 188,522 are invertebrate, herptile and mammal bycatch, so "specimen records" here means pitfall-trap records, not beetle specimens. The 53,257 images from four sources is a project figure; the public report was not reachable (see c11) and the project repository was not read, so that part is unverified. Only 5,961 of the GBIF records carry an image.'
-  proposed_text: 'NEON Biorepository: 188,522 pitfall-trap specimen records in 11 collections, 77% also on GBIF'
+  - src/02_bycatch.py
+  notes: 'Biorepository portal API: the 11 collections fed by ground-beetle pitfall sampling sum to exactly 188,522 records, and the 11 matching GBIF datasets sum to exactly 145,263 (77%), as in the notes. These are records, not distinct beetle specimens. Of the 188,522, 47,459 are not carabid: the five bycatch-named invertebrate, herptile and mammal collections (46,832) plus 627 invertebrate vouchers sorted from bycatch (collid 4). (An earlier note said 47,832; that was an arithmetic error, corrected 2026-10-31 with src/02_bycatch.py.) The 141,063 carabid records include 20,945 DNA extracts taken from pinned vouchers already counted in collid 39, and lots pooled across traps (archive pooling) or kept per trap (trap sorting). The 53,257 images from four sources is a project figure; the public report was not reachable (see c11) and the project repository was not read, so that part is unverified.'
+  proposed_text: 'NEON Biorepository: 188,522 records (specimens, lots and DNA extracts) in 11 collections, 77% also on GBIF'
 - id: c9
   text: 'Resolve -> stage (one 16 GB GPU) -> validate (Carabidae NCBITaxon:41073; mm UO:0000016) -> record in DuckLake'
   kind: technical
@@ -141,7 +145,8 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   - data/processed/checks.json
-  notes: '47 sites in 20 domains and a July 2013 start are confirmed. The API now lists October 2026 for 5 sites, so "to September 2026" is a little out of date (likely the date the project pulled the data).'
+  - src/01_check.py
+  notes: '47 sites in 20 domains and a July 2013 start are confirmed. The domain count is computed (src/01_check.py joins the product siteCodes to /sites domainCode; checks.json neon.n_domains = 20), not quoted from a document. The API now lists October 2026 for 5 sites, so "to September 2026" is a little out of date (likely the date the project pulled the data).'
   proposed_text: '47 sites, 20 domains, July 2013 to October 2026 (latest months provisional)'
 - id: c14
   text: 'Notes: 145,906 pinned individuals of 826 taxa'
@@ -160,4 +165,4 @@ claims:
   validation: 'Project outputs (report, DuckLake tables).'
   sources: []
   evidence: []
-  notes: 'Project figures; report unreachable (c11) and repository not read. Indirect support for "never photographed": only 5,961 of 145,263 GBIF records from these collections carry an image (data/processed/checks.json).'
+  notes: 'Project figures; report unreachable (c11) and repository not read. The GBIF image count (5,961 of 145,263 records with a still image) does not test "never photographed": it shows only which images were published to GBIF, its denominator includes DNA extracts and non-beetle bycatch, and the project itself reports 53,257 beetle images from four sources. Treat the whole line as the project''s own statement.'

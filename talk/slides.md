@@ -54,7 +54,7 @@ Fear
 
 <a id="slide-04"></a>
 
-## 04 · Kubrick’s 1964 political satire
+## 04 · Kubrick’s 1964 political satire · [evidence](../slides/04-kubrick/)
 
 ```text
 Where the title comes from
@@ -112,7 +112,7 @@ CARC · UNM · CS Colloquium · Nov. 4, 2026
 
 <a id="slide-07"></a>
 
-## 07 · Whose debt is it?
+## 07 · Whose debt is it? · [evidence](../slides/07-whose-debt/)
 
 ```text
 The concerns · Financial risk
@@ -132,7 +132,7 @@ Source: OpenMarkets, “Brace for Impact” (2026), reported by J. Wilkins, Futu
 
 <a id="slide-08"></a>
 
-## 08 · Power, water and public health
+## 08 · Power, water and public health · [evidence](../slides/08-power-water-health/)
 
 ```text
 The concerns · Environmental cost
@@ -152,7 +152,7 @@ Sources: UC Riverside & Caltech, “The Unpaid Toll” (2024); SELC and Earthjus
 
 <a id="slide-09"></a>
 
-## 09 · Contested data, Western defaults
+## 09 · Contested data, Western defaults · [evidence](../slides/09-contested-data/)
 
 ```text
 The concerns · Training
@@ -172,7 +172,7 @@ Sources: court records and case status as of August 2026, compiled at tyson-swet
 
 <a id="slide-10"></a>
 
-## 10 · Whose proofs are they?
+## 10 · Whose proofs are they? · [evidence](../slides/10-whose-proofs/)
 
 ```text
 The concerns · Researchers’ work stolen?
@@ -282,7 +282,7 @@ CARC · UNM · CS Colloquium · Nov. 4, 2026
 
 <a id="slide-16"></a>
 
-## 16 · System One models decide; they don’t write
+## 16 · System One models decide; they don’t write · [evidence](../slides/16-system-one-models/)
 
 ```text
 Fast and slow models

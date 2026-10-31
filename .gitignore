@@ -262,3 +262,4 @@ slides/*/data/cache/
 slides/*/data/raw/sources/**
 !slides/*/data/raw/sources/**/
 !slides/*/data/raw/sources/**/MANIFEST.yaml
+_site/

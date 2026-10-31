@@ -15,7 +15,7 @@ claims:
   - data/raw/research/facts.csv
   - data/processed/numbers.csv
   - data/processed/quote_check.csv
-  notes: "$3,100 is the gross figure. The court itself says 'approximately $3,000' per work before costs and fees; after the $101.6M fee award, expenses and cost reserve it is at most about $2,855. Copy of the order is hosted by the Association of American Publishers (CourtListener docket pages returned 403)."
+  notes: "$3,100 is the gross figure. The court and notice say 'approximately $3,000' per work, plus interest, less costs and fees. Net of the $101.6M fee award, expenses and cost reserve, the fund is about $2,855 per listed work, but unclaimed shares are to be redistributed, so with 440,490 works claimed it is about $3,127 per claimed work before administration costs (src/02_check.py). So the actual payment per claimed work is roughly $3,000, not capped at $2,855. Copy of the order is hosted by the Association of American Publishers (CourtListener docket pages returned 403)."
 - id: c2
   text: 'In 2025, courts held training to be fair use in Bartz and in Kadrey v. Meta, but not acquiring pirated copies'
   kind: factual
@@ -28,30 +28,33 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   - data/processed/quote_check.csv
-  notes: "Training as fair use is right for both. But only Bartz held pirated library copies were not fair use. Kadrey went the other way on that record ('so too was Meta's downloading of those books' fair use), left the torrent-distribution claim open, and said the ruling covers only 13 authors who 'made the wrong arguments'. Both are district-court rulings, not precedent. As worded, the slide implies both courts rejected piracy."
-  proposed_text: 'In 2025, two judges held training fair use (Bartz; Kadrey v. Meta). Bartz held that pirated library copies were not.'
+  notes: "Both courts ruled for the AI company on training, but Kadrey was narrow: Chhabria said the ruling 'does not stand for the proposition' that training is lawful, only that 'these plaintiffs made the wrong arguments'. On piracy, Alsup denied Anthropic summary judgment on the pirated library copies and set them for trial (the case then settled), so there is no final holding. Kadrey went the other way on downloading ('so too was Meta's downloading of those books' transformative), left the torrent-distribution claim open, and covers only 13 authors. Both are district-court rulings, not precedent. As worded, the slide implies both courts rejected piracy."
+  proposed_text: 'In 2025, Bartz held training fair use but sent pirated library copies to trial; Kadrey v. Meta ruled for Meta on a narrow record.'
 - id: c3
   text: 'Still in court: NYT v. OpenAI and Microsoft; Disney and Universal v. Midjourney; music publishers v. Anthropic, seeking more than $3B'
   kind: factual
   priority: medium
   status: partially-supported
-  validation: 'NYT: S.D.N.Y. MDL order (Jan. 5, 2026) and summary-judgment briefing report (Sept. 4, 2026). Midjourney: latest report found (mediation due Aug. 19, 2026). Publishers: complaint 3:26-cv-00880 (Jan. 28, 2026) and Anthropic partial motion to dismiss (Aug. 3, 2026).'
+  validation: 'NYT: S.D.N.Y. MDL order (Jan. 5, 2026) and summary-judgment briefing report (Sept. 4, 2026). Midjourney: mediation schedule set Nov. 2025 (due Aug. 19, 2026) and latest case report (May 2026). Publishers: Concord/UMG/ABKCO complaint 3:26-cv-00880 (Jan. 28, 2026), Anthropic partial motion to dismiss (Aug. 3, 2026), and the separate Sony/Warner Chappell complaint 5:26-cv-09217 (Aug. 28, 2026).'
   sources:
   - https://assets.law360news.com/2426000/2426657/https-ecf-nysd-uscourts-gov-doc1-127138822336.pdf
   - https://chatgptiseatingtheworld.com/2026/09/04/summary-judgment-briefing-starts-in-openai-mdl-litigation-before-judge-stein/
-  - https://graphicpolicy.com/tag/midjourney/
+  - https://graphicpolicy.com/2025/11/14/court-suggests-disney-v-midjourney-go-to-mediation/
+  - https://graphicpolicy.com/2026/05/11/disney-warner-bros-universal-and-midjourney-discovery-dispute/
   - https://www.musicbusinessworldwide.com/files/2026/01/Anthropic-complaint-01.28.26-1.pdf
   - https://www.musicbusinessworldwide.com/umg-concord-and-abkco-sue-anthropic-for-3bn-in-what-could-be-single-largest-non-class-action-copyright-case-in-us-history/
+  - https://www.musicbusinessworldwide.com/files/2026/08/COMPLAINT-in-Sony_Music_Publishing_US_LLC_e.pdf
+  - https://www.musicbusinessworldwide.com/now-sony-music-publishing-and-warner-chappell-sue-anthropic-in-multi-billion-dollar-lawsuit-one-of
   evidence:
   - data/raw/research/facts.csv
   - data/processed/numbers.csv
-  notes: "All three appear open; no merits ruling found in any as of Oct. 31, 2026. NYT is at summary judgment (briefing ends around Nov. 2026). Midjourney: Warner Bros. Discovery's suit was added; the last public status found is court-ordered mediation due Aug. 19, 2026, outcome not found and the docket could not be read (CourtListener 403). '$3B' is the publishers' own estimate of potential statutory damages (21,231 works x $150,000 = $3.18B), not an award. Footer says 'as of August 2026'; re-check the day before the talk."
-  proposed_text: 'Still in court: NYT v. OpenAI and Microsoft (summary judgment); Disney, Universal and Warner Bros. v. Midjourney; music publishers v. Anthropic, claiming up to $3B+.'
+  notes: "All three appear open; no merits ruling found in any as of Oct. 31, 2026. NYT: summary-judgment motions filed Sept. 4, 2026; no ruling found. Midjourney: Warner Bros. Discovery's suit was consolidated; mediation was ordered in Nov. 2025 to finish by Aug. 19, 2026, and the latest case report found (May 2026) is a discovery dispute; mediation outcome not found and the docket could not be read (CourtListener 403). A reviewer reported later scheduling dates (fact discovery closed Sept. 2026, motions due Nov. 23, 2026); no source for these was found, so they are not used. Music publishers: there are now several suits. The '$3B' figure belongs to the Concord/UMG/ABKCO suit (Jan. 2026): the publishers' own estimate of 'potential statutory damages of more than $3 billion' (21,231 works x $150,000 = $3.18B), not an award. Sony Music Publishing and Warner Chappell filed a separate suit on Aug. 28, 2026 (5:26-cv-09217, also naming Amodei and Mann) alleging torrenting and lyric scraping; it seeks up to $150,000 per work and states no total. BMG and Round Hill have also sued (per MBW). Footer says 'as of August 2026'; re-check the day before the talk."
+  proposed_text: 'Still in court: NYT v. OpenAI and Microsoft (summary judgment); Disney, Universal and Warner Bros. v. Midjourney; UMG, Concord and ABKCO v. Anthropic, claiming potential damages of more than $3B (plus a newer Sony/Warner Chappell suit).'
 - id: c4
   text: 'More than half of web content is in English; models draw mostly on European and North American text'
   kind: attribution
   priority: medium
-  status: contradicted
+  status: partially-supported
   validation: 'W3Techs content-language survey (live page and yearly history); Common Crawl language statistics (src/02_check.py); Llama 2 paper Table 10; Dodge et al. 2021 on C4.'
   sources:
   - https://w3techs.com/technologies/overview/content_language
@@ -63,21 +66,23 @@ claims:
   - data/raw/research/facts.csv
   - data/processed/w3techs_english.csv
   - data/processed/cc_english.csv
-  notes: "'More than half' is out of date: W3Techs has English at 49.5% of websites (Oct. 31, 2026), under 50% since Jan. 2025. Common Crawl's latest crawl (CC-MAIN-2026-43) is 42.6% English by pages. The second half holds: Llama 2 pretraining data is 89.7% English, and 51.3% of C4 pages are US-hosted. Most frontier labs do not publish data composition, so 'European and North American' rests on these open examples. 'Eurocentric view' is the speaker's interpretation."
-  proposed_text: 'About half of websites are in English (49.5%), and open training sets are mostly English (Llama 2: 90%), so models carry a Western default.'
+  notes: "Two-part claim: first half contradicted, second half supported for the open examples. 'More than half' is out of date: W3Techs has English at 49.5% of websites (Oct. 31, 2026), under 50% since Jan. 2025. Common Crawl's latest crawl (CC-MAIN-2026-43) is 42.6% English by pages. The second half holds: Meta reports (2023) that Llama 2 pretraining data is 89.7% English (the corpus itself was not released; only weights), and 51.3% of C4 pages are US-hosted. Most frontier labs do not publish data composition, so 'European and North American' rests on these open examples. 'Eurocentric view' is the speaker's interpretation."
+  proposed_text: 'About half of websites are in English (49.5%, W3Techs), and Meta reports Llama 2''s training data was 90% English, so models carry a Western default.'
 - id: c5
   text: 'Notes: Bartz final approval July 20, 2026, the largest US copyright settlement'
   kind: attribution
   priority: low
-  status: partially-supported
-  validation: 'Date from the final approval order and settlement website; "largest" checked in the order, settlement site and law-firm summary.'
+  status: supported
+  validation: 'Date from the final approval order (Dkt. 680) and settlement website; "largest" in the order, which quotes the court''s preliminary-approval opinion, and in the court-authorized Long Form Notice and settlement website.'
   sources:
   - https://publishers.org/wp-content/uploads/2026/07/Order-Granting-Final-Approval-of-Settlement171.pdf
-  - https://pearlcohen.com/federal-court-approves-1-5-billion-anthropic-copyright-settlement-largest-in-history
+  - https://www.anthropiccopyrightsettlement.com/
+  - https://assets-us-01.kc-usercontent.com:443/1eeb16db-4934-006e-40a6-38fa91285ebb/ce109a57-390c-4d76-ad65-5807d4830fe5/ANT%20-%20Long-Form%20Notice_Updated%20Deadline%201.8.2026.pdf
   evidence:
   - data/raw/research/facts.csv
-  notes: 'Date is right (Judge Martínez-Olguín). The court does not call it the largest; counsel and law-firm summaries do. Say "described as".'
-  proposed_text: 'final approval July 20, 2026; described as the largest US copyright recovery'
+  - data/processed/quote_check.csv
+  notes: "Date is right (Judge Martínez-Olguín). Corrected after review: the court itself calls it 'the largest copyright class action settlement in history' (final approval order, quoting Bartz, 2025 WL 2961371, at *3), and the official notice and settlement website say the same. The earlier note that only counsel and press say so was wrong. The official wording is 'copyright class action settlement', slightly narrower than the notes' 'US copyright settlement'."
+  proposed_text: 'final approval July 20, 2026; the court calls it the largest copyright class action settlement in history'
 - id: c6
   text: 'Notes: in NYT v. Microsoft and OpenAI the court ordered 20 million de-identified ChatGPT logs produced'
   kind: factual
@@ -93,15 +98,17 @@ claims:
   text: 'Notes: Concord, UMG and ABKCO v. Anthropic seek more than $3B over alleged torrenting of about 20,000 songs'
   kind: factual
   priority: medium
-  status: contradicted
-  validation: 'Complaint, Case 3:26-cv-00880 (N.D. Cal., Jan. 28, 2026), Exhibits A and B counts.'
+  status: partially-supported
+  validation: 'Complaint, Case 3:26-cv-00880 (N.D. Cal., Jan. 28, 2026), Exhibits A and B counts; separate Sony/Warner Chappell complaint 5:26-cv-09217 (Aug. 28, 2026) checked for the torrenting wording.'
   sources:
   - https://www.musicbusinessworldwide.com/files/2026/01/Anthropic-complaint-01.28.26-1.pdf
+  - https://www.musicbusinessworldwide.com/files/2026/08/COMPLAINT-in-Sony_Music_Publishing_US_LLC_e.pdf
+  - https://fortune.com/2026/09/01/anthropic-warner-sony-music-songs-lawsuit/
   evidence:
   - data/raw/research/facts.csv
   - data/processed/numbers.csv
-  notes: 'The torrenting allegation covers 714 works (Exhibit A). The 20,517 works (Exhibit B) are alleged training and output infringement. $3B+ is potential statutory damages across both. All are allegations; Anthropic moved to dismiss in part on Aug. 3, 2026.'
-  proposed_text: 'Concord, UMG and ABKCO v. Anthropic claim $3B+ over more than 20,000 songs used in training, 714 of them allegedly torrented.'
+  notes: "Parties, $3B+ and 'about 20,000 songs' are right for the Concord/UMG/ABKCO suit. The torrenting part is off: that complaint alleges torrented books containing 'hundreds or thousands' of works, 'including the 714 works identified in Exhibit A' (a minimum, not a cap). The 20,517 works in Exhibit B are a separate set pleaded as training and output infringement; the $3B estimate adds both (21,231). The separate Sony/Warner Chappell suit (Aug. 28, 2026) is also mainly a torrenting case, alleging 'hundreds or more' works in torrented books and 'thousands upon thousands' harvested overall, with no dollar total. Neither complaint alleges torrenting of about 20,000 songs. All are allegations; Anthropic moved to dismiss the January suit in part on Aug. 3, 2026."
+  proposed_text: 'Concord, UMG and ABKCO v. Anthropic claim potential damages of more than $3B over about 21,000 songs: at least 714 allegedly in torrented songbooks, and 20,517 allegedly used in training and output. Sony and Warner Chappell filed a separate torrenting suit in Aug. 2026.'
 - id: c8
   text: 'Notes: GEMA v. OpenAI found infringement over lyrics in Munich (Nov. 2025)'
   kind: factual
@@ -112,7 +119,7 @@ claims:
   - https://www.lto.de/recht/nachrichten/n/42o1413924-lg-muenchen-i-gema-openai-chatgpt-songtexte-ki
   evidence:
   - data/raw/research/facts.csv
-  notes: 'First-instance ruling on nine song lyrics; reported to be on appeal. The court press release was not retrieved, so this rests on a legal-news report.'
+  notes: 'First-instance ruling on nine song lyrics; not yet final (per LTO, which expects further instances but does not report a filed appeal). The court press release was not retrieved, so this rests on a legal-news report.'
 - id: c9
   text: 'Notes: Getty v. Stability in the UK held model weights are not infringing copies'
   kind: factual
@@ -121,9 +128,11 @@ claims:
   validation: 'Judgment [2025] EWHC 2863 (Ch), 4 Nov. 2025, from The National Archives Find Case Law.'
   sources:
   - https://caselaw.nationalarchives.gov.uk/ewhc/ch/2025/2863
+  - https://www.burges-salmon.com/articles/102lydc/getty-images-v-stability-ai-getty-granted-permission-to-appeal
+  - https://ipkitten.blogspot.com/2026/01/permission-to-appeal-granted-in-getty.html
   evidence:
   - data/raw/research/facts.csv
-  notes: 'Getty dropped its UK training claim (training happened outside the UK), so the ruling does not decide whether training is lawful.'
+  notes: 'Getty dropped its UK training claim (training happened outside the UK), so the ruling does not decide whether training is lawful. First-instance only: in Dec. 2025 Joanna Smith J granted Getty permission to appeal the rejection of its secondary-infringement ("infringing copy") claim, so this holding is under appeal; no Court of Appeal decision found as of Oct. 31, 2026. Say "a UK High Court held (now on appeal)".'
 - id: c10
   text: 'Notes: there is little market incentive to fix the Eurocentric default'
   kind: qualitative

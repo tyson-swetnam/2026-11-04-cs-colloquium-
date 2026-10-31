@@ -2,6 +2,6 @@ claim,publisher,url,http_status,supported,quote
 USB-C analogy,Model Context Protocol,https://modelcontextprotocol.io/docs/getting-started/intro,200,True,Think of MCP like a USB-C port for AI applications.
 Claude Code,Anthropic,https://code.claude.com/docs/en/mcp,200,True,"Claude Code can connect to hundreds of external tools and data sources through the Model Context Protocol (MCP) , an open source standard for AI-tool integrations."
 Codex,OpenAI,https://developers.openai.com/codex/mcp,200,True,Model Context Protocol (MCP) lets ChatGPT and Codex use tools and information from other systems.
-Antigravity,Google,https://antigravity.google/docs/mcp,200,True,"Antigravity supports the Model Context Protocol (MCP), an open standard that lets AI agents and editors securely connect to local developer toolsâ¦"
+Antigravity,Google,https://antigravity.google/docs/mcp,200,True,"Antigravity supports the Model Context Protocol (MCP), an open standard that lets AI agents and editors securely connect to local developer tools…"
 OpenCode,SST / OpenCode,https://opencode.ai/docs/mcp-servers/,200,True,"You can add external tools to OpenCode using the Model Context Protocol , or MCP."
 Goose,Block / Agentic AI Foundation,https://goose-docs.ai/,200,True,MCP is the open standard for connecting AI agents to tools and data sources.

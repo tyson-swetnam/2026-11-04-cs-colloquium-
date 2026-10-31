@@ -1,6 +1,6 @@
 # How I Learned to Stop Worrying and Love the AI
 
-**Slides:** https://tyson-swetnam.github.io/2026-11-04-cs-colloquium-/ (published from `talk/deck.html` by `.github/workflows/pages.yml`)
+**Site:** https://tyson-swetnam.github.io/2026-11-04-cs-colloquium-/ has the full deck and an evidence page for every slide. It's built by `tools/build_site.py` and published by `.github/workflows/pages.yml` on each push to `main`.
 
 UNM Computer Science Colloquium · Tyson L. Swetnam · Wednesday, Nov. 4, 2026, 2 p.m. · Larrañaga Engineering Auditorium (Centennial 1041)
 

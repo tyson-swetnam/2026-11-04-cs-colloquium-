@@ -28,11 +28,15 @@ claims:
     not documented. MESA's docs say its apps and agents run on CyVerse VICE, GPU builds on NVIDIA A16 nodes
     (f5, f6); "NAIRR" and "Jetstream" never appear in the docs (data/processed/mesa_docs_terms.csv). The award
     abstract plans ACCESS-CI resources (TACC, OSN, CyVerse, Jetstream2) and does not say NAIRR (f3); the award
-    is charged to the NAIRR fund line (f2), and Jetstream2 is a NAIRR Pilot provider (slide 20), but CyVerse is
-    not. Say "NAIRR compute" only if the recording ran on a NAIRR allocation (e.g. Jetstream2); otherwise name
-    the machine. (3) "Non-CS researcher" and "real result" (notes) depend on the recording. Minor: the slide
+    is charged to the NAIRR fund line (f2), and Jetstream2 is a NAIRR Pilot provider (slide 20). Whether CyVerse
+    is a NAIRR Pilot resource is not established here: no source in this folder or slide 20 lists it either way
+    (slide 20 could not read the resource catalog). Because the abstract plans both CyVerse and Jetstream2, the
+    machine cannot be named until the clip exists. Say "NAIRR compute" only if the recording ran on a NAIRR Pilot
+    allocation (e.g. Jetstream2); otherwise name the machine actually used. Likewise say "lakehouse" plainly only
+    if the recording queries one; the only lakehouse in MESA's public docs is the DuckLake of AVU metadata history
+    (f7). (3) "Non-CS researcher" and "real result" (notes) depend on the recording. Minor: the slide
     says ~2:00 target length but the notes budget ~2.5 min.
-  proposed_text: 'A researcher asks a question; the agent queries the lakehouse on NSF cyberinfrastructure (CyVerse) and returns a figure.'
+  proposed_text: 'A researcher asks a question; the agent queries the data on [machine used in the recording] and returns a figure. (Use "NAIRR compute" only if the run used a NAIRR Pilot allocation such as Jetstream2; use "lakehouse" only if the recording queries one.)'
 - id: c2
   text: 'MESA · NSF Award #2632685'
   kind: factual

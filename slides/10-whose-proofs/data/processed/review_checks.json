@@ -1,0 +1,142 @@
+{
+  "zenodo_versions": {
+    "status": 200,
+    "total": 1,
+    "versions": [
+      {
+        "id": 22737751,
+        "publication_date": "2026-09-11",
+        "n_creators": 25
+      }
+    ]
+  },
+  "tao_blog_oct1_15": {
+    "status": 200,
+    "n_posts": 19,
+    "n_guest_posts": 13,
+    "ahm_post": [
+      {
+        "date": "2026-10-07T16:02:51-08:00",
+        "title": "AHM Statement on OpenAI’s October 6 Release of Mathematical Documents",
+        "url": "https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/",
+        "guest_author": "the Association for Human Mathematics"
+      }
+    ],
+    "posts": [
+      {
+        "date": "2026-10-14T06:38:03-08:00",
+        "title": "First Proof, Third Batch webinar",
+        "url": "https://terrytao.wordpress.com/2026/10/14/first-proof-third-batch-webinar/",
+        "guest_author": null
+      },
+      {
+        "date": "2026-10-13T11:30:10-08:00",
+        "title": "2026 AMS Committee on Education Workshop Report",
+        "url": "https://terrytao.wordpress.com/2026/10/13/2026-ams-committee-on-education-workshop-report/",
+        "guest_author": null
+      },
+      {
+        "date": "2026-10-12T19:14:00-08:00",
+        "title": "This is normal bad work",
+        "url": "https://terrytao.wordpress.com/2026/10/12/this-is-normal-bad-work/",
+        "guest_author": "Sophie Huiberts"
+      },
+      {
+        "date": "2026-10-12T06:19:10-08:00",
+        "title": "Additional recent pieces on math and AI",
+        "url": "https://terrytao.wordpress.com/2026/10/12/additional-recent-pieces-on-math-and-ai/",
+        "guest_author": null
+      },
+      {
+        "date": "2026-10-11T15:21:07-08:00",
+        "title": "Illustration beyond Proof",
+        "url": "https://terrytao.wordpress.com/2026/10/11/illustration-beyond-proof/",
+        "guest_author": "Kate Stange and Edmund Harriss"
+      },
+      {
+        "date": "2026-10-10T08:16:02-08:00",
+        "title": "Math 2.0",
+        "url": "https://terrytao.wordpress.com/2026/10/10/math-2-0/",
+        "guest_author": null
+      },
+      {
+        "date": "2026-10-09T08:35:03-08:00",
+        "title": "What mathematicians should know about the Lean Theorem Prover: questions of reliability and AI",
+        "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
+        "guest_author": "Thomas Hales"
+      },
+      {
+        "date": "2026-10-08T06:43:35-08:00",
+        "title": "What should we tell our students?",
+        "url": "https://terrytao.wordpress.com/2026/10/08/what-should-we-tell-our-students/",
+        "guest_author": "Álvaro Lozano-Robledo"
+      },
+      {
+        "date": "2026-10-07T16:02:51-08:00",
+        "title": "AHM Statement on OpenAI’s October 6 Release of Mathematical Documents",
+        "url": "https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/",
+        "guest_author": "the Association for Human Mathematics"
+      },
+      {
+        "date": "2026-10-07T10:13:51-08:00",
+        "title": "The barriers of perception",
+        "url": "https://terrytao.wordpress.com/2026/10/07/the-barriers-of-perception/",
+        "guest_author": "Raghu Meka"
+      },
+      {
+        "date": "2026-10-06T13:50:11-08:00",
+        "title": "Hexagon",
+        "url": "https://terrytao.wordpress.com/2026/10/06/hexagon/",
+        "guest_author": "Ben Antieau"
+      },
+      {
+        "date": "2026-10-06T06:37:30-08:00",
+        "title": "Changes to the Erdős problems web site",
+        "url": "https://terrytao.wordpress.com/2026/10/06/changes-to-the-erdos-problems-web-site/",
+        "guest_author": "Thomas Bloom"
+      },
+      {
+        "date": "2026-10-05T11:56:16-08:00",
+        "title": "Postdoc position on formal verification and algorithm discovery for numerical analysis",
+        "url": "https://terrytao.wordpress.com/2026/10/05/postdoc-position-on-formal-verification-and-algorithm-discovery-for-numerical-analysis/",
+        "guest_author": "Annalisa Buffa"
+      },
+      {
+        "date": "2026-10-05T11:21:23-08:00",
+        "title": "The Future of Mathematics",
+        "url": "https://terrytao.wordpress.com/2026/10/05/the-future-of-mathematics/",
+        "guest_author": "Jeremy Avigad"
+      },
+      {
+        "date": "2026-10-04T07:25:28-08:00",
+        "title": "On classical solutions and singularity formation in incompressible fluids",
+        "url": "https://terrytao.wordpress.com/2026/10/04/on-classical-solutions-and-singularity-formation-in-incompressible-fluids/",
+        "guest_author": "Diego Córdoba and Luis Martínez-Zoroa"
+      },
+      {
+        "date": "2026-10-03T06:31:54-08:00",
+        "title": "What does the advent of powerful AI models mean for mathematicians like me?",
+        "url": "https://terrytao.wordpress.com/2026/10/03/what-does-the-advent-of-powerful-ai-models-mean-for-mathematicians-like-me/",
+        "guest_author": "Jennifer Taback"
+      },
+      {
+        "date": "2026-10-02T11:11:36-08:00",
+        "title": "AIM: an invitation to explore mathematics together",
+        "url": "https://terrytao.wordpress.com/2026/10/02/aim-an-invitation-to-explore-mathematics-together/",
+        "guest_author": "Matthew Colbrook"
+      },
+      {
+        "date": "2026-10-02T06:52:25-08:00",
+        "title": "247A, Notes 2: The Hardy–Littlewood maximal function and applications",
+        "url": "https://terrytao.wordpress.com/2026/10/02/247a-notes-2-the-hardy-littlewood-maximal-function-and-applications/",
+        "guest_author": null
+      },
+      {
+        "date": "2026-10-01T18:18:24-08:00",
+        "title": "arXiv updates its rate limiting policy",
+        "url": "https://terrytao.wordpress.com/2026/10/01/arxiv-updates-its-rate-limiting-policy/",
+        "guest_author": null
+      }
+    ]
+  }
+}

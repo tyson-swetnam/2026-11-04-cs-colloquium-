@@ -7,11 +7,19 @@ claims:
   kind: technical
   priority: low
   status: supported
-  validation: Definition of a bare model (no tools); see README.
-  sources: []
+  validation: |
+    Definition of a bare model (no tools). The MCP docs describe file and tool access as something an AI application
+    gains by connecting to data sources and tools (facts.csv f26), i.e. it comes from the harness, not the model.
+  sources:
+  - https://modelcontextprotocol.io/docs/getting-started/intro
   evidence:
-  - README.md
-  notes: True of the model itself; chat products that read files or run code do so through tools in a harness, which is the point of cards 2-3.
+  - data/raw/research/facts.csv
+  - data/raw/sources/MANIFEST.yaml
+  notes: |
+    True of the model itself; chat products that read files or run code do so through tools in a harness, which is
+    the point of cards 2-3. Earlier the only evidence was this README (circular); now backed by the MCP docs (f26),
+    which support the claim indirectly. A model also reads whatever is put in its prompt, so "answers from training"
+    is the plain-language simplification, not the whole story.
 - id: c2
   text: 'An agent is a loop around the model: read the goal, call a tool, read the result, decide the next call.'
   kind: technical
@@ -45,22 +53,33 @@ claims:
   text: 'Notes: an MCP server is usable from every agent your group already uses (Claude Code, Codex, Antigravity, OpenCode, Goose)'
   kind: factual
   priority: medium
-  status: supported
-  validation: Each client's own documentation states MCP support (src/01_mcp_support.py); slide 14's server is registered by one mcp.json.
+  status: partially-supported
+  validation: |
+    Each client's own documentation states MCP support (src/01_mcp_support.py -> mcp_support.csv; quotes in facts.csv
+    f14-f18, pages saved under data/raw/sources/client_*.html). MESA's docs show that a given server is not always
+    usable from all five in practice (facts.csv f23-f25).
   sources:
   - https://code.claude.com/docs/en/mcp
   - https://developers.openai.com/codex/mcp
   - https://antigravity.google/docs/mcp
   - https://opencode.ai/docs/mcp-servers/
   - https://goose-docs.ai/
+  - https://idss-mesa.github.io/docs/servers/formation-mcp/index.md
+  - https://idss-mesa.github.io/docs/llms-full.txt
   evidence:
+  - data/raw/research/facts.csv
   - data/processed/mcp_support.csv
-  - ../14-agentic-ai/mcp.json
   notes: |
+    Supported: all five clients speak MCP. Not supported as a blanket statement: MESA's own docs say OpenCode and Goose
+    cannot complete the hosted Formation server's sign-in in the MESA apps, Antigravity's sign-in "has not been tested
+    by MESA", and OpenCode's irods is the hosted public endpoint that reads public data only (f23-f25). So "every server,
+    every agent" overstates it; sign-in and transport can block a client.
     Goose's docs moved from block.github.io/goose to goose-docs.ai (redirect confirmed 2026-10-31).
     MESA's own installer registers its servers with four of the five (Claude Code, Codex CLI, Antigravity, OpenCode);
-    Goose ships in the MESA CLI app but is not a documented installer target (facts.csv f9-f10). The note's claim is
-    about MCP in general, so it stands; just don't say MESA's installer covers Goose.
+    Goose ships in the MESA CLI app but is not a documented installer target (f9-f10).
+    Slide 14's mcp.json was dropped as evidence: it points to slides/10-agentic-ai/src/mesa_tools_server.py, which does
+    not exist (the server is at slides/14-agentic-ai/src/mesa_tools_server.py). Slide 14's owner should fix that path.
+  proposed_text: "Notes: Claude Code, Codex, Antigravity, OpenCode and Goose all speak MCP, so a server you stand up once can plug into each of them, though sign-in for hosted servers can still differ by client."
 - id: c6
   text: "Notes: MESA's MCP servers are public today"
   kind: factual
@@ -81,13 +100,17 @@ claims:
   - data/raw/research/facts.csv
   - data/processed/mesa_public.csv
   notes: |
-    "Public" here means anyone can install and run them; the docs strongly imply the repos are public (an anonymous
-    installer clones them) but repository visibility and licence were not checked directly, and no licence is named
-    on the server or install pages. Two of the three registered servers are not MESA's own: Formation is CyVerse's
-    hosted Discovery Environment server, and irods-mcp-server is the reference iRODS server (Docker image under cyverse/).
-    MESA's own server is mesa-mcp (with mesa-ducklake and mesa-anyjev as add-ons). If saying "open source", confirm
-    the licence in the repos first.
-  proposed_text: "MESA's MCP stack is public today: one install command, and its servers' source is on GitHub (idss-mesa)."
+    "Public" here means anyone can install and run MESA's own servers (mesa-mcp and irods-mcp-server, both linked as
+    idss-mesa repos) locally, and their default data access is anonymous and read-only. It does not mean every endpoint
+    is open: the hosted mesa-mcp "requires authentication" and the installer builds mesa-mcp and irods locally "because
+    they work without signing in" (f21-f22). The third registered server, Formation, is CyVerse's hosted Discovery
+    Environment server, run by CyVerse, with source in cyverse-de/formation, and needs a CyVerse sign-in (f7, f20).
+    Correction: an earlier note called irods-mcp-server CyVerse's; MESA's docs give its repo as idss-mesa/irods-mcp-server
+    (f19). Only its Docker image is under cyverse/ (f6), and it targets CyVerse's Data Store. The docs strongly imply the
+    idss-mesa repos are public (an anonymous installer clones them), but repository visibility and licence were not
+    checked directly, and no licence is named on the server or install pages. If saying "open source", confirm the
+    licence in the repos first.
+  proposed_text: "MESA's own MCP servers are public today: one install command, source on GitHub (idss-mesa), and they run locally without signing in."
 - id: c7
   text: 'Card 4: describe a server once, and any agent that speaks MCP can use it'
   kind: technical
@@ -95,15 +118,15 @@ claims:
   status: supported
   validation: |
     The MCP docs say MCP is supported across many clients, "making it easy to build once and integrate everywhere"
-    (re-fetched 2026-10-31); slide 14's server is described once in mcp.json and c5 confirms MCP support in the five
-    named clients.
+    (re-fetched 2026-10-31); c5 confirms MCP support in the five named clients.
   sources:
   - https://modelcontextprotocol.io/docs/getting-started/intro
   evidence:
   - data/raw/research/facts.csv
   - data/processed/mcp_support.csv
-  - ../14-agentic-ai/mcp.json
   notes: |
-    Build once is accurate; each client still needs its own registration entry (config formats differ), which is
-    what MESA's installer automates. "Any agent" holds for the server; transport support (stdio vs HTTP) and
-    sign-in can differ by client.
+    Build once is accurate as a statement about the protocol; each client still needs its own registration entry
+    (config formats differ), which is what MESA's installer automates. "Any agent" holds for the server's protocol
+    surface, but sign-in can still block a client: MESA's docs say OpenCode and Goose cannot complete Formation's
+    sign-in in the MESA apps (f23). Slide 14's mcp.json was dropped as evidence because it points to a script path
+    that does not exist (slides/10-agentic-ai/...; the server is under slides/14-agentic-ai/src/).

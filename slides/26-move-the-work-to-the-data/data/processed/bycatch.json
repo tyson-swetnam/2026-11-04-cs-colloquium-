@@ -1,0 +1,27 @@
+{
+  "total": 188522,
+  "carabid": 141063,
+  "carabid_excl_dna": 120118,
+  "dna_extracts_collid63": 20945,
+  "bycatch_named": 46832,
+  "bycatch_named_plus_collid4": 47459,
+  "collection_metadata": {
+    "4": {
+      "collectionName": "NEON Invertebrate Voucher Collection at Arizona State University",
+      "datasetname": "Pinned invertebrate reference collection specimens for NEON invertebrate bycatch samples for the development of site-level invertebrate species checklists."
+    },
+    "11": {
+      "collectionName": "Carabid Collection (Archive Pooling)",
+      "datasetname": "Carabid vouchers collected in a pitfall trap deployed for approximately 2 weeks as per the NEON carabid sampling protocol. Archived in 95% ethanol and pooled across traps from the same plot and sampling dates."
+    },
+    "13": {
+      "collectionName": "Invertebrate Bycatch Collection (Archive Pooling)",
+      "datasetname": "Bulk unsorted invertebrate bycatch collected in a pitfall trap deployed for approximately 2 weeks as per the NEON carabid sampling protocol Carabids and vertebrates have been removed. Remaining samples are archived in 95% ethanol and pooled across traps from the same plot and sampling dates."
+    },
+    "63": {
+      "collectionName": "Carabid Collection (DNA Extracts)",
+      "datasetname": "Genomic extract from the leg of a pinned carabid voucher collected in a pitfall trap deployed for approximately 2 weeks as per the NEON carabid sampling protocol. Used for barcoding and archived at -80 degrees C."
+    }
+  },
+  "non_carabid": 47459
+}

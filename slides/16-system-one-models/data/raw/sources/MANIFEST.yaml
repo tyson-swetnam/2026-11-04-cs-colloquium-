@@ -166,6 +166,18 @@ som_guide.txt:
   sha256: f295740455e608da5bb82ca81ef80236ac699ce5e032b7b4ec5d96e6dfb72a83
   source: systemonemodels.org
   url: https://systemonemodels.org/guides/what-is-a-system-one-model/
+typesafe_box.html:
+  note: HTTP 200
+  retrieved: '2026-10-31'
+  sha256: 76f466274ab263e53015ed50e477520bd3d180a9be640ebd5e3ee5e1a7b5eaee
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/primitives/box
+typesafe_box.txt:
+  note: text extracted from typesafe_box.html
+  retrieved: '2026-10-31'
+  sha256: a9caa490453997cb3eb1e7fcf8c274e09454618a4eb15f97ffbb9bced56122d0
+  source: TypeSafe AI
+  url: https://docs.typesafe.ai/primitives/box
 typesafe_concept.html:
   note: HTTP 200
   retrieved: '2026-10-31'

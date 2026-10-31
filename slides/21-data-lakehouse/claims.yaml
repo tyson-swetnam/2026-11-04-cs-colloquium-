@@ -13,13 +13,16 @@ claims:
   - https://ducklake.select/docs/stable/duckdb/advanced_features/transactions
   - https://ducklake.select/docs/stable/duckdb/guides/access_control
   - https://ducklake.select/docs/stable/duckdb/usage/choosing_storage
+  - https://ducklake.select/docs/stable/duckdb/usage/choosing_a_catalog_database
+  - https://ducklake.select/docs/stable/duckdb/advanced_features/conflict_resolution
+  - https://idss-mesa.github.io/okf/concepts/home.md
   - https://api.nsf.gov/services/v1/awards/2632685.json
   evidence:
   - data/raw/research/facts.csv
   - data/processed/ducklake_demo.json
   - src/02_ducklake_demo.py
-  notes: 'ACID and cheap storage hold: DuckLake docs claim full ACID with snapshot isolation, and the local demo (DuckDB 2.0.0) showed a rolled-back transaction leaving no rows and no snapshot, and a conflicting concurrent update rejected at commit while concurrent inserts both committed. Storage was a local folder standing in for object storage; S3 was not tested. "Governance" is the weak word: DuckLake docs say access control "is not per se a feature of DuckLake" and is built from the catalog database and storage permissions, with trusted writers. In MESA, governance is planned at the platform level (award abstract: "policy-driven governance"; iRODS on slide 22). Object storage is cheap to hold but can charge for transfer (DuckLake docs). A SQLite catalog returned "database is locked" for overlapping writers in the demo; a DuckDB-file catalog was used instead.'
-  proposed_text: Low-cost object storage with ACID transactions and time travel; governance from the catalog and iRODS policy
+  notes: 'ACID and cheap storage hold for DuckLake as documented: the docs claim full ACID with snapshot isolation, and the local demo (DuckDB 2.0.0) showed a rolled-back transaction leaving no rows and no snapshot, and a conflicting concurrent update rejected at commit while concurrent inserts both committed. Scope of the demo: two connections inside ONE DuckDB process with a DuckDB-file catalog and a local folder standing in for object storage (S3 not tested). The DuckLake docs say a DuckDB catalog is for "a single client"; SQLite is for multiple local clients (one writer at a time, lock conflicts retried); "a multi-user lakehouse with potentially remote clients" should use PostgreSQL. So the demo shows transactions on one machine, not the multi-user, remote setup MESA would run; that setup was not tested. "Governance" is the weak word: DuckLake docs say access control "is not per se a feature of DuckLake" and is built from the catalog database and storage permissions, with trusted writers. In MESA, governance is a planned objective (award abstract: "policy-driven governance"); the MESA site gives the policy engine to the separate iRODS data mesh and says only that the lakehouse and mesh "interoperate". No source shows iRODS policy governing DuckLake tables. Object storage is cheap to hold but can charge for transfer (DuckLake docs).'
+  proposed_text: Low-cost object storage with ACID transactions and time travel; access control via catalog and storage permissions
 - id: c2
   text: 'Figure: MESA proposal · NSF Award #2632685'
   kind: factual
@@ -87,15 +90,14 @@ claims:
   text: Structured, semi-structured and unstructured data underneath
   kind: technical
   priority: low
-  status: partially-supported
+  status: supported
   validation: Lakehouse paper figure; DuckLake specification on storage format.
   sources:
   - https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf
   - https://ducklake.select/docs/stable/specification/introduction
   evidence:
   - data/raw/research/facts.csv
-  notes: 'The lakehouse concept covers all three (CIDR 2021 Figure 1). But the table formats manage tables stored as Parquet; images, documents and other unstructured files sit alongside in object storage or iRODS and are referenced, not stored as DuckLake tables.'
-  proposed_text: 'Notes: tables in Parquet; unstructured files (images, documents) sit alongside in the same object store and iRODS, referenced from the tables.'
+  notes: 'As a general statement about lakehouses this holds: CIDR 2021 Figure 1 shows "Structured, Semi-structured & Unstructured Data" under the lakehouse. Caveat: DuckLake itself manages only tabular data stored as Parquet (spec). How MESA handles unstructured files (for example, whether tables reference files in object storage or iRODS) is not described in any fetched source and was not checked.'
 - id: c8
   text: MESA's data lakehouse is built on DuckLake
   kind: factual

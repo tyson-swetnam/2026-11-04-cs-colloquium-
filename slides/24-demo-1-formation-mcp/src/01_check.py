@@ -54,6 +54,17 @@ CHECKS = [
     ("f18", "c5", "mesa_full", "Codex and Antigravity run a local `irods` server, and every agent runs a local `mesa` server"),
     ("f19", "c5", "mesa_full", "OpenCode's `irods` is the hosted public endpoint, which reads public data only."),
     ("f20", "c4", "irods", "It is registered under the name `irods` with every detected client"),
+    # added after review (2026-10-31)
+    ("f22", "c2", "formation", "The MESA team has not tested Antigravity's sign-in to Formation; if it fails, use another client."),
+    ("f23", "c2", "mesa_full", "On the [KASM desktop](https://idss-mesa.github.io/docs/apps/kasm/) the browser runs inside the app, so you can also sign in normally by opening the address in the desktop's Chrome or Firefox."),
+    ("f24", "c2", "mesa_full", "Use Claude Code for Formation there (Codex too, once CyVerse accepts its `http://127.0.0.1` callback)."),
+    ("f25", "c3", "cy_overview", "and `osg` jobs on the [OpenScienceGrid](https://opensciencegrid.org){target=_blank}"),
+    ("f26", "c3", "cy_argo", "the pilot leaves the `01_condor` inventory group empty and uses Argo."),
+    ("f27", "c3", "cy_argo", "title: Pilot CyVerse deployment record"),
+    ("f28", "c7", "formation", "always as **you** and with your own permissions."),
+    ("f29", "c7", "formation", "| `delete_data` | Moves a file or folder to your Data Store trash; `dry_run` previews it |"),
+    ("f30", "c7", "mesa_full", "local `mesa` and `irods` MCP servers, and the agents act as **you**, with access to your home folder and to what is shared with you."),
+    ("f31", "c9", "mesa_full", "**Claude Code** also registers the hosted CyVerse Data Store MCP servers: `irods` (the anonymous public endpoint, which works at once) and `irods-auth` (the authenticated endpoint)."),
 ]
 
 
@@ -83,14 +94,13 @@ def main() -> None:
     print(df[["fact", "claim", "found"]].to_string(index=False))
 
     # NSF award shown in the slide footer
-    url = ("https://api.nsf.gov/services/v1/awards/2632685.json?printFields="
-           "id,title,awardeeName,piFirstName,piLastName,startDate,expDate,fundProgramName,estimatedTotalAmt")
+    url = "https://api.nsf.gov/services/v1/awards/2632685.json"  # full record (program, fundProgramName, divAbbr)
     status, body = get(url)
     dest = raw / "nsf_award_2632685.json"
     dest.write_text(body, encoding="utf-8")
     record(dest, url=url, source="NSF Award API", note="Award shown in slide footer")
     award = json.loads(body)["response"]["award"]
-    keep = ["id", "title", "awardeeName", "pdPIName", "startDate", "expDate", "fundProgramName", "orgLongName2", "estimatedTotalAmt", "transType"]
+    keep = ["id", "title", "awardeeName", "pdPIName", "startDate", "expDate", "fundProgramName", "program", "divAbbr", "orgLongName2", "estimatedTotalAmt", "transType"]
     award = [{k: a.get(k) for k in keep} for a in award]
     pd.DataFrame(award).to_csv(out / "nsf_award.csv", index=False)
     print(award)

@@ -3,6 +3,11 @@ abajournal_20m_logs.html:
   sha256: 6d93cdc80a1e4c55caac38e6a31cbdf3610ff5cd2b086171529d5e660bbd5398
   source: ABA Journal
   url: https://www.abajournal.com/news/article/chatgpt-creator-must-turn-over-20m-chat-logs-in-copyright-litigation-federal-judge-says
+aljazeera_sony_warner_v_anthropic.html:
+  retrieved: '2026-10-31'
+  sha256: b1e966458cebc6edb78214e62215af4251d783c5bc739a8642ee40e9d0cfe1f8
+  source: Al Jazeera (Reuters), 2026-08-31
+  url: https://www.aljazeera.com/economy/2026/8/31/sony-warner-music-sue-anthropic-saying-it-pirated-songs-to-train-its-ai
 authorsalliance_fairness_hearing.html:
   retrieved: '2026-10-31'
   sha256: 6fa953dfd4f180bad8ce82aa2b3a671ff863fa2120030b42779cd8e17df6b269
@@ -35,6 +40,11 @@ bartz_settlement_site.html:
   sha256: 259b489aa9569bca7d8fa84432f6aaa20e77c936515a96ac26829056f1c30279
   source: Official court-authorized settlement website (JND)
   url: https://www.anthropiccopyrightsettlement.com/
+burgessalmon_getty_appeal.html:
+  retrieved: '2026-10-31'
+  sha256: 3e84fd8d2b178ced09dcac33cb914496dadc53db12489b75f7cd539f9c46a5e8
+  source: Burges Salmon, Getty granted permission to appeal (Jan. 2026)
+  url: https://www.burges-salmon.com/articles/102lydc/getty-images-v-stability-ai-getty-granted-permission-to-appeal
 cc_languages.csv:
   retrieved: '2026-10-31'
   sha256: 261dfd2da5e9bfa8975f57711e23ab639b2f1b6c174273e9182a55e05ed46bf1
@@ -55,12 +65,22 @@ dodge2021_c4_abs.html:
   sha256: 0ddaa07b6a26e8cbbda5adb72c572c9f54513307ee8b2ebe1688e9867b34087c
   source: Dodge et al. 2021, Documenting Large Webtext Corpora (C4), arXiv abstract
   url: https://arxiv.org/abs/2104.08758
+fortune_sony_warner_v_anthropic.html:
+  retrieved: '2026-10-31'
+  sha256: 9c9c4c7d86c4c220dba5079559c77eb684159b235e9cc4c80a8984b9aea49dd2
+  source: Fortune, 2026-09-01
+  url: https://fortune.com/2026/09/01/anthropic-warner-sony-music-songs-lawsuit/
 getty_v_stability_ewhc_2025_2863.xml:
   retrieved: '2026-10-31'
   sha256: b97f8f86be0aba3da7ba16cf0528555c1bbaca34449f4f079f5d85acbe22c6c6
   source: Getty Images v Stability AI [2025] EWHC 2863 (Ch), The National Archives
     Find Case Law
   url: https://caselaw.nationalarchives.gov.uk/ewhc/ch/2025/2863/data.xml
+graphicpolicy_midjourney_2025-11-14.html:
+  retrieved: '2026-10-31'
+  sha256: 00b92cdae02ee5cb5ba472339dd1690b124ff59baf409d2dbf8397a187f4bca2
+  source: Graphic Policy, 2025-11-14 (mediation schedule)
+  url: https://graphicpolicy.com/2025/11/14/court-suggests-disney-v-midjourney-go-to-mediation/
 graphicpolicy_midjourney_2026-05.html:
   retrieved: '2026-10-31'
   sha256: ee48ed749ed35be0c69e3543a58e085c8070ee32bd24fab1bb8878f4dd98d606
@@ -76,6 +96,11 @@ intro_gpt_legal.html:
   sha256: 626b4a1392a09e7a8edb209911a654fbaaa2fde6ed8d5798f66d4e50f545ecb1
   source: Speaker's own compiled legal page cited on slide
   url: https://tyson-swetnam.github.io/intro-gpt/legal/
+ipkat_getty_appeal.html:
+  retrieved: '2026-10-31'
+  sha256: c35b81b5a824daa022ceb2e80b3a89d83028e9a70bda3c2b2215e9c9d03b356e
+  source: IPKat, Permission to appeal granted in Getty (Jan. 2026)
+  url: https://ipkitten.blogspot.com/2026/01/permission-to-appeal-granted-in-getty.html
 ipwatchdog_publishers_v_anthropic.html:
   retrieved: '2026-10-31'
   sha256: e5f69217a665b447cb728147ea6f4e70ce0490b51630de7abc789d59e09a632d
@@ -106,6 +131,12 @@ mbw_publishers_v_anthropic.html:
   sha256: e986fe8b1c97af19609f64c7e0008d77d9791b3c8d70d81d4ab917fdf6d8023c
   source: Music Business Worldwide, 2026-01-28
   url: https://www.musicbusinessworldwide.com/umg-concord-and-abkco-sue-anthropic-for-3bn-in-what-could-be-single-largest-non-class-action-copyright-case-in-us-history/
+mbw_sony_warner_v_anthropic.html:
+  retrieved: '2026-10-31'
+  sha256: 49686adb096afe382272fb3a919a7438b4566b1b944f3c19ce875b61bfa9ae2a
+  source: Music Business Worldwide, Sony Music Publishing and Warner Chappell v. Anthropic
+    (Aug. 2026)
+  url: https://www.musicbusinessworldwide.com/now-sony-music-publishing-and-warner-chappell-sue-anthropic-in-multi-billion-dollar-lawsuit-one-of
 nysd_20m_logs_order.pdf:
   retrieved: '2026-10-31'
   sha256: ca81cc0cbb19e46ff2a5daae710344165be9da9382660625f9036b58fbd295af
@@ -129,6 +160,12 @@ publishers_v_anthropic_complaint_2026-01-28.pdf:
   source: Concord Music Group et al. v. Anthropic (N.D. Cal., filed 2026-01-28), complaint
     (copy hosted by MBW)
   url: https://www.musicbusinessworldwide.com/files/2026/01/Anthropic-complaint-01.28.26-1.pdf
+sony_warner_v_anthropic_complaint_2026-08-28.pdf:
+  retrieved: '2026-10-31'
+  sha256: 3f41f934e04df25535b42293014341c2222ef69bda46b9e42190d9d5f7218072
+  source: Sony Music Publishing et al. v. Anthropic et al. (N.D. Cal., filed 2026-08-28),
+    complaint (copy hosted by MBW)
+  url: https://www.musicbusinessworldwide.com/files/2026/08/COMPLAINT-in-Sony_Music_Publishing_US_LLC_e.pdf
 techcrunch_publishers_v_anthropic.html:
   retrieved: '2026-10-31'
   sha256: 74634abef30139d094e57e359549a94d0a52c1ea8f7e42bee007e555e2d46245

@@ -8,9 +8,10 @@ f06,c1,aws_s3_api_welcome.html,True
 f07,c1,osn_home.html,True
 f08,c1,claude_code_legal.html,True
 f09,c1,mesa_docs_llms-full.txt,True
-f10,c1;c2,mesa_stack.html,True
+f10,c1;c2;c5,mesa_stack.html,True
 f11,c1,mesa_docs_llms-full.txt,True
 f12,c2,nsf_award_2632685.json,True
 f13,c2,mesa_stack.html,True
 f14,c2,mesa_docs_llms-full.txt,True
 f15,c4;c5,talk/slides.md,True
+f16,c2,nsf_award_2632685.json,True

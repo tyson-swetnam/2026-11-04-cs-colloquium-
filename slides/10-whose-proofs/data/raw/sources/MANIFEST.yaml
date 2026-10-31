@@ -142,12 +142,42 @@ sciam_oct8.txt:
   retrieved: '2026-10-31'
   sha256: 70d722860cda1c49430d4d842986648ec7f293e4f86e45647350ba0b44e1d7d5
   source: text extracted locally from the matching download
+tao_blog_ahm.html:
+  note: 'fetched 2026-10-31 for slide 10 (review: c6)'
+  retrieved: '2026-10-31'
+  sha256: f2618257aefb05dbaa7966f39f4f3e9633082c40429f4ce9f0a2a35856d42b62
+  source: Terence Tao, What's new (blog)
+  url: https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/
+tao_blog_ahm.txt:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: f2ff959ebaa03523756bc0e67dd361d87275c628fe434e80478190fb5d4ffe36
+  source: text extracted locally from tao_blog_ahm.html
+  url: https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/
 tao_statuses_p1.json:
   note: fetched 2026-10-31 for slide 10
   retrieved: '2026-10-31'
   sha256: 725a39489849bf11da48ea99e9d16326934757c5b9c015cc3b1fb28beb2da2bd
   source: Terence Tao public Mastodon timeline
   url: https://mathstodon.xyz/api/v1/accounts/109378244433513115/statuses?limit=40
+tao_wp_posts.json:
+  note: Tao blog posts 1-15 Oct 2026
+  retrieved: '2026-10-31'
+  sha256: 71860f4f408e77ee82d93307a41e909d1bcf2e07810704808e3ec7f205b615af
+  source: WordPress.com public REST API
+  url: https://public-api.wordpress.com/rest/v1.1/sites/terrytao.wordpress.com/posts/?after=2026-10-01T00:00:00&before=2026-10-15T00:00:00&number=30&fields=date,title,URL,author,excerpt
+tao_wp_posts_sep.json:
+  note: Tao blog posts 10-20 Sep 2026
+  retrieved: '2026-10-31'
+  sha256: 61b27cf028657d69a12ecf42968923bd44554bd4e67e53343b3cbb2d64541f3a
+  source: WordPress.com public REST API
+  url: https://public-api.wordpress.com/rest/v1.1/sites/terrytao.wordpress.com/posts/?after=2026-09-10T00:00:00&before=2026-09-20T00:00:00&number=30&fields=date,title,URL,content
+tao_wp_posts_sep.txt:
+  note: fetched 2026-10-31 for slide 10
+  retrieved: '2026-10-31'
+  sha256: 71317aabf0bd189fa9c160f086b487df1419052c2f26bdb436304e95a8e72526
+  source: text extracted locally from tao_wp_posts_sep.json
+  url: https://terrytao.wordpress.com/2026/09/12/after-math/
 techcrunch.html:
   note: fetched 2026-10-31 for slide 10
   retrieved: '2026-10-31'
@@ -188,3 +218,9 @@ zenodo_record.json:
   sha256: 2ae56864971f7df7a22d2cc976c0d5520f04cdfc03960f62742bc0bc9a5030dd
   source: Zenodo record of the Fields Medalists declaration
   url: https://zenodo.org/api/records/22737751
+zenodo_versions.json:
+  note: one version, 25 creators
+  retrieved: '2026-10-31'
+  sha256: 55cd7953c194dfe8716f3585d459af7d26663b804255b186e555c9f8fff14af4
+  source: Zenodo versions API
+  url: https://zenodo.org/api/records/22737751/versions

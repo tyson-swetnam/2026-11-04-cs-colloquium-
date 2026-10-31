@@ -43,8 +43,8 @@ claims:
   - data/raw/research/facts.csv
   - data/processed/project_counts.csv
   - data/processed/quote_check.csv
-  notes: 'The nairrpilot.org counter read "950 Research projects supported" and "50 States + DC & Puerto Rico" on 2026-10-31, so 940+ holds. NSF''s own pages give lower, older figures: "over 800" (NAIRR-OC announcement, 2026-09-01) and "more than 600" (NAIRR focus page). NSF calls it "a national public-private effort" (f4-f6). If asked, cite the portal counter.'
-  proposed_text: 'An NSF-led public-private partnership. Piloted since January 2024: 950 projects in all 50 states, DC and Puerto Rico.'
+  notes: 'The nairrpilot.org counter read "950 Research projects supported" and "50 States + DC & Puerto Rico" on 2026-10-31, so 940+ holds. NSF''s own pages give lower, older figures: "over 800" (NAIRR-OC announcement, 2026-09-01) and "more than 600" (NAIRR focus page). NSF calls it "a national public-private effort" (f4-f6). The counter is live and can change before the talk, so keep "940+" rather than an exact figure, and attribute it to the portal if asked.'
+  proposed_text: 'An NSF-led public-private partnership. Piloted since January 2024: 940+ projects in all 50 states, DC and Puerto Rico (nairrpilot.org counter).'
 - id: c5
   text: 'An operations center at SDSC and TACC now runs it'
   kind: factual
@@ -74,8 +74,8 @@ claims:
   - 'https://www.nsf.gov/focus-areas/ai/nairr'
   evidence:
   - data/raw/research/facts.csv
-  notes: 'Supported: GPU and HPC allocations (e.g. up to 2,000 GPU-hours on Bridges-2, Anvil AI, Expanse AI, Vista) and industry contributions (Azure, NVIDIA DGX Cloud, AWS credits) are requested through the nairrpilot.org portal. The FAQ says overhead rates do not apply and vendor credits are made available. No NSF or NAIRR page I fetched uses the word "free"; access is peer-reviewed, matched to providers and awarded for 12 months, so "FREE" can read as open-on-demand. "No cost to awardees" is accurate; "free" alone is loose.'
-  proposed_text: 'No-cost, peer-reviewed allocations: GPU and HPC time from federal and industry partners, through one national portal.'
+  notes: 'Supported: GPU and HPC allocations (e.g. up to 2,000 GPU-hours on Bridges-2, Anvil AI, Expanse AI, Vista) and industry contributions (Azure, NVIDIA DGX Cloud, AWS credits) are requested through the nairrpilot.org portal. The FAQ says only that overhead rates do not apply to cloud resource providers and that vendor credits are made available (f19), which is a budgeting answer, not a statement on cost to awardees. No NSF or NAIRR page I fetched (portal home, allocations, start-up, FAQ, NSF focus page, NSF 2024 Science Matters) says allocations are free, no-cost or no-charge; the only "free" hits are ACCESS ID sign-up and Weights & Biases academic licences. Access is peer-reviewed, matched to providers and awarded for 12 months. Both "free" and "no-cost" are unsourced; describe the allocations as awarded instead.'
+  proposed_text: 'Peer-reviewed allocations: GPU and HPC time and cloud credits from federal and industry partners, through one national portal.'
 - id: c7
   text: 'Research cloud: agentic AI on Jetstream2, the National Research Platform and FabAID'
   kind: factual
@@ -85,14 +85,15 @@ claims:
   sources:
   - 'https://docs.jetstream-cloud.org/alloc/overview/'
   - 'https://nrp.ai/'
+  - 'https://www.nsf.gov/science-matters/us-nairr-pilot-brings-cutting-edge-ai-resources-researchers'
   - 'https://api.nsf.gov/services/v1/awards/2609485.json'
   - 'https://www.nsf.gov/news/nsf-announces-83m-investment-integrated-data-systems'
   evidence:
   - data/raw/research/facts.csv
   - data/processed/nairr_awards.csv
   - data/raw/nsf_award_2609485.json
-  notes: 'Jetstream2: supported; its docs say it is a NAIRR Pilot resource provider. NRP: a free NSF-funded GPU and hosted-LLM platform led by UC San Diego (which also leads the NAIRR-OC), but I found no primary source listing NRP as a NAIRR Pilot resource; the resource catalog (submit-nairr.xras.org) failed TLS verification through the proxy and the nairrpilot.org resource list loads by JavaScript. FabAID (award 2609485, Morgridge, funded from Data Cyberinfrastructure, not the NAIRR fund) is a national data fabric (Open Science Data Fabric, Pelican, HTCondor) that "connects ... cyberinfrastructure, including NAIRR"; it is not a research cloud for running agents.'
-  proposed_text: 'Research cloud: run agents on Jetstream2 and the National Research Platform; move data with FabAID.'
+  notes: 'Jetstream2: supported; its docs say it is a NAIRR Pilot resource provider. NRP: supported for the Prototype NRP. NSF (Science Matters, 2024-10-16) lists "classroom educational resources such as Jetstream-2 and the Prototype National Research Platform" among NAIRR pilot resources, and says NAIRR pilot researchers at UC Berkeley use the Prototype NRP at SDSC (f36, f37). NRP itself is free to US nonprofit research and education and hosts open-weight models (f21). The NSF source names it as a classroom/educational resource; I did not find a current resource-catalog entry (submit-nairr.xras.org failed TLS through the proxy; the nairrpilot.org list loads by JavaScript). Earlier notes said no primary source listed NRP; that was wrong. FabAID (award 2609485, Morgridge, funded from Data Cyberinfrastructure, not the NAIRR fund) is a national data fabric (Open Science Data Fabric, Pelican, HTCondor) that "connects ... cyberinfrastructure, including NAIRR"; it is not a research cloud for running agents. The verdict stays partially-supported because of FabAID.'
+  proposed_text: 'Research cloud: run agents on Jetstream2 and the National Research Platform (both NAIRR pilot resources); move data with FabAID.'
 - id: c8
   text: 'AI inference: hosted open and commercial models, including the National Inference Service'
   kind: factual
@@ -108,8 +109,8 @@ claims:
   - data/raw/research/facts.csv
   - data/processed/keyword_search.csv
   - data/processed/nairr_awards.csv
-  notes: 'Hosted open models: Jetstream2 runs an LLM inference service (four open-weight models as of 2026-10-06); NRP hosts open-weight models; TACC Sagebrush (award 2537075, start 2026-09-15) is "An AI Inference Resource for ACCESS, NAIRR, and the Nation". Commercial models: partners give API access (Anthropic, OpenAI credits, Azure OpenAI). "National Inference Service" was not found: 0 hits in the NSF Award API, not on NSF or NAIRR pages, not in web search. The nearest NSF name is the National Deep Inference Fabric (NDIF, Northeastern), which is for studying model internals, not a hosted inference service. Drop the name unless the speaker has a source.'
-  proposed_text: 'AI inference: hosted open models (Jetstream2, NRP, TACC Sagebrush) and commercial model APIs from industry partners.'
+  notes: 'Hosted open models: Jetstream2 runs an LLM inference service (four open-weight models as of 2026-10-06); NRP hosts open-weight models and NSF lists the Prototype NRP as a NAIRR pilot resource (f36, f37; see c7). TACC Sagebrush (award 2537075) is an NSF equipment-acquisition award titled "An AI Inference Resource for ACCESS, NAIRR, and the Nation" that started 2026-09-15 and runs to 2028-08-31; its abstract says it is "designed to" provide inference, and I found no TACC or NSF notice that it is in service, so present it as coming, not available now. Commercial models: partners give API access (Anthropic, OpenAI credits, Azure OpenAI). "National Inference Service" was not found: 0 hits in the NSF Award API, not on NSF or NAIRR pages, not in web search. The nearest NSF name is the National Deep Inference Fabric (NDIF, Northeastern), which is for studying model internals, not a hosted inference service. Drop the name unless the speaker has a source.'
+  proposed_text: 'AI inference: hosted open models (Jetstream2, NRP; TACC Sagebrush funded and coming) and commercial model APIs from industry partners.'
 - id: c9
   text: 'MESA early-adopter communities: NEON (Battelle), ESIIL, NCEMS, NSCORE, AIIRA, EHT'
   kind: factual
@@ -122,8 +123,8 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   - data/raw/nsf_award_2632685.json
-  notes: 'The award abstract names ESIIL, NCEMS, AIIRA and the EHT Collaboration. NEON (Battelle) and NSCORE are not in the abstract and not on the public MESA site (home, news, team, portal, stack pages checked). They may be in letters of collaboration or later agreements I cannot see; left as the speaker''s statement. Slide 34 c3 holds their award numbers.'
-  proposed_text: 'MESA partner communities: ESIIL, NCEMS, AIIRA, EHT (in the award); NEON (Battelle) and NSCORE (joining)'
+  notes: 'The award abstract names ESIIL, NCEMS, AIIRA and the EHT Collaboration. NEON (Battelle) and NSCORE are not in the abstract and not on the public MESA site (home, news, team, portal, stack pages checked). They may be in letters of collaboration or later agreements I cannot see; left as the speaker''s statement. Slide 34 c3 holds their award numbers. No source supports a "joining" status, so the wording should name only the award-documented partners on the slide and attribute NEON and NSCORE to the speaker.'
+  proposed_text: 'MESA partner communities named in the award: ESIIL, NCEMS, AIIRA, EHT. (Speaker, aloud: we are also working with NEON (Battelle) and NSCORE.)'
 - id: c10
   text: 'MESA · NSF Award #2632685, funded under NAIRR'
   kind: factual

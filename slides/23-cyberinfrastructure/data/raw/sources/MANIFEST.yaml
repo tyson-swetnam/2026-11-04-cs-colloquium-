@@ -70,6 +70,12 @@ docs.jetstream-cloud.org_general_gpu_.html:
   sha256: 3faf7f12df5c6cbffc77fcce2b8b387cdba4395609dfef4d9b95f117372f07d8
   source: 'Jetstream2 docs: 404 page (not used)'
   url: https://docs.jetstream-cloud.org/general/gpu/
+docs.jetstream-cloud.org_general_running-llm_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 05b2c60c44c248250b59e85733c8994aca8b1dc2d3a910944a36f3d560b9e2db
+  source: 'Jetstream2 docs: Orientation to Running LLMs (training vs inference)'
+  url: https://docs.jetstream-cloud.org/general/running-llm/
 docs.jetstream-cloud.org_general_vmsizes_.html:
   note: fetched 2026-10-31 for slide 23
   retrieved: '2026-10-31'
@@ -130,6 +136,12 @@ mesa_site_llms.txt:
   sha256: 15e7ccfa85c496c14c9c62a07a0eadac8524cf75442558073a765dd4727a6fc0
   source: MESA site llms.txt
   url: https://idss-mesa.github.io/llms.txt
+nrp.ai_about_.html:
+  note: fetched 2026-10-31 for slide 23
+  retrieved: '2026-10-31'
+  sha256: 25851aa3b36a32ee70bbd5400b26f56e95734fd199db2428ce1af27a8c9882da
+  source: 'NRP: About (AI and machine learning workloads)'
+  url: https://nrp.ai/about/
 nrp.ai_documentation_userdocs_ai_llm-managed_.html:
   note: fetched 2026-10-31 for slide 23
   retrieved: '2026-10-31'

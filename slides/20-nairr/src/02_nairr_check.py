@@ -48,6 +48,7 @@ PAGES = {
     "https://docs.jetstream-cloud.org/inference-service/overview/": "js2_inference.html",
     "https://nrp.ai/": "nrp_home.html",
     "https://idss-mesa.github.io/": "mesa_site.html",
+    "https://www.nsf.gov/science-matters/us-nairr-pilot-brings-cutting-edge-ai-resources-researchers": "nsf_science_matters_nairr_2024.html",
 }
 
 

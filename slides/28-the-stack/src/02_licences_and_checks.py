@@ -97,7 +97,9 @@ def text(path: Path) -> str:
         t = re.sub(r"<script.*?</script>|<style.*?</style>", " ", t, flags=re.S)
         t = re.sub(r"<[^>]+>", " ", t)
     elif path.suffix == ".json":
-        t = json.loads(t)["response"]["award"][0]["abstractText"]
+        aw = json.loads(t)["response"]["award"][0]
+        # abstract plus every other string field (e.g. fundProgramName), one per segment
+        t = " | ".join([aw["abstractText"]] + [str(v) for k, v in aw.items() if k != "abstractText" and isinstance(v, str)])
     t = html.unescape(t).replace("**", "")
     return re.sub(r"\s+", " ", t)
 

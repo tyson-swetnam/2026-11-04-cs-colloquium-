@@ -4,7 +4,8 @@ ontologies, and the NSF award number in the footer.
 
 Outputs (data/processed/):
   terms.csv            CURIE, OLS label, synonyms, obsolete flag, defining ontology
-  variants.csv         each free-text variant on the slide: is it a name of the term?
+  variants.csv         each free-text variant on the slide: is it a name of the term, exactly or only
+                       up to plural/spacing/normalisation (evidence/ontology.py is lenient)?
   hierarchy.csv        OLS hierarchical ancestors of NCBITaxon:41073
   obo_foundry.csv      registry entries for ncbitaxon, obi, uo
   nsf_award.csv        NSF Award API record for 2632685
@@ -71,7 +72,11 @@ def main() -> None:
         })
         for text in texts:
             c = validate(client, text, curie, prefixes)
-            variants.append({"field": fieldname, "text": text, "curie": curie, "is_a_name_of_term": c.ok, "reason": c.reason})
+            names = [n.casefold() for n in [t["label"], *(t.get("synonyms") or [])]]
+            exact = text.casefold() in names
+            how = "exact label or synonym" if exact else ("up to plural, spacing or normalisation (lenient validator)" if c.ok else "no match")
+            variants.append({"field": fieldname, "text": text, "curie": curie, "is_a_name_of_term": c.ok,
+                             "exact_label_or_synonym": exact, "match": how, "reason": c.reason})
 
     pd.DataFrame(terms).to_csv(PROCESSED / "terms.csv", index=False)
     pd.DataFrame(variants).to_csv(PROCESSED / "variants.csv", index=False)

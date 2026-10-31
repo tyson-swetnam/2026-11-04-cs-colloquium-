@@ -19,3 +19,13 @@ f17,c2,https://idss-mesa.github.io/docs/llms-full.txt,True,"After install, the t
 f18,c5,https://idss-mesa.github.io/docs/llms-full.txt,True,"Codex and Antigravity run a local `irods` server, and every agent runs a local `mesa` server"
 f19,c5,https://idss-mesa.github.io/docs/llms-full.txt,True,"OpenCode's `irods` is the hosted public endpoint, which reads public data only."
 f20,c4,https://idss-mesa.github.io/docs/servers/irods-mcp-server/index.md,True,It is registered under the name `irods` with every detected client
+f22,c2,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,"The MESA team has not tested Antigravity's sign-in to Formation; if it fails, use another client."
+f23,c2,https://idss-mesa.github.io/docs/llms-full.txt,True,"On the [KASM desktop](https://idss-mesa.github.io/docs/apps/kasm/) the browser runs inside the app, so you can also sign in normally by opening the address in the desktop's Chrome or Firefox."
+f24,c2,https://idss-mesa.github.io/docs/llms-full.txt,True,"Use Claude Code for Formation there (Codex too, once CyVerse accepts its `http://127.0.0.1` callback)."
+f25,c3,https://docs.cyverse.org/architecture/system-overview/index.md,True,and `osg` jobs on the [OpenScienceGrid](https://opensciencegrid.org){target=_blank}
+f26,c3,https://docs.cyverse.org/deployment/04-kubernetes/argo/index.md,True,the pilot leaves the `01_condor` inventory group empty and uses Argo.
+f27,c3,https://docs.cyverse.org/deployment/04-kubernetes/argo/index.md,True,title: Pilot CyVerse deployment record
+f28,c7,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,always as **you** and with your own permissions.
+f29,c7,https://idss-mesa.github.io/docs/servers/formation-mcp/index.md,True,| `delete_data` | Moves a file or folder to your Data Store trash; `dry_run` previews it |
+f30,c7,https://idss-mesa.github.io/docs/llms-full.txt,True,"local `mesa` and `irods` MCP servers, and the agents act as **you**, with access to your home folder and to what is shared with you."
+f31,c9,https://idss-mesa.github.io/docs/llms-full.txt,True,"**Claude Code** also registers the hosted CyVerse Data Store MCP servers: `irods` (the anonymous public endpoint, which works at once) and `irods-auth` (the authenticated endpoint)."

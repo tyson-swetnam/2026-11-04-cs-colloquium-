@@ -35,10 +35,14 @@ claims:
   - https://www.quantamagazine.org/updates/transformation/
   - https://www.scientificamerican.com/article/the-most-exciting-claims-from-openais-heap-of-new-proofs/
   - https://doi.org/10.5281/zenodo.22737750
+  - https://zenodo.org/api/records/22737751/versions
   - https://mathandai.org/
+  - https://terrytao.wordpress.com/2026/09/12/after-math/
   evidence:
   - data/raw/research/facts.csv
   - data/processed/checks.json
+  - data/processed/review_checks.json
+  - src/03_review_checks.py
   notes: |
     (1) Lean: OpenAI said "about half" on release day (Quanta, F09), but its own log gives 300/719 = 41.7% of
     top-line results formalized after the 7 Oct additions, and the README says ~42% (F07, F08). "About half" is
@@ -46,9 +50,13 @@ claims:
     statements than the papers claim. (2) "Had not read every paper" is Scientific American's statement
     (F10), not a first-hand OpenAI quote. (3) The declaration "A Severe Misalignment of AI in Mathematics"
     (11 Sep 2026, before the release) warns that "the push by AI companies to solve mathematical problems as a
-    benchmark is detrimental" (F11). The Zenodo version lists 25 Fields Medalists; mathandai.org now lists 28
-    (Drinfeld, Margulis, Mumford added later; checks.json). "28" is right today, but 25 signed at launch.
-  proposed_text: 'About 42% had Lean proofs, and OpenAI researchers had not read them all. 28 Fields Medalists had warned against treating open problems as benchmarks.'
+    benchmark is detrimental" (F11). At launch it had 25 Fields Medalist signers: the Zenodo versions API
+    returns one version (2026-09-11, 25 creators; review_checks.json), and Tao's 12 Sep post says "initially
+    signed by 25 Fields Medallists" (F34). mathandai.org now lists 28 (Drinfeld, Margulis, Mumford added;
+    checks.json, F12), but no source dates those three additions, so it is not shown that 28 had signed by the
+    6 Oct release. "28 ... had warned" (and the notes' "Before that, 28 ... signed") should not put all 28
+    before the release. Review 2026-10-31: wording changed from "28 ... had warned" to "25 (now 28)".
+  proposed_text: 'About 42% had Lean proofs, and OpenAI researchers had not read them all. A declaration by 25 Fields Medalists (now 28) had warned against treating open problems as benchmarks.'
 - id: c3
   text: "Allegation: Buckmaster and Alpöge's unpublished Euler results reached OpenAI days before its Navier-Stokes claim"
   kind: attribution
@@ -57,6 +65,8 @@ claims:
   validation: 'Present as an allegation; primary statements by Buckmaster and OpenAI.'
   sources:
   - https://cims.nyu.edu/~tristanb/statement.pdf
+  - https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician
+  - https://www.scientificamerican.com/article/openais-blockbuster-navier-stokes-proof-isnt-what-we-thought-it-was/
   - https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy
   evidence:
   - data/raw/research/facts.csv
@@ -68,8 +78,12 @@ claims:
     was used. I am not accusing anyone of anything" (F17). So it is information about their progress that reached
     OpenAI, by his account; he does not claim the results themselves did. Slide wording "results reached OpenAI"
     is a little stronger than his statement, and the speaker notes' "leaked" should be softened. Keep it framed
-    as his account.
-  proposed_text: "Tristan Buckmaster says word of his and Levent Alpöge's unpublished Euler work reached OpenAI days before its Navier–Stokes claim, and asked whether their Codex sessions trained the model."
+    as his account. Two caveats for fairness (added in review): OpenAI denies it. Its 8 Sep post, quoted by
+    TechCrunch, says "We (the researchers and the agents) did not see any of their work through any means until
+    they released it publicly" and that "no specific user data was accessed in order to solve this problem" (F30).
+    And Alpöge is an employee of Anthropic, OpenAI's main rival (Scientific American, F31), though he worked with
+    Buckmaster in a private capacity.
+  proposed_text: "Tristan Buckmaster says word of his and Levent Alpöge's (Anthropic) unpublished Euler work reached OpenAI days before its Navier–Stokes claim, and asked whether their Codex sessions trained the model. OpenAI says it saw none of their work until it was public."
 - id: c4
   text: 'OpenAI first could not rule out de-identified usage data, then called influence from those prompts impossible; dispute unresolved'
   kind: attribution
@@ -87,14 +101,18 @@ claims:
   notes: |
     Both OpenAI statements are confirmed, but only through press quotes: openai.com returned HTTP 403 to our
     client and no archived copy was available. 8 Sep post (quoted by TechCrunch): "While unlikely, we cannot rule
-    out that de-identified data derived from their usage of our products helped improve our models" (F19).
+    out that de-identified data derived from their usage of our products helped improve our models" (F19). The
+    same post first says the researchers and agents "did not see any of their work through any means until they
+    released it publicly" and that "no specific user data was accessed in order to solve this problem" (F30).
     Spokesperson, 9-12 Sep (ABC, The Verge): "categorically ... impossible for Dr Buckmaster's Codex prompts over
-    the last two months to have influenced the system in any way, including training" (F21). That denial covers
-    only his last two months of prompts, not all his usage data. Buckmaster stayed sceptical (F22). "Dispute is
-    unresolved" needs care: by 13 Oct, experts quoted by Scientific American said the methods' resemblance
-    "now seems merely skin-deep" (F23), which weakens the idea that the proof copied theirs. Whether usage data
-    influenced the model has not been independently checked.
-  proposed_text: "OpenAI first could not rule out de-identified usage data, then called influence from his last two months of Codex prompts “impossible.” Experts now say the proofs differ; the data question was never independently checked."
+    the last two months to have influenced the system in any way, including training" (F21). The two statements
+    cover different things: the first is about general model improvement from de-identified usage data, the
+    second only about his last two months of Codex prompts. They do not contradict each other, so "a shifting
+    answer" and "first X, then Y" are the slide's interpretation, not a documented reversal. Buckmaster stayed
+    sceptical (F22). "Dispute is unresolved" needs care: by 13 Oct, experts quoted by Scientific American said the
+    methods' resemblance "now seems merely skin-deep" (F23), which weakens the idea that the proof copied theirs.
+    We found no independent check of whether usage data influenced the model.
+  proposed_text: "OpenAI says it saw none of their work and accessed no specific user data, though it could not rule out that de-identified usage data helped improve its models in general; it called influence from his last two months of Codex prompts “impossible.” Experts now say the proofs differ; the data question has not been independently checked, as far as public reporting shows."
 - id: c5
   text: 'Speaker notes: the manuscripts came from an unreleased internal model, and 14 more were revised within a day'
   kind: quantitative
@@ -107,26 +125,34 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   - data/processed/checks.json
-  notes: 'README says "an unnamed internal OpenAI model" (F25); the 7 Oct log entry says "We have revised 14 other manuscripts" (F24).'
+  notes: |
+    README says "an unnamed internal OpenAI model" (F25); Retraction Watch says "an internal AI model" (F03). The
+    sources say "unnamed" and "internal", not "unreleased"; "internal" implies it is not a public product, but
+    the exact word is "unnamed". The 7 Oct log entry says "We have revised 14 other manuscripts" (F24).
+  proposed_text: 'Speaker notes: "from an unnamed internal OpenAI model".'
 - id: c6
   text: "Speaker notes: the Association for Human Mathematics said mathematicians did not ask for this work, and Terence Tao reshared their statement"
   kind: attribution
   priority: low
-  status: partially-supported
+  status: supported
   validation: 'AHM statement page; Tao public posts.'
   sources:
   - https://www.ahmath.org/statements
+  - https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/
   - https://futurism.com/artificial-intelligence/mathematicians-openai-furious
-  - https://mathstodon.xyz/@tao
   evidence:
   - data/raw/research/facts.csv
-  - data/processed/checks.json
+  - data/processed/review_checks.json
+  - src/03_review_checks.py
   notes: |
-    The AHM statement of 7 Oct does say "Mathematicians did not ask for this work to be done" (F26). The Tao reshare
-    rests only on Futurism, which misspells him "Terence Tau" and names no platform (F27). His public Mastodon
-    timeline from 3 Sep to 8 Oct has no reblog or mention of the AHM statement (checks.json); it may have been on
-    another platform. Either cite it as "reported by Futurism" or drop it.
-  proposed_text: 'The Association for Human Mathematics said mathematicians "did not ask for this work to be done."'
+    The AHM statement of 7 Oct says "Mathematicians did not ask for this work to be done" (F26). Tao reposted it
+    in full on his blog on 7 Oct 2026 as a guest post ("[This is a guest post by the Association for Human
+    Mathematics, reposted from their statements page", F32, F33). The earlier verdict (partially supported,
+    "drop the reshare") was wrong: it checked only Tao's Mastodon and missed that Futurism links to this blog
+    post. Caveat: Futurism's "effectively endorsed" (F27) is Futurism's reading; 13 of Tao's 19 posts from
+    1-15 Oct were guest posts by various authors (review_checks.json), so say "reshared" or "reposted on his
+    blog", not "endorsed".
+  proposed_text: 'The Association for Human Mathematics said mathematicians "did not ask for this work to be done," and Terence Tao reposted their statement on his blog.'
 - id: c7
   text: 'Speaker notes: OpenAI says its proofs differ; Alpöge disputes that'
   kind: attribution

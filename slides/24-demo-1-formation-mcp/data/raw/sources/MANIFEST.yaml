@@ -39,4 +39,4 @@ nsf_award_2632685.json:
   retrieved: '2026-10-31'
   sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
   source: NSF Award API
-  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,awardeeName,piFirstName,piLastName,startDate,expDate,fundProgramName,estimatedTotalAmt
+  url: https://api.nsf.gov/services/v1/awards/2632685.json

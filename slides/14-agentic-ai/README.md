@@ -30,11 +30,13 @@ Option 1 ties the slide back to slide 17's controls; option 3 sets up provenance
 | Call | Result |
 |---|---|
 | `find_data(question)` | `lake.buildout_ranking`, `lake.talk_claims` |
-| `query_lake(SELECT … peak_annual_pct_gdp …)` | US railroads 5.42%, Marshall Plan 2.17%, … |
+| `query_lake(SELECT name, peak_annual_pct_gdp FROM lake.buildout_ranking WHERE program <> 'postwar' ORDER BY … LIMIT 3)` | US railroads 5.42%, Marshall Plan 2.17%, … |
 | `query_lake(SELECT status, count(*) …)` | the talk's own claim register by status |
 | `query_lake(DELETE …)` | **refused**: only a single read-only SELECT is allowed |
 | `resolve_term("mouse", NCBITaxon:10116)` | **refused**: names *Rattus norvegicus* |
 | `check_citation(GPTZero's fake WebVoyager reference)` | **flagged**: arXiv:2401.00001 is a different paper |
+
+Note: the plan filters out the "Post-war US private investment" row (16.93% of GDP), because that is all private investment, not one build-out. Without the filter it would rank first. That filter was written into the scripted plan; the pipeline did not decide it.
 
 The full transcript is in [`mcp_transcript.json`](data/processed/mcp_transcript.json).
 
@@ -54,8 +56,8 @@ The full transcript is in [`mcp_transcript.json`](data/processed/mcp_transcript.
 | Claim | Verdict | Key evidence | Suggested wording |
 |---|---|---|---|
 | c1 One-line message | revise-slide (agreed, not yet in deck) | Demo 3 (slide 29) | "Ask in plain language; the agent finds the data, runs the analysis, and returns a result you can audit." |
-| c2 Figure flow works | partially supported | `mcp_transcript.json`, `mcp_calls.csv` | Unchanged; no model orchestrator or iRODS in this demo |
-| c3 Boxes map to MESA components | partially supported | `data/raw/research/facts.csv`, `data/processed/mesa_box_map.csv` | If said aloud: "The MCP, data-mesh and DuckLake boxes ship in MESA today; RAG and multi-agent orchestration are on its roadmap." |
+| c2 Figure flow works | partially supported | `mcp_transcript.json`, `mcp_calls.csv` | Unchanged; no model orchestrator or iRODS in this demo, and the scripted query excludes the postwar private-investment row (16.93%) |
+| c3 Boxes map to MESA components | partially supported | `data/raw/research/facts.csv`, `data/processed/mesa_box_map.csv` | If said aloud: "MESA's MCP servers ship today and reach the CyVerse Data Store and a DuckLake metadata history; the federated mesh, full lakehouse, RAG and multi-agent orchestration are its 2026-2029 goals." |
 
 **c3 in detail** (from MESA's public docs, not its code):
 
@@ -66,7 +68,7 @@ The full transcript is in [`mcp_transcript.json`](data/processed/mcp_transcript.
 | RAG retrieval | Listed in architecture layer 02 and goal 3 | Goal; no component in the install table |
 | Orchestrator | Goal 3 "sandboxed, multi-agent orchestration" | Goal; today the client is the orchestrator |
 | iRODS data mesh | mesa-mcp `ds_*` tools, irods-mcp-server (CyVerse Data Store) | Installable; federation is goal 2 |
-| DuckLake data lake | mesa-ducklake, a metadata-history library behind mesa-mcp | Installable, but scoped to metadata history |
+| DuckLake data lake | mesa-ducklake, a metadata-history library behind mesa-mcp | Installable, but scoped to metadata history; the general lakehouse is goal 1 |
 
 The slide itself doesn't claim the mapping, so this only matters if the speaker presents the figure as MESA's shipped architecture. The idss-mesa repositories were not read in this session.
 

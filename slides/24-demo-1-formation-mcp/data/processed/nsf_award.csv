@@ -1,2 +1,2 @@
-id,title,awardeeName,pdPIName,startDate,expDate,fundProgramName,orgLongName2,estimatedTotalAmt,transType
-2632685,Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement),University of New Mexico,Tyson L Swetnam,07/15/2026,05/31/2029,NAIRR-Nat AI Research Resource,Office of Advanced Cyberinfrastructure,4617408,Cooperative Agreement
+id,title,awardeeName,pdPIName,startDate,expDate,fundProgramName,program,divAbbr,orgLongName2,estimatedTotalAmt,transType
+2632685,Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement),University of New Mexico,Tyson L Swetnam,07/15/2026,05/31/2029,NAIRR-Nat AI Research Resource,Artificial Intelligence (AI),OAC,Office of Advanced Cyberinfrastructure,4617408,Cooperative Agreement

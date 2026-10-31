@@ -33,6 +33,8 @@ FILES = {
     "docs.jetstream-cloud.org_overview_overview-doc_.html": ("https://docs.jetstream-cloud.org/overview/overview-doc/", "Jetstream2 docs: System overview"),
     "nrp.ai_documentation_userdocs_ai_llm-managed_.html": ("https://nrp.ai/documentation/userdocs/ai/llm-managed/", "NRP docs: NRP-Managed LLMs"),
     "cider.access-ci.org_public_resources_RDR_003540.html": ("https://cider.access-ci.org/public/resources/RDR_003540", "ACCESS CiDeR: Prototype National Research Platform"),
+    "docs.jetstream-cloud.org_general_running-llm_.html": ("https://docs.jetstream-cloud.org/general/running-llm/", "Jetstream2 docs: Orientation to Running LLMs (training vs inference)"),
+    "nrp.ai_about_.html": ("https://nrp.ai/about/", "NRP: About (AI and machine learning workloads)"),
 }
 
 if __name__ == "__main__":

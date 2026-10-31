@@ -44,25 +44,30 @@ claims:
     One pass: supported for Clef by its published code (read statically, not run; a 27B model
     needs an H200-class GPU): one backbone call with use_cache=False, no generate(), then a head that
     scores every option; output_tokens is 0. For Jev the architecture is unpublished; TypeSafe says
-    it "generates all outputs in a single query". Choice/score/yes-probability: supported (the
-    three primitives choice, score, noul). "Calibrated" is developer-reported: TypeSafe trains for
+    it "generates all outputs in a single query" with a "parallel sampler"; only Better Stack
+    (secondary) says "single forward pass" for both, so the notes line "returns all the answers
+    in one forward pass" is shown for Clef only. Choice/score/yes-probability: incomplete. TypeSafe's
+    docs list four primitives: choice, score, noul and Box (a bounding box in an image, returned
+    as four edge fractions), Box marked "Dreamer-ready" (experimental, not production). "Calibrated" is developer-reported: TypeSafe trains for
     it (RLCD) and Cloudflare adds a Brier loss, but I found no independent calibration test;
     TypeSafe itself says calibration holds over groups, not single answers, and that Jev 1.13's
     score levels are weak in numerical calibration. Out of date in one respect: on 2026-10-19
     Cloudflare previewed Clairic, a System One extraction model that returns typed values (amounts,
     dates, names), so the slide's rows describe decision models, not all System One models.
-  proposed_text: 'Confidence row: "A probability you can threshold (vendors say calibrated)". Optional header: "System One decision models decide; they don’t write".'
+  proposed_text: 'Confidence row: "A probability you can threshold (vendors say calibrated)". Returns row (optional): "A choice, a score or a yes probability (plus experimental image boxes)". Notes: "returns all the answers at once (for Clef, in one forward pass)". Optional header: "System One decision models decide; they don’t write".'
 - id: c3
   text: 'They fail by picking a wrong option from your list rather than inventing text'
   kind: technical
   priority: medium
-  status: supported
+  status: partially-supported
   validation: 'Follows from constrained output; demonstrate with Clef if weights can be run.'
   sources:
   - 'TypeSafe AI launch post: possible outputs defined in advance; no type errors'
   - 'TypeSafe docs concepts/system-one: do not write replies, produce code or explanations'
   - 'Hugging Face Cloudflare/clef joint_schema_model.py (systemone_answer)'
   - 'Better Stack 200-comment test (example of a confident wrong pick)'
+  - 'TypeSafe docs primitives/box: https://docs.typesafe.ai/primitives/box'
+  - 'Cloudflare blog, Introducing Clairic (2026-10-19)'
   evidence:
   - data/raw/research/facts.csv
   - data/processed/clef_code_checks.csv
@@ -74,6 +79,12 @@ claims:
     "neutral" at 93% confidence. Not run on real weights here (no GPU). Also note TypeSafe's
     jaggedness page: Jev treats everything in the input as data by default, so prompt injection
     can still steer which listed option is picked.
+    Scope (reviewer point, accepted 2026-10-31): "only from your list" holds for choice and noul.
+    A score can fall between the caller's levels (TypeSafe's own example returns score 1.4 on a
+    0/1/2 scale); Box questions take no criteria and return free coordinates; Cloudflare's Clairic
+    extraction models return values (names, dates) taken from the input. The core point (no free
+    text, answers stay inside a caller-defined answer space) holds; the list wording is too narrow.
+  proposed_text: 'Picks a wrong answer, but only inside the answer space you defined'
 - id: c4
   text: "Kahneman's System 1 / System 2 framing"
   kind: qualitative
@@ -118,8 +129,10 @@ claims:
     magnitude", 40x-200x faster per call, and a headline 193.6x faster / 444.6x cheaper from its own
     workflow evals (which it says are the high end). "Up to 100x" comes from MindStudio's summary,
     not TypeSafe. Cloudflare's own speed claims are separate (e.g. Clef median 209 ms, Clef-flash
-    39 ms vs Jev 524 ms in Cloudflare's runs).
-  proposed_text: 'Vendor claims (TypeSafe: ~100x, up to 194x faster and 445x cheaper in its own evals) are the companies’ own'
+    39 ms vs Jev 524 ms in Cloudflare's runs). 194x is not a ceiling: the launch post's per-call
+    range is 40x-200x, and the 193.6x/444.6x home-page figures are TypeSafe's own eval headline,
+    which it calls "on the higher end" (earlier "up to 194x" wording corrected 2026-10-31).
+  proposed_text: 'Vendor claims are the companies’ own (TypeSafe: ~100x, 40x-200x faster per call; home-page headline 194x faster, 445x cheaper from its own evals)'
 - id: c7
   text: 'Notes: one independent test of 200 comments had Jev at 86% and Clef at 83% accuracy'
   kind: attribution
@@ -152,7 +165,7 @@ claims:
   text: 'Notes and table: the common pattern pairs them; System One models do high-volume routing and gating, an LLM handles reasoning or written answers'
   kind: qualitative
   priority: low
-  status: supported
+  status: partially-supported
   validation: 'Vendor guidance and independent comparison.'
   sources:
   - 'TypeSafe docs concepts/system-one'
@@ -160,4 +173,5 @@ claims:
   - 'Better Stack, Jev vs. Clef'
   evidence:
   - data/raw/research/facts.csv
-  notes: 'Both vendors recommend this split (escalate to a person or reasoning model on low confidence; decision model in the hot path, LLM to act). It is vendor guidance, not a measured industry norm.'
+  notes: 'Both vendors recommend this split (escalate to a person or reasoning model on low confidence; decision model in the hot path, LLM to act). It is vendor guidance, not a measured industry norm; both products are under seven weeks old (Jev 2026-09-15), so nothing shows the pattern is common. "The common pattern" overstates it.'
+  proposed_text: 'Both vendors recommend pairing them: System One models do the high-volume routing and gating, an LLM handles reasoning or written answers'

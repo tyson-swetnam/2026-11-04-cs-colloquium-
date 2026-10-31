@@ -3,7 +3,7 @@ title: 'Questions?'
 section: 04 · Stop worrying
 claims:
 - id: c1
-  text: 'MESA is supported by NSF Award #2632685 · [NAIRR] · [other OAC / DBI awards]'
+  text: 'MESA is supported by the U.S. National Science Foundation under Award OAC-2632685 · [NAIRR]'
   kind: factual
   priority: high
   status: partially-supported
@@ -17,16 +17,18 @@ claims:
   - data/processed/awards.json
   - data/processed/quote_checks.json
   notes: >-
-    Deck now reads "under Award OAC-2632685 · [NAIRR]". NSF Award API: 2632685 is a $4,617,408
-    cooperative agreement to the University of New Mexico (PI Tyson L Swetnam), 07/15/2026-05/31/2029,
-    managed by CISE / Office of Advanced Cyberinfrastructure, so "OAC-2632685" is consistent. Its
-    funding program is "NAIRR-Nat AI Research Resource", which resolves the [NAIRR] placeholder: the
-    NAIRR money is this same award, not a separate award. No other OAC or DBI award for MESA was found.
-    An earlier award with the same title, 2608717 to the University of Arizona (06/01/2026-08/31/2026,
-    inactive), appears to be the pre-transfer version; no need to list it. The MESA site calls the
-    program "Integrated Data Systems & Services"; the NSF record title says "Research Infrastructure:
-    Category II". Partially supported only because the placeholders are still on the slide.
-  proposed_text: 'MESA is supported by the U.S. National Science Foundation under Award OAC-2632685 (NAIRR program).'
+    Text updated 2026-10-31 to the current slide line (earlier version also listed "[other OAC / DBI
+    awards]"; no other OAC or DBI award for MESA was found). NSF Award API (re-fetched 2026-10-31):
+    2632685 is a $4,617,408 cooperative agreement to the University of New Mexico (PI Tyson L Swetnam),
+    07/15/2026-05/31/2029, managed by CISE / Office of Advanced Cyberinfrastructure, so "OAC-2632685" is
+    consistent. Its NSF funding program is "NAIRR-Nat AI Research Resource". The [NAIRR] placeholder is
+    ambiguous: it may mean that funding program (already covered by this award), or a NAIRR Pilot compute
+    allocation, which the MESA site lists separately under compute ("ACCESS-CI & NAIRR ... NAIRR Pilot
+    allocations"). No public record of a specific NAIRR Pilot allocation to MESA was checked. Speaker
+    should decide which is meant. An earlier award with the same title, 2608717 to the University of
+    Arizona (06/01/2026-08/31/2026, inactive), appears to be the pre-transfer version; no need to list
+    it. Partially supported only because the [NAIRR] placeholder is still unresolved.
+  proposed_text: 'MESA is supported by the U.S. National Science Foundation under Award OAC-2632685 (NAIRR program). If [NAIRR] was meant to credit compute, add instead: "Compute via NAIRR Pilot allocation [allocation ID]".'
 - id: c2
   text: idss-mesa.github.io · github.com/idss-mesa
   kind: factual
@@ -80,16 +82,18 @@ claims:
   - https://esiil.org/
   - https://api.nsf.gov/services/v1/awards/2153040.json
   - https://api.nsf.gov/services/v1/awards/2438843.json
-  - https://research.iastate.edu/?p=8706
+  - https://research.iastate.edu/2021/07/29/20-million-federal-grant-launches-ai-institute-for-resilient-agriculture/
   evidence:
   - data/raw/research/facts.csv
   - data/processed/quote_checks.json
   notes: >-
     Hosts are all right (CU Boulder, Penn State, Columbia, Iowa State, Battelle) and NSCORE is a
     cooperative agreement. Wrong: ESIIL is the "Environmental Data Science Innovation & Impact Lab"
-    (ESIIL home page and NSF award title), not "Innovation & Inclusion Lab". NSCORE's full name is
-    "National Synthesis Center for Organismal Resilience to Environmental Change".
-  proposed_text: 'ESIIL (Environmental Data Science Innovation & Impact Lab, CU Boulder), NSF 2153040; NSCORE (National Synthesis Center for Organismal Resilience to Environmental Change, Columbia), NSF Cooperative Agreement 2438843'
+    (ESIIL home page and NSF award title), not "Innovation & Inclusion Lab". The NSCORE name in the
+    notes is fine: NSF's own abstract for 2438843 uses the same short form ("The National Synthesis
+    Center for Organismal Resilience (NSCORE) ..."); the award title adds "to Environmental Change",
+    so using the full title is optional.
+  proposed_text: 'ESIIL (Environmental Data Science Innovation & Impact Lab, CU Boulder), NSF 2153040. Optional: NSCORE (National Synthesis Center for Organismal Resilience to Environmental Change, Columbia).'
 - id: c5
   text: 'Early adopters (implied: these six programmes are MESA partners/early adopters): NEON, ESIIL, NCEMS, NSCORE, AIIRA, EHT'
   kind: factual
@@ -120,6 +124,9 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   - data/processed/awards.json
+  - ../01-title/data/raw/research/facts.csv
   notes: >-
-    NSF lists PI "Tyson L Swetnam" at the University of New Mexico with piEmail tswetnam@unm.edu. The
-    PhD was not checked (no source fetched).
+    NSF lists PI "Tyson L Swetnam" at the University of New Mexico with piEmail tswetnam@unm.edu
+    (re-fetched 2026-10-31); name and email are supported. The NSF record has no degree field and no
+    source for "PhD" was fetched, so that part is unverified (speaker's own credential; low risk).
+  review_note: 'PhD supported by slide 01 c3 (UNM faculty profile: Ph.D., University of Arizona, 2013); cross-referenced after the deck-wide review.'

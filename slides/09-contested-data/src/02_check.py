@@ -63,8 +63,10 @@ def main() -> None:
     torrented, trained, statmax = 714, 20_517, 150_000
     numbers = [
         ("bartz_gross_per_work_usd", round(fund / works), "1.5e9 / 482,460 works on the Works List"),
-        ("bartz_net_per_work_usd_upper_bound", round((fund - fees - expenses - reserve) / works),
-         "after fee award, expenses and cost reserve, before administration and service awards"),
+        ("bartz_net_per_listed_work_usd", round((fund - fees - expenses - reserve) / works),
+         "net of fee award, expenses and cost reserve, divided by all 482,460 listed works; before administration costs, excluding interest"),
+        ("bartz_net_per_claimed_work_usd", round((fund - fees - expenses - reserve) / 440_490),
+         "same net fund / 440,490 claimed works, if unclaimed shares are redistributed; before administration costs, excluding interest"),
         ("bartz_claimed_share", round(440_490 / works, 4), "works claimed by 2026-04-16"),
         ("music_works_total", torrented + trained, "Exhibit A (torrenting) + Exhibit B (training/output)"),
         ("music_statutory_max_usd", (torrented + trained) * statmax, "x $150,000 willful maximum (17 U.S.C. 504(c))"),

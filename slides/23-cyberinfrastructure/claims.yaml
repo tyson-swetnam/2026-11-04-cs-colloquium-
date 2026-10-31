@@ -13,18 +13,21 @@ claims:
   - https://cyverse.org/data-store
   - https://unblockme.cyverse.org/
   - https://carc.unm.edu/jobs/postdoc-agentic-ai/
+  - https://idss-mesa.github.io/llms-full.txt
   evidence:
   - data/raw/research/facts.csv
   - data/processed/anon_read.json
   - src/02_anon_read.py
   - data/processed/quote_check.csv
   notes: >-
-    Size and iRODS are supported: CyVerse docs say the Data Store "manages over 6 PB data via iRODS" (f01);
-    MESA/CARC pages say 5.2 PB (f05), so pick one figure. Anonymous public access is documented (f02, f03).
+    "Petabytes" and iRODS are supported, but three figures are in circulation: CyVerse docs say the Data
+    Store "manages over 6 PB data via iRODS" (f01; the page gives no date for that figure, so it may not be
+    current); the CARC postdoc job page and the MESA hiring page say 5.2 PB (f05, f28); the MESA home page
+    says "five petabytes" (f27). Avoid a precise number on the slide, or cite one source and its date. Anonymous public access is documented (f02, f03).
     But our scripted anonymous read of data.cyverse.org/dav-anon was redirected (HTTP 307) to an IP-unblock
     page with a CAPTCHA, because CyVerse blocks crawler IPs (f04). We did not pass the CAPTCHA, so the read
     itself is not demonstrated. "No credentials" holds; "at all" overstates it while the IP block is in place.
-  proposed_text: 'Over 6 PB of iRODS collections on CyVerse. Public collections need no account.'
+  proposed_text: 'Petabytes of iRODS collections on CyVerse. Public collections need no account.'
 - id: c2
   text: 'Kubernetes AI sandboxes: agents get only allowed tools; egress through a proxy, every call recorded'
   kind: technical
@@ -83,18 +86,26 @@ claims:
   - https://docs.jetstream-cloud.org/general/vmsizes/
   - https://nrp.ai/documentation/userdocs/ai/llm-managed/
   - https://cider.access-ci.org/public/resources/RDR_003540
+  - https://docs.jetstream-cloud.org/general/running-llm/
+  - https://nrp.ai/about/
   evidence:
   - data/raw/research/facts.csv
   - data/processed/quote_check.csv
   notes: >-
-    Jetstream2 (JS2) and NRP are supported. Jetstream2 is an ACCESS-allocated cloud with GPU VMs (up to 80 GB
+    Inference and science gateways on Jetstream2 (JS2) and NRP are supported; model training only in part.
+    Jetstream2 is an ACCESS-allocated cloud with GPU VMs (up to 80 GB
     GPU RAM) and is meant for, among other things, "the backend to science gateways" (f09, f10, f13); it also
     runs a free vLLM inference service for ACCESS users, with processing only at IU Bloomington (f14, f15).
     NRP (Nautilus) is in the ACCESS resource catalogue, hosts open-weight LLMs and supports running your own
-    with vLLM or SGLang (f16, f17). "NIS" could not be identified: no ACCESS, NSF or NAIRR page found under
+    with vLLM or SGLang (f16, f17). Training: JS2's own LLM guide says pre-training "is likely too
+    compute-intensive" for a typical allocation and that fine-tuning "is more achievable" (f25), and its
+    overview calls JS2 "small scale processing on demand" (f13). NRP says it supports "advanced AI and machine
+    learning tasks" on its GPU clusters (f26) but the page does not name model training. So say fine-tuning,
+    not training in general. (The JS2 inference page mentions training only to say user prompts are not used
+    for it.) "NIS" could not be identified: no ACCESS, NSF or NAIRR page found under
     that name. Ask the speaker what NIS means, or drop it. Note that the hosted JS2 and NRP LLM services are
     shared services, so "private" fits self-hosted VMs better than the hosted endpoints.
-  proposed_text: 'ACCESS-CI Jetstream2 and NRP: self-hosted or hosted open-weight inference, model training, science gateways.'
+  proposed_text: 'ACCESS-CI Jetstream2 and NRP: self-hosted or hosted open-weight inference, small-scale fine-tuning, science gateways.'
 - id: c6
   text: 'CARC: locally hosted, private, open-weight models'
   kind: factual
@@ -112,9 +123,10 @@ claims:
     CARC's own page (2026-10-13) says "CARC does not currently provide hosted AI, large language model (LLM),
     or agent services as a production service" (f18). MESA's developer docs describe a LiteLLM/vLLM gateway
     on CARC hosts, reachable only over an SSH tunnel (f19, status draft), and CARC has H100/L40S/A100 GPU
-    clusters where users can run open-weight models themselves (f20). So private open-weight models do run at
-    CARC for the MESA project, but there is no campus service yet. The slide should not imply one.
-  proposed_text: 'CARC: private open-weight models on campus GPUs (MESA pilot; not yet a campus service)'
+    clusters where users can run open-weight models themselves (f20). The gateway is developer-reported in a
+    draft page and CARC's own page does not mention it, so treat it as in testing, not a running pilot.
+    There is no campus service yet, and the slide should not imply one.
+  proposed_text: 'CARC: private open-weight models on campus GPUs (MESA gateway in testing, developer-reported; not a campus service yet)'
 - id: c7
   text: 'Co-scientists: agents that write hypotheses and tests, download and analyze data, and report results continuously'
   kind: technical
@@ -158,15 +170,19 @@ claims:
   - https://cyverse.org/data-store
   - https://docs.jetstream-cloud.org/alloc/overview/
   - https://idss-mesa.github.io/okf/concepts/mesa-sandbox.md
-  - https://carc.unm.edu/ai-research-resources/
+  - https://idss-mesa.github.io/llms-full.txt
   evidence:
   - data/raw/research/facts.csv
   - data/processed/deck_check.json
   notes: >-
-    New claim from the speaker note. Data Store (CyVerse accounts and subscriptions, f03) and Jetstream2/NRP
-    through ACCESS (f09, f17) can be requested now. The Kubernetes sandboxes are untested on a cluster (f07),
-    CARC has no production LLM service (f18), and co-scientists are a goal (f21), so "all four" is not true.
-  proposed_text: 'Note: "Two of these you can book now: CyVerse storage, and Jetstream2 or NRP through ACCESS-CI. The sandboxes and co-scientists are what MESA is building."'
+    New claim from the speaker note. The four boxes are Data Store, Kubernetes AI sandboxes, Private
+    inference and Co-scientists. Data Store (free Basic accounts and subscriptions, f03, f29) and Private
+    inference via Jetstream2/NRP through ACCESS (f09, f17) can be requested now; CARC is only one line inside
+    the Private inference box, so its lack of a production LLM service (f18) does not by itself sink that box.
+    The Kubernetes sandboxes are untested on a cluster (f07) and co-scientists are a goal (f21), so "all four"
+    is not true. The note's "CyVerse allocations" does not match CyVerse's wording (accounts and
+    subscriptions, f29).
+  proposed_text: 'Note: "Two of these you can book now: CyVerse storage (free account or subscription), and Jetstream2 or NRP through ACCESS-CI. The sandboxes and co-scientists are what MESA is building."'
 - id: c10
   text: 'Footer: MESA · NSF Award #2632685'
   kind: factual
