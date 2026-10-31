@@ -1,0 +1,176 @@
+afdb_about.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 3f9f574da95f9b44f5fbe0a4437af5dbaf3dd2e63b0e7083e00f3d56d8654794
+afdb_alphafold.ebi.ac.uk_.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: a9f2705c0be66f1dabaa11ddbe34d79cfc81ee672f677a844e824a81053f7729
+afdb_alphafold.ebi.ac.uk_about.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 0ff3671ef9ed0fd227a979891687166c954041d7efc6c48034ce8ac6add1c63e
+afdb_alphafold.ebi.ac.uk_faq.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 39b37eba06566144fc617bfd653a786e24d5a3065184eb4641faac858de7420d
+afdb_faq.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: cfda125bdffe204d07b66802396c713c977268c1d3a17d502bd11c75759fa521
+afdb_home.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 26abc6af3ef15a2aa3426fbe1f508ce88752366756f68f1da535f5443c89d648
+afdb_www.ebi.ac.uk_training_online_courses_alphafold_.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 8a472f50d118c6641c46320e8e84f4c29f247616da666eb3df574b9f9bae6ab3
+alphagenome_nature.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 54c315ffca0b6130f07627ca6fe64a080e546e566c1b164d2a4fb91a311ad64e
+arcinstitute.org_news_evo-2-one-year-later.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 1a0b6b19ba9678b86b5f64060571dab7040849e653444ceb635baadd2b7bcef5
+arcinstitute.org_news_evo-2-one-year-later.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: f6b951ceb8d1241ba3351be23ac88270c91f4b0ca5211b6e43c714e13c8c3052
+arcinstitute.org_news_evo2.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: cec34d6d6a70a52ac56be8b48f6fa3d4eda20054d8c012416c05b4adf3c2c08a
+arcinstitute.org_news_evo2.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 85469e97779042461cfc742e406f5737ed910e0895aa4a9bb8adb428b113234d
+biohub.ai_:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: c0ab3cd25c20f0c4394e59ddc50c92d1e5d6f72d86547c994ef05084cf8701e7
+biohub.ai_models_esmfold2.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: e6a5e17bc7a7e1c52e80736f779719112e90df4f8a0eae93c05b620ced7f26c7
+biohub.ai_models_esmfold2.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 53457ec0bd8c8b5570f56ba75f009857b1a2211c0d96d430589941220f49781c
+biohub.org_ai-models_:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 41d42f3f7087b1f94c0c1a5c271648b2ee97a6e979900d5335851a232681a177
+biohub.org_llms.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 64d09e0e16dade6a3a01ffea16012683aa0d21afde41ab556f75e76f458e7b78
+biohub_ai_biology_cure_disease.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 713e861e5a064f92584e542135a7ee1a4883a0405f253fa2e55f83f06a194f5b
+biohub_ai_biology_cure_disease.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: fb83be046927068627e92cf2a8c5c088e80fbca9338bfc57eeee67b9718b5f25
+biohub_team_alex-rives.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 1f4da58cc85130cf07a4873bfb3a556c76f92b2099c99821bad53e20a0067fca
+biohub_team_alex-rives.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: f10a5e5835f8f6e542e53e490bf6c5e743ba91427e194cad256a523b2273c6bb
+biohub_world_model.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: e58729bba7c7261ec200667ad23ea5fd1aaca9f10f6575106855f3a402ba42b0
+biohub_world_model.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: c5cda2f7ab9500e9f138a5fd5daed0375c8ffddf8b4cd9ba9472663386a7d2e2
+biorxiv_api_esmfold2.json:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 419e0a790bf700d3a0d94dc738b4c236b6fe57f05cb654e72f74f1461eaab13c
+biorxiv_esmfold2.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602
+deepmind.google_blog_alphagenome-ai-for-better-understanding-the-genome_.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: f4984195c71a79f6b25f2cba6734063fc9d58a26ec42a098e799a395b03afba5
+deepmind_alphagenome_blog.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: b0edbf1dd04c52c2a7a64be55a4ae9fbbf52d7b5d6349aa58046412979172443
+docs.nvidia.com_bionemo-recipes_2.6.3_models_evo2_.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: ea9ac628a68b5cfc8a4aeecfaaae117e28fea7a1e01b5fd034290085329f00df
+docs.nvidia.com_bionemo-recipes_2.6.3_models_evo2_.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: fb719fcdcb0f046fbf39f6747e5b841c43af4ae5e322bd9db2054ac43c7bef8d
+epmc_PMC12851941_alphagenome_nature.xml:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 50d10530afd474d85702813bc9c9e5431406515e44f3425d64603fdb647fee13
+epmc_PMC13128491_evo2_nature.xml:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: d043dbda49e023ef6b70e36e7ca7832bda6b7af6c5934368e8778a7f23cda8bd
+epmc_PPR1245895_full.xml:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: b3c07c783eb7ea352b23eaa36ff8acfd018edb5bbde8d2e5ea2435e6add15a67
+epmc_alphagenome.json:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: a29187cf3f27d2a9de901c8e0d6eee054fea785f5255d67b2942a2d0530d215f
+epmc_esm3.json:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 630cbf0a91c20db98162fc435561536f13d462d0a9b27c2b55e8f19fe4fb9243
+epmc_esmfold2.json:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 833716e4f1bd0a667ad0715372ed4b3c663900a6939d871fa565126db823dc5e
+epmc_evo2.json:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 1509c03924e159d53e88305dae64bd29793acacc27d506661ed0fab7c0474be7
+evo2_nature.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: c16db83a357fd53fadbaa8b9ccd20d33bf2affe7034884c49e112dcc5845e615
+github_alphagenome_research_README.md:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: c715b22c31bd4f69e9b76236de0ab6a26c96fa0f384ad56a2f9d2cb65e262681
+github_evo2_LICENSE.txt:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 5bb5812fc2bfb2d777fe5621767172f8ef30be62ad719c87e0f10832336a99e0
+github_evo2_README.md:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 58787c8ef5cb4fba4c04322a4ceb9f174e2233ec22d4193622fb6bc67d651d89
+github_evo2_brca1_zero_shot_vep.ipynb:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 198851506df75f63f5b1fad9cd79c5e767b29aef66ac428e66894b151b7adadd
+hf_evo2_40b.json:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 13dfa8745687b70f80fe518cc805acc1f4ae66e8754bae35304c9b3f92cbb3f5
+hf_opengenome2.json:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: aa12f2ee023dfcc7ea7caa1fc63c7eace09fb6e828270604963355af1a9db63e
+prnewswire_world_model.html:
+  note: saved 2026-10-31 by the research subagent; source URLs are in ../facts.csv
+  retrieved: '2026-10-31'
+  sha256: 41afe548f5c4817350d58fab85699c3570205f5d24204cd21cf465e4d4accf91
