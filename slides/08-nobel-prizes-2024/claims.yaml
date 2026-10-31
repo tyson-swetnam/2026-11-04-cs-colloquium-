@@ -28,7 +28,7 @@ claims:
   - data/processed/nobel_check.csv
   notes: Laureates match. Baker 1/2 "for computational protein design"; Hassabis and Jumper 1/4 each "for protein structure prediction".
 - id: c3
-  text: Two Nobel Prizes for AI-related work (notes: the establishment recognized AI as a tool of discovery, in physics and chemistry)
+  text: 'Two Nobel Prizes for AI-related work (notes: the establishment recognized AI as a tool of discovery, in physics and chemistry)'
   kind: attribution
   priority: medium
   status: supported
