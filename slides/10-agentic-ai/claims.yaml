@@ -6,15 +6,38 @@ claims:
   text: '[A researcher asks in plain language; the agent finds the data, runs the analysis, and returns a result.]'
   kind: placeholder
   priority: medium
-  status: unverified
-  validation: Write the line. Demo 3 (slide 23) is the evidence that the flow in the figure works end to end.
+  status: in-progress
+  validation: Write the line; candidates in README.md. Demo 3 (slide 23) is the end-to-end evidence with a model in the loop.
   sources: []
-  evidence: []
+  evidence:
+  - README.md
 - id: c2
-  text: 'Figure: user request → MCP context and RAG retrieval → orchestrator → data mesh and data lake → result'
+  text: 'Figure: user request -> MCP context and RAG retrieval -> AI agent orchestrator -> iRODS data mesh and DuckLake data lake -> result'
   kind: technical
+  priority: medium
+  status: partially-supported
+  validation: |
+    The flow run over the real protocol (src/02_mcp_roundtrip.py): an MCP server (src/mesa_tools_server.py) exposes
+    retrieval, a read-only DuckLake query, ontology and citation tools; the official MCP client discovers them and
+    answers a plain-language question from the lake, and the server refuses a write, a wrong-concept term and a
+    fabricated citation.
+  sources:
+  - https://modelcontextprotocol.io/
+  - https://ducklake.select/
+  evidence:
+  - data/processed/mcp_transcript.json
+  - data/processed/mcp_calls.csv
+  notes: |
+    Demonstrated: MCP tools, retrieval (keyword, not vector RAG), the DuckLake lake, the result path, and policy
+    refusals. Not demonstrated here: a model as orchestrator (a scripted plan stands in; no model API in this
+    environment) and the iRODS mesh (slides 15-16). Nuance for a CS audience: in the figure MCP is drawn as
+    "context"; it is mainly the channel through which the orchestrator calls tools (the mesh and the lake).
+- id: c3
+  text: Each box in the figure maps to a component in the MESA repositories
+  kind: factual
   priority: low
   status: unverified
-  validation: Make sure each box in the figure maps to a component that exists in the MESA repositories; link them here.
+  validation: Map boxes to github.com/idss-mesa repositories once they are attached to this session.
   sources: []
   evidence: []
+  notes: The repository listing was unavailable on 2026-10-31.

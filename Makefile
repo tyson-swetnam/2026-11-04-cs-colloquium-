@@ -1,7 +1,7 @@
 # Each slide with an analysis gets a target named slide-NN that runs its src/ scripts in order.
 PY ?= uv run python
 
-.PHONY: setup slides claims check test slide-04 slide-05 slide-06
+.PHONY: setup slides claims check test slide-04 slide-05 slide-06 slide-09 slide-10
 
 setup:
 	uv sync --extra dev
@@ -26,3 +26,9 @@ slide-05:
 
 slide-06:
 	@for s in slides/06-hallucination-is-engineering/src/[0-9]*.py; do [ -e "$$s" ] || continue; echo "== $$s"; $(PY) $$s || exit 1; done
+
+slide-09:
+	@for s in slides/09-ai-molecular-science/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done
+
+slide-10:
+	@for s in slides/10-agentic-ai/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done
