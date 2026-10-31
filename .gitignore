@@ -256,3 +256,9 @@ slides/13-ai-molecular-science/data/raw/*/sources/*
 slides/14-agentic-ai/data/processed/lake/
 slides/15-plain-language-definitions/data/cache/
 slides/20-nairr/data/cache/
+
+# Any slide: third-party source documents and API caches (manifests are committed)
+slides/*/data/cache/
+slides/*/data/raw/sources/**
+!slides/*/data/raw/sources/**/
+!slides/*/data/raw/sources/**/MANIFEST.yaml
