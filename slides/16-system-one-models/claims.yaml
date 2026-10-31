@@ -1,0 +1,36 @@
+slide: 16
+title: 'System One models decide; they don’t write'
+section: '02 · Science'
+claims:
+- id: c1
+  text: 'Jev: TypeSafe AI, Sept. 15, 2026, closed API; Clef: Cloudflare, Oct. 1, 2026, 27B and 9B, Apache 2.0 weights'
+  kind: factual
+  priority: high
+  status: unverified
+  validation: 'Vendor announcements, model cards and licence files.'
+  sources: []
+  evidence: []
+- id: c2
+  text: 'System One models return all answers in one forward pass, as a choice, a score or a yes probability, with calibrated probabilities'
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: "Model documentation; ideally a run of Clef's open weights on a small schema."
+  sources: []
+  evidence: []
+- id: c3
+  text: 'They fail by picking a wrong option from your list rather than inventing text'
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'Follows from constrained output; demonstrate with Clef if weights can be run.'
+  sources: []
+  evidence: []
+- id: c4
+  text: "Kahneman's System 1 / System 2 framing"
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: 'Framing.'
+  sources: []
+  evidence: []

@@ -34,6 +34,7 @@ STATUSES = {
     "contradicted",  # evidence disagrees; the slide must change
     "revise-slide",  # wording change agreed, not yet made in the deck
     "not-applicable",  # opinion, transition, or demo with nothing to check
+    "superseded",  # no longer on the slide (deck revised); kept for the record and its evidence
 }
 PRIORITIES = {"high", "medium", "low"}
 # A verdict needs something on disk a reader can rerun or open.
@@ -46,6 +47,7 @@ STATUS_ICON = {
     "contradicted": "❌",
     "revise-slide": "✏️",
     "not-applicable": "➖",
+    "superseded": "🗄️",
 }
 
 
@@ -109,7 +111,7 @@ def render(entries: list[tuple[Path, dict]]) -> str:
             f"| [{doc['slide']:02d} · {doc['title']}]({folder}/) | `{c['id']}` {text} "
             f"| {c['kind']} | {c['priority']} | {STATUS_ICON[c['status']]} {c['status']} |"
         )
-    edits = [(p, d, c) for p, d, c in claims if c.get("proposed_text")]
+    edits = [(p, d, c) for p, d, c in claims if c.get("proposed_text") and c["status"] != "superseded"]
     if edits:
         lines += [
             "",

@@ -1,0 +1,36 @@
+slide: 10
+title: 'Whose proofs are they?'
+section: '01 · Fear'
+claims:
+- id: c1
+  text: '722 AI-written math manuscripts on 372 problems, posted by OpenAI to GitHub (openai/math) in October 2026; three retracted within a day'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: "OpenAI's own announcement and repository listing; Wikipedia article as secondary."
+  sources: []
+  evidence: []
+- id: c2
+  text: 'About half were checked in Lean; OpenAI had not read every paper; 28 Fields Medalists had warned against treating open problems as benchmarks'
+  kind: quantitative
+  priority: medium
+  status: unverified
+  validation: 'The declaration and OpenAI statements.'
+  sources: []
+  evidence: []
+- id: c3
+  text: "Allegation: Buckmaster and Alpöge's unpublished Euler results reached OpenAI days before its Navier-Stokes claim"
+  kind: attribution
+  priority: high
+  status: unverified
+  validation: 'Present as an allegation; primary statements by Buckmaster and OpenAI.'
+  sources: []
+  evidence: []
+- id: c4
+  text: 'OpenAI first could not rule out de-identified usage data, then called influence from those prompts impossible; dispute unresolved'
+  kind: attribution
+  priority: medium
+  status: unverified
+  validation: 'OpenAI statements, dated.'
+  sources: []
+  evidence: []

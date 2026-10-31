@@ -1,0 +1,57 @@
+# Published figures for slide 06. src/03_validate.py checks entries with `check:`.
+
+sources:
+  vn2026:
+    cite: "Van Nieuwerburgh, S. (2026). Financing the AI Buildout. Brookings Papers on Economic Activity, Fall 2026 conference draft (Sept. 4, 2026)."
+    url: https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf
+  vn2026_podcast:
+    cite: "Brookings Podcast on Economic Activity, 'The $10 trillion question: Financing the AI buildout', Oct. 8, 2026 (transcript)."
+    url: https://www.brookings.edu/wp-content/uploads/2026/10/BPEA-S9E1-financing-the-ai-buildout.pdf
+
+figures:
+  - id: hyperscaler_ocf
+    source: vn2026
+    where: "Figure 1 (GAAP operating cash flow, five firms, calendarized)"
+    text: "Operating cash flow 2020-2025 ($B): 252.2, 289.9, 288.3, 377.9, 478.5, 603.2"
+    value: {2020: 252.2, 2021: 289.9, 2022: 288.3, 2023: 377.9, 2024: 478.5, 2025: 603.2}
+    check: {kind: annual, column: ocf, tol: 0.01}
+  - id: hyperscaler_capex
+    source: vn2026
+    where: "Figure 1 (cash capex)"
+    text: "Capex 2020-2025 ($B): 96.8, 130.9, 158.3, 153.8, 240.4, 415.8"
+    value: {2020: 96.8, 2021: 130.9, 2022: 158.3, 2023: 153.8, 2024: 240.4, 2025: 415.8}
+    check: {kind: annual, column: capex, tol: 0.02}
+
+  # Cited, not reproduced
+  - id: capex_exceeds_ocf_2026
+    source: vn2026
+    where: "Introduction"
+    text: "Capex 'projected to exceed $800 billion in 2026, surpassing their combined operating cash flow for the first time' (2026 combines actuals with guidance and analyst estimates: capex 800.5 vs OCF 707.1)"
+  - id: hyperion
+    source: vn2026
+    where: "Section IV"
+    text: "Meta's Hyperion: ~2.0 GW, ~$30B; 80% sold to Blue Owl; JV 'Beignet' raised $27B of debt (Oct. 2025), debt-to-asset ~90%, debt service coverage 1.12x, yield 6.58%; off Meta's balance sheet"
+  - id: moodys_leases
+    source: vn2026
+    where: "Section IV (citing Moody's Ratings 2026a)"
+    text: "Hyperscalers have roughly $970B of lease commitments, of which about $660B relates to future leases not yet on balance sheet"
+  - id: wsj_off_balance
+    source: vn2026
+    where: "footnote 4 (citing a WSJ analysis)"
+    text: "$2.4T off-balance-sheet liabilities for Microsoft, Alphabet, Amazon, Meta ($904B future leases, $1.52T purchase commitments) vs $604B on balance sheet"
+  - id: morgan_stanley
+    source: vn2026
+    where: "Section III (citing Morgan Stanley Research 2025)"
+    text: "More than half of ~$2.9T needed 2025-28 from outside capital; private credit ~$800B the largest debt component"
+  - id: debt_issued
+    source: vn2026_podcast
+    where: "transcript p. 8"
+    text: "About $1.4 trillion of debt issued to date on these structures, about half ($700-800B) with banks"
+  - id: revenue_needed
+    source: vn2026
+    where: "Section V"
+    text: "The 2025-32 buildout requires ~$3.7T annual revenue by 2032 for a 10% unlevered return at 50% operating margin"
+  - id: sopaipilla
+    source: vn2026
+    where: "footnote 5"
+    text: "960 MW 'Sopaipilla' data center in El Paso, TX (Meta-BlackRock JV) issued $12.3B of A+ bonds in July 2026 with a nearly identical structure"

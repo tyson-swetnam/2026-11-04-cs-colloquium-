@@ -59,7 +59,7 @@ make setup
 make check
 ```
 
-`make slide-04` runs the slide 04 analysis once its scripts exist.
+`make slide-NN` runs one slide's analysis (for example `make slide-05` for the build-out); see the `Makefile` for which slides have one.
 
 ## Data and licensing
 

@@ -1,0 +1,89 @@
+slide: 25
+title: 'Every term resolves before it is written'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: mouse · Mouse · M. musculus → NCBITaxon:10090 (Mus musculus)
+  kind: factual
+  priority: high
+  status: superseded
+  superseded_note: 'Examples changed to NEON beetle terms in the revised deck.'
+  validation: Resolve the CURIE through the OLS4 API and compare the label.
+  sources:
+  - https://www.ebi.ac.uk/ols4/
+  evidence: []
+- id: c2
+  text: RNAseq · rna-seq · transcriptome → OBI:0001271 (RNA-seq assay)
+  kind: factual
+  priority: high
+  status: superseded
+  superseded_note: 'Examples changed to NEON beetle terms in the revised deck.'
+  validation: Resolve through OLS4.
+  sources: []
+  evidence: []
+- id: c3
+  text: HeLa cells → CLO:0003684 (HeLa cell)
+  kind: factual
+  priority: high
+  status: superseded
+  superseded_note: 'Examples changed to NEON beetle terms in the revised deck.'
+  validation: Resolve through OLS4.
+  sources: []
+  evidence: []
+- id: c4
+  text: A term that will not resolve fails the write
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: Unit test of the MESA write path with a fake CURIE.
+  sources: []
+  evidence: []
+- id: c5
+  text: OWL carries the class hierarchy, so a question about mammalian transcriptomes finds the mouse
+  kind: technical
+  priority: medium
+  status: superseded
+  superseded_note: 'Examples changed to NEON beetle terms in the revised deck.'
+  validation: Fetch the ancestors of NCBITaxon:10090 from OLS4 and assert that Mammalia (NCBITaxon:40674) is among them.
+  sources: []
+  evidence: []
+- id: c6
+  text: 'ground beetle / carabid / Carabidae -> NCBITaxon:41073 (Carabidae)'
+  kind: factual
+  priority: high
+  status: partially-supported
+  validation: 'Resolve through OLS4 (evidence/ontology.py).'
+  sources: []
+  evidence:
+  - ../17-hallucination-is-engineering/data/processed/ontology_writes.csv
+  notes: "NCBITaxon:41073 is Carabidae. 'ground beetle' and 'Carabidae' are names of the term; 'carabid' is not, so a strict write needs a proposed mapping and review."
+- id: c7
+  text: 'pinned beetle / voucher / sample -> OBI:0100051 (specimen)'
+  kind: factual
+  priority: high
+  status: partially-supported
+  validation: 'Resolve through OLS4.'
+  sources: []
+  evidence:
+  - ../17-hallucination-is-engineering/data/processed/ontology_writes.csv
+  notes: "OBI:0100051 is 'specimen'. None of 'pinned beetle', 'voucher', 'sample' is a name of the term: these are mappings an agent proposes and a curator approves, not resolutions."
+- id: c8
+  text: 'mm / millimeters / millim. -> UO:0000016 (millimetre); mm² / sq mm / mm2 -> UO:0000082 (square millimetre)'
+  kind: factual
+  priority: high
+  status: partially-supported
+  validation: 'Resolve through OLS4.'
+  sources: []
+  evidence:
+  - ../17-hallucination-is-engineering/data/processed/ontology_writes.csv
+  notes: "UO:0000016 is labelled 'millimeter' (US spelling; the slide shows 'millimetre'); 'mm' and 'millimeters' resolve, 'millim.' does not. UO:0000082 'square millimeter': 'mm2' and 'mm²' resolve, 'sq mm' does not."
+- id: c9
+  text: 'OWL carries the class hierarchy, so a question about beetles (Coleoptera) finds every carabid'
+  kind: technical
+  priority: medium
+  status: supported
+  validation: 'Coleoptera (NCBITaxon:7041) among the ancestors of NCBITaxon:41073.'
+  sources: []
+  evidence:
+  - ../17-hallucination-is-engineering/data/processed/ontology_hierarchy.csv
+  notes: 'Coleoptera (NCBITaxon:7041) is among the OLS ancestors of Carabidae (NCBITaxon:41073).'

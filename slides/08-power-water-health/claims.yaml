@@ -1,0 +1,44 @@
+slide: 8
+title: 'Power, water and public health'
+section: '01 · Fear'
+claims:
+- id: c1
+  text: 'Global data-center power use projected to more than double by 2030, roughly 3% of total electricity, equal to Japan; 945 TWh by 2030'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: 'IEA, Energy and AI (2025) primary figures.'
+  sources: []
+  evidence: []
+- id: c2
+  text: 'xAI ran up to 35 unpermitted gas turbines at Colossus 1; 27 unpermitted power Colossus 2; up to 1,700+ tons of NOx a year'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: 'SELC and Earthjustice filings; permit records; NAACP v. xAI docket.'
+  sources: []
+  evidence: []
+- id: c3
+  text: 'Colossus cooling draws on the Memphis Sand Aquifer; up to 3.7 million gallons a day requested; recycling plant stalled April 2026'
+  kind: quantitative
+  priority: medium
+  status: unverified
+  validation: 'MLGW statements; Memphis Flyer; Politico.'
+  sources: []
+  evidence: []
+- id: c4
+  text: 'Notes: ~1,300 premature deaths a year by 2030, ~600,000 asthma cases, ~$20B a year in health costs (UC Riverside & Caltech, The Unpaid Toll, 2024)'
+  kind: attribution
+  priority: medium
+  status: unverified
+  validation: 'Read the paper (arXiv preprint) for the exact figures and scenario.'
+  sources: []
+  evidence: []
+- id: c5
+  text: 'Jevons (The Coal Question, 1865): more efficient steam engines made Britain burn more coal'
+  kind: factual
+  priority: low
+  status: unverified
+  validation: 'Primary text.'
+  sources: []
+  evidence: []

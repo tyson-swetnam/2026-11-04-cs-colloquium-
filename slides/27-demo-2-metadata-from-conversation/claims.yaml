@@ -1,0 +1,29 @@
+slide: 27
+title: 'Metadata from a conversation'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: A plain-language search over curated, indexed metadata returns datasets from several repositories
+  kind: technical
+  priority: high
+  status: superseded
+  superseded_note: "Demo 2 is now 'Metadata from a conversation' (was: finding data across silos)."
+  validation: Keep the query, the returned dataset identifiers and the metadata fields used to match them in this folder.
+  sources: []
+  evidence: []
+- id: c2
+  text: "In Claude Desktop the researcher describes the collection; MESA's MCP server resolves each term and writes ontology-checked iRODS AVUs, shown in the MESA Portal"
+  kind: technical
+  priority: high
+  status: unverified
+  validation: 'Recorded run; AVUs on the collection.'
+  sources: []
+  evidence: []
+- id: c3
+  text: 'AVUs: taxon NCBITaxon:41073 (Carabidae); neon_product DP1.10022.001; specimens 65,830 segmented, 47 sites; elytra_length UO:0000016 (mm)'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'Same checks as slides 25-26.'
+  sources: []
+  evidence: []

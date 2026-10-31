@@ -1,0 +1,69 @@
+slide: 23
+title: 'AI sandboxes and secure enclaves'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: Petabytes of iRODS collections on CyVerse; public collections read anonymously, with no credentials
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: Script an anonymous read of a public collection (WebDAV at data.cyverse.org) and cite a current Data Store size.
+  sources: []
+  evidence: []
+- id: c2
+  text: 'Kubernetes AI sandboxes: agents get only allowed tools; egress through a proxy, every call recorded'
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: Point at the manifests and proxy configuration; show a captured egress log.
+  sources: []
+  evidence: []
+- id: c3
+  text: 'Private inference: ACCESS-CI allocations, CPU and GPU VMs from IaC templates'
+  kind: factual
+  priority: low
+  status: unverified
+  validation: Link the IaC templates and the ACCESS allocation types that cover Jetstream2 GPU.
+  sources: []
+  evidence: []
+- id: c4
+  text: 'CAISP (coming soon): a blind-validation competition'
+  kind: placeholder
+  priority: low
+  status: superseded
+  superseded_note: 'CAISP was removed from the slide (the speaker note still mentions it).'
+  validation: Add a link or date once public.
+  sources: []
+  evidence: []
+- id: c5
+  text: 'Private inference: ACCESS-CI Jetstream2, NRP and NIS for self-hosted inference, model training and science gateways'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'Resource documentation.'
+  sources: []
+  evidence: []
+- id: c6
+  text: 'CARC: locally hosted, private, open-weight models'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'CARC documentation or service page.'
+  sources: []
+  evidence: []
+- id: c7
+  text: 'Co-scientists: agents that write hypotheses and tests, download and analyze data, and report results continuously'
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'A run log or repository showing the loop.'
+  sources: []
+  evidence: []
+- id: c8
+  text: "Speaker note still says 'CAISP is proof the pattern works'; CAISP is no longer on the slide"
+  kind: factual
+  priority: low
+  status: unverified
+  validation: 'Edit the note.'
+  sources: []
+  evidence: []

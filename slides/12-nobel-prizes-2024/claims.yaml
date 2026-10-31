@@ -1,0 +1,43 @@
+slide: 12
+title: 'Two Nobel Prizes for AI-related work'
+section: 02 · Science
+claims:
+- id: c1
+  text: 'Physics 2024: John Hopfield & Geoffrey Hinton, foundational discoveries enabling machine learning with artificial neural networks'
+  kind: factual
+  priority: medium
+  status: revise-slide
+  proposed_text: 'Physics: John Hopfield & Geoffrey Hinton. "For foundational discoveries and inventions that enable machine learning with artificial neural networks"'
+  validation: Laureates, shares and motivation from the Nobel Prize API v2.1 (src/01_nobel.py).
+  sources:
+  - https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeYear=2024&nobelPrizeCategory=phy
+  evidence:
+  - data/raw/nobel_2024_phy.json
+  - data/processed/nobel_check.csv
+  notes: Laureates match (1/2 each). The slide paraphrase drops "and inventions"; the official wording is offered as an optional fix.
+- id: c2
+  text: 'Chemistry 2024: David Baker, Demis Hassabis & John Jumper, computational protein design and protein structure prediction'
+  kind: factual
+  priority: medium
+  status: supported
+  validation: Laureates, shares and motivations from the Nobel Prize API v2.1 (src/01_nobel.py).
+  sources:
+  - https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeYear=2024&nobelPrizeCategory=che
+  evidence:
+  - data/raw/nobel_2024_che.json
+  - data/processed/nobel_check.csv
+  notes: Laureates match. Baker 1/2 "for computational protein design"; Hassabis and Jumper 1/4 each "for protein structure prediction".
+- id: c3
+  text: 'Two Nobel Prizes for AI-related work (notes: the establishment recognized AI as a tool of discovery, in physics and chemistry)'
+  kind: attribution
+  priority: medium
+  status: supported
+  validation: The Royal Swedish Academy's own press release and popular-science background title (src/01_nobel.py).
+  sources:
+  - https://www.nobelprize.org/prizes/chemistry/2024/press-release/
+  evidence:
+  - data/processed/nobel_quotes.csv
+  notes: |
+    The Academy titles its chemistry background "They have revealed proteins' secrets through computing
+    and artificial intelligence" and says Hassabis and Jumper "developed an AI model". Nuance for the
+    speaker: Baker's landmark 2003 design (Top7, with Rosetta) was computational, not AI.

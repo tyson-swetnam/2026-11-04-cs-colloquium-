@@ -1,0 +1,29 @@
+slide: 24
+title: 'Formation MCP'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: An agent requests data outside its permissions; the mesh refuses and logs it
+  kind: technical
+  priority: high
+  status: superseded
+  superseded_note: 'Demo 1 is now Formation MCP (was: rogue agent meets the policy engine).'
+  validation: Keep the script that drives the recording, plus the iRODS and proxy logs, in this folder so the clip can be reproduced.
+  sources: []
+  evidence: []
+- id: c2
+  text: 'Claude, Codex, Antigravity and OpenCode all speak MCP, so each connects to the same MESA servers without custom integration'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'Client MCP support is evidenced on slide 15; MESA servers need their repositories.'
+  sources: []
+  evidence: []
+- id: c3
+  text: 'Formation MCP launches apps and jobs on CyVerse Kubernetes; Data Store MCP finds, reads and writes data in iRODS'
+  kind: technical
+  priority: high
+  status: unverified
+  validation: 'MESA server code and a recorded run.'
+  sources: []
+  evidence: []

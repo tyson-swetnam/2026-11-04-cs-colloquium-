@@ -1,0 +1,63 @@
+slide: 22
+title: 'Defense in depth against bad agents'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: External agent → [policy that stops it]
+  kind: placeholder
+  priority: high
+  status: superseded
+  superseded_note: 'Placeholders replaced by the iRODS permission diagram in the revised deck.'
+  validation: Write the policy; demonstrate it with an iRODS rule in a test zone.
+  sources: []
+  evidence: []
+- id: c2
+  text: Rogue agent → [policy that stops it]
+  kind: placeholder
+  priority: high
+  status: superseded
+  superseded_note: 'Placeholders replaced by the iRODS permission diagram in the revised deck.'
+  validation: Write the policy; demo 1 (slide 24) is the evidence.
+  sources: []
+  evidence: []
+- id: c3
+  text: Poorly operated agent → [policy that stops it]
+  kind: placeholder
+  priority: high
+  status: superseded
+  superseded_note: 'Placeholders replaced by the iRODS permission diagram in the revised deck.'
+  validation: Write the policy; demonstrate it.
+  sources: []
+  evidence: []
+- id: c4
+  text: 'Notes: iRODS rules fire on ingest, no deleted datasets, permission-based access; data stays where it lives'
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: Show the rule-engine configuration (policy enforcement points) that implements each property.
+  sources: []
+  evidence: []
+- id: c5
+  text: 'The AI agent has its own account, read-only, whatever its intent; agent writes (delete, overwrite, change permissions) are denied and logged'
+  kind: technical
+  priority: high
+  status: unverified
+  validation: 'iRODS ACLs and policy enforcement points in a test zone.'
+  sources: []
+  evidence: []
+- id: c6
+  text: 'MESA gate: an iRODS policy pre-check on every request (who is asking; own/modify/read rights; which zone and path)'
+  kind: technical
+  priority: high
+  status: unverified
+  validation: 'iRODS rule-engine configuration (pep_api_*_pre).'
+  sources: []
+  evidence: []
+- id: c7
+  text: "Every call goes to the zone's audit log; federated zones share data but keep their own catalogs and rules"
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'iRODS audit plugin and federation docs; a log excerpt.'
+  sources: []
+  evidence: []

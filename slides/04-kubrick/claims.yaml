@@ -1,0 +1,20 @@
+slide: 4
+title: 'Kubrick’s 1964 political satire'
+section: '01 · Fear'
+claims:
+- id: c1
+  text: 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb: Kubrick, Columbia Pictures, 1964'
+  kind: factual
+  priority: low
+  status: unverified
+  validation: 'Film record (e.g. Library of Congress / AFI catalog).'
+  sources: []
+  evidence: []
+- id: c2
+  text: 'Poster (Tomi Ungerer), War Room still and trailer are public domain via Wikimedia Commons'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: "Read each file's licence and reason on Wikimedia Commons (the notes ask to confirm the reason on each page)."
+  sources: []
+  evidence: []

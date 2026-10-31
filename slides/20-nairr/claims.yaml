@@ -1,0 +1,87 @@
+slide: 20
+title: 'What NAIRR gives researchers'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: 'Agentic AI on public clouds: [which clouds, which models, who can request access]'
+  kind: placeholder
+  priority: high
+  status: superseded
+  superseded_note: 'Placeholders filled in the revised deck.'
+  validation: Write the line from the NAIRR award and the NAIRR Pilot portal.
+  sources: []
+  evidence: []
+- id: c2
+  text: 'Data science on data lakehouses: [workflows supported today; partners]'
+  kind: placeholder
+  priority: high
+  status: superseded
+  superseded_note: 'Placeholders filled in the revised deck.'
+  validation: Write the line.
+  sources: []
+  evidence: []
+- id: c3
+  text: '[NSF / NAIRR Award No. ____]'
+  kind: placeholder
+  priority: high
+  status: superseded
+  superseded_note: 'Placeholders filled in the revised deck.'
+  validation: Fill in the award number and check it with the NSF Award Search API.
+  sources: []
+  evidence: []
+- id: c4
+  text: 'NAIRR: NSF-led public-private partnership; piloted since 2024, with 940+ projects in all 50 states'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: 'nsf.gov NAIRR page and nairrpilot.org.'
+  sources: []
+  evidence: []
+- id: c5
+  text: 'An operations center at SDSC and TACC now runs it'
+  kind: factual
+  priority: high
+  status: unverified
+  validation: 'NSF award record for the NAIRR Operations Center (Sept. 2026).'
+  sources: []
+  evidence: []
+- id: c6
+  text: 'AI cyberinfrastructure, free: GPU and HPC time from federal and industry partners, through one national portal'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'NAIRR Pilot portal terms.'
+  sources: []
+  evidence: []
+- id: c7
+  text: 'Research cloud: agentic AI on Jetstream2, the National Research Platform and FabAID'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'Resource pages for each.'
+  sources: []
+  evidence: []
+- id: c8
+  text: 'AI inference: hosted open and commercial models, including the National Inference Service'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'NAIRR resource listing.'
+  sources: []
+  evidence: []
+- id: c9
+  text: 'MESA early-adopter communities: NEON (Battelle), ESIIL, NCEMS, NSCORE, AIIRA, EHT'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'Award abstract names ESIIL, NCEMS, AIIRA and EHT; NEON and NSCORE need a source (letters, slide 34 awards).'
+  sources: []
+  evidence: []
+- id: c10
+  text: 'MESA · NSF Award #2632685, funded under NAIRR'
+  kind: factual
+  priority: high
+  status: unverified
+  validation: 'NSF Award API record (src/01_nsf_award.py).'
+  sources: []
+  evidence: []

@@ -1,0 +1,98 @@
+slide: 26
+title: 'Move the work to the data'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: 'NCBI SRA: raw reads, petabytes, on S3'
+  kind: factual
+  priority: medium
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Cite the AWS Open Data Registry entry for SRA and a current size figure; list a public object anonymously.
+  sources: []
+  evidence: []
+- id: c2
+  text: MDRepo (MD trajectories), PRIDE (proteomics; FTP and REST), PDB, EMDB, Zenodo
+  kind: factual
+  priority: low
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: One scripted anonymous metadata request per repository.
+  sources: []
+  evidence: []
+- id: c3
+  text: Resolve → Stage → Validate → Record
+  kind: technical
+  priority: medium
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Map each verb to the MESA MCP tool that performs it.
+  sources: []
+  evidence: []
+- id: c4
+  text: 'UNM CARC: campus HPC, free for UNM researchers'
+  kind: factual
+  priority: medium
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Cite the CARC allocation policy page.
+  sources: []
+  evidence: []
+- id: c5
+  text: 'ACCESS-CI and TACC: national allocations; Frontera'
+  kind: factual
+  priority: medium
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Check whether Frontera is still allocatable in November 2026 or whether its successor (Horizon) should be named instead.
+  sources: []
+  evidence: []
+- id: c6
+  text: 'Jetstream2: on-demand GPU VMs'
+  kind: factual
+  priority: low
+  status: superseded
+  superseded_note: 'Slide rewritten as the NEON ground-beetle worked example.'
+  validation: Cite the Jetstream2 documentation.
+  sources: []
+  evidence: []
+- id: c7
+  text: 'NEON pitfall traps, DP1.10022.001: 47 sites, 2013-2026'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: 'NEON Data API product record.'
+  sources: []
+  evidence: []
+- id: c8
+  text: 'NEON Biorepository: 188,522 specimen records, most also on GBIF; 53,257 beetle images from four sources'
+  kind: quantitative
+  priority: medium
+  status: unverified
+  validation: 'Biorepository portal and GBIF dataset counts.'
+  sources: []
+  evidence: []
+- id: c9
+  text: 'Resolve -> stage (one 16 GB GPU) -> validate (Carabidae NCBITaxon:41073; mm UO:0000016) -> record in DuckLake'
+  kind: technical
+  priority: medium
+  status: unverified
+  validation: 'neon-beetle-seg repository and run logs.'
+  sources: []
+  evidence: []
+- id: c10
+  text: '65,830 beetles segmented into head, pronotum and elytra, measured in mm; elytra length tracks human measurements, r = 0.98'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: 'Project outputs (DuckLake tables, report).'
+  sources: []
+  evidence: []
+- id: c11
+  text: 'Outputs on the CyVerse Data Store: DuckLake lakehouse, Parquet and a public report'
+  kind: factual
+  priority: low
+  status: unverified
+  validation: 'Public paths/URLs.'
+  sources: []
+  evidence: []

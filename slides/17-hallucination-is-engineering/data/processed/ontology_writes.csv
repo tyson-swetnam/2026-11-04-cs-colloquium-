@@ -1,0 +1,17 @@
+field,text,curie,case,written,reason,ols_label
+taxon,ground beetle,NCBITaxon:41073,slide 25,True,resolves,Carabidae
+taxon,carabid,NCBITaxon:41073,slide 25,False,'carabid' does not match NCBITaxon:41073 (Carabidae),Carabidae
+taxon,Carabidae,NCBITaxon:41073,slide 25,True,resolves,Carabidae
+specimen,pinned beetle,OBI:0100051,slide 25,False,'pinned beetle' does not match OBI:0100051 (specimen),specimen
+specimen,voucher,OBI:0100051,slide 25,False,'voucher' does not match OBI:0100051 (specimen),specimen
+specimen,sample,OBI:0100051,slide 25,False,'sample' does not match OBI:0100051 (specimen),specimen
+length_unit,mm,UO:0000016,slide 25,True,resolves,millimeter
+length_unit,millimeters,UO:0000016,slide 25,True,resolves,millimeter
+length_unit,millim.,UO:0000016,slide 25,False,'millim.' does not match UO:0000016 (millimeter),millimeter
+area_unit,mm²,UO:0000082,slide 25,True,resolves,square millimeter
+area_unit,sq mm,UO:0000082,slide 25,False,'sq mm' does not match UO:0000082 (square millimeter),square millimeter
+area_unit,mm2,UO:0000082,slide 25,True,resolves,square millimeter
+taxon,Carabidae,NCBITaxon:7041,"real CURIE, wrong concept (Coleoptera, the order)",False,'Carabidae' does not match NCBITaxon:7041 (Coleoptera),Coleoptera
+taxon,Carabidae,NCBITaxon:9999999,invented CURIE,False,NCBITaxon:9999999 does not exist in OLS,
+length_unit,mm,NCBITaxon:41073,"right-looking term, wrong field",False,NCBITaxon is not allowed for this field (expects UO),
+specimen,sequencing platform,OBI:0000050,retired (obsolete) term,False,OBI:0000050 is obsolete,obsolete_platform

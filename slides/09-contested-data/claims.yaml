@@ -1,0 +1,36 @@
+slide: 9
+title: 'Contested data, Western defaults'
+section: '01 · Fear'
+claims:
+- id: c1
+  text: 'Bartz v. Anthropic settlement: $1.5B, about $3,100 for each of some 480,000 works'
+  kind: quantitative
+  priority: high
+  status: unverified
+  validation: 'Settlement notice and final-approval record (slide 06 evidence has $1.5B and ~$3,000 per work).'
+  sources: []
+  evidence: []
+- id: c2
+  text: 'In 2025, courts held training to be fair use in Bartz and in Kadrey v. Meta, but not acquiring pirated copies'
+  kind: factual
+  priority: high
+  status: unverified
+  validation: "Court orders (slide 06 evidence); note Kadrey's ruling is limited to that record."
+  sources: []
+  evidence: []
+- id: c3
+  text: 'Still in court: NYT v. OpenAI and Microsoft; Disney and Universal v. Midjourney; music publishers v. Anthropic, seeking more than $3B'
+  kind: factual
+  priority: medium
+  status: unverified
+  validation: 'Dockets / case status as of the talk.'
+  sources: []
+  evidence: []
+- id: c4
+  text: 'More than half of web content is in English; models draw mostly on European and North American text'
+  kind: attribution
+  priority: medium
+  status: unverified
+  validation: 'W3Techs content-language statistics; dataset composition studies.'
+  sources: []
+  evidence: []
