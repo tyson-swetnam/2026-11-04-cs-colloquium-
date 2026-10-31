@@ -4,7 +4,8 @@ The exported deck shows only a still of the War Room where the trailer belongs. 
 still with a <video autoplay muted loop playsinline>, keeping its filter and crop and using the still as the
 poster frame. The trailer is embedded as a data: URL, so the deck plays offline and within its
 Content-Security-Policy (media-src data: blob:). A small inline script restarts the trailer from the beginning
-whenever slide 4 comes into view and pauses it when the slide is left. Idempotent: re-run after a re-export.
+whenever slide 4 comes into view and pauses it when the slide is left. It also removes the empty black
+placeholder box the export put beside the poster, which covered the video. Idempotent: re-run after a re-export.
 
     uv run python slides/04-kubrick/src/04_place_trailer.py [path/to/trailer.webm]
 """
@@ -21,6 +22,7 @@ DECK = SLIDE.parents[1] / "talk" / "deck.html"
 TRAILER = SLIDE / "data" / "media" / "dr_strangelove_trailer.webm"
 STILL_ALT = "The War Room in Dr. Strangelove"
 MARK = 'data-evidence="strangelove-trailer"'
+PLACEHOLDER = r'<div data-img-path="[^"]*" data-node-path="[^"]*" aria-hidden="true" style="[^"]*background-color: rgb\(0, 0, 0\);[^"]*"></div>'
 RESTART = """<script data-evidence="video-restart">
 (() => {
   // The deck keeps every slide in the DOM and marks the current one by removing aria-hidden/inert.
@@ -70,6 +72,8 @@ def main() -> int:
             f'poster="{poster}" src="{src}" style="{style}"></video>'
         )
         slide = slide.replace(tag, video)
+    # The export left an empty black box beside the poster where the trailer was meant to go; it hides the video.
+    slide = re.sub(PLACEHOLDER, "", slide)
     html = html[:start] + slide + html[end:]
     html = re.sub(r'<script data-evidence="video-restart">.*?</script>\n?', "", html, flags=re.S)
     html = html.replace("</body>", RESTART + "\n</body>", 1)
