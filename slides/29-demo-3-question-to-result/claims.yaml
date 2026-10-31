@@ -8,5 +8,40 @@ claims:
   priority: high
   status: unverified
   validation: Keep the prompt, the agent transcript, the DuckLake snapshot ID and the output figure in this folder.
-  sources: []
-  evidence: []
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  - https://idss-mesa.github.io/docs/llms-full.txt
+  - https://idss-mesa.github.io/docs/servers/mesa-ducklake/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/nsf_award.csv
+  - data/processed/mesa_docs_terms.csv
+  - data/raw/sources/mesa_llms_full.txt
+  notes: >-
+    The demo itself cannot be checked: the slide is still a placeholder ("Recorded clip goes here") and no
+    prompt, transcript, snapshot ID or figure was available. What public sources say about the parts: (1)
+    "Agent queries the lakehouse" is the award's plan (f4: an agentic layer over a data lakehouse "translating
+    user intent into reproducible research objects"), but MESA's public docs only document a DuckLake of AVU
+    metadata history, queried through mesa_ducklake_* tools (f7); they describe no tool for querying science
+    tables or making figures. An agent in a MESA JupyterLab/RStudio app could still run DuckDB against a
+    lakehouse, so this is possible but not documented; the recording should show it. (2) "On NAIRR compute" is
+    not documented. MESA's docs say its apps and agents run on CyVerse VICE, GPU builds on NVIDIA A16 nodes
+    (f5, f6); "NAIRR" and "Jetstream" never appear in the docs (data/processed/mesa_docs_terms.csv). The award
+    abstract plans ACCESS-CI resources (TACC, OSN, CyVerse, Jetstream2) and does not say NAIRR (f3); the award
+    is charged to the NAIRR fund line (f2), and Jetstream2 is a NAIRR Pilot provider (slide 20), but CyVerse is
+    not. Say "NAIRR compute" only if the recording ran on a NAIRR allocation (e.g. Jetstream2); otherwise name
+    the machine. (3) "Non-CS researcher" and "real result" (notes) depend on the recording. Minor: the slide
+    says ~2:00 target length but the notes budget ~2.5 min.
+  proposed_text: 'A researcher asks a question; the agent queries the lakehouse on NSF cyberinfrastructure (CyVerse) and returns a figure.'
+- id: c2
+  text: 'MESA · NSF Award #2632685'
+  kind: factual
+  priority: low
+  status: supported
+  validation: 'NSF Award API.'
+  sources:
+  - https://api.nsf.gov/services/v1/awards/2632685.json
+  evidence:
+  - data/processed/nsf_award.csv
+  - data/raw/research/facts.csv
+  notes: 'Award 2632685: "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico, PI Tyson L Swetnam, 2026-07-15 to 2029-05-31, cooperative agreement, fund line NAIRR-Nat AI Research Resource (f1, f2).'
