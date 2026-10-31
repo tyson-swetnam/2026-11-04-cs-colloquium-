@@ -2,16 +2,19 @@
 
 Section: 02 · Science · Slide text and notes: [`talk/slides.md`](../../talk/slides.md#slide-11)
 
-## What needs checking
+| Card | Verdict | Evidence |
+|---|---|---|
+| **The model:** answers from training; can't see your files or run your code | ✅ | True of a bare model. Products that read files or run code do it through tools in a harness, which is cards 2–3. |
+| **The agent:** a loop of read goal → call tool → read result → decide | ✅ | The tool side of that loop runs in [slide 10's MCP demo](../10-agentic-ai/), with a scripted plan standing in for the model. |
+| **The harness:** owns the loop, files and permissions | ✅ | In slide 10, permissions are enforced outside the model: the lake is read-only and the DELETE was refused. |
+| **The protocol:** "MCP is the USB-C port for agents" | ✅ | The MCP docs: *"Think of MCP like a USB-C port for AI applications."* Credit the analogy. |
 
-- **`c1`** (technical, low): A language model answers from what it read in training. It cannot see your files or run your code.
-- **`c2`** (technical, low): An agent is a loop around the model: read the goal, call a tool, read the result, decide the next call.
-- **`c3`** (technical, low): The harness owns the loop, the files it may touch and the permissions.
-- **`c4`** (attribution, low): MCP is the USB-C port for agents
-- **`c5`** (factual, medium): Notes: an MCP server is usable from Claude Code, Codex, Antigravity, OpenCode, Goose; MESA's MCP servers are public today
+**Speaker notes**
+- **"Usable from Claude Code, Codex, Antigravity, OpenCode, Goose": ✅ for all five.** Each client's own documentation states MCP support (`src/01_mcp_support.py`, [`mcp_support.csv`](data/processed/mcp_support.csv)). Slide 10's server needs one [`mcp.json`](../10-agentic-ai/mcp.json) to register with any of them.
+- **"MESA's MCP servers are public today": ⬜ pending** until the github.com/idss-mesa repositories are attached.
 
-Status and the plan for each claim are in [`claims.yaml`](claims.yaml).
+Goose's documentation moved from block.github.io/goose to goose-docs.ai, so re-run the script the day before the talk:
 
-## Evidence
-
-_Nothing yet. Code goes in `src/`, data in `data/`, outputs in `figures/`; see the top-level README._
+```bash
+uv run python slides/11-plain-language-definitions/src/01_mcp_support.py
+```

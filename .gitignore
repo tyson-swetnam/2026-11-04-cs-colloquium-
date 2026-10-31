@@ -254,3 +254,4 @@ slides/09-ai-molecular-science/data/cache/
 slides/09-ai-molecular-science/data/raw/*/sources/*
 !slides/09-ai-molecular-science/data/raw/*/sources/MANIFEST.yaml
 slides/10-agentic-ai/data/processed/lake/
+slides/11-plain-language-definitions/data/cache/
