@@ -16,7 +16,7 @@ claims:
   - data/raw/research/facts.csv
   - data/processed/nsf_award.csv
   - data/processed/mesa_docs_terms.csv
-  - data/raw/sources/mesa_llms_full.txt
+  - data/raw/sources/MANIFEST.yaml
   notes: >-
     The demo itself cannot be checked: the slide is still a placeholder ("Recorded clip goes here") and no
     prompt, transcript, snapshot ID or figure was available. What public sources say about the parts: (1)

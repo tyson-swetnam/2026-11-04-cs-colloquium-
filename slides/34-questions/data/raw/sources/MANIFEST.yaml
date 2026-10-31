@@ -1,0 +1,78 @@
+aiira_home.html:
+  note: slide 34
+  retrieved: '2026-10-31'
+  sha256: d45b0dc79c7644d4711cf7a60aae311ece5d24d84657a7ebff53c1e70a89b9ae
+  source: aiira.iastate.edu
+  url: https://aiira.iastate.edu/
+esiil_home.html:
+  note: slide 34
+  retrieved: '2026-10-31'
+  sha256: 6d8b85b5602ff947c5d62a06d9d30e80e90558bfe82a3b1c06993415a19f66a6
+  source: esiil.org
+  url: https://esiil.org/
+isu_research_aiira_news.html:
+  note: slide 34
+  retrieved: '2026-10-31'
+  sha256: f83ee73c732e7a4b6a138198c1977cf62b1d8ac216ed25139c7ee8c050e59127
+  source: research.iastate.edu
+  url: https://research.iastate.edu/?p=8706
+mesa_llms_full.txt:
+  note: slide 34
+  retrieved: '2026-10-31'
+  sha256: 760deb188977aa12ffea36e041f403b36b1be89aa044ee3073c9031e0dcc5fd8
+  source: idss-mesa.github.io
+  url: https://idss-mesa.github.io/llms-full.txt
+mesa_site.html:
+  note: slide 34 link check
+  retrieved: '2026-10-31'
+  sha256: 4bd7735291ffd336e424d84b7077903801f52555ca1ca5dcf687d4a9e7f6d54b
+  source: idss-mesa.github.io
+  url: https://idss-mesa.github.io/
+nifa_enterprise_1027030.html:
+  note: slide 34
+  retrieved: '2026-10-31'
+  sha256: 114d5c9b047f4ad4f4a48f8c9ef0e30c09ed6379744e2969cd1b3533def408d6
+  source: portal.nifa.usda.gov
+  url: https://portal.nifa.usda.gov/enterprise-search/projects/1027030
+nsf_award_2153040.json:
+  note: slide 34 acknowledgments
+  retrieved: '2026-10-31'
+  sha256: de8f2e553b76d2676b389418ef6c711c0bfacbb876f545e792c41f58afbbba37
+  source: api.nsf.gov
+  url: https://api.nsf.gov/services/v1/awards/2153040.json?printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,pdPIName,coPDPI,startDate,expDate,fundProgramName,primaryProgram,agency,awardAgencyCode,fundAgencyCode,estimatedTotalAmt,fundsObligatedAmt,transType,orgLongName,orgLongName2,abstractText
+nsf_award_2217817.json:
+  note: slide 34 acknowledgments
+  retrieved: '2026-10-31'
+  sha256: 8a025826b44747dae6df30044939ddd317dc730296061a9c965a3ad339dc9bc1
+  source: api.nsf.gov
+  url: https://api.nsf.gov/services/v1/awards/2217817.json?printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,pdPIName,coPDPI,startDate,expDate,fundProgramName,primaryProgram,agency,awardAgencyCode,fundAgencyCode,estimatedTotalAmt,fundsObligatedAmt,transType,orgLongName,orgLongName2,abstractText
+nsf_award_2335029.json:
+  note: slide 34 acknowledgments
+  retrieved: '2026-10-31'
+  sha256: 342d39dc806a299c91ed6b1537d7521079e461781b6f0282756ef2c4c93a8c4e
+  source: api.nsf.gov
+  url: https://api.nsf.gov/services/v1/awards/2335029.json?printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,pdPIName,coPDPI,startDate,expDate,fundProgramName,primaryProgram,agency,awardAgencyCode,fundAgencyCode,estimatedTotalAmt,fundsObligatedAmt,transType,orgLongName,orgLongName2,abstractText
+nsf_award_2438843.json:
+  note: slide 34 acknowledgments
+  retrieved: '2026-10-31'
+  sha256: ab8447d7f6e8d520187a427e34dc2af73b00c76c34fbf6a12d281b6e20d60ad1
+  source: api.nsf.gov
+  url: https://api.nsf.gov/services/v1/awards/2438843.json?printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,pdPIName,coPDPI,startDate,expDate,fundProgramName,primaryProgram,agency,awardAgencyCode,fundAgencyCode,estimatedTotalAmt,fundsObligatedAmt,transType,orgLongName,orgLongName2,abstractText
+nsf_award_2535855.json:
+  note: slide 34 acknowledgments
+  retrieved: '2026-10-31'
+  sha256: f86fcfa1f163d8123dfb1b60cf9d1224cffe26c97d235a47b194fabdf08d444a
+  source: api.nsf.gov
+  url: https://api.nsf.gov/services/v1/awards/2535855.json?printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,pdPIName,coPDPI,startDate,expDate,fundProgramName,primaryProgram,agency,awardAgencyCode,fundAgencyCode,estimatedTotalAmt,fundsObligatedAmt,transType,orgLongName,orgLongName2,abstractText
+nsf_award_2632685.json:
+  note: slide 34 acknowledgments
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: api.nsf.gov
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,awardeeName,awardeeCity,awardeeStateCode,pdPIName,coPDPI,startDate,expDate,fundProgramName,primaryProgram,agency,awardAgencyCode,fundAgencyCode,estimatedTotalAmt,fundsObligatedAmt,transType,orgLongName,orgLongName2,abstractText
+nsf_search_AIIRA.json:
+  note: slide 34
+  retrieved: '2026-10-31'
+  sha256: d6e8d62d314f25704dd1894704f58991984182e208d8e9f834615b6d1a7bd4d5
+  source: api.nsf.gov
+  url: https://api.nsf.gov/services/v1/awards.json?keyword=AIIRA

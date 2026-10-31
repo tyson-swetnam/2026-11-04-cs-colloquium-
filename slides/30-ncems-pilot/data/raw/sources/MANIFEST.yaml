@@ -1,0 +1,42 @@
+cyverse_ncems_news.html:
+  note: slide 30 evidence
+  retrieved: '2026-10-31'
+  sha256: 51588588cc6ef8f1f74941cd6003f3f10495e96997bdc77cf0bfd92861a0673c
+  source: cyverse.org
+  url: https://cyverse.org/news/key-role-cyverse-nsfs-newest-synthesis-center
+mesa_docs_llms_full.txt:
+  note: slide 30 evidence
+  retrieved: '2026-10-31'
+  sha256: 9b8a11e9389293af1c9d175a25926566be13b8dff03ebd66a6c5ba89ab3f19d7
+  source: idss-mesa.github.io
+  url: https://idss-mesa.github.io/docs/llms-full.txt
+mesa_okf_index.md:
+  note: slide 30 evidence
+  retrieved: '2026-10-31'
+  sha256: 65743d66747351ee74aeeae75058fa40dd04e896604a64296c02c991746a5cdd
+  source: idss-mesa.github.io
+  url: https://idss-mesa.github.io/okf/index.md
+mesa_okf_news.md:
+  note: slide 30 evidence
+  retrieved: '2026-10-31'
+  sha256: b5198b8428efce99ca39a3af41b351c56acd49b6e503669ca6efabfdbfdfff79
+  source: idss-mesa.github.io
+  url: https://idss-mesa.github.io/okf/concepts/news.md
+mesa_site_llms_full.txt:
+  note: slide 30 evidence
+  retrieved: '2026-10-31'
+  sha256: 760deb188977aa12ffea36e041f403b36b1be89aa044ee3073c9031e0dcc5fd8
+  source: idss-mesa.github.io
+  url: https://idss-mesa.github.io/llms-full.txt
+nsf_award_2335029.json:
+  note: slide 30 evidence
+  retrieved: '2026-10-31'
+  sha256: 342d39dc806a299c91ed6b1537d7521079e461781b6f0282756ef2c4c93a8c4e
+  source: api.nsf.gov
+  url: https://api.nsf.gov/services/v1/awards/2335029.json?printFields=id,title,awardeeName,pdPIName,startDate,expDate,fundProgramName,estimatedTotalAmt,abstractText
+nsf_award_2632685.json:
+  note: slide 30 evidence
+  retrieved: '2026-10-31'
+  sha256: 069f3552fda8832c3f5092b3fd7ad3e8c8497e2b7adce35e6f219e4228e5916e
+  source: api.nsf.gov
+  url: https://api.nsf.gov/services/v1/awards/2632685.json?printFields=id,title,awardeeName,pdPIName,startDate,expDate,fundProgramName,estimatedTotalAmt,abstractText

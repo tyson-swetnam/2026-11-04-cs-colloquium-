@@ -127,7 +127,7 @@ claims:
   - https://api.nsf.gov/services/v1/awards/2632685.json
   evidence:
   - data/raw/research/facts.csv
-  - data/raw/sources/nsf_2632685.json
+  - data/raw/sources/MANIFEST.yaml
   notes: 'Award 2632685: "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico, PI Tyson L Swetnam, start 07/15/2026, cooperative agreement, $4,617,408.'
 - id: c13
   text: 'Notes: DP1.10022.001 covers 47 sites in 20 domains, July 2013 to September 2026'

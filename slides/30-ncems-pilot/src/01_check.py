@@ -41,7 +41,9 @@ for name, url in SOURCES.items():
 probes = {"ncems_portal": "https://ncems.cyverse.org/", "datastore_dav_anon": "https://data.cyverse.org/dav-anon/iplant/projects/"}
 for k, u in probes.items():
     try:
-        st, _ = get(u)
+        st, body = get(u)
+        if "Unblock Me" in body:  # CyVerse block page: stop, do not try to get round it
+            st = f"{st} (redirected to CyVerse 'Unblock Me' page; not pursued)"
     except Exception as e:  # connection reset through the proxy
         st = f"error: {type(e).__name__}"
     status[k] = st

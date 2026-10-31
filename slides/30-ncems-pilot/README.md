@@ -2,14 +2,23 @@
 
 Section: 03 · Build your AI · Slide text and notes: [`talk/slides.md`](../../talk/slides.md#slide-30)
 
-## What needs checking
+## Findings (checked 2026-10-31)
 
-- **`c1`** (factual, medium): MESA's MCP servers pointed at the NCEMS collections on the CyVerse Data Store
-- **`c2`** (technical, medium): Existing metadata read, terms resolved through OLS and OBO, written back as iRODS attributes
-- **`c3`** (technical, medium): Every write recorded in DuckLake; the session left behind as an OKF bundle
+| Claim | Verdict | Key evidence | Suggested wording |
+|---|---|---|---|
+| `c1` MCP servers pointed at NCEMS data on CyVerse, this summer | partially supported | MESA award names NCEMS as a test partner; NCEMS award 2335029 says CyVerse provides its cyberinfrastructure; MESA site says the stack is in use on the Data Store. No public record of the pilot itself (no collection path, no config). | "MESA's MCP servers pointed at NCEMS collections on the CyVerse Data Store (summer 2026 pilot)" |
+| `c2` Metadata read, terms resolved via OLS/OBO, written back as AVUs | partially supported | mesa-mcp docs: `mesa_ols_*` and `mesa_avu_*` tools (CURIE in the unit slot). No public before/after AVU counts. | "Existing metadata read, terms matched to OBO ontologies via EBI OLS, written back as iRODS AVUs" |
+| `c3` Every write in DuckLake; session left as an OKF bundle | partially supported | mesa-ducklake docs: every AVU write mirrored, but history is off if no catalog is set. Docs never describe a session-to-OKF export; OKF = Open Knowledge Format. | "Every metadata write logged in DuckLake; the session saved as an Open Knowledge Format (OKF) bundle" |
+| `c4` (new, notes) Nothing copied, nothing new to operate | partially supported | DuckLake Parquet can live inside the iRODS project; but a catalog (DuckDB/Postgres) and the MCP servers still run somewhere. | "nothing copied, and no new service for NCEMS to run" |
+| `c5` (new, notes) Everything is open source | partially supported | MESA site marks mesa-portal and mesa-forge repos private. | "The MCP servers and metadata tools are open source at github.com/idss-mesa" |
+| `c6` (new) iRODS zone or S3 bucket joins the mesh without moving files | partially supported | iRODS federation is the stated design; S3/OSN buckets are only mounted (`osn-mount.sh`). | "a federated iRODS zone, or an S3 bucket mounted in place; no files move" |
+| `c7` (new) MESA · NSF Award #2632685 | supported | NSF Award API. | — |
 
-Status and the plan for each claim are in [`claims.yaml`](claims.yaml).
+What the speaker can add to close the gaps: the NCEMS collection path(s), before/after AVU counts, a DuckLake snapshot and the OKF bundle (or a link to them). All pilot results are currently speaker-reported; MESA docs are developer-written (several pages AI-generated) and the MESA code was not checked.
+
+Blocked: `ncems.cyverse.org` reset the connection; the anonymous Data Store WebDAV path redirected to a CyVerse "Unblock Me" page, which was not pursued.
 
 ## Evidence
 
-_Nothing yet. Code goes in `src/`, data in `data/`, outputs in `figures/`; see the top-level README._
+- `src/01_check.py` fetches the sources, checks every quote in `data/raw/research/facts.csv` against the saved text, and writes `data/processed/check_summary.json`.
+- Fetched documents are in `data/raw/sources/` (gitignored) with `MANIFEST.yaml`.

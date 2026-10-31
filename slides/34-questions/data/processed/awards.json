@@ -1,0 +1,203 @@
+{
+  "2632685": {
+    "id": "2632685",
+    "title": "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)",
+    "awardeeName": "University of New Mexico",
+    "awardeeCity": "ALBUQUERQUE",
+    "awardeeStateCode": "NM",
+    "pdPIName": "Tyson L Swetnam",
+    "coPDPI": null,
+    "startDate": "07/15/2026",
+    "expDate": "05/31/2029",
+    "fundProgramName": "NAIRR-Nat AI Research Resource",
+    "primaryProgram": [
+      "01002627DB NSF RESEARCH & RELATED ACTIVIT"
+    ],
+    "agency": "NSF",
+    "awardAgencyCode": "4900",
+    "fundAgencyCode": "4900",
+    "estimatedTotalAmt": "4617408",
+    "fundsObligatedAmt": "4617408",
+    "transType": "Cooperative Agreement",
+    "orgLongName": "Directorate for Computer and Information Science and Engineering",
+    "orgLongName2": "Office of Advanced Cyberinfrastructure",
+    "http": 200
+  },
+  "2217817": {
+    "id": "2217817",
+    "title": "NEON Operations and Maintenance: Evolving from a Strong Foundation",
+    "awardeeName": "Battelle Memorial Institute",
+    "awardeeCity": "COLUMBUS",
+    "awardeeStateCode": "OH",
+    "pdPIName": "Katherine M Thibault",
+    "coPDPI": [
+      "Christopher McKay cmckay@battelleecology.org"
+    ],
+    "startDate": "11/01/2023",
+    "expDate": "10/31/2028",
+    "fundProgramName": "NEON-Operations & Maintenance",
+    "primaryProgram": [
+      "01002526DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002829DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002425DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002627DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002728DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002324DB NSF RESEARCH & RELATED ACTIVIT"
+    ],
+    "agency": "NSF",
+    "awardAgencyCode": "4900",
+    "fundAgencyCode": "4900",
+    "estimatedTotalAmt": "415898912",
+    "fundsObligatedAmt": "268297104",
+    "transType": "Cooperative Agreement",
+    "orgLongName": "Directorate for Biological Sciences",
+    "orgLongName2": "Infrastructure, Institutes, & Centers",
+    "http": 200
+  },
+  "2153040": {
+    "id": "2153040",
+    "title": "Full Proposal: Environmental Data Science Innovation and Impact Lab (ESIIL): Accelerating Discovery by Fostering an Open and Diverse Earth Data Revolution",
+    "awardeeName": "University of Colorado at Boulder",
+    "awardeeCity": "BOULDER",
+    "awardeeStateCode": "CO",
+    "pdPIName": "Jennifer K Balch",
+    "coPDPI": null,
+    "startDate": "08/01/2022",
+    "expDate": "07/31/2027",
+    "fundProgramName": "CYBERINFRASTRUCTURE, Physical & Dynamic Meteorology, NAIRR-Nat AI Research Resource, ECI-Engineering for Civil Infr, Ecosystem Science, Cross-BIO Activities, AISL, OEDC - Open Enviro Data Center",
+    "primaryProgram": [
+      "04002425DB NSF STEM Education",
+      "01002223DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002324DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002627DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002425DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002526DB NSF RESEARCH & RELATED ACTIVIT"
+    ],
+    "agency": "NSF",
+    "awardAgencyCode": "4900",
+    "fundAgencyCode": "4900",
+    "estimatedTotalAmt": "19999990",
+    "fundsObligatedAmt": "19831200",
+    "transType": "Cooperative Agreement",
+    "orgLongName": "Directorate for Biological Sciences",
+    "orgLongName2": "Infrastructure, Institutes, & Centers",
+    "http": 200
+  },
+  "2335029": {
+    "id": "2335029",
+    "title": "Center: National Synthesis Center for Emergence in the Molecular and Cellular Sciences",
+    "awardeeName": "Pennsylvania State Univ University Park",
+    "awardeeCity": "UNIVERSITY PARK",
+    "awardeeStateCode": "PA",
+    "pdPIName": "Edward P O'Brien",
+    "coPDPI": [
+      "Vasant G Honavar vhonavar@ist.psu.edu"
+    ],
+    "startDate": "05/01/2024",
+    "expDate": "04/30/2029",
+    "fundProgramName": "SCMCS-Synthesis Center",
+    "primaryProgram": [
+      "01002829DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002425DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002627DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002728DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002526DB NSF RESEARCH & RELATED ACTIVIT"
+    ],
+    "agency": "NSF",
+    "awardAgencyCode": "4900",
+    "fundAgencyCode": "4900",
+    "estimatedTotalAmt": "19999000",
+    "fundsObligatedAmt": "9849000",
+    "transType": "Cooperative Agreement",
+    "orgLongName": "Directorate for Biological Sciences",
+    "orgLongName2": "Infrastructure, Institutes, & Centers",
+    "http": 200
+  },
+  "2438843": {
+    "id": "2438843",
+    "title": "Center: National Synthesis Center for Organismal Resilience to Environmental Change (NSCORE)",
+    "awardeeName": "Columbia University",
+    "awardeeCity": "NEW YORK",
+    "awardeeStateCode": "NY",
+    "pdPIName": "Dustin R Rubenstein",
+    "coPDPI": [
+      "itshack G Pe'er itsik@cs.columbia.edu",
+      "Eugene Wu ew2493@columbia.edu",
+      "Florence D Hudson fh2417@columbia.edu",
+      "Natalie T Boelman (Former) nboelman@ldeo.columbia.edu"
+    ],
+    "startDate": "09/15/2026",
+    "expDate": "08/31/2031",
+    "fundProgramName": "BIO CENTERS",
+    "primaryProgram": [
+      "01002627DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002728DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002829DB NSF RESEARCH & RELATED ACTIVIT",
+      "01002930DB NSF RESEARCH & RELATED ACTIVIT",
+      "01003031DB NSF RESEARCH & RELATED ACTIVIT"
+    ],
+    "agency": "NSF",
+    "awardAgencyCode": "4900",
+    "fundAgencyCode": "4900",
+    "estimatedTotalAmt": "20000000",
+    "fundsObligatedAmt": "2000000",
+    "transType": "Cooperative Agreement",
+    "orgLongName": "Directorate for Biological Sciences",
+    "orgLongName2": "Infrastructure, Institutes, & Centers",
+    "http": 200
+  },
+  "2535855": {
+    "id": "2535855",
+    "title": "Frontier Science with the Event Horizon Telescope",
+    "awardeeName": "Massachusetts Institute of Technology",
+    "awardeeCity": "CAMBRIDGE",
+    "awardeeStateCode": "MA",
+    "pdPIName": "Vincent L Fish",
+    "coPDPI": [
+      "Gopal Narayanan gopal@astro.umass.edu",
+      "Sheperd S Doeleman sdoeleman@cfa.harvard.edu",
+      "Katherine Bouman klbouman@caltech.edu",
+      "Remond P Tilanus rtilanus@arizona.edu"
+    ],
+    "startDate": "10/01/2025",
+    "expDate": "09/30/2027",
+    "fundProgramName": "MID-SCALE INSTRUMENTATION",
+    "primaryProgram": [
+      "01002526DB NSF RESEARCH & RELATED ACTIVIT"
+    ],
+    "agency": "NSF",
+    "awardAgencyCode": "4900",
+    "fundAgencyCode": "4900",
+    "estimatedTotalAmt": "2606099",
+    "fundsObligatedAmt": "2606099",
+    "transType": "Standard Grant",
+    "orgLongName": "Directorate for Mathematical and Physical Sciences",
+    "orgLongName2": "Astronomical Science Section",
+    "http": 200
+  },
+  "search_AIIRA": [
+    {
+      "id": "2632685",
+      "title": "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)",
+      "awardeeName": "University of New Mexico",
+      "agency": "NSF"
+    },
+    {
+      "id": "2608717",
+      "title": "Research Infrastructure: Category II: MESA (Multidisciplinary Environment for Scientific Advancement)",
+      "awardeeName": "University of Arizona",
+      "agency": "NSF"
+    },
+    {
+      "id": "2420647",
+      "title": "EAGER: Fostering Resilient Agriculture through AI-driven Smart Technology Tools",
+      "awardeeName": "Iowa State University",
+      "agency": "NSF"
+    }
+  ],
+  "links": {
+    "https://idss-mesa.github.io/": 200,
+    "https://api.github.com/orgs/idss-mesa": 403,
+    "https://github.com/idss-mesa": 403
+  }
+}

@@ -24,7 +24,7 @@ claims:
   - https://modelcontextprotocol.io/docs/develop/connect-local-servers
   evidence:
   - data/raw/research/facts.csv
-  - data/raw/sources/mesa_llms_full.txt
+  - data/raw/sources/MANIFEST.yaml
   - data/processed/mesa_avus_observed.csv
   notes: >-
     Supported (developer-written docs): mesa-mcp writes ontology terms to the iRODS Data Store as AVUs with the
@@ -94,7 +94,7 @@ claims:
   - https://docs.irods.org/5.0.2/icommands/metadata/
   evidence:
   - data/raw/research/facts.csv
-  - data/raw/sources/irods_5.0.2_icommands_metadata.html
+  - data/raw/sources/MANIFEST.yaml
   notes: >-
     iRODS docs: AVUs consist of an attribute name, a value and an optional unit, attached to data objects,
     collections, resources or users (f9). The MESA AVUs on the KONZ folder were read here with CyVerse's own,
@@ -127,7 +127,7 @@ claims:
   - https://mcp-public.cyverse.ai/mcp
   evidence:
   - data/raw/research/facts.csv
-  - data/raw/sources/datastore_neon_beetle_seg_metadata.json
+  - data/raw/sources/MANIFEST.yaml
   notes: >-
     Could not confirm. data.cyverse.org/dav-anon (anonymous WebDAV) redirected to unblockme.cyverse.org, a bot
     check that was not bypassed. CyVerse's public, read-only Data Store MCP server answered "Path is not publicly
