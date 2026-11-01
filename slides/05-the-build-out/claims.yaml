@@ -77,6 +77,8 @@ claims:
     The footer lists the sources the chart on the slide actually uses.
   sources: []
   evidence:
+  - figures/deck_fig1.png
+  - figures/deck_fig5.png
   - figures/fig1_baseline_cpi.png
   - figures/fig5_boom_intensity.png
   - src/06_place_in_deck.py

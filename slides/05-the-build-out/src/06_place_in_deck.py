@@ -26,8 +26,11 @@ OLD_FOOTER_V1 = (
 )
 OLD_FOOTER_V2 = "Dashed: 2026 estimate · SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA, Ulmer (1960) · After Fin Moorhouse"
 CHARTS = [  # (file, heading shown above it or None when the figure carries its own title, alt text)
-    ("fig1_baseline_cpi.png", None, "Data centers vs. megaprojects, rebuilt: cumulative cost in 2024 dollars by years from program start. Six years of data-center capex exceed 37 years of Interstates and 71 years of railroads."),
-    ("fig5_boom_intensity.png", None, "Every boom on one ruler: average annual spend as a share of US GDP. Railroads 1870-90 about 2.3%, telecom 1.1%, data centers 0.5% over 2020-25 and about 2% in 2026; the 2025-32 AI build-out is projected at 3.63%."),
+    # deck_fig1/deck_fig5 are the slide-size versions of fig1_baseline_cpi/fig5_boom_intensity (04_figures.py).
+    ("deck_fig1.png", "Cumulative cost, 2024 dollars <span style=\"font-weight: 500; color: rgb(99, 102, 106);\">(dashed: 2026 est.)</span>",
+     "Data centers vs. megaprojects, rebuilt: cumulative cost in 2024 dollars by years from program start. Six years of data-center capex exceed 37 years of Interstates and 71 years of railroads."),
+    ("deck_fig5.png", "Every boom on one ruler: % of US GDP",
+     "Every boom on one ruler: average annual spend as a share of US GDP. Railroads 1870-90 about 2.3%, telecom 1.1%, data centers 0.5% over 2020-25 and about 2% in 2026; the 2025-32 AI build-out is projected at 3.6%."),
 ]
 
 

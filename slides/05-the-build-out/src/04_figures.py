@@ -6,6 +6,7 @@
     fig2b_first_decade_gdp.png  the first ten years of every program, where data centers actually are
     fig4_rank_shift.png         rank under Moorhouse's measure vs. rank under share of GDP
     fig5_boom_intensity.png     average annual spend as a share of GDP, every boom on one ruler
+    deck_fig1.png, deck_fig5.png  slide-5 versions of fig1 and fig5: drawn at slide size, larger type, fewer words
 
 Color does one job: data centers in UNM cherry, private booms in blue, public programs in
 gray. Every line is labeled directly, so identity never depends on color.
@@ -198,6 +199,7 @@ def main() -> None:
 
     boom_intensity(norm, meta, src)
     deck_panels(norm, meta, moorhouse_set)
+    slide5_charts(norm, meta, moorhouse_set)
 
 
 def peak_year(norm, meta, programs, src):
@@ -255,8 +257,66 @@ def deck_panels(norm, meta, moorhouse_set):
         print(f"wrote figures/{name}.png")
 
 
-def boom_intensity(norm, meta, src):
-    """Average annual % of GDP per boom, in Van Nieuwerburgh's (2026) Table 1 windows.
+def slide5_charts(norm, meta, moorhouse_set):
+    """Slide-5 versions of fig1 and fig5, drawn at their size on the slide so the type stays readable.
+
+    deck_fig1.png  cumulative cost in 2024 dollars (Moorhouse's measure, rebuilt)
+    deck_fig5.png  average annual spend as a share of US GDP, every boom on one ruler
+    Each is 808 x 500 px on the 1920 x 1080 slide (saved at 2x). There is no title, subtitle or source line in the
+    image: the slide sets the headings in the deck font and the footer names the sources. Type is 15-16 pt, which
+    is 21-22 px on the slide. The full figures (fig1_baseline_cpi, fig5_boom_intensity) keep every label and program.
+    """
+    W, H, DPI = 8.08, 5.0, 200  # inches at 100 px/inch = slide pixels
+
+    # Cumulative cost, 2024 dollars
+    fig, ax = plt.subplots(figsize=(W, H), dpi=DPI)
+    # Marshall Plan and Manhattan Project (both under $200B) are left to the full fig1: at slide size their labels
+    # collide with Apollo's and with the railroad line.
+    names = {"datacenters_global": "Data centers", "railroads": "Railroads", "interstate": "Interstates", "apollo": "Apollo"}
+    progs = [p for p in moorhouse_set if p in names]
+    lines(ax, norm, "cum_cpi_real_2024", meta, progs, scale=1e-3, label_gap=95, xwin=14, fontsize=16, names=names)
+    for pid in progs:
+        mh = meta[pid].get("in_moorhouse")
+        if mh:
+            ax.plot(mh["span_years"], mh["value_busd"], "D", ms=8, mfc="none", mec=style.INK, mew=1.2)
+    ax.plot([], [], "D", ms=8, mfc="none", mec=style.INK, label="Moorhouse's figure")
+    ax.legend(loc="upper right", fontsize=15, handletextpad=0.3)
+    ax.set_xlim(0, 92)
+    ax.set_ylim(0, None)
+    ax.set_xlabel("Years from start", fontsize=16)
+    ax.set_ylabel("Billions of 2024 $", fontsize=16)
+    ax.tick_params(labelsize=15)
+    fig.tight_layout(pad=0.4)
+    fig.savefig(FIG / "deck_fig1.png", dpi=DPI, facecolor="white")
+    plt.close(fig)
+
+    # Average annual spend, % of US GDP
+    short = {"Oil & gas boom 1973–82": "Oil & gas 1973–82", "Telecom & fiber 1996–2003": "Telecom 1996–2003",
+             "Shale boom 2008–15": "Shale 2008–15", "Data centers 2026 (est.)": "Data centers 2026*",
+             "AI build-out 2025–32 (projected)": "AI build-out 2025–32*"}
+    bars = boom_bars(norm)
+    fig, ax = plt.subplots(figsize=(W, H), dpi=DPI)
+    for i, (label, val, c, _) in enumerate(bars):
+        est = label in ("Data centers 2026 (est.)", "AI build-out 2025–32 (projected)")
+        ax.barh(i, val, height=0.7, color="white" if est else c, edgecolor=c, linewidth=2, hatch="//" if est else None)
+        ax.text(val + 0.06, i, f"{val:.1f}%", va="center", fontsize=15, color=style.INK,
+                fontweight="bold" if c == style.CHERRY else "normal")
+    ax.set_yticks(range(len(bars)), [short.get(b[0], b[0]) for b in bars], fontsize=15)
+    ax.invert_yaxis()
+    ax.set_xlim(0, 4.3)
+    ax.set_xticks([0, 1, 2, 3, 4], ["0", "1%", "2%", "3%", "4%"])
+    ax.tick_params(axis="x", labelsize=15)
+    ax.grid(axis="y", visible=False)
+    ax.set_xlabel("Average per year, % of US GDP   (* estimate)", fontsize=15)
+    ax.tick_params(axis="y", labelcolor=style.INK)
+    fig.tight_layout(pad=0.4)
+    fig.savefig(FIG / "deck_fig5.png", dpi=DPI, facecolor="white")
+    plt.close(fig)
+    print("wrote figures/deck_fig1.png, figures/deck_fig5.png")
+
+
+def boom_bars(norm):
+    """(label, average annual % of US GDP, colour, who) per boom, in Van Nieuwerburgh's (2026) Table 1 windows.
 
     Every bar is computed here except the 2025-32 projection, which is his; 05_validate.py
     checks the historical bars against his table.
@@ -266,7 +326,7 @@ def boom_intensity(norm, meta, src):
         g = norm[(norm.program == pid) & norm.year.between(y0, y1)]
         return 100 * g.share_us_gdp.mean()
 
-    bars = [
+    return [
         ("Canals 1836–41", avg("canals", 1836, 1841), PUBLIC, "ours"),
         ("Railroads 1870–90", avg("railroads_vn", 1870, 1890), PRIVATE, "ours"),
         ("Electrification 1905–25", avg("electrification", 1905, 1925), PRIVATE, "ours"),
@@ -278,6 +338,11 @@ def boom_intensity(norm, meta, src):
         ("Data centers 2026 (est.)", avg("datacenters_global", 2026, 2026), style.CHERRY, "ours"),
         ("AI build-out 2025–32 (projected)", 3.63, style.CHERRY, "VN"),
     ]
+
+
+def boom_intensity(norm, meta, src):
+    """Average annual % of GDP per boom, every boom on one ruler (see boom_bars)."""
+    bars = boom_bars(norm)
     fig, ax = plt.subplots(figsize=(14, 9))
     for i, (label, val, c, who) in enumerate(bars):
         projected = "projected" in label or "est." in label
