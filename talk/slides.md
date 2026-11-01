@@ -85,6 +85,9 @@ Sources (Wikimedia Commons, public domain; confirm the reason on each page): Pos
 ```text
 The build-out
 The largest single investment in human history
+Cumulative cost, 2024 dollars
+(dashed: 2026 est.)
+Every boom on one ruler: % of US GDP
 SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA, Van Nieuwerburgh · After Fin Moorhouse
 ```
 

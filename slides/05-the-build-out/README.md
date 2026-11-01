@@ -16,9 +16,9 @@ Slide 5 now carries two charts, placed by `src/06_place_in_deck.py` (idempotent;
 
 | | |
 |---|---|
-| ![](figures/fig1_baseline_cpi.png) **Data centers vs. megaprojects, rebuilt:** Moorhouse's measure (cumulative cost, 2024 dollars) from primary sources | ![](figures/fig5_boom_intensity.png) **Every boom on one ruler:** average annual spend as a share of US GDP |
+| ![](figures/deck_fig1.png) **Cumulative cost, 2024 dollars:** Moorhouse's measure, rebuilt from primary sources | ![](figures/deck_fig5.png) **Every boom on one ruler:** average annual spend as a share of US GDP |
 
-The footer now reads "SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA, Van Nieuwerburgh · After Fin Moorhouse". Each chart carries its own full source line and marks its estimates (dashed line, hatched bars). `figures/deck_dollars.png` and `figures/deck_gdp.png` are an earlier two-panel version, kept for reference.
+The footer now reads "SEC EDGAR, BEA, MeasuringWorth, FHWA, NASA, Van Nieuwerburgh · After Fin Moorhouse". These are slide-size versions (`deck_fig1.png`, `deck_fig5.png`, made by `04_figures.py`) of [`fig1_baseline_cpi.png`](figures/fig1_baseline_cpi.png) and [`fig5_boom_intensity.png`](figures/fig5_boom_intensity.png). They are drawn at 808 × 500 px, so the type is 21–22 px on the slide, and they leave out the in-image title, subtitle and source line. The headings are slide text, and the footer names the sources. The dollar chart omits the Marshall Plan and the Manhattan Project (both under $200B), whose labels collided at this size. The full fig1 keeps them, with every source line. `figures/deck_dollars.png` and `figures/deck_gdp.png` are an earlier two-panel version, kept for reference.
 
 ## Findings
 
