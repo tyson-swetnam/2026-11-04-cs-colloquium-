@@ -677,7 +677,29 @@ Without effective government oversight, AI could cause serious harm. Waiting for
 
 <a id="slide-34"></a>
 
-## 34 · Questions? · [evidence](../slides/34-questions/)
+## 34 · AI’s future is a choice we make · [evidence](../slides/34-vote-for-the-future/)
+
+```text
+Who writes the rules for AI?
+AI’s future is a choice we make
+Rights
+“Red states and blue states are writing AI Bills of Rights.”
+Alondra Nelson, Bluesky, May 2026. She led the team behind the White House Blueprint for an AI Bill of Rights (2022).
+Dignity
+“A more moral AI is not enough if that morality is determined by a few.”
+Pope Leo XIV, Magnifica Humanitas ¶107, May 2026
+Choice
+“The future of #ArtificialIntelligence is not pre-determined. As a technology developed by human beings, its future depends on the choices we make.”
+@Pontifex on X, Oct. 30, 2026
+We must vote for our leaders, and for the future.
+Election Day was Nov. 3 · Registration and upcoming elections: sos.nm.gov
+```
+
+> **Notes:** [~1 min · by 45:00] Three voices, one point: the rules for AI are being written now, and who writes them is a political choice. Alondra Nelson led the White House OSTP team behind the Blueprint for an AI Bill of Rights (Oct. 4, 2022): five non-binding principles (safe and effective systems; algorithmic discrimination protections; data privacy; notice and explanation; human alternatives, consideration, and fallback). EO 14110 (2023) drew practices from it; EO 14148 revoked that order in January 2025. Since then, in Nelson’s words, red states and blue states are writing their own (Bluesky, May 14, 2026; essay: Science 392, doi:10.1126/science.aeh7153). Pope Leo XIV’s first encyclical, Magnifica Humanitas (signed May 15, released May 25, 2026), says aligning AI is not enough on its own (¶107) and asks for “a political system that does not abdicate its responsibility” (¶106). On Oct. 30 he posted that AI’s future “depends on the choices we make.” Neither of them tells anyone how to vote; that conclusion is mine. The people we elect, at every level, write these rules. Election Day was yesterday: whoever you supported, keep showing up. If you can’t vote, you can still make your voice heard. Sources: https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/ https://bsky.app/profile/alondra.bsky.social/post/3mltg2efhms2a https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html https://x.com/Pontifex/status/2116146977230459383 https://www.sos.nm.gov/voting-and-elections/
+
+<a id="slide-35"></a>
+
+## 35 · Questions? · [evidence](../slides/35-questions/)
 
 ```text
 Questions?
