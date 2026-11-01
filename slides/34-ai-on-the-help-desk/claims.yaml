@@ -3,7 +3,7 @@ title: 'Self-hosted AI helps answer our tickets'
 section: 04 · Stop worrying
 claims:
 - id: c1
-  text: 'Screenshot: a real CARC ticket (Oct. 28, 2026) with an AI Summary panel (Customer Intent, Conversation Summary)'
+  text: 'Screenshot: a real ticket in our Zammad help desk (Oct. 28, 2026) with the AI Summary panel (Customer Intent, Conversation Summary)'
   kind: factual
   priority: high
   status: supported
@@ -11,18 +11,18 @@ claims:
   sources: []
   evidence:
   - figures/ticket_ai_summary_redacted.webp
-  notes: 'The speaker blurred the requester''s name and email. This copy also covers the requester''s initials, their group''s directory name and a staff email address, because the deck is public. The unredacted original is not in the repository. The panel headings match Zammad''s AI Ticket Summary, which enables "Customer Intent" and "Conversation Summary" by default and can use a self-hosted Ollama server (admin-docs.zammad.org). That the help desk is Zammad is an inference and is not on the slide.'
+  notes: 'The speaker blurred the requester''s name and email. This copy also covers the requester''s initials, their group''s directory name and a staff email address, because the deck is public. The unredacted original is not in the repository. CARC confirmed (2026-11-01) that this is Zammad''s AI Ticket Summary. Zammad''s docs say "Customer Intent" and "Conversation Summary" are enabled by default and that it can use a self-hosted Ollama server (facts.csv F09, F10).'
 - id: c2
-  text: 'An open-weight model, self-hosted on 2× NVIDIA DGX Spark'
+  text: 'An open-weight model, self-hosted on 2× NVIDIA DGX Spark (both the 128 GB model)'
   kind: factual
   priority: high
   status: unverified
-  validation: The speaker's own account of CARC's setup. There is no public source to check it against.
+  validation: Confirmed by CARC (the speaker, 2026-11-01). It is CARC's own setup, with no public source to check against, so it stays unverified here.
   sources: []
   evidence: []
   notes: 'Worth naming the model and serving stack in the notes if asked (e.g. which open-weight model, and whether it is served with Ollama, vLLM or similar). NVIDIA says two Sparks linked by one QSFP cable can serve models up to ~400B parameters (product page) or 405B (hardware guide).'
 - id: c3
-  text: 'each up to 128 GB of unified memory and 1 petaFLOP (FP4)'
+  text: 'each with 128 GB of unified memory and up to 1 petaFLOP (FP4)'
   kind: quantitative
   priority: medium
   status: supported
@@ -34,7 +34,7 @@ claims:
   - data/raw/research/facts.csv
   - data/processed/quote_check.csv
   - data/raw/sources/MANIFEST.yaml
-  notes: '"Up to" matters. The 1 PFLOP figure is FP4 with sparsity, and DGX Spark also ships in a 64 GB OEM configuration. If CARC''s units are the 128 GB model, the slide can drop "up to" for memory.'
+  notes: 'CARC''s units are the 128 GB model (speaker, 2026-11-01), so the memory figure has no "up to". DGX Spark also ships in a 64 GB OEM configuration. The 1 PFLOP figure is FP4 with sparsity, so it keeps "up to".'
 - id: c4
   text: 'Tickets, summarized: staff see what the user needs and what has happened so far'
   kind: technical
@@ -46,20 +46,20 @@ claims:
   - figures/ticket_ai_summary_redacted.webp
   notes: The slide does not claim that every ticket is summarized.
 - id: c5
-  text: 'Trained on our history: we taught the agent to use what we have learned from every previous CARC ticket'
+  text: 'Grounded in our history: the agent uses what we have learned from every previous CARC ticket'
   kind: technical
   priority: high
   status: unverified
-  validation: The speaker's own account. It could be checked by describing the method (fine-tuning on past tickets, or retrieval over a ticket index) and how many tickets it covers.
+  validation: Confirmed by CARC (the speaker, 2026-11-01). The agent uses past tickets rather than being fine-tuned on them, so the slide says "uses", not "trained on".
   sources: []
   evidence: []
-  notes: 'Be ready to say which method it is. "Trained" usually means fine-tuning; if the agent instead retrieves similar past tickets at question time (RAG), say "uses" or "searches" rather than "trained on". Also be ready to say how requester data in old tickets is protected.'
+  notes: Be ready to say how many past tickets it covers and how requester data in them is protected. Per CARC, all tickets stay private and none are sent off-site.
 - id: c6
-  text: 'Notes: the model runs on our own hardware, so ticket text is not sent to an outside AI service'
+  text: 'Tickets never leave CARC (slide); notes: tickets are never sent to an outside AI service, they stay private'
   kind: technical
-  priority: medium
+  priority: high
   status: unverified
-  validation: Follows from self-hosted inference (c2), if the help desk's AI provider points only at the local server.
+  validation: Confirmed by CARC (the speaker, 2026-11-01). It is CARC's own configuration and cannot be checked from outside.
   sources: []
   evidence: []
-  notes: Confirm that no cloud provider is configured as a fallback in the help desk's AI settings.
+  notes: Zammad's AI providers include Ollama and any OpenAI-compatible endpoint. Its docs say that with Ollama the AI server runs on a machine you control and data is not transferred to a third party (F11).

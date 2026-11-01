@@ -1,4 +1,4 @@
-"""Slide 34: fetch NVIDIA's DGX Spark specifications (product page, hardware guide, launch release).
+"""Slide 34: fetch NVIDIA's DGX Spark specifications and Zammad's AI ticket summary documentation.
 
     uv run python slides/34-ai-on-the-help-desk/src/01_fetch_sources.py [--refresh]
 """
@@ -15,6 +15,8 @@ PAGES = {
     "nvidia_dgx_spark_hardware.html": ("https://docs.nvidia.com/dgx/dgx-spark/hardware.html", "NVIDIA DGX Spark User Guide: Hardware Overview"),
     "nvidia_dgx_spark_release.html": ("https://nvidianews.nvidia.com/news/nvidia-dgx-spark-arrives-for-worlds-ai-developers",
                                       "NVIDIA newsroom, 13 Oct 2025: DGX Spark arrives"),
+    "zammad_ai_summary.html": ("https://admin-docs.zammad.org/en/latest/ai/summary.html", "Zammad admin docs: AI Ticket Summary"),
+    "zammad_ai_provider.html": ("https://admin-docs.zammad.org/en/latest/ai/provider.html", "Zammad admin docs: AI provider"),
 }
 
 if __name__ == "__main__":

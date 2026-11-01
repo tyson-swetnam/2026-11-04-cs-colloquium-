@@ -24,7 +24,13 @@ Section: 03 · Build your AI · Slide text and notes: [`talk/slides.md`](../../t
 
 **Not reached.** The NAIRR resource catalog (submit-nairr.xras.org) failed TLS verification through the proxy, and the nairrpilot.org resource list loads by JavaScript. NRP's NAIRR link comes from an NSF page (Oct 2024), not the live catalog.
 
-## Evidence
+## Early-adopter logos
+
+Since 2026-11-01 the early-adopter chips show each community's logo (`src/03_early_adopter_logos.py`). The files are the ones the speaker linked, with the AIIRA file taken from its [logo page](https://aiira.iastate.edu/resources/aiira-logo/). Downloads go to `data/raw/sources/logos/` (logged in `MANIFEST.yaml`, not committed). They are trimmed and scaled into `figures/logos/` ([NEON](figures/logos/neon.webp), [ESIIL](figures/logos/esiil.webp), [NCEMS](figures/logos/ncems.webp), [AIIRA](figures/logos/aiira.webp), [EHT](figures/logos/eht.webp)), and the alt text keeps each full name, including "operated by Battelle" for NEON.
+
+- **NSCORE** has no logo yet: nscore.columbia.edu returns HTTP 403 to automated requests, and the NSF announcement has none. Save the file as `data/raw/sources/logos/nscore.png` (or `.jpg`/`.webp`) and re-run the script.
+- The **EHT** file is a 662-px Google image thumbnail, which looks fine at this size. eventhorizontelescope.org also returned 403.
+
 
 - `data/raw/research/facts.csv`: 37 quoted facts from primary sources, each checked word for word by `src/02_nairr_check.py` (`data/processed/quote_check.csv`).
 - `data/processed/`: `nairr_awards.csv`, `keyword_search.csv`, `project_counts.csv`, `award_facts.csv`.

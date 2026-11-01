@@ -6,7 +6,8 @@ the requester's initials, their group's directory name and a staff email address
 unredacted original is not in the repository.
 
 DGX Spark specifications come from NVIDIA (src/01_fetch_sources.py, checked by src/02_check_facts.py). CARC's
-configuration (two units, an open-weight model, and use of past tickets) is the speaker's own account; see claims.yaml.
+configuration (two 128 GB units, an open-weight model, Zammad, use of past tickets, tickets kept private) is
+confirmed by the speaker (2026-11-01); see claims.yaml.
 
 tools/deck_insert.py places the slide after "Paste our URL into any chat" (slide 33). It is idempotent.
 
@@ -31,20 +32,20 @@ EYEBROW = "CARC help desk"
 SHOT = ("ticket_ai_summary_redacted.webp",
         "A CARC help-desk ticket about a project scratch folder, with an AI Summary panel listing the customer's intent "
         "and a summary of the conversation. The requester's details are redacted.")
-CAPTION = "A real ticket, Oct. 28, 2026 · requester details redacted"
+CAPTION = "A real ticket in our Zammad help desk, Oct. 28, 2026 · requester details redacted"
 POINTS = [  # (heading, text)
-    ("Open weights, our hardware", "An open-weight model, self-hosted on 2× NVIDIA DGX Spark: each up to 128 GB of unified memory and 1 petaFLOP (FP4)."),
+    ("Open weights, our hardware", "An open-weight model, self-hosted on 2× NVIDIA DGX Spark, each with 128 GB of unified memory and up to 1 petaFLOP (FP4). Tickets never leave CARC."),
     ("Tickets, summarized", "Staff see what the user needs and what has happened so far, at a glance."),
-    ("Trained on our history", "We taught the agent to use what we have learned from every previous CARC ticket."),
+    ("Grounded in our history", "The agent uses what we have learned from every previous CARC ticket."),
 ]
 NOTES = (
-    "[~1 min] What we use ourselves. Tickets in the CARC help desk get an AI summary: what the user is asking "
+    "[~1 min] What we use ourselves. Tickets in the CARC help desk (Zammad) get an AI ticket summary: what the user is asking "
     "for and what has happened so far. This one is a real ticket from last week about a project scratch folder; the "
     "requester's details are redacted. The model is open-weight and runs on two NVIDIA DGX Spark systems on our own "
-    "hardware, so ticket text is not sent to an outside AI service. We have also trained the agent to use the "
+    "hardware, so tickets are never sent to an outside AI service; they stay private. The agent also uses the "
     "knowledge in all of our previous tickets, so its answers reflect how CARC has actually solved these problems. "
-    "DGX Spark: NVIDIA GB10 Grace Blackwell Superchip, up to 128 GB unified "
-    "memory and up to 1 petaFLOP at FP4 per unit (NVIDIA). "
+    "DGX Spark: NVIDIA GB10 Grace Blackwell Superchip; ours are the 128 GB model, "
+    "with up to 1 petaFLOP at FP4 (with sparsity) per unit (NVIDIA). "
     "Sources: https://www.nvidia.com/en-us/products/workstations/dgx-spark/ "
     "https://docs.nvidia.com/dgx/dgx-spark/hardware.html"
 )

@@ -24,7 +24,7 @@ claims:
   - data/processed/quote_check.csv
   - data/raw/sources/MANIFEST.yaml
   - figures/carc_docs_for_ai_agents.webp
-  notes: The page's own frontmatter marks it as AI-generated (generated.by claude/fable-5-1, 2026-09-12), with no human "verified" entry.
+  notes: The page's own frontmatter marks it as AI-generated (generated.by claude/fable-5-1, 2026-09-12), with no human "verified" entry yet; parts of the docs site are still in draft (speaker, 2026-11-01).
 - id: c3
   text: '/llms.txt: an outline of all ~80 pages · <page>/index.md: any page as Markdown with OKF frontmatter (type, sources, status)'
   kind: factual

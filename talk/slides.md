@@ -377,12 +377,7 @@ Agentic AI on Jetstream2, the National Research Platform and FabAID.
 AI inference
 Hosted open and commercial models, including the National Inference Service.
 MESA early-adopter communities
-NEON (Battelle)
-ESIIL
-NCEMS
 NSCORE
-AIIRA
-EHT
 MESA · NSF Award #2632685
 ```
 
@@ -690,16 +685,16 @@ carc.unm.edu · carc.unm.edu/docs · Open Knowledge Format (OKF) v0.2
 ```text
 CARC help desk
 Self-hosted AI helps answer our tickets
-A real ticket, Oct. 28, 2026 · requester details redacted
+A real ticket in our Zammad help desk, Oct. 28, 2026 · requester details redacted
 Open weights, our hardware
-An open-weight model, self-hosted on 2× NVIDIA DGX Spark: each up to 128 GB of unified memory and 1 petaFLOP (FP4).
+An open-weight model, self-hosted on 2× NVIDIA DGX Spark, each with 128 GB of unified memory and up to 1 petaFLOP (FP4). Tickets never leave CARC.
 Tickets, summarized
 Staff see what the user needs and what has happened so far, at a glance.
-Trained on our history
-We taught the agent to use what we have learned from every previous CARC ticket.
+Grounded in our history
+The agent uses what we have learned from every previous CARC ticket.
 ```
 
-> **Notes:** [~1 min] What we use ourselves. Tickets in the CARC help desk get an AI summary: what the user is asking for and what has happened so far. This one is a real ticket from last week about a project scratch folder; the requester's details are redacted. The model is open-weight and runs on two NVIDIA DGX Spark systems on our own hardware, so ticket text is not sent to an outside AI service. We have also trained the agent to use the knowledge in all of our previous tickets, so its answers reflect how CARC has actually solved these problems. DGX Spark: NVIDIA GB10 Grace Blackwell Superchip, up to 128 GB unified memory and up to 1 petaFLOP at FP4 per unit (NVIDIA). Sources: https://www.nvidia.com/en-us/products/workstations/dgx-spark/ https://docs.nvidia.com/dgx/dgx-spark/hardware.html
+> **Notes:** [~1 min] What we use ourselves. Tickets in the CARC help desk (Zammad) get an AI ticket summary: what the user is asking for and what has happened so far. This one is a real ticket from last week about a project scratch folder; the requester's details are redacted. The model is open-weight and runs on two NVIDIA DGX Spark systems on our own hardware, so tickets are never sent to an outside AI service; they stay private. The agent also uses the knowledge in all of our previous tickets, so its answers reflect how CARC has actually solved these problems. DGX Spark: NVIDIA GB10 Grace Blackwell Superchip; ours are the 128 GB model, with up to 1 petaFLOP at FP4 (with sparsity) per unit (NVIDIA). Sources: https://www.nvidia.com/en-us/products/workstations/dgx-spark/ https://docs.nvidia.com/dgx/dgx-spark/hardware.html
 
 <a id="slide-35"></a>
 

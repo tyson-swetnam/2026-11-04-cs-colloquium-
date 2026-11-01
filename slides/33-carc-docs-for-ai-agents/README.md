@@ -18,7 +18,7 @@ All 13 quotes in [`facts.csv`](data/raw/research/facts.csv) match the live pages
 
 Notes:
 - An earlier draft asked how to set up project scratch on Hopper. The storage page says "There is no `/hopper/scratch`", so a live demo could have failed. The prompt now asks a question the docs answer directly.
-- The For AI agents page's frontmatter says it was AI-generated (`generated.by: claude/fable-5-1`) and has no human `verified` entry. Worth a human review, since the slide puts it on screen.
+- The For AI agents page's frontmatter says it was AI-generated (`generated.by: claude/fable-5-1`) and has no human `verified` entry yet. Per CARC, parts of the docs site are still in draft. Not on the slide.
 - The `index.md` twins were served with no `Content-Type` header on 2026-11-01, although llms.txt says `text/markdown`. Agents still read them, but the header is worth fixing.
 - The carc.unm.edu home page itself does not mention AI agents. That messaging is in the docs, `llms.txt` and `robots.txt`.
 
