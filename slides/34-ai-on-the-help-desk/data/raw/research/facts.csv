@@ -1,0 +1,9 @@
+id,claim_id,quote,source_file,url,date,source_type,notes
+F01,c3,NVIDIA GB10 Grace Blackwell Superchip,nvidia_dgx_spark.html,https://www.nvidia.com/en-us/products/workstations/dgx-spark/,2026-11-01,primary,
+F02,c3,Up to 1 petaFLOP FP4 AI Performance,nvidia_dgx_spark.html,https://www.nvidia.com/en-us/products/workstations/dgx-spark/,2026-11-01,primary,A footnote says the figure assumes sparsity.
+F03,c3,Up to 128 GB Unified Memory,nvidia_dgx_spark.html,https://www.nvidia.com/en-us/products/workstations/dgx-spark/,2026-11-01,primary,
+F04,c3,Available in 64 GB* or 128 GB memory configuration options.,nvidia_dgx_spark.html,https://www.nvidia.com/en-us/products/workstations/dgx-spark/,2026-11-01,primary,64 GB is OEM-only; hence 'up to 128 GB' on the slide.
+F05,c3,128 GB LPDDR5x unified system memory,nvidia_dgx_spark_hardware.html,https://docs.nvidia.com/dgx/dgx-spark/hardware.html,2026-11-01,primary,
+F06,c3,up to 1 PFLOP (petaFLOP) at FP4 precision with sparsity,nvidia_dgx_spark_hardware.html,https://docs.nvidia.com/dgx/dgx-spark/hardware.html,2026-11-01,primary,
+F07,n1,Support for AI models up to 200 billion parameters (or 405B for dual-Spark configuration),nvidia_dgx_spark_hardware.html,https://docs.nvidia.com/dgx/dgx-spark/hardware.html,2026-11-01,primary,The product page says up to 400B for two linked units.
+F08,n1,run inference on AI models with up to 200 billion parameters and fine-tune models of up to 70 billion parameters locally,nvidia_dgx_spark_release.html,https://nvidianews.nvidia.com/news/nvidia-dgx-spark-arrives-for-worlds-ai-developers,2025-10-13,primary,

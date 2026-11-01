@@ -665,7 +665,45 @@ CARC · UNM · CS Colloquium · Nov. 4, 2026
 
 <a id="slide-33"></a>
 
-## 33 · Sitting on the sidelines is the most dangerous choice a researcher can make. · [evidence](../slides/33-ai-is-not-going-away/)
+## 33 · Paste our URL into any chat · [evidence](../slides/33-carc-docs-for-ai-agents/)
+
+```text
+CARC docs, for people and for AI agents
+Paste our URL into any chat
+/llms.txt
+An outline of all ~80 pages, with a one-line description of each
+<page>/index.md
+Any page as Markdown, with OKF frontmatter: type, sources, status
+/llms-full.txt
+The whole corpus in one file (~180K tokens)
+Try it in any chat
+Read carc.unm.edu/docs/llms.txt, then tell me how to get access to the H100 GPUs on Easley. Cite the pages.
+carc.unm.edu · carc.unm.edu/docs · Open Knowledge Format (OKF) v0.2
+```
+
+> **Notes:** [~1 min] The new CARC website and documentation are published for people and for AI agents. The docs are an Open Knowledge Format (OKF) v0.2 bundle: every page carries frontmatter saying what it is, where it came from and when it goes stale. The site exposes that directly: /llms.txt is an outline of every page, /llms-full.txt is the whole corpus, and adding index.md to any page URL returns its Markdown. So anyone can paste our URL into Claude, ChatGPT, Gemini or a local model and get answers grounded in CARC's own documentation, not in whatever the model remembers. Try the prompt on the slide: the FAQ says the h100 and l40s partitions are group-gated, through a ColdFront allocation your PI requests. When the docs do not cover something, the page tells agents to send people to a human (support.alliance.unm.edu or help@carc.unm.edu) rather than guess. Sources: https://carc.unm.edu/ https://carc.unm.edu/docs/about/ai-agents/ https://carc.unm.edu/docs/llms.txt https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md https://llmstxt.org/
+
+<a id="slide-34"></a>
+
+## 34 · Self-hosted AI helps answer our tickets · [evidence](../slides/34-ai-on-the-help-desk/)
+
+```text
+CARC help desk
+Self-hosted AI helps answer our tickets
+A real ticket, Oct. 28, 2026 · requester details redacted
+Open weights, our hardware
+An open-weight model, self-hosted on 2× NVIDIA DGX Spark: each up to 128 GB of unified memory and 1 petaFLOP (FP4).
+Tickets, summarized
+Staff see what the user needs and what has happened so far, at a glance.
+Trained on our history
+We taught the agent to use what we have learned from every previous CARC ticket.
+```
+
+> **Notes:** [~1 min] What we use ourselves. Tickets in the CARC help desk get an AI summary: what the user is asking for and what has happened so far. This one is a real ticket from last week about a project scratch folder; the requester's details are redacted. The model is open-weight and runs on two NVIDIA DGX Spark systems on our own hardware, so ticket text is not sent to an outside AI service. We have also trained the agent to use the knowledge in all of our previous tickets, so its answers reflect how CARC has actually solved these problems. DGX Spark: NVIDIA GB10 Grace Blackwell Superchip, up to 128 GB unified memory and up to 1 petaFLOP at FP4 per unit (NVIDIA). Sources: https://www.nvidia.com/en-us/products/workstations/dgx-spark/ https://docs.nvidia.com/dgx/dgx-spark/hardware.html
+
+<a id="slide-35"></a>
+
+## 35 · Sitting on the sidelines is the most dangerous choice a researcher can make. · [evidence](../slides/35-ai-is-not-going-away/)
 
 ```text
 AI is not going away
@@ -675,9 +713,9 @@ Without effective government oversight, AI could cause serious harm. Waiting for
 
 > **Notes:** [~1.5 min · by 44:00] The thesis of the talk. Pause here.
 
-<a id="slide-34"></a>
+<a id="slide-36"></a>
 
-## 34 · AI’s future is a choice we make · [evidence](../slides/34-vote-for-the-future/)
+## 36 · AI’s future is a choice we make · [evidence](../slides/36-vote-for-the-future/)
 
 ```text
 Who writes the rules for AI?
@@ -697,9 +735,9 @@ Election Day was Nov. 3 · Registration and upcoming elections: sos.nm.gov
 
 > **Notes:** [~1 min · by 45:00] Three voices, one point: the rules for AI are being written now, and who writes them is a political choice. Alondra Nelson led the White House OSTP team behind the Blueprint for an AI Bill of Rights (Oct. 4, 2022): five non-binding principles (safe and effective systems; algorithmic discrimination protections; data privacy; notice and explanation; human alternatives, consideration, and fallback). EO 14110 (2023) drew practices from it; EO 14148 revoked that order in January 2025. Since then, in Nelson’s words, red states and blue states are writing their own (Bluesky, May 14, 2026; essay: Science 392, doi:10.1126/science.aeh7153). Pope Leo XIV’s first encyclical, Magnifica Humanitas (signed May 15, released May 25, 2026), says aligning AI is not enough on its own (¶107) and asks for “a political system that does not abdicate its responsibility” (¶106). On Oct. 30 he posted that AI’s future “depends on the choices we make.” Neither of them tells anyone how to vote; that conclusion is mine. The people we elect, at every level, write these rules. Election Day was yesterday: whoever you supported, keep showing up. If you can’t vote, you can still make your voice heard. Sources: https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/ https://bsky.app/profile/alondra.bsky.social/post/3mltg2efhms2a https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html https://x.com/Pontifex/status/2116146977230459383 https://www.sos.nm.gov/voting-and-elections/
 
-<a id="slide-35"></a>
+<a id="slide-37"></a>
 
-## 35 · Questions? · [evidence](../slides/35-questions/)
+## 37 · Questions? · [evidence](../slides/37-questions/)
 
 ```text
 Questions?

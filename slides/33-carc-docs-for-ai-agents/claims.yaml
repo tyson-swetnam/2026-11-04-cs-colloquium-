@@ -1,0 +1,101 @@
+slide: 33
+title: 'Paste our URL into any chat'
+section: 04 · Stop worrying
+claims:
+- id: c1
+  text: 'Paste our URL into any chat (eyebrow: CARC docs, for people and for AI agents)'
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: Framing; the supporting facts are c2-c6.
+  sources: []
+  evidence: []
+  notes: The claim that it works in "any chat" depends on the chat tool being allowed to fetch URLs. Some sandboxes block arbitrary hosts. llms.txt points to raw.githubusercontent.com copies for that case.
+- id: c2
+  text: 'Screenshots: the CARC docs "For AI agents" page: published for people and for AI agents; an OKF v0.2 bundle'
+  kind: factual
+  priority: high
+  status: supported
+  validation: The live page's text matches word for word (facts.csv F01-F03).
+  sources:
+  - https://carc.unm.edu/docs/about/ai-agents/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  - data/raw/sources/MANIFEST.yaml
+  - figures/carc_docs_for_ai_agents.webp
+  notes: The page's own frontmatter marks it as AI-generated (generated.by claude/fable-5-1, 2026-09-12), with no human "verified" entry.
+- id: c3
+  text: '/llms.txt: an outline of all ~80 pages · <page>/index.md: any page as Markdown with OKF frontmatter (type, sources, status)'
+  kind: factual
+  priority: high
+  status: supported
+  validation: 'llms.txt header and Markdown-twin pattern match word for word (F04, F05). src/02_check_facts.py counts the pages listed with a twin: 80 (data/processed/llms_txt_pages.json).'
+  sources:
+  - https://carc.unm.edu/docs/llms.txt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  - data/processed/llms_txt_pages.json
+  notes: The sitemap has 93 URLs because it includes section index pages. The index.md twins were served with no Content-Type header on 2026-11-01, even though llms.txt says text/markdown, so "text/markdown" is kept off the slide.
+- id: c4
+  text: '/llms-full.txt: the whole corpus in one file (~180K tokens)'
+  kind: quantitative
+  priority: low
+  status: supported
+  validation: 'llms.txt gives "about 696 KB, roughly 178,000 tokens" (F06). The file fetched on 2026-11-01 was 713,513 bytes.'
+  sources:
+  - https://carc.unm.edu/docs/llms-full.txt
+  evidence:
+  - data/raw/research/facts.csv
+  - data/raw/sources/MANIFEST.yaml
+  notes: The token figure is the site's own estimate, not a count with any particular tokenizer.
+- id: c5
+  text: 'Try it in any chat: "Read carc.unm.edu/docs/llms.txt, then tell me how to get access to the H100 GPUs on Easley. Cite the pages."'
+  kind: technical
+  priority: medium
+  status: partially-supported
+  validation: The docs contain the answer (General FAQ, F07). The prompt itself was not run against a chat assistant from this session.
+  sources:
+  - https://carc.unm.edu/docs/faq/general/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'Expected answer: the h100 and l40s partitions are group-gated, through an approved ColdFront allocation that the PI requests. Run the prompt live once before the talk. An earlier draft asked about project scratch on Hopper, but the storage page says "There is no `/hopper/scratch`", so that prompt was dropped.'
+- id: c6
+  text: 'Notes: when the docs do not cover something, the page tells agents to send people to a human'
+  kind: factual
+  priority: low
+  status: supported
+  validation: F08.
+  sources:
+  - https://carc.unm.edu/docs/about/ai-agents/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: The page names support.alliance.unm.edu and help@carc.unm.edu.
+- id: c7
+  text: 'Footer: Open Knowledge Format (OKF) v0.2 (with llms.txt in the notes)'
+  kind: factual
+  priority: low
+  status: supported
+  validation: OKF spec header and definition (F09, F10); llms.txt proposal (F11).
+  sources:
+  - https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
+  - https://llmstxt.org/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: The spec is published in the GoogleCloudPlatform/knowledge-catalog repository. The slide does not name a publisher.
+- id: c8
+  text: 'Screenshot: carc.unm.edu, "Advanced computing for every researcher in New Mexico"'
+  kind: factual
+  priority: low
+  status: supported
+  validation: Home page text matches (F12, F13).
+  sources:
+  - https://carc.unm.edu/
+  evidence:
+  - data/raw/research/facts.csv
+  - figures/carc_website.webp
+  notes: The home page's own text does not mention AI agents. That messaging is on the docs site, its llms.txt and robots.txt.

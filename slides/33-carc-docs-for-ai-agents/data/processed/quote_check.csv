@@ -1,0 +1,14 @@
+id,claim_id,source_file,status
+F01,c2,docs_ai_agents.html,found
+F02,c2,docs_ai_agents.html,found
+F03,c2,docs_ai_agents.html,found
+F04,c3,docs_llms.txt,found
+F05,c3,docs_llms.txt,found
+F06,c4,docs_llms.txt,found
+F07,c5,docs_faq_general.md,found
+F08,c6,docs_ai_agents.html,found
+F09,c7,okf_spec.md,found
+F10,c7,okf_spec.md,found
+F11,c7,llmstxt.md,found
+F12,c8,carc_home.html,found
+F13,c8,carc_home.html,found

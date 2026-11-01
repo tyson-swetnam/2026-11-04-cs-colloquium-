@@ -1,7 +1,7 @@
 # Each slide with an analysis gets a target named slide-NN that runs its src/ scripts in order.
 PY ?= uv run python
 
-.PHONY: setup slides claims check test slide-05 slide-06 slide-17 slide-13 slide-14 slide-34
+.PHONY: setup slides claims check test slide-05 slide-06 slide-17 slide-13 slide-14 slide-33 slide-34 slide-36
 
 setup:
 	uv sync --extra dev
@@ -33,5 +33,11 @@ slide-13:
 slide-14:
 	@for s in slides/14-agentic-ai/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done
 
+slide-36:
+	@for s in slides/36-vote-for-the-future/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done
+
+slide-33:
+	@for s in slides/33-carc-docs-for-ai-agents/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done
+
 slide-34:
-	@for s in slides/34-vote-for-the-future/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done
+	@for s in slides/34-ai-on-the-help-desk/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done
