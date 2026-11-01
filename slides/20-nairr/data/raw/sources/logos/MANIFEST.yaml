@@ -23,3 +23,8 @@ neon.img:
   sha256: 824448936dc824d0f25ce16150eaf4db2f8e61dbbeefdac0170adea1e0195548
   source: neon logo (link chosen by the speaker)
   url: https://images.squarespace-cdn.com/content/v1/5c4f6792ec4eb7c7c4186cc0/1553045886628-D1LXYEX5JPWY97YAL4IJ/NEON_288.png
+nscore.img:
+  retrieved: '2026-11-01'
+  sha256: 1d4ac0f34f36bc8900fad3b9e9469cd749ca45c6a58ea37582cb5e6edcbdb657
+  source: nscore logo (link chosen by the speaker)
+  url: https://nscore.columbia.edu/sites/nscore.columbia.edu/files/styles/cu_crop/public/content/NSF_NSCORE_lockup_360_200.png.webp

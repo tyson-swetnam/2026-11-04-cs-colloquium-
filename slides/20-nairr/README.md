@@ -26,9 +26,9 @@ Section: 03 · Build your AI · Slide text and notes: [`talk/slides.md`](../../t
 
 ## Early-adopter logos
 
-Since 2026-11-01 the early-adopter chips show each community's logo (`src/03_early_adopter_logos.py`). The files are the ones the speaker linked, with the AIIRA file taken from its [logo page](https://aiira.iastate.edu/resources/aiira-logo/). Downloads go to `data/raw/sources/logos/` (logged in `MANIFEST.yaml`, not committed). They are trimmed and scaled into `figures/logos/` ([NEON](figures/logos/neon.webp), [ESIIL](figures/logos/esiil.webp), [NCEMS](figures/logos/ncems.webp), [AIIRA](figures/logos/aiira.webp), [EHT](figures/logos/eht.webp)), and the alt text keeps each full name, including "operated by Battelle" for NEON.
+Since 2026-11-01 the early-adopter chips show each community's logo (`src/03_early_adopter_logos.py`). The files are the ones the speaker linked, with the AIIRA file taken from its [logo page](https://aiira.iastate.edu/resources/aiira-logo/). Downloads go to `data/raw/sources/logos/` (logged in `MANIFEST.yaml`, not committed). They are trimmed and scaled into `figures/logos/` ([NEON](figures/logos/neon.webp), [ESIIL](figures/logos/esiil.webp), [NCEMS](figures/logos/ncems.webp), [NSCORE](figures/logos/nscore.webp), [AIIRA](figures/logos/aiira.webp), [EHT](figures/logos/eht.webp)), and the alt text keeps each full name, including "operated by Battelle" for NEON.
 
-- **NSCORE** has no logo yet: nscore.columbia.edu returns HTTP 403 to automated requests, and the NSF announcement has none. Save the file as `data/raw/sources/logos/nscore.png` (or `.jpg`/`.webp`) and re-run the script.
+- **NSCORE**: the linked file (`NSF_NSCORE_lockup_360_200`) is a lockup of the NSF logo and the NSCORE emblem, with no name. NSF funds all six communities and is already in the footer, so the script keeps only the emblem and sets "NSCORE" beside it in the wordmark's blue, rgb(50, 88, 136). The image file downloads normally, although nscore.columbia.edu's pages return 403 to automated requests.
 - The **EHT** file is a 662-px Google image thumbnail, which looks fine at this size. eventhorizontelescope.org also returned 403.
 
 
