@@ -373,15 +373,17 @@ AI cyberinfrastructure
 FREE
 GPU and HPC time from federal and industry partners, through one national portal.
 Research cloud
-Agentic AI on Jetstream2, the National Research Platform and FabAID.
+Agentic AI on:
+Fab
+AID
 AI inference
-Hosted open and commercial models, including the National Inference Service.
+Hosted open and commercial models, plus NDIF for research on model internals.
 MESA early-adopter communities
 NSCORE
 MESA · NSF Award #2632685
 ```
 
-> **Notes:** [~1.5 min] What NAIRR is: the National AI Research Resource, a national public–private effort led by NSF to give US researchers and educators access to advanced AI research capabilities. The pilot launched in January 2024 and has supported 940+ research projects across all 50 states, DC and Puerto Rico, with 105 NAIRR Classroom awards. In September 2026 NSF stood up the NAIRR Operations Center, led by the San Diego Supercomputer Center with TACC, to run the national portal and turn the pilot into permanent infrastructure. More than 25 private-sector partners contribute compute, models and tools; DOE and NIH lead the NAIRR Secure element. What it offers us: AI cyberinfrastructure (GPU and HPC allocations requested through one portal), research cloud for agentic AI (Jetstream2, NRP, FabAID), and AI inference (hosted models, including the National Inference Service). How we connect communities: MESA is funded through NSF’s Integrated Data Systems and Services (IDSS) program, one of three NSF programs that feed NAIRR. Our early-adopter data science communities (NEON/Battelle, ESIIL, NCEMS, NSCORE, AIIRA, EHT) keep their data where it lives on the lakehouse and data mesh, and agents work on it using NAIRR compute, cloud and inference. Sources: https://www.nsf.gov/cise/updates/nsf-establishes-operations-center-national-artificial ; https://nairrpilot.org/
+> **Notes:** [~1.5 min] What NAIRR is: the National AI Research Resource, a national public–private effort led by NSF to give US researchers and educators access to advanced AI research capabilities. The pilot launched in January 2024 and has supported 940+ research projects across all 50 states, DC and Puerto Rico, with 105 NAIRR Classroom awards. In September 2026 NSF stood up the NAIRR Operations Center, led by the San Diego Supercomputer Center with TACC, to run the national portal and turn the pilot into permanent infrastructure. More than 25 private-sector partners contribute compute, models and tools; DOE and NIH lead the NAIRR Secure element. What it offers us: AI cyberinfrastructure (GPU and HPC allocations requested through one portal), research cloud for agentic AI (Jetstream2, NRP, FabAID), and AI inference (hosted open and commercial models, plus the NSF National Deep Inference Fabric, NDIF, which gives free remote access to large open models and their internals; https://ndif.us/). How we connect communities: MESA is funded through NSF’s Integrated Data Systems and Services (IDSS) program, one of three NSF programs that feed NAIRR. Our early-adopter data science communities (NEON/Battelle, ESIIL, NCEMS, NSCORE, AIIRA, EHT) keep their data where it lives on the lakehouse and data mesh, and agents work on it using NAIRR compute, cloud and inference. Sources: https://www.nsf.gov/cise/updates/nsf-establishes-operations-center-national-artificial ; https://nairrpilot.org/
 
 <a id="slide-21"></a>
 

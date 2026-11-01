@@ -43,4 +43,4 @@ slide-34:
 	@for s in slides/34-ai-on-the-help-desk/src/[0-9]*.py; do echo "== $$s"; $(PY) $$s || exit 1; done
 
 slide-20:
-	@for s in slides/20-nairr/src/03_early_adopter_logos.py; do echo "== $$s"; $(PY) $$s || exit 1; done
+	@for s in slides/20-nairr/src/03_early_adopter_logos.py slides/20-nairr/src/04_resource_logos.py; do echo "== $$s"; $(PY) $$s || exit 1; done

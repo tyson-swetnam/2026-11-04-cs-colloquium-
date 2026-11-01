@@ -167,6 +167,11 @@ nairrpilot.html.txt:
   sha256: 260fd59ffeb74fc922818160799aa291508dd420b13e3337072444b47d538e6f
   source: slide 20 NAIRR check
   url: https://nairrpilot.org/
+ndif_us.html:
+  retrieved: '2026-11-01'
+  sha256: 2198df222ee091e287075d9d1193898295c72b9fda3e42c9378ca16ef2e1b7db
+  source: NDIF home page
+  url: https://ndif.us/
 nrp_home.html:
   note: fetched with curl, UA colloquium-evidence/0.1 (UNM CARC research); .txt sibling
     is tag-stripped text

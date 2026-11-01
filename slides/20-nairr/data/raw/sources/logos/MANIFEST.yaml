@@ -13,16 +13,36 @@ esiil.img:
   sha256: cf58d0cf64b022d3e8ab699b86bacc872962377bc2e112cc4ec12639ca2466a9
   source: esiil logo (link chosen by the speaker)
   url: https://esiil.org/sites/default/files/Final_ESIIL%20Wordmark%20Color_0.png
+fabaid_mark.svg:
+  retrieved: '2026-11-01'
+  sha256: 11c290ce56796899fc4f79d8c94ebddfba46e3fe777d8cdd1c6b54ada7a3d2d9
+  source: fabaid logo mark
+  url: https://fabaid.io/images/logos/FabricMark.svg
+jetstream2.png:
+  retrieved: '2026-11-01'
+  sha256: 07e76b8b91372f051d263a0b128644019aa0106a5f0b67afaa6f8ab087c4f298
+  source: jetstream2 logo
+  url: https://docs.jetstream-cloud.org/images/JS2-Logo-Transparent.png
 ncems.img:
   retrieved: '2026-11-01'
   sha256: 9499e16bec21cb88570a291ab3e5c7f5d7e1072ccf820db9e090227784371376
   source: ncems logo (link chosen by the speaker)
   url: https://cyverse.org/sites/default/files/styles/az_large/public/2024-10/Screenshot-2024-10-07-at-1.32.35-PM.png.webp?itok=CMtmuf6P
+ndif_lockup.png:
+  retrieved: '2026-11-01'
+  sha256: ea34e4d19966e0e5cdf5361fd0347bc46cc9758861ee2eda0ffc2695853b6608
+  source: ndif logo
+  url: https://ndif.us/_next/static/media/NSF_NDIF_Lockup.e0ccdffb.png
 neon.img:
   retrieved: '2026-11-01'
   sha256: 824448936dc824d0f25ce16150eaf4db2f8e61dbbeefdac0170adea1e0195548
   source: neon logo (link chosen by the speaker)
   url: https://images.squarespace-cdn.com/content/v1/5c4f6792ec4eb7c7c4186cc0/1553045886628-D1LXYEX5JPWY97YAL4IJ/NEON_288.png
+nrp.webp:
+  retrieved: '2026-11-01'
+  sha256: 4a3d2e9998f477a295003f939192be6b2a17ad4b8c64d4e2cf1ae6a972b81ad0
+  source: nrp logo
+  url: https://nrp.ai/_astro/NRP_Horizontal_Logo.png.DQL8-3kz.webp
 nscore.img:
   retrieved: '2026-11-01'
   sha256: 1d4ac0f34f36bc8900fad3b9e9469cd749ca45c6a58ea37582cb5e6edcbdb657
