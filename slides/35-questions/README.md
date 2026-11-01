@@ -1,6 +1,6 @@
-# Slide 34 · Questions?
+# Slide 35 · Questions?
 
-Section: 04 · Stop worrying · Slide text and notes: [`talk/slides.md`](../../talk/slides.md#slide-34)
+Section: 04 · Stop worrying · Slide text and notes: [`talk/slides.md`](../../talk/slides.md#slide-35)
 
 ## Findings (checked 2026-10-31)
 

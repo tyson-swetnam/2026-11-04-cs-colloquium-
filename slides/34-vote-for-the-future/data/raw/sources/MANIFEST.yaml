@@ -1,0 +1,75 @@
+blueprint.html:
+  retrieved: '2026-11-01'
+  sha256: 28ed9ec8fa2da0d9825a8c6101572e5559d16dea5067f285c83e5def1fdf752e
+  source: White House OSTP, Blueprint for an AI Bill of Rights (archived)
+  url: https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/
+blueprint_about.html:
+  retrieved: '2026-11-01'
+  sha256: 23276a882b29fcb87833c5f2be4f63a5cb1b1bc30dcbcaa05ba0923cf44028b5
+  source: 'White House OSTP, Blueprint: About this document (archived)'
+  url: https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/about-this-document/
+blueprint_release.html:
+  retrieved: '2026-11-01'
+  sha256: ffbcbb787aa7efc00dc318ec1f4aca89149a0276f1097a7cb0f223b6314f74bc
+  source: OSTP release post, 4 Oct 2022 (archived)
+  url: https://bidenwhitehouse.archives.gov/ostp/news-updates/2022/10/04/blueprint-for-an-ai-bill-of-rightsa-vision-for-protecting-our-civil-rights-in-the-algorithmic-age/
+eo14110.htm:
+  retrieved: '2026-11-01'
+  sha256: 8760b2f89b73a2050f773ed4aab26224e67f5b5d0ee7073bf93e6ef5b7d77a73
+  source: 'Federal Register: EO 14110 (30 Oct 2023)'
+  url: https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-24283.htm
+eo14148.htm:
+  retrieved: '2026-11-01'
+  sha256: ab3e74a704e5b49fa8eac7a1a268060c96c177deeb55e4b0148ae5828bc5236c
+  source: 'Federal Register: EO 14148 (20 Jan 2025)'
+  url: https://www.govinfo.gov/content/pkg/FR-2025-01-28/html/2025-01901.htm
+leo_20261030_address.html:
+  retrieved: '2026-11-01'
+  sha256: 8ae5d7f03c7ef0371269ba029a69ba2507a7f25fa24b41eaff56b7bff3d282e5
+  source: 'Holy See: Leo XIV address, The Future of AI dialogue, 30 Oct 2026'
+  url: https://www.vatican.va/content/leo-xiv/en/speeches/2026/october/documents/20261030-incontro-pav.html
+magnifica_humanitas.html:
+  retrieved: '2026-11-01'
+  sha256: ea5c30bc8d155e8bc11e59d7a6a50e048a2ff6abdc7abffeed874f8b6bdab9b2
+  source: 'Holy See: Magnifica Humanitas (Leo XIV, 15 May 2026)'
+  url: https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html
+nelson_bluesky_posts.json:
+  retrieved: '2026-11-01'
+  sha256: f8b923e14be94d49bca5e8fab7c2294c8eb174056f7114267e2778405b0f2942
+  source: 'Bluesky public API: posts by @alondra.bsky.social (did:plc:jwiu7iyac6pi3vzktwjxtkv2)'
+  url: https://public.api.bsky.app/xrpc/app.bsky.feed.getPosts?uris=at%3A//did%3Aplc%3Ajwiu7iyac6pi3vzktwjxtkv2/app.bsky.feed.post/3mltfqoc7ok2y&uris=at%3A//did%3Aplc%3Ajwiu7iyac6pi3vzktwjxtkv2/app.bsky.feed.post/3mltg2efhms2a&uris=at%3A//did%3Aplc%3Ajwiu7iyac6pi3vzktwjxtkv2/app.bsky.feed.post/3mltg4ldq2s2a&uris=at%3A//did%3Aplc%3Ajwiu7iyac6pi3vzktwjxtkv2/app.bsky.feed.post/3mltg6wjt6k2a&uris=at%3A//did%3Aplc%3Ajwiu7iyac6pi3vzktwjxtkv2/app.bsky.feed.post/3mltgdi6no22a&uris=at%3A//did%3Aplc%3Ajwiu7iyac6pi3vzktwjxtkv2/app.bsky.feed.post/3mltgmmxldc2c&uris=at%3A//did%3Aplc%3Ajwiu7iyac6pi3vzktwjxtkv2/app.bsky.feed.post/3mwxxzq3zkk2u
+nelson_science_csl.json:
+  retrieved: '2026-11-01'
+  sha256: fe19f38e409e281c899995092fc4a3a76d90a33dc1394c7b448a932a74416256
+  source: doi.org CSL-JSON for Nelson, A civic grammar for AI rights, Science (2026)
+  url: https://doi.org/10.1126/science.aeh7153
+nm_sos_voting.html:
+  retrieved: '2026-11-01'
+  sha256: fff8050bfcb02966bee8e0781aa8eed3358ab79750ff7753a224914ce9d325b4
+  source: 'New Mexico Secretary of State: Voting & Elections'
+  url: https://www.sos.nm.gov/voting-and-elections/
+pontifex_2058888313029685400.json:
+  retrieved: '2026-11-01'
+  sha256: 8b54e9cb19e16dc8e2f67b3c75a49f2252b2121162c882c4eda5a8d0166d7b47
+  source: X oEmbed for https://x.com/Pontifex/status/2058888313029685400
+  url: https://publish.twitter.com/oembed?omit_script=1&url=https%3A%2F%2Fx.com%2FPontifex%2Fstatus%2F2058888313029685400
+pontifex_2059235600230711574.json:
+  retrieved: '2026-11-01'
+  sha256: 2280321c5a767e68d05e18248cee1e288c6f92967b76eab934f0d9deb90a297c
+  source: X oEmbed for https://x.com/Pontifex/status/2059235600230711574
+  url: https://publish.twitter.com/oembed?omit_script=1&url=https%3A%2F%2Fx.com%2FPontifex%2Fstatus%2F2059235600230711574
+pontifex_2090763999075868746.json:
+  retrieved: '2026-11-01'
+  sha256: 0e6febd66a91724c0a6d150ea906e0f7f0fed58d721f6cf49b870615070cd314
+  source: X oEmbed for https://x.com/Pontifex/status/2090763999075868746
+  url: https://publish.twitter.com/oembed?omit_script=1&url=https%3A%2F%2Fx.com%2FPontifex%2Fstatus%2F2090763999075868746
+pontifex_2116146977230459383.json:
+  retrieved: '2026-11-01'
+  sha256: f27b832808ef86a797e4e135f32da12df4a209ca4478e692c8f67a59ee105872
+  source: X oEmbed for https://x.com/Pontifex/status/2116146977230459383
+  url: https://publish.twitter.com/oembed?omit_script=1&url=https%3A%2F%2Fx.com%2FPontifex%2Fstatus%2F2116146977230459383
+vaticannews_announcement.html:
+  retrieved: '2026-11-01'
+  sha256: ee026f22b22c869170d090139fafb9b48fa3c4825df07e97c97aebdb22d4952d
+  source: Vatican News announcement of Magnifica Humanitas
+  url: https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html
