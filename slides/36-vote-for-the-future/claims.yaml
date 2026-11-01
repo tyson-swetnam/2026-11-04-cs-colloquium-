@@ -1,0 +1,137 @@
+slide: 36
+title: 'AI’s future is a choice we make'
+section: 04 · Stop worrying
+claims:
+- id: c1
+  text: 'AI’s future is a choice we make (eyebrow: Who writes the rules for AI?)'
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: Framing. It echoes the @Pontifex post quoted on the slide (c6), which is checked.
+  sources: []
+  evidence: []
+  notes: The speaker's own headline; no source is quoted in it.
+- id: c2
+  text: '“Red states and blue states are writing AI Bills of Rights.” Alondra Nelson, Bluesky, May 2026'
+  kind: attribution
+  priority: high
+  status: supported
+  validation: 'src/01_fetch_sources.py reads the post through the public Bluesky API; src/02_check_quotes.py finds the sentence word for word (facts.csv F04).'
+  sources:
+  - https://bsky.app/profile/alondra.bsky.social/post/3mltg2efhms2a
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  - data/raw/sources/MANIFEST.yaml
+  notes: 'Posted 2026-05-14 in the thread announcing her Science essay. The post continues: "They agree on this: tell me when AI is being used to make decisions about me, treat me fairly, and give me a human to appeal to when it gets things wrong."'
+- id: c3
+  text: 'She led the team behind the White House Blueprint for an AI Bill of Rights (2022)'
+  kind: factual
+  priority: high
+  status: supported
+  validation: 'Nelson''s own description on Bluesky (F03) and the byline of the OSTP release of 4 Oct 2022 (F01, F02), both checked word for word.'
+  sources:
+  - https://bsky.app/profile/alondra.bsky.social/post/3mwxxzq3zkk2u
+  - https://bidenwhitehouse.archives.gov/ostp/news-updates/2022/10/04/blueprint-for-an-ai-bill-of-rightsa-vision-for-protecting-our-civil-rights-in-the-algorithmic-age/
+  - https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/02/16/president-biden-announces-ostp-leadership/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'Nelson: "In the Biden administration, l led the team that developed ... the AI Bill of Rights" (typo in the original). The release lists her as "Deputy Assistant to the President and OSTP Deputy Director for Science and Society", with co-authors Sorelle Friedler and Ami Fields-Meyer. From 16 Feb 2022 she also performed the duties of OSTP director, but the release does not use that title, so "acting director" is left off the slide. "Led the team" is her own wording.'
+- id: c4
+  text: 'Notes: five non-binding principles (safe and effective systems; algorithmic discrimination protections; data privacy; notice and explanation; human alternatives, consideration, and fallback)'
+  kind: factual
+  priority: medium
+  status: supported
+  validation: The five section headings on the archived Blueprint page (F05) and the "non-binding" statement on its About page (F06).
+  sources:
+  - https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/
+  - https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/about-this-document/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: '"The Blueprint for an AI Bill of Rights is non-binding and does not constitute U.S. government policy."'
+- id: c5
+  text: '“A more moral AI is not enough if that morality is determined by a few.” Pope Leo XIV, Magnifica Humanitas ¶107, May 2026'
+  kind: attribution
+  priority: high
+  status: supported
+  validation: 'Found word for word in the vatican.va English text, in paragraph 107 (F11; the script checks the paragraph number). Title, signing date (15 May 2026) and release date (25 May 2026) from the text and Vatican News (F12-F14).'
+  sources:
+  - https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html
+  - https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'Full title: "On safeguarding the human person in the time of artificial intelligence". Para 107 goes on: "What is needed is a more active political involvement that is capable of slowing things down when everything is accelerating". It is addressed "to all the Catholic faithful, to all Christians and to all men and women of goodwill" (para 16).'
+- id: c6
+  text: '“The future of #ArtificialIntelligence is not pre-determined. As a technology developed by human beings, its future depends on the choices we make.” @Pontifex on X, Oct. 30, 2026'
+  kind: attribution
+  priority: high
+  status: supported
+  validation: 'X''s public oEmbed endpoint (no login) returns the post with author "Pope Leo XIV", account @Pontifex and date "October 30, 2026"; both sentences are found word for word (F19, F20).'
+  sources:
+  - https://x.com/Pontifex/status/2116146977230459383
+  - https://www.vatican.va/content/leo-xiv/en/speeches/2026/october/documents/20261030-incontro-pav.html
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'The post comes from his address that day to "The Future of AI: A Dialogue between the Vatican and the Scientific World". It continues: "We therefore have the responsibility to guide, change and, when necessary, reject its applications." The oEmbed text is cut off after its third sentence.'
+- id: c7
+  text: 'We must vote for our leaders, and for the future.'
+  kind: qualitative
+  priority: high
+  status: not-applicable
+  validation: The speaker's own conclusion, shown with no quotation marks or attribution.
+  sources: []
+  evidence: []
+  notes: 'Neither Nelson nor the Pope says this: the encyclical never uses "vote" or "ballot" (0 matches in the English text), and no fetched post does. The closest passages are para 39 (democracy "enables [citizens] to elect and peacefully replace their leaders", restating John Paul II) and para 73 ("making their voice heard and contributing to public decisions and choices"), both checked (F16, F17). Keep it nonpartisan in delivery; the notes say "whoever you supported".'
+- id: c8
+  text: 'Election Day was Nov. 3 · Registration and upcoming elections: sos.nm.gov'
+  kind: factual
+  priority: medium
+  status: supported
+  validation: 'The NM Secretary of State''s Voting & Elections page lists "2026 General Election: Tuesday, November 3, 2026" (F23).'
+  sources:
+  - https://www.sos.nm.gov/voting-and-elections/
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: The talk is on Wednesday 4 Nov, the day after Election Day; results may still be unofficial, so the slide names no outcome. The SOS page links the NMVOTE voter portal for registration, sample ballots and absentee requests.
+- id: c9
+  text: 'Notes: EO 14110 (2023) drew practices from the Blueprint; EO 14148 revoked that order in January 2025'
+  kind: factual
+  priority: medium
+  status: supported
+  validation: Federal Register text of EO 14110 (F07) and EO 14148 Sec. 2(ggg) (F08).
+  sources:
+  - https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-24283.htm
+  - https://www.govinfo.gov/content/pkg/FR-2025-01-28/html/2025-01901.htm
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'EO 14110 adopted "practices derived from OSTP''s Blueprint for an AI Bill of Rights and the NIST AI Risk Management Framework" for federal agencies'' own AI use, not the five principles wholesale. EO 14148 (20 Jan 2025) revoked EO 14110; EO 14179 ("Removing Barriers...", 23 Jan 2025) refers to "the revoked Executive Order 14110" but is not the order that revoked it. No order names the Blueprint itself.'
+- id: c10
+  text: 'Notes: essay: Science 392, doi:10.1126/science.aeh7153'
+  kind: factual
+  priority: low
+  status: supported
+  validation: doi.org CSL-JSON (F09).
+  sources:
+  - https://doi.org/10.1126/science.aeh7153
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: Nelson, "A civic grammar for AI rights", Science 392(6799), eaeh7153, published 14 May 2026. Only the metadata is checked; science.org sits behind a bot check, so nothing from the essay itself is quoted.
+- id: c11
+  text: 'Notes: asks for “a political system that does not abdicate its responsibility” (¶106)'
+  kind: attribution
+  priority: medium
+  status: supported
+  validation: Found word for word in paragraph 106 (F15).
+  sources:
+  - https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: 'Full clause: "robust legal frameworks, independent oversight, informed users and a political system that does not abdicate its responsibility are required."'

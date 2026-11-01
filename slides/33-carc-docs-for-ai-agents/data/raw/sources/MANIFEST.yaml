@@ -1,0 +1,35 @@
+carc_home.html:
+  retrieved: '2026-11-01'
+  sha256: 7aa6e0963266652594fd1787754aaa85f8b763aaeb98dc412fe4bb6e1ad5aa1f
+  source: CARC home page
+  url: https://carc.unm.edu/
+docs_ai_agents.html:
+  retrieved: '2026-11-01'
+  sha256: 3ddc557f475af2e7f0958655d5c40a789339c14c495e3bdb3538144f431676fa
+  source: 'CARC docs: For AI agents'
+  url: https://carc.unm.edu/docs/about/ai-agents/
+docs_faq_general.md:
+  retrieved: '2026-11-01'
+  sha256: e5ebe3778e0a931b9554d2548f585641e85a2113141336011772129c93569ef3
+  source: 'CARC docs: General FAQ, Markdown twin'
+  url: https://carc.unm.edu/docs/faq/general/index.md
+docs_llms.txt:
+  retrieved: '2026-11-01'
+  sha256: 40eae65c05945b6cf8e9e6c2101c9dcc517465c1759a64e915868a514e7f2c13
+  source: CARC docs llms.txt (outline of every page)
+  url: https://carc.unm.edu/docs/llms.txt
+docs_llms_full.txt:
+  retrieved: '2026-11-01'
+  sha256: e1ab01c08919378d87afd11b5374d648b134dda54f90ae9bf3f3db043269a16d
+  source: CARC docs llms-full.txt (whole corpus)
+  url: https://carc.unm.edu/docs/llms-full.txt
+llmstxt.md:
+  retrieved: '2026-11-01'
+  sha256: fefa01ba0fb6a5618abd759d8e865d52313bbe29aa63604709c5668851e69fff
+  source: The /llms.txt file proposal (llmstxt.org)
+  url: https://llmstxt.org/index.md
+okf_spec.md:
+  retrieved: '2026-11-01'
+  sha256: 26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101
+  source: Open Knowledge Format specification (GoogleCloudPlatform/knowledge-catalog)
+  url: https://raw.githubusercontent.com/GoogleCloudPlatform/knowledge-catalog/main/okf/SPEC.md

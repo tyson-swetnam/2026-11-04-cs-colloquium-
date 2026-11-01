@@ -1,0 +1,14 @@
+id,claim_id,quote,source_file,url,date,source_type,notes
+F01,c2,This site is published for people and for AI agents.,docs_ai_agents.html,https://carc.unm.edu/docs/about/ai-agents/,2026-11-01,primary,"For AI agents page, first sentence."
+F02,c2,"The documentation source is an Open Knowledge Format (OKF) v0.2 knowledge bundle, and the deployed site exposes that structure directly.",docs_ai_agents.html,https://carc.unm.edu/docs/about/ai-agents/,2026-11-01,primary,
+F03,c2,consume the documentation through these endpoints rather than scraping rendered HTML,docs_ai_agents.html,https://carc.unm.edu/docs/about/ai-agents/,2026-11-01,primary,
+F04,c3,"# CARC Documentation … The source repository is an Open Knowledge Format (OKF v0.2) bundle: every page carries YAML frontmatter with type, provenance (generated/sources), and lifecycle (status/stale_after) fields.",docs_llms.txt,https://carc.unm.edu/docs/llms.txt,2026-11-01,primary,llms.txt header; supports the /llms.txt and index.md rows.
+F05,c3,Markdown twin    https://carc.unm.edu/docs/<path>/index.md,docs_llms.txt,https://carc.unm.edu/docs/llms.txt,2026-11-01,primary,Every page's Markdown twin is the page URL + index.md.
+F06,c4,"about 696 KB, roughly 178,000 tokens",docs_llms.txt,https://carc.unm.edu/docs/llms.txt,2026-11-01,primary,The site's own size estimate for llms-full.txt (slide: ~180K tokens).
+F07,c5,"Easley's `h100` and `l40s` partitions are **group-gated**: access comes from an approved ColdFront allocation for the specific partition, requested by your PI.",docs_faq_general.md,https://carc.unm.edu/docs/faq/general/index.md,2026-11-01,primary,The docs answer the example prompt.
+F08,c6,"Ground answers in this documentation and cite the page URL. When the corpus does not answer a question, direct users to the humans",docs_ai_agents.html,https://carc.unm.edu/docs/about/ai-agents/,2026-11-01,primary,Instructions to agents.
+F09,c7,"OKF is an open, human- and agent-friendly format for representing *knowledge*",okf_spec.md,https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md,2026-11-01,primary,Spec header reads Version 0.2.
+F10,c7,**Version 0.2**,okf_spec.md,https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md,2026-11-01,primary,
+F11,c7,We propose adding a `/llms.txt` markdown file to websites to provide LLM-friendly content.,llmstxt.md,https://llmstxt.org/,2026-11-01,primary,The llms.txt convention.
+F12,c8,Advanced computing for every researcher in New Mexico,carc_home.html,https://carc.unm.edu/,2026-11-01,primary,Home page hero (shown in the screenshot).
+F13,c8,"Free high-performance computing, large-scale storage, and expert support for UNM faculty, staff, and students",carc_home.html,https://carc.unm.edu/,2026-11-01,primary,

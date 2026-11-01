@@ -1,0 +1,25 @@
+aiira.img:
+  retrieved: '2026-11-01'
+  sha256: 28dd9a60c8d531e9386b53fa304239475fe5be93d164a704dab316c81dc41741
+  source: aiira logo (link chosen by the speaker)
+  url: https://aiira.iastate.edu/resources/aiira-logo/download.php?file=aiira-logo-with-text-light-bg.png
+eht.img:
+  retrieved: '2026-11-01'
+  sha256: 5341b2439ee8df038792b44c3d0f8f48f3f4dc7ea2fbe00c7fe98497500c175f
+  source: eht logo (link chosen by the speaker)
+  url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv9TUQMHaFhZ1TKUXWRqce_ZYRehEnCQYI3XmMe3IlX_K_1ZIpGfmkJAc&s=10
+esiil.img:
+  retrieved: '2026-11-01'
+  sha256: cf58d0cf64b022d3e8ab699b86bacc872962377bc2e112cc4ec12639ca2466a9
+  source: esiil logo (link chosen by the speaker)
+  url: https://esiil.org/sites/default/files/Final_ESIIL%20Wordmark%20Color_0.png
+ncems.img:
+  retrieved: '2026-11-01'
+  sha256: 9499e16bec21cb88570a291ab3e5c7f5d7e1072ccf820db9e090227784371376
+  source: ncems logo (link chosen by the speaker)
+  url: https://cyverse.org/sites/default/files/styles/az_large/public/2024-10/Screenshot-2024-10-07-at-1.32.35-PM.png.webp?itok=CMtmuf6P
+neon.img:
+  retrieved: '2026-11-01'
+  sha256: 824448936dc824d0f25ce16150eaf4db2f8e61dbbeefdac0170adea1e0195548
+  source: neon logo (link chosen by the speaker)
+  url: https://images.squarespace-cdn.com/content/v1/5c4f6792ec4eb7c7c4186cc0/1553045886628-D1LXYEX5JPWY97YAL4IJ/NEON_288.png

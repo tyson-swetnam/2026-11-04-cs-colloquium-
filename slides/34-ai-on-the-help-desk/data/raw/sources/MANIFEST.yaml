@@ -1,0 +1,25 @@
+nvidia_dgx_spark.html:
+  retrieved: '2026-11-01'
+  sha256: 845b97183cb093e7c8181b5ac9594dfcc1f65c6bd4368206cd761229132ab7b1
+  source: NVIDIA DGX Spark product page
+  url: https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+nvidia_dgx_spark_hardware.html:
+  retrieved: '2026-11-01'
+  sha256: 07e82a732af4a6ccad1e761cf303a2902afc09ff9e35623ceaa6b9e31fc0c4fc
+  source: 'NVIDIA DGX Spark User Guide: Hardware Overview'
+  url: https://docs.nvidia.com/dgx/dgx-spark/hardware.html
+nvidia_dgx_spark_release.html:
+  retrieved: '2026-11-01'
+  sha256: fe41b9e8fce8ca423d444a3b3297de357554a0e0d68cc4da6390f4fff402dd3c
+  source: 'NVIDIA newsroom, 13 Oct 2025: DGX Spark arrives'
+  url: https://nvidianews.nvidia.com/news/nvidia-dgx-spark-arrives-for-worlds-ai-developers
+zammad_ai_provider.html:
+  retrieved: '2026-11-01'
+  sha256: c69e9602c927c2ce6748f745cf655e803429ebefa7c3a59c317528cd21abace2
+  source: 'Zammad admin docs: AI provider'
+  url: https://admin-docs.zammad.org/en/latest/ai/provider.html
+zammad_ai_summary.html:
+  retrieved: '2026-11-01'
+  sha256: 72ad618f1e278cc2ba5e538ee0aeb718bcf145ac92247a6334459abfa9485ecb
+  source: 'Zammad admin docs: AI Ticket Summary'
+  url: https://admin-docs.zammad.org/en/latest/ai/summary.html

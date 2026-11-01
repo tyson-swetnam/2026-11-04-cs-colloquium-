@@ -123,7 +123,8 @@ claims:
   evidence:
   - data/raw/research/facts.csv
   - data/raw/nsf_award_2632685.json
-  notes: 'The award abstract names ESIIL, NCEMS, AIIRA and the EHT Collaboration. NEON (Battelle) and NSCORE are not in the abstract and not on the public MESA site (home, news, team, portal, stack pages checked). They may be in letters of collaboration or later agreements I cannot see; left as the speaker''s statement. Slide 34 c3 holds their award numbers. No source supports a "joining" status, so the wording should name only the award-documented partners on the slide and attribute NEON and NSCORE to the speaker.'
+  - figures/logos/neon.webp
+  notes: 'Since 2026-11-01 the slide shows each community''s logo instead of its name (src/03_early_adopter_logos.py; files chosen by the speaker; NSCORE stays a text chip until a logo file is supplied). The award abstract names ESIIL, NCEMS, AIIRA and the EHT Collaboration. NEON (Battelle) and NSCORE are not in the abstract and not on the public MESA site (home, news, team, portal, stack pages checked). They may be in letters of collaboration or later agreements I cannot see; left as the speaker''s statement. Slide 34 c3 holds their award numbers. No source supports a "joining" status, so the wording should name only the award-documented partners on the slide and attribute NEON and NSCORE to the speaker.'
   proposed_text: 'MESA partner communities named in the award: ESIIL, NCEMS, AIIRA, EHT. (Speaker, aloud: we are also working with NEON (Battelle) and NSCORE.)'
 - id: c10
   text: 'MESA · NSF Award #2632685, funded under NAIRR'
