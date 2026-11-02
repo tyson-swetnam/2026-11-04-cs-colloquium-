@@ -1,0 +1,15 @@
+neon_beetle_seg_demo_1.5x.webm:
+  title: 'Demo 3: from question to result (most common ground beetle at NEON JORN,
+    neon-beetle-seg DuckLake)'
+  source: Screen recording by the speaker (Tyson Swetnam), 2026-11-02; sped up 1.5x
+    and converted to VP9 WebM by the speaker
+  original_upload: bbe24221-2026-11-02-neon-beetle-seg-720p-1.5x.webm
+  bytes: 5475827
+  sha256: ce8207e6f1698762517e98b88479b59dcf0b9a3048afc2a2f3b0de6330336867
+  duration_s: 129.77
+  streams:
+  - codec_name: vp9
+    width: 1280
+    height: 700
+  processing: none in this repository (used as supplied)
+  poster: figures/poster.webp (frame at 3 s)
