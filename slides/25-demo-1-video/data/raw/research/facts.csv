@@ -1,0 +1,6 @@
+id,claim_id,quote,source_file,url,date,source_type,notes
+F01,c3,Formation hosts a Model Context Protocol server over streamable HTTP: https://de.cyverse.org/formation/mcp,formation.html,https://de.cyverse.org/formation,2026-11-02,primary,
+F02,c3,claude mcp add --transport http formation https://de.cyverse.org/formation/mcp,formation.html,https://de.cyverse.org/formation,2026-11-02,primary,The one command shown at 0:00 in the demo.
+F03,c4,Authentication uses OAuth via CyVerse Keycloak with standard MCP discovery and dynamic client registration,formation.html,https://de.cyverse.org/formation,2026-11-02,primary,
+F04,c4,will open a browser so you can log in with your CyVerse account,formation.html,https://de.cyverse.org/formation,2026-11-02,primary,
+F05,c5,"The CyVerse Discovery Environment API for AI agents — launch apps, monitor analyses, and manage data in the CyVerse Data Store.",formation.html,https://de.cyverse.org/formation,2026-11-02,primary,

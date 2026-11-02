@@ -8,7 +8,7 @@ claims:
   priority: medium
   status: revise-slide
   proposed_text: 'Ask in plain language; the agent finds the data, runs the analysis, and returns a result you can audit.'
-  validation: Option 1 chosen 2026-10-31. The revised deck (2026-10-31) shows the placeholder text unbracketed, without 'you can audit'; the agreed edit is still pending. Demo 3 (slide 29) is the end-to-end evidence with a model in the loop.
+  validation: Option 1 chosen 2026-10-31. The revised deck (2026-10-31) shows the placeholder text unbracketed, without 'you can audit'; the agreed edit is still pending. Demo 3 (slide 30) is the end-to-end evidence with a model in the loop.
   sources: []
   evidence:
   - README.md

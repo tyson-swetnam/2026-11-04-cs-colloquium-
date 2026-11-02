@@ -1,0 +1,61 @@
+slide: 25
+title: 'Connect once, then just ask'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: 'Connect once, then just ask (eyebrow: Demo 1 of 3 · Claude Code + MESA’s Formation and iRODS MCP servers)'
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: Framing for the recorded demo.
+  sources: []
+  evidence: []
+  notes: The speaker's own headline.
+- id: c2
+  text: 'Recorded demo (88 s, no sound): Claude Code adds the Formation MCP server, signs in, lists the running analysis and its details, then asks the iRODS (Data Store) MCP server for a collection''s folders'
+  kind: technical
+  priority: high
+  status: supported
+  validation: The recording itself, supplied by the speaker (2026-11-02). The notes' timestamps were read from frames at 1-87 s.
+  sources: []
+  evidence:
+  - data/media/MANIFEST.yaml
+  - data/media/formation_irods_mcp_demo.webm
+  - figures/poster.webp
+  notes: 'The recording ends (87.8 s) while the iRODS request is still running in the terminal ("Calling irods, formation 3 times"). The folder contents (archive, docs, ducklake, metadata, report) are shown by the MESA portal''s Data Browser beside it, so the notes describe them as the portal''s view, not the agent''s answer. The terminal shows the speaker''s username and analysis IDs; the speaker supplied the recording for the deck.'
+- id: c3
+  text: 'Notes: one command adds the Formation MCP server to Claude Code'
+  kind: technical
+  priority: medium
+  status: supported
+  validation: The Formation page gives the same command (F02), and the demo runs it at 0:00.
+  sources:
+  - https://de.cyverse.org/formation
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  - data/raw/sources/MANIFEST.yaml
+  notes: ''
+- id: c4
+  text: 'Notes: sign-in is OAuth through CyVerse in the browser'
+  kind: technical
+  priority: medium
+  status: supported
+  validation: Formation page (F03, F04); the demo shows "Authentication successful. Connected to formation."
+  sources:
+  - https://de.cyverse.org/formation
+  evidence:
+  - data/raw/research/facts.csv
+  - data/processed/quote_check.csv
+  notes: ''
+- id: c5
+  text: 'Notes: no custom integration; the same servers work from any MCP client'
+  kind: technical
+  priority: medium
+  status: partially-supported
+  validation: The Formation page gives setup for Claude Code and for "Cursor, VS Code, and other clients" via a standard mcpServers block (F05 and page text). The demo itself uses only Claude Code.
+  sources:
+  - https://de.cyverse.org/formation
+  evidence:
+  - data/raw/research/facts.csv
+  notes: Slide 24's diagram (four agents) carries the multi-client claim; this recording shows one client.

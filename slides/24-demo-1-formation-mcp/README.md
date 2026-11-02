@@ -26,3 +26,7 @@ Checked against MESA's public docs (idss-mesa.github.io), CyVerse's core softwar
 - `src/01_check.py` fetches the pages (cached in `data/cache/`, saved in `data/raw/sources/`, gitignored) and checks every quote → `data/processed/checks.csv`, `data/processed/nsf_award.csv`.
 - `data/raw/research/facts.csv`: exact quotes with source URLs.
 - MCP support in each client: [`../15-plain-language-definitions/data/processed/mcp_support.csv`](../15-plain-language-definitions/data/processed/mcp_support.csv).
+
+## Recorded demo
+
+The recording of this demo plays on the next slide, [slide 25](../25-demo-1-video/) (added 2026-11-02).

@@ -1,6 +1,6 @@
 # Slide 17 · Hallucination is an engineering problem
 
-> **Revised deck.** The revised deck (2026-10-31) removes the GNoME example and "every output is a hypothesis" (`c5`–`c6` superseded). The ontology control now runs on slide 25's NEON ground-beetle terms, not the earlier mouse, RNA-seq and HeLa examples. The schema-row rewording (`c3`) is agreed but not yet in the deck.
+> **Revised deck.** The revised deck (2026-10-31) removes the GNoME example and "every output is a hypothesis" (`c5`–`c6` superseded). The ontology control now runs on slide 26's NEON ground-beetle terms, not the earlier mouse, RNA-seq and HeLa examples. The schema-row rewording (`c3`) is agreed but not yet in the deck.
 
 Section: 01 · Fear · Slide text and notes: [`talk/slides.md`](../../talk/slides.md#slide-17)
 
@@ -19,7 +19,7 @@ Each control on the slide is built and run here against real data. The shared pi
 | Objection → control | Test | Result | Claim |
 |---|---|---|---|
 | "It invents citations" → call a real index | 100 hallucinated citations from accepted NeurIPS 2025 papers (GPTZero) and 141 real references (BloombergGPT) | **99/100 hallucinated flagged**; **77% of real ones verified automatically**, 22% sent to review, 1.4% false mismatches | ✅ `c1` |
-| "It makes up metadata" → terms must resolve in an ontology | Slide 25's 12 NEON-beetle variants plus four model-style errors, checked live against OLS4 | all four errors refused; 6 variants written as names, 6 sent to review as mappings | ✅ `c2` |
+| "It makes up metadata" → terms must resolve in an ontology | Slide 26's 12 NEON-beetle variants plus four model-style errors, checked live against OLS4 | all four errors refused; 6 variants written as names, 6 sent to review as mappings | ✅ `c2` |
 | "It varies run to run" → a JSON schema | Eight outputs against a draft 2020-12 schema | six malformed outputs refused; **a well-formed record with a fake DOI passed** | 🟧 `c3` |
 | "I cannot audit it" → provenance in DuckLake | An agent session logged, then its record overwritten | time travel recovers the original; all three tool calls replay with identical hashes | ✅ `c4` |
 | GNoME: "380,000 crystals; labs confirmed under 5%" | The paper's own full text; the critique's metadata from the DOI registry | 381,000 stable; **736 (0.19%) already made in labs, which is not a confirmation rate** | ❌ `c5` |
@@ -51,9 +51,9 @@ The example still serves the slide's point ("every output is a hypothesis until 
 
 ## Notes for later slides
 
-- **Slide 25, OBI label.** OBI's preferred label for OBI:0001271 is "transcription profiling by RNA sequencing assay"; "RNA-seq assay" is its alternative label.
-- **Slide 25, "transcriptome".** The validator refuses it as a name, so present it as a curator's mapping.
-- **Slide 25, hierarchy.** The claim checks out: Mammalia (NCBITaxon:40674) is an ancestor of *Mus musculus*.
+- **Slide 26, OBI label.** OBI's preferred label for OBI:0001271 is "transcription profiling by RNA sequencing assay"; "RNA-seq assay" is its alternative label.
+- **Slide 26, "transcriptome".** The validator refuses it as a name, so present it as a curator's mapping.
+- **Slide 26, hierarchy.** The claim checks out: Mammalia (NCBITaxon:40674) is an ancestor of *Mus musculus*.
 - **Slide 21.** DuckLake's time travel and snapshot log, shown here, are the evidence for the lakehouse slide too.
 
 ## Reproduce

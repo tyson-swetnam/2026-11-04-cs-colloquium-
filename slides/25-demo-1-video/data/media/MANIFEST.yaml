@@ -1,0 +1,19 @@
+formation_irods_mcp_demo.webm:
+  title: 'Demo 1: Claude Code with MESA''s Formation and iRODS (Data Store) MCP servers'
+  source: Screen recording supplied by the speaker (Tyson Swetnam), 2026-11-02
+  original:
+    file: 3eae8fea-2026-11-2-formation_irods_mcp_demo_720p.mov
+    bytes: 10975440
+    sha256: 93917f64a401d359fa6cdd136aa57e287aa6ff62d629f1a0cb59ece4ebcaab35
+    duration_s: 87.83
+    streams:
+    - codec_type: video
+      codec_name: h264
+      width: 1280
+      height: 700
+  processing: ffmpeg -v error -y -i <original> -an -c:v libvpx-vp9 -crf 30 -b:v 0
+    -deadline good -cpu-used 2 -row-mt 1 -tile-columns 2 -pix_fmt yuv420p formation_irods_mcp_demo.webm
+  bytes: 1495521
+  sha256: c6ebb373785f33619cfad68a3b1621a1aa85160292e444152209faad6b23f0b4
+  duration_s: 87.2
+  poster: figures/poster.webp (frame at 35 s)

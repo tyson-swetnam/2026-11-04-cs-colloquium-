@@ -1,6 +1,6 @@
 """Validate ontology terms through EBI's Ontology Lookup Service (OLS4).
 
-The control on slide 17 ("terms must resolve in an ontology") and the examples on slide 25
+The control on slide 17 ("terms must resolve in an ontology") and the examples on slide 26
 use this: an agent proposes a CURIE for a free-text value, and the write is refused unless
 the term exists, is not obsolete, comes from the ontology the field allows, and its label,
 synonyms or alternative labels match the text that was written.
