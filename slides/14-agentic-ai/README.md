@@ -46,7 +46,7 @@ The full transcript is in [`mcp_transcript.json`](data/processed/mcp_transcript.
 - **The same server works from any MCP client.** Register [`mcp.json`](mcp.json) in Claude Code, Codex, Goose or another client.
 
 **What it doesn't show**
-- **A model as orchestrator.** A scripted plan stands in, because there's no model API in this environment; slide 29's demo is the model-in-the-loop evidence.
+- **A model as orchestrator.** A scripted plan stands in, because there's no model API in this environment; slide 30's demo is the model-in-the-loop evidence.
 - **The iRODS mesh.** That's slides 22–23.
 
 **For a CS audience:** the figure draws MCP as "context." It is mainly the channel the orchestrator uses to *call tools*, which here means the lake and the guardrails.
@@ -55,7 +55,7 @@ The full transcript is in [`mcp_transcript.json`](data/processed/mcp_transcript.
 
 | Claim | Verdict | Key evidence | Suggested wording |
 |---|---|---|---|
-| c1 One-line message | revise-slide (agreed, not yet in deck) | Demo 3 (slide 29) | "Ask in plain language; the agent finds the data, runs the analysis, and returns a result you can audit." |
+| c1 One-line message | revise-slide (agreed, not yet in deck) | Demo 3 (slide 30) | "Ask in plain language; the agent finds the data, runs the analysis, and returns a result you can audit." |
 | c2 Figure flow works | partially supported | `mcp_transcript.json`, `mcp_calls.csv` | Unchanged; no model orchestrator or iRODS in this demo, and the scripted query excludes the postwar private-investment row (16.93%) |
 | c3 Boxes map to MESA components | partially supported | `data/raw/research/facts.csv`, `data/processed/mesa_box_map.csv` | If said aloud: "MESA's MCP servers ship today and reach the CyVerse Data Store and a DuckLake metadata history; the federated mesh, full lakehouse, RAG and multi-agent orchestration are its 2026-2029 goals." |
 

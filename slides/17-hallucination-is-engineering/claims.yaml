@@ -33,15 +33,15 @@ claims:
   priority: medium
   status: supported
   validation: |
-    The write path (evidence/ontology.py, src/02_ontology.py), run on slide 25's NEON beetle terms: all four
-    model-style errors refused (wrong concept, invented CURIE, wrong field, obsolete term); of slide 25's 12
+    The write path (evidence/ontology.py, src/02_ontology.py), run on slide 26's NEON beetle terms: all four
+    model-style errors refused (wrong concept, invented CURIE, wrong field, obsolete term); of slide 26's 12
     free-text variants, 6 are names of the proposed term and are written, 6 are mappings sent to review.
   sources:
   - https://www.ebi.ac.uk/ols4/
   evidence:
   - data/processed/ontology_writes.csv
   notes: |
-    'carabid', 'pinned beetle', 'voucher', 'sample', 'millim.', 'sq mm' are not names of the terms on slide 25:
+    'carabid', 'pinned beetle', 'voucher', 'sample', 'millim.', 'sq mm' are not names of the terms on slide 26:
     an agent proposes the mapping and the validator refuses it until a curator accepts it.
 - id: c3
   text: “It varies run to run” → a JSON schema, validated in the agent

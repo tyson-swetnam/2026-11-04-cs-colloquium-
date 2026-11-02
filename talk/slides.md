@@ -484,7 +484,18 @@ MESA · NSF Award #2632685
 
 <a id="slide-25"></a>
 
-## 25 · Every term resolves before it is written · [evidence](../slides/25-ontologies-as-guardrails/)
+## 25 · Connect once, then just ask · [evidence](../slides/25-demo-1-video/)
+
+```text
+Demo 1 of 3 · Claude Code + MESA’s Formation and iRODS MCP servers
+Connect once, then just ask
+```
+
+> **Notes:** [~1.5 min] Recorded demo, 88 s, no sound: talk over it, and click the video to pause. 0:00 One command adds the Formation MCP server to Claude Code: claude mcp add --transport http formation https://de.cyverse.org/formation/mcp. 0:10 Sign-in is OAuth through CyVerse in the browser; Claude Code reports “Authentication successful. Connected to formation.” 0:20 “Use the formation MCP to list my running apps”: one running analysis in the Discovery Environment. 0:35 “Give me details, and list the name”: Claude looks the app up by ID; it is the MESA KASM Ubuntu Desktop (GPU), a private interactive VICE app. The MESA portal on the right shows the same analysis. 1:10 “Use the iRODS MCP to list the folders in my neon-beetle-seg/ folder”: the agent calls the Data Store (iRODS) server, and the portal’s Data Browser shows that collection: archive, docs, ducklake, metadata, report. The point: no custom integration; the same servers work from any MCP client (previous slide). Recording: data/media/MANIFEST.yaml in slides/25-demo-1-video.
+
+<a id="slide-26"></a>
+
+## 26 · Every term resolves before it is written · [evidence](../slides/26-ontologies-as-guardrails/)
 
 ```text
 Ontologies as guardrails
@@ -512,9 +523,9 @@ MESA · NSF Award #2632685
 
 > **Notes:** [~2 min · by 31:00] Left column is what a language model writes if you let it. Right column is what MESA writes. The difference is that the right column is queryable: the taxonomy knows Carabidae are beetles (order Coleoptera), so a query for beetle data returns the NEON ground-beetle measurements even though nobody tagged them “Coleoptera.” These are the terms the neon-beetle-seg project actually uses: NCBITaxon:41073 for the specimens, OBI:0100051 for each NEON pinned specimen ID, and Units of Measurement Ontology codes for millimetres (UO:0000016) and square millimetres (UO:0000082) on every measurement. Source: https://github.com/tyson-swetnam/neon-beetle-seg/blob/main/docs/schema.md
 
-<a id="slide-26"></a>
+<a id="slide-27"></a>
 
-## 26 · Move the work to the data · [evidence](../slides/26-move-the-work-to-the-data/)
+## 27 · Move the work to the data · [evidence](../slides/27-move-the-work-to-the-data/)
 
 ```text
 Worked example · NEON ground beetles
@@ -547,9 +558,9 @@ MESA · NSF Award #2632685
 
 > **Notes:** [~1.5 min] One real project, end to end. No archive was asked to change. On the left, where the data already sits: NEON’s pitfall-trap tables (data product DP1.10022.001; 47 sites, 20 domains, July 2013 to September 2026; 145,906 pinned individuals of 826 taxa), the NEON Biorepository (188,522 records in 11 collections, 145,263 also on GBIF) and 53,257 beetle images from four pools. In the middle, the agent’s four verbs: resolve trap records to specimens and photos, stage the images next to a single 16 GB GPU, validate the terms (Carabidae as NCBITaxon:41073, millimetres as UO:0000016), and record every measurement in DuckLake. On the right, what came out: 65,830 beetles segmented into head, pronotum and elytra; measurements in millimetres where a scale was readable, with elytra length correlating at r = 0.98 with human measurements (reads about 8% long); and a DuckLake lakehouse, Parquet exports and a public report on the CyVerse Data Store. Caveat to say aloud: most NEON pitfall specimens have never been photographed, and only 20,698 of the segmented beetles link to a NEON site. Sources: https://github.com/tyson-swetnam/neon-beetle-seg ; https://data.cyverse.org/dav-anon/iplant/home/tswetnam/neon-beetle-seg/report/report.html
 
-<a id="slide-27"></a>
+<a id="slide-28"></a>
 
-## 27 · Metadata from a conversation · [evidence](../slides/27-demo-2-metadata-from-conversation/)
+## 28 · Metadata from a conversation · [evidence](../slides/28-demo-2-metadata-from-conversation/)
 
 ```text
 1 · Claude Desktop
@@ -583,9 +594,9 @@ MESA · NSF Award #2632685
 
 > **Notes:** [~2 min] Demo 2: metadata from a conversation. In Claude Desktop with the MESA MCP server connected, the researcher describes a collection in plain language. The MCP server resolves each term against ontologies (OLS, OBO Foundry), refuses any term that will not resolve, and writes the result to the iRODS collection as AVUs: attribute, value, unit. Then switch to the MESA Portal and show the same AVUs on the collection, ready to search. AVUs are iRODS’s native metadata triples, so anything else that reads iRODS sees them too. The example: neon-beetle-seg segments and measures ground beetles (Carabidae, NCBITaxon:41073) photographed from NEON pitfall traps (data product DP1.10022.001): 65,830 beetles segmented from about 53,000 images, linked to trap records at 47 sites, with head, pronotum and elytra masks and measurements in millimetres (UO:0000016). Elytra length agrees with human measurements at r = 0.98. The collection lives on the CyVerse Data Store at /iplant/home/tswetnam/neon-beetle-seg/, with a DuckLake lakehouse and a public report. The attribute names on the slide are illustrative; the values come from the project’s README and schema. Swap in the exact AVUs from your recorded demo. Sources: https://github.com/tyson-swetnam/neon-beetle-seg ; https://data.cyverse.org/dav-anon/iplant/home/tswetnam/neon-beetle-seg/report/report.html
 
-<a id="slide-28"></a>
+<a id="slide-29"></a>
 
-## 28 · Five layers, all open source · [evidence](../slides/28-the-stack/)
+## 29 · Five layers, all open source · [evidence](../slides/29-the-stack/)
 
 ```text
 The stack
@@ -596,9 +607,9 @@ Figure: MESA proposal · NSF Award #2632685
 
 > **Notes:** [~1 min · by 36:00] Walk top to bottom: user, agentic AI, data management, compute, storage. Emphasize that every layer is swappable and open.
 
-<a id="slide-29"></a>
+<a id="slide-30"></a>
 
-## 29 · From question to result · [evidence](../slides/29-demo-3-question-to-result/)
+## 30 · From question to result · [evidence](../slides/30-demo-3-question-to-result/)
 
 ```text
 
@@ -612,9 +623,9 @@ MESA · NSF Award #2632685
 
 > **Notes:** [~2.5 min · by 38:30] Replace the dashed frame with the recorded clip (select it, then Image or video). This is the payoff demo: a non-CS researcher getting a real result.
 
-<a id="slide-30"></a>
+<a id="slide-31"></a>
 
-## 30 · Already running on real collections · [evidence](../slides/30-ncems-pilot/)
+## 31 · Already running on real collections · [evidence](../slides/31-ncems-pilot/)
 
 ```text
 First pilot · NCEMS
@@ -632,9 +643,9 @@ MESA · NSF Award #2632685
 
 > **Notes:** [~1.5 min · by 40:00] Left column already happened this summer against the NCEMS data on CyVerse: nothing copied and nothing new to operate. Right column is the ask for this room: one collection, one endpoint, one question that currently costs a person a week. Everything is open source, and the guardrails get better the sooner they fail in front of scientists.
 
-<a id="slide-31"></a>
+<a id="slide-32"></a>
 
-## 31 · Stop worrying · [evidence](../slides/31-section-stop-worrying/)
+## 32 · Stop worrying · [evidence](../slides/32-section-stop-worrying/)
 
 ```text
 04
@@ -644,9 +655,9 @@ Frontier AI research computing, for everyone in the country.
 
 > **Notes:** [~30 s · by 40:30] Bring it home: the goal, the training, and the call to action.
 
-<a id="slide-32"></a>
+<a id="slide-33"></a>
 
-## 32 · Access for everyone, and training to use it responsibly · [evidence](../slides/32-the-goal/)
+## 33 · Access for everyone, and training to use it responsibly · [evidence](../slides/33-the-goal/)
 
 ```text
 The goal
@@ -663,9 +674,9 @@ CARC · UNM · CS Colloquium · Nov. 4, 2026
 
 > **Notes:** [~2 min · by 42:30] Concrete next steps for each audience in the room. Point to the AI Automation and Agents course and DUST training if relevant.
 
-<a id="slide-33"></a>
+<a id="slide-34"></a>
 
-## 33 · Paste our URL into any chat · [evidence](../slides/33-carc-docs-for-ai-agents/)
+## 34 · Paste our URL into any chat · [evidence](../slides/34-carc-docs-for-ai-agents/)
 
 ```text
 CARC docs, for people and for AI agents
@@ -683,9 +694,9 @@ carc.unm.edu · carc.unm.edu/docs · Open Knowledge Format (OKF) v0.2
 
 > **Notes:** [~1 min] The new CARC website and documentation are published for people and for AI agents. The docs are an Open Knowledge Format (OKF) v0.2 bundle: every page carries frontmatter saying what it is, where it came from and when it goes stale. The site exposes that directly: /llms.txt is an outline of every page, /llms-full.txt is the whole corpus, and adding index.md to any page URL returns its Markdown. So anyone can paste our URL into Claude, ChatGPT, Gemini or a local model and get answers grounded in CARC's own documentation, not in whatever the model remembers. Try the prompt on the slide: the FAQ says the h100 and l40s partitions are group-gated, through a ColdFront allocation your PI requests. When the docs do not cover something, the page tells agents to send people to a human (support.alliance.unm.edu or help@carc.unm.edu) rather than guess. Sources: https://carc.unm.edu/ https://carc.unm.edu/docs/about/ai-agents/ https://carc.unm.edu/docs/llms.txt https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md https://llmstxt.org/
 
-<a id="slide-34"></a>
+<a id="slide-35"></a>
 
-## 34 · Self-hosted AI helps answer our tickets · [evidence](../slides/34-ai-on-the-help-desk/)
+## 35 · Self-hosted AI helps answer our tickets · [evidence](../slides/35-ai-on-the-help-desk/)
 
 ```text
 CARC help desk
@@ -701,9 +712,9 @@ The agent uses what we have learned from every previous CARC ticket.
 
 > **Notes:** [~1 min] What we use ourselves. Tickets in the CARC help desk (Zammad) get an AI ticket summary: what the user is asking for and what has happened so far. This one is a real ticket from last week about a project scratch folder; the requester's details are redacted. The model is open-weight and runs on two NVIDIA DGX Spark systems on our own hardware, so tickets are never sent to an outside AI service; they stay private. The agent also uses the knowledge in all of our previous tickets, so its answers reflect how CARC has actually solved these problems. DGX Spark: NVIDIA GB10 Grace Blackwell Superchip; ours are the 128 GB model, with up to 1 petaFLOP at FP4 (with sparsity) per unit (NVIDIA). Sources: https://www.nvidia.com/en-us/products/workstations/dgx-spark/ https://docs.nvidia.com/dgx/dgx-spark/hardware.html
 
-<a id="slide-35"></a>
+<a id="slide-36"></a>
 
-## 35 · Sitting on the sidelines is the most dangerous choice a researcher can make. · [evidence](../slides/35-ai-is-not-going-away/)
+## 36 · Sitting on the sidelines is the most dangerous choice a researcher can make. · [evidence](../slides/36-ai-is-not-going-away/)
 
 ```text
 AI is not going away
@@ -713,9 +724,9 @@ Without effective government oversight, AI could cause serious harm. Waiting for
 
 > **Notes:** [~1.5 min · by 44:00] The thesis of the talk. Pause here.
 
-<a id="slide-36"></a>
+<a id="slide-37"></a>
 
-## 36 · AI’s future is a choice we make · [evidence](../slides/36-vote-for-the-future/)
+## 37 · AI’s future is a choice we make · [evidence](../slides/37-vote-for-the-future/)
 
 ```text
 Who writes the rules for AI?
@@ -735,9 +746,9 @@ Election Day was Nov. 3 · Registration and upcoming elections: sos.nm.gov
 
 > **Notes:** [~1 min · by 45:00] Three voices, one point: the rules for AI are being written now, and who writes them is a political choice. Alondra Nelson led the White House OSTP team behind the Blueprint for an AI Bill of Rights (Oct. 4, 2022): five non-binding principles (safe and effective systems; algorithmic discrimination protections; data privacy; notice and explanation; human alternatives, consideration, and fallback). EO 14110 (2023) drew practices from it; EO 14148 revoked that order in January 2025. Since then, in Nelson’s words, red states and blue states are writing their own (Bluesky, May 14, 2026; essay: Science 392, doi:10.1126/science.aeh7153). Pope Leo XIV’s first encyclical, Magnifica Humanitas (signed May 15, released May 25, 2026), says aligning AI is not enough on its own (¶107) and asks for “a political system that does not abdicate its responsibility” (¶106). On Oct. 30 he posted that AI’s future “depends on the choices we make.” Neither of them tells anyone how to vote; that conclusion is mine. The people we elect, at every level, write these rules. Election Day was yesterday: whoever you supported, keep showing up. If you can’t vote, you can still make your voice heard. Sources: https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/ https://bsky.app/profile/alondra.bsky.social/post/3mltg2efhms2a https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html https://x.com/Pontifex/status/2116146977230459383 https://www.sos.nm.gov/voting-and-elections/
 
-<a id="slide-37"></a>
+<a id="slide-38"></a>
 
-## 37 · Questions? · [evidence](../slides/37-questions/)
+## 38 · Questions? · [evidence](../slides/38-questions/)
 
 ```text
 Questions?

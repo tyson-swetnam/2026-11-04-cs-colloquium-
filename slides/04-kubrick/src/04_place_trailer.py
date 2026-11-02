@@ -39,6 +39,10 @@ RESTART = """<script data-evidence="video-restart">
     const section = v.closest('section.deck-slide');
     if (!section || section.dataset.videoWatched) return;
     section.dataset.videoWatched = '1';
+    // Click a video to pause or resume it (the presenter can stop a demo and talk over it).
+    section.querySelectorAll('video[data-evidence]').forEach((el) => el.addEventListener('click', (e) => {
+      e.stopPropagation(); if (el.paused) el.play().catch(() => {}); else el.pause();
+    }));
     new MutationObserver(() => sync(section)).observe(section, { attributes: true, attributeFilter: ['aria-hidden', 'inert'] });
     sync(section);
   });
