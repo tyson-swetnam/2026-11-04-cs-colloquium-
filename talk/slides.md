@@ -612,16 +612,14 @@ Figure: MESA proposal · NSF Award #2632685
 ## 30 · From question to result · [evidence](../slides/30-demo-3-question-to-result/)
 
 ```text
-
-Recorded clip goes here
 Demo 3 of 3 · Video
 From question to result
-[A researcher asks a question; the agent queries the lakehouse on NAIRR compute and returns a figure.]
-Target length ~2:00
+A researcher asks which ground beetle is most common at NEON’s Jornada site. The agent queries the neon-beetle-seg lakehouse, read-only, and answers with a ranked table: Tetragonoderus pallidus, 58%.
+Played at 1.5× · 2:10
 MESA · NSF Award #2632685
 ```
 
-> **Notes:** [~2.5 min · by 38:30] Replace the dashed frame with the recorded clip (select it, then Image or video). This is the payoff demo: a non-CS researcher getting a real result.
+> **Notes:** [~2.5 min] Recorded at normal speed, played at 1.5× (2:10), no sound: talk over it, and click the video to pause. 0:00 In the Claude app, in a workspace for the collection, the question: query the neon-beetle-seg DuckLake directly with the DuckDB CLI, read-only over WebDAV without downloading the lake, and answer: what is the most common ground beetle at the Jornada Experimental Range (JORN)? 0:15 The agent plans five steps: check DuckDB and the lake layout, attach the lake read-only, inspect the neon_sorting schema, run the JORN carabid ranking, check family/genus and subspecies splits. Meanwhile (from 0:05) the MESA portal shows the collection, its DuckLake (a SQL browser on beetles.ducklake), the project's results on GitHub, and a specimen page with its measurements in millimetres. 1:00 The collection's metadata in the Ontology Explorer: 39 ontology-namespaced AVUs, including the Coleoptera Anatomy Ontology (COLAO) terms, e.g. elytron, linked to the 2018 Zooniverse elytra annotations. 2:00 The agent's data checks (provisional vs released records, repeated sample/taxon pairs, records not identified to species); 2:05 the answer: Tetragonoderus pallidus, 616 of 1,056 carabid individuals (58.3%) in 417 of 732 records, 2015-05-28 to 2025-09-10, and the ranked table. The point: a researcher's question, answered from the data where it lives, with the checks shown. Runs on the speaker's computer against the CyVerse Data Store; not NAIRR compute. Recording: data/media/MANIFEST.yaml in slides/30-demo-3-question-to-result.
 
 <a id="slide-31"></a>
 

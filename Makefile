@@ -1,7 +1,7 @@
 # Each slide with an analysis gets a target named slide-NN that runs its src/ scripts in order.
 PY ?= uv run python
 
-.PHONY: setup slides claims check test slide-05 slide-06 slide-17 slide-13 slide-14 slide-20 slide-25 slide-34 slide-35 slide-37
+.PHONY: setup slides claims check test slide-05 slide-06 slide-17 slide-13 slide-14 slide-20 slide-25 slide-30 slide-34 slide-35 slide-37
 
 setup:
 	uv sync --extra dev
@@ -47,3 +47,6 @@ slide-20:
 
 slide-25:
 	@for s in slides/25-demo-1-video/src/02_place_slide.py slides/25-demo-1-video/src/03_check_formation_docs.py; do echo "== $$s"; $(PY) $$s || exit 1; done
+
+slide-30:
+	@for s in slides/30-demo-3-question-to-result/src/03_place_video.py; do echo "== $$s"; $(PY) $$s || exit 1; done
