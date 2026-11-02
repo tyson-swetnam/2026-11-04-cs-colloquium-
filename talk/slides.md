@@ -369,7 +369,7 @@ Figure: MESA proposal · NSF Award #2632685
 ## 20 · What NAIRR gives researchers · [evidence](../slides/20-nairr/)
 
 ```text
-National AI Research Resource
+First Pilot
 What NAIRR gives researchers
 An NSF-led public–private partnership that gives US researchers and educators shared access to AI computing, data, models and training. Piloted since 2024, with 940+ projects in all 50 states; an operations center at SDSC and TACC now runs it.
 AI cyberinfrastructure
