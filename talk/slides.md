@@ -627,7 +627,7 @@ MESA · NSF Award #2632685
 ## 31 · Already running on real collections · [evidence](../slides/31-ncems-pilot/)
 
 ```text
-First pilot · NCEMS
+First pilot
 Already running on real collections
 Done
 MESA’s MCP servers pointed at data collections

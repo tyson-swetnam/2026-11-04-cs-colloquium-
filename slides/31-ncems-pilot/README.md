@@ -1,4 +1,4 @@
-# Slide 31 · First pilot · NCEMS
+# Slide 31 · First pilot
 
 Section: 03 · Build your AI · Slide text and notes: [`talk/slides.md`](../../talk/slides.md#slide-31)
 
@@ -13,7 +13,7 @@ Section: 03 · Build your AI · Slide text and notes: [`talk/slides.md`](../../t
 | `c5` (new, notes) Everything is open source | partially supported | MESA site marks mesa-portal and mesa-forge repos private. | "The MCP servers and metadata tools are open source at github.com/idss-mesa" |
 | `c6` (new) iRODS zone or S3 bucket joins the mesh without moving files | partially supported | iRODS federation is the stated design; S3/OSN buckets are only mounted (`osn-mount.sh`). | "a federated iRODS zone, or an S3 bucket mounted in place; no files move" |
 | `c7` (new) MESA · NSF Award #2632685 | supported | NSF Award API. | — |
-| `c8` (new) Title "Already running on real collections", "First pilot · NCEMS", "Done" | unverified (speaker-reported) | Title implies ongoing work on several collections; notes say one run this summer on NCEMS. MESA site names NCEMS only as an "anchor science community"; nothing public on a first pilot or current runs. | "First pilot · NCEMS / Tried on a real collection / Done (summer 2026)" |
+| `c8` (new) Title "Already running on real collections", "First pilot" (was "First pilot · NCEMS"), "Done" | unverified (speaker-reported) | Title implies ongoing work on several collections; notes say one run this summer on NCEMS. MESA site names NCEMS only as an "anchor science community"; nothing public on a first pilot or current runs. | "First pilot / Tried on a real collection / Done (summer 2026)" |
 
 What the speaker can add to close the gaps: the NCEMS collection path(s), before/after AVU counts, a DuckLake snapshot and the OKF bundle (or a link to them). All pilot results are currently speaker-reported; MESA docs are developer-written (several pages AI-generated) and the MESA code was not checked.
 
@@ -23,3 +23,7 @@ Blocked: `ncems.cyverse.org` reset the connection; the anonymous Data Store WebD
 
 - `src/01_check.py` fetches the sources, checks every quote in `data/raw/research/facts.csv` against the saved text, and writes `data/processed/check_summary.json`.
 - Fetched documents are in `data/raw/sources/` (gitignored) with `MANIFEST.yaml`.
+
+## Header change (2026-11-04)
+
+At the speaker's request, the header line no longer names NCEMS: "First pilot · NCEMS" is now "First pilot". The speaker notes still say the run used "the NCEMS data on CyVerse".
