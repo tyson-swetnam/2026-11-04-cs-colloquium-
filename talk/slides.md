@@ -290,25 +290,26 @@ CARC · UNM · CS Colloquium · Nov. 4, 2026
 ```text
 Fast and slow models
 System One models decide; they don’t write
-SYSTEM 2 · LLMs
 SYSTEM 1 · JEV, CLEF
+SYSTEM 2 · LLMs
 How it answers
-Writes text one token at a time
 One pass, every answer at once
+Writes text one token at a time
 What it returns
-Free-form prose or code
 A choice, a score or a yes probability
+Free-form prose or code
 How it fails
-Invents plausible text: citations, names
 Picks a wrong option, but only from your list
+Invents plausible text: citations, names
 Confidence
-Sounds sure either way
 A calibrated probability you can threshold
+Sounds sure either way
 Best for
-Reasoning, explaining, writing
 Routing, gating and scoring at volume
+Reasoning, explaining, writing
 an ontology and a schema fix the answer space before anything is written.
 Jev: TypeSafe AI, Sept. 15, 2026, closed API · Clef: Cloudflare, Oct. 1, 2026, 27B and 9B, Apache 2.0 weights · Sources: systemonemodels.org; Better Stack; MindStudio
+Cover: Daniel Kahneman, Thinking, Fast and Slow (2011). Image via Wikipedia, used under fair use.
 ```
 
 > **Notes:** [~1.5 min] Borrowing Kahneman’s Thinking, Fast and Slow: System 2 is slow and deliberate, System 1 fast and intuitive. Today’s LLMs are System 2-shaped: they generate text one token at a time, which is great for reasoning and explanation but means they can produce fluent, plausible text that is wrong. System One models are a new class. TypeSafe AI launched Jev on Sept. 15, 2026 (closed, managed API); Cloudflare released Clef on Oct. 1, 2026 in 27B and 9B sizes with open Apache 2.0 weights, using Jev’s request format. You send content plus a schema of typed questions (a choice from a list, a score, or a yes probability), and the model returns all the answers in one forward pass, with calibrated confidence. It never writes prose, so it cannot invent a citation; it can still pick the wrong option, so your code sets a confidence threshold. The common pattern pairs them: System One models do the high-volume routing and gating, code applies the rules, and an LLM handles the cases that need reasoning or a written answer. Vendor speed and cost claims (up to 100x faster and cheaper) are the companies’ own; one independent test of 200 comments had Jev at 86% and Clef at 83% accuracy. The link to MESA: the principle is the same one on the next slide. Constrain the answer space (ontology terms that must resolve, a JSON schema validated in the agent), and the model can only be wrong inside a space you can check. Sources: https://systemonemodels.org/guides/what-is-a-system-one-model/ ; https://betterstack.com/community/guides/ai/jev-vs-clef-decision-model/ ; https://www.mindstudio.ai/blog/jev-system-one-model-launch
