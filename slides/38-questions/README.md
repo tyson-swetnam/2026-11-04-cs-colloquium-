@@ -22,3 +22,7 @@ Other notes: an earlier award with the same title, 2608717 (University of Arizon
 - `src/00_write_facts.py`: writes `data/raw/research/facts.csv` (28 quotes).
 - `src/03_check_quotes.py`: confirms each quote appears in its saved source. Output: `data/processed/quote_checks.json`, 28/28 found.
 - Fetched documents are in `data/raw/sources/` (gitignored, logged in `MANIFEST.yaml`).
+
+## QR code (2026-11-04)
+
+`src/04_place_qr.py` adds a QR code to the red band. It opens the deck on GitHub Pages: https://tyson-swetnam.github.io/2026-11-04-cs-colloquium-/deck/. The code is drawn as SVG with segno (`figures/qr_deck.svg`, embedded in the deck). Decoding a render of the slide with OpenCV returns that URL, at full size and at half size.
