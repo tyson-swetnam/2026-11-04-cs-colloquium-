@@ -15,11 +15,11 @@ and counts terms in MESA's public docs (`data/processed/`).
 
 Also: slide says target length ~2:00, notes say ~2.5 min.
 
-## The recording (added 2026-11-02)
+## The recording
 
-The empty "Recorded clip goes here" frame now plays the speaker's recording: the Claude app answers "what is the most common ground beetle at the Jornada Experimental Range (JORN)?" from the neon-beetle-seg DuckLake, with the MESA portal alongside. It was sped up 1.5× and converted to WebM by the speaker (2:10, no audio, 5.5 MB) and is used as supplied ([`data/media/MANIFEST.yaml`](data/media/MANIFEST.yaml)). `src/03_place_video.py` places it and replaces the placeholder caption. It starts from the beginning each time the slide opens, holds on the answer, and **pauses or resumes on click**. The speaker notes give timestamps.
+The speaker's recording of Demo 3 (2026-11-02; sped up 1.5× and converted to WebM by the speaker, 2:10, no audio, 5.5 MB) plays on **slide 31** ([`slides/31-demo-3-video`](../31-demo-3-video/)), full-size like slide 25. The files stay in this folder ([`data/media/MANIFEST.yaml`](data/media/MANIFEST.yaml), `figures/poster.webp`). From 2026-11-02 to 11-04 it played inside this slide's frame. On 2026-11-04, at the speaker's request, it moved to its own slide, and this slide went back to its original layout (`src/03_layout.py`): a dashed frame now labeled "Recording on the next slide", the caption, and a short set-up in the notes.
 
-The caption follows c1's earlier advice: no "NAIRR compute" (the run is on the speaker's computer against the CyVerse Data Store), and "ranked table" instead of "figure".
+The caption keeps c1's corrections: no "NAIRR compute" (the run is on the speaker's computer against the CyVerse Data Store), and "ranked table" instead of "figure".
 
 **Still to check:** the answer itself (*Tetragonoderus pallidus*, 616 of 1,056 carabid individuals, 58.3%). `src/02_jorn_carabids.py` recomputes it from NEON's API (DP1.10022.001, bet_sorting, JORN, to 2025-09-10), independently of the agent. NEON's data endpoints answered 403 "Access Denied" without a token, so run it with a free NEON API token:
 

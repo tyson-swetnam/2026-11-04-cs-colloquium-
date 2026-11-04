@@ -613,6 +613,8 @@ Figure: MESA proposal · NSF Award #2632685
 ## 30 · From question to result · [evidence](../slides/30-demo-3-question-to-result/)
 
 ```text
+
+Recording on the next slide
 Demo 3 of 3 · Video
 From question to result
 A researcher asks which ground beetle is most common at NEON’s Jornada site. The agent queries the neon-beetle-seg lakehouse, read-only, and answers with a ranked table: Tetragonoderus pallidus, 58%.
@@ -620,11 +622,22 @@ Played at 1.5× · 2:10
 MESA · NSF Award #2632685
 ```
 
-> **Notes:** [~2.5 min] Recorded at normal speed, played at 1.5× (2:10), no sound: talk over it, and click the video to pause. 0:00 In the Claude app, in a workspace for the collection, the question: query the neon-beetle-seg DuckLake directly with the DuckDB CLI, read-only over WebDAV without downloading the lake, and answer: what is the most common ground beetle at the Jornada Experimental Range (JORN)? 0:15 The agent plans five steps: check DuckDB and the lake layout, attach the lake read-only, inspect the neon_sorting schema, run the JORN carabid ranking, check family/genus and subspecies splits. Meanwhile (from 0:05) the MESA portal shows the collection, its DuckLake (a SQL browser on beetles.ducklake), the project's results on GitHub, and a specimen page with its measurements in millimetres. 1:00 The collection's metadata in the Ontology Explorer: 39 ontology-namespaced AVUs, including the Coleoptera Anatomy Ontology (COLAO) terms, e.g. elytron, linked to the 2018 Zooniverse elytra annotations. 2:00 The agent's data checks (provisional vs released records, repeated sample/taxon pairs, records not identified to species); 2:05 the answer: Tetragonoderus pallidus, 616 of 1,056 carabid individuals (58.3%) in 417 of 732 records, 2015-05-28 to 2025-09-10, and the ranked table. The point: a researcher's question, answered from the data where it lives, with the checks shown. Runs on the speaker's computer against the CyVerse Data Store; not NAIRR compute. Recording: data/media/MANIFEST.yaml in slides/30-demo-3-question-to-result.
+> **Notes:** [~30 s] Set up Demo 3: a researcher’s question, answered from the data where it lives. The question: what is the most common ground beetle at NEON’s Jornada Experimental Range (JORN)? The data: the neon-beetle-seg DuckLake on the CyVerse Data Store, read-only over WebDAV, from the Claude app on the speaker’s computer (not NAIRR compute). Watch for the agent’s plan, its data checks, and the ranked answer. The recording plays on the next slide.
 
 <a id="slide-31"></a>
 
-## 31 · Already running on real collections · [evidence](../slides/31-ncems-pilot/)
+## 31 · Which ground beetle is most common at Jornada? · [evidence](../slides/31-demo-3-video/)
+
+```text
+Demo 3 of 3 · Claude + the neon-beetle-seg lakehouse
+Which ground beetle is most common at Jornada?
+```
+
+> **Notes:** [~2.5 min] Recorded at normal speed, played at 1.5× (2:10), no sound: talk over it, and click the video to pause. 0:00 In the Claude app, in a workspace for the collection, the question: query the neon-beetle-seg DuckLake directly with the DuckDB CLI, read-only over WebDAV without downloading the lake, and answer: what is the most common ground beetle at the Jornada Experimental Range (JORN)? 0:15 The agent plans five steps: check DuckDB and the lake layout, attach the lake read-only, inspect the neon_sorting schema, run the JORN carabid ranking, check family/genus and subspecies splits. Meanwhile (from 0:05) the MESA portal shows the collection, its DuckLake (a SQL browser on beetles.ducklake), the project's results on GitHub, and a specimen page with its measurements in millimetres. 1:00 The collection's metadata in the Ontology Explorer: 39 ontology-namespaced AVUs, including the Coleoptera Anatomy Ontology (COLAO) terms, e.g. elytron, linked to the 2018 Zooniverse elytra annotations. 2:00 The agent's data checks (provisional vs released records, repeated sample/taxon pairs, records not identified to species); 2:05 the answer: Tetragonoderus pallidus, 616 of 1,056 carabid individuals (58.3%) in 417 of 732 records, 2015-05-28 to 2025-09-10, and the ranked table. The point: a researcher's question, answered from the data where it lives, with the checks shown. Runs on the speaker's computer against the CyVerse Data Store; not NAIRR compute. Recording: data/media/MANIFEST.yaml in slides/30-demo-3-question-to-result (the intro slide before this one).
+
+<a id="slide-32"></a>
+
+## 32 · Already running on real collections · [evidence](../slides/32-ncems-pilot/)
 
 ```text
 First pilot
@@ -642,9 +655,9 @@ MESA · NSF Award #2632685
 
 > **Notes:** [~1.5 min · by 40:00] Left column already happened this summer against the NCEMS data on CyVerse: nothing copied and nothing new to operate. Right column is the ask for this room: one collection, one endpoint, one question that currently costs a person a week. Everything is open source, and the guardrails get better the sooner they fail in front of scientists.
 
-<a id="slide-32"></a>
+<a id="slide-33"></a>
 
-## 32 · Stop worrying · [evidence](../slides/32-section-stop-worrying/)
+## 33 · Stop worrying · [evidence](../slides/33-section-stop-worrying/)
 
 ```text
 04
@@ -654,9 +667,9 @@ Frontier AI research computing, for everyone in the country.
 
 > **Notes:** [~30 s · by 40:30] Bring it home: the goal, the training, and the call to action.
 
-<a id="slide-33"></a>
+<a id="slide-34"></a>
 
-## 33 · Access for everyone, and training to use it responsibly · [evidence](../slides/33-the-goal/)
+## 34 · Access for everyone, and training to use it responsibly · [evidence](../slides/34-the-goal/)
 
 ```text
 The goal
@@ -673,9 +686,9 @@ CARC · UNM · CS Colloquium · Nov. 4, 2026
 
 > **Notes:** [~2 min · by 42:30] Concrete next steps for each audience in the room. Point to the AI Automation and Agents course and DUST training if relevant.
 
-<a id="slide-34"></a>
+<a id="slide-35"></a>
 
-## 34 · Paste our URL into any chat · [evidence](../slides/34-carc-docs-for-ai-agents/)
+## 35 · Paste our URL into any chat · [evidence](../slides/35-carc-docs-for-ai-agents/)
 
 ```text
 CARC docs, for people and for AI agents
@@ -693,9 +706,9 @@ carc.unm.edu · carc.unm.edu/docs · Open Knowledge Format (OKF) v0.2
 
 > **Notes:** [~1 min] The new CARC website and documentation are published for people and for AI agents. The docs are an Open Knowledge Format (OKF) v0.2 bundle: every page carries frontmatter saying what it is, where it came from and when it goes stale. The site exposes that directly: /llms.txt is an outline of every page, /llms-full.txt is the whole corpus, and adding index.md to any page URL returns its Markdown. So anyone can paste our URL into Claude, ChatGPT, Gemini or a local model and get answers grounded in CARC's own documentation, not in whatever the model remembers. Try the prompt on the slide: the FAQ says the h100 and l40s partitions are group-gated, through a ColdFront allocation your PI requests. When the docs do not cover something, the page tells agents to send people to a human (support.alliance.unm.edu or help@carc.unm.edu) rather than guess. Sources: https://carc.unm.edu/ https://carc.unm.edu/docs/about/ai-agents/ https://carc.unm.edu/docs/llms.txt https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md https://llmstxt.org/
 
-<a id="slide-35"></a>
+<a id="slide-36"></a>
 
-## 35 · Self-hosted AI helps answer our tickets · [evidence](../slides/35-ai-on-the-help-desk/)
+## 36 · Self-hosted AI helps answer our tickets · [evidence](../slides/36-ai-on-the-help-desk/)
 
 ```text
 CARC help desk
@@ -711,9 +724,9 @@ The agent uses what we have learned from every previous CARC ticket.
 
 > **Notes:** [~1 min] What we use ourselves. Tickets in the CARC help desk (Zammad) get an AI ticket summary: what the user is asking for and what has happened so far. This one is a real ticket from last week about a project scratch folder; the requester's details are redacted. The model is open-weight and runs on two NVIDIA DGX Spark systems on our own hardware, so tickets are never sent to an outside AI service; they stay private. The agent also uses the knowledge in all of our previous tickets, so its answers reflect how CARC has actually solved these problems. DGX Spark: NVIDIA GB10 Grace Blackwell Superchip; ours are the 128 GB model, with up to 1 petaFLOP at FP4 (with sparsity) per unit (NVIDIA). Sources: https://www.nvidia.com/en-us/products/workstations/dgx-spark/ https://docs.nvidia.com/dgx/dgx-spark/hardware.html
 
-<a id="slide-36"></a>
+<a id="slide-37"></a>
 
-## 36 · Sitting on the sidelines is the most dangerous choice a researcher can make. · [evidence](../slides/36-ai-is-not-going-away/)
+## 37 · Sitting on the sidelines is the most dangerous choice a researcher can make. · [evidence](../slides/37-ai-is-not-going-away/)
 
 ```text
 AI is not going away
@@ -723,9 +736,9 @@ Without effective government oversight, AI could cause serious harm. Waiting for
 
 > **Notes:** [~1.5 min · by 44:00] The thesis of the talk. Pause here.
 
-<a id="slide-37"></a>
+<a id="slide-38"></a>
 
-## 37 · AI’s future is a choice we make · [evidence](../slides/37-vote-for-the-future/)
+## 38 · AI’s future is a choice we make · [evidence](../slides/38-vote-for-the-future/)
 
 ```text
 Who writes the rules for AI?
@@ -745,9 +758,9 @@ Election Day was Nov. 3 · Registration and upcoming elections: sos.nm.gov
 
 > **Notes:** [~1 min · by 45:00] Three voices, one point: the rules for AI are being written now, and who writes them is a political choice. Alondra Nelson led the White House OSTP team behind the Blueprint for an AI Bill of Rights (Oct. 4, 2022): five non-binding principles (safe and effective systems; algorithmic discrimination protections; data privacy; notice and explanation; human alternatives, consideration, and fallback). EO 14110 (2023) drew practices from it; EO 14148 revoked that order in January 2025. Since then, in Nelson’s words, red states and blue states are writing their own (Bluesky, May 14, 2026; essay: Science 392, doi:10.1126/science.aeh7153). Pope Leo XIV’s first encyclical, Magnifica Humanitas (signed May 15, released May 25, 2026), says aligning AI is not enough on its own (¶107) and asks for “a political system that does not abdicate its responsibility” (¶106). On Oct. 30 he posted that AI’s future “depends on the choices we make.” Neither of them tells anyone how to vote; that conclusion is mine. The people we elect, at every level, write these rules. Election Day was yesterday: whoever you supported, keep showing up. If you can’t vote, you can still make your voice heard. Sources: https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/ https://bsky.app/profile/alondra.bsky.social/post/3mltg2efhms2a https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html https://x.com/Pontifex/status/2116146977230459383 https://www.sos.nm.gov/voting-and-elections/
 
-<a id="slide-38"></a>
+<a id="slide-39"></a>
 
-## 38 · Questions? · [evidence](../slides/38-questions/)
+## 39 · Questions? · [evidence](../slides/39-questions/)
 
 ```text
 Questions?
