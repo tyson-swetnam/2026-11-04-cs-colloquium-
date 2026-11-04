@@ -2,7 +2,7 @@
 
 Section: 03 · Build your AI · Slide text and notes: [`talk/slides.md`](../../talk/slides.md#slide-25)
 
-Added 2026-11-02 after slide 24 ("Formation MCP"). This is the recorded Demo 1, played on its own slide: Claude Code connects to MESA's Formation and iRODS (Data Store) MCP servers and answers plain-language requests, with the MESA portal open alongside. The slides after it moved up by one (Questions? is now 38).
+Added 2026-11-02 after slide 24 ("Formation MCP"). This is the recorded Demo 1, played on its own slide: Claude Code connects to MESA's Formation and iRODS (Data Store) MCP servers and answers plain-language requests, with the MESA portal open alongside. The slides after it moved up by one (Questions? is now 39).
 
 ## The video
 

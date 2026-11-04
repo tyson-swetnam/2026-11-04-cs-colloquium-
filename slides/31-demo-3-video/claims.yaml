@@ -1,0 +1,24 @@
+slide: 31
+title: 'Which ground beetle is most common at Jornada?'
+section: 03 · Build your AI
+claims:
+- id: c1
+  text: 'Which ground beetle is most common at Jornada? (eyebrow: Demo 3 of 3 · Claude + the neon-beetle-seg lakehouse)'
+  kind: qualitative
+  priority: low
+  status: not-applicable
+  validation: The question the recorded demo asks, used as the slide title.
+  sources: []
+  evidence: []
+  notes: Slide 30's claim c1 covers the demo's content; the recording lives in slide 30's folder.
+- id: c2
+  text: 'Recorded demo (2:10 at 1.5x, no sound): the agent queries the neon-beetle-seg DuckLake read-only and answers Tetragonoderus pallidus, 616 of 1,056 carabid individuals (58.3%)'
+  kind: technical
+  priority: high
+  status: partially-supported
+  validation: 'The recording shows the question, the agent''s queries and data checks, and the answer; the notes'' timestamps were read from it. The answer has not been re-derived from NEON''s own data yet, because NEON''s API returned 403 without a token (slide 30, src/02_jorn_carabids.py).'
+  sources:
+  - https://github.com/tyson-swetnam/neon-beetle-seg
+  evidence:
+  - src/01_place_slide.py
+  notes: 'Recording: slides/30-demo-3-question-to-result/data/media/neon_beetle_seg_demo_1.5x.webm (MANIFEST.yaml there has its SHA-256). Runs in the Claude app on the speaker''s computer against the CyVerse Data Store, not on NAIRR compute.'
