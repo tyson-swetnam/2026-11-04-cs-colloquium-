@@ -768,6 +768,9 @@ EHT
 Tyson L. Swetnam, PhD
 tswetnam@unm.edu
 idss-mesa.github.io · github.com/idss-mesa
+Slides & evidence
+tyson-swetnam.github.io/
+2026-11-04-cs-colloquium-
 ```
 
 > **Notes:** [Q&A ~10 min · 44:00–54:00; ~1 min buffer] Thank the host and the MESA team. Leave this up during Q&A. Early-adopter awards: NEON, operated by Battelle, NSF 2217817; ESIIL (Environmental Data Science Innovation & Inclusion Lab, CU Boulder), NSF 2153040; NCEMS (National Synthesis Center for Emergence in the Molecular and Cellular Sciences, Penn State), NSF 2335029; NSCORE (National Synthesis Center for Organismal Resilience, Columbia), NSF Cooperative Agreement 2438843; AIIRA (AI Institute for Resilient Agriculture, Iowa State), USDA-NIFA 2021-67021-35329 with NSF.
