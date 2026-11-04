@@ -138,7 +138,7 @@ claims:
   - data/raw/research/facts.csv
   notes: Award 2632685 is "Research Infrastructure, Category II, MESA (Multidisciplinary Environment for Scientific Advancement)", University of New Mexico.
 - id: c8
-  text: "Slide: First pilot · NCEMS / Already running on real collections / Done"
+  text: "Slide: First pilot / Already running on real collections / Done"
   kind: factual
   priority: medium
   status: unverified
@@ -153,4 +153,4 @@ claims:
     real collections"), but the notes say it "already happened this summer" against one dataset (NCEMS).
     No public source shows anything currently running on NCEMS collections, or that NCEMS was MESA's first
     pilot: the MESA site names NCEMS only as an "anchor science community" (f16). Speaker-reported.
-  proposed_text: 'First pilot · NCEMS / Tried on a real collection / Done (summer 2026)'
+  proposed_text: 'First pilot / Tried on a real collection / Done (summer 2026)'
