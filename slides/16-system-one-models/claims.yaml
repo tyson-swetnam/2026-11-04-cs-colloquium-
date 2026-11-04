@@ -175,3 +175,16 @@ claims:
   - data/raw/research/facts.csv
   notes: 'Both vendors recommend this split (escalate to a person or reasoning model on low confidence; decision model in the hot path, LLM to act). It is vendor guidance, not a measured industry norm; both products are under seven weeks old (Jev 2026-09-15), so nothing shows the pattern is common. "The common pattern" overstates it.'
   proposed_text: 'Both vendors recommend pairing them: System One models do the high-volume routing and gating, an LLM handles reasoning or written answers'
+- id: c10
+  text: 'Cover: Daniel Kahneman, Thinking, Fast and Slow (2011). Image via Wikipedia, used under fair use.'
+  kind: attribution
+  priority: medium
+  status: supported
+  validation: 'The English Wikipedia file page (read 2026-11-04 through WebFetch; the raw wikitext endpoint was rate-limited with HTTP 429 and not retried in a loop) marks the cover as copyrighted and gives a non-free fair-use rationale.'
+  sources:
+  - https://en.wikipedia.org/wiki/File:Thinking,_Fast_and_Slow.jpg
+  - https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
+  evidence:
+  - figures/thinking_fast_and_slow_cover.jpg
+  - figures/MANIFEST.yaml
+  notes: 'File page, as read: "This is the cover art for Thinking, Fast and Slow. Edition hardcover." Portion used: "The entire cover"; Low resolution: "sufficient resolution for commentary and identification but lower resolution than the original cover"; Purpose: "used for identification in the context of critical commentary"; copyright believed to belong to "the publisher or the author" (none named). The slide uses the same 259 x 385 file, unchanged, for the same purpose: identifying the book the slide comments on. Wikipedia''s rationale covers Wikipedia; whether this talk''s use is fair use is the speaker''s own judgement, so the credit says "used under fair use" and names Wikipedia as the source of the image. Author and 2011 publication are from the book''s Wikipedia article.'

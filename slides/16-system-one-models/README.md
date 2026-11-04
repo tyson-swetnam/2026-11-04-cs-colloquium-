@@ -29,3 +29,7 @@ uv run python slides/16-system-one-models/src/01_fetch_sources.py   # fetch page
 uv run python slides/16-system-one-models/src/02_check.py           # data/processed/*.csv
 uv run python slides/16-system-one-models/src/03_facts.py           # facts.csv, verbatim-quote check
 ```
+
+## Layout and cover (2026-11-04)
+
+`src/04_cover_and_columns.py` puts System 1 (Jev, Clef) in the middle column and System 2 (LLMs) on the right. Each row's cells are swapped whole, so System 1 keeps its red text. It also adds the *Thinking, Fast and Slow* cover beside the table with the credit "Cover: Daniel Kahneman, Thinking, Fast and Slow (2011). Image via Wikipedia, used under fair use." The image is Wikipedia's low-resolution non-free file (259 × 385), unchanged ([`figures/thinking_fast_and_slow_cover.jpg`](figures/thinking_fast_and_slow_cover.jpg)). Claim c10 records Wikipedia's fair-use rationale.
